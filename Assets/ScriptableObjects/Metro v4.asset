@@ -1,0 +1,6599 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d5f9bd6fa04f04bfdeb64fc7345cbd, type: 3}
+  m_Name: Metro v4
+  m_EditorClassIdentifier: 
+  lines:
+  - lineId: 0
+    name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+      \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.85490197, g: 0.12941177, b: 0.15686275, a: 1}
+    stations:
+    - lineId: 0
+      stationId: 0
+      position: {x: 1892, y: 873}
+      names:
+      - "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 257
+      isOpen: 1
+    - lineId: 0
+      stationId: 1
+      position: {x: 1956, y: 937}
+      names:
+      - "\u0427\u0435\u0440\u043A\u0438\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 0
+      stationId: 2
+      position: {x: 1928, y: 1009}
+      names:
+      - "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 3
+      position: {x: 1881, y: 1056}
+      names:
+      - "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 4
+      position: {x: 1834, y: 1104}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u043E\u0441\u0435\u043B\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 5
+      position: {x: 1743, y: 1197}
+      names:
+      - "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 6
+      position: {x: 1704, y: 1237}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0435 \u0412\u043E\u0440\u043E\u0442\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 7
+      position: {x: 1650, y: 1291}
+      names:
+      - "\u0427\u0438\u0441\u0442\u044B\u0435 \u043F\u0440\u0443\u0434\u044B"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 0
+      stationId: 8
+      position: {x: 1578, y: 1363}
+      names:
+      - "\u041B\u0443\u0431\u044F\u043D\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 0
+      stationId: 9
+      position: {x: 1508, y: 1433}
+      names:
+      - "\u041E\u0445\u043E\u0442\u043D\u044B\u0439 \u0420\u044F\u0434"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 0
+      stationId: 10
+      position: {x: 1379, y: 1562}
+      names:
+      - "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0418\u043C\u0435\u043D\u0438
+        \u041B\u0435\u043D\u043D\u0438\u043D\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 11
+      position: {x: 1306, y: 1634}
+      names:
+      - "\u041A\u0440\u043E\u043F\u043E\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 12
+      position: {x: 1258, y: 1680}
+      names:
+      - "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 13
+      position: {x: 1188, y: 1749}
+      names:
+      - "\u0424\u0440\u0443\u043D\u0437\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 14
+      position: {x: 1143, y: 1794}
+      names:
+      - "\u0421\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 15
+      position: {x: 1075, y: 1862}
+      names:
+      - "\u0412\u043E\u0440\u043E\u0431\u044C\u0451\u0432\u044B \u0433\u043E\u0440\u044B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 16
+      position: {x: 1048, y: 1950}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 17
+      position: {x: 1048, y: 2053}
+      names:
+      - "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 18
+      position: {x: 1048, y: 2157}
+      names:
+      - "\u042E\u0433\u043E-\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 19
+      position: {x: 1048, y: 2207}
+      names:
+      - "\u0422\u0440\u043E\u043F\u0430\u0440\u0451\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 20
+      position: {x: 1048, y: 2257}
+      names:
+      - "\u0420\u0443\u043C\u044F\u043D\u0446\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 21
+      position: {x: 1048, y: 2307}
+      names:
+      - "\u0421\u0430\u043B\u0430\u0440\u044C\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 22
+      position: {x: 1070, y: 2398}
+      names:
+      - "\u0424\u0438\u043B\u0430\u0442\u043E\u0432 \u041B\u0443\u0433"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 23
+      position: {x: 1120, y: 2448}
+      names:
+      - "\u041F\u0440\u043E\u043A\u0448\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 24
+      position: {x: 1170, y: 2498}
+      names:
+      - "\u041E\u043B\u044C\u0445\u043E\u0432\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 0
+      stationId: 25
+      position: {x: 1220, y: 2548}
+      names:
+      - "\u041A\u043E\u043C\u043C\u0443\u043D\u0430\u0440\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 0
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 0
+      startStationId: 24
+      endStationId: 25
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 1
+    name: "\u0417\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F
+      \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.28235295, g: 0.72156864, b: 0.36862746, a: 1}
+    stations:
+    - lineId: 1
+      stationId: 0
+      position: {x: 896, y: 518}
+      names:
+      - "\u0425\u043E\u0432\u0440\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 1
+      position: {x: 896, y: 613}
+      names:
+      - "\u0411\u0435\u043B\u043E\u043C\u043E\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 2
+      position: {x: 896, y: 708}
+      names:
+      - "\u0420\u0435\u0447\u043D\u043E\u0439 \u0432\u043E\u043A\u0437\u0430\u043B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 3
+      position: {x: 896, y: 803}
+      names:
+      - "\u0412\u043E\u0434\u043D\u044B\u0439 \u0441\u0442\u0430\u0434\u0438\u043E\u043D"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 4
+      position: {x: 973, y: 919}
+      names:
+      - "\u0412\u043E\u0439\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 1
+      stationId: 5
+      position: {x: 1068, y: 1013}
+      names:
+      - "\u0421\u043E\u043A\u043E\u043B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 6
+      position: {x: 1104, y: 1049}
+      names:
+      - "\u0410\u044D\u0440\u043E\u043F\u043E\u0440\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 7
+      position: {x: 1150, y: 1095}
+      names:
+      - "\u0414\u0438\u043D\u0430\u043C\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 8
+      position: {x: 1253, y: 1198}
+      names:
+      - "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 9
+      position: {x: 1304, y: 1249}
+      names:
+      - "\u041C\u0430\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 10
+      position: {x: 1380, y: 1329}
+      names:
+      - "\u0422\u0432\u0435\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 1
+      stationId: 11
+      position: {x: 1508, y: 1457}
+      names:
+      - "\u0422\u0435\u0430\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 12
+      position: {x: 1636, y: 1585}
+      names:
+      - "\u041D\u043E\u0432\u043E\u043A\u0443\u0437\u043D\u0435\u0446\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 1
+      stationId: 13
+      position: {x: 1736, y: 1686}
+      names:
+      - "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 1
+      stationId: 14
+      position: {x: 1853, y: 1798}
+      names:
+      - "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 1
+      stationId: 15
+      position: {x: 1898, y: 1866}
+      names:
+      - "\u0422\u0435\u0445\u043D\u043E\u043F\u0430\u0440\u043A"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 16
+      position: {x: 1898, y: 1956}
+      names:
+      - "\u041A\u043E\u043B\u043E\u043C\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 17
+      position: {x: 1898, y: 2046}
+      names:
+      - "\u041A\u0430\u0448\u0438\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 18
+      position: {x: 1920, y: 2150}
+      names:
+      - "\u041A\u0430\u043D\u0442\u0435\u043C\u0438\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 1
+      stationId: 19
+      position: {x: 1965, y: 2195}
+      names:
+      - "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 1
+      stationId: 20
+      position: {x: 2035, y: 2265}
+      names:
+      - "\u041E\u0440\u0435\u0445\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 1
+      stationId: 21
+      position: {x: 2117, y: 2325}
+      names:
+      - "\u0414\u043E\u043C\u043E\u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 1
+      stationId: 22
+      position: {x: 2223, y: 2325}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u0432\u0430\u0440\u0434\u0435\u0439\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 1
+      stationId: 23
+      position: {x: 2370, y: 2325}
+      names:
+      - "\u0410\u043B\u043C\u0430-\u0410\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 1
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 1
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 2
+    name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F
+      \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0, g: 0.47058824, b: 0.7490196, a: 1}
+    stations:
+    - lineId: 2
+      stationId: 0
+      position: {x: 2237, y: 930}
+      names:
+      - "\u0429\u0451\u043B\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 1
+      position: {x: 2237, y: 1010}
+      names:
+      - "\u041F\u0435\u0440\u0432\u043E\u043C\u0430\u0439\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 2
+      position: {x: 2196, y: 1096}
+      names:
+      - "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 3
+      position: {x: 2138, y: 1154}
+      names:
+      - "\u041F\u0430\u0440\u0442\u0438\u0437\u0430\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 4
+      position: {x: 2082, y: 1210}
+      names:
+      - "\u0421\u0435\u043C\u0451\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 5
+      position: {x: 2030, y: 1262}
+      names:
+      - "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 257
+      isOpen: 1
+    - lineId: 2
+      stationId: 6
+      position: {x: 1963, y: 1329}
+      names:
+      - "\u0411\u0430\u0443\u043C\u0430\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 1028
+      isOpen: 1
+    - lineId: 2
+      stationId: 7
+      position: {x: 1883, y: 1409}
+      names:
+      - "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 8
+      position: {x: 1508, y: 1481}
+      names:
+      - "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0420\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 257
+      isOpen: 1
+    - lineId: 2
+      stationId: 9
+      position: {x: 1357, y: 1541}
+      names:
+      - "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 2
+      stationId: 10
+      position: {x: 1207, y: 1541}
+      names:
+      - "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 11
+      position: {x: 1129, y: 1541}
+      names:
+      - "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 1028
+      isOpen: 1
+    - lineId: 2
+      stationId: 12
+      position: {x: 804, y: 1669}
+      names:
+      - "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 13
+      position: {x: 645, y: 1510}
+      names:
+      - "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 2
+      stationId: 14
+      position: {x: 575, y: 1365}
+      names:
+      - "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 15
+      position: {x: 575, y: 1234}
+      names:
+      - "\u041C\u043E\u043B\u043E\u0434\u0451\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 16
+      position: {x: 575, y: 1172}
+      names:
+      - "\u041A\u0440\u044B\u043B\u0430\u0442\u0441\u043A\u043E\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 17
+      position: {x: 575, y: 1110}
+      names:
+      - "\u0421\u0442\u0440\u043E\u0433\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 18
+      position: {x: 575, y: 1048}
+      names:
+      - "\u041C\u044F\u043A\u0438\u043D\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 19
+      position: {x: 575, y: 945}
+      names:
+      - "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 2
+      stationId: 20
+      position: {x: 575, y: 850}
+      names:
+      - "\u041C\u0438\u0442\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 2
+      stationId: 21
+      position: {x: 575, y: 770}
+      names:
+      - "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 2
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1819, y: 1481}
+      weight: 2.75
+    - lineId: 2
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1426, y: 1484.54}
+      weight: 1.34
+    - lineId: 2
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 879.44, y: 1730.5}
+      weight: 7.02
+    - lineId: 2
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 2
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 3
+    name: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0, g: 0.75686276, b: 0.9529412, a: 1}
+    stations:
+    - lineId: 3
+      stationId: 0
+      position: {x: 600, y: 1365}
+      names:
+      - "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 1
+      position: {x: 655, y: 1420}
+      names:
+      - "\u041F\u0438\u043E\u043D\u0435\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 2
+      position: {x: 710, y: 1475}
+      names:
+      - "\u0424\u0438\u043B\u0451\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 3
+      position: {x: 765, y: 1530}
+      names:
+      - "\u0411\u0430\u0433\u0440\u0430\u0442\u0438\u043E\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 4
+      position: {x: 815, y: 1580}
+      names:
+      - "\u0424\u0438\u043B\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 5
+      position: {x: 934, y: 1617}
+      names:
+      - "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 6
+      position: {x: 994, y: 1557}
+      names:
+      - "\u0421\u0442\u0443\u0434\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 7
+      position: {x: 1129, y: 1517}
+      names:
+      - "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 8
+      position: {x: 1207, y: 1481}
+      names:
+      - "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 3
+      stationId: 9
+      position: {x: 1284, y: 1481}
+      names:
+      - "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 3
+      stationId: 10
+      position: {x: 1379, y: 1541}
+      names:
+      - "\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439
+        \u0441\u0430\u0434"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 3
+      stationId: 11
+      position: {x: 907, y: 1387}
+      names:
+      - "\u041C\u0435\u0436\u0434\u0443\u043D\u0430\u0440\u043E\u0434\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 3
+      stationId: 12
+      position: {x: 973, y: 1453}
+      names:
+      - "\u0412\u044B\u0441\u0442\u0430\u0432\u043E\u0447\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 3
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1035, y: 1520}
+      weight: 1
+    - lineId: 3
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1177, y: 1481}
+      weight: 1
+    - lineId: 3
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1325.99, y: 1481}
+      weight: 1
+    - lineId: 3
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 3
+      startStationId: 12
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1038, y: 1517}
+      weight: 1
+    simpleLine: 0
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 4
+    name: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 1
+    curveCenter: {x: 0.5, y: 10}
+    lineColor: {r: 0.5372549, g: 0.30588236, b: 0.20784314, a: 1}
+    stations:
+    - lineId: 4
+      stationId: 0
+      position: {x: 1243, y: 1695}
+      names:
+      - "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 1
+      position: {x: 1407, y: 1789}
+      names:
+      - "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 2
+      position: {x: 1587, y: 1792}
+      names:
+      - "\u0414\u043E\u0431\u0440\u044B\u043D\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 4
+      stationId: 3
+      position: {x: 1751, y: 1700}
+      names:
+      - "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 4
+      position: {x: 1829, y: 1596}
+      names:
+      - "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 4
+      stationId: 5
+      position: {x: 1862, y: 1388}
+      names:
+      - "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 6
+      position: {x: 1758, y: 1182}
+      names:
+      - "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 7
+      position: {x: 1672, y: 1115}
+      names:
+      - "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 4
+      stationId: 8
+      position: {x: 1396, y: 1088}
+      names:
+      - "\u041D\u043E\u0432\u043E\u0441\u043B\u043E\u0431\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 1026
+      isOpen: 1
+    - lineId: 4
+      stationId: 9
+      position: {x: 1238, y: 1183}
+      names:
+      - "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 4
+      stationId: 10
+      position: {x: 1147, y: 1349}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 4
+      stationId: 11
+      position: {x: 1147, y: 1529}
+      names:
+      - "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 4
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 4
+      startStationId: 11
+      endStationId: 0
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 0
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 5
+    name: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0420\u0438\u0436\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.9607843, g: 0.50980395, b: 0.1254902, a: 1}
+    stations:
+    - lineId: 5
+      stationId: 0
+      position: {x: 1672, y: 557}
+      names:
+      - "\u041C\u0435\u0434\u0432\u0435\u0434\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 1
+      position: {x: 1672, y: 601}
+      names:
+      - "\u0411\u0430\u0431\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 2
+      position: {x: 1672, y: 649}
+      names:
+      - "\u0421\u0432\u0438\u0431\u043B\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 3
+      position: {x: 1672, y: 695}
+      names:
+      - "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+        \u0441\u0430\u0434"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 4
+      position: {x: 1672, y: 830}
+      names:
+      - "\u0412\u0414\u041D\u0425"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 5
+      position: {x: 1672, y: 930}
+      names:
+      - "\u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 6
+      position: {x: 1672, y: 1057}
+      names:
+      - 
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 7
+      position: {x: 1672, y: 1095}
+      names:
+      - "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 8
+      position: {x: 1672, y: 1201}
+      names:
+      - "\u0421\u0443\u0445\u0430\u0440\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 5
+      stationId: 9
+      position: {x: 1672, y: 1296}
+      names:
+      - "\u0422\u0443\u0440\u0433\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 10
+      position: {x: 1672, y: 1410}
+      names:
+      - "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 11
+      position: {x: 1612, y: 1585}
+      names:
+      - "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 12
+      position: {x: 1422, y: 1774}
+      names:
+      - "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 13
+      position: {x: 1352, y: 1845}
+      names:
+      - "\u0428\u0430\u0431\u043E\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 14
+      position: {x: 1320, y: 1891}
+      names:
+      - "\u041B\u0435\u043D\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 15
+      position: {x: 1320, y: 1953}
+      names:
+      - "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 16
+      position: {x: 1320, y: 2001}
+      names:
+      - "\u041F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 17
+      position: {x: 1320, y: 2050}
+      names:
+      - "\u041D\u043E\u0432\u044B\u0435 \u0427\u0435\u0440\u0451\u043C\u0443\u0448\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 18
+      position: {x: 1320, y: 2107}
+      names:
+      - "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 5
+      stationId: 19
+      position: {x: 1320, y: 2157}
+      names:
+      - "\u0411\u0435\u043B\u044F\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 20
+      position: {x: 1320, y: 2207}
+      names:
+      - "\u041A\u043E\u043D\u044C\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 21
+      position: {x: 1340, y: 2257}
+      names:
+      - "\u0422\u0451\u043F\u043B\u044B\u0439 \u0421\u0442\u0430\u043D"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 22
+      position: {x: 1375, y: 2292}
+      names:
+      - "\u042F\u0441\u0435\u043D\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 5
+      stationId: 23
+      position: {x: 1415, y: 2332}
+      names:
+      - "\u041D\u043E\u0432\u043E\u044F\u0441\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 5
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 5
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 6
+    name: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.5568628, g: 0.2784314, b: 0.60784316, a: 1}
+    stations:
+    - lineId: 6
+      stationId: 0
+      position: {x: 700, y: 770}
+      names:
+      - "\u041F\u043B\u0430\u043D\u0435\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 1
+      position: {x: 700, y: 850}
+      names:
+      - "\u0421\u0445\u043E\u0434\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 2
+      position: {x: 755, y: 934}
+      names:
+      - "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 6
+      stationId: 3
+      position: {x: 815, y: 994}
+      names:
+      - "\u0421\u043F\u0430\u0440\u0442\u0430\u043A"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 6
+      stationId: 4
+      position: {x: 853, y: 1032}
+      names:
+      - "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 6
+      stationId: 5
+      position: {x: 891, y: 1095}
+      names:
+      - "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u043E\u0435 \u043F\u043E\u043B\u0435"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 6
+      stationId: 6
+      position: {x: 933, y: 1198}
+      names:
+      - "\u041F\u043E\u043B\u0435\u0436\u0430\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 7
+      position: {x: 1030, y: 1295}
+      names:
+      - "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 8
+      position: {x: 1070, y: 1335}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 1905 \u0433\u043E\u0434\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 6
+      stationId: 9
+      position: {x: 1167, y: 1349}
+      names:
+      - "\u0411\u0430\u0440\u0440\u0438\u043A\u0430\u0434\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 6
+      stationId: 10
+      position: {x: 1368, y: 1349}
+      names:
+      - "\u041F\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 6
+      stationId: 11
+      position: {x: 1593, y: 1349}
+      names:
+      - "\u041A\u0443\u0437\u043D\u0435\u0446\u043A\u0438\u0439 \u041C\u043E\u0441\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 12
+      position: {x: 1672, y: 1430}
+      names:
+      - "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 13
+      position: {x: 1850, y: 1608}
+      names:
+      - "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 14
+      position: {x: 1941, y: 1645}
+      names:
+      - "\u041F\u0440\u043E\u043B\u0435\u0442\u0430\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 6
+      stationId: 15
+      position: {x: 2060, y: 1645}
+      names:
+      - "\u0412\u043E\u043B\u0433\u043E\u0433\u0440\u0430\u0434\u0441\u043A\u0438\u0439
+        \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 6
+      stationId: 16
+      position: {x: 2151, y: 1645}
+      names:
+      - "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 17
+      position: {x: 2235, y: 1695}
+      names:
+      - "\u041A\u0443\u0437\u044C\u043C\u0438\u043D\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 6
+      stationId: 18
+      position: {x: 2300, y: 1760}
+      names:
+      - "\u0420\u044F\u0437\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 19
+      position: {x: 2355, y: 1815}
+      names:
+      - "\u0412\u044B\u0445\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 20
+      position: {x: 2386, y: 1868}
+      names:
+      - "\u041B\u0435\u0440\u043C\u043E\u043D\u0442\u043E\u0432\u0441\u043A\u0438\u0439
+        \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 21
+      position: {x: 2386, y: 1962}
+      names:
+      - "\u0416\u0443\u043B\u0435\u0431\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 6
+      stationId: 22
+      position: {x: 2386, y: 2032}
+      names:
+      - "\u041A\u043E\u0442\u0435\u043B\u044C\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 6
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 892.3, y: 1077}
+      weight: 1
+    - lineId: 6
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 892.3, y: 1157}
+      weight: 1
+    - lineId: 6
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 6
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 7
+    name: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 1, g: 0.7764706, b: 0.101960786, a: 1}
+    stations:
+    - lineId: 7
+      stationId: 0
+      position: {x: 2462, y: 1331}
+      names:
+      - "\u041D\u043E\u0432\u043E\u043A\u043E\u0441\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 7
+      stationId: 1
+      position: {x: 2362, y: 1331}
+      names:
+      - "\u041D\u043E\u0432\u043E\u0433\u0438\u0440\u0435\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 7
+      stationId: 2
+      position: {x: 2262, y: 1331}
+      names:
+      - "\u041F\u0435\u0440\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 7
+      stationId: 3
+      position: {x: 2162, y: 1331}
+      names:
+      - "\u0428\u043E\u0441\u0441\u0435 \u042D\u043D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 7
+      stationId: 4
+      position: {x: 2030, y: 1455}
+      names:
+      - "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 7
+      stationId: 5
+      position: {x: 1959, y: 1526}
+      names:
+      - "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0418\u043B\u044C\u0438\u0447\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 7
+      stationId: 6
+      position: {x: 1829, y: 1620}
+      names:
+      - "\u041C\u0430\u0440\u043A\u0441\u0438\u0441\u0442\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 7
+      stationId: 7
+      position: {x: 1624, y: 1605}
+      names:
+      - "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 514
+      isOpen: 1
+    connections:
+    - lineId: 7
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 7
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 7
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 7
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 7
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 7
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1862, y: 1620}
+      weight: 1
+    - lineId: 7
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1637, y: 1616}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 8
+    name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 1, g: 0.7764706, b: 0.101960786, a: 1}
+    stations:
+    - lineId: 8
+      stationId: 0
+      position: {x: 973, y: 1477}
+      names:
+      - "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 8
+      stationId: 1
+      position: {x: 804, y: 1646}
+      names:
+      - "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 2
+      position: {x: 759, y: 1722}
+      names:
+      - "\u041C\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 3
+      position: {x: 759, y: 1778}
+      names:
+      - "\u041B\u043E\u043C\u043E\u043D\u043E\u0441\u043E\u0432\u0441\u043A\u0438\u0439"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 4
+      position: {x: 759, y: 1831}
+      names:
+      - "\u0420\u0430\u043C\u0435\u043D\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 5
+      position: {x: 759, y: 1889}
+      names:
+      - "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 8
+      stationId: 6
+      position: {x: 759, y: 1957}
+      names:
+      - "\u041E\u0437\u0451\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 7
+      position: {x: 759, y: 2007}
+      names:
+      - "\u0413\u043E\u0432\u043E\u0440\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 8
+      position: {x: 759, y: 2057}
+      names:
+      - "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 9
+      position: {x: 759, y: 2107}
+      names:
+      - "\u0411\u043E\u0440\u043E\u0432\u0441\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 10
+      position: {x: 759, y: 2157}
+      names:
+      - "\u041D\u043E\u0432\u043E\u043F\u0435\u0440\u0435\u0434\u0435\u043B\u043A\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 8
+      stationId: 11
+      position: {x: 759, y: 2207}
+      names:
+      - "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 8
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 8
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 9
+    name: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.6313726, g: 0.63529414, b: 0.6392157, a: 1}
+    stations:
+    - lineId: 9
+      stationId: 0
+      position: {x: 1304, y: 549}
+      names:
+      - "\u0410\u043B\u0442\u0443\u0444\u044C\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 1
+      position: {x: 1304, y: 599}
+      names:
+      - "\u0411\u0438\u0431\u0438\u0440\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 2
+      position: {x: 1304, y: 649}
+      names:
+      - "\u041E\u0442\u0440\u0430\u0434\u043D\u043E\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 3
+      position: {x: 1304, y: 709}
+      names:
+      - "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 4
+      position: {x: 1304, y: 805}
+      names:
+      - "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 5
+      position: {x: 1304, y: 877}
+      names:
+      - "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 6
+      position: {x: 1304, y: 943}
+      names:
+      - "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 7
+      position: {x: 1320, y: 1013}
+      names:
+      - "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 9
+      stationId: 8
+      position: {x: 1410, y: 1103}
+      names:
+      - "\u041C\u0435\u043D\u0434\u0435\u043B\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 9
+      stationId: 9
+      position: {x: 1487, y: 1189}
+      names:
+      - "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 9
+      stationId: 10
+      position: {x: 1356, y: 1329}
+      names:
+      - "\u0427\u0435\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 9
+      stationId: 11
+      position: {x: 1357, y: 1562}
+      names:
+      - "\u0411\u043E\u0440\u043E\u0432\u0438\u0446\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 9
+      stationId: 12
+      position: {x: 1521, y: 1724}
+      names:
+      - "\u041F\u043E\u043B\u044F\u043D\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 13
+      position: {x: 1572, y: 1777}
+      names:
+      - "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 1028
+      isOpen: 1
+    - lineId: 9
+      stationId: 14
+      position: {x: 1649, y: 1854}
+      names:
+      - "\u0422\u0443\u043B\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 15
+      position: {x: 1672, y: 1944}
+      names:
+      - "\u041D\u0430\u0433\u0430\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 16
+      position: {x: 1672, y: 2001}
+      names:
+      - "\u041D\u0430\u0433\u043E\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 17
+      position: {x: 1672, y: 2050}
+      names:
+      - "\u041D\u0430\u0445\u0438\u043C\u043E\u0432\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 9
+      stationId: 18
+      position: {x: 1672, y: 2107}
+      names:
+      - "\u0421\u0435\u0432\u0430\u0441\u0442\u043E\u043F\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 1
+      nameAlignment: 1028
+      isOpen: 1
+    - lineId: 9
+      stationId: 19
+      position: {x: 1672, y: 2157}
+      names:
+      - "\u0427\u0435\u0440\u0442\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 9
+      stationId: 20
+      position: {x: 1672, y: 2207}
+      names:
+      - "\u042E\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 9
+      stationId: 21
+      position: {x: 1672, y: 2257}
+      names:
+      - "\u041F\u0440\u0430\u0436\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 9
+      stationId: 22
+      position: {x: 1672, y: 2307}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 \u0410\u043A\u0430\u0434\u0435\u043C\u0438\u043A\u0430
+        \u042F\u043D\u0433\u0435\u043B\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 23
+      position: {x: 1672, y: 2357}
+      names:
+      - "\u0410\u043D\u043D\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 9
+      stationId: 24
+      position: {x: 1672, y: 2408}
+      names:
+      - "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0414\u043C\u0438\u0442\u0440\u0438\u044F
+        \u0414\u043E\u043D\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 9
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1487, y: 1205}
+      weight: 1
+    - lineId: 9
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1310, y: 1514}
+      weight: 1
+    - lineId: 9
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 9
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 10
+    name: "\u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.7058824, g: 0.83137256, b: 0.27058825, a: 1}
+    stations:
+    - lineId: 10
+      stationId: 0
+      position: {x: 1080, y: 565}
+      names:
+      - "\u0421\u0435\u043B\u0438\u0433\u0435\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 1
+      position: {x: 1125, y: 665}
+      names:
+      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 2
+      position: {x: 1240, y: 780}
+      names:
+      - "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 3
+      position: {x: 1324, y: 805}
+      names:
+      - "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 4
+      position: {x: 1415, y: 842}
+      names:
+      - "\u0424\u043E\u043D\u0432\u0438\u0437\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 5
+      position: {x: 1481, y: 908}
+      names:
+      - "\u0411\u0443\u0442\u044B\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 6
+      position: {x: 1508, y: 990}
+      names:
+      - "\u041C\u0430\u0440\u044C\u0438\u043D\u0430 \u0420\u043E\u0449\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 7
+      position: {x: 1508, y: 1055}
+      names:
+      - "\u0414\u043E\u0441\u0442\u043E\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 8
+      position: {x: 1508, y: 1189}
+      names:
+      - "\u0422\u0440\u0443\u0431\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 9
+      position: {x: 1655, y: 1313}
+      names:
+      - "\u0421\u0440\u0435\u0442\u0435\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 10
+      stationId: 10
+      position: {x: 1862, y: 1409}
+      names:
+      - "\u0427\u043A\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 11
+      position: {x: 1941, y: 1508}
+      names:
+      - "\u0420\u0438\u043C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 12
+      position: {x: 1941, y: 1622}
+      names:
+      - "\u041A\u0440\u0435\u0441\u0442\u044C\u044F\u043D\u0441\u043A\u0430\u044F
+        \u0437\u0430\u0441\u0442\u0430\u0432\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 13
+      position: {x: 1951, y: 1704}
+      names:
+      - "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 10
+      stationId: 14
+      position: {x: 2020, y: 1773}
+      names:
+      - "\u041A\u043E\u0436\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 15
+      position: {x: 2097, y: 1850}
+      names:
+      - "\u041F\u0435\u0447\u0430\u0442\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 16
+      position: {x: 2177, y: 1930}
+      names:
+      - "\u0412\u043E\u043B\u0436\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 17
+      position: {x: 2223, y: 2000}
+      names:
+      - "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 18
+      position: {x: 2223, y: 2060}
+      names:
+      - "\u0411\u0440\u0430\u0442\u0438\u0441\u043B\u0430\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 19
+      position: {x: 2223, y: 2120}
+      names:
+      - "\u041C\u0430\u0440\u044C\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 20
+      position: {x: 2223, y: 2180}
+      names:
+      - "\u0411\u043E\u0440\u0438\u0441\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 21
+      position: {x: 2223, y: 2240}
+      names:
+      - "\u0428\u0438\u043F\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 10
+      stationId: 22
+      position: {x: 2223, y: 2300}
+      names:
+      - "\u0417\u044F\u0431\u043B\u0438\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 10
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1080, y: 613}
+      weight: 1
+    - lineId: 10
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1268.7, y: 806}
+      weight: 1
+    - lineId: 10
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1373, y: 806}
+      weight: 1
+    - lineId: 10
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1628, y: 1314}
+      weight: 1
+    - lineId: 10
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1766, y: 1318}
+      weight: 2.49
+    - lineId: 10
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1939.98, y: 1489}
+      weight: 1
+    - lineId: 10
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 10
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 11
+    name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 1
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.41568628, g: 0.7882353, b: 0.78431374, a: 1}
+    stations:
+    - lineId: 11
+      stationId: 0
+      position: {x: 1816, y: 2107}
+      names:
+      - "\u0412\u0430\u0440\u0448\u0430\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 257
+      isOpen: 0
+    - lineId: 11
+      stationId: 1
+      position: {x: 1696, y: 2107}
+      names:
+      - "\u041A\u0430\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 257
+      isOpen: 1
+    - lineId: 11
+      stationId: 2
+      position: {x: 1490, y: 2107}
+      names:
+      - "\u0417\u044E\u0437\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 11
+      stationId: 3
+      position: {x: 1296, y: 2107}
+      names:
+      - "\u0412\u043E\u0440\u043E\u043D\u0446\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 11
+      stationId: 4
+      position: {x: 1170, y: 2095}
+      names:
+      - "\u041D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 11
+      stationId: 5
+      position: {x: 1024, y: 2053}
+      names:
+      - "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 11
+      stationId: 6
+      position: {x: 784, y: 1889}
+      names:
+      - "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 11
+      stationId: 7
+      position: {x: 675, y: 1738}
+      names:
+      - "\u0410\u043C\u0438\u043D\u044C\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 11
+      stationId: 8
+      position: {x: 619, y: 1604}
+      names:
+      - "\u0414\u0430\u0432\u044B\u0434\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 11
+      stationId: 9
+      position: {x: 588, y: 1382}
+      names:
+      - "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 3
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 11
+      stationId: 10
+      position: {x: 651, y: 1282}
+      names:
+      - "\u0422\u0435\u0440\u0435\u0445\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 11
+      stationId: 11
+      position: {x: 728, y: 1257}
+      names:
+      - "\u041C\u043D\u0451\u0432\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 11
+      stationId: 12
+      position: {x: 834, y: 1257}
+      names:
+      - "\u041D\u0430\u0440\u043E\u0434\u043D\u043E\u0435 \u041E\u043F\u043E\u043B\u0447\u0435\u043D\u0438\u0435"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 11
+      stationId: 13
+      position: {x: 933, y: 1220}
+      names:
+      - "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    connections:
+    - lineId: 11
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 11
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 917.8, y: 1262.2}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 0
+    nameAlignment: 0
+  - lineId: 12
+    name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F A"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.41568628, g: 0.7882353, b: 0.78431374, a: 1}
+    stations:
+    - lineId: 12
+      stationId: 0
+      position: {x: 955, y: 1465}
+      names:
+      - "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 12
+      stationId: 1
+      position: {x: 904, y: 1319}
+      names:
+      - "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 12
+      stationId: 2
+      position: {x: 933, y: 1220}
+      names:
+      - "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 12
+      stationId: 3
+      position: {x: 1008, y: 1145}
+      names:
+      - "\u0426\u0421\u041A\u0410"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 12
+      stationId: 4
+      position: {x: 1150, y: 1117}
+      names:
+      - "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 12
+      stationId: 5
+      position: {x: 1301, y: 1013}
+      names:
+      - "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 12
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 950.7, y: 1417.1}
+      weight: 1
+    - lineId: 12
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 913, y: 1250.4}
+      weight: 1
+    - lineId: 12
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 988, y: 1167.8}
+      weight: 1
+    - lineId: 12
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1044, y: 1113.7}
+      weight: 1
+    - lineId: 12
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1202.6, y: 1114.7}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 13
+    name: "\u0411\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.6745098, g: 0.7490196, b: 0.8901961, a: 1}
+    stations:
+    - lineId: 13
+      stationId: 0
+      position: {x: 1431, y: 2348}
+      names:
+      - "\u0411\u0438\u0442\u0446\u0435\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 4
+      nameAlignment: 260
+      isOpen: 1
+    - lineId: 13
+      stationId: 1
+      position: {x: 1558, y: 2348}
+      names:
+      - "\u041B\u0435\u0441\u043E\u043F\u0430\u0440\u043A\u043E\u0432\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 13
+      stationId: 2
+      position: {x: 1648, y: 2408}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 \u0421\u0442\u0430\u0440\u043E\u043A\u0430\u0447\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 13
+      stationId: 3
+      position: {x: 1648, y: 2477}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 \u0421\u043A\u043E\u0431\u0435\u043B\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 13
+      stationId: 4
+      position: {x: 1648, y: 2547}
+      names:
+      - "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0410\u0434\u043C\u0438\u0440\u0430\u043B\u0430
+        \u0423\u0448\u0430\u043A\u043E\u0432\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 13
+      stationId: 5
+      position: {x: 1648, y: 2612}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 \u0413\u043E\u0440\u0447\u0430\u043A\u043E\u0432\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 13
+      stationId: 6
+      position: {x: 1648, y: 2677}
+      names:
+      - "\u0411\u0443\u043D\u0438\u043D\u0441\u043A\u0430\u044F \u0430\u043B\u043B\u0435\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 13
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 13
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 13
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 13
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 13
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 13
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 7
+    nameAlignment: 260
+  - lineId: 14
+    name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u0438\u0439 \u043C\u043E\u043D\u043E\u0440\u0435\u043B\u044C\u0441"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.9019608, g: 0.41568628, b: 0.7529412, a: 1}
+    stations: []
+    connections: []
+    simpleLine: 1
+    hideName: 1
+    namePosition: 0
+    nameAlignment: 0
+  - lineId: 15
+    name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
+      \u043A\u043E\u043B\u044C\u0446\u043E"
+    style: 1
+    useSmoothCurves: 1
+    curveCenter: {x: 0.5, y: 10}
+    lineColor: {r: 1, g: 0.65882355, b: 0.6862745, a: 1}
+    stations:
+    - lineId: 15
+      stationId: 0
+      position: {x: 1651, y: 715}
+      names:
+      - "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+        \u0441\u0430\u0434"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 1
+      position: {x: 1304, y: 729}
+      names:
+      - "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 2
+      position: {x: 1240, y: 754}
+      names:
+      - "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 1028
+      isOpen: 1
+    - lineId: 15
+      stationId: 3
+      position: {x: 1138, y: 813}
+      names:
+      - "\u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 4
+      position: {x: 1076, y: 865}
+      names:
+      - "\u041A\u043E\u043F\u0442\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 5
+      position: {x: 1023, y: 919}
+      names:
+      - "\u0411\u0430\u043B\u0442\u0438\u0439\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 6
+      position: {x: 973, y: 990}
+      names:
+      - "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 15
+      stationId: 7
+      position: {x: 929, y: 1075}
+      names:
+      - "\u041F\u0430\u043D\u0444\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 8
+      position: {x: 911, y: 1123}
+      names:
+      - "\u0417\u043E\u0440\u0433\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 9
+      position: {x: 892, y: 1198}
+      names:
+      - "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 15
+      stationId: 10
+      position: {x: 881, y: 1296}
+      names:
+      - "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 15
+      stationId: 11
+      position: {x: 883, y: 1387}
+      names:
+      - "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 15
+      stationId: 12
+      position: {x: 958, y: 1617}
+      names:
+      - "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 13
+      position: {x: 1104, y: 1794}
+      names:
+      - "\u041B\u0443\u0436\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 15
+      stationId: 14
+      position: {x: 1320, y: 1911}
+      names:
+      - "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0413\u0430\u0433\u0430\u0440\u0438\u043D\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 15
+      position: {x: 1541, y: 1938}
+      names:
+      - "\u041A\u0440\u044B\u043C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 16
+      position: {x: 1720, y: 1897}
+      names:
+      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 17
+      position: {x: 1805, y: 1858}
+      names:
+      - "\u0417\u0418\u041B"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 18
+      position: {x: 1893, y: 1798}
+      names:
+      - "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 19
+      position: {x: 1951, y: 1744}
+      names:
+      - "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 20
+      position: {x: 1988, y: 1705}
+      names:
+      - "\u0423\u0433\u0440\u0435\u0448\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 21
+      position: {x: 2055, y: 1600}
+      names:
+      - "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 22
+      position: {x: 2103, y: 1470}
+      names:
+      - "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 1025
+      isOpen: 1
+    - lineId: 15
+      stationId: 23
+      position: {x: 2115, y: 1406}
+      names:
+      - "\u0410\u043D\u0434\u0440\u043E\u043D\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 24
+      position: {x: 2122, y: 1331}
+      names:
+      - "\u0428\u043E\u0441\u0441\u0435"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 25
+      position: {x: 2118, y: 1245}
+      names:
+      - "\u0421\u043E\u043A\u043E\u043B\u0438\u043D\u0430\u044F \u0413\u043E\u0440\u0430"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 15
+      stationId: 26
+      position: {x: 2100, y: 1154}
+      names:
+      - "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 15
+      stationId: 27
+      position: {x: 1977, y: 918}
+      names:
+      - "\u041B\u043E\u043A\u043E\u043C\u043E\u0442\u0438\u0432"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 15
+      stationId: 28
+      position: {x: 1892, y: 835}
+      names:
+      - "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 29
+      position: {x: 1842, y: 798}
+      names:
+      - "\u0411\u0435\u043B\u043E\u043A\u0430\u043C\u0435\u043D\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 15
+      stationId: 30
+      position: {x: 1784, y: 765}
+      names:
+      - "\u0420\u043E\u0441\u0442\u043E\u043A\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 15
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 24
+      endStationId: 25
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 25
+      endStationId: 26
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 26
+      endStationId: 27
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 27
+      endStationId: 28
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 28
+      endStationId: 29
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 29
+      endStationId: 30
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 15
+      startStationId: 30
+      endStationId: 0
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 0
+    hideName: 0
+    namePosition: 0
+    nameAlignment: 0
+  - lineId: 16
+    name: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.9019608, g: 0.41568628, b: 0.7529412, a: 1}
+    stations:
+    - lineId: 16
+      stationId: 0
+      position: {x: 1995, y: 1262}
+      names:
+      - "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 1
+      position: {x: 1995, y: 1360}
+      names:
+      - "\u041B\u0435\u0444\u043E\u0440\u0442\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 2
+      position: {x: 2030, y: 1420}
+      names:
+      - "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 3
+      position: {x: 2103, y: 1493}
+      names:
+      - "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 4
+      position: {x: 2180, y: 1570}
+      names:
+      - "\u0421\u0442\u0430\u0445\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 5
+      position: {x: 2270, y: 1695}
+      names:
+      - "\u041E\u043A\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 6
+      position: {x: 2289, y: 1815}
+      names:
+      - "\u042E\u0433\u043E-\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 7
+      nameAlignment: 516
+      isOpen: 1
+    - lineId: 16
+      stationId: 7
+      position: {x: 2386, y: 1892}
+      names:
+      - "\u041A\u043E\u0441\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 6
+      nameAlignment: 257
+      isOpen: 1
+    - lineId: 16
+      stationId: 8
+      position: {x: 2568, y: 1922}
+      names:
+      - "\u0423\u043B\u0438\u0446\u0430 \u0414\u043C\u0438\u0442\u0440\u0438\u0435\u0432\u0441\u043A\u043E\u0433\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 9
+      position: {x: 2568, y: 1977}
+      names:
+      - "\u041B\u0443\u0445\u043C\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 16
+      stationId: 10
+      position: {x: 2568, y: 2032}
+      names:
+      - "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 16
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 16
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 16
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 16
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 16
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 2270, y: 1662}
+      weight: 1
+    - lineId: 16
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 2270, y: 1789}
+      weight: 1
+    - lineId: 16
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 2367, y: 1888}
+      weight: 1
+    - lineId: 16
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 2570, y: 1895}
+      weight: 1.47
+    - lineId: 16
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 16
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 8
+    nameAlignment: 513
+  - lineId: 18
+    name: "\u041C\u0426\u0414-1"
+    style: 1
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.98039216, g: 0.6431373, b: 0, a: 1}
+    stations:
+    - lineId: 18
+      stationId: 0
+      position: {x: 1265, y: 199}
+      names:
+      - "\u041B\u043E\u0431\u043D\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 1
+      position: {x: 1265, y: 249}
+      names:
+      - "\u0428\u0435\u0440\u0435\u043C\u0435\u0442\u044C\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 2
+      position: {x: 1265, y: 299}
+      names:
+      - "\u0425\u043B\u0435\u0431\u043D\u0438\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 3
+      position: {x: 1265, y: 349}
+      names:
+      - "\u0412\u043E\u0434\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 4
+      position: {x: 1265, y: 399}
+      names:
+      - "\u0414\u043E\u043B\u0433\u043E\u043F\u0440\u0443\u0434\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 5
+      position: {x: 1265, y: 449}
+      names:
+      - "\u041D\u043E\u0432\u043E\u0434\u0430\u0447\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 6
+      position: {x: 1265, y: 499}
+      names:
+      - "\u041C\u0430\u0440\u043A"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 7
+      position: {x: 1265, y: 549}
+      names:
+      - "\u041B\u0438\u0430\u043D\u043E\u0437\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 8
+      position: {x: 1265, y: 599}
+      names:
+      - "\u0411\u0435\u0441\u043A\u0443\u0434\u043D\u0438\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 9
+      position: {x: 1265, y: 648}
+      names:
+      - "\u0414\u0435\u0433\u0443\u043D\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 10
+      position: {x: 1265, y: 770}
+      names:
+      - "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 11
+      position: {x: 1265, y: 877}
+      names:
+      - "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 12
+      position: {x: 1265, y: 1013}
+      names:
+      - "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 13
+      position: {x: 1223, y: 1137}
+      names:
+      - "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 14
+      position: {x: 1048, y: 1312}
+      names:
+      - "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 15
+      position: {x: 973, y: 1387}
+      names:
+      - "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 18
+      stationId: 16
+      position: {x: 815, y: 1545}
+      names:
+      - "\u0424\u0438\u043B\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 17
+      position: {x: 645, y: 1485}
+      names:
+      - "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 18
+      position: {x: 550, y: 1390}
+      names:
+      - "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 19
+      position: {x: 500, y: 1340}
+      names:
+      - "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u041F\u043E\u0441\u0451\u043B\u043E\u043A"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 20
+      position: {x: 450, y: 1290}
+      names:
+      - "\u0421\u0435\u0442\u0443\u043D\u044C"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 21
+      position: {x: 420, y: 1235}
+      names:
+      - "\u041D\u0435\u043C\u0447\u0438\u043D\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 22
+      position: {x: 420, y: 1185}
+      names:
+      - "\u0421\u043A\u043E\u043B\u043A\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 23
+      position: {x: 420, y: 1135}
+      names:
+      - "\u0411\u0430\u043A\u043E\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 18
+      stationId: 24
+      position: {x: 420, y: 1085}
+      names:
+      - "\u041E\u0434\u0438\u043D\u0446\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 18
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 18
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 7
+    nameAlignment: 516
+  - lineId: 17
+    name: "\u041C\u0426\u0414-2"
+    style: 1
+    useSmoothCurves: 0
+    curveCenter: {x: 0, y: 0}
+    lineColor: {r: 0.91764706, g: 0.25490198, b: 0.5176471, a: 1}
+    stations:
+    - lineId: 17
+      stationId: 0
+      position: {x: 420, y: 600}
+      names:
+      - "\u041D\u0430\u0445\u0430\u0431\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 1
+      position: {x: 420, y: 650}
+      names:
+      - "\u0410\u043D\u0438\u043A\u0435\u0435\u0432\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 2
+      position: {x: 420, y: 700}
+      names:
+      - "\u041E\u043F\u0430\u043B\u0438\u0445\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 3
+      position: {x: 420, y: 750}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 4
+      position: {x: 420, y: 800}
+      names:
+      - "\u041F\u0430\u0432\u0448\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 5
+      position: {x: 420, y: 850}
+      names:
+      - "\u041F\u0435\u043D\u044F\u0433\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 6
+      position: {x: 550, y: 970}
+      names:
+      - "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 7
+      position: {x: 660, y: 970}
+      names:
+      - "\u0422\u0440\u0438\u043A\u043E\u0442\u0430\u0436\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 5
+      nameAlignment: 258
+      isOpen: 1
+    - lineId: 17
+      stationId: 8
+      position: {x: 755, y: 970}
+      names:
+      - "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 9
+      position: {x: 853, y: 970}
+      names:
+      - "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 10
+      position: {x: 973, y: 970}
+      names:
+      - "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 11
+      position: {x: 1100, y: 970}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0431\u0430\u043B\u0442\u0438\u0435\u0446"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 12
+      position: {x: 1217, y: 970}
+      names:
+      - "\u0413\u0440\u0430\u0436\u0434\u0430\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 2
+      nameAlignment: 514
+      isOpen: 1
+    - lineId: 17
+      stationId: 13
+      position: {x: 1330, y: 970}
+      names:
+      - "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 14
+      position: {x: 1702, y: 1057}
+      names:
+      - "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 17
+      stationId: 15
+      position: {x: 1810, y: 1165}
+      names:
+      - "\u041A\u0430\u043B\u0430\u043D\u0447\u0451\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 17
+      stationId: 16
+      position: {x: 1883, y: 1388}
+      names:
+      - "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 3
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 17
+      position: {x: 1980, y: 1485}
+      names:
+      - "\u041C\u043E\u0441\u043A\u0432\u0430-\u0422\u043E\u0432\u0430\u0440\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 18
+      position: {x: 2045, y: 1550}
+      names:
+      - "\u041A\u0430\u043B\u0438\u0442\u043D\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 17
+      stationId: 19
+      position: {x: 2095, y: 1600}
+      names:
+      - "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 0
+      namePosition: 8
+      nameAlignment: 513
+      isOpen: 1
+    - lineId: 17
+      stationId: 20
+      position: {x: 2136, y: 1660}
+      names:
+      - "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
+      currentNameIndex: 0
+      m_override: 1
+      hideName: 1
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 21
+      position: {x: 2136, y: 1930}
+      names:
+      - "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 22
+      position: {x: 2136, y: 2000}
+      names:
+      - "\u0414\u0435\u043F\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 23
+      position: {x: 2136, y: 2060}
+      names:
+      - "\u041F\u0435\u0440\u0435\u0440\u0432\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 24
+      position: {x: 2136, y: 2120}
+      names:
+      - "\u041A\u0443\u0440\u044C\u044F\u043D\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 25
+      position: {x: 2136, y: 2180}
+      names:
+      - "\u041C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0447\u044C\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 26
+      position: {x: 1965, y: 2228}
+      names:
+      - "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 27
+      position: {x: 1898, y: 2320}
+      names:
+      - "\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u043E\u0435"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 28
+      position: {x: 1898, y: 2380}
+      names:
+      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0439"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 29
+      position: {x: 1898, y: 2440}
+      names:
+      - "\u0411\u0438\u0442\u0446\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 30
+      position: {x: 1898, y: 2500}
+      names:
+      - "\u0411\u0443\u0442\u043E\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 31
+      position: {x: 1898, y: 2560}
+      names:
+      - "\u0429\u0435\u0440\u0431\u0438\u043D\u043A\u0430"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 32
+      position: {x: 1898, y: 2620}
+      names:
+      - "\u041E\u0441\u0442\u0430\u0444\u044C\u0435\u0432\u043E"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 33
+      position: {x: 1898, y: 2680}
+      names:
+      - "\u0421\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u0430\u044F"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    - lineId: 17
+      stationId: 34
+      position: {x: 1898, y: 2740}
+      names:
+      - "\u041F\u043E\u0434\u043E\u043B\u044C\u0441\u043A"
+      currentNameIndex: 0
+      m_override: 0
+      hideName: 0
+      namePosition: 0
+      nameAlignment: 0
+      isOpen: 1
+    connections:
+    - lineId: 17
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 423.7, y: 967.3}
+      weight: 2.15
+    - lineId: 17
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1625.6, y: 974}
+      weight: 2.15
+    - lineId: 17
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1881, y: 1238}
+      weight: 3.18
+    - lineId: 17
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 24
+      endStationId: 25
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 25
+      endStationId: 26
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 2136, y: 2223}
+      weight: 2.19
+    - lineId: 17
+      startStationId: 26
+      endStationId: 27
+      isOpen: 1
+      overrideBend: 1
+      bendPoint: {x: 1896, y: 2225}
+      weight: 1
+    - lineId: 17
+      startStationId: 27
+      endStationId: 28
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 28
+      endStationId: 29
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 29
+      endStationId: 30
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 30
+      endStationId: 31
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 31
+      endStationId: 32
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 32
+      endStationId: 33
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    - lineId: 17
+      startStationId: 33
+      endStationId: 34
+      isOpen: 1
+      overrideBend: 0
+      bendPoint: {x: 0, y: 0}
+      weight: 1
+    simpleLine: 1
+    hideName: 0
+    namePosition: 7
+    nameAlignment: 516
+  crossings:
+  - stationsGlobalIds:
+    - lineId: 6
+      stationId: 12
+    - lineId: 5
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 8
+    - lineId: 1
+      stationId: 11
+    - lineId: 0
+      stationId: 9
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 9
+    - lineId: 0
+      stationId: 10
+    - lineId: 9
+      stationId: 11
+    - lineId: 3
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 6
+      stationId: 10
+    - lineId: 1
+      stationId: 10
+    - lineId: 9
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 0
+    - lineId: 0
+      stationId: 12
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 1
+    - lineId: 5
+      stationId: 12
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 2
+    - lineId: 9
+      stationId: 13
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 3
+    - lineId: 1
+      stationId: 13
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 6
+    - lineId: 0
+      stationId: 5
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 7
+    - lineId: 5
+      stationId: 7
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 8
+    - lineId: 9
+      stationId: 8
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 9
+    - lineId: 1
+      stationId: 8
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 10
+    - lineId: 6
+      stationId: 9
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 11
+    - lineId: 3
+      stationId: 7
+    - lineId: 2
+      stationId: 11
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 6
+      stationId: 13
+    - lineId: 4
+      stationId: 4
+    - lineId: 7
+      stationId: 6
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 7
+      stationId: 7
+    - lineId: 1
+      stationId: 12
+    - lineId: 5
+      stationId: 11
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 5
+      stationId: 9
+    - lineId: 0
+      stationId: 7
+    - lineId: 10
+      stationId: 9
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 8
+    - lineId: 9
+      stationId: 9
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 7
+    - lineId: 18
+      stationId: 16
+    - lineId: 4
+      stationId: 5
+    - lineId: 10
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 12
+      stationId: 5
+    - lineId: 9
+      stationId: 7
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 12
+      stationId: 4
+    - lineId: 1
+      stationId: 7
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 12
+      stationId: 2
+    - lineId: 6
+      stationId: 6
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 12
+      stationId: 1
+    - lineId: 15
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 11
+    - lineId: 3
+      stationId: 11
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 3
+      stationId: 5
+    - lineId: 15
+      stationId: 12
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 8
+      stationId: 1
+    - lineId: 2
+      stationId: 12
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 5
+      stationId: 14
+    - lineId: 15
+      stationId: 14
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 12
+    - lineId: 6
+      stationId: 14
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 11
+    - lineId: 7
+      stationId: 5
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 22
+    - lineId: 16
+      stationId: 3
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 21
+    - lineId: 18
+      stationId: 19
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 27
+    - lineId: 0
+      stationId: 1
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 1
+    - lineId: 9
+      stationId: 3
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 11
+    - lineId: 9
+      stationId: 5
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 6
+    - lineId: 18
+      stationId: 10
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 4
+      stationId: 11
+    - lineId: 3
+      stationId: 7
+    - lineId: 2
+      stationId: 11
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 8
+      stationId: 0
+    - lineId: 3
+      stationId: 12
+    - lineId: 12
+      stationId: 0
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 11
+      stationId: 9
+    - lineId: 3
+      stationId: 0
+    - lineId: 2
+      stationId: 14
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 8
+      stationId: 5
+    - lineId: 11
+      stationId: 6
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 0
+      stationId: 17
+    - lineId: 11
+      stationId: 5
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 5
+      stationId: 18
+    - lineId: 11
+      stationId: 3
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 9
+      stationId: 18
+    - lineId: 11
+      stationId: 1
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 13
+      stationId: 0
+    - lineId: 5
+      stationId: 23
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 13
+      stationId: 2
+    - lineId: 9
+      stationId: 24
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 22
+    - lineId: 1
+      stationId: 22
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 6
+      stationId: 20
+    - lineId: 16
+      stationId: 7
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 6
+      stationId: 16
+    - lineId: 18
+      stationId: 20
+    isOpen: 1

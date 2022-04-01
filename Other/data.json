@@ -1,0 +1,510 @@
+﻿{
+    "lines": [
+        {
+            "lineId": 1,
+            "name": "Сокольническая линия",
+            "style": 0,
+            "useSmoothCurves": false,
+            "lineColor": {
+                "r": 0.8549019694328308,
+                "g": 0.12941177189350129,
+                "b": 0.1568627506494522,
+                "a": 0.0
+            },
+            "stations": [
+                {
+                    "lineId": 1,
+                    "stationId": 0,
+                    "position": {
+                        "x": 1892.0,
+                        "y": 873.0
+                    },
+                    "names": [
+                        "Библеотека имени Ленина"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 1,
+                    "position": {
+                        "x": 1956.0,
+                        "y": 937.0
+                    },
+                    "names": [
+                        "Кропоткинская"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 2,
+                    "position": {
+                        "x": 1928.0,
+                        "y": 1009.0
+                    },
+                    "names": [
+                        "Спортивная"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 3,
+                    "position": {
+                        "x": 1881.0,
+                        "y": 1056.0
+                    },
+                    "names": [
+                        "Воробъевы горы"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 4,
+                    "position": {
+                        "x": 1834.0,
+                        "y": 1104.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 5,
+                    "position": {
+                        "x": 1743.0,
+                        "y": 1197.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 6,
+                    "position": {
+                        "x": 1704.0,
+                        "y": 1237.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 7,
+                    "position": {
+                        "x": 1650.0,
+                        "y": 1291.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 8,
+                    "position": {
+                        "x": 1578.0,
+                        "y": 1363.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 9,
+                    "position": {
+                        "x": 1508.0,
+                        "y": 1433.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 10,
+                    "position": {
+                        "x": 1379.0,
+                        "y": 1562.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 11,
+                    "position": {
+                        "x": 1306.0,
+                        "y": 1634.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 12,
+                    "position": {
+                        "x": 1258.0,
+                        "y": 1680.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 13,
+                    "position": {
+                        "x": 1188.0,
+                        "y": 1749.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 14,
+                    "position": {
+                        "x": 1143.0,
+                        "y": 1794.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 15,
+                    "position": {
+                        "x": 1075.0,
+                        "y": 1862.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 16,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 1950.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 17,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 2053.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 18,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 2157.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 19,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 2207.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 20,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 2257.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 21,
+                    "position": {
+                        "x": 1048.0,
+                        "y": 2307.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 22,
+                    "position": {
+                        "x": 1070.0,
+                        "y": 2398.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 23,
+                    "position": {
+                        "x": 1120.0,
+                        "y": 2448.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 24,
+                    "position": {
+                        "x": 1170.0,
+                        "y": 2498.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "stationId": 25,
+                    "position": {
+                        "x": 1220.0,
+                        "y": 2548.0
+                    },
+                    "names": [
+                        "Университет"
+                    ],
+                    "currentNameIndex": 0,
+                    "isOpen": true
+                }
+            ],
+            "connections": [
+                {
+                    "lineId": 1,
+                    "startStationId": 0,
+                    "endStationId": 1,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 1,
+                    "endStationId": 2,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 2,
+                    "endStationId": 3,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 3,
+                    "endStationId": 4,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 4,
+                    "endStationId": 5,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 5,
+                    "endStationId": 6,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 6,
+                    "endStationId": 7,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 7,
+                    "endStationId": 8,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 8,
+                    "endStationId": 9,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 9,
+                    "endStationId": 10,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 10,
+                    "endStationId": 11,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 11,
+                    "endStationId": 12,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 12,
+                    "endStationId": 13,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 13,
+                    "endStationId": 14,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 14,
+                    "endStationId": 15,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 15,
+                    "endStationId": 16,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 16,
+                    "endStationId": 17,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 17,
+                    "endStationId": 18,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 18,
+                    "endStationId": 19,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 19,
+                    "endStationId": 20,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 20,
+                    "endStationId": 21,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 21,
+                    "endStationId": 22,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 22,
+                    "endStationId": 23,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 23,
+                    "endStationId": 24,
+                    "isOpen": true
+                },
+                {
+                    "lineId": 1,
+                    "startStationId": 24,
+                    "endStationId": 25,
+                    "isOpen": true
+                }
+            ],
+            "simpleLine": true
+        }
+    ],
+    "crossings": []
+}

@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 749040865
+    locked: 0
+  - name: Lines
+    uniqueID: 545652485
+    locked: 0
+  - name: Junctions
+    uniqueID: 2842522559
+    locked: 0
+  - name: Stations
+    uniqueID: 190270811
+    locked: 0
+  - name: Labels
+    uniqueID: 2581874139
+    locked: 0

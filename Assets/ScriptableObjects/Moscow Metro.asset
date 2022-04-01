@@ -1,0 +1,308 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d5f9bd6fa04f04bfdeb64fc7345cbd, type: 3}
+  m_Name: Moscow Metro
+  m_EditorClassIdentifier: 
+  lines:
+  - lineId: 1
+    name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+      \u043B\u0438\u043D\u0438\u044F"
+    style: 0
+    useSmoothCurves: 0
+    lineColor: {r: 0.85490197, g: 0.12941177, b: 0.15686275, a: 0}
+    stations:
+    - lineId: 1
+      stationId: 0
+      position: {x: 1892, y: 873}
+      names:
+      - "\u0411\u0438\u0431\u043B\u0435\u043E\u0442\u0435\u043A\u0430 \u0438\u043C\u0435\u043D\u0438
+        \u041B\u0435\u043D\u0438\u043D\u0430"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 1
+      position: {x: 1956, y: 937}
+      names:
+      - "\u041A\u0440\u043E\u043F\u043E\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 2
+      position: {x: 1928, y: 1009}
+      names:
+      - "\u0421\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 3
+      position: {x: 1881, y: 1056}
+      names:
+      - "\u0412\u043E\u0440\u043E\u0431\u044A\u0435\u0432\u044B \u0433\u043E\u0440\u044B"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 4
+      position: {x: 1834, y: 1104}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 5
+      position: {x: 1743, y: 1197}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 6
+      position: {x: 1704, y: 1237}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 7
+      position: {x: 1650, y: 1291}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 8
+      position: {x: 1578, y: 1363}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 9
+      position: {x: 1508, y: 1433}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 10
+      position: {x: 1379, y: 1562}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 11
+      position: {x: 1306, y: 1634}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 12
+      position: {x: 1258, y: 1680}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 13
+      position: {x: 1188, y: 1749}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 14
+      position: {x: 1143, y: 1794}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 15
+      position: {x: 1075, y: 1862}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 16
+      position: {x: 1048, y: 1950}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 17
+      position: {x: 1048, y: 2053}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 18
+      position: {x: 1048, y: 2157}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 19
+      position: {x: 1048, y: 2207}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 20
+      position: {x: 1048, y: 2257}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 21
+      position: {x: 1048, y: 2307}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 22
+      position: {x: 1070, y: 2398}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 23
+      position: {x: 1120, y: 2448}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 24
+      position: {x: 1170, y: 2498}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    - lineId: 1
+      stationId: 25
+      position: {x: 1220, y: 2548}
+      names:
+      - "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      currentNameIndex: 0
+      isOpen: 1
+    connections:
+    - lineId: 1
+      startStationId: 0
+      endStationId: 1
+      isOpen: 1
+    - lineId: 1
+      startStationId: 1
+      endStationId: 2
+      isOpen: 1
+    - lineId: 1
+      startStationId: 2
+      endStationId: 3
+      isOpen: 1
+    - lineId: 1
+      startStationId: 3
+      endStationId: 4
+      isOpen: 1
+    - lineId: 1
+      startStationId: 4
+      endStationId: 5
+      isOpen: 1
+    - lineId: 1
+      startStationId: 5
+      endStationId: 6
+      isOpen: 1
+    - lineId: 1
+      startStationId: 6
+      endStationId: 7
+      isOpen: 1
+    - lineId: 1
+      startStationId: 7
+      endStationId: 8
+      isOpen: 1
+    - lineId: 1
+      startStationId: 8
+      endStationId: 9
+      isOpen: 1
+    - lineId: 1
+      startStationId: 9
+      endStationId: 10
+      isOpen: 1
+    - lineId: 1
+      startStationId: 10
+      endStationId: 11
+      isOpen: 1
+    - lineId: 1
+      startStationId: 11
+      endStationId: 12
+      isOpen: 1
+    - lineId: 1
+      startStationId: 12
+      endStationId: 13
+      isOpen: 1
+    - lineId: 1
+      startStationId: 13
+      endStationId: 14
+      isOpen: 1
+    - lineId: 1
+      startStationId: 14
+      endStationId: 15
+      isOpen: 1
+    - lineId: 1
+      startStationId: 15
+      endStationId: 16
+      isOpen: 1
+    - lineId: 1
+      startStationId: 16
+      endStationId: 17
+      isOpen: 1
+    - lineId: 1
+      startStationId: 17
+      endStationId: 18
+      isOpen: 1
+    - lineId: 1
+      startStationId: 18
+      endStationId: 19
+      isOpen: 1
+    - lineId: 1
+      startStationId: 19
+      endStationId: 20
+      isOpen: 1
+    - lineId: 1
+      startStationId: 20
+      endStationId: 21
+      isOpen: 1
+    - lineId: 1
+      startStationId: 21
+      endStationId: 22
+      isOpen: 1
+    - lineId: 1
+      startStationId: 22
+      endStationId: 23
+      isOpen: 1
+    - lineId: 1
+      startStationId: 23
+      endStationId: 24
+      isOpen: 1
+    - lineId: 1
+      startStationId: 24
+      endStationId: 25
+      isOpen: 1
+    simpleLine: 1
+  crossings: []
