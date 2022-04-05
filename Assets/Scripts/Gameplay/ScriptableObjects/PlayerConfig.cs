@@ -13,6 +13,7 @@ namespace ScriptableObjects
         [Header("Movement")]
         public float normalMaxSpeed = 5f;
         public float moveSmoothTime = 1f;
+        public float normalSmoothTime = 1f;
         public float friction = 0.8f;
     }
 }

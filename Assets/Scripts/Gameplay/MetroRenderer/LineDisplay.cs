@@ -12,6 +12,14 @@ namespace Gameplay
 
         public LineSubDisplay subDisplayPrefab;
 
+        public void SetFocused(bool value)
+        {
+            foreach (LineSubDisplay display in subDisplays)
+            {
+                display.SetFocused(value);
+            }
+        }
+        
         public void Refresh()
         {
             foreach (LineSubDisplay subDisplay in subDisplays)
@@ -34,7 +42,7 @@ namespace Gameplay
             }
         }
         
-        public List<List<ConnData>> GetSortedLine()
+        private List<List<ConnData>> GetSortedLine()
         {
             List<List<ConnData>> allLines = new List<List<ConnData>>();
 

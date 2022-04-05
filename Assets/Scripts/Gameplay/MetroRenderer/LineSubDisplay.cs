@@ -18,8 +18,16 @@ namespace Gameplay
         public SpriteShape abovetrains;
 
         private static readonly int color = Shader.PropertyToID("_Color");
+        private static readonly int isFocused = Shader.PropertyToID("_IsFocused");
         private static MaterialPropertyBlock block;
-
+        
+        public void SetFocused(bool value)
+        {
+            renderer.GetPropertyBlock(block);
+            block.SetFloat(isFocused, value ? 1 : 0);
+            renderer.SetPropertyBlock(block);
+        }
+        
         public void Refresh()
         {
             block ??= new MaterialPropertyBlock();

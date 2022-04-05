@@ -6,7 +6,10 @@ Shader "Metro/TintedSprite"
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Main Tint", Color) = (1,1,1,1)
 		_BackColor ("Background Tint", Color) = (1,1,1,1)
-		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
+		_UnfocusedSaturation ("Unfocused Tint",  Range(0.0, 1.0)) = 1
+
+		[MaterialToggle] _IsFocused ("Is Focused", Float) = 1
+		_FocusArea ("Focus Area", Vector) = (-50,-50,50,50)
 	}
 
 	SubShader
@@ -37,51 +40,41 @@ Shader "Metro/TintedSprite"
 			{
 				float4 vertex   : POSITION;
 				float4 color    : COLOR;
-				float2 texcoord : TEXCOORD0;
+				float2 uv : TEXCOORD0;
 			};
 
 			struct v2f
 			{
 				float4 vertex   : SV_POSITION;
 				fixed4 color    : COLOR;
-				float2 texcoord  : TEXCOORD0;
+				float2 uv  : TEXCOORD0;
+				float2 worldPos : TEXCOORD1;
 			};
 			
 			fixed4 _Color;
 			fixed4 _BackColor;
+			float _UnfocusedSaturation;
+
+			bool _IsFocused;
+			float4 _FocusArea;
 
 			v2f vert(appdata_t IN)
 			{
 				v2f OUT;
 				OUT.vertex = UnityObjectToClipPos(IN.vertex);
-				OUT.texcoord = IN.texcoord;
+				OUT.worldPos = mul (unity_ObjectToWorld, IN.vertex);
+				OUT.uv = IN.uv;
 				OUT.color = IN.color * _Color;
-				#ifdef PIXELSNAP_ON
-				OUT.vertex = UnityPixelSnap (OUT.vertex);
-				#endif
 
 				return OUT;
 			}
 
 			sampler2D _MainTex;
 			sampler2D _AlphaTex;
-			float _AlphaSplitEnabled;
-
-			fixed4 SampleSpriteTexture (float2 uv)
-			{
-				fixed4 color = tex2D (_MainTex, uv);
-
-#if UNITY_TEXTURE_ALPHASPLIT_ALLOWED
-				if (_AlphaSplitEnabled)
-					color.a = tex2D (_AlphaTex, uv).r;
-#endif //UNITY_TEXTURE_ALPHASPLIT_ALLOWED
-
-				return color;
-			}
 
 			fixed4 frag(v2f IN) : SV_Target
 			{
-				fixed4 c = SampleSpriteTexture (IN.texcoord);
+				fixed4 c = tex2D (_MainTex, IN.uv);
 
                 if (c.r > 0.6){
                     c *= IN.color;
@@ -89,6 +82,23 @@ Shader "Metro/TintedSprite"
                     c.rgb = _BackColor.rgb;
                 }
 				c.rgb *= c.a;
+
+				if (!_IsFocused)
+				{
+					fixed lum = Luminance(c.rgb);
+					c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
+					c.a *= _UnfocusedSaturation;
+				}else
+				{
+					if (!(IN.worldPos.x < _FocusArea.x && _FocusArea.z < IN.worldPos.x &&
+					      IN.worldPos.y < _FocusArea.y && _FocusArea.w < IN.worldPos.y))
+						{
+							fixed lum = Luminance(c.rgb);
+							c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
+							c.a *= _UnfocusedSaturation;
+						}
+				}
+
 				return c;
 			}
 		ENDCG

@@ -1,4 +1,5 @@
-﻿using UnityEngine.InputSystem;
+﻿using Gameplay;
+using UnityEngine.InputSystem;
 
 
 namespace Model
@@ -7,6 +8,7 @@ namespace Model
     public class GameModel
     {
         public PlayerInput input;
-        
+        public MetroRenderer renderer;
+
     }
 }

@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Sprite-Tinted
   m_Shader: {fileID: 4800000, guid: d3e98acdecdd31642adf764a4ebe8cae, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _ISFOCUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -64,6 +64,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _IsFocused: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -72,9 +73,12 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UnfocusedSaturation: 0.812
     - _ZWrite: 1
     m_Colors:
     - _BackColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FocusArea: {r: 150, g: 150, b: -150, a: -150}
+    - _UnfocusedTint: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
   m_BuildTextureStacks: []

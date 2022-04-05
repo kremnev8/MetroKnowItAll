@@ -15,6 +15,6 @@ MonoBehaviour:
   zoomSpeed: 5
   minZoom: 40
   maxZoom: 140
-  normalMaxSpeed: 6
-  moveSmoothTime: 0.07
-  friction: 0.5
+  normalMaxSpeed: 12
+  moveSmoothTime: 0.05
+  friction: 0.9

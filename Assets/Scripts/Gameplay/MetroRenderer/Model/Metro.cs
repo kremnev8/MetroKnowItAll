@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 using Util;
 using System.IO;
-
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -19,6 +19,18 @@ namespace Gameplay
         public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
 
+        public MetroStation PickRandomStation(int lineId)
+        {
+            int index = Random.Range(0, lines[lineId].stations.Count);
+            return lines[lineId].stations[index];
+        }
+        
+        public MetroLine PickRandomLine()
+        {
+            int index = Random.Range(0, lines.Count);
+            return lines[index];
+        }
+        
         private void OnValidate()
         {
             Debug.Log("Validate");
@@ -66,11 +78,13 @@ namespace Gameplay
                     }
                 }
             }
-
+            
+#if UNITY_EDITOR
             if (MetroRenderer.instance != null && MetroRenderer.instance.metro == this)
             {
                 MetroRenderer.instance.dirty = true;
             }
+#endif
         }
     }
     

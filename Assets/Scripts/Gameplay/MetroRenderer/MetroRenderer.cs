@@ -17,34 +17,43 @@ namespace Gameplay
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour
     {
+        
+#if UNITY_EDITOR        
         public static MetroRenderer instance;
+#endif
 
-        public Transform stationRoot;
-        public Transform lineRoot;
-        public Transform crossingRoot;
-        public Material lineMat;
+        [SerializeField] private Transform stationRoot;
+        [SerializeField] private Transform lineRoot;
+        [SerializeField] private Transform crossingRoot;
+        [SerializeField] private Material lineMat;
 
+        [SerializeField] private StationDisplay stationPrefab;
+        [SerializeField] private LineDisplay linePrefab;
+        [SerializeField] private CrossingDisplay crossingPrefab;    
+        
         public Metro metro;
-        public static Vector2 scale = new Vector2(0.1f, -0.1f);
-        public static Vector2 translation = new Vector2(-150, 150);
-
-        public StationDisplay stationPrefab;
-        public LineDisplay linePrefab;
-        public CrossingDisplay crossingPrefab;
 
         private List<StationDisplay> stationDisplays = new List<StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
-        
-        private static readonly int color = Shader.PropertyToID("_Color");
-
         internal bool dirty;
 
+        public int focusedLineId;
+        public Area focusArea;
+        
+        
+        public static Vector2 scale = new Vector2(0.1f, -0.1f);
+        public static Vector2 translation = new Vector2(-150, 150);
+        private static readonly int color = Shader.PropertyToID("_Color");
+        private static readonly int focusAreaProp = Shader.PropertyToID("_FocusArea");
+        
 
+#if UNITY_EDITOR   
         private void OnEnable()
         {
             instance = this;
         }
+#endif
 
         private void Awake()
         {
@@ -126,6 +135,66 @@ namespace Gameplay
             lineDisplays.Clear();
             crossingDisplays.Clear();
         }
+
+        public void HideAllLabels()
+        {
+            foreach (StationDisplay display in stationDisplays)
+            {
+                display.SetLabelVisible(false, Color.white, true);
+            }
+        }
+
+        public void ClearFocus()
+        {
+            focusArea = Area.Everywhere;
+            focusedLineId = -1;
+            
+            lineMat.SetVector(focusAreaProp, focusArea.GetVector());
+            foreach (LineDisplay lineDisplay in lineDisplays)  
+            {
+                lineDisplay.SetFocused(true);
+            }
+
+            foreach (StationDisplay stationDisplay in stationDisplays)
+            {
+                stationDisplay.SetFocused(true);
+            }
+        }
+
+        public void FocusLine(int lineId)
+        {
+            foreach (LineDisplay lineDisplay in lineDisplays)  
+            {
+                lineDisplay.SetFocused(lineDisplay.line.lineId == lineId);
+            }
+
+            foreach (StationDisplay stationDisplay in stationDisplays)
+            {
+                stationDisplay.SetFocused(stationDisplay.station.lineId == lineId);
+            }
+            
+            focusArea = Area.Everywhere;
+            focusedLineId = lineId;
+        }
+
+        public void FocusArea(Area section)
+        {
+            lineMat.SetVector(focusAreaProp, section.GetVector());
+            focusArea = section;
+            focusedLineId = -1;
+        }
+
+        public bool IsFocused(StationDisplay display)
+        {
+            if (focusedLineId != -1)
+            {
+                return display.station.lineId == focusedLineId;
+            }
+            else
+            {
+                return focusArea.IsInside(Transform(display.station.position));
+            }
+        }
     }
 }
 
@@ -138,6 +207,11 @@ public class MetroEditor : Editor
         base.OnInspectorGUI();
 
         MetroRenderer renderer = (MetroRenderer) target;
+        
+        if (GUILayout.Button("Focus"))
+        {
+            renderer.FocusLine(2);
+        }
 
         if (GUILayout.Button("Regenerate"))
         {
