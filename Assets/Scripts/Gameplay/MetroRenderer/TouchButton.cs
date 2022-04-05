@@ -10,51 +10,38 @@ namespace Gameplay
     public class TouchButton : MonoBehaviour
     {
         private PlayerInput input;
+        private new MetroRenderer renderer;
         
         private InputAction primaryDeltaAction;
         private InputAction primaryPositionAction;
         private InputAction primaryContactAction;
 
-        private StationDisplay lastStation;
+        public StationDisplay selectedStation { get; private set; }
 
         public new Camera camera;
-        public Canvas canvas;
         
         public RectTransform confirm;
-        public UIMapQuestion question;
 
+        public void HideSelector()
+        {
+            selectedStation = null;
+            confirm.gameObject.SetActive(false);
+        }
+        
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
             input = model.input;
+            renderer = model.renderer;
 
             primaryPositionAction = input.actions["primaryPosition"];
             primaryContactAction = input.actions["primaryContact"];
             primaryDeltaAction =  input.actions["primaryDelta"];
             
             primaryContactAction.started += CheckPress;
-        }
-
-        public void Confirm()
-        {
-            if (question.CheckAnswer(lastStation.station))
-            {
-                lastStation.DisplayLabel(Color.green);
-            }
-            else
-            {
-                lastStation.DisplayLabel(Color.red);
-            }
-            
-            confirm.gameObject.SetActive(false);
+            TouchCameraController.cameraHasMoved += HideSelector;
         }
         
-        public static Vector2 WorldPositionToScreenSpaceCameraPosition(Camera worldCamera, Canvas canvas, Vector3 position)
-        {
-            Vector2 viewport = worldCamera.WorldToViewportPoint(position);
-            Ray canvasRay = worldCamera.ViewportPointToRay(viewport);
-            return canvasRay.GetPoint(canvas.planeDistance);
-        }
 
         private void CheckPress(InputAction.CallbackContext obj)
         {
@@ -68,7 +55,7 @@ namespace Gameplay
                 if (hit.collider != null)
                 {
                     StationDisplay display = hit.collider.gameObject.GetComponent<StationDisplay>();
-                    if (display != null)
+                    if (display != null && renderer.IsFocused(display))
                     {
                         Vector3 needPos = hit.transform.position;
 
@@ -76,13 +63,10 @@ namespace Gameplay
                         
                         Vector2 anchoredPosition = confirm.parent.InverseTransformPoint(screenPoint);
                         
-                        //Vector3 screenPos = camera.WorldToScreenPoint(needPos);
-                       // RectTransformUtility.ScreenPointToWorldPointInRectangle((RectTransform)confirm.parent, screenPos, null, out Vector3 point);
-                       
                         confirm.anchoredPosition = anchoredPosition;
                         confirm.gameObject.SetActive(true);
 
-                        lastStation = display;
+                        selectedStation = display;
 
                     }
                 }   

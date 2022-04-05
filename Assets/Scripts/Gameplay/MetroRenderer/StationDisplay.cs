@@ -13,12 +13,31 @@ namespace Gameplay
         public TMP_Text label;
         
         private static readonly int colorProp = Shader.PropertyToID("_Color");
+        private static readonly int isFocused = Shader.PropertyToID("_IsFocused");
         private static MaterialPropertyBlock block;
         private static readonly Vector2 offset = new Vector2(1, 1);
 
         public bool shouldLabelDisplay = false;
         public int timeToHideLabel;
         
+        public void SetFocused(bool value)
+        {
+            spriteRenderer.GetPropertyBlock(block);
+            block.SetFloat(isFocused, value ? 1 : 0);
+            spriteRenderer.SetPropertyBlock(block);
+        }
+        
+        public void SetLabelVisible(bool isVisible, Color color, bool isPermanent)
+        {
+            if (shouldLabelDisplay && timeToHideLabel <= 0)
+            {
+                label.color = color;
+                label.gameObject.SetActive(isVisible);
+
+                timeToHideLabel = isPermanent ? -1 : 120;
+            }
+        }
+
         
         public void SetStation(MetroStation station, MetroLine line)
         {
@@ -41,10 +60,10 @@ namespace Gameplay
                 SetText(station.currnetName, line.namePosition, line.nameAlignment);
             }
 
-            SetTextVisible(!station.hideName);
+            SetInitialVisible(!station.hideName);
         }
 
-        public void SetColor(Color color)
+        private void SetColor(Color color)
         {
             block ??= new MaterialPropertyBlock();
             
@@ -53,7 +72,7 @@ namespace Gameplay
             spriteRenderer.SetPropertyBlock(block);
         }
 
-        public void SetText(string name, NamePosition position, TextAlignmentOptions alignment)
+        private void SetText(string name, NamePosition position, TextAlignmentOptions alignment)
         {
             label.text = name;
             
@@ -63,24 +82,12 @@ namespace Gameplay
             label.alignment = alignment;
         }
 
-        public void SetTextVisible(bool value)
+        private void SetInitialVisible(bool value)
         {
             label.gameObject.SetActive(value);
             shouldLabelDisplay = value;
-            timeToHideLabel = 1;
         }
-
-        public void DisplayLabel(Color color)
-        {
-            if (shouldLabelDisplay)
-            {
-                label.color = color;
-                label.gameObject.SetActive(true);
-
-                timeToHideLabel = 120;
-            }
-        }
-
+        
         private void Update()
         {
             if (shouldLabelDisplay && timeToHideLabel > 0)

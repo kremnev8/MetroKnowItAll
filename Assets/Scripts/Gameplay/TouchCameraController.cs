@@ -16,13 +16,13 @@ namespace Gameplay
         public bool controlEnabled = true;
 
         private PlayerInput input;
-        
+
         private InputAction primaryPositionAction;
         private InputAction primaryContactAction;
-        
+
         private InputAction firstDeltaAction;
         private InputAction firstPositionAction;
-        
+
         private InputAction secondDeltaAction;
         private InputAction secondPositionAction;
         private InputAction secondContactAction;
@@ -35,8 +35,13 @@ namespace Gameplay
         private Vector3 cameraVelocity;
         
         private bool isDragging;
-        private bool isZooming;
-         
+        
+        private int zoomCounter;
+        private bool isZooming => zoomCounter > 0;
+
+
+        public static Action cameraHasMoved;
+
 
         private void Start()
         {
@@ -45,22 +50,21 @@ namespace Gameplay
 
             primaryPositionAction = input.actions["primaryPosition"];
             primaryContactAction = input.actions["primaryContact"];
-            
-            firstDeltaAction =  input.actions["delta0"];
+
+            firstDeltaAction = input.actions["delta0"];
             firstPositionAction = input.actions["position0"];
-            
-            secondDeltaAction =  input.actions["delta1"];
+
+            secondDeltaAction = input.actions["delta1"];
             secondPositionAction = input.actions["position1"];
             secondContactAction = input.actions["contact1"];
 
             primaryContactAction.started += StartDrag;
             primaryContactAction.canceled += EndDrag;
-            
+
             secondContactAction.started += ZoomStart;
             secondContactAction.canceled += ZoomEnd;
-
         }
-        
+
         private void StartDrag(InputAction.CallbackContext obj)
         {
             initialPosition = primaryPositionAction.ReadValue<Vector2>();
@@ -76,36 +80,45 @@ namespace Gameplay
 
         private void Update()
         {
-             Vector2 targetDir = Vector2.zero;;
-             if (controlEnabled && isDragging && !isZooming)
-             {
-                 targetDir = camera.ScreenToWorldPoint(primaryPositionAction.ReadValue<Vector2>());
-                 
-                 targetDir -= initialPosition;
-             }
- 
-             currentDir = Vector3.SmoothDamp(currentDir, targetDir.ToVector3() *config.normalMaxSpeed, ref cameraVelocity,  config.moveSmoothTime);
- 
-             camera.transform.position -= currentDir * Time.deltaTime;
+            if (zoomCounter > 0)
+                zoomCounter--;
+            
+            if (controlEnabled && isDragging && !isZooming)
+            {
+                Vector2 targetDir = camera.ScreenToWorldPoint(primaryPositionAction.ReadValue<Vector2>());
+                targetDir -= initialPosition;
+
+                if (targetDir.magnitude > 1)
+                {
+                    cameraHasMoved.Invoke();
+                }
+                
+                currentDir = Vector3.SmoothDamp(currentDir, targetDir.ToVector3() * config.normalMaxSpeed, ref cameraVelocity, config.moveSmoothTime);
+            }
+            else
+            {
+                currentDir *= config.friction;
+            }
+
+
+            camera.transform.position -= currentDir * Time.deltaTime;
         }
 
         private void ZoomStart(InputAction.CallbackContext obj)
         {
             zoomCoroutine = StartCoroutine(ZoomCoroutine());
-            isZooming = true;
         }
-        
+
         private void ZoomEnd(InputAction.CallbackContext obj)
         {
             StopCoroutine(zoomCoroutine);
-            isZooming = false;
         }
 
         private IEnumerator ZoomCoroutine()
         {
             float previousDistance = 0;
             float distance = 0;
-            
+
             Vector2 firstPos = firstPositionAction.ReadValue<Vector2>();
             Vector2 secondPos = secondPositionAction.ReadValue<Vector2>();
 
@@ -120,6 +133,7 @@ namespace Gameplay
                     yield return null;
                     continue;
                 }
+
                 firstPos = firstPositionAction.ReadValue<Vector2>();
                 secondPos = secondPositionAction.ReadValue<Vector2>();
                 Vector2 firstDelta = firstDeltaAction.ReadValue<Vector2>();
@@ -137,13 +151,19 @@ namespace Gameplay
                         float newZoom = Mathf.Lerp(camera.orthographicSize, targetZoom, Time.deltaTime * config.zoomSpeed);
                         newZoom = Mathf.Clamp(newZoom, config.minZoom, config.maxZoom);
                         camera.orthographicSize = newZoom;
+                        zoomCounter = 3;
+                        
+                        cameraHasMoved.Invoke();
+
+                        previousDistance = distance;
+                        yield return null;
+                        continue;
                     }
                 }
 
                 previousDistance = distance;
                 yield return null;
             }
-
         }
     }
 }
