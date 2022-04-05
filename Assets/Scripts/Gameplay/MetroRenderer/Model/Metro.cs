@@ -8,6 +8,7 @@ using System.IO;
 using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
+
 #endif
 
 namespace Gameplay
@@ -15,22 +16,54 @@ namespace Gameplay
     [CreateAssetMenu(fileName = "Metro", menuName = "SO/New Metro", order = 0)]
     public class Metro : ScriptableObject
     {
-        [LabeledArray]
-        public List<MetroLine> lines = new List<MetroLine>();
+        [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
+
+        public MetroStation GetStation(int lineId, int stationId)
+        {
+            return lines[lineId].stations[stationId];
+        }
+        
+        public MetroStation PickStationNear(MetroStation station)
+        {
+            int startIndex = Mathf.Max(0, station.stationId - 2);
+            int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + 2);
+            int tipStation = station.stationId.ConstrainedRandom(startIndex, endIndex);
+
+            return lines[station.lineId].stations[tipStation];
+        }
 
         public MetroStation PickRandomStation(int lineId)
         {
-            int index = Random.Range(0, lines[lineId].stations.Count);
-            return lines[lineId].stations[index];
+            List<MetroStation> stations = lines[lineId].stations;
+            int index = Random.Range(0, stations.Count);
+            return stations[index];
         }
         
+        public MetroStation PickRandomStation(int lineId, List<int> blacklist)
+        {
+            List<MetroStation> stations = lines[lineId].stations;
+
+            int index = Extension.ConstrainedRandom(stationId =>
+            {
+                return !blacklist.Contains(stations[stationId].globalId);
+            }, 0, stations.Count);
+                
+            return stations[index];
+        }
+
         public MetroLine PickRandomLine()
         {
-            int index = Random.Range(0, lines.Count);
+            int index = Extension.ConstrainedRandom(
+                lineId =>
+                {
+                    return lines[lineId].stations.Count <= 0;
+                }, 0, lines.Count);
+            
+            
             return lines[index];
         }
-        
+
         private void OnValidate()
         {
             Debug.Log("Validate");
@@ -40,7 +73,7 @@ namespace Gameplay
                 {
                     MetroStation station = line.stations[i];
                     station.lineId = line.lineId;
-                    station.stationId = (byte)i;
+                    station.stationId = (byte) i;
                 }
 
                 if (line.simpleLine && line.stations.Count > 0)
@@ -49,7 +82,7 @@ namespace Gameplay
                     {
                         line.connections.Capacity = line.stations.Count - 1;
                     }
-                    
+
                     for (int i = 0; i < line.stations.Count - 1; i++)
                     {
                         if (i < line.connections.Count)
@@ -62,8 +95,8 @@ namespace Gameplay
                         {
                             line.connections.Add(new MetroConnection()
                             {
-                                startStationId = (byte)i,
-                                endStationId = (byte)(i + 1),
+                                startStationId = (byte) i,
+                                endStationId = (byte) (i + 1),
                                 isOpen = true,
                                 lineId = line.lineId
                             });
@@ -78,7 +111,7 @@ namespace Gameplay
                     }
                 }
             }
-            
+
 #if UNITY_EDITOR
             if (MetroRenderer.instance != null && MetroRenderer.instance.metro == this)
             {
@@ -87,7 +120,7 @@ namespace Gameplay
 #endif
         }
     }
-    
+
 
 #if UNITY_EDITOR
     [CustomEditor(typeof(Metro))]
@@ -96,19 +129,19 @@ namespace Gameplay
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            
+
             if (GUILayout.Button("Import"))
             {
                 Metro metro = (Metro) target;
-                string path = EditorUtility.OpenFilePanel("Load metro data", "","json");
+                string path = EditorUtility.OpenFilePanel("Load metro data", "", "json");
                 string json = File.ReadAllText(path, Encoding.UTF8);
                 JsonUtility.FromJsonOverwrite(json, metro);
             }
-            
+
             if (GUILayout.Button("Export"))
             {
                 Metro metro = (Metro) target;
-                string path = EditorUtility.SaveFilePanel("Save metro data", "", "metro.json","json");
+                string path = EditorUtility.SaveFilePanel("Save metro data", "", "metro.json", "json");
                 string json = JsonUtility.ToJson(metro, true);
                 File.WriteAllText(path, json, Encoding.UTF8);
                 Debug.Log("Exported successfully!");
@@ -117,4 +150,3 @@ namespace Gameplay
     }
 #endif
 }
-

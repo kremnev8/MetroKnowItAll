@@ -1875,10 +1875,10 @@ MonoBehaviour:
       stationId: 6
       position: {x: 1672, y: 1057}
       names:
-      - 
+      - "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
       currentNameIndex: 0
-      m_override: 0
-      hideName: 0
+      m_override: 1
+      hideName: 1
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
@@ -4411,18 +4411,6 @@ MonoBehaviour:
     namePosition: 7
     nameAlignment: 260
   - lineId: 14
-    name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u0438\u0439 \u043C\u043E\u043D\u043E\u0440\u0435\u043B\u044C\u0441"
-    style: 0
-    useSmoothCurves: 0
-    curveCenter: {x: 0, y: 0}
-    lineColor: {r: 0.9019608, g: 0.41568628, b: 0.7529412, a: 1}
-    stations: []
-    connections: []
-    simpleLine: 1
-    hideName: 1
-    namePosition: 0
-    nameAlignment: 0
-  - lineId: 15
     name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
       \u043A\u043E\u043B\u044C\u0446\u043E"
     style: 1
@@ -4430,7 +4418,7 @@ MonoBehaviour:
     curveCenter: {x: 0.5, y: 10}
     lineColor: {r: 1, g: 0.65882355, b: 0.6862745, a: 1}
     stations:
-    - lineId: 15
+    - lineId: 14
       stationId: 0
       position: {x: 1651, y: 715}
       names:
@@ -4442,7 +4430,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 1
       position: {x: 1304, y: 729}
       names:
@@ -4453,7 +4441,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 2
       position: {x: 1240, y: 754}
       names:
@@ -4464,7 +4452,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 1028
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 3
       position: {x: 1138, y: 813}
       names:
@@ -4475,7 +4463,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 4
       position: {x: 1076, y: 865}
       names:
@@ -4486,7 +4474,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 5
       position: {x: 1023, y: 919}
       names:
@@ -4497,7 +4485,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 6
       position: {x: 973, y: 990}
       names:
@@ -4508,7 +4496,7 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 7
       position: {x: 929, y: 1075}
       names:
@@ -4519,7 +4507,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 8
       position: {x: 911, y: 1123}
       names:
@@ -4530,7 +4518,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 9
       position: {x: 892, y: 1198}
       names:
@@ -4541,7 +4529,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 10
       position: {x: 881, y: 1296}
       names:
@@ -4552,7 +4540,7 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 11
       position: {x: 883, y: 1387}
       names:
@@ -4563,7 +4551,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 12
       position: {x: 958, y: 1617}
       names:
@@ -4574,7 +4562,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 13
       position: {x: 1104, y: 1794}
       names:
@@ -4585,7 +4573,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 14
       position: {x: 1320, y: 1911}
       names:
@@ -4596,7 +4584,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 15
       position: {x: 1541, y: 1938}
       names:
@@ -4607,7 +4595,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 16
       position: {x: 1720, y: 1897}
       names:
@@ -4618,7 +4606,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 17
       position: {x: 1805, y: 1858}
       names:
@@ -4629,7 +4617,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 18
       position: {x: 1893, y: 1798}
       names:
@@ -4640,7 +4628,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 19
       position: {x: 1951, y: 1744}
       names:
@@ -4651,7 +4639,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 20
       position: {x: 1988, y: 1705}
       names:
@@ -4662,7 +4650,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 21
       position: {x: 2055, y: 1600}
       names:
@@ -4673,7 +4661,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 22
       position: {x: 2103, y: 1470}
       names:
@@ -4684,7 +4672,7 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 1025
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 23
       position: {x: 2115, y: 1406}
       names:
@@ -4695,7 +4683,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 24
       position: {x: 2122, y: 1331}
       names:
@@ -4706,7 +4694,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 25
       position: {x: 2118, y: 1245}
       names:
@@ -4717,7 +4705,7 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 26
       position: {x: 2100, y: 1154}
       names:
@@ -4728,7 +4716,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 27
       position: {x: 1977, y: 918}
       names:
@@ -4739,7 +4727,7 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 28
       position: {x: 1892, y: 835}
       names:
@@ -4750,7 +4738,7 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 29
       position: {x: 1842, y: 798}
       names:
@@ -4761,7 +4749,7 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       isOpen: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 30
       position: {x: 1784, y: 765}
       names:
@@ -4773,217 +4761,217 @@ MonoBehaviour:
       nameAlignment: 0
       isOpen: 1
     connections:
-    - lineId: 15
+    - lineId: 14
       startStationId: 0
       endStationId: 1
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 1
       endStationId: 2
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 2
       endStationId: 3
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 3
       endStationId: 4
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 4
       endStationId: 5
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 5
       endStationId: 6
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 6
       endStationId: 7
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 7
       endStationId: 8
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 8
       endStationId: 9
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 9
       endStationId: 10
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 10
       endStationId: 11
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 11
       endStationId: 12
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 12
       endStationId: 13
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 13
       endStationId: 14
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 14
       endStationId: 15
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 15
       endStationId: 16
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 16
       endStationId: 17
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 17
       endStationId: 18
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 18
       endStationId: 19
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 19
       endStationId: 20
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 20
       endStationId: 21
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 21
       endStationId: 22
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 22
       endStationId: 23
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 23
       endStationId: 24
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 24
       endStationId: 25
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 25
       endStationId: 26
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 26
       endStationId: 27
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 27
       endStationId: 28
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 28
       endStationId: 29
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 29
       endStationId: 30
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 15
+    - lineId: 14
       startStationId: 30
       endStationId: 0
       isOpen: 1
@@ -4994,7 +4982,7 @@ MonoBehaviour:
     hideName: 0
     namePosition: 0
     nameAlignment: 0
-  - lineId: 16
+  - lineId: 15
     name: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
     style: 0
@@ -5002,7 +4990,7 @@ MonoBehaviour:
     curveCenter: {x: 0, y: 0}
     lineColor: {r: 0.9019608, g: 0.41568628, b: 0.7529412, a: 1}
     stations:
-    - lineId: 16
+    - lineId: 15
       stationId: 0
       position: {x: 1995, y: 1262}
       names:
@@ -5013,7 +5001,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 1
       position: {x: 1995, y: 1360}
       names:
@@ -5024,7 +5012,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 2
       position: {x: 2030, y: 1420}
       names:
@@ -5035,7 +5023,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 3
       position: {x: 2103, y: 1493}
       names:
@@ -5046,7 +5034,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 4
       position: {x: 2180, y: 1570}
       names:
@@ -5057,7 +5045,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 5
       position: {x: 2270, y: 1695}
       names:
@@ -5068,7 +5056,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 6
       position: {x: 2289, y: 1815}
       names:
@@ -5079,7 +5067,7 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 7
       position: {x: 2386, y: 1892}
       names:
@@ -5090,7 +5078,7 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 8
       position: {x: 2568, y: 1922}
       names:
@@ -5101,7 +5089,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 9
       position: {x: 2568, y: 1977}
       names:
@@ -5112,7 +5100,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 16
+    - lineId: 15
       stationId: 10
       position: {x: 2568, y: 2032}
       names:
@@ -5124,70 +5112,70 @@ MonoBehaviour:
       nameAlignment: 0
       isOpen: 1
     connections:
-    - lineId: 16
+    - lineId: 15
       startStationId: 0
       endStationId: 1
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 1
       endStationId: 2
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 2
       endStationId: 3
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 3
       endStationId: 4
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 4
       endStationId: 5
       isOpen: 1
       overrideBend: 1
       bendPoint: {x: 2270, y: 1662}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 5
       endStationId: 6
       isOpen: 1
       overrideBend: 1
       bendPoint: {x: 2270, y: 1789}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 6
       endStationId: 7
       isOpen: 1
       overrideBend: 1
       bendPoint: {x: 2367, y: 1888}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 7
       endStationId: 8
       isOpen: 1
       overrideBend: 1
       bendPoint: {x: 2570, y: 1895}
       weight: 1.47
-    - lineId: 16
+    - lineId: 15
       startStationId: 8
       endStationId: 9
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 16
+    - lineId: 15
       startStationId: 9
       endStationId: 10
       isOpen: 1
@@ -5198,14 +5186,14 @@ MonoBehaviour:
     hideName: 0
     namePosition: 8
     nameAlignment: 513
-  - lineId: 18
+  - lineId: 16
     name: "\u041C\u0426\u0414-1"
     style: 1
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
     lineColor: {r: 0.98039216, g: 0.6431373, b: 0, a: 1}
     stations:
-    - lineId: 18
+    - lineId: 16
       stationId: 0
       position: {x: 1265, y: 199}
       names:
@@ -5216,7 +5204,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 1
       position: {x: 1265, y: 249}
       names:
@@ -5227,7 +5215,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 2
       position: {x: 1265, y: 299}
       names:
@@ -5238,7 +5226,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 3
       position: {x: 1265, y: 349}
       names:
@@ -5249,7 +5237,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 4
       position: {x: 1265, y: 399}
       names:
@@ -5260,7 +5248,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 5
       position: {x: 1265, y: 449}
       names:
@@ -5271,7 +5259,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 6
       position: {x: 1265, y: 499}
       names:
@@ -5282,7 +5270,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 7
       position: {x: 1265, y: 549}
       names:
@@ -5293,7 +5281,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 8
       position: {x: 1265, y: 599}
       names:
@@ -5304,7 +5292,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 9
       position: {x: 1265, y: 648}
       names:
@@ -5315,7 +5303,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 10
       position: {x: 1265, y: 770}
       names:
@@ -5326,7 +5314,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 11
       position: {x: 1265, y: 877}
       names:
@@ -5337,7 +5325,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 12
       position: {x: 1265, y: 1013}
       names:
@@ -5348,7 +5336,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 13
       position: {x: 1223, y: 1137}
       names:
@@ -5359,7 +5347,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 14
       position: {x: 1048, y: 1312}
       names:
@@ -5370,7 +5358,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 15
       position: {x: 973, y: 1387}
       names:
@@ -5381,7 +5369,7 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 16
       position: {x: 815, y: 1545}
       names:
@@ -5392,7 +5380,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 17
       position: {x: 645, y: 1485}
       names:
@@ -5403,7 +5391,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 18
       position: {x: 550, y: 1390}
       names:
@@ -5414,7 +5402,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 19
       position: {x: 500, y: 1340}
       names:
@@ -5425,7 +5413,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 20
       position: {x: 450, y: 1290}
       names:
@@ -5436,7 +5424,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 21
       position: {x: 420, y: 1235}
       names:
@@ -5447,7 +5435,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 22
       position: {x: 420, y: 1185}
       names:
@@ -5458,7 +5446,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 23
       position: {x: 420, y: 1135}
       names:
@@ -5469,7 +5457,7 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
-    - lineId: 18
+    - lineId: 16
       stationId: 24
       position: {x: 420, y: 1085}
       names:
@@ -5481,168 +5469,168 @@ MonoBehaviour:
       nameAlignment: 0
       isOpen: 1
     connections:
-    - lineId: 18
+    - lineId: 16
       startStationId: 0
       endStationId: 1
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 1
       endStationId: 2
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 2
       endStationId: 3
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 3
       endStationId: 4
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 4
       endStationId: 5
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 5
       endStationId: 6
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 6
       endStationId: 7
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 7
       endStationId: 8
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 8
       endStationId: 9
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 9
       endStationId: 10
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 10
       endStationId: 11
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 11
       endStationId: 12
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 12
       endStationId: 13
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 13
       endStationId: 14
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 14
       endStationId: 15
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 15
       endStationId: 16
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 16
       endStationId: 17
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 17
       endStationId: 18
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 18
       endStationId: 19
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 19
       endStationId: 20
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 20
       endStationId: 21
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 21
       endStationId: 22
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 22
       endStationId: 23
       isOpen: 1
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-    - lineId: 18
+    - lineId: 16
       startStationId: 23
       endStationId: 24
       isOpen: 1
@@ -6416,7 +6404,7 @@ MonoBehaviour:
   - stationsGlobalIds:
     - lineId: 2
       stationId: 7
-    - lineId: 18
+    - lineId: 17
       stationId: 16
     - lineId: 4
       stationId: 5
@@ -6444,11 +6432,11 @@ MonoBehaviour:
   - stationsGlobalIds:
     - lineId: 12
       stationId: 1
-    - lineId: 15
+    - lineId: 14
       stationId: 10
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 11
     - lineId: 3
       stationId: 11
@@ -6456,7 +6444,7 @@ MonoBehaviour:
   - stationsGlobalIds:
     - lineId: 3
       stationId: 5
-    - lineId: 15
+    - lineId: 14
       stationId: 12
     isOpen: 1
   - stationsGlobalIds:
@@ -6468,7 +6456,7 @@ MonoBehaviour:
   - stationsGlobalIds:
     - lineId: 5
       stationId: 14
-    - lineId: 15
+    - lineId: 14
       stationId: 14
     isOpen: 1
   - stationsGlobalIds:
@@ -6484,39 +6472,39 @@ MonoBehaviour:
       stationId: 5
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 22
-    - lineId: 16
+    - lineId: 15
       stationId: 3
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 21
-    - lineId: 18
+    - lineId: 17
       stationId: 19
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 27
     - lineId: 0
       stationId: 1
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 1
     - lineId: 9
       stationId: 3
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 17
+    - lineId: 16
       stationId: 11
     - lineId: 9
       stationId: 5
     isOpen: 1
   - stationsGlobalIds:
-    - lineId: 15
+    - lineId: 14
       stationId: 6
-    - lineId: 18
+    - lineId: 17
       stationId: 10
     isOpen: 1
   - stationsGlobalIds:
@@ -6588,12 +6576,18 @@ MonoBehaviour:
   - stationsGlobalIds:
     - lineId: 6
       stationId: 20
-    - lineId: 16
+    - lineId: 15
       stationId: 7
     isOpen: 1
   - stationsGlobalIds:
     - lineId: 6
       stationId: 16
-    - lineId: 18
+    - lineId: 17
       stationId: 20
+    isOpen: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 3
+    - lineId: 9
+      stationId: 4
     isOpen: 1
