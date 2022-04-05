@@ -33,7 +33,7 @@ namespace Gameplay
         
         public Metro metro;
 
-        private List<StationDisplay> stationDisplays = new List<StationDisplay>();
+        private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
         internal bool dirty;
@@ -90,7 +90,7 @@ namespace Gameplay
 
                     stationDisplay.SetStation(station, line);
                     
-                    stationDisplays.Add(stationDisplay);
+                    stationDisplays.Add(station.globalId, stationDisplay);
                 }
 
                 LineDisplay lineDisplay = Instantiate(linePrefab, lineRoot);
@@ -109,7 +109,7 @@ namespace Gameplay
 
         public void Refresh()
         {
-            foreach (StationDisplay display in stationDisplays)
+            foreach (StationDisplay display in stationDisplays.Values)
             {
                 display.Refresh();
             }
@@ -136,11 +136,21 @@ namespace Gameplay
             crossingDisplays.Clear();
         }
 
+        public StationDisplay getStationDisplay(MetroStation station)
+        {
+            if (stationDisplays.ContainsKey(station.globalId))
+            {
+                return stationDisplays[station.globalId];
+            }
+
+            throw new ArgumentException($"Global ID: {station.globalId} does not exist in display dictionary!");
+        }
+
         public void HideAllLabels()
         {
-            foreach (StationDisplay display in stationDisplays)
+            foreach (StationDisplay display in stationDisplays.Values)
             {
-                display.SetLabelVisible(false, Color.white, true);
+                display.SetLabelVisible(false, Color.white);
             }
         }
 
@@ -155,7 +165,7 @@ namespace Gameplay
                 lineDisplay.SetFocused(true);
             }
 
-            foreach (StationDisplay stationDisplay in stationDisplays)
+            foreach (StationDisplay stationDisplay in stationDisplays.Values)
             {
                 stationDisplay.SetFocused(true);
             }
@@ -168,7 +178,7 @@ namespace Gameplay
                 lineDisplay.SetFocused(lineDisplay.line.lineId == lineId);
             }
 
-            foreach (StationDisplay stationDisplay in stationDisplays)
+            foreach (StationDisplay stationDisplay in stationDisplays.Values)
             {
                 stationDisplay.SetFocused(stationDisplay.station.lineId == lineId);
             }
@@ -207,6 +217,11 @@ public class MetroEditor : Editor
         base.OnInspectorGUI();
 
         MetroRenderer renderer = (MetroRenderer) target;
+        
+        if (GUILayout.Button("Hide Names"))
+        {
+            renderer.HideAllLabels();
+        }
         
         if (GUILayout.Button("Focus"))
         {

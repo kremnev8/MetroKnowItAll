@@ -33,6 +33,7 @@ namespace Gameplay
         public NamePosition namePosition;
         public TextAlignmentOptions nameAlignment;
         
-        public string displayName => $"{stations.Count}, {name}";
+        public string editorName => $"{stations.Count}, {name}";
+        public string displayName => name;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Gameplay;
+using Gameplay.Questions;
 using UnityEngine.InputSystem;
 
 
@@ -9,6 +10,7 @@ namespace Model
     {
         public PlayerInput input;
         public MetroRenderer renderer;
+        public QuestionController questions;
 
     }
 }

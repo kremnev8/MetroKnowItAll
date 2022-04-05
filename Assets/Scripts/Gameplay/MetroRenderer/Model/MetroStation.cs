@@ -10,7 +10,7 @@ namespace Gameplay
     {
         
         public int globalId => lineId * 100 + stationId;
-        public string currnetName => names[currentNameIndex];
+        public string currentName => names[currentNameIndex];
         
         [HideInInspector]
         public byte lineId;
@@ -32,6 +32,7 @@ namespace Gameplay
 
         public bool isOpen;
 
-        public string displayName => $"{globalId} {currnetName}";
+        public string editorName => $"{globalId} {currentName}";
+        public string displayName => currentName;
     }
 }

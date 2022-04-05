@@ -70,7 +70,7 @@ namespace Editor
 
                 if (currentObject.lineId < metro.lines.Count)
                 {
-                    List<string> stationNames = metro.lines[currentObject.lineId].stations.Select(line => line.currnetName).ToList();
+                    List<string> stationNames = metro.lines[currentObject.lineId].stations.Select(line => line.currentName).ToList();
                     
                     name = currentObject.stationId < stationNames.Count ? stationNames[currentObject.stationId] : "Select";
 

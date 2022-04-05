@@ -16,6 +16,7 @@ namespace Gameplay.Questions
         public abstract void SetRegion(Region region);
         
         public abstract void GenerateNew();
+        public abstract string GenerateTip(int tipNumber);
         public abstract bool ValidateAnswer();
         
     }

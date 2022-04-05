@@ -83,7 +83,9 @@ namespace Gameplay
             if (zoomCounter > 0)
                 zoomCounter--;
             
-            if (controlEnabled && isDragging && !isZooming)
+            bool onUI = UIUtil.IsPointerOverUIElement(primaryPositionAction.ReadValue<Vector2>());
+            
+            if (controlEnabled && isDragging && !isZooming && !onUI)
             {
                 Vector2 targetDir = camera.ScreenToWorldPoint(primaryPositionAction.ReadValue<Vector2>());
                 targetDir -= initialPosition;
@@ -92,8 +94,8 @@ namespace Gameplay
                 {
                     cameraHasMoved.Invoke();
                 }
-                
-                currentDir = Vector3.SmoothDamp(currentDir, targetDir.ToVector3() * config.normalMaxSpeed, ref cameraVelocity, config.moveSmoothTime);
+
+                currentDir = targetDir.ToVector3() * config.normalMaxSpeed;//Vector3.SmoothDamp(currentDir, targetDir.ToVector3() * config.normalMaxSpeed, ref cameraVelocity, config.moveSmoothTime);
             }
             else
             {
@@ -112,6 +114,7 @@ namespace Gameplay
         private void ZoomEnd(InputAction.CallbackContext obj)
         {
             StopCoroutine(zoomCoroutine);
+            zoomCounter = 0;
         }
 
         private IEnumerator ZoomCoroutine()
@@ -151,7 +154,7 @@ namespace Gameplay
                         float newZoom = Mathf.Lerp(camera.orthographicSize, targetZoom, Time.deltaTime * config.zoomSpeed);
                         newZoom = Mathf.Clamp(newZoom, config.minZoom, config.maxZoom);
                         camera.orthographicSize = newZoom;
-                        zoomCounter = 3;
+                        zoomCounter = 10;
                         
                         cameraHasMoved.Invoke();
 

@@ -26,6 +26,7 @@ namespace Gameplay
             return $"J {startStationId} => {endStationId}";
         }
 
-        public string displayName => $"J {startStationId} => {endStationId}";
+        public string editorName => $"J {startStationId} => {endStationId}";
+        public string displayName => "";
     }
 }

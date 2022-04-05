@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 namespace Util
 {
@@ -120,6 +122,11 @@ namespace Util
         {
             return new Vector3(vector.x, y, vector.z);
         }
+        
+        public static Vector2 Abs(this Vector2 vector)
+        {
+            return new Vector2(Mathf.Abs(vector.x), Mathf.Abs(vector.y));
+        }
 
         public static bool Less(this Vector3 vec1, Vector3 vec2)
         {
@@ -129,6 +136,16 @@ namespace Util
         public static bool Greater(this Vector3 vec1, Vector3 vec2)
         {
             return vec1.x >= vec2.x && vec1.y >= vec2.y && vec1.z >= vec2.z;
+        }
+        
+        public static bool Less(this Vector2 vec1, Vector2 vec2)
+        {
+            return vec1.x <= vec2.x && vec1.y <= vec2.y;
+        }
+
+        public static bool Greater(this Vector2 vec1, Vector2 vec2)
+        {
+            return vec1.x >= vec2.x && vec1.y >= vec2.y;
         }
 
         public static Vector3 GetBiggestAxis(this Vector3 vector)
@@ -149,6 +166,35 @@ namespace Util
         public static Vector2 GetNormal(this Vector2 vector)
         {
             return new Vector2(vector.y, -vector.x);
+        }
+        
+        public static int ConstrainedRandom(Func<int, bool> filter, int min, int max)
+        {
+            int[] items = Enumerable.Range(min, max - min).Where(filter).ToArray();
+
+            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
+            return items[Random.Range(0, items.Length)];
+        }
+
+        public static int ConstrainedRandom(this List<int> blacklist, int min, int max)
+        {
+            int[] items = Enumerable.Range(min, max - min).Where(i => !blacklist.Contains(i)).ToArray();
+            
+            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
+            return items[Random.Range(0, items.Length)];
+        }
+        
+        public static int ConstrainedRandom(this byte exclude, int min, int max)
+        {
+            return ConstrainedRandom((int)exclude, min, max);
+        }
+        
+        public static int ConstrainedRandom(this int exclude, int min, int max)
+        {
+            int[] items = Enumerable.Range(min, max - min).Where(i => i != exclude).ToArray();
+            
+            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
+            return items[Random.Range(0, items.Length)];
         }
 
         public static RigidbodyConstraints GetConstaraints(this Vector3 vector)

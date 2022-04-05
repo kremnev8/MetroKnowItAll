@@ -3,40 +3,13 @@ using UnityEngine;
 
 namespace Gameplay.Questions.Model
 {
-    public class FindStationGenerator : BaseQuestionGenerator
+    public class FindStationGenerator : StationQuestionGenerator<UIQuestionFindStation>
     {
-        public int currentLineId;
-        public RegionType currentRegionType;
         public MetroStation currentQuestion;
-
-
-        public UIQuestionFindStation uiController;
-
-        private List<int> blacklistedIds = new List<int>();
-
-        public override void Init(MetroRenderer _renderer, BaseUIQuestion root)
-        {
-            base.Init(_renderer, root);
-
-            uiController = root as UIQuestionFindStation;
-        }
-
-        public override void SetRegion(Region region)
-        {
-            blacklistedIds.Clear();
-            currentLineId = region.lineId;
-            currentRegionType = region.regionType;
-        }
 
         public override void GenerateNew()
         {
-            int count = 0;
-            do
-            {
-                currentQuestion = metro.PickRandomStation(currentLineId);
-                count++;
-                if (count > 100) break;
-            } while (blacklistedIds.Contains(currentQuestion.globalId));
+            currentQuestion = metro.PickRandomStation(currentLineId, blacklistedIds);
             
             uiController.SetQuestion(currentQuestion);
             renderer.HideAllLabels();
@@ -48,6 +21,21 @@ namespace Gameplay.Questions.Model
             }
         }
 
+        public override string GenerateTip(int tipNumber)
+        {
+            switch (tipNumber)
+            {
+                case 0:
+                    MetroStation near = metro.PickStationNear(currentQuestion);
+                    blacklistedIds.Add(near.globalId);
+                    renderer.getStationDisplay(near).ShowLabelFor(Color.black, 1000);
+                    return $"Станция метро {near.currentName} находиться рядом!";
+                
+            }
+
+            return "";
+        }
+
         public override bool ValidateAnswer()
         {
             MetroStation selectedStation = uiController.CurrentSelection();
@@ -55,6 +43,7 @@ namespace Gameplay.Questions.Model
             bool result = currentQuestion.globalId == selectedStation.globalId;
             uiController.DisplayResult(result);
 
+            blacklistedIds.Add(selectedStation.globalId);
             return result;
         }
     }

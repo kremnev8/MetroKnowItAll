@@ -14,6 +14,8 @@ namespace Gameplay.Questions
         private int hideFeedbackIn;
 
         public TouchButton button;
+
+        public RectTransform bottomPane;
         
         public TMP_Text questionLabel;
         public TMP_Text correctLabel;
@@ -23,11 +25,18 @@ namespace Gameplay.Questions
         {
             return new FindStationGenerator();
         }
-        
-        
+
+        public override void HideElements()
+        {
+            button.gameObject.SetActive(false);
+        }
+
+
         public void SetQuestion(MetroStation station)
         {
-            questionLabel.text = $"Укажи где находится станция\n{station.currnetName}";
+            button.gameObject.SetActive(true);
+            questionLabel.text = $"Укажи где находится станция\n{station.currentName}";
+            bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, 300);
         }
 
         public void DisplayResult(bool result)
@@ -37,12 +46,12 @@ namespace Gameplay.Questions
                 correctGuesses++;
                 correctLabel.text = correctGuesses.ToString();
                 feedbackLabel.text = "Верно!";
-                button.selectedStation.SetLabelVisible(true, Color.green, false);
+                button.selectedStation.ShowLabelFor(Color.green, 120);
             }
             else
             {
                 feedbackLabel.text = "Неправильно!";
-                button.selectedStation.SetLabelVisible(true, Color.red, false);
+                button.selectedStation.ShowLabelFor(Color.red, 120);
             }
             button.HideSelector();
 

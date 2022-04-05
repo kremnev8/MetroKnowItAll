@@ -18,6 +18,7 @@ namespace Util
 
     public interface INamedArrayElement
     {
+        string editorName { get; }
         string displayName { get; }
     }
 }

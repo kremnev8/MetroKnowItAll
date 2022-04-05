@@ -34,7 +34,7 @@ namespace Editor
             {
                 try
                 {
-                    string name = element.displayName;
+                    string name = element.editorName;
 
                     var path = property.propertyPath;
                     int pos = int.Parse(path.Split('[').LastOrDefault().TrimEnd(']'));

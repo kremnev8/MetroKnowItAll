@@ -27,14 +27,25 @@ namespace Gameplay
             spriteRenderer.SetPropertyBlock(block);
         }
         
-        public void SetLabelVisible(bool isVisible, Color color, bool isPermanent)
+        public void SetLabelVisible(bool isVisible, Color color)
         {
             if (shouldLabelDisplay && timeToHideLabel <= 0)
             {
                 label.color = color;
                 label.gameObject.SetActive(isVisible);
 
-                timeToHideLabel = isPermanent ? -1 : 120;
+                timeToHideLabel = -1;
+            }
+        }
+        
+        public void ShowLabelFor(Color color, int time)
+        {
+            if (shouldLabelDisplay && timeToHideLabel <= 0)
+            {
+                label.color = color;
+                label.gameObject.SetActive(true);
+
+                timeToHideLabel = time;
             }
         }
 
@@ -53,11 +64,11 @@ namespace Gameplay
 
             if (station.m_override)
             {
-                SetText(station.currnetName, station.namePosition, station.nameAlignment);
+                SetText(station.currentName, station.namePosition, station.nameAlignment);
             }
             else
             {
-                SetText(station.currnetName, line.namePosition, line.nameAlignment);
+                SetText(station.currentName, line.namePosition, line.nameAlignment);
             }
 
             SetInitialVisible(!station.hideName);
