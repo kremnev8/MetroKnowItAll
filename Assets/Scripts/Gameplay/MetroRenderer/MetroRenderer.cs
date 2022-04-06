@@ -38,7 +38,7 @@ namespace Gameplay
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
         internal bool dirty;
 
-        public int focusedLineId;
+        public sbyte focusedLineId;
         public Area focusArea;
         
         
@@ -184,7 +184,7 @@ namespace Gameplay
             }
             
             focusArea = Area.Everywhere;
-            focusedLineId = lineId;
+            focusedLineId = (sbyte)lineId;  
         }
 
         public void FocusArea(Area section)
