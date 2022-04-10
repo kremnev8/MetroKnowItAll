@@ -1050,10 +1050,10 @@ MonoBehaviour:
       names:
       - "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
       currentNameIndex: 0
-      m_override: 0
+      m_override: 1
       hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 5
+      nameAlignment: 258
       isOpen: 1
     - lineId: 2
       stationId: 11

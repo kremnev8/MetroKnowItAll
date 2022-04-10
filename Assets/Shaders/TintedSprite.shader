@@ -87,7 +87,7 @@ Shader "Metro/TintedSprite"
 				{
 					fixed lum = Luminance(c.rgb);
 					c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
-					c.a *= _UnfocusedSaturation;
+					c.a *= _UnfocusedSaturation * 0.8f;
 				}else
 				{
 					if (!(IN.worldPos.x < _FocusArea.x && _FocusArea.z < IN.worldPos.x &&
@@ -95,7 +95,7 @@ Shader "Metro/TintedSprite"
 						{
 							fixed lum = Luminance(c.rgb);
 							c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
-							c.a *= _UnfocusedSaturation;
+							c.a *= _UnfocusedSaturation * 0.8f;
 						}
 				}
 

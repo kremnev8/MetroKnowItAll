@@ -51,6 +51,30 @@ namespace Gameplay
                 
             return stations[index];
         }
+        
+        public List<MetroStation> PickRandomStationRange(int lineId, int size, List<int> blacklist)
+        {
+            List<MetroStation> stations = lines[lineId].stations;
+
+            int index = Extension.ConstrainedRandom(stationId =>
+            {
+                if (stationId + size - 1 < stations.Count)
+                {
+                    for (int i = stationId; i < stationId + size; i++)
+                    {
+                        if (blacklist.Contains(stations[i].globalId))
+                        {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                
+                return false;
+            }, 0, stations.Count);
+                
+            return stations.GetRange(index, size);
+        }
 
         public MetroLine PickRandomLine()
         {

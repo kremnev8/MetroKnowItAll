@@ -19,19 +19,14 @@ namespace Gameplay.Questions.Model
             currentQuestionStations.Clear();
             tipBlacklisted.Clear();
             
-            for (int i = 0; i < currentCount; i++)
-            {
-                MetroStation next = metro.PickRandomStation(currentLineId, blacklistedIds);
+            currentQuestionStations = metro.PickRandomStationRange(currentLineId, currentCount, blacklistedIds);
+            blacklistedIds.AddRange(currentQuestionStations.Select(station => station.globalId));
 
-                currentQuestionStations.Add(next);
-                blacklistedIds.Add(next.globalId);
-            }
-            
+            List<MetroStation> shuffled = new List<MetroStation>(currentQuestionStations);
+            shuffled.Shuffle();
             renderer.HideAllLabels();
-            uiController.SetQuestion(currentQuestionStations);
-            
-            currentQuestionStations.Sort((station1, station2) => station1.globalId.CompareTo(station2.globalId));
-            
+            uiController.SetQuestion(shuffled);
+
             if (currentLineId != -1 && currentRegionType == RegionType.GLOBAL)
             {
                 renderer.FocusLine(currentLineId);
