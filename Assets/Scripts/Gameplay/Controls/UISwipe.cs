@@ -2,6 +2,7 @@
 using Model;
 using Platformer.Core;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Util;
 
@@ -10,7 +11,7 @@ namespace Gameplay
     public class UISwipe : MonoBehaviour
     {
         private PlayerInput input;
-
+        
         private InputAction primaryPositionAction;
         private InputAction primaryContactAction;
 
@@ -19,10 +20,14 @@ namespace Gameplay
         private bool isSwiping;
         private bool isReturning;
 
+        private Vector2 lastPosition;
+        private Vector2 moveDelta;
+
         public float returnSpeed;
         public Vector2 moveAxis;
         public Vector2 closeThreshold;
-
+        public float friction = 0.8f;
+        
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
@@ -53,24 +58,41 @@ namespace Gameplay
                 Vector2 delta = GetTransformedPosition() - initialPos;
                 if (Vector2.Dot(delta.normalized, moveAxis) > 0)
                 {
-                    rectTransform.anchoredPosition = delta * moveAxis.Abs();
+                    Vector2 newPosition = delta * moveAxis.Abs();
+                    rectTransform.anchoredPosition = newPosition;
+                    moveDelta = newPosition - lastPosition;
+                    lastPosition = newPosition;
                 }
             }
             else
             {
-                if ((rectTransform.anchoredPosition * moveAxis).Greater(closeThreshold) && !isReturning)
+                UpdateReleased();
+            }
+        }
+
+        private void UpdateReleased()
+        {
+            Vector2 _closeThreshold = closeThreshold * rectTransform.sizeDelta;
+            
+            if ((rectTransform.anchoredPosition * moveAxis).Greater(_closeThreshold) && !isReturning)
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                if (moveDelta.sqrMagnitude < 0.1f || Vector2.Dot(moveDelta.normalized, moveAxis) <= 0)
                 {
-                    gameObject.SetActive(false);
+                    rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, Vector2.zero, returnSpeed * Time.deltaTime);
+
+                    if (rectTransform.anchoredPosition.sqrMagnitude < 1) isReturning = false;
+                    moveDelta = Vector2.zero;
                 }
                 else
                 {
-                    rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, Vector2.zero, returnSpeed * Time.deltaTime);
-                    
-                    if (rectTransform.anchoredPosition.sqrMagnitude < 1) isReturning = false;
+                    rectTransform.anchoredPosition += moveDelta;
+                    moveDelta *= friction;
                 }
             }
-
-
         }
 
         private Vector2 GetTransformedPosition()
@@ -83,10 +105,14 @@ namespace Gameplay
         {
             if (gameObject.activeSelf)
             {
-                
-                initialPos = GetTransformedPosition();
-                isSwiping = true;
-                isReturning = false;
+                Vector2 screenPos = primaryPositionAction.ReadValue<Vector2>();
+                if (UIUtil.IsPointerOverUIElement(gameObject, screenPos))
+                {
+                    initialPos = transform.parent.InverseTransformPoint(screenPos);
+                    lastPosition = rectTransform.anchoredPosition;
+                    isSwiping = true;
+                    isReturning = false;
+                }
             }
         }
         
@@ -94,6 +120,5 @@ namespace Gameplay
         {
             isSwiping = false;
         }
-
     }
 }

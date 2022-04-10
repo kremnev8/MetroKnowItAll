@@ -83,7 +83,7 @@ namespace Gameplay
             if (zoomCounter > 0)
                 zoomCounter--;
             
-            bool onUI = UIUtil.IsPointerOverUIElement(primaryPositionAction.ReadValue<Vector2>());
+            bool onUI = UIUtil.IsPointerOverAnyUI(primaryPositionAction.ReadValue<Vector2>());
             
             if (controlEnabled && isDragging && !isZooming && !onUI)
             {
