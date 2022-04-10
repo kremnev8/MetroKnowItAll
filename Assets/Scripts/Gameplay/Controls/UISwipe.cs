@@ -20,13 +20,24 @@ namespace Gameplay
         private bool isSwiping;
         private bool isReturning;
 
-        private Vector2 lastPosition;
+        private Vector2 startSwipePos;
+        private Vector2 lastDeltaPosition;
         private Vector2 moveDelta;
 
+        private FadeInOut contentFader;
+        
+        public GameObject content;
+        
+        [Header("Movement")]
         public float returnSpeed;
         public Vector2 moveAxis;
-        public Vector2 closeThreshold;
         public float friction = 0.8f;
+
+        [Header("Positions")] 
+        public Vector2 closedPosition;
+        public Vector2 closeThreshold;
+        public bool shouldDisableContent;
+        public bool twoWay;
         
         private void Start()
         {
@@ -34,6 +45,7 @@ namespace Gameplay
             input = model.input;
 
             rectTransform = GetComponent<RectTransform>();
+            contentFader = content.GetComponent<FadeInOut>();
 
             primaryPositionAction = input.actions["primaryPosition"];
             primaryContactAction = input.actions["primaryContact"];
@@ -56,12 +68,19 @@ namespace Gameplay
             if (isSwiping)
             {
                 Vector2 delta = GetTransformedPosition() - initialPos;
-                if (Vector2.Dot(delta.normalized, moveAxis) > 0)
+                bool posMove = Vector2.Dot(delta.normalized, moveAxis) > 0;
+                if (posMove || twoWay)
                 {
-                    Vector2 newPosition = delta * moveAxis.Abs();
+                    Vector2 newPosition = startSwipePos + delta * moveAxis.Abs();
                     rectTransform.anchoredPosition = newPosition;
-                    moveDelta = newPosition - lastPosition;
-                    lastPosition = newPosition;
+                    moveDelta = newPosition - lastDeltaPosition; 
+                    lastDeltaPosition = newPosition;
+                }
+
+                Vector2 closedPos = rectTransform.sizeDelta - closedPosition;
+                if (posMove && (rectTransform.anchoredPosition * moveAxis).Greater(closedPos))
+                {
+                    isSwiping = false;
                 }
             }
             else
@@ -70,16 +89,38 @@ namespace Gameplay
             }
         }
 
-        private void UpdateReleased()
+        private void SetState(bool value)
         {
-            Vector2 _closeThreshold = closeThreshold * rectTransform.sizeDelta;
-            
-            if ((rectTransform.anchoredPosition * moveAxis).Greater(_closeThreshold) && !isReturning)
+            if (contentFader == null)
             {
-                gameObject.SetActive(false);
+                content.SetActive(value);
             }
             else
             {
+                contentFader.Fade(value);
+            }
+        }
+
+        private void UpdateReleased()
+        {
+            Vector2 _closeThreshold = rectTransform.sizeDelta - closeThreshold;
+            
+            if ((rectTransform.anchoredPosition * moveAxis).Greater(_closeThreshold) && !isReturning)
+            {
+                Vector2 closedPos = rectTransform.sizeDelta * moveAxis + closedPosition;
+                rectTransform.anchoredPosition = closedPos;
+                if (shouldDisableContent && content.activeSelf)
+                {
+                    SetState(false);
+                }
+            }
+            else
+            {
+                if (shouldDisableContent && !content.activeSelf)
+                {
+                    SetState(true);
+                }
+                
                 if (moveDelta.sqrMagnitude < 0.1f || Vector2.Dot(moveDelta.normalized, moveAxis) <= 0)
                 {
                     rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, Vector2.zero, returnSpeed * Time.deltaTime);
@@ -109,7 +150,8 @@ namespace Gameplay
                 if (UIUtil.IsPointerOverUIElement(gameObject, screenPos))
                 {
                     initialPos = transform.parent.InverseTransformPoint(screenPos);
-                    lastPosition = rectTransform.anchoredPosition;
+                    lastDeltaPosition = rectTransform.anchoredPosition;
+                    startSwipePos = lastDeltaPosition;
                     isSwiping = true;
                     isReturning = false;
                 }
