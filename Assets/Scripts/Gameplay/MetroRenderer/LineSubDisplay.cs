@@ -42,6 +42,8 @@ namespace Gameplay
 
             bool skipNext = false;
             bool isLoop = false;
+            
+            if (points.Count < 2) return;
 
             {
                 Vector2 p1 = points[0].point;
