@@ -26,7 +26,11 @@ namespace Gameplay
         private InputAction secondDeltaAction;
         private InputAction secondPositionAction;
         private InputAction secondContactAction;
-
+        
+#if UNITY_EDITOR
+        private InputAction scrollAction;
+#endif
+        
         private Coroutine zoomCoroutine;
 
         private Vector2 initialPosition;
@@ -57,6 +61,9 @@ namespace Gameplay
             secondDeltaAction = input.actions["delta1"];
             secondPositionAction = input.actions["position1"];
             secondContactAction = input.actions["contact1"];
+#if UNITY_EDITOR
+            scrollAction = input.actions["Scroll"];
+#endif
 
             primaryContactAction.started += StartDrag;
             primaryContactAction.canceled += EndDrag;
@@ -80,6 +87,11 @@ namespace Gameplay
 
         private void Update()
         {
+#if UNITY_EDITOR
+            float mouseScroll = scrollAction.ReadValue<Vector2>().y / config.scrollSensitivity;
+            camera.orthographicSize += mouseScroll * Time.deltaTime;
+#endif
+            
             if (zoomCounter > 0)
                 zoomCounter--;
             

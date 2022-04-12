@@ -9,6 +9,8 @@ namespace ScriptableObjects
         public float zoomSpeed;
         public float minZoom;
         public float maxZoom;
+
+        public float scrollSensitivity;
         
         [Header("Movement")]
         public float normalMaxSpeed = 5f;

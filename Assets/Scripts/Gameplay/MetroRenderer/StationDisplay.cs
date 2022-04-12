@@ -43,6 +43,7 @@ namespace Gameplay
             if (shouldLabelDisplay && timeToHideLabel <= 0)
             {
                 label.color = color;
+                label.fontSize = 2;
                 label.gameObject.SetActive(true);
 
                 timeToHideLabel = time;
@@ -107,6 +108,7 @@ namespace Gameplay
                 if (timeToHideLabel == 0)
                 {
                     label.gameObject.SetActive(false);
+                    label.fontSize = 1.8f;
                 }
                 
             }
