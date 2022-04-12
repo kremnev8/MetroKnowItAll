@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2a71dc4b4341c98d83463d757ccc88, type: 3}
+  m_Name: Color Palette
+  m_EditorClassIdentifier: 
+  themes:
+  - themeName: Light Theme
+    rightAnswer: {r: 0, g: 0.7735849, b: 0.06496683, a: 1}
+    wrongAnswer: {r: 0.7924528, g: 0, b: 0, a: 1}
+    background: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
+    secondareBackground: {r: 1, g: 1, b: 1, a: 1}
+    textColor: {r: 0, g: 0, b: 0, a: 1}
+    buttonColor: {r: 0.101960786, g: 0.4509804, b: 0.9098039, a: 1}
+  - themeName: Dark Theme
+    rightAnswer: {r: 0, g: 0.77254903, b: 0.06666667, a: 1}
+    wrongAnswer: {r: 0.7921569, g: 0, b: 0, a: 1}
+    background: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+    secondareBackground: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+    textColor: {r: 1, g: 1, b: 1, a: 1}
+    buttonColor: {r: 0.5411765, g: 0.7058824, b: 0.972549, a: 1}
+  m_lightTheme: 1
