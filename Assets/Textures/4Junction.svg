@@ -24,8 +24,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.0469406"
-     inkscape:cx="572.62082"
-     inkscape:cy="298.01117"
+     inkscape:cx="572.62083"
+     inkscape:cy="298.01118"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -43,6 +43,7 @@
        fill="#ffffff"
        stroke="#000000"
        d="m 11.682731,41.762862 a 35.2,35.2 0 0 0 22,0 12.15,12.15 0 0 0 9,-9 33.6,33.6 0 0 0 0,-21 12.15,12.15 0 0 0 -9,-9.0000004 35.2,35.2 0 0 0 -22,0 12.15,12.15 0 0 0 -9.0000009,9.0000004 33.6,33.6 0 0 0 0,21 12.15,12.15 0 0 0 9.0000009,9"
-       id="path446" />
+       id="path446"
+       style="stroke:#7f7f7f;stroke-opacity:1" />
   </g>
 </svg>

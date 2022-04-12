@@ -19,9 +19,12 @@ namespace Gameplay
         private Graphic graphic;
         private new Renderer renderer;
         
+        [NonSerialized]
         internal ColorPalette palette;
 
-        [HideInInspector] public string colorName;
+        [HideInInspector]
+        [SerializeField]
+        public string colorName;
 
 
         private void Awake()
@@ -43,11 +46,14 @@ namespace Gameplay
             {
                 FieldInfo info = typeof(Theme).GetField(colorName);
                 Color color = (Color) info.GetValue(palette.currentTheme);
-                
-                if (graphic != null) graphic.color = color;
-                
-                if (renderer != null && renderer.material != null) 
-                    renderer.material.color = color;
+
+                if (graphic != null)
+                {
+                    graphic.color = color;
+                }else if (renderer != null && renderer.sharedMaterial != null)
+                {
+                    renderer.sharedMaterial.color = color;
+                }
             }
         }
 
@@ -66,6 +72,13 @@ namespace Gameplay
     [CustomEditor(typeof(PaletteGraphic))]
     public class PaletteGraphicEditor : Editor
     {
+        SerializedProperty colorNameProperty;
+ 
+        void OnEnable()
+        {
+            colorNameProperty = serializedObject.FindProperty("colorName");
+        }
+        
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
@@ -76,7 +89,7 @@ namespace Gameplay
                 .Where(field => field.FieldType == typeof(Color))
                 .Select(field => field.Name).ToArray();
 
-            string currentName = graphic.colorName;
+            string currentName = colorNameProperty.stringValue;
 
 
             int indexof = Array.IndexOf(colorNames, currentName);
@@ -87,7 +100,11 @@ namespace Gameplay
 
             if (EditorGUI.EndChangeCheck())
             {
-                graphic.colorName = colorNames[indexof];
+                if (indexof != -1 && !string.IsNullOrEmpty(colorNames[indexof]))
+                {
+                    colorNameProperty.stringValue = colorNames[indexof];
+                    serializedObject.ApplyModifiedProperties();
+                }
             }
 
             if (graphic.palette != null)

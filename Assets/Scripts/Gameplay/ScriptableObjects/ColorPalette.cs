@@ -19,6 +19,9 @@ namespace Gameplay
         
         public Color textColor;
         public Color buttonColor;
+
+        public Color lineColor;
+        public Color unfocusedColor;
     }
     
     [CreateAssetMenu(fileName = "Color Palette", menuName = "SO/New Color Palette", order = 0)]

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorName: 
+  colorName: secondareBackground
 --- !u!1 &406890282127044903
 GameObject:
   m_ObjectHideFlags: 0

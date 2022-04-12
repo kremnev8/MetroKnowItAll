@@ -15,7 +15,7 @@ MonoBehaviour:
   lines:
   - lineId: 0
     name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
-      \u041B\u0438\u043D\u0438\u044F"
+      \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -490,7 +490,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 1
     name: "\u0417\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F
-      \u041B\u0438\u043D\u0438\u044F"
+      \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -928,7 +928,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 2
     name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F
-      \u041B\u0438\u043D\u0438\u044F"
+      \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -1329,7 +1329,7 @@ MonoBehaviour:
     namePosition: 8
     nameAlignment: 513
   - lineId: 3
-    name: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    name: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -1569,7 +1569,7 @@ MonoBehaviour:
     namePosition: 8
     nameAlignment: 513
   - lineId: 4
-    name: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    name: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 1
     curveCenter: {x: 0.5, y: 10}
@@ -2658,7 +2658,7 @@ MonoBehaviour:
     namePosition: 8
     nameAlignment: 513
   - lineId: 7
-    name: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    name: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -2807,7 +2807,7 @@ MonoBehaviour:
     namePosition: 8
     nameAlignment: 513
   - lineId: 8
-    name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F \u041B\u0438\u043D\u0438\u044F"
+    name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -4688,7 +4688,7 @@ MonoBehaviour:
       stationId: 24
       position: {x: 2122, y: 1331}
       names:
-      - "\u0428\u043E\u0441\u0441\u0435"
+      - "\u0428\u043E\u0441\u0441\u0435 \u042D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
       currentNameIndex: 0
       m_override: 1
       hideName: 1
