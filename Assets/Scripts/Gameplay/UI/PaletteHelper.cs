@@ -36,7 +36,7 @@ namespace Gameplay
             
             tmpOutlineMaterial.SetColor(underlayColor, theme.secondareBackground);
         }
-
+#if UNITY_EDITOR
         private void Update()
         {
             if (ColorPalette.dirty)
@@ -45,6 +45,7 @@ namespace Gameplay
                 ColorPalette.dirty = false;
             }
         }
+#endif
         
     }
 }

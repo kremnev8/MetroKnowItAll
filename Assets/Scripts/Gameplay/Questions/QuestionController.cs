@@ -30,6 +30,8 @@ namespace Gameplay.Questions
         public int correctGuesses;
 
         public static Action onQuestionChanged;
+
+        public bool isResting;
         
 
         private void Start()
@@ -50,6 +52,8 @@ namespace Gameplay.Questions
 
         public void CheckAnswer()
         {
+            if (isResting) return;
+            
             bool result = questionGenerators[currentController].ValidateAnswer();
 
             if (result) correctGuesses++;
@@ -78,7 +82,7 @@ namespace Gameplay.Questions
             }
             catch (Exception e)
             {
-                SelectNextRegion();
+                StartNextRegionTimer();
                 return;
             }
             
@@ -87,6 +91,9 @@ namespace Gameplay.Questions
 
         private void StartNextRegionTimer()
         {
+            if (isResting) return;
+            
+            isResting = true;
             questionUI[currentController].HideElements();
             if (correctGuesses == questionsPerRegion)
             {
@@ -102,6 +109,7 @@ namespace Gameplay.Questions
 
         public void SelectNextRegion()
         {
+            isResting = false;
             int lineId = Random.Range(0, renderer.metro.lines.Count);
             currentRegion.lineId = lineId;
             questionsRemain = questionsPerRegion;

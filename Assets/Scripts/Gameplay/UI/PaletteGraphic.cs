@@ -5,10 +5,10 @@ using Model;
 using Platformer.Core;
 using UnityEngine;
 using UnityEngine.UI;
-#if UNITY_EDITOR
 using System.Reflection;
-using UnityEditor;
 
+#if UNITY_EDITOR
+using UnityEditor;
 #endif
 
 namespace Gameplay
