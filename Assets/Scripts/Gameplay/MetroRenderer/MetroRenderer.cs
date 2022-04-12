@@ -150,7 +150,22 @@ namespace Gameplay
         {
             foreach (StationDisplay display in stationDisplays.Values)
             {
-                display.SetLabelVisible(false, Color.white);
+                display.SetLabelVisible(false, PaletteHelper.theme.textColor);
+            }
+        }
+        
+        public void ShowAllLabels()
+        {
+            try
+            {
+                foreach (StationDisplay display in stationDisplays.Values)
+                {
+                    display.SetLabelVisible(true, PaletteHelper.theme.textColor);
+                }
+            }
+            catch (Exception e)
+            {
+               Debug.Log(e.Message);
             }
         }
 

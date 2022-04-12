@@ -10,7 +10,6 @@ namespace Gameplay.Questions
 {
     public class UIQuestionFindStation : BaseUIQuestion
     {
-        private int correctGuesses;
         private int hideFeedbackIn;
 
         public TouchButton button;
@@ -18,7 +17,6 @@ namespace Gameplay.Questions
         public RectTransform bottomPane;
         
         public TMP_Text questionLabel;
-        public TMP_Text correctLabel;
         public TMP_Text feedbackLabel;
 
         public override BaseQuestionGenerator GetController()
@@ -28,6 +26,7 @@ namespace Gameplay.Questions
 
         public override void HideElements()
         {
+            questionLabel.text = "";
             button.gameObject.SetActive(false);
         }
 
@@ -43,14 +42,12 @@ namespace Gameplay.Questions
         {
             if (result)
             {
-                correctGuesses++;
-                correctLabel.text = correctGuesses.ToString();
-                feedbackLabel.text = "Верно!";
+               // feedbackLabel.text = "Верно!";
                 button.selectedStation.ShowLabelFor(PaletteHelper.theme.rightAnswer, 120);
             }
             else
             {
-                feedbackLabel.text = "Неправильно!";
+                //feedbackLabel.text = "Неправильно!";
                 button.selectedStation.ShowLabelFor(PaletteHelper.theme.wrongAnswer, 120);
             }
             button.HideSelector();

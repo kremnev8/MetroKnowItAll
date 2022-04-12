@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using Gameplay;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Util
 {
+
     public static class MathExtensions
     {
         public static Vector2 Rotate(this Vector2 v, float delta) {
@@ -162,6 +166,43 @@ namespace Util
             return p1start + t * r;
         }
 
+        public static Vector2 Apply(this Vector2 vec, Func<float, float> func)
+        {
+            return new Vector2(func(vec.x), func(vec.y));
+        }
+        
+        public static Vector2Int Apply(this Vector2 vec, Func<float, int> func)
+        {
+            return new Vector2Int(func(vec.x), func(vec.y));
+        }
+
+        public static string GetDirection(this Vector2 dir)
+        {
+            Vector2Int intDir = dir.normalized.Apply(Mathf.RoundToInt);
+
+            return intDir.x switch
+            {
+                1 => intDir.y switch
+                {
+                    1 => "северо-восточнее",
+                    -1 => "юго-восточнее",
+                    _ => "восточнее"
+                },
+                -1 => intDir.y switch
+                {
+                    1 => "северо-западнее",
+                    -1 => "юго-западнее",
+                    _ => "западнее"
+                },
+                _ => intDir.y switch
+                {
+                    1 => "севернее",
+                    -1 => "южнее",
+                    _ => "возле"
+                }
+            };
+        }
+        
         public static int Mod(this int x, int m)
         {
             int r = x % m;

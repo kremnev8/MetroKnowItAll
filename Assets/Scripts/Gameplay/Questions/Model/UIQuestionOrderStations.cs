@@ -26,6 +26,7 @@ namespace Gameplay.Questions.Model
 
         public override void HideElements()
         {
+            taskLabel.text = "";
             buttons.gameObject.SetActive(false);
             checkButton.SetActive(false);
             foreach (TMP_Text label in mapLabels)
@@ -41,7 +42,7 @@ namespace Gameplay.Questions.Model
             {
                 MetroStation station = buttons.buttons[i].element as MetroStation;
                 mapLabels[i].text = station.currentName;
-                mapLabels[i].color = Color.black;
+                mapLabels[i].color = PaletteHelper.theme.textColor;
             }
         }
 
@@ -85,7 +86,7 @@ namespace Gameplay.Questions.Model
                 button.SetColor(correct ? PaletteHelper.theme.rightAnswer : PaletteHelper.theme.wrongAnswer);
             }
             
-            feedbackLabel.text = allCorrect ? "Верно!" : "Неправильно!";
+           // feedbackLabel.text = allCorrect ? "Верно!" : "Неправильно!";
             hideFeedbackIn = 120;
         }
         

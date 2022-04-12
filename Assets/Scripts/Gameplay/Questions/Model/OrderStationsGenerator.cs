@@ -51,11 +51,14 @@ namespace Gameplay.Questions.Model
 
                     MetroStation firstStation = metro.GetStation(currentLineId, currentQuestionStations[tipIndex].stationId);
                     MetroStation secondStation = metro.GetStation(currentLineId, currentQuestionStations[nextIndex].stationId);
+
+                    Vector2 dir = secondStation.position - firstStation.position;
+                    string dirName = dir.GetDirection();
                     
                     tipBlacklisted.Add(tipIndex);
                     tipBlacklisted.Add(nextIndex);
 
-                    return $"Станция {firstStation.currentName} находится перед станцией {secondStation.currentName}";
+                    return $"Станция {firstStation.currentName} находится {dirName} станции {secondStation.currentName}";
             }
 
             return "";
