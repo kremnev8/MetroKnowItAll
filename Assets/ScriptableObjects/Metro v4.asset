@@ -1169,7 +1169,7 @@ MonoBehaviour:
       stationId: 21
       position: {x: 575, y: 770}
       names:
-      - "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435"
+      - "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
       currentNameIndex: 0
       m_override: 0
       hideName: 0
@@ -2850,7 +2850,8 @@ MonoBehaviour:
       stationId: 3
       position: {x: 759, y: 1778}
       names:
-      - "\u041B\u043E\u043C\u043E\u043D\u043E\u0441\u043E\u0432\u0441\u043A\u0438\u0439"
+      - "\u041B\u043E\u043C\u043E\u043D\u043E\u0441\u043E\u0432\u0441\u043A\u0438\u0439
+        \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
       currentNameIndex: 0
       m_override: 0
       hideName: 0
@@ -3508,7 +3509,7 @@ MonoBehaviour:
       stationId: 1
       position: {x: 1125, y: 665}
       names:
-      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435"
+      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
       currentNameIndex: 0
       m_override: 1
       hideName: 0
@@ -4599,7 +4600,7 @@ MonoBehaviour:
       stationId: 16
       position: {x: 1720, y: 1897}
       names:
-      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435"
+      - "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041A\u043E\u0442\u043B\u044B"
       currentNameIndex: 0
       m_override: 0
       hideName: 0
@@ -5960,7 +5961,7 @@ MonoBehaviour:
       stationId: 28
       position: {x: 1898, y: 2380}
       names:
-      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0439"
+      - "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C"
       currentNameIndex: 0
       m_override: 0
       hideName: 0
