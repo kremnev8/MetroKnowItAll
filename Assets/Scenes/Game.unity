@@ -45730,8 +45730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b419de5b9db4647850de91a4258229f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  achievmentText: {fileID: 1164506417}
-  achievmentIcon: {fileID: 1002645294}
+  achievementText: {fileID: 1164506417}
+  achievementIcon: {fileID: 1002645294}
   timeIn: 0.7
   timeStay: 2.5
   timeOut: 0.3
@@ -54438,7 +54438,7 @@ MonoBehaviour:
   gameModeLabel: {fileID: 1162906428}
   attemptsLabel: {fileID: 305920673}
   statusLabel: {fileID: 2085309336}
-  achievment: {fileID: 666181372}
+  achievement: {fileID: 0}
 --- !u!1 &824929226
 GameObject:
   m_ObjectHideFlags: 0

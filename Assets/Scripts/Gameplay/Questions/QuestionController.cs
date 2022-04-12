@@ -12,6 +12,7 @@ namespace Gameplay.Questions
     public class QuestionController : MonoBehaviour
     {
         public Transform uiQuestionTransfrom;
+        public UITopBar topBar;
         
         [HideInInspector]
         public List<BaseUIQuestion> questionUI = new List<BaseUIQuestion>();
@@ -19,12 +20,14 @@ namespace Gameplay.Questions
 
         
         private new MetroRenderer renderer;
-        
+
         private int currentController;
 
         private Region currentRegion;
+        
         private int questionsRemain;
         public int questionsPerRegion;
+        public int correctGuesses;
 
         public static Action onQuestionChanged;
         
@@ -42,18 +45,22 @@ namespace Gameplay.Questions
                 uiQuestion.renderer = renderer;
                 questionGenerators.Add(generator);
             }
-            SelectNextRegion();
-            SelectNextController();
+            Invoke(nameof(StartNextRegionTimer), 1f);
         }
 
         public void CheckAnswer()
         {
-            questionGenerators[currentController].ValidateAnswer();
+            bool result = questionGenerators[currentController].ValidateAnswer();
 
+            if (result) correctGuesses++;
             questionsRemain--;
+            
+            topBar.UpdateStatus(result, correctGuesses, questionsPerRegion - questionsRemain);
+            
             if (questionsRemain == 0)
             {
-                SelectNextRegion();
+                StartNextRegionTimer();
+                return;
             }
             
             Invoke(nameof(SelectNextController), 1.5f);
@@ -72,11 +79,25 @@ namespace Gameplay.Questions
             catch (Exception e)
             {
                 SelectNextRegion();
-                SelectNextController();
                 return;
             }
             
             onQuestionChanged?.Invoke();
+        }
+
+        private void StartNextRegionTimer()
+        {
+            questionUI[currentController].HideElements();
+            if (correctGuesses == questionsPerRegion)
+            {
+                topBar.DisplayAllCorrectMessage();
+            }
+            correctGuesses = 0;
+            
+            renderer.ClearFocus();
+            renderer.ShowAllLabels();
+            topBar.StartCountdown(10);
+            Invoke(nameof(SelectNextRegion), 10.2f);
         }
 
         public void SelectNextRegion()
@@ -89,6 +110,8 @@ namespace Gameplay.Questions
             {
                 generator.SetRegion(currentRegion);
             }
+            topBar.SetCurrentLabel(renderer.metro.lines[lineId].name.Replace("линия", ""));
+            SelectNextController();
         }
 
         public string GetNextTip(int index)

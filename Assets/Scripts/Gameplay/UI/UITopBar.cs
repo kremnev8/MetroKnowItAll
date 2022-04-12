@@ -10,7 +10,7 @@ namespace Gameplay
         public TMP_Text attemptsLabel;
         public TMP_Text statusLabel;
 
-        public UIAchievment achievment;
+        public UIAchievement achievement;
         
         private int statusHideTimer;
 
@@ -42,7 +42,7 @@ namespace Gameplay
 
         public void DisplayAllCorrectMessage()
         {
-            achievment.Popup();
+            achievement.Popup();
 
         }
 
