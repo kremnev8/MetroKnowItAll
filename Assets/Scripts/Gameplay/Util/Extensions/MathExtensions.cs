@@ -1,80 +1,18 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 namespace Util
 {
-    public static class Extension
+    public static class MathExtensions
     {
-        public static void Invoke(this MonoBehaviour behaviour, string method, object options, float delay)
-        {
-            behaviour.StartCoroutine(_invoke(behaviour, method, delay, options));
-        }
-
-        private static IEnumerator _invoke(this MonoBehaviour behaviour, string method, float delay, object options)
-        {
-            if (delay > 0f) yield return new WaitForSeconds(delay);
-
-            Type instance = behaviour.GetType();
-            MethodInfo mthd = instance.GetMethod(method);
-            mthd?.Invoke(behaviour, new[] {options});
-
-            yield return null;
-        }
-
-        public static void ClearChildren(this GameObject thatObject)
-        {
-            //Array to hold all child obj
-            List<GameObject> allChildren = new List<GameObject>(thatObject.transform.childCount);
-
-            //Find all child obj and store to that array
-            foreach (Transform child in thatObject.transform)
-            {
-                allChildren.Add(child.gameObject);
-            }
-
-            if (allChildren.Count == 0) return;
-
-
-            //Now destroy them
-            foreach (GameObject child in allChildren)
-            {
-#if UNITY_EDITOR
-                Object.DestroyImmediate(child);
-#else
-                Object.Destroy(child);
-#endif
-            }
-        }
-
-        public static void ChangeLayersRecursively(this Transform trans, int mask)
-        {
-            trans.gameObject.layer = mask;
-            foreach (Transform child in trans) child.ChangeLayersRecursively(mask);
-        }
-
-
-        public static void ExecuteInAllChildren(this Transform trans, Action<Transform> action, bool executeOnMain = false)
-        {
-            if (executeOnMain)
-                action(trans);
-
-            foreach (Transform child in trans) child.ExecuteInAllChildren(action, true);
-        }
-        
         public static Vector2 Rotate(this Vector2 v, float delta) {
             return new Vector2(
                 v.x * Mathf.Cos(delta) - v.y * Mathf.Sin(delta),
                 v.x * Mathf.Sin(delta) + v.y * Mathf.Cos(delta)
             );
         }
-
 
         public static Vector2 ClosestPoint(Vector2 p1, Vector2 p2, Vector2 p3)
         {
@@ -166,44 +104,6 @@ namespace Util
         public static Vector2 GetNormal(this Vector2 vector)
         {
             return new Vector2(vector.y, -vector.x);
-        }
-        
-        public static int ConstrainedRandom(Func<int, bool> filter, int min, int max)
-        {
-            int[] items = Enumerable.Range(min, max - min).Where(filter).ToArray();
-
-            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
-            return items[Random.Range(0, items.Length)];
-        }
-
-        public static int ConstrainedRandom(this List<int> blacklist, int min, int max)
-        {
-            int[] items = Enumerable.Range(min, max - min).Where(i => !blacklist.Contains(i)).ToArray();
-            
-            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
-            return items[Random.Range(0, items.Length)];
-        }
-        
-        public static int ConstrainedRandom(this byte exclude, int min, int max)
-        {
-            return ConstrainedRandom((int)exclude, min, max);
-        }
-        
-        public static int ConstrainedRandom(this int exclude, int min, int max)
-        {
-            int[] items = Enumerable.Range(min, max - min).Where(i => i != exclude).ToArray();
-            
-            if (items.Length == 0) throw new ArgumentException("Can't pick random item, nothing left!");
-            return items[Random.Range(0, items.Length)];
-        }
-
-        public static RigidbodyConstraints GetConstaraints(this Vector3 vector)
-        {
-            int value = vector.x == 0 ? (int) RigidbodyConstraints.FreezePositionX : 0;
-            value += vector.y == 0 ? (int) RigidbodyConstraints.FreezePositionY : 0;
-            value += vector.z == 0 ? (int) RigidbodyConstraints.FreezePositionZ : 0;
-
-            return (RigidbodyConstraints) value;
         }
 
         public static void Swap<T>(ref T lhs, ref T rhs)

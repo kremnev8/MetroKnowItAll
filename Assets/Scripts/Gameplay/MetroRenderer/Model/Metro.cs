@@ -44,7 +44,7 @@ namespace Gameplay
         {
             List<MetroStation> stations = lines[lineId].stations;
 
-            int index = Extension.ConstrainedRandom(stationId =>
+            int index = RandomUtils.ConstrainedRandom(stationId =>
             {
                 return !blacklist.Contains(stations[stationId].globalId);
             }, 0, stations.Count);
@@ -56,7 +56,7 @@ namespace Gameplay
         {
             List<MetroStation> stations = lines[lineId].stations;
 
-            int index = Extension.ConstrainedRandom(stationId =>
+            int index = RandomUtils.ConstrainedRandom(stationId =>
             {
                 if (stationId + size - 1 < stations.Count)
                 {
@@ -78,7 +78,7 @@ namespace Gameplay
 
         public MetroLine PickRandomLine()
         {
-            int index = Extension.ConstrainedRandom(
+            int index = RandomUtils.ConstrainedRandom(
                 lineId =>
                 {
                     return lines[lineId].stations.Count <= 0;

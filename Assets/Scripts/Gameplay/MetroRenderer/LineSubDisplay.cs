@@ -101,11 +101,11 @@ namespace Gameplay
 
                     overrideBend = points[i - 2].connection.overrideBend || points[i - 1].connection.overrideBend;
 
-                    if (!overrideBend && !Extension.AreParralel(p1, p2, p2, p3) &&
-                        !Extension.AreParralel(p2, p3, p3, p4))
+                    if (!overrideBend && !MathExtensions.AreParralel(p1, p2, p2, p3) &&
+                        !MathExtensions.AreParralel(p2, p3, p3, p4))
                     {
-                        Vector2 I = Extension.IntersectLineSegments(p1, p2, p4, p3);
-                        float t = Extension.GetProjectionT(p2, p3, I);
+                        Vector2 I = MathExtensions.IntersectLineSegments(p1, p2, p4, p3);
+                        float t = MathExtensions.GetProjectionT(p2, p3, I);
 
                         if (t < 0)
                         {
