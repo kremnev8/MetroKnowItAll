@@ -51,10 +51,11 @@ MonoBehaviour:
   lineRoot: {fileID: 406890282127044900}
   crossingRoot: {fileID: 5070513389672141485}
   lineMat: {fileID: 2100000, guid: b912f49c459ecb946a7b00699a2f3a1e, type: 2}
-  metro: {fileID: 11400000, guid: b91116bb65acd754aa69d07d756347a1, type: 2}
   stationPrefab: {fileID: 2550630860212831627, guid: 908b833d199e1844092a372ab6f3539b, type: 3}
   linePrefab: {fileID: 8883161288348245882, guid: dd9bf4b05b6659948b11fc72fd5067df, type: 3}
   crossingPrefab: {fileID: 7795970787492702023, guid: f36da6d7aa9873746aad44c500142c5d, type: 3}
+  metro: {fileID: 11400000, guid: b91116bb65acd754aa69d07d756347a1, type: 2}
+  focusedLineId: 0
 --- !u!1 &406890282030456913
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,6 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406890282030456918}
   - component: {fileID: 406890282030456919}
+  - component: {fileID: 8236922558212504151}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -137,6 +139,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8236922558212504151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406890282030456913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorName: 
 --- !u!1 &406890282127044903
 GameObject:
   m_ObjectHideFlags: 0

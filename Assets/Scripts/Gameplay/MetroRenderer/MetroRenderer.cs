@@ -169,6 +169,11 @@ namespace Gameplay
             {
                 stationDisplay.SetFocused(true);
             }
+            
+            foreach (CrossingDisplay display in crossingDisplays)
+            {
+                display.SetFocused(true);
+            }
         }
 
         public void FocusLine(int lineId)
@@ -181,6 +186,11 @@ namespace Gameplay
             foreach (StationDisplay stationDisplay in stationDisplays.Values)
             {
                 stationDisplay.SetFocused(stationDisplay.station.lineId == lineId);
+            }
+
+            foreach (CrossingDisplay display in crossingDisplays)
+            {
+                display.SetFocused(display.crossing.stationsGlobalIds.Any( id => id.lineId == lineId));
             }
             
             focusArea = Area.Everywhere;

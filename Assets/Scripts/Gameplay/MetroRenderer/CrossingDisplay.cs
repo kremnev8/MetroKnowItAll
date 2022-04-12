@@ -6,7 +6,7 @@ namespace Gameplay
 {
     public class CrossingDisplay : MonoBehaviour
     {
-        private MetroCrossing crossing;
+        public MetroCrossing crossing;
         private Metro metro;
 
         public new SpriteRenderer renderer;
@@ -17,6 +17,15 @@ namespace Gameplay
         public Sprite JunctionFor4;
 
         private static readonly Vector2 Up3 = Vector2.up.Rotate(-33 * Mathf.Deg2Rad);
+        private static readonly int isFocused = Shader.PropertyToID("_IsFocused");
+        private static MaterialPropertyBlock block;
+        
+        public void SetFocused(bool value)
+        {
+            renderer.GetPropertyBlock(block);
+            block.SetFloat(isFocused, value ? 1 : 0);
+            renderer.SetPropertyBlock(block);
+        }
         
         public void SetCrossing(Metro metro, MetroCrossing crossing)
         {
@@ -28,6 +37,7 @@ namespace Gameplay
 
         public void Refresh()
         {
+            block ??= new MaterialPropertyBlock();
             if (isValid())
             {
                 bool isStraight = IsStraight();

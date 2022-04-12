@@ -5,8 +5,10 @@ Shader "Metro/TintedSprite"
 	{
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		_Color ("Main Tint", Color) = (1,1,1,1)
+
+		[Toggle(DO_TINT)] _TintToggle ("Tint enabled", Float) = 1
 		_BackColor ("Background Tint", Color) = (1,1,1,1)
-		_UnfocusedSaturation ("Unfocused Tint",  Range(0.0, 1.0)) = 1
+		_UnfocusedColor ("Unfocused Color",  Color) = (1,1,1,1)
 
 		[MaterialToggle] _IsFocused ("Is Focused", Float) = 1
 		_FocusArea ("Focus Area", Vector) = (-50,-50,50,50)
@@ -33,7 +35,7 @@ Shader "Metro/TintedSprite"
 		CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
-			#pragma multi_compile _ PIXELSNAP_ON
+			#pragma shader_feature DO_TINT
 			#include "UnityCG.cginc"
 			
 			struct appdata_t
@@ -53,7 +55,7 @@ Shader "Metro/TintedSprite"
 			
 			fixed4 _Color;
 			fixed4 _BackColor;
-			float _UnfocusedSaturation;
+			fixed4 _UnfocusedColor;
 
 			bool _IsFocused;
 			float4 _FocusArea;
@@ -75,29 +77,33 @@ Shader "Metro/TintedSprite"
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				fixed4 c = tex2D (_MainTex, IN.uv);
-
+#ifdef DO_TINT	
                 if (c.r > 0.6){
                     c *= IN.color;
                 }else{
                     c.rgb = _BackColor.rgb;
                 }
-				c.rgb *= c.a;
-
+#endif
 				if (!_IsFocused)
 				{
-					fixed lum = Luminance(c.rgb);
-					c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
-					c.a *= _UnfocusedSaturation * 0.8f;
+					c.rgb = (_UnfocusedColor.rgb * _UnfocusedColor.a + c.rgb * c.a * (1 -_UnfocusedColor.a));
+					//c.a = a;
+					//fixed lum = Luminance(c.rgb);
+					//c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
+					
 				}else
 				{
 					if (!(IN.worldPos.x < _FocusArea.x && _FocusArea.z < IN.worldPos.x &&
 					      IN.worldPos.y < _FocusArea.y && _FocusArea.w < IN.worldPos.y))
 						{
-							fixed lum = Luminance(c.rgb);
-							c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
-							c.a *= _UnfocusedSaturation * 0.8f;
+							c.rgb = (_UnfocusedColor.rgb * _UnfocusedColor.a + c.rgb * c.a * (1 -_UnfocusedColor.a));
+							//c.a = a;
+							//fixed lum = Luminance(c.rgb);
+							//c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
+							//c.a *= _UnfocusedTransparency;
 						}
 				}
+				c.rgb *= c.a;
 
 				return c;
 			}
