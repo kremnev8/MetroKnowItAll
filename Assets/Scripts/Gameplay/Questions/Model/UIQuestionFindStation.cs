@@ -46,12 +46,12 @@ namespace Gameplay.Questions
                 correctGuesses++;
                 correctLabel.text = correctGuesses.ToString();
                 feedbackLabel.text = "Верно!";
-                button.selectedStation.ShowLabelFor(Color.green, 120);
+                button.selectedStation.ShowLabelFor(PaletteHelper.theme.rightAnswer, 120);
             }
             else
             {
                 feedbackLabel.text = "Неправильно!";
-                button.selectedStation.ShowLabelFor(Color.red, 120);
+                button.selectedStation.ShowLabelFor(PaletteHelper.theme.wrongAnswer, 120);
             }
             button.HideSelector();
 

@@ -11,6 +11,7 @@ namespace Model
         public PlayerInput input;
         public MetroRenderer renderer;
         public QuestionController questions;
+        public ColorPalette palette;
 
     }
 }

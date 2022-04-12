@@ -82,7 +82,7 @@ namespace Gameplay.Questions.Model
                 UIDragableButton button = buttons.buttons[i];
                 bool correct = result[i];
                 
-                button.SetColor(correct ? Color.green : Color.red);
+                button.SetColor(correct ? PaletteHelper.theme.rightAnswer : PaletteHelper.theme.wrongAnswer);
             }
             
             feedbackLabel.text = allCorrect ? "Верно!" : "Неправильно!";

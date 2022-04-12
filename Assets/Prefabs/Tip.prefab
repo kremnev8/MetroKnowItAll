@@ -64,6 +64,7 @@ GameObject:
   - component: {fileID: 5520785036885924506}
   - component: {fileID: 5520785036885924504}
   - component: {fileID: 5520785036885924505}
+  - component: {fileID: 5306365646574697877}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -187,6 +188,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5306365646574697877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520785036885924507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorName: textColor
 --- !u!1 &5520785036944272362
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +212,7 @@ GameObject:
   - component: {fileID: 5520785036944272361}
   - component: {fileID: 5520785036944272367}
   - component: {fileID: 5520785036944272360}
+  - component: {fileID: 7898255039084756951}
   m_Layer: 5
   m_Name: Sep
   m_TagString: Untagged
@@ -262,6 +277,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7898255039084756951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520785036944272362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorName: textColor
 --- !u!1 &5520785036953502407
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +301,7 @@ GameObject:
   - component: {fileID: 5520785036953502406}
   - component: {fileID: 5520785036953502404}
   - component: {fileID: 5520785036953502405}
+  - component: {fileID: 353076761072412030}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -397,3 +426,16 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &353076761072412030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5520785036953502407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorName: 

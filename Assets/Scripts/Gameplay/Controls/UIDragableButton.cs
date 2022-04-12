@@ -51,7 +51,7 @@ namespace Gameplay
                 gameObject.SetActive(true);
                 element = _element;
                 label.text = element.displayName;
-                label.color = Color.black;
+                label.color = PaletteHelper.theme.textColor;
                 lastSlot = index;
                 rectTransform.anchoredPosition = new Vector2(0, -index * (rectTransform.sizeDelta.y + gap) - gap);
             }
