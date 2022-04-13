@@ -40,7 +40,8 @@ namespace Gameplay
 
         public sbyte focusedLineId;
         public Area focusArea;
-        
+
+        public bool expectedLabelState = true;
         
         public static Vector2 scale = new Vector2(0.1f, -0.1f);
         public static Vector2 translation = new Vector2(-150, 150);
@@ -245,9 +246,23 @@ public class MetroEditor : Editor
 
         MetroRenderer renderer = (MetroRenderer) target;
         
-        if (GUILayout.Button("Hide Names"))
+        if (GUILayout.Button("Toggle Names"))
         {
-            renderer.HideAllLabels();
+            if (renderer.expectedLabelState)
+            {
+                renderer.HideAllLabels();
+            }
+            else
+            {
+                renderer.ShowAllLabels();
+            }
+
+            renderer.expectedLabelState = !renderer.expectedLabelState;
+        }
+
+        if (GUILayout.Button("Clear Focus"))
+        {
+            renderer.ClearFocus();
         }
 
         if (GUILayout.Button("Regenerate"))

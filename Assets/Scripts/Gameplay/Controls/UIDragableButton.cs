@@ -53,6 +53,9 @@ namespace Gameplay
                 label.text = element.displayName;
                 label.color = GameController.theme.textColor;
                 lastSlot = index;
+                
+                if (rectTransform == null)
+                    rectTransform = GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = new Vector2(0, -index * (rectTransform.sizeDelta.y + gap) - gap);
             }
         }

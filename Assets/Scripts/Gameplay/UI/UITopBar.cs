@@ -10,8 +10,6 @@ namespace Gameplay
         public TMP_Text attemptsLabel;
         public TMP_Text statusLabel;
 
-        public UIAchievement achievement;
-        
         private int statusHideTimer;
 
         private float countdownTimer;
@@ -38,12 +36,6 @@ namespace Gameplay
         public void StartCountdown(float time)
         {
             countdownTimer = time;
-        }
-
-        public void DisplayAllCorrectMessage()
-        {
-            achievement.Popup();
-
         }
 
         private void Update()

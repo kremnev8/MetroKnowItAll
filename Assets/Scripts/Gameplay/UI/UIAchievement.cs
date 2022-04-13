@@ -1,21 +1,23 @@
 ﻿using System;
+using Gameplay.ScriptableObjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 
 namespace Gameplay
 {
     public class UIAchievement : MonoBehaviour
     {
+        public static UIAchievement instance;
+        
+        public TMP_Text achievementName;
         public TMP_Text achievementText;
         public Image achievementIcon;
         public float timeIn;
         public float timeStay;
         public float timeOut;
+
+        public AchievementDB achievements;
         
         private RectTransform rectTransform;
 
@@ -24,10 +26,20 @@ namespace Gameplay
         private void Awake()
         {
             rectTransform = GetComponent<RectTransform>();
+            instance = this;
+        }
+
+        public static void UnlockAchievement(string key)
+        {
+            Achievement achievement = instance.achievements.Get(key);
+            instance.Popup(achievement);
         }
         
-        public void Popup()
+        public void Popup(Achievement achievement)
         {
+            achievementName.text = achievement.name;
+            achievementText.text = achievement.description;
+            achievementIcon.sprite = achievement.icon;
             gameObject.SetActive(true);
             timeElapsed = 0;
             rectTransform.anchoredPosition = Vector2.zero;
@@ -54,21 +66,4 @@ namespace Gameplay
             rectTransform.anchoredPosition = new Vector2(0, pos);
         }
     }
-    
-#if UNITY_EDITOR
-    [CustomEditor(typeof(UIAchievement))]
-    public class UIAchievementEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-
-            UIAchievement ui = (UIAchievement) target;
-            if (GUILayout.Button("Play"))
-            {
-                ui.Popup();
-            } 
-        }
-    }
-#endif
 }

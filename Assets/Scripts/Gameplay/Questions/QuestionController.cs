@@ -98,7 +98,7 @@ namespace Gameplay.Questions
             questionUI[currentController].HideElements();
             if (correctGuesses == questionsPerRegion)
             {
-                topBar.DisplayAllCorrectMessage();
+                UIAchievement.UnlockAchievement("PerfectFive");
             }
             correctGuesses = 0;
             
