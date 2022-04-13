@@ -43,12 +43,12 @@ namespace Gameplay.Questions
             if (result)
             {
                // feedbackLabel.text = "Верно!";
-                button.selectedStation.ShowLabelFor(PaletteHelper.theme.rightAnswer, 120);
+                button.selectedStation.ShowLabelFor(GameController.theme.rightAnswer, 120);
             }
             else
             {
                 //feedbackLabel.text = "Неправильно!";
-                button.selectedStation.ShowLabelFor(PaletteHelper.theme.wrongAnswer, 120);
+                button.selectedStation.ShowLabelFor(GameController.theme.wrongAnswer, 120);
             }
             button.HideSelector();
 

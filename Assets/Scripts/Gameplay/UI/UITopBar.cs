@@ -29,7 +29,7 @@ namespace Gameplay
         public void UpdateStatus(bool lastCorrect, int correct, int total)
         {
             string correctText = lastCorrect ? "Верно!" : "Неверно!";
-            Color textColor = lastCorrect ? PaletteHelper.theme.rightAnswer : PaletteHelper.theme.wrongAnswer;
+            Color textColor = lastCorrect ? GameController.theme.rightAnswer : GameController.theme.wrongAnswer;
             statusLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(textColor)}>{correctText}</color>\nВсего {correct}/{total}";
             statusLabel.gameObject.SetActive(true);
             statusHideTimer = 120;

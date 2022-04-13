@@ -42,7 +42,7 @@ namespace Gameplay.Questions.Model
             {
                 MetroStation station = buttons.buttons[i].element as MetroStation;
                 mapLabels[i].text = station.currentName;
-                mapLabels[i].color = PaletteHelper.theme.textColor;
+                mapLabels[i].color = GameController.theme.textColor;
             }
         }
 
@@ -83,7 +83,7 @@ namespace Gameplay.Questions.Model
                 UIDragableButton button = buttons.buttons[i];
                 bool correct = result[i];
                 
-                button.SetColor(correct ? PaletteHelper.theme.rightAnswer : PaletteHelper.theme.wrongAnswer);
+                button.SetColor(correct ? GameController.theme.rightAnswer : GameController.theme.wrongAnswer);
             }
             
            // feedbackLabel.text = allCorrect ? "Верно!" : "Неправильно!";
