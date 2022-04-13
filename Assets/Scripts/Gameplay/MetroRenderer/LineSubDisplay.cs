@@ -67,7 +67,7 @@ namespace Gameplay
                     Vector2 p2 = points[i - 1].point;
                     Vector2 p3 = points[i].point;
 
-                    Vector2 bendPoint = MetroRenderer.Transform(points[i].connection.bendPoint);
+                    Vector2 bendPoint = points[i].connection.bendPoint;
                     float weight = points[i].connection.weight;
 
                     spline.InsertPointAt(i, points[i].point);

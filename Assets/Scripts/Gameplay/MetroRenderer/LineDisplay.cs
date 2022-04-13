@@ -55,8 +55,8 @@ namespace Gameplay
                 MetroConnection startConn = connections[0];
                 connections.RemoveAt(0);
 
-                Vector2 currentStart = MetroRenderer.Transform(line.stations[startConn.startStationId].position);
-                Vector2 currentEnd = MetroRenderer.Transform(line.stations[startConn.endStationId].position);
+                Vector2 currentStart = line.stations[startConn.startStationId].position;
+                Vector2 currentEnd = line.stations[startConn.endStationId].position;
 
 
                 List<ConnData> points = new List<ConnData>
@@ -73,8 +73,8 @@ namespace Gameplay
                     for (int i = 0; i < connections.Count; i++)
                     {
                         MetroConnection connection = connections[i];
-                        Vector2 start = MetroRenderer.Transform(line.stations[connection.startStationId].position);
-                        Vector2 end = MetroRenderer.Transform(line.stations[connection.endStationId].position);
+                        Vector2 start = line.stations[connection.startStationId].position;
+                        Vector2 end = line.stations[connection.endStationId].position;
 
                         if (start.Equals(currentEnd))
                         {

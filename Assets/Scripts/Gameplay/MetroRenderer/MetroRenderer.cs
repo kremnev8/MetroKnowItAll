@@ -72,11 +72,6 @@ namespace Gameplay
             }
         }
 
-        public static Vector2 Transform(Vector2 pos)
-        {
-            return pos * scale + translation;
-        }
-
         public void Regenerate()
         {
             ClearAll();
@@ -85,7 +80,7 @@ namespace Gameplay
             {
                 foreach (MetroStation station in line.stations)
                 {
-                    Vector3 point = transform.TransformPoint(Transform(station.position) );
+                    Vector3 point = transform.TransformPoint(station.position );
                     StationDisplay stationDisplay = Instantiate(stationPrefab, point, Quaternion.identity, stationRoot);
 
                     stationDisplay.SetStation(station, line);
@@ -150,7 +145,7 @@ namespace Gameplay
         {
             foreach (StationDisplay display in stationDisplays.Values)
             {
-                display.SetLabelVisible(false, PaletteHelper.theme.textColor);
+                display.SetLabelVisible(false, GameController.theme.textColor);
             }
         }
         
@@ -160,7 +155,7 @@ namespace Gameplay
             {
                 foreach (StationDisplay display in stationDisplays.Values)
                 {
-                    display.SetLabelVisible(true, PaletteHelper.theme.textColor);
+                    display.SetLabelVisible(true, GameController.theme.textColor);
                 }
             }
             catch (Exception e)
@@ -191,25 +186,32 @@ namespace Gameplay
             }
         }
 
-        public void FocusLine(int lineId)
+        public void FocusLine(Region region)
         {
-            foreach (LineDisplay lineDisplay in lineDisplays)  
+            if (region.regionType == RegionType.GLOBAL)
             {
-                lineDisplay.SetFocused(lineDisplay.line.lineId == lineId);
-            }
+                foreach (LineDisplay lineDisplay in lineDisplays)
+                {
+                    lineDisplay.SetFocused(lineDisplay.line.lineId == region.lineId);
+                }
 
-            foreach (StationDisplay stationDisplay in stationDisplays.Values)
-            {
-                stationDisplay.SetFocused(stationDisplay.station.lineId == lineId);
-            }
+                foreach (StationDisplay stationDisplay in stationDisplays.Values)
+                {
+                    stationDisplay.SetFocused(stationDisplay.station.lineId == region.lineId);
+                }
 
-            foreach (CrossingDisplay display in crossingDisplays)
-            {
-                display.SetFocused(display.crossing.stationsGlobalIds.Any( id => id.lineId == lineId));
+                foreach (CrossingDisplay display in crossingDisplays)
+                {
+                    display.SetFocused(display.crossing.stationsGlobalIds.Any(id => id.lineId == region.lineId));
+                }
+
+                focusArea = Area.Everywhere;
+                focusedLineId = (sbyte) region.lineId;
             }
-            
-            focusArea = Area.Everywhere;
-            focusedLineId = (sbyte)lineId;  
+            else
+            {
+                FocusArea(region.area);
+            }
         }
 
         public void FocusArea(Area section)
@@ -227,7 +229,7 @@ namespace Gameplay
             }
             else
             {
-                return focusArea.IsInside(Transform(display.station.position));
+                return focusArea.IsInside(display.station.position);
             }
         }
     }
@@ -246,11 +248,6 @@ public class MetroEditor : Editor
         if (GUILayout.Button("Hide Names"))
         {
             renderer.HideAllLabels();
-        }
-        
-        if (GUILayout.Button("Focus"))
-        {
-            renderer.FocusLine(2);
         }
 
         if (GUILayout.Button("Regenerate"))

@@ -119,7 +119,7 @@ namespace Gameplay
 
         private Vector2 GetPosition(GlobalId id)
         {
-            return MetroRenderer.Transform(metro.lines[id.lineId].stations[id.stationId].position);
+            return metro.lines[id.lineId].stations[id.stationId].position;
         }
 
         private bool isValid()

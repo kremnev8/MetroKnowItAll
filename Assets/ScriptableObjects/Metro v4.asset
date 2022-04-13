@@ -6592,3 +6592,54 @@ MonoBehaviour:
     - lineId: 9
       stationId: 4
     isOpen: 1
+  regions:
+  - regionType: 0
+    lineId: 0
+    area:
+      startPos: {x: 200, y: 200}
+      endPos: {x: -200, y: -200}
+  - regionType: 1
+    lineId: 0
+    area:
+      startPos: {x: 41, y: 52}
+      endPos: {x: -38, y: -27}
+  - regionType: 2
+    lineId: 0
+    area:
+      startPos: {x: 30, y: 200}
+      endPos: {x: -45, y: 49}
+  - regionType: 3
+    lineId: 0
+    area:
+      startPos: {x: 200, y: 200}
+      endPos: {x: 27, y: 28}
+  - regionType: 4
+    lineId: 0
+    area:
+      startPos: {x: 200, y: 28}
+      endPos: {x: 37, y: -28}
+  - regionType: 5
+    lineId: 0
+    area:
+      startPos: {x: 200, y: -24}
+      endPos: {x: 37, y: -200}
+  - regionType: 6
+    lineId: 0
+    area:
+      startPos: {x: 34, y: -28}
+      endPos: {x: -40, y: -200}
+  - regionType: 7
+    lineId: 0
+    area:
+      startPos: {x: -38, y: -12}
+      endPos: {x: -200, y: -200}
+  - regionType: 8
+    lineId: 0
+    area:
+      startPos: {x: -38, y: 38}
+      endPos: {x: -200, y: -13}
+  - regionType: 9
+    lineId: 0
+    area:
+      startPos: {x: -45, y: 200}
+      endPos: {x: -200, y: 37}

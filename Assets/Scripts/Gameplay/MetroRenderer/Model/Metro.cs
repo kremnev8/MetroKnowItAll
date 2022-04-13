@@ -18,6 +18,9 @@ namespace Gameplay
     {
         [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
+        public List<Region> regions = new List<Region>();
+        
+        public bool @fixed;
 
         public MetroStation GetStation(int lineId, int stationId)
         {
@@ -33,47 +36,91 @@ namespace Gameplay
             return lines[station.lineId].stations[tipStation];
         }
 
-        public MetroStation PickRandomStation(int lineId)
+        public MetroStation PickRandomStation(Region region)
         {
-            List<MetroStation> stations = lines[lineId].stations;
-            int index = Random.Range(0, stations.Count);
-            return stations[index];
-        }
-        
-        public MetroStation PickRandomStation(int lineId, List<int> blacklist)
-        {
-            List<MetroStation> stations = lines[lineId].stations;
-
-            int index = RandomUtils.ConstrainedRandom(stationId =>
+            if (region.regionType == RegionType.GLOBAL)
             {
-                return !blacklist.Contains(stations[stationId].globalId);
-            }, 0, stations.Count);
-                
-            return stations[index];
-        }
-        
-        public List<MetroStation> PickRandomStationRange(int lineId, int size, List<int> blacklist)
-        {
-            List<MetroStation> stations = lines[lineId].stations;
-
-            int index = RandomUtils.ConstrainedRandom(stationId =>
+                List<MetroStation> stations = lines[region.lineId].stations;
+                int index = Random.Range(0, stations.Count);
+                return stations[index];
+            }
+            else
             {
-                if (stationId + size - 1 < stations.Count)
+                List<MetroStation> regionStations = new List<MetroStation>();
+                foreach (MetroLine line in lines)
                 {
-                    for (int i = stationId; i < stationId + size; i++)
-                    {
-                        if (blacklist.Contains(stations[i].globalId))
-                        {
-                            return false;
-                        }
-                    }
-                    return true;
+                    regionStations.AddRange(
+                        line.stations
+                            .Where(station => region.area.IsInside(station.position)));
+                    
                 }
-                
-                return false;
-            }, 0, stations.Count);
-                
-            return stations.GetRange(index, size);
+                int index = Random.Range(0, regionStations.Count);
+                return regionStations[index];
+            }
+        }
+        
+        public MetroStation PickRandomStation(Region region, List<int> blacklist)
+        {
+            if (region.regionType == RegionType.GLOBAL)
+            {
+                List<MetroStation> stations = lines[region.lineId].stations;
+
+                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(stations[stationId].globalId), 0, stations.Count);
+
+                return stations[index];
+            }
+            else
+            {
+                List<MetroStation> regionStations = new List<MetroStation>();
+                foreach (MetroLine line in lines)
+                {
+                    regionStations.AddRange(
+                        line.stations
+                            .Where(station => region.area.IsInside(station.position)));
+                    
+                }
+                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(regionStations[stationId].globalId), 0, regionStations.Count);
+                return regionStations[index];
+            }
+        }
+        
+        public List<MetroStation> PickRandomStationRange(Region region, int size, List<int> blacklist)
+        {
+            if (region.regionType == RegionType.GLOBAL)
+            {
+                List<MetroStation> stations = lines[region.lineId].stations;
+
+                int index = RandomUtils.ConstrainedRandom(stationId =>
+                {
+                    if (stationId + size - 1 < stations.Count)
+                    {
+                        for (int i = stationId; i < stationId + size; i++)
+                        {
+                            if (blacklist.Contains(stations[i].globalId) ||
+                                !region.area.IsInside(stations[i].position))
+                            {
+                                return false;
+                            }
+                        }
+
+                        return true;
+                    }
+
+                    return false;
+                }, 0, stations.Count);
+
+                return stations.GetRange(index, size);
+            }
+            else
+            {
+               List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station =>
+               {
+                   return !blacklist.Contains(station.globalId) && region.area.IsInside(station.position);
+               }) >= size).ToList();
+               int index = Random.Range(0, filteredLines.Count);
+
+               return PickRandomStationRange(new Region(RegionType.GLOBAL, region.area, filteredLines[index].lineId), size, blacklist);
+            }
         }
 
         public MetroLine PickRandomLine()
