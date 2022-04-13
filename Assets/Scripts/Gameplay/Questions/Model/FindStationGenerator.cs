@@ -9,27 +9,29 @@ namespace Gameplay.Questions.Model
 
         public override void GenerateNew()
         {
-            currentQuestion = metro.PickRandomStation(currentLineId, blacklistedIds);
+            currentQuestion = metro.PickRandomStation(currentRegion, blacklistedIds);
             
             uiController.SetQuestion(currentQuestion);
             renderer.HideAllLabels();
             blacklistedIds.Add(currentQuestion.globalId);
             
-            if (currentLineId != -1 && currentRegionType == RegionType.GLOBAL)
-            {
-                renderer.FocusLine(currentLineId);
-            }
+
+            renderer.FocusLine(currentRegion);
         }
 
         public override string GenerateTip(int tipNumber)
         {
             switch (tipNumber)
             {
-                case 0:
+                case 0 when currentRegion.regionType == RegionType.GLOBAL:
                     MetroStation near = metro.PickStationNear(currentQuestion);
                     blacklistedIds.Add(near.globalId);
-                    renderer.getStationDisplay(near).ShowLabelFor(Color.black, 1000);
+                    renderer.getStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
                     return $"Станция метро {near.currentName} находиться рядом!";
+                case 0 when currentRegion.regionType != RegionType.GLOBAL:
+                    MetroLine line = metro.lines[currentQuestion.lineId];
+                    //renderer.getStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
+                    return $"Станция принадлежит {line.name}!";
                 
             }
 

@@ -1,8 +1,10 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Gameplay
 {
+    [Serializable]
     public struct Area
     {
         public static readonly Area Everywhere = new Area(200, 200, -200, -200);

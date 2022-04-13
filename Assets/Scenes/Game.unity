@@ -101145,7 +101145,6 @@ GameObject:
   - component: {fileID: 1587023657}
   - component: {fileID: 1587023659}
   - component: {fileID: 1587023656}
-  - component: {fileID: 1587023660}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -101200,6 +101199,9 @@ MonoBehaviour:
     renderer: {fileID: 406890282637991028}
     questions: {fileID: 1587023659}
     palette: {fileID: 11400000, guid: 2252f4209f1e32846a390bd754414d98, type: 2}
+  lineMaterial: {fileID: 2100000, guid: b912f49c459ecb946a7b00699a2f3a1e, type: 2}
+  crossingMaterial: {fileID: 2100000, guid: b27fdb92b957f1746aa414b91b6339be, type: 2}
+  tmpOutlineMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
 --- !u!4 &1587023658
 Transform:
   m_ObjectHideFlags: 0
@@ -101234,21 +101236,6 @@ MonoBehaviour:
   questionsPerRegion: 5
   correctGuesses: 0
   isResting: 0
---- !u!114 &1587023660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587023655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85fb164f360543faad8a90d95132255a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineMaterial: {fileID: 2100000, guid: b912f49c459ecb946a7b00699a2f3a1e, type: 2}
-  crossingMaterial: {fileID: 2100000, guid: b27fdb92b957f1746aa414b91b6339be, type: 2}
-  tmpOutlineMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
 --- !u!1 &1587517183
 GameObject:
   m_ObjectHideFlags: 0

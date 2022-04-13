@@ -19,7 +19,7 @@ namespace Gameplay.Questions.Model
             currentQuestionStations.Clear();
             tipBlacklisted.Clear();
             
-            currentQuestionStations = metro.PickRandomStationRange(currentLineId, currentCount, blacklistedIds);
+            currentQuestionStations = metro.PickRandomStationRange(currentRegion, currentCount, blacklistedIds);
             blacklistedIds.AddRange(currentQuestionStations.Select(station => station.globalId));
 
             List<MetroStation> shuffled = new List<MetroStation>(currentQuestionStations);
@@ -27,10 +27,7 @@ namespace Gameplay.Questions.Model
             renderer.HideAllLabels();
             uiController.SetQuestion(shuffled);
 
-            if (currentLineId != -1 && currentRegionType == RegionType.GLOBAL)
-            {
-                renderer.FocusLine(currentLineId);
-            }
+            renderer.FocusLine(currentRegion);
         }
 
         public override string GenerateTip(int tipNumber)
@@ -49,8 +46,8 @@ namespace Gameplay.Questions.Model
                         tipIndex -= 1;
                     }
 
-                    MetroStation firstStation = metro.GetStation(currentLineId, currentQuestionStations[tipIndex].stationId);
-                    MetroStation secondStation = metro.GetStation(currentLineId, currentQuestionStations[nextIndex].stationId);
+                    MetroStation firstStation = currentQuestionStations[tipIndex];
+                    MetroStation secondStation = currentQuestionStations[nextIndex];
 
                     Vector2 dir = secondStation.position - firstStation.position;
                     string dirName = dir.GetDirection();

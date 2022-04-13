@@ -5,8 +5,7 @@ namespace Gameplay.Questions
 {
     public abstract class StationQuestionGenerator<T> : BaseQuestionGenerator where T : BaseUIQuestion
     {
-        public int currentLineId;
-        public RegionType currentRegionType;
+        public Region currentRegion;
         protected List<int> blacklistedIds = new List<int>();
         
         public T uiController;
@@ -21,8 +20,7 @@ namespace Gameplay.Questions
         public override void SetRegion(Region region)
         {
             blacklistedIds.Clear();
-            currentLineId = region.lineId;
-            currentRegionType = region.regionType;
+            currentRegion = region;
         }
     }
 }

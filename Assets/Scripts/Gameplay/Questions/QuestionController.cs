@@ -83,6 +83,7 @@ namespace Gameplay.Questions
             catch (Exception e)
             {
                 StartNextRegionTimer();
+                Debug.Log($"{e.Message}\n{e.StackTrace}");
                 return;
             }
             
@@ -110,15 +111,28 @@ namespace Gameplay.Questions
         public void SelectNextRegion()
         {
             isResting = false;
-            int lineId = Random.Range(0, renderer.metro.lines.Count);
-            currentRegion.lineId = lineId;
+            RegionType newType = (RegionType)Random.Range(0, (int) RegionType.MAX_VALUE);
+
+            if (newType == RegionType.GLOBAL)
+            {
+                int lineId = Random.Range(0, renderer.metro.lines.Count);
+                currentRegion.lineId = lineId;
+                currentRegion.regionType = RegionType.GLOBAL;
+                currentRegion.area = Area.Everywhere;
+            }
+            else
+            {
+                currentRegion = renderer.metro.regions.Find(region => region.regionType == newType);
+            }
+            
             questionsRemain = questionsPerRegion;
 
             foreach (BaseQuestionGenerator generator in questionGenerators)
             {
                 generator.SetRegion(currentRegion);
             }
-            topBar.SetCurrentLabel(renderer.metro.lines[lineId].name.Replace("линия", ""));
+            
+            topBar.SetCurrentLabel(currentRegion.GetName(renderer.metro));
             SelectNextController();
         }
 
