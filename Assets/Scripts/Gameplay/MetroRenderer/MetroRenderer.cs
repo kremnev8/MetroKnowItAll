@@ -29,8 +29,9 @@ namespace Gameplay
 
         [SerializeField] private StationDisplay stationPrefab;
         [SerializeField] private LineDisplay linePrefab;
-        [SerializeField] private CrossingDisplay crossingPrefab;    
-        
+        [SerializeField] private CrossingDisplay crossingPrefab;
+        [SerializeField] private GameObject stationSelectPrefab;
+
         public Metro metro;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
@@ -42,9 +43,21 @@ namespace Gameplay
         public Area focusArea;
 
         public bool expectedLabelState = true;
+
+        private GameObject m_stationSelect;
+        public GameObject stationSelect
+        {
+            get
+            {
+                if (m_stationSelect == null)
+                {
+                    m_stationSelect = Instantiate(stationSelectPrefab);
+                }
+
+                return m_stationSelect;
+            }
+        }
         
-        public static Vector2 scale = new Vector2(0.1f, -0.1f);
-        public static Vector2 translation = new Vector2(-150, 150);
         private static readonly int color = Shader.PropertyToID("_Color");
         private static readonly int focusAreaProp = Shader.PropertyToID("_FocusArea");
         
@@ -220,18 +233,6 @@ namespace Gameplay
             lineMat.SetVector(focusAreaProp, section.GetVector());
             focusArea = section;
             focusedLineId = -1;
-        }
-
-        public bool IsFocused(StationDisplay display)
-        {
-            if (focusedLineId != -1)
-            {
-                return display.station.lineId == focusedLineId;
-            }
-            else
-            {
-                return focusArea.IsInside(display.station.position);
-            }
         }
     }
 }
