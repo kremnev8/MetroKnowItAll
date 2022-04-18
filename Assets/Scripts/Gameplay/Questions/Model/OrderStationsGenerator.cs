@@ -5,7 +5,7 @@ using Util;
 
 namespace Gameplay.Questions.Model
 {
-    public class OrderStationsGenerator : StationQuestionGenerator<UIQuestionOrderStations>
+    public class OrderStationsGenerator : QuestionGenerator<UIQuestionOrderStations>
     {
         public List<MetroStation> currentQuestionStations = new List<MetroStation>();
 

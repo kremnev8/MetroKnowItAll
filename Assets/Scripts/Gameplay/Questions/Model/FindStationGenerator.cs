@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Gameplay.Questions.Model
 {
-    public class FindStationGenerator : StationQuestionGenerator<UIQuestionFindStation>
+    public class FindStationGenerator : QuestionGenerator<UIQuestionFindStation>
     {
         public MetroStation currentQuestion;
 

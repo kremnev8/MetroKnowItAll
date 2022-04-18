@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 namespace Gameplay.Questions
 {
@@ -6,8 +7,16 @@ namespace Gameplay.Questions
     {
         public new MetroRenderer renderer;
         
+        public RectTransform bottomPane;
+        public TMP_Text questionLabel;
+        
+        
         public abstract BaseQuestionGenerator GetController();
-        public abstract void HideElements();
+
+        public virtual void HideElements()
+        {
+            questionLabel.text = "";
+        }
 
     }
 }

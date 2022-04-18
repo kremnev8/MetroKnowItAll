@@ -121,14 +121,10 @@ namespace Gameplay
             }
         }
 
-        public MetroLine PickRandomLine()
+        public MetroLine PickRandomLine(Region region)
         {
-            int index = RandomUtils.ConstrainedRandom(
-                lineId =>
-                {
-                    return lines[lineId].stations.Count <= 0;
-                }, 0, lines.Count);
-            
+            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station => region.area.IsInside(station.position)) >= 1).ToList();
+            int index = Random.Range(0, filteredLines.Count);
             
             return lines[index];
         }

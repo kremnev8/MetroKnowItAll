@@ -9,13 +9,7 @@ namespace Gameplay.Questions.Model
     public class UIQuestionOrderStations : BaseUIQuestion
     {
         public UIDraggableButtonList buttons;
-        public TMP_Text taskLabel;
-        public TMP_Text feedbackLabel;
-        public RectTransform bottomPane;
 
-        public GameObject checkButton;
-        
-        private int hideFeedbackIn;
         private List<TMP_Text> mapLabels = new List<TMP_Text>();
         public Transform tmpLabelTransform;
 
@@ -26,9 +20,8 @@ namespace Gameplay.Questions.Model
 
         public override void HideElements()
         {
-            taskLabel.text = "";
+            base.HideElements();
             buttons.gameObject.SetActive(false);
-            checkButton.SetActive(false);
             foreach (TMP_Text label in mapLabels)
             {
                 Destroy(label.gameObject);
@@ -49,7 +42,6 @@ namespace Gameplay.Questions.Model
         public void SetQuestion(List<MetroStation> stations)
         {
             buttons.gameObject.SetActive(true);
-            checkButton.SetActive(true);
             buttons.SetData(stations.Select(station => station as INamedArrayElement).ToList());
 
             mapLabels.Capacity = stations.Count;
@@ -66,8 +58,8 @@ namespace Gameplay.Questions.Model
             OnOrderChanged();
             
             
-            taskLabel.text = "Поместите станций в порядке на линий";
-            float height = 130 + taskLabel.preferredHeight + stations.Count * 80;
+            questionLabel.text = "Поместите станций в порядке на линий";
+            float height = 130 + questionLabel.preferredHeight + stations.Count * 80;
             bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, height);
         }
         
@@ -84,21 +76,6 @@ namespace Gameplay.Questions.Model
                 bool correct = result[i];
                 
                 button.SetColor(correct ? GameController.theme.rightAnswer : GameController.theme.wrongAnswer);
-            }
-            
-           // feedbackLabel.text = allCorrect ? "Верно!" : "Неправильно!";
-            hideFeedbackIn = 120;
-        }
-        
-        private void Update()
-        {
-            if (hideFeedbackIn > 0)
-            {
-                hideFeedbackIn--;
-                if (hideFeedbackIn == 0)
-                {
-                    feedbackLabel.text = "";
-                }
             }
         }
     }

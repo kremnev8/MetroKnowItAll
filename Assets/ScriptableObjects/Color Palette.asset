@@ -22,6 +22,7 @@ MonoBehaviour:
     buttonColor: {r: 0.101960786, g: 0.4509804, b: 0.9098039, a: 1}
     lineColor: {r: 1, g: 1, b: 1, a: 1}
     unfocusedColor: {r: 1, g: 1, b: 1, a: 0.80784315}
+    highlightColor: {r: 0.7471075, g: 0.91753316, b: 0.9716981, a: 1}
   - themeName: Dark Theme
     rightAnswer: {r: 0, g: 0.6627451, b: 0.05882353, a: 1}
     wrongAnswer: {r: 0.7921569, g: 0, b: 0, a: 1}
@@ -31,4 +32,5 @@ MonoBehaviour:
     buttonColor: {r: 0.5411765, g: 0.7058824, b: 0.972549, a: 1}
     lineColor: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 1}
     unfocusedColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0.8156863}
+    highlightColor: {r: 0.7490196, g: 0.91764706, b: 0.972549, a: 1}
   m_lightTheme: 1

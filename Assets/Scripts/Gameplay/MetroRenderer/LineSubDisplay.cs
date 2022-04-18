@@ -1,15 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.U2D;
 using Util;
 
 namespace Gameplay
 {
-    public class LineSubDisplay : MonoBehaviour
+    public class LineSubDisplay : MonoBehaviour, ISelectable
     {
-        private MetroLine line;
+        public MetroLine line;
         private List<ConnData> points;
 
+        [Header("Line")]
         public new SpriteShapeRenderer renderer;
         public SpriteShapeController shape;
         public Spline spline => shape.spline;
@@ -17,10 +19,17 @@ namespace Gameplay
         public SpriteShape undergound;
         public SpriteShape abovetrains;
 
+        [Header("Highlight")]
+        public GameObject highlight;
+        public SpriteShapeController highlightShape;
+        public Transform startCap;
+        public Transform endCap;
+        
         private static readonly int color = Shader.PropertyToID("_Color");
         private static readonly int isFocused = Shader.PropertyToID("_IsFocused");
         private static MaterialPropertyBlock block;
-        
+        private const float highlightHeight = 2.4f;
+
         public void SetFocused(bool value)
         {
             renderer.GetPropertyBlock(block);
@@ -203,6 +212,15 @@ namespace Gameplay
                     }
                 }
             }
+
+            highlightShape.spline.CopyValues(spline);
+            for (int i = 0; i < highlightShape.spline.GetPointCount(); i++)
+            {
+                highlightShape.spline.SetHeight(i, highlightHeight);
+            }
+
+            startCap.position = startCap.parent.TransformPoint(spline.GetPosition(0));
+            endCap.position = endCap.parent.TransformPoint(spline.GetPosition(spline.GetPointCount() - 1));
         }
         
         
@@ -212,6 +230,21 @@ namespace Gameplay
             line = _line;
 
             Refresh();
+        }
+
+        public bool IsFocused(MetroRenderer metroRenderer)
+        {
+            if (metroRenderer.focusedLineId != -1)
+            {
+                return metroRenderer.focusedLineId == line.lineId;
+            }
+
+            return points.Any(conn => metroRenderer.focusArea.IsInside(conn.point));
+        }
+
+        public void SetSelected(MetroRenderer metroRenderer, bool value)
+        {
+            highlight.SetActive(value);
         }
     }
 }

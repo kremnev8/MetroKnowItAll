@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Process
   - Water
   - UI
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 749040865
+    locked: 0
+  - name: Highlight
+    uniqueID: 2495243495
     locked: 0
   - name: Lines
     uniqueID: 545652485

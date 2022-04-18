@@ -3,7 +3,7 @@ using Gameplay.Questions.Model;
 
 namespace Gameplay.Questions
 {
-    public abstract class StationQuestionGenerator<T> : BaseQuestionGenerator where T : BaseUIQuestion
+    public abstract class QuestionGenerator<T> : BaseQuestionGenerator where T : BaseUIQuestion
     {
         public Region currentRegion;
         protected List<int> blacklistedIds = new List<int>();

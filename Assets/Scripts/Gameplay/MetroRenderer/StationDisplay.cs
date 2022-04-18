@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Gameplay
 {
-    public class StationDisplay : MonoBehaviour
+    public class StationDisplay : MonoBehaviour, ISelectable
     {
         public MetroStation station;
         private MetroLine line;
@@ -111,6 +111,27 @@ namespace Gameplay
                     label.fontSize = 1.8f;
                 }
                 
+            }
+        }
+
+        public bool IsFocused(MetroRenderer metroRenderer)
+        {
+            if (metroRenderer.focusedLineId != -1)
+            {
+                return station.lineId == metroRenderer.focusedLineId;
+            }
+
+            return metroRenderer.focusArea.IsInside(station.position);
+        }
+
+        public void SetSelected(MetroRenderer metroRenderer, bool value)
+        {
+            GameObject selector = metroRenderer.stationSelect;
+            selector.SetActive(value);
+            if (value)
+            {
+                selector.transform.parent = transform;
+                selector.transform.localPosition = Vector3.zero;
             }
         }
     }

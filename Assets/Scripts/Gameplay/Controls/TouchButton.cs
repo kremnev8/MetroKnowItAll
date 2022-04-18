@@ -1,4 +1,5 @@
-﻿using Gameplay.Questions;
+﻿using System;
+using Gameplay.Questions;
 using Model;
 using Platformer.Core;
 using UnityEngine;
@@ -7,6 +8,12 @@ using Util;
 
 namespace Gameplay
 {
+    public interface ISelectable
+    {
+        public bool IsFocused(MetroRenderer metroRenderer);
+        public void SetSelected(MetroRenderer metroRenderer, bool value);
+    }
+    
     public class TouchButton : MonoBehaviour
     {
         private PlayerInput input;
@@ -16,18 +23,32 @@ namespace Gameplay
         private InputAction primaryPositionAction;
         private InputAction primaryContactAction;
 
-        public StationDisplay selectedStation { get; private set; }
-
+        private ISelectable selectedStation;
         public new Camera camera;
-        
-        public RectTransform confirm;
 
-        public void HideSelector()
+        public bool isEnabled;
+        public Func<ISelectable, bool> filter;
+
+        private RaycastHit2D[] hits = new RaycastHit2D[5];
+
+        public void Enable( Func<ISelectable, bool> filter)
         {
-            selectedStation = null;
-            confirm.gameObject.SetActive(false);
+            isEnabled = true;
+            this.filter = filter;
         }
-        
+
+        public void Disable()
+        {
+            isEnabled = false;
+            selectedStation?.SetSelected(renderer, false);
+            selectedStation = null;
+        }
+
+        public T GetSelected<T>() where T : class
+        {
+            return selectedStation as T;
+        }
+
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
@@ -39,37 +60,37 @@ namespace Gameplay
             primaryDeltaAction =  input.actions["primaryDelta"];
             
             primaryContactAction.started += CheckPress;
-            TouchCameraController.cameraHasMoved += HideSelector;
         }
         
 
         private void CheckPress(InputAction.CallbackContext obj)
         {
+            if (!isEnabled) return;
+            
+            Vector2 position = primaryPositionAction.ReadValue<Vector2>();
+            
+            bool onUI = UIUtil.IsPointerOverAnyUI(position);
+            if (onUI) return;
+            
             if (primaryDeltaAction.ReadValue<Vector2>().magnitude < 1f)
             {
-                Vector2 position = primaryPositionAction.ReadValue<Vector2>();
                 Ray ray = camera.ScreenPointToRay(position);
 
-                RaycastHit2D hit = Physics2D.GetRayIntersection (ray, Mathf.Infinity);
-
-                if (hit.collider != null)
+                int size = Physics2D.GetRayIntersectionNonAlloc(ray, hits, Mathf.Infinity);
+                for (int i = 0; i < size; i++)
                 {
-                    StationDisplay display = hit.collider.gameObject.GetComponent<StationDisplay>();
-                    if (display != null && renderer.IsFocused(display))
+                    RaycastHit2D hit = hits[i];
+                    if (hit.collider == null) continue;
+                    
+                    ISelectable display = hit.collider.gameObject.GetComponent<ISelectable>();
+                    if (display != null && filter(display) && display.IsFocused(renderer))
                     {
-                        Vector3 needPos = hit.transform.position;
-
-                        Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Camera.main, needPos);
-                        
-                        Vector2 anchoredPosition = confirm.parent.InverseTransformPoint(screenPoint);
-                        
-                        confirm.anchoredPosition = anchoredPosition;
-                        confirm.gameObject.SetActive(true);
-
+                        selectedStation?.SetSelected(renderer, false);
+                        display.SetSelected(renderer, true);
                         selectedStation = display;
-
+                        break;
                     }
-                }   
+                }
             }
             
         }

@@ -29,6 +29,8 @@ namespace Gameplay.Questions
         public int questionsPerRegion;
         public int correctGuesses;
 
+        public float timeout = 10;
+
         public static Action onQuestionChanged;
 
         public bool isResting;
@@ -73,9 +75,21 @@ namespace Gameplay.Questions
         public void SelectNextController()
         {
             questionUI[currentController].HideElements();
+
+            BaseQuestionGenerator generator;
+            if (questionsRemain == questionsPerRegion)
+            {
+                List<BaseQuestionGenerator> generators = questionGenerators.Where(questionGenerator => questionGenerator is ILineQuestion).ToList();
+                int index = Random.Range(0, generators.Count);
+                generator = generators[index];
+                currentController = questionGenerators.IndexOf(generator);
+            }
+            else
+            {
+                currentController = Random.Range(0, questionGenerators.Count);
+                generator = questionGenerators[currentController];
+            }
             
-            currentController = Random.Range(0, questionGenerators.Count);
-            BaseQuestionGenerator generator = questionGenerators[currentController];
             try
             {
                 generator.GenerateNew();
@@ -104,8 +118,8 @@ namespace Gameplay.Questions
             
             renderer.ClearFocus();
             renderer.ShowAllLabels();
-            topBar.StartCountdown(10);
-            Invoke(nameof(SelectNextRegion), 10.2f);
+            topBar.StartCountdown(timeout);
+            Invoke(nameof(SelectNextRegion), timeout + 0.2f);
         }
 
         public void SelectNextRegion()

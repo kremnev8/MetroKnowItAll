@@ -42,11 +42,7 @@ namespace Gameplay
         
         private int zoomCounter;
         private bool isZooming => zoomCounter > 0;
-
-
-        public static Action cameraHasMoved;
-
-
+        
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
@@ -101,11 +97,6 @@ namespace Gameplay
             {
                 Vector2 targetDir = camera.ScreenToWorldPoint(primaryPositionAction.ReadValue<Vector2>());
                 targetDir -= initialPosition;
-
-                if (targetDir.magnitude > 1)
-                {
-                    cameraHasMoved.Invoke();
-                }
 
                 currentDir = targetDir.ToVector3() * config.normalMaxSpeed;//Vector3.SmoothDamp(currentDir, targetDir.ToVector3() * config.normalMaxSpeed, ref cameraVelocity, config.moveSmoothTime);
             }
@@ -167,8 +158,6 @@ namespace Gameplay
                         newZoom = Mathf.Clamp(newZoom, config.minZoom, config.maxZoom);
                         camera.orthographicSize = newZoom;
                         zoomCounter = 10;
-                        
-                        cameraHasMoved.Invoke();
 
                         previousDistance = distance;
                         yield return null;

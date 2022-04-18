@@ -56,20 +56,21 @@ namespace Gameplay.Questions
             }
             
             string tip = controller.GetNextTip(currentTip);
-            if (!tip.Equals(""))
-            {
-                UITipContainer tipContainer = Instantiate(tipPrefab, tipsRoot);
-                tipContainer.SetTip(tip, currentTip);
-                tips.Add(tipContainer);
-                currentTip++;
-                buttonTransform.SetAsLastSibling();
-            }
-            else
+            if (tip.Equals("")) return;
+            
+            
+            UITipContainer tipContainer = Instantiate(tipPrefab, tipsRoot);
+            tipContainer.SetTip(tip, currentTip);
+            tips.Add(tipContainer);
+            buttonTransform.SetAsLastSibling();
+            currentTip++;
+            
+            string nextTip = controller.GetNextTip(currentTip);
+            if (nextTip.Equals(""))
             {
                 buttonLabel.text = "Подсказки кончились";
                 button.interactable = false;
             }
-            
         }
 
     }

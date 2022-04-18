@@ -10,67 +10,38 @@ namespace Gameplay.Questions
 {
     public class UIQuestionFindStation : BaseUIQuestion
     {
-        private int hideFeedbackIn;
-
         public TouchButton button;
-
-        public RectTransform bottomPane;
-        
-        public TMP_Text questionLabel;
-        public TMP_Text feedbackLabel;
 
         public override BaseQuestionGenerator GetController()
         {
             return new FindStationGenerator();
         }
 
-        public override void HideElements()
-        {
-            questionLabel.text = "";
-            button.gameObject.SetActive(false);
-        }
-
 
         public void SetQuestion(MetroStation station)
         {
-            button.gameObject.SetActive(true);
             questionLabel.text = $"Укажи где находится станция\n{station.currentName}";
             bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, 300);
+            button.Enable(selectable => selectable is StationDisplay);
         }
 
         public void DisplayResult(bool result)
         {
             if (result)
             {
-               // feedbackLabel.text = "Верно!";
-                button.selectedStation.ShowLabelFor(GameController.theme.rightAnswer, 120);
+                button.GetSelected<StationDisplay>().ShowLabelFor(GameController.theme.rightAnswer, 120);
             }
             else
             {
-                //feedbackLabel.text = "Неправильно!";
-                button.selectedStation.ShowLabelFor(GameController.theme.wrongAnswer, 120);
+                button.GetSelected<StationDisplay>().ShowLabelFor(GameController.theme.wrongAnswer, 120);
             }
-            button.HideSelector();
-
-            hideFeedbackIn = 120;
+            button.Disable();
         }
 
         public MetroStation CurrentSelection()
         {
-            return button.selectedStation.station;
+            return button.GetSelected<StationDisplay>().station;
         }
         
-
-        private void Update()
-        {
-            if (hideFeedbackIn > 0)
-            {
-                hideFeedbackIn--;
-                if (hideFeedbackIn == 0)
-                {
-                    feedbackLabel.text = "";
-                }
-            }
-        }
     }
 }
