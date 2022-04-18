@@ -6,7 +6,7 @@ using Platformer.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Reflection;
-
+using UnityEngine.U2D;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -18,6 +18,10 @@ namespace Gameplay
     {
         private Graphic graphic;
         private new Renderer renderer;
+        private SpriteRenderer spriteRenderer;
+        private SpriteShapeRenderer shapeRenderer;
+
+        public bool useColorOnSprites;
         
         [NonSerialized]
         internal ColorPalette palette;
@@ -31,7 +35,13 @@ namespace Gameplay
         {
             graphic = GetComponent<Graphic>();
             renderer = GetComponent<Renderer>();
-            
+
+            if (renderer != null)
+            {
+                shapeRenderer = renderer as SpriteShapeRenderer;
+                spriteRenderer = renderer as SpriteRenderer;
+            }
+
             palette = Simulation.GetModel<GameModel>()?.palette;
 
             
@@ -50,7 +60,14 @@ namespace Gameplay
                 if (graphic != null)
                 {
                     graphic.color = color;
-                }else if (renderer != null && renderer.sharedMaterial != null)
+                }else if (shapeRenderer != null)
+                {
+                    shapeRenderer.color = color;
+                }else if (spriteRenderer != null && useColorOnSprites)
+                {
+                    spriteRenderer.color = color;
+                }
+                else if (renderer != null && renderer.sharedMaterial != null)
                 {
                     renderer.sharedMaterial.color = color;
                 }

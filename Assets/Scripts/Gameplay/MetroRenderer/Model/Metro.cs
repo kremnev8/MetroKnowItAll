@@ -19,8 +19,6 @@ namespace Gameplay
         [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
         public List<Region> regions = new List<Region>();
-        
-        public bool @fixed;
 
         public MetroStation GetStation(int lineId, int stationId)
         {
@@ -197,6 +195,16 @@ namespace Gameplay
     [CustomEditor(typeof(Metro))]
     public class MetroEditor : Editor
     {
+        
+        public static Vector2 scale = new Vector2(0.1f, -0.1f);
+        public static Vector2 translation = new Vector2(-150, 150);
+        
+        public static Vector2 Transform(Vector2 pos)
+        {
+            return pos * scale + translation;
+        }
+        
+        
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();

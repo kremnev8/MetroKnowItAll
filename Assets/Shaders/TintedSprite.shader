@@ -78,11 +78,13 @@ Shader "Metro/TintedSprite"
 			{
 				fixed4 c = tex2D (_MainTex, IN.uv);
 #ifdef DO_TINT	
-                if (c.r > 0.6){
+				float value = (c.r - 0.5f) / 0.5f;
+				c.rgb = lerp(_BackColor.rgb, c.rgb * IN.color.rgb, value);
+                /*if (c.r > 0.6){
                     c *= IN.color;
                 }else{
                     c.rgb = _BackColor.rgb;
-                }
+                }*/
 #endif
 				if (!_IsFocused)
 				{
