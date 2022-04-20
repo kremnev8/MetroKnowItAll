@@ -59,3 +59,6 @@ TagManager:
   - name: Labels
     uniqueID: 2581874139
     locked: 0
+  - name: Focus overlay
+    uniqueID: 1642088765
+    locked: 0
