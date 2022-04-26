@@ -65,7 +65,7 @@ namespace Gameplay.Questions
             
             if (questionsRemain == 0)
             {
-                StartNextRegionTimer();
+                Invoke(nameof(StartNextRegionTimer), 1.5f);
                 return;
             }
             
