@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Statistics;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
@@ -9,7 +10,7 @@ using Util;
 namespace Gameplay
 {
     [Serializable]
-    public class MetroLine : INamedArrayElement
+    public class MetroLine : INamedArrayElement, IIndexable<int>
     {
         
         public byte lineId;
@@ -35,5 +36,6 @@ namespace Gameplay
         
         public string editorName => $"{stations.Count}, {name}";
         public string displayName => name;
+        public int index => lineId;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Gameplay;
 using Gameplay.Questions;
+using Gameplay.Statistics;
 using UnityEngine.InputSystem;
 
 
@@ -13,6 +14,8 @@ namespace Model
         public MetroRenderer renderer;
         public QuestionController questions;
         public ColorPalette palette;
+        public StatisticsManager statistics;
+        public UIAchievement achievements;
 
     }
 }

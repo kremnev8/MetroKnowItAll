@@ -1,4 +1,5 @@
 ﻿using System;
+using Gameplay.Statistics;
 using TMPro;
 using UnityEngine;
 using Util;
@@ -6,7 +7,7 @@ using Util;
 namespace Gameplay
 {
     [Serializable]
-    public class MetroStation : INamedArrayElement
+    public class MetroStation : INamedArrayElement, IIndexable<int>
     {
         
         public int globalId => lineId * 100 + stationId;
@@ -35,5 +36,6 @@ namespace Gameplay
 
         public string editorName => $"{globalId} {currentName}";
         public string displayName => currentName;
+        public int index => globalId;
     }
 }

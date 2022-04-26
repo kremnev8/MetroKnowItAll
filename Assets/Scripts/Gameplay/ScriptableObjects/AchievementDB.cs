@@ -1,11 +1,12 @@
 ﻿using System;
+using Gameplay.Statistics;
 using ScriptableObjects;
 using UnityEngine;
 
 namespace Gameplay.ScriptableObjects
 {
     [Serializable]
-    public class Achievement : GenericItem
+    public class Achievement : GenericItem, IIndexable<string>
     {
         public string name;
         public string id;
@@ -13,6 +14,7 @@ namespace Gameplay.ScriptableObjects
         public Sprite icon;
         
         public string ItemId => id;
+        public string index => id;
     }
     
     [CreateAssetMenu(fileName = "Achievement DB", menuName = "SO/New Achievement DB", order = 0)]

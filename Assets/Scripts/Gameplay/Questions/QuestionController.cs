@@ -34,6 +34,8 @@ namespace Gameplay.Questions
         public static Action onQuestionChanged;
 
         public bool isResting;
+
+        public float AnswerTimeElapsed;
         
 
         private void Start()
@@ -59,7 +61,15 @@ namespace Gameplay.Questions
             
             bool result = questionGenerators[currentController].ValidateAnswer();
 
-            if (result) correctGuesses++;
+            if (result)
+            {
+                model.statistics.OnCorrectAnswer(AnswerTimeElapsed);
+                correctGuesses++;
+            }
+            else
+            {
+                model.statistics.OnWrongAnswer();
+            }
             questionsRemain--;
             
             topBar.UpdateStatus(result, correctGuesses, questionsPerRegion - questionsRemain);
@@ -79,7 +89,7 @@ namespace Gameplay.Questions
 
             var generators = questionGenerators.Where(questionGenerator =>
             {
-                if (questionsRemain == questionsPerRegion)
+                if (questionsRemain == questionsPerRegion && currentRegion.regionType != RegionType.GLOBAL)
                 {
                     return questionGenerator is ILineQuestion;
                 }
@@ -103,6 +113,7 @@ namespace Gameplay.Questions
             }
             
             onQuestionChanged?.Invoke();
+            AnswerTimeElapsed = 0;
         }
 
         private void StartNextRegionTimer()
@@ -156,6 +167,11 @@ namespace Gameplay.Questions
         {
             BaseQuestionGenerator generator = questionGenerators[currentController];
             return generator.GenerateTip(index);
+        }
+
+        private void Update()
+        {
+            AnswerTimeElapsed += Time.deltaTime;
         }
     }
 }
