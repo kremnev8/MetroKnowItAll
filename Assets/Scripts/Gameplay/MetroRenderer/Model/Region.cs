@@ -29,7 +29,7 @@ namespace Gameplay
                 return lineId == station.lineId;
             }
 
-            return regionType != station.regionType;
+            return regionType == station.regionType;
         }
         
         public string GetName(Metro metro)

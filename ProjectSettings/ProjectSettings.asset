@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: SIPIGameTeam
   productName: MetroKnowItAll
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.0.6
+  bundleVersion: 0.0.7
   preloadedAssets:
   - {fileID: 11400000, guid: bf6c989ff51382148807f32144f1fb47, type: 2}
   metroInputSource: 0

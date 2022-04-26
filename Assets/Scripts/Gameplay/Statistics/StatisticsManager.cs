@@ -44,6 +44,19 @@ namespace Gameplay.Statistics
         {
             if (!hasFocus)
             {
+                Save();
+            }
+        }
+
+        private void OnApplicationQuit()
+        {
+            Save();
+        }
+
+        private void Save()
+        {
+            if (current != null)
+            {
                 string dataPath = Application.persistentDataPath + "/statistics.json";
                 string json = JsonConvert.SerializeObject(current);
                 File.WriteAllText(dataPath, json, Encoding.UTF8);
@@ -53,7 +66,8 @@ namespace Gameplay.Statistics
         public void OnCorrectAnswer(float time)
         {
             current.correctAnswers++;
-            current.fastestCorrectAnswer = Mathf.Min(current.fastestCorrectAnswer, time);
+            current.fastestCorrectAnswer = current.fastestCorrectAnswer > 0 ? Mathf.Min(current.fastestCorrectAnswer, time) : time;
+
             if (current.fastestCorrectAnswer < 7)
             {
                 UIAchievement.UnlockAchievement("QuickAnswer");
