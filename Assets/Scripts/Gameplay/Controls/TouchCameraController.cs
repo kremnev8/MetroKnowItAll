@@ -111,10 +111,14 @@ namespace Gameplay
             
             if (controlEnabled && isDragging && !isZooming && !onUI)
             {
-                Vector2 targetDir = camera.ScreenToWorldPoint(primaryPositionAction.ReadValue<Vector2>());
-                targetDir -= initialPosition;
-
-                currentDir = targetDir.ToVector3() * config.normalMaxSpeed;//Vector3.SmoothDamp(currentDir, targetDir.ToVector3() * config.normalMaxSpeed, ref cameraVelocity, config.moveSmoothTime);
+                Vector2 touchPos = primaryPositionAction.ReadValue<Vector2>();
+                if (!touchPos.IsInfinity())
+                {
+                    Vector2 targetDir = camera.ScreenToWorldPoint(touchPos);
+                    targetDir -= initialPosition;
+                    
+                    currentDir = targetDir.ToVector3() * config.normalMaxSpeed;
+                }
             }
             else
             {

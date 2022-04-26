@@ -11,7 +11,6 @@ Shader "Metro/TintedSprite"
 		_UnfocusedColor ("Unfocused Color",  Color) = (1,1,1,1)
 
 		[MaterialToggle] _IsFocused ("Is Focused", Float) = 1
-		_FocusArea ("Focus Area", Vector) = (-50,-50,50,50)
 	}
 
 	SubShader
@@ -58,7 +57,6 @@ Shader "Metro/TintedSprite"
 			fixed4 _UnfocusedColor;
 
 			bool _IsFocused;
-			float4 _FocusArea;
 
 			v2f vert(appdata_t IN)
 			{
@@ -80,30 +78,11 @@ Shader "Metro/TintedSprite"
 #ifdef DO_TINT	
 				float value = (c.r - 0.5f) / 0.5f;
 				c.rgb = lerp(_BackColor.rgb, c.rgb * IN.color.rgb, value);
-                /*if (c.r > 0.6){
-                    c *= IN.color;
-                }else{
-                    c.rgb = _BackColor.rgb;
-                }*/
 #endif
 				if (!_IsFocused)
 				{
 					c.rgb = (_UnfocusedColor.rgb * _UnfocusedColor.a + c.rgb * c.a * (1 -_UnfocusedColor.a));
-					//c.a = a;
-					//fixed lum = Luminance(c.rgb);
-					//c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
 					
-				}else
-				{
-					if (!(IN.worldPos.x < _FocusArea.x && _FocusArea.z < IN.worldPos.x &&
-					      IN.worldPos.y < _FocusArea.y && _FocusArea.w < IN.worldPos.y))
-						{
-							c.rgb = (_UnfocusedColor.rgb * _UnfocusedColor.a + c.rgb * c.a * (1 -_UnfocusedColor.a));
-							//c.a = a;
-							//fixed lum = Luminance(c.rgb);
-							//c.rgb = lerp(c.rgb, lum.xxx, _UnfocusedSaturation);
-							//c.a *= _UnfocusedTransparency;
-						}
 				}
 				c.rgb *= c.a;
 
