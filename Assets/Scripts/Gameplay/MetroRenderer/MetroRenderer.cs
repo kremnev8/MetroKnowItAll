@@ -258,7 +258,7 @@ namespace Gameplay
                     stationDisplay.SetFocused(true);
                     if (!stationDisplay.station.hideName)
                     {
-                        stationDisplay.SetInitialVisible(stationDisplay.station.regionType == region.regionType);
+                        stationDisplay.SetInitialVisible(region.Contains(stationDisplay.station));
                     }
                 }
 

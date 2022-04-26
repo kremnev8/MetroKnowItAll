@@ -22,6 +22,16 @@ namespace Gameplay
             this.lineId = lineId;
         }
 
+        public bool Contains(MetroStation station)
+        {
+            if (regionType == RegionType.GLOBAL)
+            {
+                return lineId == station.lineId;
+            }
+
+            return regionType != station.regionType;
+        }
+        
         public string GetName(Metro metro)
         {
             return regionType switch

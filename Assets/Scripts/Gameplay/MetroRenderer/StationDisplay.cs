@@ -124,7 +124,7 @@ namespace Gameplay
                 return station.lineId == metroRenderer.focusRegion.lineId;
             }
 
-            return metroRenderer.focusRegion.regionType == station.regionType;
+            return metroRenderer.focusRegion.Contains(station);
         }
 
         public void SetSelected(MetroRenderer metroRenderer, bool value)

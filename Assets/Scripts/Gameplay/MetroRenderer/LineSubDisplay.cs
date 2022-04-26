@@ -230,6 +230,7 @@ namespace Gameplay
             line = _line;
 
             Refresh();
+            highlight.SetActive(false);
         }
 
         public bool IsFocused(MetroRenderer metroRenderer)
@@ -239,7 +240,7 @@ namespace Gameplay
                 return metroRenderer.focusRegion.lineId == line.lineId;
             }
 
-            return line.stations.Any(station => station.regionType == metroRenderer.focusRegion.regionType);
+            return line.stations.Any(station => metroRenderer.focusRegion.Contains(station));
         }
 
         public void SetSelected(MetroRenderer metroRenderer, bool value)

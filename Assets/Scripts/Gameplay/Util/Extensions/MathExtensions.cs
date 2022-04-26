@@ -213,6 +213,11 @@ namespace Util
         {
             return points.Aggregate((a, b) => a + b) / count;
         }
+
+        public static bool IsInfinity(this Vector2 vector)
+        {
+            return float.IsInfinity(vector.x) || float.IsInfinity(vector.y);
+        }
         
         public static int Mod(this int x, int m)
         {

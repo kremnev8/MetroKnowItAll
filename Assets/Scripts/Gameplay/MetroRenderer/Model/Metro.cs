@@ -75,7 +75,7 @@ namespace Gameplay
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(station => region.regionType == station.regionType));
+                            .Where(region.Contains));
                     
                 }
                 int index = Random.Range(0, regionStations.Count);
@@ -100,7 +100,7 @@ namespace Gameplay
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(station => region.regionType == station.regionType));
+                            .Where(region.Contains));
                     
                 }
                 int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(regionStations[stationId].globalId), 0, regionStations.Count);
@@ -120,8 +120,7 @@ namespace Gameplay
                     {
                         for (int i = stationId; i < stationId + size; i++)
                         {
-                            if (blacklist.Contains(stations[i].globalId) ||
-                                region.regionType != stations[i].regionType)
+                            if (blacklist.Contains(stations[i].globalId) || !region.Contains(stations[i]))
                             {
                                 return false;
                             }
@@ -139,7 +138,7 @@ namespace Gameplay
             {
                List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station =>
                {
-                   return !blacklist.Contains(station.globalId) && region.regionType == station.regionType;
+                   return !blacklist.Contains(station.globalId) && region.Contains(station);
                }) >= size).ToList();
                int index = Random.Range(0, filteredLines.Count);
 
@@ -149,7 +148,7 @@ namespace Gameplay
 
         public MetroLine PickRandomLine(Region region)
         {
-            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station => region.regionType == station.regionType) >= 1).ToList();
+            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(region.Contains) >= 1).ToList();
             int index = Random.Range(0, filteredLines.Count);
             
             return filteredLines[index];
