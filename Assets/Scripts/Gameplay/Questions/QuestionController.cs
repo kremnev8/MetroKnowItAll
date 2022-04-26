@@ -76,19 +76,19 @@ namespace Gameplay.Questions
         {
             questionUI[currentController].HideElements();
 
-            BaseQuestionGenerator generator;
-            if (questionsRemain == questionsPerRegion)
+            var generators = questionGenerators.Where(questionGenerator =>
             {
-                List<BaseQuestionGenerator> generators = questionGenerators.Where(questionGenerator => questionGenerator is ILineQuestion).ToList();
-                int index = Random.Range(0, generators.Count);
-                generator = generators[index];
-                currentController = questionGenerators.IndexOf(generator);
-            }
-            else
-            {
-                currentController = Random.Range(0, questionGenerators.Count);
-                generator = questionGenerators[currentController];
-            }
+                if (questionsRemain == questionsPerRegion)
+                {
+                    return questionGenerator is ILineQuestion;
+                }
+                    
+                return !(questionGenerator is ILineQuestion);
+            }).ToList();
+            
+            int index = Random.Range(0, generators.Count);
+            BaseQuestionGenerator generator = generators[index];
+            currentController = questionGenerators.IndexOf(generator);
             
             try
             {
@@ -130,9 +130,7 @@ namespace Gameplay.Questions
             if (newType == RegionType.GLOBAL)
             {
                 int lineId = Random.Range(0, renderer.metro.lines.Count);
-                currentRegion.lineId = lineId;
-                currentRegion.regionType = RegionType.GLOBAL;
-                currentRegion.area = Area.Everywhere;
+                currentRegion = new Region(RegionType.GLOBAL, Area.Everywhere, lineId);
             }
             else
             {

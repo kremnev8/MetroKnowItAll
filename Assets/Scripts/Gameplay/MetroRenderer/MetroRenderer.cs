@@ -22,23 +22,25 @@ namespace Gameplay
         [SerializeField] private Transform stationRoot;
         [SerializeField] private Transform lineRoot;
         [SerializeField] private Transform crossingRoot;
+        [SerializeField] private Transform focusRoot;
         [SerializeField] private Material lineMat;
 
         [SerializeField] private StationDisplay stationPrefab;
         [SerializeField] private LineDisplay linePrefab;
         [SerializeField] private CrossingDisplay crossingPrefab;
         [SerializeField] private GameObject stationSelectPrefab;
+        [SerializeField] private FocusDisplay focusPrefab;
 
         public Metro metro;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
+        private List<FocusDisplay> focusDisplays = new List<FocusDisplay>();
         internal bool dirty;
 
-        public sbyte focusedLineId;
-        public Area focusArea;
-
+        public Region focusRegion;
+        
         public bool expectedLabelState = true;
 
         private GameObject m_stationSelect;
@@ -111,6 +113,15 @@ namespace Gameplay
                 crossingDisplay.SetCrossing(metro, crossing);
                 crossingDisplays.Add(crossingDisplay);
             }
+            
+            foreach (Region region in metro.regions)
+            {
+                if (region.regionType == RegionType.GLOBAL) continue;
+                
+                FocusDisplay focusDisplay = Instantiate(focusPrefab, focusRoot);
+                focusDisplay.SetRegion(this, region);
+                focusDisplays.Add(focusDisplay);
+            }
         }
 
         public void Refresh()
@@ -129,6 +140,11 @@ namespace Gameplay
             {
                 display.Refresh();
             }
+
+            foreach (FocusDisplay display in focusDisplays)
+            {
+                display.Refresh(false);
+            }
         }
 
         public void ClearAll()
@@ -136,13 +152,15 @@ namespace Gameplay
             stationRoot.gameObject.ClearChildren();
             lineRoot.gameObject.ClearChildren();
             crossingRoot.gameObject.ClearChildren();
+            focusRoot.gameObject.ClearChildren();
 
             stationDisplays.Clear();
             lineDisplays.Clear();
             crossingDisplays.Clear();
+            focusDisplays.Clear();
         }
 
-        public StationDisplay getStationDisplay(MetroStation station)
+        public StationDisplay GetStationDisplay(MetroStation station)
         {
             if (stationDisplays.ContainsKey(station.globalId))
             {
@@ -177,10 +195,8 @@ namespace Gameplay
 
         public void ClearFocus()
         {
-            focusArea = Area.Everywhere;
-            focusedLineId = -1;
+            focusRegion = Region.everywhere;
             
-            lineMat.SetVector(focusAreaProp, focusArea.GetVector());
             foreach (LineDisplay lineDisplay in lineDisplays)  
             {
                 lineDisplay.SetFocused(true);
@@ -195,12 +211,18 @@ namespace Gameplay
             {
                 display.SetFocused(true);
             }
+
+            foreach (FocusDisplay display in focusDisplays)
+            {
+                display.Refresh(false);
+            }
         }
 
-        public void FocusLine(Region region)
+        public void FocusRegion(Region region)
         {
             if (region.regionType == RegionType.GLOBAL)
             {
+                focusRegion = region;
                 foreach (LineDisplay lineDisplay in lineDisplays)
                 {
                     lineDisplay.SetFocused(lineDisplay.line.lineId == region.lineId);
@@ -209,6 +231,7 @@ namespace Gameplay
                 foreach (StationDisplay stationDisplay in stationDisplays.Values)
                 {
                     stationDisplay.SetFocused(stationDisplay.station.lineId == region.lineId);
+                    stationDisplay.SetInitialVisible(!stationDisplay.station.hideName);
                 }
 
                 foreach (CrossingDisplay display in crossingDisplays)
@@ -216,20 +239,39 @@ namespace Gameplay
                     display.SetFocused(display.crossing.stationsGlobalIds.Any(id => id.lineId == region.lineId));
                 }
 
-                focusArea = Area.Everywhere;
-                focusedLineId = (sbyte) region.lineId;
+                foreach (FocusDisplay display in focusDisplays)
+                {
+                    display.Refresh(false);
+                }
             }
             else
             {
-                FocusArea(region.area);
-            }
-        }
+                focusRegion = region;
+                
+                foreach (LineDisplay lineDisplay in lineDisplays)
+                {
+                    lineDisplay.SetFocused(true);
+                }
 
-        public void FocusArea(Area section)
-        {
-            lineMat.SetVector(focusAreaProp, section.GetVector());
-            focusArea = section;
-            focusedLineId = -1;
+                foreach (StationDisplay stationDisplay in stationDisplays.Values)
+                {
+                    stationDisplay.SetFocused(true);
+                    if (!stationDisplay.station.hideName)
+                    {
+                        stationDisplay.SetInitialVisible(stationDisplay.station.regionType == region.regionType);
+                    }
+                }
+
+                foreach (CrossingDisplay display in crossingDisplays)
+                {
+                    display.SetFocused(true);
+                }
+                
+                foreach (FocusDisplay display in focusDisplays)
+                {
+                    display.Refresh(false);
+                }
+            }
         }
     }
 }
@@ -238,11 +280,19 @@ namespace Gameplay
 [CustomEditor(typeof(MetroRenderer))]
 public class MetroEditor : Editor
 {
+    public RegionType regionType;
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
         MetroRenderer renderer = (MetroRenderer) target;
+
+        regionType = (RegionType)EditorGUILayout.EnumPopup("Select region", regionType);
+        
+        if (GUILayout.Button("Set Focus"))
+        {
+            renderer.FocusRegion(renderer.metro.regions.First(region => region.regionType == regionType));
+        }
         
         if (GUILayout.Button("Toggle Names"))
         {

@@ -31,16 +31,16 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
-      "version": "5.1.7",
+      "version": "https://github.com/kremnev8/com.unity.2d.spriteshape.git#custom",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
         "com.unity.2d.common": "4.0.4",
         "com.unity.2d.path": "4.0.2",
         "com.unity.modules.physics2d": "1.0.0"
       },
-      "url": "https://packages.unity.com"
+      "hash": "31e8a996388eec7698ede14eaf4d7986ccedb0bf"
     },
     "com.unity.2d.tilemap": {
       "version": "1.0.0",

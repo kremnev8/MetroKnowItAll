@@ -15,6 +15,7 @@ namespace Gameplay
         [HideInInspector]
         public byte lineId;
         public byte stationId;
+        public RegionType regionType;
         
         public Vector2 position;
         public string[] names;

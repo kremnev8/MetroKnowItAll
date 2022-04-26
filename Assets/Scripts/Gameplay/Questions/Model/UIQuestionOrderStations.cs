@@ -49,7 +49,7 @@ namespace Gameplay.Questions.Model
             
             foreach (MetroStation station in orderedStations)
             {
-                GameObject labelObject = renderer.getStationDisplay(station).label.gameObject;
+                GameObject labelObject = renderer.GetStationDisplay(station).label.gameObject;
                 GameObject newLabelObject = Instantiate(labelObject, tmpLabelTransform, true);
                 newLabelObject.SetActive(true);
                 mapLabels.Add(newLabelObject.GetComponent<TMP_Text>());

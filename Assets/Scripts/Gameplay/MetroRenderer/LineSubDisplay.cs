@@ -234,12 +234,12 @@ namespace Gameplay
 
         public bool IsFocused(MetroRenderer metroRenderer)
         {
-            if (metroRenderer.focusedLineId != -1)
+            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL)
             {
-                return metroRenderer.focusedLineId == line.lineId;
+                return metroRenderer.focusRegion.lineId == line.lineId;
             }
 
-            return points.Any(conn => metroRenderer.focusArea.IsInside(conn.point));
+            return line.stations.Any(station => station.regionType == metroRenderer.focusRegion.regionType);
         }
 
         public void SetSelected(MetroRenderer metroRenderer, bool value)

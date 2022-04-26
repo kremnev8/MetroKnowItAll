@@ -16,6 +16,8 @@
             }
             
             uiController.SetQuestion(currentQuestion);
+            
+            renderer.FocusRegion(currentRegion);
             renderer.HideAllLabels();
         }
 

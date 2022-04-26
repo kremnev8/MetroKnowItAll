@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Gameplay
 {
     [Serializable]
-    public struct Region
+    public class Region
     {
+        public static Region everywhere => new Region(RegionType.GLOBAL, Area.Everywhere, -1);
+        
         public RegionType regionType;
         public int lineId;
         public Area area;
@@ -30,6 +33,24 @@ namespace Gameplay
                 RegionType.SOUTH_WEST => "Юго-запад",
                 RegionType.WEST => "Запад",
                 RegionType.NORTH_WEST => "Северо-запад",
+                _ => ""
+            };
+        }
+        
+        public static string GetFileName(RegionType regionType)
+        {
+            return regionType switch
+            {
+                RegionType.GLOBAL => "",
+                RegionType.CENTER => "ЦЕНТРАЛЬНЫЙ ОКРУГ",
+                RegionType.NORTH => "СЕВЕРНЫЙ ОКРУГ",
+                RegionType.NORTH_EAST => "СЕВЕРО-ВОСТОЧНЫЙ ОКРУГ",
+                RegionType.EAST => "ВОСТОЧНЫЙ ОКРУГ",
+                RegionType.SOUTH_EAST => "ЮГО-ВОСТОЧНЫЙ ОКРУГ",
+                RegionType.SOUTH => "ЮЖНЫЙ ОКРУГ",
+                RegionType.SOUTH_WEST => "ЮГО-ЗАПАДНЫЙ ОКРУГ",
+                RegionType.WEST => "ЗАПАДНЫЙ ОКРУГ",
+                RegionType.NORTH_WEST => "СЕВЕРО-ЗАПАДНЫЙ ОКРУГ",
                 _ => ""
             };
         }

@@ -215,10 +215,46 @@ namespace Util
             while (n > 1) {  
                 n--;  
                 int k = Random.Range(0, n + 1);  
-                T value = list[k];  
-                list[k] = list[n];  
-                list[n] = value;  
+                (list[k], list[n]) = (list[n], list[k]);
             }  
+        }
+        
+        
+        /// <summary>
+        /// Determines if the given point is inside the polygon
+        /// </summary>
+        /// <param name="polygon">the vertices of polygon</param>
+        /// <param name="testPoint">the given point</param>
+        /// <returns>true if the point is inside the polygon; otherwise, false</returns>
+        public static bool IsPointInPolygon4(this List<Vector2> polygon, Vector2 testPoint)
+        {
+            bool result = false;
+            int j = polygon.Count - 1;
+            for (int i = 0; i < polygon.Count; i++)
+            {
+                if (polygon[i].y < testPoint.y && polygon[j].y >= testPoint.y || polygon[j].y < testPoint.y && polygon[i].y >= testPoint.y)
+                {
+                    if (polygon[i].x + (testPoint.y - polygon[i].y) / (polygon[j].y - polygon[i].y) * (polygon[j].x - polygon[i].x) < testPoint.x)
+                    {
+                        result = !result;
+                    }
+                }
+                j = i;
+            }
+            return result;
+        }
+        
+        public static bool IsClockwise(this List<Vector2> vertices)
+        {
+            double sum = 0.0;
+            Vector2 v1 = vertices[vertices.Count - 1];
+            
+            foreach (Vector2 v2 in vertices)
+            {
+                sum += (v2.x - v1.x) * (v2.y + v1.y);
+                v1 = v2;
+            }
+            return sum > 0.0;
         }
     }
 }

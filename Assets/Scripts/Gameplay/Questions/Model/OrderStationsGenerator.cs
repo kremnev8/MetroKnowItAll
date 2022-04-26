@@ -24,10 +24,10 @@ namespace Gameplay.Questions.Model
 
             List<MetroStation> shuffled = new List<MetroStation>(currentQuestionStations);
             shuffled.Shuffle();
-            renderer.HideAllLabels();
             uiController.SetQuestion(shuffled);
 
-            renderer.FocusLine(currentRegion);
+            renderer.FocusRegion(currentRegion);
+            renderer.HideAllLabels();
         }
 
         public override string GenerateTip(int tipNumber)

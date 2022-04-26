@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Gameplay
 {
@@ -19,7 +21,7 @@ namespace Gameplay
 
         public bool shouldLabelDisplay = false;
         public int timeToHideLabel;
-        
+
         public void SetFocused(bool value)
         {
             spriteRenderer.GetPropertyBlock(block);
@@ -78,6 +80,7 @@ namespace Gameplay
         private void SetColor(Color color)
         {
             block ??= new MaterialPropertyBlock();
+
             
             spriteRenderer.GetPropertyBlock(block);
             block.SetColor(colorProp, color);
@@ -94,7 +97,7 @@ namespace Gameplay
             label.alignment = alignment;
         }
 
-        private void SetInitialVisible(bool value)
+        public void SetInitialVisible(bool value)
         {
             label.gameObject.SetActive(value);
             shouldLabelDisplay = value;
@@ -116,12 +119,12 @@ namespace Gameplay
 
         public bool IsFocused(MetroRenderer metroRenderer)
         {
-            if (metroRenderer.focusedLineId != -1)
+            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL)
             {
-                return station.lineId == metroRenderer.focusedLineId;
+                return station.lineId == metroRenderer.focusRegion.lineId;
             }
 
-            return metroRenderer.focusArea.IsInside(station.position);
+            return metroRenderer.focusRegion.regionType == station.regionType;
         }
 
         public void SetSelected(MetroRenderer metroRenderer, bool value)

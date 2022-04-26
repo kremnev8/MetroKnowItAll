@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using UnityEditor;
 
 namespace Util
@@ -38,8 +39,8 @@ namespace Util
             {
                 if (element.Contains("["))
                 {
-                    var elementName = element.Substring(0, element.IndexOf("["));
-                    var index = System.Convert.ToInt32(element.Substring(element.IndexOf("[")).Replace("[", "").Replace("]", ""));
+                    var elementName = element.Substring(0, element.IndexOf("[", StringComparison.Ordinal));
+                    var index = System.Convert.ToInt32(element.Substring(element.IndexOf("[", StringComparison.Ordinal)).Replace("[", "").Replace("]", ""));
                     obj = GetValue_Imp(obj, elementName, index);
                 }
                 else
@@ -73,7 +74,7 @@ namespace Util
 
             return null;
         }
-
+        
         private static object GetValue_Imp(object source, string name, int index)
         {
             var enumerable = GetValue_Imp(source, name) as System.Collections.IEnumerable;

@@ -12,11 +12,11 @@ namespace Gameplay.Questions.Model
             currentQuestion = metro.PickRandomStation(currentRegion, blacklistedIds);
             
             uiController.SetQuestion(currentQuestion);
-            renderer.HideAllLabels();
             blacklistedIds.Add(currentQuestion.globalId);
             
 
-            renderer.FocusLine(currentRegion);
+            renderer.FocusRegion(currentRegion);
+            renderer.HideAllLabels();
         }
 
         public override string GenerateTip(int tipNumber)
@@ -26,7 +26,7 @@ namespace Gameplay.Questions.Model
                 case 0 when currentRegion.regionType == RegionType.GLOBAL:
                     MetroStation near = metro.PickStationNear(currentQuestion);
                     blacklistedIds.Add(near.globalId);
-                    renderer.getStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
+                    renderer.GetStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
                     return $"Станция метро {near.currentName} находиться рядом!";
                 case 0 when currentRegion.regionType != RegionType.GLOBAL:
                     MetroLine line = metro.lines[currentQuestion.lineId];

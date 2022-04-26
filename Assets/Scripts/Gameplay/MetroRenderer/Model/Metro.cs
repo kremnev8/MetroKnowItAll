@@ -5,8 +5,10 @@ using System.Text;
 using UnityEngine;
 using Util;
 using System.IO;
+using UnityEngine.U2D;
 using Random = UnityEngine.Random;
 #if UNITY_EDITOR
+using Newtonsoft.Json.Linq;
 using UnityEditor;
 
 #endif
@@ -20,6 +22,30 @@ namespace Gameplay
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
         public List<Region> regions = new List<Region>();
 
+#if UNITY_EDITOR
+        public Dictionary<string, SpriteShapeController> controllers = new Dictionary<string, SpriteShapeController>();
+#endif
+        
+        public List<MetroStation> GetStationsByName(string name)
+        {
+            List<MetroStation> stations = new List<MetroStation>();
+            foreach (MetroLine line in lines)
+            {
+                try
+                {
+                    stations.Add(line.stations.First(station =>
+                    {
+                        return station.currentName.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0;
+                    }));
+                }
+                catch (InvalidOperationException e)
+                {
+                }
+            }
+
+            return stations;
+        }
+        
         public MetroStation GetStation(int lineId, int stationId)
         {
             return lines[lineId].stations[stationId];
@@ -49,7 +75,7 @@ namespace Gameplay
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(station => region.area.IsInside(station.position)));
+                            .Where(station => region.regionType == station.regionType));
                     
                 }
                 int index = Random.Range(0, regionStations.Count);
@@ -74,7 +100,7 @@ namespace Gameplay
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(station => region.area.IsInside(station.position)));
+                            .Where(station => region.regionType == station.regionType));
                     
                 }
                 int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(regionStations[stationId].globalId), 0, regionStations.Count);
@@ -84,7 +110,7 @@ namespace Gameplay
         
         public List<MetroStation> PickRandomStationRange(Region region, int size, List<int> blacklist)
         {
-            if (region.regionType == RegionType.GLOBAL)
+            if (region.lineId != -1)
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
 
@@ -95,7 +121,7 @@ namespace Gameplay
                         for (int i = stationId; i < stationId + size; i++)
                         {
                             if (blacklist.Contains(stations[i].globalId) ||
-                                !region.area.IsInside(stations[i].position))
+                                region.regionType != stations[i].regionType)
                             {
                                 return false;
                             }
@@ -113,20 +139,20 @@ namespace Gameplay
             {
                List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station =>
                {
-                   return !blacklist.Contains(station.globalId) && region.area.IsInside(station.position);
+                   return !blacklist.Contains(station.globalId) && region.regionType == station.regionType;
                }) >= size).ToList();
                int index = Random.Range(0, filteredLines.Count);
 
-               return PickRandomStationRange(new Region(RegionType.GLOBAL, region.area, filteredLines[index].lineId), size, blacklist);
+               return PickRandomStationRange(new Region(region.regionType, region.area, filteredLines[index].lineId), size, blacklist);
             }
         }
 
         public MetroLine PickRandomLine(Region region)
         {
-            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station => region.area.IsInside(station.position)) >= 1).ToList();
+            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station => region.regionType == station.regionType) >= 1).ToList();
             int index = Random.Range(0, filteredLines.Count);
             
-            return lines[index];
+            return filteredLines[index];
         }
 
         private void OnValidate()
@@ -204,6 +230,40 @@ namespace Gameplay
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
+
+            if (GUILayout.Button("Import Region Data"))
+            {
+                Metro metro = (Metro) target;
+                string path = EditorUtility.OpenFilePanel("Load region data", "", "json");
+                string json = File.ReadAllText(path, Encoding.UTF8);
+                JObject obj = JObject.Parse(json);
+                foreach (int index in (int[])Enum.GetValues(typeof(RegionType)))
+                {
+                    RegionType type = (RegionType)index;
+                    if (type == RegionType.GLOBAL) continue;
+                    
+                    string key =  Region.GetFileName(type);
+                    if (!obj.ContainsKey(key)) continue;
+                    
+                    JToken stations = obj[key];
+                    foreach (string stationName in stations)
+                    {
+                        try
+                        {
+                            List<MetroStation> stationsL = metro.GetStationsByName(stationName);
+                            foreach (MetroStation station in stationsL)
+                            {
+                                station.regionType = type;
+                            }
+                        }
+                        catch (InvalidOperationException e)
+                        {
+                            Debug.LogError($"{e.Message}, stacktrace:\n{e.StackTrace}");
+                        }
+                    }
+                }
+                Debug.Log("Success!");
+            }
 
             if (GUILayout.Button("Import"))
             {
