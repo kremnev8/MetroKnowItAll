@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Util;
 
 namespace Gameplay
 {
@@ -53,6 +56,17 @@ namespace Gameplay
                 RegionType.NORTH_WEST => "СЕВЕРО-ЗАПАДНЫЙ ОКРУГ",
                 _ => ""
             };
+        }
+
+        public Vector2 GetRegionCenter(Metro metro)
+        {
+            if (regionType == RegionType.GLOBAL)
+            {
+                MetroLine line = metro.lines[lineId];
+                return line.stations.Select(station => station.position).GetCenter(line.stations.Count);
+            }
+
+            return area.points.GetCenter();
         }
     }
 

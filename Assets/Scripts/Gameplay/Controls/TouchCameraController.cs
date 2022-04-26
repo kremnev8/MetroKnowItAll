@@ -15,6 +15,7 @@ namespace Gameplay
         public PlayerConfig config;
         public bool controlEnabled = true;
 
+        // INPUT
         private PlayerInput input;
 
         private InputAction primaryPositionAction;
@@ -31,17 +32,32 @@ namespace Gameplay
         private InputAction scrollAction;
 #endif
         
+        // STATE
         private Coroutine zoomCoroutine;
 
         private Vector2 initialPosition;
-
         private Vector3 currentDir;
         private Vector3 cameraVelocity;
         
         private bool isDragging;
-        
         private int zoomCounter;
         private bool isZooming => zoomCounter > 0;
+        
+        // CAMERA LERP
+        private Vector3 lerpTarget;
+        private bool shouldLerp;
+        private float lerpTimeElapsed;
+        public float lerpTime = 5;
+        public float endLerpThreshold = 1;
+
+        public void LerpTo(Vector3 position) 
+        {
+            position.z = -10; 
+            lerpTarget = position;
+            shouldLerp = true;
+            lerpTimeElapsed = 0;
+        }
+        
         
         private void Start()
         {
@@ -105,8 +121,31 @@ namespace Gameplay
                 currentDir *= config.friction;
             }
 
+            if (shouldLerp)
+            {
+                lerpTimeElapsed += Time.deltaTime;
+                if (lerpTimeElapsed < lerpTime)
+                {
+                    float t = lerpTimeElapsed / lerpTime;
+                    Vector3 pos = Vector3.Lerp(camera.transform.position, lerpTarget, t);
 
-            camera.transform.position -= currentDir * Time.deltaTime;
+                    if ((pos - lerpTarget).magnitude < endLerpThreshold)
+                    {
+                        shouldLerp = false;
+                    }
+                    
+                    pos -= currentDir * Time.deltaTime / 4;
+                    camera.transform.position = pos;
+                }
+                else
+                {
+                    shouldLerp = false;
+                }
+            }
+            else
+            {
+                camera.transform.position -= currentDir * Time.deltaTime;
+            }
         }
 
         private void ZoomStart(InputAction.CallbackContext obj)

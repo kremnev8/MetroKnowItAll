@@ -18,7 +18,7 @@ namespace Gameplay.Questions
         public List<BaseUIQuestion> questionUI = new List<BaseUIQuestion>();
         public List<BaseQuestionGenerator> questionGenerators = new List<BaseQuestionGenerator>();
 
-        
+        private GameModel model;
         private new MetroRenderer renderer;
 
         private int currentController;
@@ -38,7 +38,8 @@ namespace Gameplay.Questions
 
         private void Start()
         {
-            renderer = Simulation.GetModel<GameModel>().renderer;
+            model = Simulation.GetModel<GameModel>();
+            renderer = model.renderer;
 
             questionUI = uiQuestionTransfrom.GetComponents<BaseUIQuestion>().ToList();
             
@@ -136,6 +137,9 @@ namespace Gameplay.Questions
             {
                 currentRegion = renderer.metro.regions.Find(region => region.regionType == newType);
             }
+
+            Vector2 center = currentRegion.GetRegionCenter(renderer.metro);
+            model.cameraController.LerpTo(center);
             
             questionsRemain = questionsPerRegion;
 

@@ -9,6 +9,7 @@ namespace Model
     public class GameModel
     {
         public PlayerInput input;
+        public TouchCameraController cameraController;
         public MetroRenderer renderer;
         public QuestionController questions;
         public ColorPalette palette;

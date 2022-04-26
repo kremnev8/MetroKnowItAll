@@ -1,4 +1,5 @@
 ﻿using System;
+using Gameplay.Questions;
 using Model;
 using Platformer.Core;
 using UnityEngine;
@@ -18,7 +19,8 @@ namespace Gameplay
         private RectTransform rectTransform;
         private Vector2 initialPos;
         private bool isSwiping;
-        private bool isReturning;
+        
+        public bool isReturning;
 
         private Vector2 startSwipePos;
         private Vector2 lastDeltaPosition;
@@ -54,6 +56,12 @@ namespace Gameplay
             primaryContactAction.canceled += EndSwipe;
         }
 
+        public void ForceOpen()
+        {
+            isReturning = true;
+            moveDelta = Vector2.zero;
+        }
+
         private void OnEnable()
         {
             if (rectTransform != null)
@@ -61,6 +69,13 @@ namespace Gameplay
                 isReturning = true;
                 rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis;
             }
+
+            QuestionController.onQuestionChanged += ForceOpen;
+        }
+
+        private void OnDisable()
+        {
+            QuestionController.onQuestionChanged -= ForceOpen;
         }
 
         private void Update()

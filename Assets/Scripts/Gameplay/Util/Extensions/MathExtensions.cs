@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using Gameplay;
 using UnityEditor;
 using UnityEngine;
@@ -201,6 +202,16 @@ namespace Util
                     _ => "возле"
                 }
             };
+        }
+
+        public static Vector2 GetCenter(this IList<Vector2> points)
+        {
+            return points.Aggregate((a, b) => a + b) / points.Count;
+        }
+        
+        public static Vector2 GetCenter(this IEnumerable<Vector2> points, int count)
+        {
+            return points.Aggregate((a, b) => a + b) / count;
         }
         
         public static int Mod(this int x, int m)
