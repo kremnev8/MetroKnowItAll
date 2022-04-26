@@ -205,6 +205,7 @@ namespace Gameplay
             foreach (StationDisplay stationDisplay in stationDisplays.Values)
             {
                 stationDisplay.SetFocused(true);
+                stationDisplay.SetInitialVisible(!stationDisplay.station.hideName);
             }
             
             foreach (CrossingDisplay display in crossingDisplays)
