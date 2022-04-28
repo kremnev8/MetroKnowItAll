@@ -3,9 +3,12 @@ using System.Collections;
 using Model;
 using Platformer.Core;
 using ScriptableObjects;
+using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Util;
+using RectUtils = Util.RectUtils;
 
 namespace Gameplay
 {
@@ -14,6 +17,8 @@ namespace Gameplay
         public new Camera camera;
         public PlayerConfig config;
         public bool controlEnabled = true;
+
+        public Rect worldBounds;
 
         // INPUT
         private PlayerInput input;
@@ -139,7 +144,7 @@ namespace Gameplay
                     }
                     
                     pos -= currentDir * Time.deltaTime / 4;
-                    camera.transform.position = pos;
+                    camera.transform.position = worldBounds.Clamp3(pos);
                 }
                 else
                 {
@@ -148,7 +153,8 @@ namespace Gameplay
             }
             else
             {
-                camera.transform.position -= currentDir * Time.deltaTime;
+                Vector3 newPos = camera.transform.position - currentDir * Time.deltaTime;
+                camera.transform.position = worldBounds.Clamp3(newPos);
             }
         }
 
@@ -211,6 +217,26 @@ namespace Gameplay
                 previousDistance = distance;
                 yield return null;
             }
+        }
+    }
+    
+    [CustomEditor(typeof(TouchCameraController))]
+    public class TouchCameraControllerEditor : Editor
+    {
+        private void OnSceneGUI()
+        { 
+            Debug.Log("Scene GUI");
+            var rectExample = (TouchCameraController)target;
+
+            var rect = RectUtils.ResizeRect(
+                rectExample.worldBounds,
+                Handles.CubeHandleCap,
+                Color.green,
+                Color.yellow,
+                HandleUtility.GetHandleSize(Vector3.zero) * .1f,
+                1); 
+
+            rectExample.worldBounds = rect;
         }
     }
 }

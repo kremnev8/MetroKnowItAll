@@ -31,7 +31,7 @@ namespace Gameplay
         
         public void SetLabelVisible(bool isVisible, Color color)
         {
-            if (shouldLabelDisplay && timeToHideLabel <= 0)
+            if (shouldLabelDisplay)
             {
                 label.color = color;
                 label.gameObject.SetActive(isVisible);
