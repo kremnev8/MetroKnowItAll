@@ -27,7 +27,6 @@ namespace Gameplay.Questions
         
         private int questionsRemain;
         public int questionsPerRegion;
-        public int correctGuesses;
 
         public float timeout = 10;
 
@@ -64,15 +63,14 @@ namespace Gameplay.Questions
             if (result)
             {
                 model.statistics.OnCorrectAnswer(AnswerTimeElapsed);
-                correctGuesses++;
             }
             else
             {
-                model.statistics.OnWrongAnswer();
+                model.statistics.OnWrongAnswer(AnswerTimeElapsed);
             }
             questionsRemain--;
             
-            topBar.UpdateStatus(result, correctGuesses, questionsPerRegion - questionsRemain);
+            topBar.UpdateStatus(result, questionsRemain, questionsPerRegion);
             
             if (questionsRemain == 0)
             {
@@ -122,11 +120,6 @@ namespace Gameplay.Questions
             
             isResting = true;
             questionUI[currentController].HideElements();
-            if (correctGuesses == questionsPerRegion)
-            {
-                UIAchievement.UnlockAchievement("PerfectFive");
-            }
-            correctGuesses = 0;
             
             renderer.ClearFocus();
             renderer.ShowAllLabels();

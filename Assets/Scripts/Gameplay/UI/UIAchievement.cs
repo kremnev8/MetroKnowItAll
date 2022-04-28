@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Gameplay.ScriptableObjects;
 using Model;
 using Platformer.Core;
@@ -24,7 +25,8 @@ namespace Gameplay
         private RectTransform rectTransform;
 
         private float timeElapsed;
-        
+        private Queue<Achievement> achievementQueue = new Queue<Achievement>();
+
         private void Awake()
         {
             rectTransform = GetComponent<RectTransform>();
@@ -53,12 +55,27 @@ namespace Gameplay
 
         public void Popup(Achievement achievement)
         {
+            if (gameObject.activeSelf)
+            {
+                achievementQueue.Enqueue(achievement);
+                return;
+            }
+            
             achievementName.text = achievement.name;
             achievementText.text = achievement.description;
             achievementIcon.sprite = achievement.icon;
             gameObject.SetActive(true);
             timeElapsed = 0;
             rectTransform.anchoredPosition = Vector2.zero;
+        }
+
+        private void HidePopup()
+        {
+            gameObject.SetActive(false);
+            if (achievementQueue.Count > 0)
+            {
+                Popup(achievementQueue.Dequeue());
+            }
         }
 
         private void Update()
@@ -77,7 +94,7 @@ namespace Gameplay
             }
             else if (timeElapsed > timeIn + timeStay + timeOut)
             {
-                gameObject.SetActive(false);
+                HidePopup();
                 return;
             }
 

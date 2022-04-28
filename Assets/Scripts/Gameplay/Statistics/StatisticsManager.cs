@@ -6,11 +6,14 @@ using System.Text;
 using Gameplay.ScriptableObjects;
 using Newtonsoft.Json;
 using UnityEngine;
+using Util;
 
 namespace Gameplay.Statistics
 {
     public class StatisticsManager : MonoBehaviour
     {
+        public const int version = 1;
+        
         public Statistics current;
 
         [SerializeField] private Metro metro;
@@ -23,6 +26,10 @@ namespace Gameplay.Statistics
             {
                 string json = File.ReadAllText(dataPath, Encoding.UTF8);
                 current = JsonConvert.DeserializeObject<Statistics>(json);
+                if (current.dataVersion == 0)
+                {
+                    current.correctAnswers = 0;
+                }
             }
             else
             {
@@ -38,6 +45,7 @@ namespace Gameplay.Statistics
                 current.unlockedStations.Prepare(stations);
                 current.unlockedAchievements.Prepare(achievements.GetAll());
             }
+            current.dataVersion = version;
         }
 
         private void OnApplicationFocus(bool hasFocus)
@@ -66,8 +74,17 @@ namespace Gameplay.Statistics
         public void OnCorrectAnswer(float time)
         {
             current.correctAnswers++;
+            current.totalAnswers++;
+            
+            current.correctAnswerStreak++;
+            
             current.fastestCorrectAnswer = current.fastestCorrectAnswer > 0 ? Mathf.Min(current.fastestCorrectAnswer, time) : time;
+            current.averageAnswerTime = current.averageAnswerTime.Average(time, current.totalAnswers);
 
+            if (current.correctAnswerStreak == 5)
+            {
+                UIAchievement.UnlockAchievement("PerfectFive");
+            }
             if (current.fastestCorrectAnswer < 7)
             {
                 UIAchievement.UnlockAchievement("QuickAnswer");
@@ -90,8 +107,13 @@ namespace Gameplay.Statistics
             }
         }
 
-        public void OnWrongAnswer()
+        public void OnWrongAnswer(float time)
         {
+            current.totalAnswers++;
+            current.correctAnswerStreak = 0;
+            
+            current.averageAnswerTime = current.averageAnswerTime.Average(time, current.totalAnswers);
+            
             UIAchievement.UnlockAchievement("MakeAMistake");
         }
         

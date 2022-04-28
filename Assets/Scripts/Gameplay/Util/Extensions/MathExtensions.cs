@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using Gameplay;
 using UnityEditor;
 using UnityEngine;
@@ -271,6 +272,40 @@ namespace Util
                 v1 = v2;
             }
             return sum > 0.0;
+        }
+        
+        /// <summary>
+        /// Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.
+        /// </summary>
+        /// <param name="rect">The Rect.</param>
+        /// <param name="position">A position that should be restricted to the rect.</param>
+        /// <param name="extendDistance">The distance to extend/shrink the rect to each side.</param>
+        /// <returns>The vector, clamped to the Rect.</returns>
+        public static Vector2 Clamp2(this Rect rect, Vector2 position, float extendDistance = 0f)
+        {
+            return new Vector2(Mathf.Clamp(position.x, rect.xMin - extendDistance, rect.xMax + extendDistance),
+                Mathf.Clamp(position.y, rect.yMin - extendDistance, rect.yMax + extendDistance));
+        }
+        
+        /// <summary>
+        /// Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.
+        /// The z component is kept.
+        /// </summary>
+        /// <param name="rect">The Rect.</param>
+        /// <param name="position">A position that should be restricted to the rect.</param>
+        /// <param name="extendDistance">The distance to extend/shrink the rect to each side.</param>
+        /// <returns>The vector, clamped to the Rect.</returns>
+        public static Vector3 Clamp3(this Rect rect, Vector3 position, float extendDistance = 0f)
+        {
+            return new Vector3(Mathf.Clamp(position.x, rect.xMin - extendDistance, rect.xMax + extendDistance),
+                Mathf.Clamp(position.y, rect.yMin - extendDistance, rect.yMax + extendDistance),
+                position.z);
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public  static float Average(this float current, float newValue, int total)
+        {
+            return current * (total - 1) / total + newValue / total;
         }
     }
 }
