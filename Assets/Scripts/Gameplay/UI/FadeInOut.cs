@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class FadeInOut : MonoBehaviour

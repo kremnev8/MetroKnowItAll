@@ -1,9 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using Gameplay.ScriptableObjects;
+using Gameplay.MetroDisplay;
+using Gameplay.MetroDisplay.Model;
+using Gameplay.UI;
+using ScriptableObjects;
 using Newtonsoft.Json;
 using UnityEngine;
 using Util;
@@ -18,7 +19,7 @@ namespace Gameplay.Statistics
 
         [SerializeField] private Metro metro;
         [SerializeField] private AchievementDB achievements;
-        
+         
         private void Awake()
         {
             string dataPath = Application.persistentDataPath + "/statistics.json";

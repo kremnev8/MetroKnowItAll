@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class MetroStation : INamedArrayElement, IIndexable<int>

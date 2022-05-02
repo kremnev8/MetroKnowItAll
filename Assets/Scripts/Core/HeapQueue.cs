@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Platformer.Core
+namespace Gameplay.Core
 {
     /// <summary>
     /// HeapQueue provides a queue collection that is always ordered.

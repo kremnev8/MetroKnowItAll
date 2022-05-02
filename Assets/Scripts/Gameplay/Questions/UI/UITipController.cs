@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Model;
-using Platformer.Core;
+﻿using System.Collections.Generic;
+using Gameplay.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

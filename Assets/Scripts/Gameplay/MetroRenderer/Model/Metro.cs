@@ -13,7 +13,7 @@ using UnityEditor;
 
 #endif
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [CreateAssetMenu(fileName = "Metro", menuName = "SO/New Metro", order = 0)]
     public class Metro : ScriptableObject

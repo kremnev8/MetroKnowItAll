@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Gameplay.Statistics;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class MetroLine : INamedArrayElement, IIndexable<int>

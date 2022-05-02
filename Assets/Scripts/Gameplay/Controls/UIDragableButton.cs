@@ -1,12 +1,11 @@
-﻿using Model;
-using Platformer.Core;
+﻿using Gameplay.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.Controls
 {
     public class UIDragableButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Gameplay.Questions.Model;
+using Gameplay.MetroDisplay;
+using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions
 {

@@ -1,4 +1,4 @@
-﻿namespace Platformer.Core
+﻿namespace Gameplay.Core
 {
     public static partial class Simulation
     {

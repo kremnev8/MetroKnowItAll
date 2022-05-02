@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Model;
-using Platformer.Core;
+﻿using Gameplay.Core;
+using ScriptableObjects;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Gameplay
 {

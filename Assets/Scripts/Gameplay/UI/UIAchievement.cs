@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Gameplay.ScriptableObjects;
-using Model;
-using Platformer.Core;
+using ScriptableObjects;
+using Gameplay.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     public class UIAchievement : MonoBehaviour
     {

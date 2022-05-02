@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     [RequireComponent(typeof(Canvas))]
     public class CanvasSafeArea : MonoBehaviour

@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions.Model
 {
@@ -23,16 +23,11 @@ namespace Gameplay.Questions.Model
         {
             switch (tipNumber)
             {
-                case 0 when currentRegion.regionType == RegionType.GLOBAL:
+                case 0:
                     MetroStation near = metro.PickStationNear(currentQuestion);
                     blacklistedIds.Add(near.globalId);
                     renderer.GetStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
                     return $"Станция метро {near.currentName} находиться рядом!";
-                case 0 when currentRegion.regionType != RegionType.GLOBAL:
-                    MetroLine line = metro.lines[currentQuestion.lineId];
-                    //renderer.getStationDisplay(near).ShowLabelFor(GameController.theme.textColor, 1000);
-                    return $"Станция принадлежит {line.name}!";
-                
             }
 
             return "";
@@ -43,6 +38,11 @@ namespace Gameplay.Questions.Model
             MetroStation selectedStation = uiController.CurrentSelection();
 
             bool result = currentQuestion.globalId == selectedStation.globalId;
+            if (!result && selectedStation.currentName.Equals(currentQuestion.currentName, StringComparison.OrdinalIgnoreCase))
+            {
+                result = true;
+            }
+            
             uiController.DisplayResult(result);
 
             blacklistedIds.Add(selectedStation.globalId);

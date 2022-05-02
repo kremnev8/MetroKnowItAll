@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Gameplay;
+using Gameplay.MetroDisplay;
+using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 using Util;
 #if UNITY_EDITOR
@@ -9,7 +10,7 @@ using UnityEditor;
 
 #endif
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay
 {
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour
@@ -31,7 +32,7 @@ namespace Gameplay
         [SerializeField] private GameObject stationSelectPrefab;
         [SerializeField] private FocusDisplay focusPrefab;
 
-        public Metro metro;
+        public Model.Metro metro;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();

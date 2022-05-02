@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Controls;
+using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 using UnityEngine.U2D;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay
 {
     public class LineSubDisplay : MonoBehaviour, ISelectable
     {

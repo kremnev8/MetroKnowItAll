@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Util;
 
-namespace Gameplay
+namespace ScriptableObjects
 {
     [Serializable]
     public class Theme

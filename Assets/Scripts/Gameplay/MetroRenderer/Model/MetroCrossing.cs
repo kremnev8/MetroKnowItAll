@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class GlobalId

@@ -1,9 +1,8 @@
 ﻿using System;
 using Gameplay.Statistics;
-using ScriptableObjects;
 using UnityEngine;
 
-namespace Gameplay.ScriptableObjects
+namespace ScriptableObjects
 {
     [Serializable]
     public class Achievement : GenericItem, IIndexable<string>

@@ -1,13 +1,11 @@
-﻿using System;
-using Gameplay.Questions;
-using Model;
-using Platformer.Core;
+﻿using Gameplay.Questions;
+using Gameplay.UI;
+using Gameplay.Core;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.Controls
 {
     public class UISwipe : MonoBehaviour
     {

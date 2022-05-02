@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class Region

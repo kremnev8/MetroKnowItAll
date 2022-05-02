@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.Controls
 {
     public class UIDraggableButtonList : MonoBehaviour
     {

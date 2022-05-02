@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Gameplay.ScriptableObjects;
+﻿using Gameplay.MetroDisplay.Model;
+using ScriptableObjects;
 
 namespace Gameplay.Statistics
 {

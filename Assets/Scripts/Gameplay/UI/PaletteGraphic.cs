@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using Model;
-using Platformer.Core;
+using Gameplay.Core;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Reflection;
+using ScriptableObjects;
 using UnityEngine.U2D;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     [ExecuteInEditMode]
     public class PaletteGraphic : MonoBehaviour

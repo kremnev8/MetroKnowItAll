@@ -1,8 +1,7 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     public class UITopBar : MonoBehaviour
     {
@@ -24,11 +23,11 @@ namespace Gameplay
             attemptsLabel.text = value.ToString();
         }
 
-        public void UpdateStatus(bool lastCorrect, int correct, int total)
+        public void UpdateStatus(bool lastCorrect, int current, int total)
         {
             string correctText = lastCorrect ? "Верно!" : "Неверно!";
             Color textColor = lastCorrect ? GameController.theme.rightAnswer : GameController.theme.wrongAnswer;
-            statusLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(textColor)}>{correctText}</color>\nВсего {correct}/{total}";
+            statusLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(textColor)}>{correctText}</color>\nПрогресс {current}/{total}";
             statusLabel.gameObject.SetActive(true);
             statusHideTimer = 120;
         }

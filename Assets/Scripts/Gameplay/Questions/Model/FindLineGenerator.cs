@@ -1,4 +1,6 @@
-﻿namespace Gameplay.Questions.Model
+﻿using Gameplay.MetroDisplay.Model;
+
+namespace Gameplay.Questions.Model
 {
     public class FindLineGenerator : QuestionGenerator<UIQuestionFindLine>, ILineQuestion
     {

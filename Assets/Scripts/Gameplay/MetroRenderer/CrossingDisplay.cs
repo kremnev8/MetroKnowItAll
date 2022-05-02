@@ -1,13 +1,14 @@
 ﻿using System.Linq;
+using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay
 {
     public class CrossingDisplay : MonoBehaviour
     {
         public MetroCrossing crossing;
-        private Metro metro;
+        private Model.Metro metro;
 
         public new SpriteRenderer renderer;
 
@@ -27,7 +28,7 @@ namespace Gameplay
             renderer.SetPropertyBlock(block);
         }
         
-        public void SetCrossing(Metro metro, MetroCrossing crossing)
+        public void SetCrossing(Model.Metro metro, MetroCrossing crossing)
         {
             this.metro = metro;
             this.crossing = crossing;

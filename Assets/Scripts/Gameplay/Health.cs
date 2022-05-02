@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Units
+namespace Gameplay
 {
     public enum PainType
     {

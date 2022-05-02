@@ -1,10 +1,13 @@
-﻿using Gameplay;
+﻿using Gameplay.Controls;
+using Gameplay.MetroDisplay;
 using Gameplay.Questions;
 using Gameplay.Statistics;
+using Gameplay.UI;
+using ScriptableObjects;
 using UnityEngine.InputSystem;
 
 
-namespace Model
+namespace Gameplay
 {
     [System.Serializable]
     public class GameModel

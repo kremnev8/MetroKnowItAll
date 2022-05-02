@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Gameplay.Controls;
+using Gameplay.MetroDisplay.Model;
 using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay
 {
     public class StationDisplay : MonoBehaviour, ISelectable
     {

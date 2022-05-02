@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Model;
-using Platformer.Core;
+using Gameplay.MetroDisplay;
+using Gameplay.MetroDisplay.Model;
+using Gameplay.UI;
+using Gameplay.Core;
 using UnityEngine;
-using Util;
 using Random = UnityEngine.Random;
 
 namespace Gameplay.Questions
@@ -51,7 +52,7 @@ namespace Gameplay.Questions
                 uiQuestion.renderer = renderer;
                 questionGenerators.Add(generator);
             }
-            Invoke(nameof(StartNextRegionTimer), 1f);
+            Invoke(nameof(SelectNextRegion), 1f);
         }
 
         public void CheckAnswer()
@@ -70,11 +71,11 @@ namespace Gameplay.Questions
             }
             questionsRemain--;
             
-            topBar.UpdateStatus(result, questionsRemain, questionsPerRegion);
+            topBar.UpdateStatus(result, questionsPerRegion - questionsRemain, questionsPerRegion);
             
             if (questionsRemain == 0)
             {
-                Invoke(nameof(StartNextRegionTimer), 1.5f);
+                Invoke(nameof(SelectNextRegion), 1.5f);
                 return;
             }
             
@@ -105,7 +106,7 @@ namespace Gameplay.Questions
             }
             catch (Exception e)
             {
-                StartNextRegionTimer();
+                SelectNextRegion();
                 Debug.Log($"{e.Message}\n{e.StackTrace}");
                 return;
             }
@@ -114,22 +115,13 @@ namespace Gameplay.Questions
             AnswerTimeElapsed = 0;
         }
 
-        private void StartNextRegionTimer()
+        private void SelectNextRegion()
         {
             if (isResting) return;
             
             isResting = true;
             questionUI[currentController].HideElements();
             
-            renderer.ClearFocus();
-            renderer.ShowAllLabels();
-            topBar.StartCountdown(timeout);
-            Invoke(nameof(SelectNextRegion), timeout + 0.2f);
-        }
-
-        public void SelectNextRegion()
-        {
-            isResting = false;
             RegionType newType = (RegionType)Random.Range(0, (int) RegionType.MAX_VALUE);
 
             if (newType == RegionType.GLOBAL)
@@ -145,6 +137,17 @@ namespace Gameplay.Questions
             Vector2 center = currentRegion.GetRegionCenter(renderer.metro);
             model.cameraController.LerpTo(center);
             
+            renderer.ShowAllLabels();
+            renderer.FocusRegion(currentRegion);
+            
+            topBar.StartCountdown(timeout);
+            Invoke(nameof(ResumeGame), timeout + 0.2f);
+        }
+
+        public void ResumeGame()
+        {
+            isResting = false;
+
             questionsRemain = questionsPerRegion;
 
             foreach (BaseQuestionGenerator generator in questionGenerators)

@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
+using Gameplay.MetroDisplay.Model;
 using UnityEngine;
-using UnityEngine.U2D;
-using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay
 {
     public class LineDisplay : MonoBehaviour
     {

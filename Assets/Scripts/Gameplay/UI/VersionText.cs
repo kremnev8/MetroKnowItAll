@@ -1,8 +1,7 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-namespace Gameplay
+namespace Gameplay.UI
 {
     public class VersionText : MonoBehaviour
     {

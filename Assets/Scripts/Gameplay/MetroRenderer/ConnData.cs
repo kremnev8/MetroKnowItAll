@@ -1,14 +1,17 @@
-﻿using Gameplay;
+﻿using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 
-public struct ConnData
+namespace Gameplay.MetroDisplay
 {
-    public Vector2 point;
-    public MetroConnection connection;
-
-    public ConnData(Vector2 point, MetroConnection connection)
+    public struct ConnData
     {
-        this.point = point;
-        this.connection = connection;
+        public Vector2 point;
+        public MetroConnection connection;
+
+        public ConnData(Vector2 point, MetroConnection connection)
+        {
+            this.point = point;
+            this.connection = connection;
+        }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.U2D;
 using Util;
@@ -9,7 +8,7 @@ using Util;
 using UnityEditor;
 #endif
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class Area

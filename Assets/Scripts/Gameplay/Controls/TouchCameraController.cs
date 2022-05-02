@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections;
-using Model;
-using Platformer.Core;
+﻿using System.Collections;
+using Gameplay.Core;
 using ScriptableObjects;
 using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Util;
 using RectUtils = Util.RectUtils;
 
-namespace Gameplay
+namespace Gameplay.Controls
 {
     public class TouchCameraController : MonoBehaviour
     {

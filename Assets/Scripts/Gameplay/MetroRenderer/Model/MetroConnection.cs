@@ -2,7 +2,7 @@
 using UnityEngine;
 using Util;
 
-namespace Gameplay
+namespace Gameplay.MetroDisplay.Model
 {
     [Serializable]
     public class MetroConnection : INamedArrayElement
