@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Gameplay.Controls;
 using Gameplay.MetroDisplay.Model;
@@ -235,7 +236,7 @@ namespace Gameplay.MetroDisplay
             line = _line;
 
             Refresh();
-            highlight.SetActive(false);
+            //highlight.SetActive(false);
         }
 
         public bool IsFocused(MetroRenderer metroRenderer)
@@ -251,6 +252,16 @@ namespace Gameplay.MetroDisplay
         public void SetSelected(MetroRenderer metroRenderer, bool value)
         {
             highlight.SetActive(value);
+        }
+
+        private void Start()
+        {
+            Invoke(nameof(HideOnStart), 0.3f);
+        }
+
+        private void HideOnStart()
+        {
+            highlight.SetActive(false);
         }
     }
 }

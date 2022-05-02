@@ -44,5 +44,14 @@ namespace Util
         {
             return ConstrainedRandom(num => num != exclude, min, max);
         }
+        
+        /// <summary>
+        /// Generate a number between min and max excluding a single number
+        /// </summary>
+        /// <exception cref="System.ArgumentException"> thrown if all numbers were excluded</exception>
+        public static int ConstrainedRandom(this int exclude, int min, int max)
+        {
+            return ConstrainedRandom(num => num != exclude, min, max);
+        }
     }
 }

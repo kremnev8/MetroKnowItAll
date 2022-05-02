@@ -33,7 +33,7 @@ namespace Gameplay.Questions.Generators
                 case 0:
                 case 1:
                 case 2:
-                    MetroStation station = metro.PickRandomStation(new Region(RegionType.GLOBAL, Area.Everywhere, currentQuestion.lineId));
+                    MetroStation station = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.area, currentQuestion.lineId));
                     return $"Станиция {station.currentName} распологается на этой линий";
             }
 

@@ -261,18 +261,34 @@ namespace Util
         }
         
         /// <summary>
-        /// Randomly shuffle a list
+        /// Randomly shuffle a list, such that no element can stay in it's original index
         /// </summary>
-        /// <param name="list"></param>
-        /// <typeparam name="T"></typeparam>
-        public static void Shuffle<T>(this IList<T> list)  
+        public static void Shuffle<T>(this IList<T> list)
         {
-            int n = list.Count;  
-            while (n > 1) {  
-                n--;  
-                int k = Random.Range(0, n + 1);  
-                (list[k], list[n]) = (list[n], list[k]);
-            }  
+            HashSet<int> blacklist = new HashSet<int>();
+            
+            int currentIndex = 0;
+            int newIndex = -1;
+            
+            T currentElement = list[0];
+            blacklist.Add(0);
+
+            while (newIndex != 0)
+            {
+                try
+                {
+                    // ReSharper disable once AccessToModifiedClosure
+                    newIndex = RandomUtils.ConstrainedRandom(num => num != currentIndex && !blacklist.Contains(num), 0, list.Count);
+                }
+                catch (ArgumentException e)
+                {
+                    newIndex = 0;
+                }
+                
+                blacklist.Add(newIndex);
+                (list[newIndex], currentElement) = (currentElement, list[newIndex]);
+                currentIndex = newIndex;
+            }
         }
         
         

@@ -70,15 +70,7 @@ namespace Gameplay.Questions.Generators
             List<MetroStation> selection = uiController.CurrentSelection();
             
             List<bool> correctnessList = currentQuestionStations.Select((t, i) => t.globalId == selection[i].globalId).ToList();
-            List<bool> reversedList = Enumerable.Reverse(currentQuestionStations).Select((t, i) => t.globalId == selection[i].globalId).ToList();
-
             int correct = correctnessList.Count(b => b);
-            int reversedCorrect = reversedList.Count(b => b);
-            if (reversedCorrect > correct)
-            {
-                correctnessList = reversedList;
-                correct = reversedCorrect;
-            }
 
             bool allCorrect = correct == correctnessList.Count;
             

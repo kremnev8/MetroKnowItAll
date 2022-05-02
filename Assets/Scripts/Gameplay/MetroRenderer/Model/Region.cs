@@ -31,6 +31,10 @@ namespace Gameplay.MetroDisplay.Model
                 return lineId == station.lineId;
             }
 
+            if (lineId != -1)
+            {
+                return lineId == station.lineId && regionType == station.regionType;
+            }
             return regionType == station.regionType;
         }
         
