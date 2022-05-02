@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 using Util;
 
-namespace Gameplay.Questions.Model
+namespace Gameplay.Questions.Generators
 {
     /// <summary>
     /// UI for <see cref="OrderStationsGenerator"/>

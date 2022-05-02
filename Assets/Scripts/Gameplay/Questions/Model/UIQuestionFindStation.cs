@@ -1,10 +1,9 @@
 ﻿using Gameplay.Controls;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
-using Gameplay.Questions.Model;
 using UnityEngine;
 
-namespace Gameplay.Questions
+namespace Gameplay.Questions.Generators
 {
     /// <summary>
     /// UI for <see cref="Gameplay.Questions.Model.FindStationGenerator"/>

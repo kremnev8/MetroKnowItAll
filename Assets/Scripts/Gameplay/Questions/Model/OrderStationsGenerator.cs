@@ -4,7 +4,7 @@ using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 using Util;
 
-namespace Gameplay.Questions.Model
+namespace Gameplay.Questions.Generators
 {
     /// <summary>
     /// This generator generates questions like: Order these stations on the map

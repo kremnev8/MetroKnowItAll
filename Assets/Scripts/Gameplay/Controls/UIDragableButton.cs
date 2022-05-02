@@ -8,7 +8,7 @@ using Util;
 namespace Gameplay.Controls
 {
     /// <summary>
-    /// Button that can be dragged, used as part of <see cref="UIDraggableButtonList"/>>
+    /// Button that can be dragged, used as part of <see cref="UIDraggableButtonList"/>
     /// </summary>
     public class UIDragableButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {

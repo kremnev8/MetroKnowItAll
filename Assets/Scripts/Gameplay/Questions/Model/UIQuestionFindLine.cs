@@ -3,7 +3,7 @@ using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 
-namespace Gameplay.Questions.Model
+namespace Gameplay.Questions.Generators
 {
     /// <summary>
     /// UI for <see cref="FindLineGenerator"/>

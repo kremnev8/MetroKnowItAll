@@ -1,7 +1,7 @@
 ﻿using System;
 using Gameplay.MetroDisplay.Model;
 
-namespace Gameplay.Questions.Model
+namespace Gameplay.Questions.Generators
 {
     /// <summary>
     /// This generator generates questions like: Where is that station on the map
