@@ -24,6 +24,13 @@ namespace Gameplay.Questions.Generators
             button.Enable(selectable => selectable is LineSubDisplay);
         }
         
+        public void SetQuestion(MetroStation station)
+        {
+            questionLabel.text = $"Укажи линию, на которой находится станция {station.currentName}";
+            bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, 300);
+            button.Enable(selectable => selectable is LineSubDisplay);
+        }
+        
         public void DisplayResult(bool result)
         {
             button.Disable();

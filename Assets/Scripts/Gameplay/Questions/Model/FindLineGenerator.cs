@@ -1,4 +1,5 @@
 ﻿using Gameplay.MetroDisplay.Model;
+using UnityEngine;
 
 namespace Gameplay.Questions.Generators
 {
@@ -9,8 +10,12 @@ namespace Gameplay.Questions.Generators
     {
         public MetroLine currentQuestion;
         
+        public MetroStation questionStation;
+        public bool questionUsedLineName;
+        
         public override void GenerateNew()
         {
+            questionUsedLineName = Random.Range(0, 2) > 0;
             if (currentRegion.regionType == RegionType.GLOBAL && currentRegion.lineId != -1)
             {
                 currentQuestion = metro.lines[currentRegion.lineId];
@@ -19,9 +24,17 @@ namespace Gameplay.Questions.Generators
             {
                 currentQuestion = metro.PickRandomLine(currentRegion);
             }
-            
-            uiController.SetQuestion(currentQuestion);
-            
+
+            if (questionUsedLineName)
+            {
+                questionStation = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.area, currentQuestion.lineId));
+                uiController.SetQuestion(questionStation);
+            }
+            else
+            {
+                uiController.SetQuestion(currentQuestion);
+            }
+
             renderer.FocusRegion(currentRegion);
             renderer.HideAllLabels();
         }
@@ -30,7 +43,10 @@ namespace Gameplay.Questions.Generators
         {
             switch (tipNumber)
             {
-                case 0:
+                case 0 when questionUsedLineName:
+                    return $"Имя линии - {currentQuestion.name}";
+                
+                case 0 when !questionUsedLineName:
                 case 1:
                 case 2:
                     MetroStation station = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.area, currentQuestion.lineId));
