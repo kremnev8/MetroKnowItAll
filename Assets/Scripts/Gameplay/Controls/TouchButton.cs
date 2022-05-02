@@ -7,12 +7,18 @@ using Util;
 
 namespace Gameplay.Controls
 {
+    /// <summary>
+    /// Defines a selectable UI element
+    /// </summary>
     public interface ISelectable
     {
         public bool IsFocused(MetroRenderer metroRenderer);
         public void SetSelected(MetroRenderer metroRenderer, bool value);
     }
     
+    /// <summary>
+    /// UI control to select objects, like metro stations and lines
+    /// </summary>
     public class TouchButton : MonoBehaviour
     {
         private PlayerInput input;

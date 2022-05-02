@@ -10,11 +10,17 @@ using UnityEditor;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Defines a area of the metro.
+    /// </summary>
     [Serializable]
     public class Area
     {
         public static readonly Area Everywhere = new Area(true);
-        
+     
+        /// <summary>
+        /// Set of points that define this area polygon
+        /// </summary>
         public List<Vector2> points;
         public bool everywhere;
         

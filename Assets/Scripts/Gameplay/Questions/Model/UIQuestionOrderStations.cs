@@ -8,6 +8,9 @@ using Util;
 
 namespace Gameplay.Questions.Model
 {
+    /// <summary>
+    /// UI for <see cref="OrderStationsGenerator"/>
+    /// </summary>
     public class UIQuestionOrderStations : BaseUIQuestion
     {
         public UIDraggableButtonList buttons;

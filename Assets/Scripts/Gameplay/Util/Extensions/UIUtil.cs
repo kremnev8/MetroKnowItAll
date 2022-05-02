@@ -4,15 +4,24 @@ using UnityEngine.EventSystems;
 
 namespace Util
 {
+    /// <summary>
+    /// Helper class to detect UI raycast hits
+    /// </summary>
     public static class UIUtil
     {
         public static int UILayer = LayerMask.NameToLayer("UI");
 
+        /// <summary>
+        /// Is cursorPos over this UI element?
+        /// </summary>
         public static bool IsPointerOverUIElement(GameObject target, Vector2 cursorPos)
         {
             return IsPointerOverUIElement(GetEventSystemRaycastResults(cursorPos), target);
         }
 
+        /// <summary>
+        /// Is cursorPos over any UI element?
+        /// </summary>
         public static bool IsPointerOverAnyUI(Vector2 cursorPos)
         {
             return IsPointerOverAnyUI(GetEventSystemRaycastResults(cursorPos));

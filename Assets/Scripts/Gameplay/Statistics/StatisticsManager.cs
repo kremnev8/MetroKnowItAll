@@ -11,6 +11,9 @@ using Util;
 
 namespace Gameplay.Statistics
 {
+    /// <summary>
+    /// Manages statistics and achievements. Also saves and loads statistics data to disk
+    /// </summary>
     public class StatisticsManager : MonoBehaviour
     {
         public const int version = 1;

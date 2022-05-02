@@ -2,8 +2,14 @@
 
 namespace Util
 {
+    /// <summary>
+    /// Extension class to work with splines
+    /// </summary>
     public static class SplineUtil
     {
+        /// <summary>
+        /// Copy all properties of the other spline to this one
+        /// </summary>
         public static void CopyValues(this Spline spline, Spline other)
         {
             spline.Clear();

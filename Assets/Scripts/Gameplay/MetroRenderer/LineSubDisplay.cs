@@ -8,6 +8,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// A sub segment of <see cref="LineDisplay"/>, displaying a single continuous line segment
+    /// </summary>
     public class LineSubDisplay : MonoBehaviour, ISelectable
     {
         public MetroLine line;

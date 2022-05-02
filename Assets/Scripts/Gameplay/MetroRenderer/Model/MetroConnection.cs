@@ -4,6 +4,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Defines a connection between two stations. Also defines some display parameters
+    /// </summary>
     [Serializable]
     public class MetroConnection : INamedArrayElement
     {

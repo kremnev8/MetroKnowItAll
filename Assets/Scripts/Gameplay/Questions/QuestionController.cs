@@ -10,6 +10,9 @@ using Random = UnityEngine.Random;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// Selects and Manages question asking process. Contains all active <see cref="BaseQuestionGenerator"/> and <see cref="BaseUIQuestion"/>
+    /// </summary>
     public class QuestionController : MonoBehaviour
     {
         public Transform uiQuestionTransfrom;

@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Controls version text
+    /// </summary>
     public class VersionText : MonoBehaviour
     {
         private TMP_Text label;

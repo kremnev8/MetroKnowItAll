@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Top bar UI controller
+    /// </summary>
     public class UITopBar : MonoBehaviour
     {
         public TMP_Text gameModeLabel;

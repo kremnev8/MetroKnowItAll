@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Controls how <see cref="MetroStation"/> is displayed
+    /// </summary>
     public class StationDisplay : MonoBehaviour, ISelectable
     {
         public MetroStation station;

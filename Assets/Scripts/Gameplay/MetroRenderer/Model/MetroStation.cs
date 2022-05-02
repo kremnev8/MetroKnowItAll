@@ -6,6 +6,10 @@ using Util;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Defines a station in the metro
+    /// Also has some display parameters
+    /// </summary>
     [Serializable]
     public class MetroStation : INamedArrayElement, IIndexable<int>
     {

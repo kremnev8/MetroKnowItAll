@@ -9,6 +9,9 @@ using RectUtils = Util.RectUtils;
 
 namespace Gameplay.Controls
 {
+    /// <summary>
+    /// Main player movement controller, responsible for moving around and zooming.
+    /// </summary>
     public class TouchCameraController : MonoBehaviour
     {
         public new Camera camera;

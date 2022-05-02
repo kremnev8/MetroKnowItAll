@@ -3,6 +3,9 @@ using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// Base class for all question generators
+    /// </summary>
     public abstract class BaseQuestionGenerator
     {
         public MetroRenderer renderer;

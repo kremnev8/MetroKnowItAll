@@ -7,6 +7,10 @@ using Util;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Defines a line in the metro, contains <see cref="MetroStation"/> and <see cref="MetroConnection"/>
+    /// Also has some display parameters
+    /// </summary>
     [Serializable]
     public class MetroLine : INamedArrayElement, IIndexable<int>
     {

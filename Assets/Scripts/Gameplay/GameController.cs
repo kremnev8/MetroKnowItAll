@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Gameplay
 {
+    /// <summary>
+    /// Main game controller
+    /// </summary>
     [ExecuteInEditMode]
     public class GameController : MonoBehaviour
     {

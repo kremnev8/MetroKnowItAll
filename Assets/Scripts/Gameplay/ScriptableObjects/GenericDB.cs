@@ -4,11 +4,18 @@ using UnityEngine;
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Base class for generic items keyed by string id's
+    /// </summary>
     public interface GenericItem
     {
         string ItemId { get; }
     }
 
+    /// <summary>
+    /// Generic data store for any item keyed by string id's
+    /// </summary>
+    /// <typeparam name="T">Model class, implementing <see cref="GenericItem"/></typeparam>
     public class GenericDB<T> : ScriptableObject
         where T : GenericItem
     {

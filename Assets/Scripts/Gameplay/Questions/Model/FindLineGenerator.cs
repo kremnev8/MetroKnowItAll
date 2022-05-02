@@ -2,6 +2,9 @@
 
 namespace Gameplay.Questions.Model
 {
+    /// <summary>
+    /// This generator generates questions like: Where is that line on the map
+    /// </summary>
     public class FindLineGenerator : QuestionGenerator<UIQuestionFindLine>, ILineQuestion
     {
         public MetroLine currentQuestion;

@@ -4,6 +4,9 @@ using UnityEditor;
 
 namespace Util
 {
+    /// <summary>
+    /// Helper methods for creating property drawers
+    /// </summary>
     public static class EditorExtensions
     {
 #if UNITY_EDITOR

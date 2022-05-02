@@ -7,8 +7,14 @@ using Object = UnityEngine.Object;
 
 namespace Util
 {
+    /// <summary>
+    /// Extension methods for GameObjects and MonoBehaviors
+    /// </summary>
     public static class GameObjectExtensions
     {
+        /// <summary>
+        /// Invoke method after delay with arguments
+        /// </summary>
         public static void Invoke(this MonoBehaviour behaviour, string method, object options, float delay)
         {
             behaviour.StartCoroutine((IEnumerator) _invoke(behaviour, method, delay, options));
@@ -25,6 +31,9 @@ namespace Util
             yield return null;
         }
 
+        /// <summary>
+        /// Destroy all children of this game object
+        /// </summary>
         public static void ClearChildren(this GameObject thatObject)
         {
             //Array to hold all child obj
@@ -48,29 +57,6 @@ namespace Util
                 Object.Destroy(child);
 #endif
             }
-        }
-
-        public static void ChangeLayersRecursively(this Transform trans, int mask)
-        {
-            trans.gameObject.layer = mask;
-            foreach (Transform child in trans) child.ChangeLayersRecursively(mask);
-        }
-
-        public static void ExecuteInAllChildren(this Transform trans, Action<Transform> action, bool executeOnMain = false)
-        {
-            if (executeOnMain)
-                action(trans);
-
-            foreach (Transform child in trans) child.ExecuteInAllChildren(action, true);
-        }
-
-        public static RigidbodyConstraints GetConstaraints(this Vector3 vector)
-        {
-            int value = vector.x == 0 ? (int) RigidbodyConstraints.FreezePositionX : 0;
-            value += vector.y == 0 ? (int) RigidbodyConstraints.FreezePositionY : 0;
-            value += vector.z == 0 ? (int) RigidbodyConstraints.FreezePositionZ : 0;
-
-            return (RigidbodyConstraints) value;
         }
     }
 }

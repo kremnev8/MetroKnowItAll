@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// Controller for question tips
+    /// </summary>
     public class UITipController : MonoBehaviour
     {
         public int maxTips;

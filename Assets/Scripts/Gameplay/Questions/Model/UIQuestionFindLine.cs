@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Gameplay.Questions.Model
 {
+    /// <summary>
+    /// UI for <see cref="FindLineGenerator"/>
+    /// </summary>
     public class UIQuestionFindLine : BaseUIQuestion
     {
         public TouchButton button;

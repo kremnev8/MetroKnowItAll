@@ -6,6 +6,9 @@ using Util;
 
 namespace Gameplay.Questions.Model
 {
+    /// <summary>
+    /// This generator generates questions like: Order these stations on the map
+    /// </summary>
     public class OrderStationsGenerator : QuestionGenerator<UIQuestionOrderStations>
     {
         public List<MetroStation> currentQuestionStations = new List<MetroStation>();

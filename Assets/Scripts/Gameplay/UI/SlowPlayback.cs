@@ -3,6 +3,9 @@ using UnityEngine.Playables;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Utility to control how fast <see cref="PlayableDirector"/> plays the timeline
+    /// </summary>
     public class SlowPlayback : MonoBehaviour
     {
         public float speed;

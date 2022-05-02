@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Temporary data struct for line displays
+    /// </summary>
     public struct ConnData
     {
         public Vector2 point;

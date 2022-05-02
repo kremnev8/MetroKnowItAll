@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Defines a theme with all of the palette colors
+    /// </summary>
     [Serializable]
     public class Theme
     {
@@ -25,6 +28,9 @@ namespace ScriptableObjects
         public Color highlightColor;
     }
     
+    /// <summary>
+    /// Data store for know <see cref="Theme"/>
+    /// </summary>
     [CreateAssetMenu(fileName = "Color Palette", menuName = "SO/New Color Palette", order = 0)]
     public class ColorPalette : ScriptableObject
     {

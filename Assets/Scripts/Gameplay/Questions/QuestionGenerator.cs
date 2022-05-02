@@ -4,6 +4,10 @@ using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// Base class for question generators that are focused on a region of the metro
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class QuestionGenerator<T> : BaseQuestionGenerator where T : BaseUIQuestion
     {
         public Region currentRegion;

@@ -9,6 +9,9 @@ using UnityEngine.InputSystem;
 
 namespace Gameplay
 {
+    /// <summary>
+    /// Game model contains all important game classes and stores them for easy access from anywhere
+    /// </summary>
     [System.Serializable]
     public class GameModel
     {

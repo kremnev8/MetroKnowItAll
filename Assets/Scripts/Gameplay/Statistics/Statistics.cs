@@ -3,6 +3,9 @@ using ScriptableObjects;
 
 namespace Gameplay.Statistics
 {
+    /// <summary>
+    /// Model class for game statistics data
+    /// </summary>
     public class Statistics
     {
         public int dataVersion;

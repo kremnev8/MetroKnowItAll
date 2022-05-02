@@ -12,6 +12,9 @@ using UnityEditor;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// UI helper that ensures all UI elements are using correct colors
+    /// </summary>
     [ExecuteInEditMode]
     public class PaletteGraphic : MonoBehaviour
     {

@@ -7,6 +7,9 @@ using Util;
 
 namespace Gameplay.Controls
 {
+    /// <summary>
+    /// UI control that allows to swipe an UI element up and down to open and hide it
+    /// </summary>
     public class UISwipe : MonoBehaviour
     {
         private PlayerInput input;
@@ -110,7 +113,7 @@ namespace Gameplay.Controls
             }
             else
             {
-                contentFader.Fade(value);
+                contentFader.Fade(value ? FadeDirection.FADE_IN : FadeDirection.FADE_OUT);
             }
         }
 

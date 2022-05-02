@@ -10,6 +10,9 @@ using UnityEngine;
 namespace Util
 {
 
+    /// <summary>
+    /// Property drawer attribute to name all array elements, elements must implement <see cref="INamedArrayElement"/>
+    /// </summary>
     public class LabeledArrayAttribute : PropertyAttribute
     {
         public LabeledArrayAttribute() { }

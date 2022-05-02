@@ -9,6 +9,9 @@ using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// UI element to display achievement popup
+    /// </summary>
     public class UIAchievement : MonoBehaviour
     {
         public TMP_Text achievementName;

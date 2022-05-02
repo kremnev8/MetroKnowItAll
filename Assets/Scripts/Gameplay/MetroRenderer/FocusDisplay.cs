@@ -6,6 +6,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Controls how region focus UI is displayed
+    /// </summary>
     public class FocusDisplay : MonoBehaviour
     {
         public Region region;

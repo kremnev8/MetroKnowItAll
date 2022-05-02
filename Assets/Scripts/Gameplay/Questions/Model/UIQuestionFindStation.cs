@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// UI for <see cref="FindStationGenerator"/>
+    /// </summary>
     public class UIQuestionFindStation : BaseUIQuestion
     {
         public TouchButton button;

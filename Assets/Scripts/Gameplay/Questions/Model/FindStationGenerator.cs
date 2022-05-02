@@ -3,6 +3,9 @@ using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions.Model
 {
+    /// <summary>
+    /// This generator generates questions like: Where is that station on the map
+    /// </summary>
     public class FindStationGenerator : QuestionGenerator<UIQuestionFindStation>
     {
         public MetroStation currentQuestion;

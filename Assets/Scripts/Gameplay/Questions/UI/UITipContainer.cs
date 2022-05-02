@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// UI element to represent a tip
+    /// </summary>
     public class UITipContainer : MonoBehaviour
     {
         public TMP_Text numText;

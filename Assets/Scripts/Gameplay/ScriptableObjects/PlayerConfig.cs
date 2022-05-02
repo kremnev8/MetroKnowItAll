@@ -2,6 +2,9 @@
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Player default controls configuration
+    /// </summary>
     [CreateAssetMenu(fileName = "Player Config", menuName = "SO/New Player Config", order = 0)]
     public class PlayerConfig : ScriptableObject
     {

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Gameplay.Questions
 {
+    /// <summary>
+    /// Base class for all question UI classes
+    /// </summary>
     public abstract class BaseUIQuestion : MonoBehaviour
     {
         public new MetroRenderer renderer;

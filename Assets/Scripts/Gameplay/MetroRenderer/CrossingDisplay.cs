@@ -5,6 +5,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Controls how <see cref="MetroCrossing"/> are displayed
+    /// </summary>
     public class CrossingDisplay : MonoBehaviour
     {
         public MetroCrossing crossing;

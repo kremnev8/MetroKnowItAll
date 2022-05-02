@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Controls how <see cref="MetroLine"/> are displayed
+    /// </summary>
     public class LineDisplay : MonoBehaviour
     {
         public List<LineSubDisplay> subDisplays;

@@ -15,6 +15,9 @@ using UnityEditor;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Main metro data class, contains all information about the metro
+    /// </summary>
     [CreateAssetMenu(fileName = "Metro", menuName = "SO/New Metro", order = 0)]
     public class Metro : ScriptableObject
     {
@@ -26,6 +29,11 @@ namespace Gameplay.MetroDisplay.Model
         public Dictionary<string, SpriteShapeController> controllers = new Dictionary<string, SpriteShapeController>();
 #endif
         
+        /// <summary>
+        /// Get all stations with a name
+        /// </summary>
+        /// <param name="name">Needed name</param>
+        /// <returns>All matching stations</returns>
         public List<MetroStation> GetStationsByName(string name)
         {
             List<MetroStation> stations = new List<MetroStation>();
@@ -46,11 +54,17 @@ namespace Gameplay.MetroDisplay.Model
             return stations;
         }
         
+        /// <summary>
+        /// Get stations for line and station id
+        /// </summary>
         public MetroStation GetStation(int lineId, int stationId)
         {
             return lines[lineId].stations[stationId];
         }
         
+        /// <summary>
+        /// Pick a stations that is near another station
+        /// </summary>
         public MetroStation PickStationNear(MetroStation station)
         {
             int startIndex = Mathf.Max(0, station.stationId - 2);
@@ -60,6 +74,9 @@ namespace Gameplay.MetroDisplay.Model
             return lines[station.lineId].stations[tipStation];
         }
 
+        /// <summary>
+        /// Pick a random station within the region
+        /// </summary>
         public MetroStation PickRandomStation(Region region)
         {
             if (region.regionType == RegionType.GLOBAL)
@@ -83,6 +100,11 @@ namespace Gameplay.MetroDisplay.Model
             }
         }
         
+        /// <summary>
+        /// Pick a random station within the region
+        /// Exclude all stations that are in the blacklist
+        /// </summary>
+        /// <param name="blacklist">List of global station id's to ignore</param>
         public MetroStation PickRandomStation(Region region, List<int> blacklist)
         {
             if (region.regionType == RegionType.GLOBAL)
@@ -108,6 +130,12 @@ namespace Gameplay.MetroDisplay.Model
             }
         }
         
+        /// <summary>
+        /// Pick a line of stations in a random place within region
+        /// Exclude all stations that are in the blacklist
+        /// </summary>
+        /// <param name="size">How many stations range has to have</param>
+        /// <param name="blacklist">List of global station id's to ignore</param>
         public List<MetroStation> PickRandomStationRange(Region region, int size, List<int> blacklist)
         {
             if (region.lineId != -1)
@@ -146,6 +174,9 @@ namespace Gameplay.MetroDisplay.Model
             }
         }
 
+        /// <summary>
+        /// Pick random line within region
+        /// </summary>
         public MetroLine PickRandomLine(Region region)
         {
             List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(region.Contains) >= 1).ToList();

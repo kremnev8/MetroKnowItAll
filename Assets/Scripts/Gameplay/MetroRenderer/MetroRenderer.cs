@@ -12,6 +12,9 @@ using UnityEditor;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Controls entire <see cref="Metro"/> is displayed
+    /// </summary>
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour
     {

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Class that combines line and station id's
+    /// </summary>
     [Serializable]
     public class GlobalId
     {
@@ -10,6 +13,9 @@ namespace Gameplay.MetroDisplay.Model
         public byte stationId;
     }
     
+    /// <summary>
+    /// Defines a crossing between lines
+    /// </summary>
     [Serializable]
     public class MetroCrossing
     {

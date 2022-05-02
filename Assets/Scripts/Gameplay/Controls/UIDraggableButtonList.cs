@@ -5,6 +5,9 @@ using Util;
 
 namespace Gameplay.Controls
 {
+    /// <summary>
+    /// List of buttons that allow to rearrange the data
+    /// </summary>
     public class UIDraggableButtonList : MonoBehaviour
     {
         [HideInInspector]

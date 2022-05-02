@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Class for displaying text with dynamic dots
+    /// </summary>
     public class DynamicText : MonoBehaviour
     {
         public string text;

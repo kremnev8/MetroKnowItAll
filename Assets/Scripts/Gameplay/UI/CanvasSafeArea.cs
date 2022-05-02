@@ -4,6 +4,9 @@ using UnityEngine.Events;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Helper UI class that ensures that all UI elements are within device safe area
+    /// </summary>
     [RequireComponent(typeof(Canvas))]
     public class CanvasSafeArea : MonoBehaviour
     {

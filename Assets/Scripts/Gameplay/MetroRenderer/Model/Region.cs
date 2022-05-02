@@ -5,6 +5,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Defines a region of a metro, which can be a line, an area or the whole metro
+    /// </summary>
     [Serializable]
     public class Region
     {

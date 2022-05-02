@@ -2,6 +2,9 @@
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// Text alignment options
+    /// </summary>
     public enum NamePosition
     {
         DEFAULT,

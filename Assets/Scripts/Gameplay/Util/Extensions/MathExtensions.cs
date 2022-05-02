@@ -8,27 +8,24 @@ using Random = UnityEngine.Random;
 namespace Util
 {
 
+    /// <summary>
+    /// Math and Vector extension methods
+    /// </summary>
     public static class MathExtensions
     {
-        public static Vector2 Rotate(this Vector2 v, float delta) {
+        /// <summary>
+        /// Rotate 2d vector by angle
+        /// </summary>
+        public static Vector2 Rotate(this Vector2 v, float angle) {
             return new Vector2(
-                v.x * Mathf.Cos(delta) - v.y * Mathf.Sin(delta),
-                v.x * Mathf.Sin(delta) + v.y * Mathf.Cos(delta)
+                v.x * Mathf.Cos(angle) - v.y * Mathf.Sin(angle),
+                v.x * Mathf.Sin(angle) + v.y * Mathf.Cos(angle)
             );
         }
-
-        public static Vector2 ClosestPoint(Vector2 p1, Vector2 p2, Vector2 p3)
-        {
-            float xDelta = p2.x - p1.x;
-            float yDelta = p2.y - p1.y;
-
-            if (xDelta == 0 && yDelta == 0) return p3;
-
-            float u = ((p3.x - p1.x) * xDelta + (p3.y - p1.y) * yDelta) / (xDelta * xDelta + yDelta * yDelta);
-
-            return new Vector2(p1.x + u * xDelta, p1.y + u * yDelta);
-        }
-
+        
+        /// <summary>
+        /// Clamp vector in horizontal axis (XZ)
+        /// </summary>
         public static Vector3 ClampHorizontal(this Vector3 vector, float maxMagnitude)
         {
             float y = vector.y;
@@ -39,93 +36,105 @@ namespace Util
             return vector;
         }
 
+        /// <summary>
+        /// Convert to Vector2 (XY)
+        /// </summary>
         public static Vector2 ToVector2(this Vector3 vector)
         {
             return new Vector2(vector.x, vector.y);
         }
 
-        public static Vector2 CopyVector(this Vector2 vector)
-        {
-            return new Vector2(vector.x, vector.y);
-        }
-
+        /// <summary>
+        /// Convert to Vector3 (XY)
+        /// </summary>
         public static Vector3 ToVector3(this Vector2 vector)
         {
             return new Vector3(vector.x, vector.y, 0);
         }
 
+        /// <summary>
+        /// Convert to Vector2 (XY)
+        /// </summary>
         public static Vector2 ToVector2(this Vector3Int vector)
         {
             return new Vector2(vector.x, vector.y);
         }
 
+        /// <summary>
+        /// Change this Vector3 by setting it's Y axis value
+        /// </summary>
         public static Vector3 WithY(this Vector3 vector, float y)
         {
             return new Vector3(vector.x, y, vector.z);
         }
         
+        /// <summary>
+        /// Abs vector values per axis
+        /// </summary>
         public static Vector2 Abs(this Vector2 vector)
         {
             return new Vector2(Mathf.Abs(vector.x), Mathf.Abs(vector.y));
         }
 
+        /// <summary>
+        /// Are all values of this vector less than another
+        /// </summary>
         public static bool Less(this Vector3 vec1, Vector3 vec2)
         {
             return vec1.x <= vec2.x && vec1.y <= vec2.y && vec1.z <= vec2.z;
         }
 
+        /// <summary>
+        /// Are all values of this vector greater than another
+        /// </summary>
         public static bool Greater(this Vector3 vec1, Vector3 vec2)
         {
             return vec1.x >= vec2.x && vec1.y >= vec2.y && vec1.z >= vec2.z;
         }
         
+        /// <summary>
+        /// Are all values of this vector less than another
+        /// </summary>
         public static bool Less(this Vector2 vec1, Vector2 vec2)
         {
             return vec1.x <= vec2.x && vec1.y <= vec2.y;
         }
 
+        /// <summary>
+        /// Are all values of this vector greater than another
+        /// </summary>
         public static bool Greater(this Vector2 vec1, Vector2 vec2)
         {
             return vec1.x >= vec2.x && vec1.y >= vec2.y;
         }
 
-        public static Vector3 GetBiggestAxis(this Vector3 vector)
-        {
-            float x = Mathf.Abs(vector.x);
-            float y = Mathf.Abs(vector.y);
-            float z = Mathf.Abs(vector.z);
-
-            if (x > y && x > z) return new Vector3(vector.x, 0, 0);
-
-            if (y > x && y > z) return new Vector3(0, vector.y, 0);
-
-            if (z > x && z > y) return new Vector3(0, 0, vector.z);
-
-            return Vector3.zero;
-        }
-
+        /// <summary>
+        /// Get normal on plane for 2d vector
+        /// </summary>
         public static Vector2 GetNormal(this Vector2 vector)
         {
             return new Vector2(vector.y, -vector.x);
         }
 
-        public static void Swap<T>(ref T lhs, ref T rhs)
-        {
-            T temp = lhs;
-            lhs = rhs;
-            rhs = temp;
-        }
-
+        /// <summary>
+        /// Check if two values are approximately equal
+        /// </summary>
         public static bool Approximately(float a, float b, float tolerance = 1e-5f)
         {
             return Mathf.Abs(a - b) <= tolerance;
         }
 
+        /// <summary>
+        /// 2D cross product on a plane
+        /// </summary>
         public static float CrossProduct2D(Vector2 a, Vector2 b)
         {
             return a.x * b.y - b.x * a.y;
         }
 
+        /// <summary>
+        /// Check if two lines defined by end and start are parallel
+        /// </summary>
         public static bool AreParralel(Vector2 p1start, Vector2 p1end, Vector2 p2start, Vector2 p2end)
         {
             Vector2 r = p1end - p1start;
@@ -136,6 +145,10 @@ namespace Util
             return Approximately(cross_rs, 0f, 0.05f);
         }
 
+        /// <summary>
+        /// Project vector onto a line defined by end and start points
+        /// </summary>
+        /// <returns>value, in which 0 corresponds to point being at a, and 1 corresponds to b.</returns>
         public static float GetProjectionT(Vector2 a, Vector2 b, Vector2 point)
         {
             Vector2 d = b - a;
@@ -146,7 +159,7 @@ namespace Util
 
 
         /// <summary>
-        /// Find intersection of 2 2D lines
+        /// Find intersection of 2 2D lines, defined by end and start points
         /// </summary>
         /// <param name="p1start">Start point of the first line</param>
         /// <param name="p1end">End point of the first line</param>
@@ -165,16 +178,26 @@ namespace Util
             return p1start + t * r;
         }
 
+        /// <summary>
+        /// Apply function to all components of vector
+        /// </summary>
         public static Vector2 Apply(this Vector2 vec, Func<float, float> func)
         {
             return new Vector2(func(vec.x), func(vec.y));
         }
         
+        /// <summary>
+        /// Apply function to all components of vector
+        /// </summary>
         public static Vector2Int Apply(this Vector2 vec, Func<float, int> func)
         {
             return new Vector2Int(func(vec.x), func(vec.y));
         }
 
+        /// <summary>
+        /// Determines in which direction a vector points
+        /// </summary>
+        /// <returns>text description of direction</returns>
         public static string GetDirection(this Vector2 dir)
         {
             Vector2Int intDir = dir.normalized.Apply(Mathf.RoundToInt);
@@ -202,27 +225,46 @@ namespace Util
             };
         }
 
+        /// <summary>
+        /// Get center of given points
+        /// </summary>
         public static Vector2 GetCenter(this IList<Vector2> points)
         {
             return points.Aggregate((a, b) => a + b) / points.Count;
         }
         
+        /// <summary>
+        /// Get center of given points
+        /// </summary>
         public static Vector2 GetCenter(this IEnumerable<Vector2> points, int count)
         {
             return points.Aggregate((a, b) => a + b) / count;
         }
 
+        /// <summary>
+        /// Check if vector values have infinity
+        /// </summary>
+        /// <param name="vector"></param>
+        /// <returns></returns>
         public static bool IsInfinity(this Vector2 vector)
         {
             return float.IsInfinity(vector.x) || float.IsInfinity(vector.y);
         }
         
+        /// <summary>
+        /// Mod operation that correctly works with negative numbers
+        /// </summary>
         public static int Mod(this int x, int m)
         {
             int r = x % m;
             return r < 0 ? r + m : r;
         }
         
+        /// <summary>
+        /// Randomly shuffle a list
+        /// </summary>
+        /// <param name="list"></param>
+        /// <typeparam name="T"></typeparam>
         public static void Shuffle<T>(this IList<T> list)  
         {
             int n = list.Count;  
@@ -258,6 +300,9 @@ namespace Util
             return result;
         }
         
+        /// <summary>
+        /// Check list of points winding order
+        /// </summary>
         public static bool IsClockwise(this List<Vector2> vertices)
         {
             double sum = 0.0;
@@ -299,6 +344,9 @@ namespace Util
                 position.z);
         }
 
+        /// <summary>
+        /// Calculate running exponential average
+        /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public  static float Average(this float current, float newValue, int total)
         {
