@@ -2,11 +2,11 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+        "baseUrl": "https://kremnev8.github.io/MetroKnowItAll/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+    "baseUrl": "https://kremnev8.github.io/MetroKnowItAll/",
     "changefreq": "weekly"
   },
   "homepages": [],
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.UIDragableButton.html",
-          "hash": "2UFNoABrVDBD6/Vg/62PWjW+5K5G30jHfwimxNJoZ1c="
+          "hash": "9fQgOUWIc2vZzyyoW/pbELSFgTduZWa9dbT1iCGrgYM="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.html",
-          "hash": "x5/T/ICUp/9xE88ynid/7p1nXHEauOUbNjMa7SRDUFc="
+          "hash": "7tmAWKjX1MX6wcleIsh2soFt4eOn9z9tcaXqzs5Qn7w="
         }
       },
       "is_incremental": false,
@@ -520,7 +520,91 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Questions.BaseUIQuestion.html",
-          "hash": "3Dwt3PLDZO01AL2d59ROdvdxq1biJdEdQQLvR4Gq9bg="
+          "hash": "js7J11hOVFF6bYscq54fupRIOb6kKJSAsuj8HiLMg3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.FindLineGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.FindLineGenerator.html",
+          "hash": "PgBR4Dvf4X3zH1VESCxM6Hp/tUvkzx8G3pJMycSw9tY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.FindStationGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.FindStationGenerator.html",
+          "hash": "ijL13Z7gDRAhsLu/2JmqFoxiOvplhv69VJv1ma/QhyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.OrderStationsGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.OrderStationsGenerator.html",
+          "hash": "I+KXNfbygTcjJl3F67s3d9gFfHiEXHIFP/BF98bd7U0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.UIQuestionFindLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.UIQuestionFindLine.html",
+          "hash": "/AyIVfPrWvrdghxxK+w3+B9rDP0+3Z5/i7SW1psIyp8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.UIQuestionFindStation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.UIQuestionFindStation.html",
+          "hash": "EsebR10YBmbq3RCDt2TR/Ctgm+V7XngsLl+Skw3iz7E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.UIQuestionOrderStations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.UIQuestionOrderStations.html",
+          "hash": "4SnS911teT6K8uQSrus2wyTkmPBj9v85MUsiUmAJ3os="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Generators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Generators.html",
+          "hash": "iBQXtCxR7co1HWJMUbZcvMF/7W+T6vZMXhr/SNzLADQ="
         }
       },
       "is_incremental": false,
@@ -533,78 +617,6 @@
         ".html": {
           "relative_path": "api/Gameplay.Questions.ILineQuestion.html",
           "hash": "8UejVKh+m7K0dKaNjpeXwHMggdE0pLYoCQipCHo1P/Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.FindLineGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.FindLineGenerator.html",
-          "hash": "Oqlrzj2WHK6ZtYl07AxDft9U7+MfUOig1OGV6JmoS2s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.FindStationGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.FindStationGenerator.html",
-          "hash": "ye29fnboM6hQKS0vSBlU+kPbR/a3qvNFo3mVMBZ/mIQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.OrderStationsGenerator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.OrderStationsGenerator.html",
-          "hash": "oW2w7XEUs7NdRk8FEYVVuJmRcBWLH96OkQo1BineHOg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.UIQuestionFindLine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.UIQuestionFindLine.html",
-          "hash": "7CO95TVS5UMmtGpJmdg4r38zm5uetBwkRGDt/IRowzQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.UIQuestionOrderStations.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.UIQuestionOrderStations.html",
-          "hash": "GnyLPzVjdAydMTTD3Djt6Vviyp1nkrgIs/kihyN7zS8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.Model.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.Model.html",
-          "hash": "e15yFz18pFRrmrQ93QFyoPTAfIs0mz7upZQ6GhfIsyI="
         }
       },
       "is_incremental": false,
@@ -628,7 +640,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Questions.QuestionGenerator-1.html",
-          "hash": "JsmW+HLVsFtl1QtdkR4umb0G35D9h6gxqJrs5YNS/Ts="
+          "hash": "JIhAtJG1GiwRxBACiqosoq8p3JJNHtDYIxDngm+rPd0="
         }
       },
       "is_incremental": false,
@@ -641,18 +653,6 @@
         ".html": {
           "relative_path": "api/Gameplay.Questions.UIQuestion.html",
           "hash": "Bueif2VgL3gFgQo+Tu/bWpWXgvgRAgZoWwjrT8WP2Xc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.UIQuestionFindStation.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.UIQuestionFindStation.html",
-          "hash": "btOwkUFvcMqTX7QxnILlF5g1Q9lv400tw+j8loUBlWo="
         }
       },
       "is_incremental": false,
@@ -688,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Questions.html",
-          "hash": "jDFDq/M+NghU+QG89tgjB0G8yE8wOGYoHukbo9y4z4o="
+          "hash": "F85ipIZUglBt6AsjULLH3QjFQnNxInJ9vltdPzNWFH4="
         }
       },
       "is_incremental": false,
@@ -1228,7 +1228,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ieXOpcxVGhg/w5GqqZtfL3qHb0Y/d1JXn0T3LM0Ap/k="
+          "hash": "rz0E+Vhr3Yn8AKfms5kkH3W7sPcouxczTmqtNLDa/us="
         }
       },
       "is_incremental": false,

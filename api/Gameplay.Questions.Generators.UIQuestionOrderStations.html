@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class QuestionGenerator&lt;T&gt;
+    <title>Class UIQuestionOrderStations
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class QuestionGenerator&lt;T&gt;
+    <meta name="title" content="Class UIQuestionOrderStations
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,72 +78,48 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.Questions.QuestionGenerator`1">
+            <article class="content wrap" id="_content" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations">
   
   
-  <h1 id="Gameplay_Questions_QuestionGenerator_1" data-uid="Gameplay.Questions.QuestionGenerator`1" class="text-break">Class QuestionGenerator&lt;T&gt;
+  <h1 id="Gameplay_Questions_Generators_UIQuestionOrderStations" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations" class="text-break">Class UIQuestionOrderStations
   </h1>
-  <div class="markdown level0 summary"><p>Base class for question generators that are focused on a region of the metro</p>
+  <div class="markdown level0 summary"><p>UI for <a class="xref" href="Gameplay.Questions.Generators.OrderStationsGenerator.html">OrderStationsGenerator</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html">BaseQuestionGenerator</a></div>
-    <div class="level2"><span class="xref">QuestionGenerator&lt;T&gt;</span></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.FindLineGenerator.html">FindLineGenerator</a></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.FindStationGenerator.html">FindStationGenerator</a></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.OrderStationsGenerator.html">OrderStationsGenerator</a></div>
+    <div class="level1"><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html">BaseUIQuestion</a></div>
+    <div class="level2"><span class="xref">UIQuestionOrderStations</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_renderer">BaseQuestionGenerator.renderer</a>
+      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_renderer">BaseUIQuestion.renderer</a>
     </div>
     <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_metro">BaseQuestionGenerator.metro</a>
+      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_bottomPane">BaseUIQuestion.bottomPane</a>
     </div>
     <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_GenerateNew">BaseQuestionGenerator.GenerateNew()</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_GenerateTip_System_Int32_">BaseQuestionGenerator.GenerateTip(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_ValidateAnswer">BaseQuestionGenerator.ValidateAnswer()</a>
+      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_questionLabel">BaseUIQuestion.questionLabel</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Questions.html">Gameplay.Questions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Questions.Generators.html">Gameplay.Questions.Generators</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_Questions_QuestionGenerator_1_syntax">Syntax</h5>
+  <h5 id="Gameplay_Questions_Generators_UIQuestionOrderStations_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class QuestionGenerator&lt;T&gt; : BaseQuestionGenerator where T : BaseUIQuestion</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIQuestionOrderStations : BaseUIQuestion</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_blacklistedIds" data-uid="Gameplay.Questions.QuestionGenerator`1.blacklistedIds">blacklistedIds</h4>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_buttons" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.buttons">buttons</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;int&gt; blacklistedIds</code></pre>
+    <pre><code class="lang-csharp hljs">public UIDraggableButtonList buttons</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -155,19 +131,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="xref">UIDraggableButtonList</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_currentRegion" data-uid="Gameplay.Questions.QuestionGenerator`1.currentRegion">currentRegion</h4>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_tmpLabelTransform" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.tmpLabelTransform">tmpLabelTransform</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Region currentRegion</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform tmpLabelTransform</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,31 +155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Region</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_uiController" data-uid="Gameplay.Questions.QuestionGenerator`1.uiController">uiController</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T uiController</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">Transform</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -212,13 +164,38 @@
   </h3>
   
   
-  <a id="Gameplay_Questions_QuestionGenerator_1_Init_" data-uid="Gameplay.Questions.QuestionGenerator`1.Init*"></a>
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_Init_MetroRenderer_Gameplay_Questions_BaseUIQuestion_" data-uid="Gameplay.Questions.QuestionGenerator`1.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)">Init(MetroRenderer, BaseUIQuestion)</h4>
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_CurrentSelection_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.CurrentSelection*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_CurrentSelection" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.CurrentSelection">CurrentSelection()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Init(MetroRenderer _renderer, BaseUIQuestion root)</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;MetroStation&gt; CurrentSelection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_DisplayResult_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.DisplayResult*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_DisplayResult_List_System_Boolean__System_Boolean_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.DisplayResult(List{System.Boolean},System.Boolean)">DisplayResult(List&lt;Boolean&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisplayResult(List&lt;bool&gt; result, bool allCorrect)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -231,28 +208,75 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MetroRenderer</span></td>
-        <td><span class="parametername">_renderer</span></td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">result</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html">BaseUIQuestion</a></td>
-        <td><span class="parametername">root</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">allCorrect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_GetController_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.GetController*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_GetController" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.GetController">GetController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override BaseQuestionGenerator GetController()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html">BaseQuestionGenerator</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_Init_MetroRenderer_Gameplay_Questions_BaseUIQuestion_">BaseQuestionGenerator.Init(MetroRenderer, BaseUIQuestion)</a></div>
+  <div><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_GetController">BaseUIQuestion.GetController()</a></div>
   
   
-  <a id="Gameplay_Questions_QuestionGenerator_1_SetRegion_" data-uid="Gameplay.Questions.QuestionGenerator`1.SetRegion*"></a>
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_SetRegion_Region_" data-uid="Gameplay.Questions.QuestionGenerator`1.SetRegion(Region)">SetRegion(Region)</h4>
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_HideElements_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.HideElements*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_HideElements" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.HideElements">HideElements()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetRegion(Region region)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void HideElements()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_HideElements">BaseUIQuestion.HideElements()</a></div>
+  
+  
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_OnOrderChanged_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.OnOrderChanged*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_OnOrderChanged" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.OnOrderChanged">OnOrderChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnOrderChanged()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Questions_Generators_UIQuestionOrderStations_SetQuestion_" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.SetQuestion*"></a>
+  <h4 id="Gameplay_Questions_Generators_UIQuestionOrderStations_SetQuestion_List_MetroStation__" data-uid="Gameplay.Questions.Generators.UIQuestionOrderStations.SetQuestion(List{MetroStation})">SetQuestion(List&lt;MetroStation&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetQuestion(List&lt;MetroStation&gt; stations)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -265,14 +289,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Region</span></td>
-        <td><span class="parametername">region</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
+        <td><span class="parametername">stations</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_SetRegion_Region_">BaseQuestionGenerator.SetRegion(Region)</a></div>
 </article>
           </div>
           
