@@ -140,38 +140,48 @@ namespace Gameplay.MetroDisplay.Model
         {
             if (region.lineId != -1)
             {
-                List<MetroStation> stations = lines[region.lineId].stations;
+                return PickRandomStationRangeOnLine(region, size, blacklist);
+            }
 
-                int index = RandomUtils.ConstrainedRandom(stationId =>
+            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station =>
+            {
+                return !blacklist.Contains(station.globalId) && region.Contains(station);
+            }) >= size).ToList();
+               
+            if (filteredLines.Count == 0) throw new ArgumentException("Can't pick random item, nothing left!");
+            int index = Random.Range(0, filteredLines.Count);
+
+            return PickRandomStationRangeOnLine(new Region(region.regionType, region.area, filteredLines[index].lineId), size, blacklist);
+        }
+
+        private List<MetroStation> PickRandomStationRangeOnLine(Region region, int size, List<int> blacklist)
+        {
+            if (region.lineId == -1)
+            {
+                throw new ArgumentException("Can't pick random station range, invalid line id!");
+            }
+            
+            List<MetroStation> stations = lines[region.lineId].stations;
+
+            int index = RandomUtils.ConstrainedRandom(stationId =>
+            {
+                if (stationId + size - 1 < stations.Count)
                 {
-                    if (stationId + size - 1 < stations.Count)
+                    for (int i = stationId; i < stationId + size; i++)
                     {
-                        for (int i = stationId; i < stationId + size; i++)
+                        if (blacklist.Contains(stations[i].globalId) || !region.Contains(stations[i]))
                         {
-                            if (blacklist.Contains(stations[i].globalId) || !region.Contains(stations[i]))
-                            {
-                                return false;
-                            }
+                            return false;
                         }
-
-                        return true;
                     }
 
-                    return false;
-                }, 0, stations.Count);
+                    return true;
+                }
 
-                return stations.GetRange(index, size);
-            }
-            else
-            {
-               List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(station =>
-               {
-                   return !blacklist.Contains(station.globalId) && region.Contains(station);
-               }) >= size).ToList();
-               int index = Random.Range(0, filteredLines.Count);
+                return false;
+            }, 0, stations.Count);
 
-               return PickRandomStationRange(new Region(region.regionType, region.area, filteredLines[index].lineId), size, blacklist);
-            }
+            return stations.GetRange(index, size);
         }
 
         /// <summary>

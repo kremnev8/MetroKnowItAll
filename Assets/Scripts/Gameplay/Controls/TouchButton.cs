@@ -51,6 +51,8 @@ namespace Gameplay.Controls
 
         public T GetSelected<T>() where T : class
         {
+            if (selectedStation == null) throw new InvalidOperationException("User did not select anything!");
+            
             return selectedStation as T;
         }
 

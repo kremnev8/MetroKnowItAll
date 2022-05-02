@@ -6,6 +6,7 @@ using Gameplay.MetroDisplay.Model;
 using Gameplay.UI;
 using Gameplay.Core;
 using UnityEngine;
+using Util;
 using Random = UnityEngine.Random;
 
 namespace Gameplay.Questions
@@ -22,11 +23,14 @@ namespace Gameplay.Questions
         public List<BaseUIQuestion> questionUI = new List<BaseUIQuestion>();
         public List<BaseQuestionGenerator> questionGenerators = new List<BaseQuestionGenerator>();
 
+        public List<Region> allRegions = new List<Region>();
+
         private GameModel model;
         private new MetroRenderer renderer;
 
         private int currentController;
 
+        private int currentRegionIndex;
         private Region currentRegion;
         
         private int questionsRemain;
@@ -46,8 +50,15 @@ namespace Gameplay.Questions
             model = Simulation.GetModel<GameModel>();
             renderer = model.renderer;
 
+            InitializeQuestions();
+            InitializeRegions();
+            Invoke(nameof(SelectNextRegion), 1f);
+        }
+
+        private void InitializeQuestions()
+        {
             questionUI = uiQuestionTransfrom.GetComponents<BaseUIQuestion>().ToList();
-            
+
             foreach (BaseUIQuestion uiQuestion in questionUI)
             {
                 BaseQuestionGenerator generator = uiQuestion.GetController();
@@ -55,14 +66,42 @@ namespace Gameplay.Questions
                 uiQuestion.renderer = renderer;
                 questionGenerators.Add(generator);
             }
-            Invoke(nameof(SelectNextRegion), 1f);
+        }
+
+        private void InitializeRegions()
+        {
+            allRegions.Clear();
+            for (int i = 0; i < (int)RegionType.MAX_VALUE; i++)
+            {
+                RegionType regionType = (RegionType)i;
+                if (regionType == RegionType.GLOBAL)
+                {
+                    foreach (MetroLine line in renderer.metro.lines)
+                    {
+                        allRegions.Add(new Region(RegionType.GLOBAL, Area.Everywhere, line.lineId));
+                    }
+                }
+                else
+                {
+                    allRegions.Add(renderer.metro.regions.Find(region => region.regionType == regionType));
+                }
+            }
         }
 
         public void CheckAnswer()
         {
             if (isResting) return;
-            
-            bool result = questionGenerators[currentController].ValidateAnswer();
+
+            bool result;
+            try
+            {
+                 result = questionGenerators[currentController].ValidateAnswer(); 
+            }
+            catch (InvalidOperationException e)
+            {
+                topBar.ShowMessage("Выберете ответ!");
+                return;
+            }
 
             if (result)
             {
@@ -124,19 +163,13 @@ namespace Gameplay.Questions
             
             isResting = true;
             questionUI[currentController].HideElements();
+
+            currentRegion = allRegions.Where((region, i) => i != currentRegionIndex).RandomElementByWeight(region =>
+            {
+                return region.regionType == RegionType.GLOBAL ? 2 : 1;
+            });
+            currentRegionIndex = allRegions.IndexOf(currentRegion);
             
-            RegionType newType = (RegionType)Random.Range(0, (int) RegionType.MAX_VALUE);
-
-            if (newType == RegionType.GLOBAL)
-            {
-                int lineId = Random.Range(0, renderer.metro.lines.Count);
-                currentRegion = new Region(RegionType.GLOBAL, Area.Everywhere, lineId);
-            }
-            else
-            {
-                currentRegion = renderer.metro.regions.Find(region => region.regionType == newType);
-            }
-
             Vector2 center = currentRegion.GetRegionCenter(renderer.metro);
             model.cameraController.LerpTo(center);
             

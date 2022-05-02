@@ -13,7 +13,7 @@ using UnityEditor;
 namespace Gameplay.MetroDisplay
 {
     /// <summary>
-    /// Controls entire <see cref="Gameplay.MetroDisplay.Model.Metro"/> is displayed
+    /// Controls how entire <see cref="Gameplay.MetroDisplay.Model.Metro"/> is displayed
     /// </summary>
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour
@@ -35,7 +35,7 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private GameObject stationSelectPrefab;
         [SerializeField] private FocusDisplay focusPrefab;
 
-        public Model.Metro metro;
+        public Metro metro;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
@@ -89,6 +89,9 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        /// <summary>
+        /// Recreate all display meshes and objects
+        /// </summary>
         public void Regenerate()
         {
             ClearAll();
@@ -128,6 +131,9 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        /// <summary>
+        /// Refresh renderer state without allocation
+        /// </summary>
         public void Refresh()
         {
             foreach (StationDisplay display in stationDisplays.Values)
@@ -151,6 +157,9 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        /// <summary>
+        /// Destroy all display objects
+        /// </summary>
         public void ClearAll()
         {
             stationRoot.gameObject.ClearChildren();
@@ -164,6 +173,11 @@ namespace Gameplay.MetroDisplay
             focusDisplays.Clear();
         }
 
+        /// <summary>
+        /// Get Display for a station
+        /// </summary>
+        /// <returns>Corresponding display</returns>
+        /// <exception cref="ArgumentException">thrown if display object does not exist</exception>
         public StationDisplay GetStationDisplay(MetroStation station)
         {
             if (stationDisplays.ContainsKey(station.globalId))
@@ -174,6 +188,9 @@ namespace Gameplay.MetroDisplay
             throw new ArgumentException($"Global ID: {station.globalId} does not exist in display dictionary!");
         }
 
+        /// <summary>
+        /// Stop displaying all station labels
+        /// </summary>
         public void HideAllLabels()
         {
             foreach (StationDisplay display in stationDisplays.Values)
@@ -182,6 +199,9 @@ namespace Gameplay.MetroDisplay
             }
         }
         
+        /// <summary>
+        /// Show all station labels
+        /// </summary>
         public void ShowAllLabels()
         {
             try
@@ -197,6 +217,9 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        /// <summary>
+        /// Clear focus and display everything
+        /// </summary>
         public void ClearFocus()
         {
             focusRegion = Region.everywhere;
@@ -223,6 +246,10 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        /// <summary>
+        /// Focus a region, other places will be overlayed with white mask, and names will be hidden
+        /// </summary>
+        /// <param name="region">Target region</param>
         public void FocusRegion(Region region)
         {
             if (region.regionType == RegionType.GLOBAL)
@@ -236,7 +263,10 @@ namespace Gameplay.MetroDisplay
                 foreach (StationDisplay stationDisplay in stationDisplays.Values)
                 {
                     stationDisplay.SetFocused(stationDisplay.station.lineId == region.lineId);
-                    stationDisplay.SetInitialVisible(!stationDisplay.station.hideName);
+                    if (!stationDisplay.station.hideName)
+                    {
+                        stationDisplay.SetInitialVisible(region.Contains(stationDisplay.station));
+                    }
                 }
 
                 foreach (CrossingDisplay display in crossingDisplays)

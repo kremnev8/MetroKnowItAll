@@ -55,6 +55,8 @@ namespace Gameplay.Controls
                 }
             }
 
+            if (rectTransform == null) rectTransform = GetComponent<RectTransform>();
+            
             rectTransform.sizeDelta = new Vector2(rectTransform.sizeDelta.x, elements.Count * 80 + 20);
         }
 

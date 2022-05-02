@@ -35,6 +35,13 @@ namespace Gameplay.UI
             statusHideTimer = 120;
         }
 
+        public void ShowMessage(string message)
+        {
+            statusLabel.text = message;
+            statusLabel.gameObject.SetActive(true);
+            statusHideTimer = 80;
+        }
+
         public void StartCountdown(float time)
         {
             countdownTimer = time;
