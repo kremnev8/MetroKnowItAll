@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.UITipController
+  commentId: T:Gameplay.Questions.UITipController
+  id: UITipController
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.UITipController.button
+  - Gameplay.Questions.UITipController.buttonLabel
+  - Gameplay.Questions.UITipController.buttonTransform
+  - Gameplay.Questions.UITipController.maxTips
+  - Gameplay.Questions.UITipController.NextTip
+  - Gameplay.Questions.UITipController.tipPrefab
+  - Gameplay.Questions.UITipController.tipsRoot
+  langs:
+  - csharp
+  - vb
+  name: UITipController
+  nameWithType: UITipController
+  fullName: Gameplay.Questions.UITipController
+  type: Class
+  source:
+    id: UITipController
+    path: ''
+    startLine: 4503
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nController for question tips\n"
+  example: []
+  syntax:
+    content: 'public class UITipController : MonoBehaviour'
+    content.vb: >-
+      Public Class UITipController
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Questions.UITipController.maxTips
+  commentId: F:Gameplay.Questions.UITipController.maxTips
+  id: maxTips
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: maxTips
+  nameWithType: UITipController.maxTips
+  fullName: Gameplay.Questions.UITipController.maxTips
+  type: Field
+  source:
+    id: maxTips
+    path: ''
+    startLine: 4505
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public int maxTips
+    return:
+      type: System.Int32
+    content.vb: Public maxTips As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.tipsRoot
+  commentId: F:Gameplay.Questions.UITipController.tipsRoot
+  id: tipsRoot
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: tipsRoot
+  nameWithType: UITipController.tipsRoot
+  fullName: Gameplay.Questions.UITipController.tipsRoot
+  type: Field
+  source:
+    id: tipsRoot
+    path: ''
+    startLine: 4506
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Transform tipsRoot
+    return:
+      type: Global.Transform
+    content.vb: Public tipsRoot As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.buttonTransform
+  commentId: F:Gameplay.Questions.UITipController.buttonTransform
+  id: buttonTransform
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: buttonTransform
+  nameWithType: UITipController.buttonTransform
+  fullName: Gameplay.Questions.UITipController.buttonTransform
+  type: Field
+  source:
+    id: buttonTransform
+    path: ''
+    startLine: 4508
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Transform buttonTransform
+    return:
+      type: Global.Transform
+    content.vb: Public buttonTransform As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.button
+  commentId: F:Gameplay.Questions.UITipController.button
+  id: button
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: button
+  nameWithType: UITipController.button
+  fullName: Gameplay.Questions.UITipController.button
+  type: Field
+  source:
+    id: button
+    path: ''
+    startLine: 4509
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Button button
+    return:
+      type: Global.Button
+    content.vb: Public button As Button
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.buttonLabel
+  commentId: F:Gameplay.Questions.UITipController.buttonLabel
+  id: buttonLabel
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: buttonLabel
+  nameWithType: UITipController.buttonLabel
+  fullName: Gameplay.Questions.UITipController.buttonLabel
+  type: Field
+  source:
+    id: buttonLabel
+    path: ''
+    startLine: 4510
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text buttonLabel
+    return:
+      type: Global.TMP_Text
+    content.vb: Public buttonLabel As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.tipPrefab
+  commentId: F:Gameplay.Questions.UITipController.tipPrefab
+  id: tipPrefab
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: tipPrefab
+  nameWithType: UITipController.tipPrefab
+  fullName: Gameplay.Questions.UITipController.tipPrefab
+  type: Field
+  source:
+    id: tipPrefab
+    path: ''
+    startLine: 4512
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public UITipContainer tipPrefab
+    return:
+      type: Gameplay.Questions.UITipContainer
+    content.vb: Public tipPrefab As UITipContainer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipController.NextTip
+  commentId: M:Gameplay.Questions.UITipController.NextTip
+  id: NextTip
+  parent: Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: NextTip()
+  nameWithType: UITipController.NextTip()
+  fullName: Gameplay.Questions.UITipController.NextTip()
+  type: Method
+  source:
+    id: NextTip
+    path: ''
+    startLine: 4541
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void NextTip()
+    content.vb: Public Sub NextTip
+  overload: Gameplay.Questions.UITipController.NextTip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Global.Button
+  commentId: '!:Global.Button'
+  isExternal: true
+  name: Button
+  nameWithType: Button
+  fullName: Button
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Gameplay.Questions.UITipContainer
+  commentId: T:Gameplay.Questions.UITipContainer
+  parent: Gameplay.Questions
+  name: UITipContainer
+  nameWithType: UITipContainer
+  fullName: Gameplay.Questions.UITipContainer
+- uid: Gameplay.Questions.UITipController.NextTip*
+  commentId: Overload:Gameplay.Questions.UITipController.NextTip
+  name: NextTip
+  nameWithType: UITipController.NextTip
+  fullName: Gameplay.Questions.UITipController.NextTip

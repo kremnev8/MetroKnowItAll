@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.Model.UIQuestionFindLine
+  commentId: T:Gameplay.Questions.Model.UIQuestionFindLine
+  id: UIQuestionFindLine
+  parent: Gameplay.Questions.Model
+  children:
+  - Gameplay.Questions.Model.UIQuestionFindLine.button
+  - Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection
+  - Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult(System.Boolean)
+  - Gameplay.Questions.Model.UIQuestionFindLine.GetController
+  - Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion(MetroLine)
+  langs:
+  - csharp
+  - vb
+  name: UIQuestionFindLine
+  nameWithType: UIQuestionFindLine
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine
+  type: Class
+  source:
+    id: UIQuestionFindLine
+    path: ''
+    startLine: 4310
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  summary: "\nUI for <xref href=\"Gameplay.Questions.Model.FindLineGenerator\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class UIQuestionFindLine : BaseUIQuestion'
+    content.vb: >-
+      Public Class UIQuestionFindLine
+          Inherits BaseUIQuestion
+  inheritance:
+  - System.Object
+  - Gameplay.Questions.BaseUIQuestion
+  inheritedMembers:
+  - Gameplay.Questions.BaseUIQuestion.renderer
+  - Gameplay.Questions.BaseUIQuestion.bottomPane
+  - Gameplay.Questions.BaseUIQuestion.questionLabel
+  - Gameplay.Questions.BaseUIQuestion.HideElements
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.button
+  commentId: F:Gameplay.Questions.Model.UIQuestionFindLine.button
+  id: button
+  parent: Gameplay.Questions.Model.UIQuestionFindLine
+  langs:
+  - csharp
+  - vb
+  name: button
+  nameWithType: UIQuestionFindLine.button
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.button
+  type: Field
+  source:
+    id: button
+    path: ''
+    startLine: 4312
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  syntax:
+    content: public TouchButton button
+    return:
+      type: Global.TouchButton
+    content.vb: Public button As TouchButton
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.GetController
+  commentId: M:Gameplay.Questions.Model.UIQuestionFindLine.GetController
+  id: GetController
+  parent: Gameplay.Questions.Model.UIQuestionFindLine
+  langs:
+  - csharp
+  - vb
+  name: GetController()
+  nameWithType: UIQuestionFindLine.GetController()
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.GetController()
+  type: Method
+  source:
+    id: GetController
+    path: ''
+    startLine: 4314
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  syntax:
+    content: public override BaseQuestionGenerator GetController()
+    return:
+      type: Gameplay.Questions.BaseQuestionGenerator
+    content.vb: Public Overrides Function GetController As BaseQuestionGenerator
+  overridden: Gameplay.Questions.BaseUIQuestion.GetController
+  overload: Gameplay.Questions.Model.UIQuestionFindLine.GetController*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion(MetroLine)
+  commentId: M:Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion(MetroLine)
+  id: SetQuestion(MetroLine)
+  parent: Gameplay.Questions.Model.UIQuestionFindLine
+  langs:
+  - csharp
+  - vb
+  name: SetQuestion(MetroLine)
+  nameWithType: UIQuestionFindLine.SetQuestion(MetroLine)
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion(MetroLine)
+  type: Method
+  source:
+    id: SetQuestion
+    path: ''
+    startLine: 4319
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  syntax:
+    content: public void SetQuestion(MetroLine line)
+    parameters:
+    - id: line
+      type: Global.MetroLine
+    content.vb: Public Sub SetQuestion(line As MetroLine)
+  overload: Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult(System.Boolean)
+  commentId: M:Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult(System.Boolean)
+  id: DisplayResult(System.Boolean)
+  parent: Gameplay.Questions.Model.UIQuestionFindLine
+  langs:
+  - csharp
+  - vb
+  name: DisplayResult(Boolean)
+  nameWithType: UIQuestionFindLine.DisplayResult(Boolean)
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult(System.Boolean)
+  type: Method
+  source:
+    id: DisplayResult
+    path: ''
+    startLine: 4326
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  syntax:
+    content: public void DisplayResult(bool result)
+    parameters:
+    - id: result
+      type: System.Boolean
+    content.vb: Public Sub DisplayResult(result As Boolean)
+  overload: Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection
+  commentId: M:Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection
+  id: CurrentSelection
+  parent: Gameplay.Questions.Model.UIQuestionFindLine
+  langs:
+  - csharp
+  - vb
+  name: CurrentSelection()
+  nameWithType: UIQuestionFindLine.CurrentSelection()
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection()
+  type: Method
+  source:
+    id: CurrentSelection
+    path: ''
+    startLine: 4331
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions.Model
+  syntax:
+    content: public MetroLine CurrentSelection()
+    return:
+      type: Global.MetroLine
+    content.vb: Public Function CurrentSelection As MetroLine
+  overload: Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Questions.Model.FindLineGenerator
+  commentId: T:Gameplay.Questions.Model.FindLineGenerator
+  name: FindLineGenerator
+  nameWithType: FindLineGenerator
+  fullName: Gameplay.Questions.Model.FindLineGenerator
+- uid: Gameplay.Questions.Model
+  commentId: N:Gameplay.Questions.Model
+  name: Gameplay.Questions.Model
+  nameWithType: Gameplay.Questions.Model
+  fullName: Gameplay.Questions.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  parent: Gameplay.Questions
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+- uid: Gameplay.Questions.BaseUIQuestion.renderer
+  commentId: F:Gameplay.Questions.BaseUIQuestion.renderer
+  parent: Gameplay.Questions.BaseUIQuestion
+  name: renderer
+  nameWithType: BaseUIQuestion.renderer
+  fullName: Gameplay.Questions.BaseUIQuestion.renderer
+- uid: Gameplay.Questions.BaseUIQuestion.bottomPane
+  commentId: F:Gameplay.Questions.BaseUIQuestion.bottomPane
+  parent: Gameplay.Questions.BaseUIQuestion
+  name: bottomPane
+  nameWithType: BaseUIQuestion.bottomPane
+  fullName: Gameplay.Questions.BaseUIQuestion.bottomPane
+- uid: Gameplay.Questions.BaseUIQuestion.questionLabel
+  commentId: F:Gameplay.Questions.BaseUIQuestion.questionLabel
+  parent: Gameplay.Questions.BaseUIQuestion
+  name: questionLabel
+  nameWithType: BaseUIQuestion.questionLabel
+  fullName: Gameplay.Questions.BaseUIQuestion.questionLabel
+- uid: Gameplay.Questions.BaseUIQuestion.HideElements
+  commentId: M:Gameplay.Questions.BaseUIQuestion.HideElements
+  parent: Gameplay.Questions.BaseUIQuestion
+  name: HideElements()
+  nameWithType: BaseUIQuestion.HideElements()
+  fullName: Gameplay.Questions.BaseUIQuestion.HideElements()
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseUIQuestion.HideElements
+    name: HideElements
+    nameWithType: BaseUIQuestion.HideElements
+    fullName: Gameplay.Questions.BaseUIQuestion.HideElements
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseUIQuestion.HideElements
+    name: HideElements
+    nameWithType: BaseUIQuestion.HideElements
+    fullName: Gameplay.Questions.BaseUIQuestion.HideElements
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: Global.TouchButton
+  isExternal: true
+  name: TouchButton
+  nameWithType: TouchButton
+  fullName: TouchButton
+- uid: Gameplay.Questions.BaseUIQuestion.GetController
+  commentId: M:Gameplay.Questions.BaseUIQuestion.GetController
+  parent: Gameplay.Questions.BaseUIQuestion
+  name: GetController()
+  nameWithType: BaseUIQuestion.GetController()
+  fullName: Gameplay.Questions.BaseUIQuestion.GetController()
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseUIQuestion.GetController
+    name: GetController
+    nameWithType: BaseUIQuestion.GetController
+    fullName: Gameplay.Questions.BaseUIQuestion.GetController
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseUIQuestion.GetController
+    name: GetController
+    nameWithType: BaseUIQuestion.GetController
+    fullName: Gameplay.Questions.BaseUIQuestion.GetController
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.GetController*
+  commentId: Overload:Gameplay.Questions.Model.UIQuestionFindLine.GetController
+  name: GetController
+  nameWithType: UIQuestionFindLine.GetController
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.GetController
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  parent: Gameplay.Questions
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion*
+  commentId: Overload:Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion
+  name: SetQuestion
+  nameWithType: UIQuestionFindLine.SetQuestion
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.SetQuestion
+- uid: Global.MetroLine
+  isExternal: true
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: MetroLine
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult*
+  commentId: Overload:Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult
+  name: DisplayResult
+  nameWithType: UIQuestionFindLine.DisplayResult
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.DisplayResult
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection*
+  commentId: Overload:Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection
+  name: CurrentSelection
+  nameWithType: UIQuestionFindLine.CurrentSelection
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine.CurrentSelection

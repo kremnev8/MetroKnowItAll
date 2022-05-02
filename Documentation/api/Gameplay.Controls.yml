@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  id: Gameplay.Controls
+  children:
+  - Gameplay.Controls.ISelectable
+  - Gameplay.Controls.TouchButton
+  - Gameplay.Controls.TouchCameraController
+  - Gameplay.Controls.TouchCameraControllerEditor
+  - Gameplay.Controls.UIDragableButton
+  - Gameplay.Controls.UIDraggableButtonList
+  - Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.Controls.ISelectable
+  commentId: T:Gameplay.Controls.ISelectable
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Gameplay.Controls.ISelectable
+- uid: Gameplay.Controls.TouchButton
+  commentId: T:Gameplay.Controls.TouchButton
+  name: TouchButton
+  nameWithType: TouchButton
+  fullName: Gameplay.Controls.TouchButton
+- uid: Gameplay.Controls.TouchCameraController
+  commentId: T:Gameplay.Controls.TouchCameraController
+  name: TouchCameraController
+  nameWithType: TouchCameraController
+  fullName: Gameplay.Controls.TouchCameraController
+- uid: Gameplay.Controls.TouchCameraControllerEditor
+  commentId: T:Gameplay.Controls.TouchCameraControllerEditor
+  name: TouchCameraControllerEditor
+  nameWithType: TouchCameraControllerEditor
+  fullName: Gameplay.Controls.TouchCameraControllerEditor
+- uid: Gameplay.Controls.UIDragableButton
+  commentId: T:Gameplay.Controls.UIDragableButton
+  parent: Gameplay.Controls
+  name: UIDragableButton
+  nameWithType: UIDragableButton
+  fullName: Gameplay.Controls.UIDragableButton
+- uid: Gameplay.Controls.UIDraggableButtonList
+  commentId: T:Gameplay.Controls.UIDraggableButtonList
+  name: UIDraggableButtonList
+  nameWithType: UIDraggableButtonList
+  fullName: Gameplay.Controls.UIDraggableButtonList
+- uid: Gameplay.Controls.UISwipe
+  commentId: T:Gameplay.Controls.UISwipe
+  name: UISwipe
+  nameWithType: UISwipe
+  fullName: Gameplay.Controls.UISwipe
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls

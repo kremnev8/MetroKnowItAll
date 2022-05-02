@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.EnumHelper
+  commentId: T:Gameplay.MetroDisplay.Model.EnumHelper
+  id: EnumHelper
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.EnumHelper.GetDirection(Gameplay.MetroDisplay.Model.NamePosition)
+  - Gameplay.MetroDisplay.Model.EnumHelper.GetOffset(Gameplay.MetroDisplay.Model.NamePosition)
+  langs:
+  - csharp
+  - vb
+  name: EnumHelper
+  nameWithType: EnumHelper
+  fullName: Gameplay.MetroDisplay.Model.EnumHelper
+  type: Class
+  source:
+    id: EnumHelper
+    path: ''
+    startLine: 3627
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static class EnumHelper
+    content.vb: Public Module EnumHelper
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Gameplay.MetroDisplay.Model.EnumHelper.GetDirection(Gameplay.MetroDisplay.Model.NamePosition)
+  commentId: M:Gameplay.MetroDisplay.Model.EnumHelper.GetDirection(Gameplay.MetroDisplay.Model.NamePosition)
+  id: GetDirection(Gameplay.MetroDisplay.Model.NamePosition)
+  isExtensionMethod: true
+  parent: Gameplay.MetroDisplay.Model.EnumHelper
+  langs:
+  - csharp
+  - vb
+  name: GetDirection(NamePosition)
+  nameWithType: EnumHelper.GetDirection(NamePosition)
+  fullName: Gameplay.MetroDisplay.Model.EnumHelper.GetDirection(Gameplay.MetroDisplay.Model.NamePosition)
+  type: Method
+  source:
+    id: GetDirection
+    path: ''
+    startLine: 3629
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static Vector2 GetDirection(this NamePosition position)
+    parameters:
+    - id: position
+      type: Gameplay.MetroDisplay.Model.NamePosition
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDirection(position As NamePosition) As Vector2
+  overload: Gameplay.MetroDisplay.Model.EnumHelper.GetDirection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.MetroDisplay.Model.EnumHelper.GetOffset(Gameplay.MetroDisplay.Model.NamePosition)
+  commentId: M:Gameplay.MetroDisplay.Model.EnumHelper.GetOffset(Gameplay.MetroDisplay.Model.NamePosition)
+  id: GetOffset(Gameplay.MetroDisplay.Model.NamePosition)
+  isExtensionMethod: true
+  parent: Gameplay.MetroDisplay.Model.EnumHelper
+  langs:
+  - csharp
+  - vb
+  name: GetOffset(NamePosition)
+  nameWithType: EnumHelper.GetOffset(NamePosition)
+  fullName: Gameplay.MetroDisplay.Model.EnumHelper.GetOffset(Gameplay.MetroDisplay.Model.NamePosition)
+  type: Method
+  source:
+    id: GetOffset
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static Vector2 GetOffset(this NamePosition position)
+    parameters:
+    - id: position
+      type: Gameplay.MetroDisplay.Model.NamePosition
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetOffset(position As NamePosition) As Vector2
+  overload: Gameplay.MetroDisplay.Model.EnumHelper.GetOffset*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.MetroDisplay.Model.EnumHelper.GetDirection*
+  commentId: Overload:Gameplay.MetroDisplay.Model.EnumHelper.GetDirection
+  name: GetDirection
+  nameWithType: EnumHelper.GetDirection
+  fullName: Gameplay.MetroDisplay.Model.EnumHelper.GetDirection
+- uid: Gameplay.MetroDisplay.Model.NamePosition
+  commentId: T:Gameplay.MetroDisplay.Model.NamePosition
+  parent: Gameplay.MetroDisplay.Model
+  name: NamePosition
+  nameWithType: NamePosition
+  fullName: Gameplay.MetroDisplay.Model.NamePosition
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: Gameplay.MetroDisplay.Model.EnumHelper.GetOffset*
+  commentId: Overload:Gameplay.MetroDisplay.Model.EnumHelper.GetOffset
+  name: GetOffset
+  nameWithType: EnumHelper.GetOffset
+  fullName: Gameplay.MetroDisplay.Model.EnumHelper.GetOffset

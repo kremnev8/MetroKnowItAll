@@ -1,0 +1,435 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Health
+  commentId: T:Gameplay.Health
+  id: Health
+  parent: Gameplay
+  children:
+  - Gameplay.Health.Decrement(System.Int32,Gameplay.PainType)
+  - Gameplay.Health.Die
+  - Gameplay.Health.healed
+  - Gameplay.Health.hurt
+  - Gameplay.Health.hurtBy
+  - Gameplay.Health.Increment(System.Int32)
+  - Gameplay.Health.IsAlive
+  - Gameplay.Health.isZero
+  - Gameplay.Health.maxHp
+  - Gameplay.Health.regenerate
+  - Gameplay.Health.regenerateRate
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: Health
+  fullName: Gameplay.Health
+  type: Class
+  source:
+    id: Health
+    path: ''
+    startLine: 995
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nRepresebts the current vital statistics of some game entity.\n"
+  example: []
+  syntax:
+    content: 'public class Health : MonoBehaviour'
+    content.vb: >-
+      Public Class Health
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Health.maxHp
+  commentId: F:Gameplay.Health.maxHp
+  id: maxHp
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: maxHp
+  nameWithType: Health.maxHp
+  fullName: Gameplay.Health.maxHp
+  type: Field
+  source:
+    id: maxHp
+    path: ''
+    startLine: 1011
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public int maxHp
+    return:
+      type: System.Int32
+    content.vb: Public maxHp As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.IsAlive
+  commentId: P:Gameplay.Health.IsAlive
+  id: IsAlive
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: IsAlive
+  nameWithType: Health.IsAlive
+  fullName: Gameplay.Health.IsAlive
+  type: Property
+  source:
+    id: IsAlive
+    path: ''
+    startLine: 1012
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public bool IsAlive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAlive As Boolean
+  overload: Gameplay.Health.IsAlive*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.Health.regenerate
+  commentId: F:Gameplay.Health.regenerate
+  id: regenerate
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: regenerate
+  nameWithType: Health.regenerate
+  fullName: Gameplay.Health.regenerate
+  type: Field
+  source:
+    id: regenerate
+    path: ''
+    startLine: 1014
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public bool regenerate
+    return:
+      type: System.Boolean
+    content.vb: Public regenerate As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.regenerateRate
+  commentId: F:Gameplay.Health.regenerateRate
+  id: regenerateRate
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: regenerateRate
+  nameWithType: Health.regenerateRate
+  fullName: Gameplay.Health.regenerateRate
+  type: Field
+  source:
+    id: regenerateRate
+    path: ''
+    startLine: 1015
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public int regenerateRate
+    return:
+      type: System.Int32
+    content.vb: Public regenerateRate As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.hurt
+  commentId: F:Gameplay.Health.hurt
+  id: hurt
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: hurt
+  nameWithType: Health.hurt
+  fullName: Gameplay.Health.hurt
+  type: Field
+  source:
+    id: hurt
+    path: ''
+    startLine: 1019
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Health.IntEvent hurt
+    return:
+      type: Gameplay.Health.IntEvent
+    content.vb: Public hurt As Health.IntEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.hurtBy
+  commentId: F:Gameplay.Health.hurtBy
+  id: hurtBy
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: hurtBy
+  nameWithType: Health.hurtBy
+  fullName: Gameplay.Health.hurtBy
+  type: Field
+  source:
+    id: hurtBy
+    path: ''
+    startLine: 1020
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Health.PainEvent hurtBy
+    return:
+      type: Gameplay.Health.PainEvent
+    content.vb: Public hurtBy As Health.PainEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.healed
+  commentId: F:Gameplay.Health.healed
+  id: healed
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: healed
+  nameWithType: Health.healed
+  fullName: Gameplay.Health.healed
+  type: Field
+  source:
+    id: healed
+    path: ''
+    startLine: 1022
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Health.IntEvent healed
+    return:
+      type: Gameplay.Health.IntEvent
+    content.vb: Public healed As Health.IntEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.isZero
+  commentId: F:Gameplay.Health.isZero
+  id: isZero
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: isZero
+  nameWithType: Health.isZero
+  fullName: Gameplay.Health.isZero
+  type: Field
+  source:
+    id: isZero
+    path: ''
+    startLine: 1023
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public UnityEvent isZero
+    return:
+      type: Global.UnityEvent
+    content.vb: Public isZero As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.Increment(System.Int32)
+  commentId: M:Gameplay.Health.Increment(System.Int32)
+  id: Increment(System.Int32)
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: Increment(Int32)
+  nameWithType: Health.Increment(Int32)
+  fullName: Gameplay.Health.Increment(System.Int32)
+  type: Method
+  source:
+    id: Increment
+    path: ''
+    startLine: 1028
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nIncrement the HP of the entity.\n"
+  example: []
+  syntax:
+    content: public void Increment(int heal = 1)
+    parameters:
+    - id: heal
+      type: System.Int32
+    content.vb: Public Sub Increment(heal As Integer = 1)
+  overload: Gameplay.Health.Increment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.Decrement(System.Int32,Gameplay.PainType)
+  commentId: M:Gameplay.Health.Decrement(System.Int32,Gameplay.PainType)
+  id: Decrement(System.Int32,Gameplay.PainType)
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: Decrement(Int32, PainType)
+  nameWithType: Health.Decrement(Int32, PainType)
+  fullName: Gameplay.Health.Decrement(System.Int32, Gameplay.PainType)
+  type: Method
+  source:
+    id: Decrement
+    path: ''
+    startLine: 1039
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nDecrement the HP of the entity. Will trigger a HealthIsZero event when\ncurrent HP reaches 0.\n"
+  example: []
+  syntax:
+    content: public void Decrement(int damage = 1, PainType type = PainType.Physical)
+    parameters:
+    - id: damage
+      type: System.Int32
+    - id: type
+      type: Gameplay.PainType
+    content.vb: Public Sub Decrement(damage As Integer = 1, type As PainType = PainType.Physical)
+  overload: Gameplay.Health.Decrement*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Health.Die
+  commentId: M:Gameplay.Health.Die
+  id: Die
+  parent: Gameplay.Health
+  langs:
+  - csharp
+  - vb
+  name: Die()
+  nameWithType: Health.Die()
+  fullName: Gameplay.Health.Die()
+  type: Method
+  source:
+    id: Die
+    path: ''
+    startLine: 1059
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nDecrement the HP of the entitiy until HP reaches 0.\n"
+  example: []
+  syntax:
+    content: public void Die()
+    content.vb: Public Sub Die
+  overload: Gameplay.Health.Die*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.Health.IsAlive*
+  commentId: Overload:Gameplay.Health.IsAlive
+  name: IsAlive
+  nameWithType: Health.IsAlive
+  fullName: Gameplay.Health.IsAlive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.Health.IntEvent
+  commentId: T:Gameplay.Health.IntEvent
+  parent: Gameplay
+  name: Health.IntEvent
+  nameWithType: Health.IntEvent
+  fullName: Gameplay.Health.IntEvent
+- uid: Gameplay.Health.PainEvent
+  commentId: T:Gameplay.Health.PainEvent
+  parent: Gameplay
+  name: Health.PainEvent
+  nameWithType: Health.PainEvent
+  fullName: Gameplay.Health.PainEvent
+- uid: Global.UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent
+- uid: Gameplay.Health.Increment*
+  commentId: Overload:Gameplay.Health.Increment
+  name: Increment
+  nameWithType: Health.Increment
+  fullName: Gameplay.Health.Increment
+- uid: Gameplay.Health.Decrement*
+  commentId: Overload:Gameplay.Health.Decrement
+  name: Decrement
+  nameWithType: Health.Decrement
+  fullName: Gameplay.Health.Decrement
+- uid: Gameplay.PainType
+  commentId: T:Gameplay.PainType
+  parent: Gameplay
+  name: PainType
+  nameWithType: PainType
+  fullName: Gameplay.PainType
+- uid: Gameplay.Health.Die*
+  commentId: Overload:Gameplay.Health.Die
+  name: Die
+  nameWithType: Health.Die
+  fullName: Gameplay.Health.Die

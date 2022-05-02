@@ -6,7 +6,7 @@ using Util;
 namespace Gameplay.MetroDisplay
 {
     /// <summary>
-    /// Controls how <see cref="MetroCrossing"/> are displayed
+    /// Controls how <see cref="Gameplay.MetroDisplay.Model.MetroCrossing"/> are displayed
     /// </summary>
     public class CrossingDisplay : MonoBehaviour
     {

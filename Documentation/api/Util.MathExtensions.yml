@@ -1,0 +1,1965 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.MathExtensions
+  commentId: T:Util.MathExtensions
+  id: MathExtensions
+  parent: Util
+  children:
+  - Util.MathExtensions.Abs(Vector2)
+  - Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Int32})
+  - Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Single})
+  - Util.MathExtensions.Approximately(System.Single,System.Single,System.Single)
+  - Util.MathExtensions.AreParralel(Vector2,Vector2,Vector2,Vector2)
+  - Util.MathExtensions.Average(System.Single,System.Single,System.Int32)
+  - Util.MathExtensions.Clamp2(Rect,Vector2,System.Single)
+  - Util.MathExtensions.Clamp3(Rect,Vector3,System.Single)
+  - Util.MathExtensions.ClampHorizontal(Vector3,System.Single)
+  - Util.MathExtensions.CrossProduct2D(Vector2,Vector2)
+  - Util.MathExtensions.GetCenter(IEnumerable{Vector2},System.Int32)
+  - Util.MathExtensions.GetCenter(IList{Vector2})
+  - Util.MathExtensions.GetDirection(Vector2)
+  - Util.MathExtensions.GetNormal(Vector2)
+  - Util.MathExtensions.GetProjectionT(Vector2,Vector2,Vector2)
+  - Util.MathExtensions.Greater(Vector2,Vector2)
+  - Util.MathExtensions.Greater(Vector3,Vector3)
+  - Util.MathExtensions.IntersectLineSegments(Vector2,Vector2,Vector2,Vector2)
+  - Util.MathExtensions.IsClockwise(List{Vector2})
+  - Util.MathExtensions.IsInfinity(Vector2)
+  - Util.MathExtensions.IsPointInPolygon4(List{Vector2},Vector2)
+  - Util.MathExtensions.Less(Vector2,Vector2)
+  - Util.MathExtensions.Less(Vector3,Vector3)
+  - Util.MathExtensions.Mod(System.Int32,System.Int32)
+  - Util.MathExtensions.Rotate(Vector2,System.Single)
+  - Util.MathExtensions.Shuffle``1(IList{``0})
+  - Util.MathExtensions.ToVector2(Vector3)
+  - Util.MathExtensions.ToVector2(Vector3Int)
+  - Util.MathExtensions.ToVector3(Vector2)
+  - Util.MathExtensions.WithY(Vector3,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: MathExtensions
+  nameWithType: MathExtensions
+  fullName: Util.MathExtensions
+  type: Class
+  source:
+    id: MathExtensions
+    path: ''
+    startLine: 5990
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nMath and Vector extension methods\n"
+  example: []
+  syntax:
+    content: public static class MathExtensions
+    content.vb: Public Module MathExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.MathExtensions.Rotate(Vector2,System.Single)
+  commentId: M:Util.MathExtensions.Rotate(Vector2,System.Single)
+  id: Rotate(Vector2,System.Single)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Rotate(Vector2, Single)
+  nameWithType: MathExtensions.Rotate(Vector2, Single)
+  fullName: Util.MathExtensions.Rotate(Vector2, System.Single)
+  type: Method
+  source:
+    id: Rotate
+    path: ''
+    startLine: 5995
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nRotate 2d vector by angle\n"
+  example: []
+  syntax:
+    content: public static Vector2 Rotate(this Vector2 v, float angle)
+    parameters:
+    - id: v
+      type: Global.Vector2
+    - id: angle
+      type: System.Single
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Rotate(v As Vector2, angle As Single) As Vector2
+  overload: Util.MathExtensions.Rotate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.ClampHorizontal(Vector3,System.Single)
+  commentId: M:Util.MathExtensions.ClampHorizontal(Vector3,System.Single)
+  id: ClampHorizontal(Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClampHorizontal(Vector3, Single)
+  nameWithType: MathExtensions.ClampHorizontal(Vector3, Single)
+  fullName: Util.MathExtensions.ClampHorizontal(Vector3, System.Single)
+  type: Method
+  source:
+    id: ClampHorizontal
+    path: ''
+    startLine: 6005
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nClamp vector in horizontal axis (XZ)\n"
+  example: []
+  syntax:
+    content: public static Vector3 ClampHorizontal(this Vector3 vector, float maxMagnitude)
+    parameters:
+    - id: vector
+      type: Global.Vector3
+    - id: maxMagnitude
+      type: System.Single
+    return:
+      type: Global.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ClampHorizontal(vector As Vector3, maxMagnitude As Single) As Vector3
+  overload: Util.MathExtensions.ClampHorizontal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.ToVector2(Vector3)
+  commentId: M:Util.MathExtensions.ToVector2(Vector3)
+  id: ToVector2(Vector3)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToVector2(Vector3)
+  nameWithType: MathExtensions.ToVector2(Vector3)
+  fullName: Util.MathExtensions.ToVector2(Vector3)
+  type: Method
+  source:
+    id: ToVector2
+    path: ''
+    startLine: 6018
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nConvert to Vector2 (XY)\n"
+  example: []
+  syntax:
+    content: public static Vector2 ToVector2(this Vector3 vector)
+    parameters:
+    - id: vector
+      type: Global.Vector3
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToVector2(vector As Vector3) As Vector2
+  overload: Util.MathExtensions.ToVector2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.ToVector3(Vector2)
+  commentId: M:Util.MathExtensions.ToVector3(Vector2)
+  id: ToVector3(Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToVector3(Vector2)
+  nameWithType: MathExtensions.ToVector3(Vector2)
+  fullName: Util.MathExtensions.ToVector3(Vector2)
+  type: Method
+  source:
+    id: ToVector3
+    path: ''
+    startLine: 6026
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nConvert to Vector3 (XY)\n"
+  example: []
+  syntax:
+    content: public static Vector3 ToVector3(this Vector2 vector)
+    parameters:
+    - id: vector
+      type: Global.Vector2
+    return:
+      type: Global.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToVector3(vector As Vector2) As Vector3
+  overload: Util.MathExtensions.ToVector3*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.ToVector2(Vector3Int)
+  commentId: M:Util.MathExtensions.ToVector2(Vector3Int)
+  id: ToVector2(Vector3Int)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToVector2(Vector3Int)
+  nameWithType: MathExtensions.ToVector2(Vector3Int)
+  fullName: Util.MathExtensions.ToVector2(Vector3Int)
+  type: Method
+  source:
+    id: ToVector2
+    path: ''
+    startLine: 6034
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nConvert to Vector2 (XY)\n"
+  example: []
+  syntax:
+    content: public static Vector2 ToVector2(this Vector3Int vector)
+    parameters:
+    - id: vector
+      type: Global.Vector3Int
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToVector2(vector As Vector3Int) As Vector2
+  overload: Util.MathExtensions.ToVector2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.WithY(Vector3,System.Single)
+  commentId: M:Util.MathExtensions.WithY(Vector3,System.Single)
+  id: WithY(Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithY(Vector3, Single)
+  nameWithType: MathExtensions.WithY(Vector3, Single)
+  fullName: Util.MathExtensions.WithY(Vector3, System.Single)
+  type: Method
+  source:
+    id: WithY
+    path: ''
+    startLine: 6042
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nChange this Vector3 by setting it&apos;s Y axis value\n"
+  example: []
+  syntax:
+    content: public static Vector3 WithY(this Vector3 vector, float y)
+    parameters:
+    - id: vector
+      type: Global.Vector3
+    - id: y
+      type: System.Single
+    return:
+      type: Global.Vector3
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithY(vector As Vector3, y As Single) As Vector3
+  overload: Util.MathExtensions.WithY*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Abs(Vector2)
+  commentId: M:Util.MathExtensions.Abs(Vector2)
+  id: Abs(Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Abs(Vector2)
+  nameWithType: MathExtensions.Abs(Vector2)
+  fullName: Util.MathExtensions.Abs(Vector2)
+  type: Method
+  source:
+    id: Abs
+    path: ''
+    startLine: 6050
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAbs vector values per axis\n"
+  example: []
+  syntax:
+    content: public static Vector2 Abs(this Vector2 vector)
+    parameters:
+    - id: vector
+      type: Global.Vector2
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Abs(vector As Vector2) As Vector2
+  overload: Util.MathExtensions.Abs*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Less(Vector3,Vector3)
+  commentId: M:Util.MathExtensions.Less(Vector3,Vector3)
+  id: Less(Vector3,Vector3)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Less(Vector3, Vector3)
+  nameWithType: MathExtensions.Less(Vector3, Vector3)
+  fullName: Util.MathExtensions.Less(Vector3, Vector3)
+  type: Method
+  source:
+    id: Less
+    path: ''
+    startLine: 6058
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAre all values of this vector less than another\n"
+  example: []
+  syntax:
+    content: public static bool Less(this Vector3 vec1, Vector3 vec2)
+    parameters:
+    - id: vec1
+      type: Global.Vector3
+    - id: vec2
+      type: Global.Vector3
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Less(vec1 As Vector3, vec2 As Vector3) As Boolean
+  overload: Util.MathExtensions.Less*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Greater(Vector3,Vector3)
+  commentId: M:Util.MathExtensions.Greater(Vector3,Vector3)
+  id: Greater(Vector3,Vector3)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Greater(Vector3, Vector3)
+  nameWithType: MathExtensions.Greater(Vector3, Vector3)
+  fullName: Util.MathExtensions.Greater(Vector3, Vector3)
+  type: Method
+  source:
+    id: Greater
+    path: ''
+    startLine: 6066
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAre all values of this vector greater than another\n"
+  example: []
+  syntax:
+    content: public static bool Greater(this Vector3 vec1, Vector3 vec2)
+    parameters:
+    - id: vec1
+      type: Global.Vector3
+    - id: vec2
+      type: Global.Vector3
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Greater(vec1 As Vector3, vec2 As Vector3) As Boolean
+  overload: Util.MathExtensions.Greater*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Less(Vector2,Vector2)
+  commentId: M:Util.MathExtensions.Less(Vector2,Vector2)
+  id: Less(Vector2,Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Less(Vector2, Vector2)
+  nameWithType: MathExtensions.Less(Vector2, Vector2)
+  fullName: Util.MathExtensions.Less(Vector2, Vector2)
+  type: Method
+  source:
+    id: Less
+    path: ''
+    startLine: 6074
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAre all values of this vector less than another\n"
+  example: []
+  syntax:
+    content: public static bool Less(this Vector2 vec1, Vector2 vec2)
+    parameters:
+    - id: vec1
+      type: Global.Vector2
+    - id: vec2
+      type: Global.Vector2
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Less(vec1 As Vector2, vec2 As Vector2) As Boolean
+  overload: Util.MathExtensions.Less*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Greater(Vector2,Vector2)
+  commentId: M:Util.MathExtensions.Greater(Vector2,Vector2)
+  id: Greater(Vector2,Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Greater(Vector2, Vector2)
+  nameWithType: MathExtensions.Greater(Vector2, Vector2)
+  fullName: Util.MathExtensions.Greater(Vector2, Vector2)
+  type: Method
+  source:
+    id: Greater
+    path: ''
+    startLine: 6082
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAre all values of this vector greater than another\n"
+  example: []
+  syntax:
+    content: public static bool Greater(this Vector2 vec1, Vector2 vec2)
+    parameters:
+    - id: vec1
+      type: Global.Vector2
+    - id: vec2
+      type: Global.Vector2
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Greater(vec1 As Vector2, vec2 As Vector2) As Boolean
+  overload: Util.MathExtensions.Greater*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.GetNormal(Vector2)
+  commentId: M:Util.MathExtensions.GetNormal(Vector2)
+  id: GetNormal(Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetNormal(Vector2)
+  nameWithType: MathExtensions.GetNormal(Vector2)
+  fullName: Util.MathExtensions.GetNormal(Vector2)
+  type: Method
+  source:
+    id: GetNormal
+    path: ''
+    startLine: 6090
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGet normal on plane for 2d vector\n"
+  example: []
+  syntax:
+    content: public static Vector2 GetNormal(this Vector2 vector)
+    parameters:
+    - id: vector
+      type: Global.Vector2
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetNormal(vector As Vector2) As Vector2
+  overload: Util.MathExtensions.GetNormal*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Approximately(System.Single,System.Single,System.Single)
+  commentId: M:Util.MathExtensions.Approximately(System.Single,System.Single,System.Single)
+  id: Approximately(System.Single,System.Single,System.Single)
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Approximately(Single, Single, Single)
+  nameWithType: MathExtensions.Approximately(Single, Single, Single)
+  fullName: Util.MathExtensions.Approximately(System.Single, System.Single, System.Single)
+  type: Method
+  source:
+    id: Approximately
+    path: ''
+    startLine: 6098
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCheck if two values are approximately equal\n"
+  example: []
+  syntax:
+    content: public static bool Approximately(float a, float b, float tolerance = 1E-05F)
+    parameters:
+    - id: a
+      type: System.Single
+    - id: b
+      type: System.Single
+    - id: tolerance
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Approximately(a As Single, b As Single, tolerance As Single = 1E-05F) As Boolean
+  overload: Util.MathExtensions.Approximately*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.CrossProduct2D(Vector2,Vector2)
+  commentId: M:Util.MathExtensions.CrossProduct2D(Vector2,Vector2)
+  id: CrossProduct2D(Vector2,Vector2)
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: CrossProduct2D(Vector2, Vector2)
+  nameWithType: MathExtensions.CrossProduct2D(Vector2, Vector2)
+  fullName: Util.MathExtensions.CrossProduct2D(Vector2, Vector2)
+  type: Method
+  source:
+    id: CrossProduct2D
+    path: ''
+    startLine: 6106
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\n2D cross product on a plane\n"
+  example: []
+  syntax:
+    content: public static float CrossProduct2D(Vector2 a, Vector2 b)
+    parameters:
+    - id: a
+      type: Global.Vector2
+    - id: b
+      type: Global.Vector2
+    return:
+      type: System.Single
+    content.vb: Public Shared Function CrossProduct2D(a As Vector2, b As Vector2) As Single
+  overload: Util.MathExtensions.CrossProduct2D*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.AreParralel(Vector2,Vector2,Vector2,Vector2)
+  commentId: M:Util.MathExtensions.AreParralel(Vector2,Vector2,Vector2,Vector2)
+  id: AreParralel(Vector2,Vector2,Vector2,Vector2)
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: AreParralel(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: MathExtensions.AreParralel(Vector2, Vector2, Vector2, Vector2)
+  fullName: Util.MathExtensions.AreParralel(Vector2, Vector2, Vector2, Vector2)
+  type: Method
+  source:
+    id: AreParralel
+    path: ''
+    startLine: 6114
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCheck if two lines defined by end and start are parallel\n"
+  example: []
+  syntax:
+    content: public static bool AreParralel(Vector2 p1start, Vector2 p1end, Vector2 p2start, Vector2 p2end)
+    parameters:
+    - id: p1start
+      type: Global.Vector2
+    - id: p1end
+      type: Global.Vector2
+    - id: p2start
+      type: Global.Vector2
+    - id: p2end
+      type: Global.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function AreParralel(p1start As Vector2, p1end As Vector2, p2start As Vector2, p2end As Vector2) As Boolean
+  overload: Util.MathExtensions.AreParralel*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.GetProjectionT(Vector2,Vector2,Vector2)
+  commentId: M:Util.MathExtensions.GetProjectionT(Vector2,Vector2,Vector2)
+  id: GetProjectionT(Vector2,Vector2,Vector2)
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetProjectionT(Vector2, Vector2, Vector2)
+  nameWithType: MathExtensions.GetProjectionT(Vector2, Vector2, Vector2)
+  fullName: Util.MathExtensions.GetProjectionT(Vector2, Vector2, Vector2)
+  type: Method
+  source:
+    id: GetProjectionT
+    path: ''
+    startLine: 6128
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nProject vector onto a line defined by end and start points\n"
+  example: []
+  syntax:
+    content: public static float GetProjectionT(Vector2 a, Vector2 b, Vector2 point)
+    parameters:
+    - id: a
+      type: Global.Vector2
+    - id: b
+      type: Global.Vector2
+    - id: point
+      type: Global.Vector2
+    return:
+      type: System.Single
+      description: value, in which 0 corresponds to point being at a, and 1 corresponds to b.
+    content.vb: Public Shared Function GetProjectionT(a As Vector2, b As Vector2, point As Vector2) As Single
+  overload: Util.MathExtensions.GetProjectionT*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.IntersectLineSegments(Vector2,Vector2,Vector2,Vector2)
+  commentId: M:Util.MathExtensions.IntersectLineSegments(Vector2,Vector2,Vector2,Vector2)
+  id: IntersectLineSegments(Vector2,Vector2,Vector2,Vector2)
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: IntersectLineSegments(Vector2, Vector2, Vector2, Vector2)
+  nameWithType: MathExtensions.IntersectLineSegments(Vector2, Vector2, Vector2, Vector2)
+  fullName: Util.MathExtensions.IntersectLineSegments(Vector2, Vector2, Vector2, Vector2)
+  type: Method
+  source:
+    id: IntersectLineSegments
+    path: ''
+    startLine: 6145
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nFind intersection of 2 2D lines, defined by end and start points\n"
+  example: []
+  syntax:
+    content: public static Vector2 IntersectLineSegments(Vector2 p1start, Vector2 p1end, Vector2 p2start, Vector2 p2end)
+    parameters:
+    - id: p1start
+      type: Global.Vector2
+      description: Start point of the first line
+    - id: p1end
+      type: Global.Vector2
+      description: End point of the first line
+    - id: p2start
+      type: Global.Vector2
+      description: Start point of the second line
+    - id: p2end
+      type: Global.Vector2
+      description: End point of the second line
+    return:
+      type: Global.Vector2
+      description: Intersection point
+    content.vb: Public Shared Function IntersectLineSegments(p1start As Vector2, p1end As Vector2, p2start As Vector2, p2end As Vector2) As Vector2
+  overload: Util.MathExtensions.IntersectLineSegments*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Single})
+  commentId: M:Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Single})
+  id: Apply(Vector2,Func{System.Single,System.Single})
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Apply(Vector2, Func<Single, Single>)
+  nameWithType: MathExtensions.Apply(Vector2, Func<Single, Single>)
+  fullName: Util.MathExtensions.Apply(Vector2, Func<System.Single, System.Single>)
+  type: Method
+  source:
+    id: Apply
+    path: ''
+    startLine: 6160
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nApply function to all components of vector\n"
+  example: []
+  syntax:
+    content: public static Vector2 Apply(this Vector2 vec, Func<float, float> func)
+    parameters:
+    - id: vec
+      type: Global.Vector2
+    - id: func
+      type: Global.Func{System.Single,System.Single}
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Apply(vec As Vector2, func As Func(Of Single, Single)) As Vector2
+  overload: Util.MathExtensions.Apply*
+  nameWithType.vb: MathExtensions.Apply(Vector2, Func(Of Single, Single))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.Apply(Vector2, Func(Of System.Single, System.Single))
+  name.vb: Apply(Vector2, Func(Of Single, Single))
+- uid: Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Int32})
+  commentId: M:Util.MathExtensions.Apply(Vector2,Func{System.Single,System.Int32})
+  id: Apply(Vector2,Func{System.Single,System.Int32})
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Apply(Vector2, Func<Single, Int32>)
+  nameWithType: MathExtensions.Apply(Vector2, Func<Single, Int32>)
+  fullName: Util.MathExtensions.Apply(Vector2, Func<System.Single, System.Int32>)
+  type: Method
+  source:
+    id: Apply
+    path: ''
+    startLine: 6168
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nApply function to all components of vector\n"
+  example: []
+  syntax:
+    content: public static Vector2Int Apply(this Vector2 vec, Func<float, int> func)
+    parameters:
+    - id: vec
+      type: Global.Vector2
+    - id: func
+      type: Global.Func{System.Single,System.Int32}
+    return:
+      type: Global.Vector2Int
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Apply(vec As Vector2, func As Func(Of Single, Integer)) As Vector2Int
+  overload: Util.MathExtensions.Apply*
+  nameWithType.vb: MathExtensions.Apply(Vector2, Func(Of Single, Int32))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.Apply(Vector2, Func(Of System.Single, System.Int32))
+  name.vb: Apply(Vector2, Func(Of Single, Int32))
+- uid: Util.MathExtensions.GetDirection(Vector2)
+  commentId: M:Util.MathExtensions.GetDirection(Vector2)
+  id: GetDirection(Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDirection(Vector2)
+  nameWithType: MathExtensions.GetDirection(Vector2)
+  fullName: Util.MathExtensions.GetDirection(Vector2)
+  type: Method
+  source:
+    id: GetDirection
+    path: ''
+    startLine: 6177
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nDetermines in which direction a vector points\n"
+  example: []
+  syntax:
+    content: public static string GetDirection(this Vector2 dir)
+    parameters:
+    - id: dir
+      type: Global.Vector2
+    return:
+      type: System.String
+      description: text description of direction
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetDirection(dir As Vector2) As String
+  overload: Util.MathExtensions.GetDirection*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.GetCenter(IList{Vector2})
+  commentId: M:Util.MathExtensions.GetCenter(IList{Vector2})
+  id: GetCenter(IList{Vector2})
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCenter(IList<Vector2>)
+  nameWithType: MathExtensions.GetCenter(IList<Vector2>)
+  fullName: Util.MathExtensions.GetCenter(IList<Vector2>)
+  type: Method
+  source:
+    id: GetCenter
+    path: ''
+    startLine: 6207
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGet center of given points\n"
+  example: []
+  syntax:
+    content: public static Vector2 GetCenter(this IList<Vector2> points)
+    parameters:
+    - id: points
+      type: Global.IList{Vector2}
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetCenter(points As IList(Of Vector2)) As Vector2
+  overload: Util.MathExtensions.GetCenter*
+  nameWithType.vb: MathExtensions.GetCenter(IList(Of Vector2))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.GetCenter(IList(Of Vector2))
+  name.vb: GetCenter(IList(Of Vector2))
+- uid: Util.MathExtensions.GetCenter(IEnumerable{Vector2},System.Int32)
+  commentId: M:Util.MathExtensions.GetCenter(IEnumerable{Vector2},System.Int32)
+  id: GetCenter(IEnumerable{Vector2},System.Int32)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetCenter(IEnumerable<Vector2>, Int32)
+  nameWithType: MathExtensions.GetCenter(IEnumerable<Vector2>, Int32)
+  fullName: Util.MathExtensions.GetCenter(IEnumerable<Vector2>, System.Int32)
+  type: Method
+  source:
+    id: GetCenter
+    path: ''
+    startLine: 6215
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGet center of given points\n"
+  example: []
+  syntax:
+    content: public static Vector2 GetCenter(this IEnumerable<Vector2> points, int count)
+    parameters:
+    - id: points
+      type: Global.IEnumerable{Vector2}
+    - id: count
+      type: System.Int32
+    return:
+      type: Global.Vector2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetCenter(points As IEnumerable(Of Vector2), count As Integer) As Vector2
+  overload: Util.MathExtensions.GetCenter*
+  nameWithType.vb: MathExtensions.GetCenter(IEnumerable(Of Vector2), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.GetCenter(IEnumerable(Of Vector2), System.Int32)
+  name.vb: GetCenter(IEnumerable(Of Vector2), Int32)
+- uid: Util.MathExtensions.IsInfinity(Vector2)
+  commentId: M:Util.MathExtensions.IsInfinity(Vector2)
+  id: IsInfinity(Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsInfinity(Vector2)
+  nameWithType: MathExtensions.IsInfinity(Vector2)
+  fullName: Util.MathExtensions.IsInfinity(Vector2)
+  type: Method
+  source:
+    id: IsInfinity
+    path: ''
+    startLine: 6225
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCheck if vector values have infinity\n"
+  example: []
+  syntax:
+    content: public static bool IsInfinity(this Vector2 vector)
+    parameters:
+    - id: vector
+      type: Global.Vector2
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsInfinity(vector As Vector2) As Boolean
+  overload: Util.MathExtensions.IsInfinity*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Mod(System.Int32,System.Int32)
+  commentId: M:Util.MathExtensions.Mod(System.Int32,System.Int32)
+  id: Mod(System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Mod(Int32, Int32)
+  nameWithType: MathExtensions.Mod(Int32, Int32)
+  fullName: Util.MathExtensions.Mod(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Mod
+    path: ''
+    startLine: 6233
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nMod operation that correctly works with negative numbers\n"
+  example: []
+  syntax:
+    content: public static int Mod(this int x, int m)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: m
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Mod(x As Integer, m As Integer) As Integer
+  overload: Util.MathExtensions.Mod*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Shuffle``1(IList{``0})
+  commentId: M:Util.MathExtensions.Shuffle``1(IList{``0})
+  id: Shuffle``1(IList{``0})
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IList<T>)
+  nameWithType: MathExtensions.Shuffle<T>(IList<T>)
+  fullName: Util.MathExtensions.Shuffle<T>(IList<T>)
+  type: Method
+  source:
+    id: Shuffle
+    path: ''
+    startLine: 6244
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nRandomly shuffle a list\n"
+  example: []
+  syntax:
+    content: public static void Shuffle<T>(this IList<T> list)
+    parameters:
+    - id: list
+      type: Global.IList{{T}}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Shuffle(Of T)(list As IList(Of T))
+  overload: Util.MathExtensions.Shuffle*
+  nameWithType.vb: MathExtensions.Shuffle(Of T)(IList(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.Shuffle(Of T)(IList(Of T))
+  name.vb: Shuffle(Of T)(IList(Of T))
+- uid: Util.MathExtensions.IsPointInPolygon4(List{Vector2},Vector2)
+  commentId: M:Util.MathExtensions.IsPointInPolygon4(List{Vector2},Vector2)
+  id: IsPointInPolygon4(List{Vector2},Vector2)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsPointInPolygon4(List<Vector2>, Vector2)
+  nameWithType: MathExtensions.IsPointInPolygon4(List<Vector2>, Vector2)
+  fullName: Util.MathExtensions.IsPointInPolygon4(List<Vector2>, Vector2)
+  type: Method
+  source:
+    id: IsPointInPolygon4
+    path: ''
+    startLine: 6261
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nDetermines if the given point is inside the polygon\n"
+  example: []
+  syntax:
+    content: public static bool IsPointInPolygon4(this List<Vector2> polygon, Vector2 testPoint)
+    parameters:
+    - id: polygon
+      type: Global.List{Vector2}
+      description: the vertices of polygon
+    - id: testPoint
+      type: Global.Vector2
+      description: the given point
+    return:
+      type: System.Boolean
+      description: true if the point is inside the polygon; otherwise, false
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsPointInPolygon4(polygon As List(Of Vector2), testPoint As Vector2) As Boolean
+  overload: Util.MathExtensions.IsPointInPolygon4*
+  nameWithType.vb: MathExtensions.IsPointInPolygon4(List(Of Vector2), Vector2)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.IsPointInPolygon4(List(Of Vector2), Vector2)
+  name.vb: IsPointInPolygon4(List(Of Vector2), Vector2)
+- uid: Util.MathExtensions.IsClockwise(List{Vector2})
+  commentId: M:Util.MathExtensions.IsClockwise(List{Vector2})
+  id: IsClockwise(List{Vector2})
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsClockwise(List<Vector2>)
+  nameWithType: MathExtensions.IsClockwise(List<Vector2>)
+  fullName: Util.MathExtensions.IsClockwise(List<Vector2>)
+  type: Method
+  source:
+    id: IsClockwise
+    path: ''
+    startLine: 6282
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCheck list of points winding order\n"
+  example: []
+  syntax:
+    content: public static bool IsClockwise(this List<Vector2> vertices)
+    parameters:
+    - id: vertices
+      type: Global.List{Vector2}
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsClockwise(vertices As List(Of Vector2)) As Boolean
+  overload: Util.MathExtensions.IsClockwise*
+  nameWithType.vb: MathExtensions.IsClockwise(List(Of Vector2))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.MathExtensions.IsClockwise(List(Of Vector2))
+  name.vb: IsClockwise(List(Of Vector2))
+- uid: Util.MathExtensions.Clamp2(Rect,Vector2,System.Single)
+  commentId: M:Util.MathExtensions.Clamp2(Rect,Vector2,System.Single)
+  id: Clamp2(Rect,Vector2,System.Single)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clamp2(Rect, Vector2, Single)
+  nameWithType: MathExtensions.Clamp2(Rect, Vector2, Single)
+  fullName: Util.MathExtensions.Clamp2(Rect, Vector2, System.Single)
+  type: Method
+  source:
+    id: Clamp2
+    path: ''
+    startLine: 6302
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nExtends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.\n"
+  example: []
+  syntax:
+    content: public static Vector2 Clamp2(this Rect rect, Vector2 position, float extendDistance = 0F)
+    parameters:
+    - id: rect
+      type: Global.Rect
+      description: The Rect.
+    - id: position
+      type: Global.Vector2
+      description: A position that should be restricted to the rect.
+    - id: extendDistance
+      type: System.Single
+      description: The distance to extend/shrink the rect to each side.
+    return:
+      type: Global.Vector2
+      description: The vector, clamped to the Rect.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Clamp2(rect As Rect, position As Vector2, extendDistance As Single = 0F) As Vector2
+  overload: Util.MathExtensions.Clamp2*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Clamp3(Rect,Vector3,System.Single)
+  commentId: M:Util.MathExtensions.Clamp3(Rect,Vector3,System.Single)
+  id: Clamp3(Rect,Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Clamp3(Rect, Vector3, Single)
+  nameWithType: MathExtensions.Clamp3(Rect, Vector3, Single)
+  fullName: Util.MathExtensions.Clamp3(Rect, Vector3, System.Single)
+  type: Method
+  source:
+    id: Clamp3
+    path: ''
+    startLine: 6316
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nExtends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.\nThe z component is kept.\n"
+  example: []
+  syntax:
+    content: public static Vector3 Clamp3(this Rect rect, Vector3 position, float extendDistance = 0F)
+    parameters:
+    - id: rect
+      type: Global.Rect
+      description: The Rect.
+    - id: position
+      type: Global.Vector3
+      description: A position that should be restricted to the rect.
+    - id: extendDistance
+      type: System.Single
+      description: The distance to extend/shrink the rect to each side.
+    return:
+      type: Global.Vector3
+      description: The vector, clamped to the Rect.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Clamp3(rect As Rect, position As Vector3, extendDistance As Single = 0F) As Vector3
+  overload: Util.MathExtensions.Clamp3*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.MathExtensions.Average(System.Single,System.Single,System.Int32)
+  commentId: M:Util.MathExtensions.Average(System.Single,System.Single,System.Int32)
+  id: Average(System.Single,System.Single,System.Int32)
+  isExtensionMethod: true
+  parent: Util.MathExtensions
+  langs:
+  - csharp
+  - vb
+  name: Average(Single, Single, Int32)
+  nameWithType: MathExtensions.Average(Single, Single, Int32)
+  fullName: Util.MathExtensions.Average(System.Single, System.Single, System.Int32)
+  type: Method
+  source:
+    id: Average
+    path: ''
+    startLine: 6326
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCalculate running exponential average\n"
+  example: []
+  syntax:
+    content: public static float Average(this float current, float newValue, int total)
+    parameters:
+    - id: current
+      type: System.Single
+    - id: newValue
+      type: System.Single
+    - id: total
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Average(current As Single, newValue As Single, total As Integer) As Single
+  overload: Util.MathExtensions.Average*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.MathExtensions.Rotate*
+  commentId: Overload:Util.MathExtensions.Rotate
+  name: Rotate
+  nameWithType: MathExtensions.Rotate
+  fullName: Util.MathExtensions.Rotate
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Util.MathExtensions.ClampHorizontal*
+  commentId: Overload:Util.MathExtensions.ClampHorizontal
+  name: ClampHorizontal
+  nameWithType: MathExtensions.ClampHorizontal
+  fullName: Util.MathExtensions.ClampHorizontal
+- uid: Global.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Util.MathExtensions.ToVector2*
+  commentId: Overload:Util.MathExtensions.ToVector2
+  name: ToVector2
+  nameWithType: MathExtensions.ToVector2
+  fullName: Util.MathExtensions.ToVector2
+- uid: Util.MathExtensions.ToVector3*
+  commentId: Overload:Util.MathExtensions.ToVector3
+  name: ToVector3
+  nameWithType: MathExtensions.ToVector3
+  fullName: Util.MathExtensions.ToVector3
+- uid: Global.Vector3Int
+  commentId: '!:Global.Vector3Int'
+  isExternal: true
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: Vector3Int
+- uid: Util.MathExtensions.WithY*
+  commentId: Overload:Util.MathExtensions.WithY
+  name: WithY
+  nameWithType: MathExtensions.WithY
+  fullName: Util.MathExtensions.WithY
+- uid: Util.MathExtensions.Abs*
+  commentId: Overload:Util.MathExtensions.Abs
+  name: Abs
+  nameWithType: MathExtensions.Abs
+  fullName: Util.MathExtensions.Abs
+- uid: Util.MathExtensions.Less*
+  commentId: Overload:Util.MathExtensions.Less
+  name: Less
+  nameWithType: MathExtensions.Less
+  fullName: Util.MathExtensions.Less
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Util.MathExtensions.Greater*
+  commentId: Overload:Util.MathExtensions.Greater
+  name: Greater
+  nameWithType: MathExtensions.Greater
+  fullName: Util.MathExtensions.Greater
+- uid: Util.MathExtensions.GetNormal*
+  commentId: Overload:Util.MathExtensions.GetNormal
+  name: GetNormal
+  nameWithType: MathExtensions.GetNormal
+  fullName: Util.MathExtensions.GetNormal
+- uid: Util.MathExtensions.Approximately*
+  commentId: Overload:Util.MathExtensions.Approximately
+  name: Approximately
+  nameWithType: MathExtensions.Approximately
+  fullName: Util.MathExtensions.Approximately
+- uid: Util.MathExtensions.CrossProduct2D*
+  commentId: Overload:Util.MathExtensions.CrossProduct2D
+  name: CrossProduct2D
+  nameWithType: MathExtensions.CrossProduct2D
+  fullName: Util.MathExtensions.CrossProduct2D
+- uid: Util.MathExtensions.AreParralel*
+  commentId: Overload:Util.MathExtensions.AreParralel
+  name: AreParralel
+  nameWithType: MathExtensions.AreParralel
+  fullName: Util.MathExtensions.AreParralel
+- uid: Util.MathExtensions.GetProjectionT*
+  commentId: Overload:Util.MathExtensions.GetProjectionT
+  name: GetProjectionT
+  nameWithType: MathExtensions.GetProjectionT
+  fullName: Util.MathExtensions.GetProjectionT
+- uid: Util.MathExtensions.IntersectLineSegments*
+  commentId: Overload:Util.MathExtensions.IntersectLineSegments
+  name: IntersectLineSegments
+  nameWithType: MathExtensions.IntersectLineSegments
+  fullName: Util.MathExtensions.IntersectLineSegments
+- uid: Util.MathExtensions.Apply*
+  commentId: Overload:Util.MathExtensions.Apply
+  name: Apply
+  nameWithType: MathExtensions.Apply
+  fullName: Util.MathExtensions.Apply
+- uid: Global.Func{System.Single,System.Single}
+  commentId: '!:Global.Func{System.Single,System.Single}'
+  definition: Global.Func`2
+  name: Func<Single, Single>
+  nameWithType: Func<Single, Single>
+  fullName: Func<System.Single, System.Single>
+  nameWithType.vb: Func(Of Single, Single)
+  fullName.vb: Func(Of System.Single, System.Single)
+  name.vb: Func(Of Single, Single)
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Func{System.Single,System.Int32}
+  commentId: '!:Global.Func{System.Single,System.Int32}'
+  definition: Global.Func`2
+  name: Func<Single, Int32>
+  nameWithType: Func<Single, Int32>
+  fullName: Func<System.Single, System.Int32>
+  nameWithType.vb: Func(Of Single, Int32)
+  fullName.vb: Func(Of System.Single, System.Int32)
+  name.vb: Func(Of Single, Int32)
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Vector2Int
+  commentId: '!:Global.Vector2Int'
+  isExternal: true
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: Vector2Int
+- uid: Util.MathExtensions.GetDirection*
+  commentId: Overload:Util.MathExtensions.GetDirection
+  name: GetDirection
+  nameWithType: MathExtensions.GetDirection
+  fullName: Util.MathExtensions.GetDirection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Util.MathExtensions.GetCenter*
+  commentId: Overload:Util.MathExtensions.GetCenter
+  name: GetCenter
+  nameWithType: MathExtensions.GetCenter
+  fullName: Util.MathExtensions.GetCenter
+- uid: Global.IList{Vector2}
+  commentId: '!:Global.IList{Vector2}'
+  definition: Global.IList`1
+  name: IList<Vector2>
+  nameWithType: IList<Vector2>
+  fullName: IList<Vector2>
+  nameWithType.vb: IList(Of Vector2)
+  fullName.vb: IList(Of Vector2)
+  name.vb: IList(Of Vector2)
+  spec.csharp:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.IEnumerable{Vector2}
+  commentId: '!:Global.IEnumerable{Vector2}'
+  definition: Global.IEnumerable`1
+  name: IEnumerable<Vector2>
+  nameWithType: IEnumerable<Vector2>
+  fullName: IEnumerable<Vector2>
+  nameWithType.vb: IEnumerable(Of Vector2)
+  fullName.vb: IEnumerable(Of Vector2)
+  name.vb: IEnumerable(Of Vector2)
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Global.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Util.MathExtensions.IsInfinity*
+  commentId: Overload:Util.MathExtensions.IsInfinity
+  name: IsInfinity
+  nameWithType: MathExtensions.IsInfinity
+  fullName: Util.MathExtensions.IsInfinity
+- uid: Util.MathExtensions.Mod*
+  commentId: Overload:Util.MathExtensions.Mod
+  name: Mod
+  nameWithType: MathExtensions.Mod
+  fullName: Util.MathExtensions.Mod
+- uid: Util.MathExtensions.Shuffle*
+  commentId: Overload:Util.MathExtensions.Shuffle
+  name: Shuffle
+  nameWithType: MathExtensions.Shuffle
+  fullName: Util.MathExtensions.Shuffle
+- uid: Global.IList{{T}}
+  commentId: '!:Global.IList{``0}'
+  definition: Global.IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Util.MathExtensions.IsPointInPolygon4*
+  commentId: Overload:Util.MathExtensions.IsPointInPolygon4
+  name: IsPointInPolygon4
+  nameWithType: MathExtensions.IsPointInPolygon4
+  fullName: Util.MathExtensions.IsPointInPolygon4
+- uid: Global.List{Vector2}
+  commentId: '!:Global.List{Vector2}'
+  definition: Global.List`1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: List<Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: List(Of Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Util.MathExtensions.IsClockwise*
+  commentId: Overload:Util.MathExtensions.IsClockwise
+  name: IsClockwise
+  nameWithType: MathExtensions.IsClockwise
+  fullName: Util.MathExtensions.IsClockwise
+- uid: Util.MathExtensions.Clamp2*
+  commentId: Overload:Util.MathExtensions.Clamp2
+  name: Clamp2
+  nameWithType: MathExtensions.Clamp2
+  fullName: Util.MathExtensions.Clamp2
+- uid: Global.Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: Util.MathExtensions.Clamp3*
+  commentId: Overload:Util.MathExtensions.Clamp3
+  name: Clamp3
+  nameWithType: MathExtensions.Clamp3
+  fullName: Util.MathExtensions.Clamp3
+- uid: Util.MathExtensions.Average*
+  commentId: Overload:Util.MathExtensions.Average
+  name: Average
+  nameWithType: MathExtensions.Average
+  fullName: Util.MathExtensions.Average

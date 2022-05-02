@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Statistics.IIndexable`1
+  commentId: T:Gameplay.Statistics.IIndexable`1
+  id: IIndexable`1
+  parent: Gameplay.Statistics
+  children:
+  - Gameplay.Statistics.IIndexable`1.index
+  langs:
+  - csharp
+  - vb
+  name: IIndexable<T>
+  nameWithType: IIndexable<T>
+  fullName: Gameplay.Statistics.IIndexable<T>
+  type: Interface
+  source:
+    id: IIndexable
+    path: ''
+    startLine: 4782
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nGeneric interface for index-able types\n"
+  example: []
+  syntax:
+    content: public interface IIndexable<out T>
+    typeParameters:
+    - id: T
+      description: Index type
+    content.vb: Public Interface IIndexable(Of Out T)
+  nameWithType.vb: IIndexable(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Gameplay.Statistics.IIndexable(Of T)
+  name.vb: IIndexable(Of T)
+- uid: Gameplay.Statistics.IIndexable`1.index
+  commentId: P:Gameplay.Statistics.IIndexable`1.index
+  id: index
+  parent: Gameplay.Statistics.IIndexable`1
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: IIndexable<T>.index
+  fullName: Gameplay.Statistics.IIndexable<T>.index
+  type: Property
+  source:
+    id: index
+    path: ''
+    startLine: 4784
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: T index { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property index As T
+  overload: Gameplay.Statistics.IIndexable`1.index*
+  nameWithType.vb: IIndexable(Of T).index
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Gameplay.Statistics.IIndexable(Of T).index
+references:
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics
+- uid: Gameplay.Statistics.IIndexable`1.index*
+  commentId: Overload:Gameplay.Statistics.IIndexable`1.index
+  name: index
+  nameWithType: IIndexable<T>.index
+  fullName: Gameplay.Statistics.IIndexable<T>.index
+  nameWithType.vb: IIndexable(Of T).index
+  fullName.vb: Gameplay.Statistics.IIndexable(Of T).index
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

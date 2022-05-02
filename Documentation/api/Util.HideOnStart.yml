@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.HideOnStart
+  commentId: T:Util.HideOnStart
+  id: HideOnStart
+  parent: Util
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: HideOnStart
+  nameWithType: HideOnStart
+  fullName: Util.HideOnStart
+  type: Class
+  source:
+    id: HideOnStart
+    path: ''
+    startLine: 5617
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nHide game object this is attached to\n"
+  example: []
+  syntax:
+    content: 'public class HideOnStart : MonoBehaviour'
+    content.vb: >-
+      Public Class HideOnStart
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.UIDragableButton
+  commentId: T:Gameplay.Controls.UIDragableButton
+  id: UIDragableButton
+  parent: Gameplay.Controls
+  children:
+  - Gameplay.Controls.UIDragableButton.element
+  - Gameplay.Controls.UIDragableButton.gap
+  - Gameplay.Controls.UIDragableButton.GetCurrentSlot
+  - Gameplay.Controls.UIDragableButton.label
+  - Gameplay.Controls.UIDragableButton.lastSlot
+  - Gameplay.Controls.UIDragableButton.OnPointerDown(PointerEventData)
+  - Gameplay.Controls.UIDragableButton.OnPointerUp(PointerEventData)
+  - Gameplay.Controls.UIDragableButton.returnSpeed
+  - Gameplay.Controls.UIDragableButton.SetColor(Color)
+  - Gameplay.Controls.UIDragableButton.SetData(INamedArrayElement,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: UIDragableButton
+  nameWithType: UIDragableButton
+  fullName: Gameplay.Controls.UIDragableButton
+  type: Class
+  source:
+    id: UIDragableButton
+    path: ''
+    startLine: 1561
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  summary: "\nButton that can be dragged, used as part of <xref href=\"Gameplay.Controls.UIDraggableButtonList\" data-throw-if-not-resolved=\"false\"></xref>>\n"
+  example: []
+  syntax:
+    content: 'public class UIDragableButton : MonoBehaviour'
+    content.vb: >-
+      Public Class UIDragableButton
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  implements:
+  - Global.IPointerDownHandler
+  - Global.IPointerUpHandler
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Controls.UIDragableButton.gap
+  commentId: F:Gameplay.Controls.UIDragableButton.gap
+  id: gap
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: gap
+  nameWithType: UIDragableButton.gap
+  fullName: Gameplay.Controls.UIDragableButton.gap
+  type: Field
+  source:
+    id: gap
+    path: ''
+    startLine: 1563
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public const int gap = 10
+    return:
+      type: System.Int32
+    content.vb: Public Const gap As Integer = 10
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.Controls.UIDragableButton.returnSpeed
+  commentId: F:Gameplay.Controls.UIDragableButton.returnSpeed
+  id: returnSpeed
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: returnSpeed
+  nameWithType: UIDragableButton.returnSpeed
+  fullName: Gameplay.Controls.UIDragableButton.returnSpeed
+  type: Field
+  source:
+    id: returnSpeed
+    path: ''
+    startLine: 1564
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float returnSpeed
+    return:
+      type: System.Single
+    content.vb: Public returnSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.label
+  commentId: F:Gameplay.Controls.UIDragableButton.label
+  id: label
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: label
+  nameWithType: UIDragableButton.label
+  fullName: Gameplay.Controls.UIDragableButton.label
+  type: Field
+  source:
+    id: label
+    path: ''
+    startLine: 1574
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public TMP_Text label
+    return:
+      type: Global.TMP_Text
+    content.vb: Public label As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.element
+  commentId: F:Gameplay.Controls.UIDragableButton.element
+  id: element
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: element
+  nameWithType: UIDragableButton.element
+  fullName: Gameplay.Controls.UIDragableButton.element
+  type: Field
+  source:
+    id: element
+    path: ''
+    startLine: 1576
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public INamedArrayElement element
+    return:
+      type: Global.INamedArrayElement
+    content.vb: Public element As INamedArrayElement
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.lastSlot
+  commentId: F:Gameplay.Controls.UIDragableButton.lastSlot
+  id: lastSlot
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: lastSlot
+  nameWithType: UIDragableButton.lastSlot
+  fullName: Gameplay.Controls.UIDragableButton.lastSlot
+  type: Field
+  source:
+    id: lastSlot
+    path: ''
+    startLine: 1578
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public int lastSlot
+    return:
+      type: System.Int32
+    content.vb: Public lastSlot As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.SetData(INamedArrayElement,System.Int32)
+  commentId: M:Gameplay.Controls.UIDragableButton.SetData(INamedArrayElement,System.Int32)
+  id: SetData(INamedArrayElement,System.Int32)
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: SetData(INamedArrayElement, Int32)
+  nameWithType: UIDragableButton.SetData(INamedArrayElement, Int32)
+  fullName: Gameplay.Controls.UIDragableButton.SetData(INamedArrayElement, System.Int32)
+  type: Method
+  source:
+    id: SetData
+    path: ''
+    startLine: 1593
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void SetData(INamedArrayElement _element, int index)
+    parameters:
+    - id: _element
+      type: Global.INamedArrayElement
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub SetData(_element As INamedArrayElement, index As Integer)
+  overload: Gameplay.Controls.UIDragableButton.SetData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.SetColor(Color)
+  commentId: M:Gameplay.Controls.UIDragableButton.SetColor(Color)
+  id: SetColor(Color)
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: SetColor(Color)
+  nameWithType: UIDragableButton.SetColor(Color)
+  fullName: Gameplay.Controls.UIDragableButton.SetColor(Color)
+  type: Method
+  source:
+    id: SetColor
+    path: ''
+    startLine: 1613
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void SetColor(Color color)
+    parameters:
+    - id: color
+      type: Global.Color
+    content.vb: Public Sub SetColor(color As Color)
+  overload: Gameplay.Controls.UIDragableButton.SetColor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.GetCurrentSlot
+  commentId: M:Gameplay.Controls.UIDragableButton.GetCurrentSlot
+  id: GetCurrentSlot
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentSlot()
+  nameWithType: UIDragableButton.GetCurrentSlot()
+  fullName: Gameplay.Controls.UIDragableButton.GetCurrentSlot()
+  type: Method
+  source:
+    id: GetCurrentSlot
+    path: ''
+    startLine: 1619
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public int GetCurrentSlot()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetCurrentSlot As Integer
+  overload: Gameplay.Controls.UIDragableButton.GetCurrentSlot*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.OnPointerDown(PointerEventData)
+  commentId: M:Gameplay.Controls.UIDragableButton.OnPointerDown(PointerEventData)
+  id: OnPointerDown(PointerEventData)
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: OnPointerDown(PointerEventData)
+  nameWithType: UIDragableButton.OnPointerDown(PointerEventData)
+  fullName: Gameplay.Controls.UIDragableButton.OnPointerDown(PointerEventData)
+  type: Method
+  source:
+    id: OnPointerDown
+    path: ''
+    startLine: 1644
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void OnPointerDown(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: Global.PointerEventData
+    content.vb: Public Sub OnPointerDown(eventData As PointerEventData)
+  overload: Gameplay.Controls.UIDragableButton.OnPointerDown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDragableButton.OnPointerUp(PointerEventData)
+  commentId: M:Gameplay.Controls.UIDragableButton.OnPointerUp(PointerEventData)
+  id: OnPointerUp(PointerEventData)
+  parent: Gameplay.Controls.UIDragableButton
+  langs:
+  - csharp
+  - vb
+  name: OnPointerUp(PointerEventData)
+  nameWithType: UIDragableButton.OnPointerUp(PointerEventData)
+  fullName: Gameplay.Controls.UIDragableButton.OnPointerUp(PointerEventData)
+  type: Method
+  source:
+    id: OnPointerUp
+    path: ''
+    startLine: 1652
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void OnPointerUp(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: Global.PointerEventData
+    content.vb: Public Sub OnPointerUp(eventData As PointerEventData)
+  overload: Gameplay.Controls.UIDragableButton.OnPointerUp*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Controls.UIDraggableButtonList
+  commentId: T:Gameplay.Controls.UIDraggableButtonList
+  name: UIDraggableButtonList
+  nameWithType: UIDraggableButtonList
+  fullName: Gameplay.Controls.UIDraggableButtonList
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Global.IPointerDownHandler
+  commentId: '!:Global.IPointerDownHandler'
+  isExternal: true
+  name: IPointerDownHandler
+  nameWithType: IPointerDownHandler
+  fullName: IPointerDownHandler
+- uid: Global.IPointerUpHandler
+  commentId: '!:Global.IPointerUpHandler'
+  isExternal: true
+  name: IPointerUpHandler
+  nameWithType: IPointerUpHandler
+  fullName: IPointerUpHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Global.INamedArrayElement
+  isExternal: true
+  name: INamedArrayElement
+  nameWithType: INamedArrayElement
+  fullName: INamedArrayElement
+- uid: Gameplay.Controls.UIDragableButton.SetData*
+  commentId: Overload:Gameplay.Controls.UIDragableButton.SetData
+  name: SetData
+  nameWithType: UIDragableButton.SetData
+  fullName: Gameplay.Controls.UIDragableButton.SetData
+- uid: Gameplay.Controls.UIDragableButton.SetColor*
+  commentId: Overload:Gameplay.Controls.UIDragableButton.SetColor
+  name: SetColor
+  nameWithType: UIDragableButton.SetColor
+  fullName: Gameplay.Controls.UIDragableButton.SetColor
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Gameplay.Controls.UIDragableButton.GetCurrentSlot*
+  commentId: Overload:Gameplay.Controls.UIDragableButton.GetCurrentSlot
+  name: GetCurrentSlot
+  nameWithType: UIDragableButton.GetCurrentSlot
+  fullName: Gameplay.Controls.UIDragableButton.GetCurrentSlot
+- uid: Gameplay.Controls.UIDragableButton.OnPointerDown*
+  commentId: Overload:Gameplay.Controls.UIDragableButton.OnPointerDown
+  name: OnPointerDown
+  nameWithType: UIDragableButton.OnPointerDown
+  fullName: Gameplay.Controls.UIDragableButton.OnPointerDown
+- uid: Global.PointerEventData
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: PointerEventData
+- uid: Gameplay.Controls.UIDragableButton.OnPointerUp*
+  commentId: Overload:Gameplay.Controls.UIDragableButton.OnPointerUp
+  name: OnPointerUp
+  nameWithType: UIDragableButton.OnPointerUp
+  fullName: Gameplay.Controls.UIDragableButton.OnPointerUp

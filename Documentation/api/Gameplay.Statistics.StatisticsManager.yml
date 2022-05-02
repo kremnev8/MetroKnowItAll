@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Statistics.StatisticsManager
+  commentId: T:Gameplay.Statistics.StatisticsManager
+  id: StatisticsManager
+  parent: Gameplay.Statistics
+  children:
+  - Gameplay.Statistics.StatisticsManager.current
+  - Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
+  - Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
+  - Gameplay.Statistics.StatisticsManager.version
+  langs:
+  - csharp
+  - vb
+  name: StatisticsManager
+  nameWithType: StatisticsManager
+  fullName: Gameplay.Statistics.StatisticsManager
+  type: Class
+  source:
+    id: StatisticsManager
+    path: ''
+    startLine: 4874
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nManages statistics and achievements. Also saves and loads statistics data to disk\n"
+  example: []
+  syntax:
+    content: 'public class StatisticsManager : MonoBehaviour'
+    content.vb: >-
+      Public Class StatisticsManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Statistics.StatisticsManager.version
+  commentId: F:Gameplay.Statistics.StatisticsManager.version
+  id: version
+  parent: Gameplay.Statistics.StatisticsManager
+  langs:
+  - csharp
+  - vb
+  name: version
+  nameWithType: StatisticsManager.version
+  fullName: Gameplay.Statistics.StatisticsManager.version
+  type: Field
+  source:
+    id: version
+    path: ''
+    startLine: 4876
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public const int version = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const version As Integer = 1
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.Statistics.StatisticsManager.current
+  commentId: F:Gameplay.Statistics.StatisticsManager.current
+  id: current
+  parent: Gameplay.Statistics.StatisticsManager
+  langs:
+  - csharp
+  - vb
+  name: current
+  nameWithType: StatisticsManager.current
+  fullName: Gameplay.Statistics.StatisticsManager.current
+  type: Field
+  source:
+    id: current
+    path: ''
+    startLine: 4878
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public Statistics current
+    return:
+      type: Gameplay.Statistics.Statistics
+    content.vb: Public current As Statistics
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
+  commentId: M:Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
+  id: OnCorrectAnswer(System.Single)
+  parent: Gameplay.Statistics.StatisticsManager
+  langs:
+  - csharp
+  - vb
+  name: OnCorrectAnswer(Single)
+  nameWithType: StatisticsManager.OnCorrectAnswer(Single)
+  fullName: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
+  type: Method
+  source:
+    id: OnCorrectAnswer
+    path: ''
+    startLine: 4935
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public void OnCorrectAnswer(float time)
+    parameters:
+    - id: time
+      type: System.Single
+    content.vb: Public Sub OnCorrectAnswer(time As Single)
+  overload: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
+  commentId: M:Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
+  id: OnWrongAnswer(System.Single)
+  parent: Gameplay.Statistics.StatisticsManager
+  langs:
+  - csharp
+  - vb
+  name: OnWrongAnswer(Single)
+  nameWithType: StatisticsManager.OnWrongAnswer(Single)
+  fullName: Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
+  type: Method
+  source:
+    id: OnWrongAnswer
+    path: ''
+    startLine: 4978
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public void OnWrongAnswer(float time)
+    parameters:
+    - id: time
+      type: System.Single
+    content.vb: Public Sub OnWrongAnswer(time As Single)
+  overload: Gameplay.Statistics.StatisticsManager.OnWrongAnswer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.Statistics.Statistics
+  commentId: T:Gameplay.Statistics.Statistics
+  parent: Gameplay.Statistics
+  name: Statistics
+  nameWithType: Statistics
+  fullName: Gameplay.Statistics.Statistics
+- uid: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer*
+  commentId: Overload:Gameplay.Statistics.StatisticsManager.OnCorrectAnswer
+  name: OnCorrectAnswer
+  nameWithType: StatisticsManager.OnCorrectAnswer
+  fullName: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.Statistics.StatisticsManager.OnWrongAnswer*
+  commentId: Overload:Gameplay.Statistics.StatisticsManager.OnWrongAnswer
+  name: OnWrongAnswer
+  nameWithType: StatisticsManager.OnWrongAnswer
+  fullName: Gameplay.Statistics.StatisticsManager.OnWrongAnswer

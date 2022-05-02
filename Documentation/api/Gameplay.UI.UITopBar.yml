@@ -1,0 +1,316 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.UITopBar
+  commentId: T:Gameplay.UI.UITopBar
+  id: UITopBar
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.UITopBar.attemptsLabel
+  - Gameplay.UI.UITopBar.gameModeLabel
+  - Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
+  - Gameplay.UI.UITopBar.SetCurrentLabel(System.String)
+  - Gameplay.UI.UITopBar.StartCountdown(System.Single)
+  - Gameplay.UI.UITopBar.statusLabel
+  - Gameplay.UI.UITopBar.UpdateStatus(System.Boolean,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: UITopBar
+  nameWithType: UITopBar
+  fullName: Gameplay.UI.UITopBar
+  type: Class
+  source:
+    id: UITopBar
+    path: ''
+    startLine: 5529
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nTop bar UI controller\n"
+  example: []
+  syntax:
+    content: 'public class UITopBar : MonoBehaviour'
+    content.vb: >-
+      Public Class UITopBar
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.UI.UITopBar.gameModeLabel
+  commentId: F:Gameplay.UI.UITopBar.gameModeLabel
+  id: gameModeLabel
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: gameModeLabel
+  nameWithType: UITopBar.gameModeLabel
+  fullName: Gameplay.UI.UITopBar.gameModeLabel
+  type: Field
+  source:
+    id: gameModeLabel
+    path: ''
+    startLine: 5531
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public TMP_Text gameModeLabel
+    return:
+      type: Global.TMP_Text
+    content.vb: Public gameModeLabel As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.attemptsLabel
+  commentId: F:Gameplay.UI.UITopBar.attemptsLabel
+  id: attemptsLabel
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: attemptsLabel
+  nameWithType: UITopBar.attemptsLabel
+  fullName: Gameplay.UI.UITopBar.attemptsLabel
+  type: Field
+  source:
+    id: attemptsLabel
+    path: ''
+    startLine: 5532
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public TMP_Text attemptsLabel
+    return:
+      type: Global.TMP_Text
+    content.vb: Public attemptsLabel As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.statusLabel
+  commentId: F:Gameplay.UI.UITopBar.statusLabel
+  id: statusLabel
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: statusLabel
+  nameWithType: UITopBar.statusLabel
+  fullName: Gameplay.UI.UITopBar.statusLabel
+  type: Field
+  source:
+    id: statusLabel
+    path: ''
+    startLine: 5533
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public TMP_Text statusLabel
+    return:
+      type: Global.TMP_Text
+    content.vb: Public statusLabel As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.SetCurrentLabel(System.String)
+  commentId: M:Gameplay.UI.UITopBar.SetCurrentLabel(System.String)
+  id: SetCurrentLabel(System.String)
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentLabel(String)
+  nameWithType: UITopBar.SetCurrentLabel(String)
+  fullName: Gameplay.UI.UITopBar.SetCurrentLabel(System.String)
+  type: Method
+  source:
+    id: SetCurrentLabel
+    path: ''
+    startLine: 5539
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public void SetCurrentLabel(string text)
+    parameters:
+    - id: text
+      type: System.String
+    content.vb: Public Sub SetCurrentLabel(text As String)
+  overload: Gameplay.UI.UITopBar.SetCurrentLabel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
+  commentId: M:Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
+  id: SetCurrentAttempts(System.Int32)
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: SetCurrentAttempts(Int32)
+  nameWithType: UITopBar.SetCurrentAttempts(Int32)
+  fullName: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
+  type: Method
+  source:
+    id: SetCurrentAttempts
+    path: ''
+    startLine: 5544
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public void SetCurrentAttempts(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SetCurrentAttempts(value As Integer)
+  overload: Gameplay.UI.UITopBar.SetCurrentAttempts*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.UpdateStatus(System.Boolean,System.Int32,System.Int32)
+  commentId: M:Gameplay.UI.UITopBar.UpdateStatus(System.Boolean,System.Int32,System.Int32)
+  id: UpdateStatus(System.Boolean,System.Int32,System.Int32)
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: UpdateStatus(Boolean, Int32, Int32)
+  nameWithType: UITopBar.UpdateStatus(Boolean, Int32, Int32)
+  fullName: Gameplay.UI.UITopBar.UpdateStatus(System.Boolean, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: UpdateStatus
+    path: ''
+    startLine: 5549
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public void UpdateStatus(bool lastCorrect, int current, int total)
+    parameters:
+    - id: lastCorrect
+      type: System.Boolean
+    - id: current
+      type: System.Int32
+    - id: total
+      type: System.Int32
+    content.vb: Public Sub UpdateStatus(lastCorrect As Boolean, current As Integer, total As Integer)
+  overload: Gameplay.UI.UITopBar.UpdateStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UITopBar.StartCountdown(System.Single)
+  commentId: M:Gameplay.UI.UITopBar.StartCountdown(System.Single)
+  id: StartCountdown(System.Single)
+  parent: Gameplay.UI.UITopBar
+  langs:
+  - csharp
+  - vb
+  name: StartCountdown(Single)
+  nameWithType: UITopBar.StartCountdown(Single)
+  fullName: Gameplay.UI.UITopBar.StartCountdown(System.Single)
+  type: Method
+  source:
+    id: StartCountdown
+    path: ''
+    startLine: 5558
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public void StartCountdown(float time)
+    parameters:
+    - id: time
+      type: System.Single
+    content.vb: Public Sub StartCountdown(time As Single)
+  overload: Gameplay.UI.UITopBar.StartCountdown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Gameplay.UI.UITopBar.SetCurrentLabel*
+  commentId: Overload:Gameplay.UI.UITopBar.SetCurrentLabel
+  name: SetCurrentLabel
+  nameWithType: UITopBar.SetCurrentLabel
+  fullName: Gameplay.UI.UITopBar.SetCurrentLabel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.UI.UITopBar.SetCurrentAttempts*
+  commentId: Overload:Gameplay.UI.UITopBar.SetCurrentAttempts
+  name: SetCurrentAttempts
+  nameWithType: UITopBar.SetCurrentAttempts
+  fullName: Gameplay.UI.UITopBar.SetCurrentAttempts
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.UI.UITopBar.UpdateStatus*
+  commentId: Overload:Gameplay.UI.UITopBar.UpdateStatus
+  name: UpdateStatus
+  nameWithType: UITopBar.UpdateStatus
+  fullName: Gameplay.UI.UITopBar.UpdateStatus
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.UI.UITopBar.StartCountdown*
+  commentId: Overload:Gameplay.UI.UITopBar.StartCountdown
+  name: StartCountdown
+  nameWithType: UITopBar.StartCountdown
+  fullName: Gameplay.UI.UITopBar.StartCountdown
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

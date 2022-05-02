@@ -1,0 +1,345 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.Area
+  commentId: T:Gameplay.MetroDisplay.Model.Area
+  id: Area
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.Area.#ctor(List{Vector2})
+  - Gameplay.MetroDisplay.Model.Area.#ctor(System.Boolean)
+  - Gameplay.MetroDisplay.Model.Area.everywhere
+  - Gameplay.MetroDisplay.Model.Area.Everywhere
+  - Gameplay.MetroDisplay.Model.Area.points
+  - Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: Area
+  fullName: Gameplay.MetroDisplay.Model.Area
+  type: Class
+  source:
+    id: Area
+    path: ''
+    startLine: 3041
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nDefines a area of the metro.\n"
+  example: []
+  syntax:
+    content: public class Area
+    content.vb: Public Class Area
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.Area.Everywhere
+  commentId: F:Gameplay.MetroDisplay.Model.Area.Everywhere
+  id: Everywhere
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: Everywhere
+  nameWithType: Area.Everywhere
+  fullName: Gameplay.MetroDisplay.Model.Area.Everywhere
+  type: Field
+  source:
+    id: Everywhere
+    path: ''
+    startLine: 3044
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static readonly Area Everywhere
+    return:
+      type: Gameplay.MetroDisplay.Model.Area
+    content.vb: Public Shared ReadOnly Everywhere As Area
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.Model.Area.points
+  commentId: F:Gameplay.MetroDisplay.Model.Area.points
+  id: points
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: points
+  nameWithType: Area.points
+  fullName: Gameplay.MetroDisplay.Model.Area.points
+  type: Field
+  source:
+    id: points
+    path: ''
+    startLine: 3049
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nSet of points that define this area polygon\n"
+  example: []
+  syntax:
+    content: public List<Vector2> points
+    return:
+      type: Global.List{Vector2}
+    content.vb: Public points As List(Of Vector2)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Area.everywhere
+  commentId: F:Gameplay.MetroDisplay.Model.Area.everywhere
+  id: everywhere
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: everywhere
+  nameWithType: Area.everywhere
+  fullName: Gameplay.MetroDisplay.Model.Area.everywhere
+  type: Field
+  source:
+    id: everywhere
+    path: ''
+    startLine: 3050
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool everywhere
+    return:
+      type: System.Boolean
+    content.vb: Public everywhere As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Area.#ctor(System.Boolean)
+  commentId: M:Gameplay.MetroDisplay.Model.Area.#ctor(System.Boolean)
+  id: '#ctor(System.Boolean)'
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: Area(Boolean)
+  nameWithType: Area.Area(Boolean)
+  fullName: Gameplay.MetroDisplay.Model.Area.Area(System.Boolean)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3052
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Area(bool everywhere)
+    parameters:
+    - id: everywhere
+      type: System.Boolean
+    content.vb: Public Sub New(everywhere As Boolean)
+  overload: Gameplay.MetroDisplay.Model.Area.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Area.#ctor(List{Vector2})
+  commentId: M:Gameplay.MetroDisplay.Model.Area.#ctor(List{Vector2})
+  id: '#ctor(List{Vector2})'
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: Area(List<Vector2>)
+  nameWithType: Area.Area(List<Vector2>)
+  fullName: Gameplay.MetroDisplay.Model.Area.Area(List<Vector2>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3058
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Area(List<Vector2> points)
+    parameters:
+    - id: points
+      type: Global.List{Vector2}
+    content.vb: Public Sub New(points As List(Of Vector2))
+  overload: Gameplay.MetroDisplay.Model.Area.#ctor*
+  nameWithType.vb: Area.Area(List(Of Vector2))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.MetroDisplay.Model.Area.Area(List(Of Vector2))
+  name.vb: Area(List(Of Vector2))
+- uid: Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
+  commentId: M:Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
+  id: SetFromSpline(SpriteShapeController)
+  parent: Gameplay.MetroDisplay.Model.Area
+  langs:
+  - csharp
+  - vb
+  name: SetFromSpline(SpriteShapeController)
+  nameWithType: Area.SetFromSpline(SpriteShapeController)
+  fullName: Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
+  type: Method
+  source:
+    id: SetFromSpline
+    path: ''
+    startLine: 3064
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public void SetFromSpline(SpriteShapeController shapeController)
+    parameters:
+    - id: shapeController
+      type: Global.SpriteShapeController
+    content.vb: Public Sub SetFromSpline(shapeController As SpriteShapeController)
+  overload: Gameplay.MetroDisplay.Model.Area.SetFromSpline*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.MetroDisplay.Model.Area
+  commentId: T:Gameplay.MetroDisplay.Model.Area
+  parent: Gameplay.MetroDisplay.Model
+  name: Area
+  nameWithType: Area
+  fullName: Gameplay.MetroDisplay.Model.Area
+- uid: Global.List{Vector2}
+  commentId: '!:Global.List{Vector2}'
+  definition: Global.List`1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: List<Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: List(Of Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.Vector2
+    name: Vector2
+    nameWithType: Vector2
+    fullName: Vector2
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.MetroDisplay.Model.Area.#ctor*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Area.#ctor
+  name: Area
+  nameWithType: Area.Area
+  fullName: Gameplay.MetroDisplay.Model.Area.Area
+- uid: Gameplay.MetroDisplay.Model.Area.SetFromSpline*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Area.SetFromSpline
+  name: SetFromSpline
+  nameWithType: Area.SetFromSpline
+  fullName: Gameplay.MetroDisplay.Model.Area.SetFromSpline
+- uid: Global.SpriteShapeController
+  isExternal: true
+  name: SpriteShapeController
+  nameWithType: SpriteShapeController
+  fullName: SpriteShapeController

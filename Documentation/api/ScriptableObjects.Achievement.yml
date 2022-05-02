@@ -1,0 +1,351 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.Achievement
+  commentId: T:ScriptableObjects.Achievement
+  id: Achievement
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.Achievement.description
+  - ScriptableObjects.Achievement.icon
+  - ScriptableObjects.Achievement.id
+  - ScriptableObjects.Achievement.index
+  - ScriptableObjects.Achievement.ItemId
+  - ScriptableObjects.Achievement.name
+  langs:
+  - csharp
+  - vb
+  name: Achievement
+  nameWithType: Achievement
+  fullName: ScriptableObjects.Achievement
+  type: Class
+  source:
+    id: Achievement
+    path: ''
+    startLine: 4579
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nDefines an achievement\n"
+  example: []
+  syntax:
+    content: 'public class Achievement : GenericItem'
+    content.vb: >-
+      Public Class Achievement
+          Implements GenericItem
+  inheritance:
+  - System.Object
+  implements:
+  - ScriptableObjects.GenericItem
+  - Global.IIndexable{System.String}
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ScriptableObjects.Achievement.name
+  commentId: F:ScriptableObjects.Achievement.name
+  id: name
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: Achievement.name
+  fullName: ScriptableObjects.Achievement.name
+  type: Field
+  source:
+    id: name
+    path: ''
+    startLine: 4582
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Achievement.id
+  commentId: F:ScriptableObjects.Achievement.id
+  id: id
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: id
+  nameWithType: Achievement.id
+  fullName: ScriptableObjects.Achievement.id
+  type: Field
+  source:
+    id: id
+    path: ''
+    startLine: 4583
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string id
+    return:
+      type: System.String
+    content.vb: Public id As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Achievement.description
+  commentId: F:ScriptableObjects.Achievement.description
+  id: description
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: Achievement.description
+  fullName: ScriptableObjects.Achievement.description
+  type: Field
+  source:
+    id: description
+    path: ''
+    startLine: 4584
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string description
+    return:
+      type: System.String
+    content.vb: Public description As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Achievement.icon
+  commentId: F:ScriptableObjects.Achievement.icon
+  id: icon
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: icon
+  nameWithType: Achievement.icon
+  fullName: ScriptableObjects.Achievement.icon
+  type: Field
+  source:
+    id: icon
+    path: ''
+    startLine: 4585
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Sprite icon
+    return:
+      type: Global.Sprite
+    content.vb: Public icon As Sprite
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Achievement.ItemId
+  commentId: P:ScriptableObjects.Achievement.ItemId
+  id: ItemId
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: ItemId
+  nameWithType: Achievement.ItemId
+  fullName: ScriptableObjects.Achievement.ItemId
+  type: Property
+  source:
+    id: ItemId
+    path: ''
+    startLine: 4587
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string ItemId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ItemId As String
+  overload: ScriptableObjects.Achievement.ItemId*
+  implements:
+  - ScriptableObjects.GenericItem.ItemId
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ScriptableObjects.Achievement.index
+  commentId: P:ScriptableObjects.Achievement.index
+  id: index
+  parent: ScriptableObjects.Achievement
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: Achievement.index
+  fullName: ScriptableObjects.Achievement.index
+  type: Property
+  source:
+    id: index
+    path: ''
+    startLine: 4588
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string index { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property index As String
+  overload: ScriptableObjects.Achievement.index*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ScriptableObjects.GenericItem
+  commentId: T:ScriptableObjects.GenericItem
+  parent: ScriptableObjects
+  name: GenericItem
+  nameWithType: GenericItem
+  fullName: ScriptableObjects.GenericItem
+- uid: Global.IIndexable{System.String}
+  commentId: '!:Global.IIndexable{System.String}'
+  definition: Global.IIndexable`1
+  name: IIndexable<String>
+  nameWithType: IIndexable<String>
+  fullName: IIndexable<System.String>
+  nameWithType.vb: IIndexable(Of String)
+  fullName.vb: IIndexable(Of System.String)
+  name.vb: IIndexable(Of String)
+  spec.csharp:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.IIndexable`1
+  isExternal: true
+  name: IIndexable<>
+  nameWithType: IIndexable<>
+  fullName: IIndexable<>
+  nameWithType.vb: IIndexable(Of )
+  fullName.vb: IIndexable(Of )
+  name.vb: IIndexable(Of )
+  spec.csharp:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Global.Sprite
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: Sprite
+- uid: ScriptableObjects.Achievement.ItemId*
+  commentId: Overload:ScriptableObjects.Achievement.ItemId
+  name: ItemId
+  nameWithType: Achievement.ItemId
+  fullName: ScriptableObjects.Achievement.ItemId
+- uid: ScriptableObjects.GenericItem.ItemId
+  commentId: P:ScriptableObjects.GenericItem.ItemId
+  parent: ScriptableObjects.GenericItem
+  name: ItemId
+  nameWithType: GenericItem.ItemId
+  fullName: ScriptableObjects.GenericItem.ItemId
+- uid: ScriptableObjects.Achievement.index*
+  commentId: Overload:ScriptableObjects.Achievement.index
+  name: index
+  nameWithType: Achievement.index
+  fullName: ScriptableObjects.Achievement.index

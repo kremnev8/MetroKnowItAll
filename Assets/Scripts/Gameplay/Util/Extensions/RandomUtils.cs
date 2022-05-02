@@ -14,7 +14,7 @@ namespace Util
         /// Generate a number between min and max with a filter
         /// </summary>
         /// <param name="filter">Filter function, if function returns false for a number, it will not be included into random set</param>
-        /// <exception cref="ArgumentException"> thrown if all numbers were excluded</exception>
+        /// <exception cref="System.ArgumentException"> thrown if all numbers were excluded</exception>
         public static int ConstrainedRandom(Func<int, bool> filter, int min, int max)
         {
             int[] items = Enumerable.Range(min, max - min).Where(filter).ToArray();
@@ -27,7 +27,7 @@ namespace Util
         /// Generate a number between min and max with a filter
         /// </summary>
         /// <param name="blacklist">Any numbers in this list will no be added to random set</param>
-        /// <exception cref="ArgumentException"> thrown if all numbers were excluded</exception>
+        /// <exception cref="System.ArgumentException"> thrown if all numbers were excluded</exception>
         public static int ConstrainedRandom(this List<int> blacklist, int min, int max)
         {
             int[] items = Enumerable.Range(min, max - min).Where(i => !blacklist.Contains(i)).ToArray();
@@ -39,7 +39,7 @@ namespace Util
         /// <summary>
         /// Generate a number between min and max excluding a single number
         /// </summary>
-        /// <exception cref="ArgumentException"> thrown if all numbers were excluded</exception>
+        /// <exception cref="System.ArgumentException"> thrown if all numbers were excluded</exception>
         public static int ConstrainedRandom(this byte exclude, int min, int max)
         {
             return ConstrainedRandom(num => num != exclude, min, max);

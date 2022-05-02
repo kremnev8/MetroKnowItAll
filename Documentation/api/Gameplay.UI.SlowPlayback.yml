@@ -1,0 +1,146 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.SlowPlayback
+  commentId: T:Gameplay.UI.SlowPlayback
+  id: SlowPlayback
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.SlowPlayback.currentTime
+  - Gameplay.UI.SlowPlayback.maxTime
+  - Gameplay.UI.SlowPlayback.speed
+  langs:
+  - csharp
+  - vb
+  name: SlowPlayback
+  nameWithType: SlowPlayback
+  fullName: Gameplay.UI.SlowPlayback
+  type: Class
+  source:
+    id: SlowPlayback
+    path: ''
+    startLine: 5392
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nUtility to control how fast PlayableDirector plays the timeline\n"
+  example: []
+  syntax:
+    content: 'public class SlowPlayback : MonoBehaviour'
+    content.vb: >-
+      Public Class SlowPlayback
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.UI.SlowPlayback.speed
+  commentId: F:Gameplay.UI.SlowPlayback.speed
+  id: speed
+  parent: Gameplay.UI.SlowPlayback
+  langs:
+  - csharp
+  - vb
+  name: speed
+  nameWithType: SlowPlayback.speed
+  fullName: Gameplay.UI.SlowPlayback.speed
+  type: Field
+  source:
+    id: speed
+    path: ''
+    startLine: 5394
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float speed
+    return:
+      type: System.Single
+    content.vb: Public speed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.SlowPlayback.currentTime
+  commentId: F:Gameplay.UI.SlowPlayback.currentTime
+  id: currentTime
+  parent: Gameplay.UI.SlowPlayback
+  langs:
+  - csharp
+  - vb
+  name: currentTime
+  nameWithType: SlowPlayback.currentTime
+  fullName: Gameplay.UI.SlowPlayback.currentTime
+  type: Field
+  source:
+    id: currentTime
+    path: ''
+    startLine: 5395
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float currentTime
+    return:
+      type: System.Single
+    content.vb: Public currentTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.SlowPlayback.maxTime
+  commentId: F:Gameplay.UI.SlowPlayback.maxTime
+  id: maxTime
+  parent: Gameplay.UI.SlowPlayback
+  langs:
+  - csharp
+  - vb
+  name: maxTime
+  nameWithType: SlowPlayback.maxTime
+  fullName: Gameplay.UI.SlowPlayback.maxTime
+  type: Field
+  source:
+    id: maxTime
+    path: ''
+    startLine: 5396
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float maxTime
+    return:
+      type: System.Single
+    content.vb: Public maxTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

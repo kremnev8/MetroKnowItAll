@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Health.IntEvent
+  commentId: T:Gameplay.Health.IntEvent
+  id: Health.IntEvent
+  parent: Gameplay
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Health.IntEvent
+  nameWithType: Health.IntEvent
+  fullName: Gameplay.Health.IntEvent
+  type: Class
+  source:
+    id: IntEvent
+    path: ''
+    startLine: 997
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: 'public class IntEvent : UnityEvent<int>'
+    content.vb: >-
+      Public Class IntEvent
+          Inherits UnityEvent(Of Integer)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

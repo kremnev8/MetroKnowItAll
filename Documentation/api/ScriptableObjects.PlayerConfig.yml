@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.PlayerConfig
+  commentId: T:ScriptableObjects.PlayerConfig
+  id: PlayerConfig
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.PlayerConfig.friction
+  - ScriptableObjects.PlayerConfig.maxZoom
+  - ScriptableObjects.PlayerConfig.minZoom
+  - ScriptableObjects.PlayerConfig.moveSmoothTime
+  - ScriptableObjects.PlayerConfig.normalMaxSpeed
+  - ScriptableObjects.PlayerConfig.normalSmoothTime
+  - ScriptableObjects.PlayerConfig.scrollSensitivity
+  - ScriptableObjects.PlayerConfig.zoomSpeed
+  langs:
+  - csharp
+  - vb
+  name: PlayerConfig
+  nameWithType: PlayerConfig
+  fullName: ScriptableObjects.PlayerConfig
+  type: Class
+  source:
+    id: PlayerConfig
+    path: ''
+    startLine: 4730
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nPlayer default controls configuration\n"
+  example: []
+  syntax:
+    content: 'public class PlayerConfig : ScriptableObject'
+    content.vb: >-
+      Public Class PlayerConfig
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ScriptableObjects.PlayerConfig.zoomSpeed
+  commentId: F:ScriptableObjects.PlayerConfig.zoomSpeed
+  id: zoomSpeed
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: zoomSpeed
+  nameWithType: PlayerConfig.zoomSpeed
+  fullName: ScriptableObjects.PlayerConfig.zoomSpeed
+  type: Field
+  source:
+    id: zoomSpeed
+    path: ''
+    startLine: 4734
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float zoomSpeed
+    return:
+      type: System.Single
+    content.vb: Public zoomSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.minZoom
+  commentId: F:ScriptableObjects.PlayerConfig.minZoom
+  id: minZoom
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: minZoom
+  nameWithType: PlayerConfig.minZoom
+  fullName: ScriptableObjects.PlayerConfig.minZoom
+  type: Field
+  source:
+    id: minZoom
+    path: ''
+    startLine: 4735
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float minZoom
+    return:
+      type: System.Single
+    content.vb: Public minZoom As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.maxZoom
+  commentId: F:ScriptableObjects.PlayerConfig.maxZoom
+  id: maxZoom
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: maxZoom
+  nameWithType: PlayerConfig.maxZoom
+  fullName: ScriptableObjects.PlayerConfig.maxZoom
+  type: Field
+  source:
+    id: maxZoom
+    path: ''
+    startLine: 4736
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float maxZoom
+    return:
+      type: System.Single
+    content.vb: Public maxZoom As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.scrollSensitivity
+  commentId: F:ScriptableObjects.PlayerConfig.scrollSensitivity
+  id: scrollSensitivity
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: scrollSensitivity
+  nameWithType: PlayerConfig.scrollSensitivity
+  fullName: ScriptableObjects.PlayerConfig.scrollSensitivity
+  type: Field
+  source:
+    id: scrollSensitivity
+    path: ''
+    startLine: 4738
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float scrollSensitivity
+    return:
+      type: System.Single
+    content.vb: Public scrollSensitivity As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.normalMaxSpeed
+  commentId: F:ScriptableObjects.PlayerConfig.normalMaxSpeed
+  id: normalMaxSpeed
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: normalMaxSpeed
+  nameWithType: PlayerConfig.normalMaxSpeed
+  fullName: ScriptableObjects.PlayerConfig.normalMaxSpeed
+  type: Field
+  source:
+    id: normalMaxSpeed
+    path: ''
+    startLine: 4741
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float normalMaxSpeed
+    return:
+      type: System.Single
+    content.vb: Public normalMaxSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.moveSmoothTime
+  commentId: F:ScriptableObjects.PlayerConfig.moveSmoothTime
+  id: moveSmoothTime
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: moveSmoothTime
+  nameWithType: PlayerConfig.moveSmoothTime
+  fullName: ScriptableObjects.PlayerConfig.moveSmoothTime
+  type: Field
+  source:
+    id: moveSmoothTime
+    path: ''
+    startLine: 4742
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float moveSmoothTime
+    return:
+      type: System.Single
+    content.vb: Public moveSmoothTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.normalSmoothTime
+  commentId: F:ScriptableObjects.PlayerConfig.normalSmoothTime
+  id: normalSmoothTime
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: normalSmoothTime
+  nameWithType: PlayerConfig.normalSmoothTime
+  fullName: ScriptableObjects.PlayerConfig.normalSmoothTime
+  type: Field
+  source:
+    id: normalSmoothTime
+    path: ''
+    startLine: 4743
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float normalSmoothTime
+    return:
+      type: System.Single
+    content.vb: Public normalSmoothTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.PlayerConfig.friction
+  commentId: F:ScriptableObjects.PlayerConfig.friction
+  id: friction
+  parent: ScriptableObjects.PlayerConfig
+  langs:
+  - csharp
+  - vb
+  name: friction
+  nameWithType: PlayerConfig.friction
+  fullName: ScriptableObjects.PlayerConfig.friction
+  type: Field
+  source:
+    id: friction
+    path: ''
+    startLine: 4744
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public float friction
+    return:
+      type: System.Single
+    content.vb: Public friction As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

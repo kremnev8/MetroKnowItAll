@@ -1,0 +1,341 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  id: BaseQuestionGenerator
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  - Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  - Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  - Gameplay.Questions.BaseQuestionGenerator.metro
+  - Gameplay.Questions.BaseQuestionGenerator.renderer
+  - Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  - Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  langs:
+  - csharp
+  - vb
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+  type: Class
+  source:
+    id: BaseQuestionGenerator
+    path: ''
+    startLine: 3771
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nBase class for all question generators\n"
+  example: []
+  syntax:
+    content: public abstract class BaseQuestionGenerator
+    content.vb: Public MustInherit Class BaseQuestionGenerator
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Gameplay.Questions.QuestionGenerator`1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Gameplay.Questions.BaseQuestionGenerator.renderer
+  commentId: F:Gameplay.Questions.BaseQuestionGenerator.renderer
+  id: renderer
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: BaseQuestionGenerator.renderer
+  fullName: Gameplay.Questions.BaseQuestionGenerator.renderer
+  type: Field
+  source:
+    id: renderer
+    path: ''
+    startLine: 3773
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public MetroRenderer renderer
+    return:
+      type: Global.MetroRenderer
+    content.vb: Public renderer As MetroRenderer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.BaseQuestionGenerator.metro
+  commentId: F:Gameplay.Questions.BaseQuestionGenerator.metro
+  id: metro
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: metro
+  nameWithType: BaseQuestionGenerator.metro
+  fullName: Gameplay.Questions.BaseQuestionGenerator.metro
+  type: Field
+  source:
+    id: metro
+    path: ''
+    startLine: 3774
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Metro metro
+    return:
+      type: Global.Metro
+    content.vb: Public metro As Metro
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  id: Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: Init(MetroRenderer, BaseUIQuestion)
+  nameWithType: BaseQuestionGenerator.Init(MetroRenderer, BaseUIQuestion)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer, Gameplay.Questions.BaseUIQuestion)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 3776
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public virtual void Init(MetroRenderer _renderer, BaseUIQuestion root)
+    parameters:
+    - id: _renderer
+      type: Global.MetroRenderer
+    - id: root
+      type: Gameplay.Questions.BaseUIQuestion
+    content.vb: Public Overridable Sub Init(_renderer As MetroRenderer, root As BaseUIQuestion)
+  overload: Gameplay.Questions.BaseQuestionGenerator.Init*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  id: SetRegion(Region)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: SetRegion(Region)
+  nameWithType: BaseQuestionGenerator.SetRegion(Region)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  type: Method
+  source:
+    id: SetRegion
+    path: ''
+    startLine: 3782
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public abstract void SetRegion(Region region)
+    parameters:
+    - id: region
+      type: Global.Region
+    content.vb: Public MustOverride Sub SetRegion(region As Region)
+  overload: Gameplay.Questions.BaseQuestionGenerator.SetRegion*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  id: GenerateNew
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateNew()
+  nameWithType: BaseQuestionGenerator.GenerateNew()
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateNew()
+  type: Method
+  source:
+    id: GenerateNew
+    path: ''
+    startLine: 3784
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public abstract void GenerateNew()
+    content.vb: Public MustOverride Sub GenerateNew
+  overload: Gameplay.Questions.BaseQuestionGenerator.GenerateNew*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  id: GenerateTip(System.Int32)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: GenerateTip(Int32)
+  nameWithType: BaseQuestionGenerator.GenerateTip(Int32)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  type: Method
+  source:
+    id: GenerateTip
+    path: ''
+    startLine: 3785
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public abstract string GenerateTip(int tipNumber)
+    parameters:
+    - id: tipNumber
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public MustOverride Function GenerateTip(tipNumber As Integer) As String
+  overload: Gameplay.Questions.BaseQuestionGenerator.GenerateTip*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  id: ValidateAnswer
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  langs:
+  - csharp
+  - vb
+  name: ValidateAnswer()
+  nameWithType: BaseQuestionGenerator.ValidateAnswer()
+  fullName: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer()
+  type: Method
+  source:
+    id: ValidateAnswer
+    path: ''
+    startLine: 3786
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public abstract bool ValidateAnswer()
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function ValidateAnswer As Boolean
+  overload: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.MetroRenderer
+  isExternal: true
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: MetroRenderer
+- uid: Global.Metro
+  commentId: '!:Global.Metro'
+  isExternal: true
+  name: Metro
+  nameWithType: Metro
+  fullName: Metro
+- uid: Gameplay.Questions.BaseQuestionGenerator.Init*
+  commentId: Overload:Gameplay.Questions.BaseQuestionGenerator.Init
+  name: Init
+  nameWithType: BaseQuestionGenerator.Init
+  fullName: Gameplay.Questions.BaseQuestionGenerator.Init
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  parent: Gameplay.Questions
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+- uid: Gameplay.Questions.BaseQuestionGenerator.SetRegion*
+  commentId: Overload:Gameplay.Questions.BaseQuestionGenerator.SetRegion
+  name: SetRegion
+  nameWithType: BaseQuestionGenerator.SetRegion
+  fullName: Gameplay.Questions.BaseQuestionGenerator.SetRegion
+- uid: Global.Region
+  isExternal: true
+  name: Region
+  nameWithType: Region
+  fullName: Region
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateNew*
+  commentId: Overload:Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  name: GenerateNew
+  nameWithType: BaseQuestionGenerator.GenerateNew
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateTip*
+  commentId: Overload:Gameplay.Questions.BaseQuestionGenerator.GenerateTip
+  name: GenerateTip
+  nameWithType: BaseQuestionGenerator.GenerateTip
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateTip
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer*
+  commentId: Overload:Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  name: ValidateAnswer
+  nameWithType: BaseQuestionGenerator.ValidateAnswer
+  fullName: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

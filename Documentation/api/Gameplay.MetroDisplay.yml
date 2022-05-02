@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  id: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.ConnData
+  - Gameplay.MetroDisplay.CrossingDisplay
+  - Gameplay.MetroDisplay.FocusDisplay
+  - Gameplay.MetroDisplay.LineDisplay
+  - Gameplay.MetroDisplay.LineSubDisplay
+  - Gameplay.MetroDisplay.MetroRenderer
+  - Gameplay.MetroDisplay.StationDisplay
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.MetroDisplay.ConnData
+  commentId: T:Gameplay.MetroDisplay.ConnData
+  name: ConnData
+  nameWithType: ConnData
+  fullName: Gameplay.MetroDisplay.ConnData
+- uid: Gameplay.MetroDisplay.CrossingDisplay
+  commentId: T:Gameplay.MetroDisplay.CrossingDisplay
+  name: CrossingDisplay
+  nameWithType: CrossingDisplay
+  fullName: Gameplay.MetroDisplay.CrossingDisplay
+- uid: Gameplay.MetroDisplay.FocusDisplay
+  commentId: T:Gameplay.MetroDisplay.FocusDisplay
+  name: FocusDisplay
+  nameWithType: FocusDisplay
+  fullName: Gameplay.MetroDisplay.FocusDisplay
+- uid: Gameplay.MetroDisplay.LineDisplay
+  commentId: T:Gameplay.MetroDisplay.LineDisplay
+  name: LineDisplay
+  nameWithType: LineDisplay
+  fullName: Gameplay.MetroDisplay.LineDisplay
+- uid: Gameplay.MetroDisplay.LineSubDisplay
+  commentId: T:Gameplay.MetroDisplay.LineSubDisplay
+  parent: Gameplay.MetroDisplay
+  name: LineSubDisplay
+  nameWithType: LineSubDisplay
+  fullName: Gameplay.MetroDisplay.LineSubDisplay
+- uid: Gameplay.MetroDisplay.MetroRenderer
+  commentId: T:Gameplay.MetroDisplay.MetroRenderer
+  parent: Gameplay.MetroDisplay
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: Gameplay.MetroDisplay.MetroRenderer
+- uid: Gameplay.MetroDisplay.StationDisplay
+  commentId: T:Gameplay.MetroDisplay.StationDisplay
+  parent: Gameplay.MetroDisplay
+  name: StationDisplay
+  nameWithType: StationDisplay
+  fullName: Gameplay.MetroDisplay.StationDisplay
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay

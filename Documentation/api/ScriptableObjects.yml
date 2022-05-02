@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  id: ScriptableObjects
+  children:
+  - ScriptableObjects.Achievement
+  - ScriptableObjects.AchievementDB
+  - ScriptableObjects.ColorPalette
+  - ScriptableObjects.GenericDB`1
+  - ScriptableObjects.GenericItem
+  - ScriptableObjects.PlayerConfig
+  - ScriptableObjects.Question
+  - ScriptableObjects.QuestionsDB
+  - ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: ScriptableObjects.Achievement
+  commentId: T:ScriptableObjects.Achievement
+  name: Achievement
+  nameWithType: Achievement
+  fullName: ScriptableObjects.Achievement
+- uid: ScriptableObjects.AchievementDB
+  commentId: T:ScriptableObjects.AchievementDB
+  name: AchievementDB
+  nameWithType: AchievementDB
+  fullName: ScriptableObjects.AchievementDB
+- uid: ScriptableObjects.Theme
+  commentId: T:ScriptableObjects.Theme
+  parent: ScriptableObjects
+  name: Theme
+  nameWithType: Theme
+  fullName: ScriptableObjects.Theme
+- uid: ScriptableObjects.ColorPalette
+  commentId: T:ScriptableObjects.ColorPalette
+  name: ColorPalette
+  nameWithType: ColorPalette
+  fullName: ScriptableObjects.ColorPalette
+- uid: ScriptableObjects.GenericItem
+  commentId: T:ScriptableObjects.GenericItem
+  parent: ScriptableObjects
+  name: GenericItem
+  nameWithType: GenericItem
+  fullName: ScriptableObjects.GenericItem
+- uid: ScriptableObjects.GenericDB`1
+  commentId: T:ScriptableObjects.GenericDB`1
+  name: GenericDB<T>
+  nameWithType: GenericDB<T>
+  fullName: ScriptableObjects.GenericDB<T>
+  nameWithType.vb: GenericDB(Of T)
+  fullName.vb: ScriptableObjects.GenericDB(Of T)
+  name.vb: GenericDB(Of T)
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.PlayerConfig
+  commentId: T:ScriptableObjects.PlayerConfig
+  name: PlayerConfig
+  nameWithType: PlayerConfig
+  fullName: ScriptableObjects.PlayerConfig
+- uid: ScriptableObjects.Question
+  commentId: T:ScriptableObjects.Question
+  name: Question
+  nameWithType: Question
+  fullName: ScriptableObjects.Question
+- uid: ScriptableObjects.QuestionsDB
+  commentId: T:ScriptableObjects.QuestionsDB
+  name: QuestionsDB
+  nameWithType: QuestionsDB
+  fullName: ScriptableObjects.QuestionsDB
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects

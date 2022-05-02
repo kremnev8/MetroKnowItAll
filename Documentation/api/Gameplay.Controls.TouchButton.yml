@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.TouchButton
+  commentId: T:Gameplay.Controls.TouchButton
+  id: TouchButton
+  parent: Gameplay.Controls
+  children:
+  - Gameplay.Controls.TouchButton.camera
+  - Gameplay.Controls.TouchButton.Disable
+  - Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean})
+  - Gameplay.Controls.TouchButton.filter
+  - Gameplay.Controls.TouchButton.GetSelected``1
+  - Gameplay.Controls.TouchButton.isEnabled
+  langs:
+  - csharp
+  - vb
+  name: TouchButton
+  nameWithType: TouchButton
+  fullName: Gameplay.Controls.TouchButton
+  type: Class
+  source:
+    id: TouchButton
+    path: ''
+    startLine: 1225
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  summary: "\nUI control to select objects, like metro stations and lines\n"
+  example: []
+  syntax:
+    content: 'public class TouchButton : MonoBehaviour'
+    content.vb: >-
+      Public Class TouchButton
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Controls.TouchButton.camera
+  commentId: F:Gameplay.Controls.TouchButton.camera
+  id: camera
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: camera
+  nameWithType: TouchButton.camera
+  fullName: Gameplay.Controls.TouchButton.camera
+  type: Field
+  source:
+    id: camera
+    path: ''
+    startLine: 1235
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public Camera camera
+    return:
+      type: Global.Camera
+    content.vb: Public camera As Camera
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.TouchButton.isEnabled
+  commentId: F:Gameplay.Controls.TouchButton.isEnabled
+  id: isEnabled
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: isEnabled
+  nameWithType: TouchButton.isEnabled
+  fullName: Gameplay.Controls.TouchButton.isEnabled
+  type: Field
+  source:
+    id: isEnabled
+    path: ''
+    startLine: 1237
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public bool isEnabled
+    return:
+      type: System.Boolean
+    content.vb: Public isEnabled As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.TouchButton.filter
+  commentId: F:Gameplay.Controls.TouchButton.filter
+  id: filter
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: filter
+  nameWithType: TouchButton.filter
+  fullName: Gameplay.Controls.TouchButton.filter
+  type: Field
+  source:
+    id: filter
+    path: ''
+    startLine: 1238
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public Func<ISelectable, bool> filter
+    return:
+      type: Global.Func{Gameplay.Controls.ISelectable,System.Boolean}
+    content.vb: Public filter As Func(Of ISelectable, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean})
+  commentId: M:Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean})
+  id: Enable(Func{Gameplay.Controls.ISelectable,System.Boolean})
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: Enable(Func<ISelectable, Boolean>)
+  nameWithType: TouchButton.Enable(Func<ISelectable, Boolean>)
+  fullName: Gameplay.Controls.TouchButton.Enable(Func<Gameplay.Controls.ISelectable, System.Boolean>)
+  type: Method
+  source:
+    id: Enable
+    path: ''
+    startLine: 1242
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void Enable(Func<ISelectable, bool> filter)
+    parameters:
+    - id: filter
+      type: Global.Func{Gameplay.Controls.ISelectable,System.Boolean}
+    content.vb: Public Sub Enable(filter As Func(Of ISelectable, Boolean))
+  overload: Gameplay.Controls.TouchButton.Enable*
+  nameWithType.vb: TouchButton.Enable(Func(Of ISelectable, Boolean))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Controls.TouchButton.Enable(Func(Of Gameplay.Controls.ISelectable, System.Boolean))
+  name.vb: Enable(Func(Of ISelectable, Boolean))
+- uid: Gameplay.Controls.TouchButton.Disable
+  commentId: M:Gameplay.Controls.TouchButton.Disable
+  id: Disable
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: Disable()
+  nameWithType: TouchButton.Disable()
+  fullName: Gameplay.Controls.TouchButton.Disable()
+  type: Method
+  source:
+    id: Disable
+    path: ''
+    startLine: 1248
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void Disable()
+    content.vb: Public Sub Disable
+  overload: Gameplay.Controls.TouchButton.Disable*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.TouchButton.GetSelected``1
+  commentId: M:Gameplay.Controls.TouchButton.GetSelected``1
+  id: GetSelected``1
+  parent: Gameplay.Controls.TouchButton
+  langs:
+  - csharp
+  - vb
+  name: GetSelected<T>()
+  nameWithType: TouchButton.GetSelected<T>()
+  fullName: Gameplay.Controls.TouchButton.GetSelected<T>()
+  type: Method
+  source:
+    id: GetSelected
+    path: ''
+    startLine: 1255
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: >-
+      public T GetSelected<T>()
+          where T : class
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function GetSelected(Of T As Class) As T
+  overload: Gameplay.Controls.TouchButton.GetSelected*
+  nameWithType.vb: TouchButton.GetSelected(Of T)()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Controls.TouchButton.GetSelected(Of T)()
+  name.vb: GetSelected(Of T)()
+references:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Camera
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: Camera
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.Func{Gameplay.Controls.ISelectable,System.Boolean}
+  commentId: '!:Global.Func{Gameplay.Controls.ISelectable,System.Boolean}'
+  definition: Global.Func`2
+  name: Func<ISelectable, Boolean>
+  nameWithType: Func<ISelectable, Boolean>
+  fullName: Func<Gameplay.Controls.ISelectable, System.Boolean>
+  nameWithType.vb: Func(Of ISelectable, Boolean)
+  fullName.vb: Func(Of Gameplay.Controls.ISelectable, System.Boolean)
+  name.vb: Func(Of ISelectable, Boolean)
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.Controls.ISelectable
+    name: ISelectable
+    nameWithType: ISelectable
+    fullName: Gameplay.Controls.ISelectable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.Controls.ISelectable
+    name: ISelectable
+    nameWithType: ISelectable
+    fullName: Gameplay.Controls.ISelectable
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Controls.TouchButton.Enable*
+  commentId: Overload:Gameplay.Controls.TouchButton.Enable
+  name: Enable
+  nameWithType: TouchButton.Enable
+  fullName: Gameplay.Controls.TouchButton.Enable
+- uid: Gameplay.Controls.TouchButton.Disable*
+  commentId: Overload:Gameplay.Controls.TouchButton.Disable
+  name: Disable
+  nameWithType: TouchButton.Disable
+  fullName: Gameplay.Controls.TouchButton.Disable
+- uid: Gameplay.Controls.TouchButton.GetSelected*
+  commentId: Overload:Gameplay.Controls.TouchButton.GetSelected
+  name: GetSelected
+  nameWithType: TouchButton.GetSelected
+  fullName: Gameplay.Controls.TouchButton.GetSelected
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

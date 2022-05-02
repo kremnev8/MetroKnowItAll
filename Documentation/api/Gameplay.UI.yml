@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  id: Gameplay.UI
+  children:
+  - Gameplay.UI.CanvasSafeArea
+  - Gameplay.UI.DynamicText
+  - Gameplay.UI.FadeDirection
+  - Gameplay.UI.FadeInOut
+  - Gameplay.UI.PaletteGraphic
+  - Gameplay.UI.SlowPlayback
+  - Gameplay.UI.UIAchievement
+  - Gameplay.UI.UITopBar
+  - Gameplay.UI.VersionText
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.UI.CanvasSafeArea
+  commentId: T:Gameplay.UI.CanvasSafeArea
+  name: CanvasSafeArea
+  nameWithType: CanvasSafeArea
+  fullName: Gameplay.UI.CanvasSafeArea
+- uid: Gameplay.UI.DynamicText
+  commentId: T:Gameplay.UI.DynamicText
+  name: DynamicText
+  nameWithType: DynamicText
+  fullName: Gameplay.UI.DynamicText
+- uid: Gameplay.UI.FadeDirection
+  commentId: T:Gameplay.UI.FadeDirection
+  parent: Gameplay.UI
+  name: FadeDirection
+  nameWithType: FadeDirection
+  fullName: Gameplay.UI.FadeDirection
+- uid: Gameplay.UI.FadeInOut
+  commentId: T:Gameplay.UI.FadeInOut
+  name: FadeInOut
+  nameWithType: FadeInOut
+  fullName: Gameplay.UI.FadeInOut
+- uid: Gameplay.UI.PaletteGraphic
+  commentId: T:Gameplay.UI.PaletteGraphic
+  name: PaletteGraphic
+  nameWithType: PaletteGraphic
+  fullName: Gameplay.UI.PaletteGraphic
+- uid: Gameplay.UI.SlowPlayback
+  commentId: T:Gameplay.UI.SlowPlayback
+  name: SlowPlayback
+  nameWithType: SlowPlayback
+  fullName: Gameplay.UI.SlowPlayback
+- uid: Gameplay.UI.UIAchievement
+  commentId: T:Gameplay.UI.UIAchievement
+  name: UIAchievement
+  nameWithType: UIAchievement
+  fullName: Gameplay.UI.UIAchievement
+- uid: Gameplay.UI.UITopBar
+  commentId: T:Gameplay.UI.UITopBar
+  name: UITopBar
+  nameWithType: UITopBar
+  fullName: Gameplay.UI.UITopBar
+- uid: Gameplay.UI.VersionText
+  commentId: T:Gameplay.UI.VersionText
+  name: VersionText
+  nameWithType: VersionText
+  fullName: Gameplay.UI.VersionText
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI

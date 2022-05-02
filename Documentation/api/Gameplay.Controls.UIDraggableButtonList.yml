@@ -1,0 +1,454 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.UIDraggableButtonList
+  commentId: T:Gameplay.Controls.UIDraggableButtonList
+  id: UIDraggableButtonList
+  parent: Gameplay.Controls
+  children:
+  - Gameplay.Controls.UIDraggableButtonList.buttonPrefab
+  - Gameplay.Controls.UIDraggableButtonList.buttons
+  - Gameplay.Controls.UIDraggableButtonList.ClampPos(System.Single)
+  - Gameplay.Controls.UIDraggableButtonList.maxPos
+  - Gameplay.Controls.UIDraggableButtonList.minPos
+  - Gameplay.Controls.UIDraggableButtonList.Move(System.Int32,System.Int32)
+  - Gameplay.Controls.UIDraggableButtonList.onChanged
+  - Gameplay.Controls.UIDraggableButtonList.SetData(List{INamedArrayElement})
+  langs:
+  - csharp
+  - vb
+  name: UIDraggableButtonList
+  nameWithType: UIDraggableButtonList
+  fullName: Gameplay.Controls.UIDraggableButtonList
+  type: Class
+  source:
+    id: UIDraggableButtonList
+    path: ''
+    startLine: 1674
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  summary: "\nList of buttons that allow to rearrange the data\n"
+  example: []
+  syntax:
+    content: 'public class UIDraggableButtonList : MonoBehaviour'
+    content.vb: >-
+      Public Class UIDraggableButtonList
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Controls.UIDraggableButtonList.buttons
+  commentId: F:Gameplay.Controls.UIDraggableButtonList.buttons
+  id: buttons
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: buttons
+  nameWithType: UIDraggableButtonList.buttons
+  fullName: Gameplay.Controls.UIDraggableButtonList.buttons
+  type: Field
+  source:
+    id: buttons
+    path: ''
+    startLine: 1677
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public List<UIDragableButton> buttons
+    return:
+      type: Global.List{Gameplay.Controls.UIDragableButton}
+    content.vb: Public buttons As List(Of UIDragableButton)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.minPos
+  commentId: F:Gameplay.Controls.UIDraggableButtonList.minPos
+  id: minPos
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: minPos
+  nameWithType: UIDraggableButtonList.minPos
+  fullName: Gameplay.Controls.UIDraggableButtonList.minPos
+  type: Field
+  source:
+    id: minPos
+    path: ''
+    startLine: 1679
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float minPos
+    return:
+      type: System.Single
+    content.vb: Public minPos As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.maxPos
+  commentId: F:Gameplay.Controls.UIDraggableButtonList.maxPos
+  id: maxPos
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: maxPos
+  nameWithType: UIDraggableButtonList.maxPos
+  fullName: Gameplay.Controls.UIDraggableButtonList.maxPos
+  type: Field
+  source:
+    id: maxPos
+    path: ''
+    startLine: 1680
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float maxPos
+    return:
+      type: System.Single
+    content.vb: Public maxPos As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.buttonPrefab
+  commentId: F:Gameplay.Controls.UIDraggableButtonList.buttonPrefab
+  id: buttonPrefab
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: buttonPrefab
+  nameWithType: UIDraggableButtonList.buttonPrefab
+  fullName: Gameplay.Controls.UIDraggableButtonList.buttonPrefab
+  type: Field
+  source:
+    id: buttonPrefab
+    path: ''
+    startLine: 1682
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public UIDragableButton buttonPrefab
+    return:
+      type: Gameplay.Controls.UIDragableButton
+    content.vb: Public buttonPrefab As UIDragableButton
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.onChanged
+  commentId: F:Gameplay.Controls.UIDraggableButtonList.onChanged
+  id: onChanged
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: onChanged
+  nameWithType: UIDraggableButtonList.onChanged
+  fullName: Gameplay.Controls.UIDraggableButtonList.onChanged
+  type: Field
+  source:
+    id: onChanged
+    path: ''
+    startLine: 1683
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public UnityEvent onChanged
+    return:
+      type: Global.UnityEvent
+    content.vb: Public onChanged As UnityEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.SetData(List{INamedArrayElement})
+  commentId: M:Gameplay.Controls.UIDraggableButtonList.SetData(List{INamedArrayElement})
+  id: SetData(List{INamedArrayElement})
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: SetData(List<INamedArrayElement>)
+  nameWithType: UIDraggableButtonList.SetData(List<INamedArrayElement>)
+  fullName: Gameplay.Controls.UIDraggableButtonList.SetData(List<INamedArrayElement>)
+  type: Method
+  source:
+    id: SetData
+    path: ''
+    startLine: 1687
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void SetData(List<INamedArrayElement> elements)
+    parameters:
+    - id: elements
+      type: Global.List{INamedArrayElement}
+    content.vb: Public Sub SetData(elements As List(Of INamedArrayElement))
+  overload: Gameplay.Controls.UIDraggableButtonList.SetData*
+  nameWithType.vb: UIDraggableButtonList.SetData(List(Of INamedArrayElement))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Controls.UIDraggableButtonList.SetData(List(Of INamedArrayElement))
+  name.vb: SetData(List(Of INamedArrayElement))
+- uid: Gameplay.Controls.UIDraggableButtonList.ClampPos(System.Single)
+  commentId: M:Gameplay.Controls.UIDraggableButtonList.ClampPos(System.Single)
+  id: ClampPos(System.Single)
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: ClampPos(Single)
+  nameWithType: UIDraggableButtonList.ClampPos(Single)
+  fullName: Gameplay.Controls.UIDraggableButtonList.ClampPos(System.Single)
+  type: Method
+  source:
+    id: ClampPos
+    path: ''
+    startLine: 1730
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float ClampPos(float pos)
+    parameters:
+    - id: pos
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function ClampPos(pos As Single) As Single
+  overload: Gameplay.Controls.UIDraggableButtonList.ClampPos*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UIDraggableButtonList.Move(System.Int32,System.Int32)
+  commentId: M:Gameplay.Controls.UIDraggableButtonList.Move(System.Int32,System.Int32)
+  id: Move(System.Int32,System.Int32)
+  parent: Gameplay.Controls.UIDraggableButtonList
+  langs:
+  - csharp
+  - vb
+  name: Move(Int32, Int32)
+  nameWithType: UIDraggableButtonList.Move(Int32, Int32)
+  fullName: Gameplay.Controls.UIDraggableButtonList.Move(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Move
+    path: ''
+    startLine: 1736
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void Move(int oldIndex, int newIndex)
+    parameters:
+    - id: oldIndex
+      type: System.Int32
+    - id: newIndex
+      type: System.Int32
+    content.vb: Public Sub Move(oldIndex As Integer, newIndex As Integer)
+  overload: Gameplay.Controls.UIDraggableButtonList.Move*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Gameplay.Controls.UIDragableButton}
+  commentId: '!:Global.List{Gameplay.Controls.UIDragableButton}'
+  definition: Global.List`1
+  name: List<UIDragableButton>
+  nameWithType: List<UIDragableButton>
+  fullName: List<Gameplay.Controls.UIDragableButton>
+  nameWithType.vb: List(Of UIDragableButton)
+  fullName.vb: List(Of Gameplay.Controls.UIDragableButton)
+  name.vb: List(Of UIDragableButton)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.Controls.UIDragableButton
+    name: UIDragableButton
+    nameWithType: UIDragableButton
+    fullName: Gameplay.Controls.UIDragableButton
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.Controls.UIDragableButton
+    name: UIDragableButton
+    nameWithType: UIDragableButton
+    fullName: Gameplay.Controls.UIDragableButton
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.Controls.UIDragableButton
+  commentId: T:Gameplay.Controls.UIDragableButton
+  parent: Gameplay.Controls
+  name: UIDragableButton
+  nameWithType: UIDragableButton
+  fullName: Gameplay.Controls.UIDragableButton
+- uid: Global.UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent
+- uid: Gameplay.Controls.UIDraggableButtonList.SetData*
+  commentId: Overload:Gameplay.Controls.UIDraggableButtonList.SetData
+  name: SetData
+  nameWithType: UIDraggableButtonList.SetData
+  fullName: Gameplay.Controls.UIDraggableButtonList.SetData
+- uid: Global.List{INamedArrayElement}
+  commentId: '!:Global.List{INamedArrayElement}'
+  definition: Global.List`1
+  name: List<INamedArrayElement>
+  nameWithType: List<INamedArrayElement>
+  fullName: List<INamedArrayElement>
+  nameWithType.vb: List(Of INamedArrayElement)
+  fullName.vb: List(Of INamedArrayElement)
+  name.vb: List(Of INamedArrayElement)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.INamedArrayElement
+    name: INamedArrayElement
+    nameWithType: INamedArrayElement
+    fullName: INamedArrayElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.INamedArrayElement
+    name: INamedArrayElement
+    nameWithType: INamedArrayElement
+    fullName: INamedArrayElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Controls.UIDraggableButtonList.ClampPos*
+  commentId: Overload:Gameplay.Controls.UIDraggableButtonList.ClampPos
+  name: ClampPos
+  nameWithType: UIDraggableButtonList.ClampPos
+  fullName: Gameplay.Controls.UIDraggableButtonList.ClampPos
+- uid: Gameplay.Controls.UIDraggableButtonList.Move*
+  commentId: Overload:Gameplay.Controls.UIDraggableButtonList.Move
+  name: Move
+  nameWithType: UIDraggableButtonList.Move
+  fullName: Gameplay.Controls.UIDraggableButtonList.Move
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

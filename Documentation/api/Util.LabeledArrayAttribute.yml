@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.LabeledArrayAttribute
+  commentId: T:Util.LabeledArrayAttribute
+  id: LabeledArrayAttribute
+  parent: Util
+  children:
+  - Util.LabeledArrayAttribute.#ctor
+  langs:
+  - csharp
+  - vb
+  name: LabeledArrayAttribute
+  nameWithType: LabeledArrayAttribute
+  fullName: Util.LabeledArrayAttribute
+  type: Class
+  source:
+    id: LabeledArrayAttribute
+    path: ''
+    startLine: 5740
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nProperty drawer attribute to name all array elements, elements must implement <xref href=\"Util.INamedArrayElement\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class LabeledArrayAttribute : PropertyAttribute'
+    content.vb: >-
+      Public Class LabeledArrayAttribute
+          Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Util.LabeledArrayAttribute.#ctor
+  commentId: M:Util.LabeledArrayAttribute.#ctor
+  id: '#ctor'
+  parent: Util.LabeledArrayAttribute
+  langs:
+  - csharp
+  - vb
+  name: LabeledArrayAttribute()
+  nameWithType: LabeledArrayAttribute.LabeledArrayAttribute()
+  fullName: Util.LabeledArrayAttribute.LabeledArrayAttribute()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5742
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public LabeledArrayAttribute()
+    content.vb: Public Sub New
+  overload: Util.LabeledArrayAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Util.INamedArrayElement
+  commentId: T:Util.INamedArrayElement
+  name: INamedArrayElement
+  nameWithType: INamedArrayElement
+  fullName: Util.INamedArrayElement
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.LabeledArrayAttribute.#ctor*
+  commentId: Overload:Util.LabeledArrayAttribute.#ctor
+  name: LabeledArrayAttribute
+  nameWithType: LabeledArrayAttribute.LabeledArrayAttribute
+  fullName: Util.LabeledArrayAttribute.LabeledArrayAttribute

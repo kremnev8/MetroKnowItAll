@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.Region
+  commentId: T:Gameplay.MetroDisplay.Model.Region
+  id: Region
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,Gameplay.MetroDisplay.Model.Area,System.Int32)
+  - Gameplay.MetroDisplay.Model.Region.area
+  - Gameplay.MetroDisplay.Model.Region.Contains(Gameplay.MetroDisplay.Model.MetroStation)
+  - Gameplay.MetroDisplay.Model.Region.everywhere
+  - Gameplay.MetroDisplay.Model.Region.GetFileName(Gameplay.MetroDisplay.Model.RegionType)
+  - Gameplay.MetroDisplay.Model.Region.GetName(Gameplay.MetroDisplay.Model.Metro)
+  - Gameplay.MetroDisplay.Model.Region.GetRegionCenter(Gameplay.MetroDisplay.Model.Metro)
+  - Gameplay.MetroDisplay.Model.Region.lineId
+  - Gameplay.MetroDisplay.Model.Region.regionType
+  langs:
+  - csharp
+  - vb
+  name: Region
+  nameWithType: Region
+  fullName: Gameplay.MetroDisplay.Model.Region
+  type: Class
+  source:
+    id: Region
+    path: ''
+    startLine: 3674
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nDefines a region of a metro, which can be a line, an area or the whole metro\n"
+  example: []
+  syntax:
+    content: public class Region
+    content.vb: Public Class Region
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.Region.everywhere
+  commentId: P:Gameplay.MetroDisplay.Model.Region.everywhere
+  id: everywhere
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: everywhere
+  nameWithType: Region.everywhere
+  fullName: Gameplay.MetroDisplay.Model.Region.everywhere
+  type: Property
+  source:
+    id: everywhere
+    path: ''
+    startLine: 3677
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static Region everywhere { get; }
+    parameters: []
+    return:
+      type: Gameplay.MetroDisplay.Model.Region
+    content.vb: Public Shared ReadOnly Property everywhere As Region
+  overload: Gameplay.MetroDisplay.Model.Region.everywhere*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.Model.Region.regionType
+  commentId: F:Gameplay.MetroDisplay.Model.Region.regionType
+  id: regionType
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: regionType
+  nameWithType: Region.regionType
+  fullName: Gameplay.MetroDisplay.Model.Region.regionType
+  type: Field
+  source:
+    id: regionType
+    path: ''
+    startLine: 3679
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public RegionType regionType
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+    content.vb: Public regionType As RegionType
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.lineId
+  commentId: F:Gameplay.MetroDisplay.Model.Region.lineId
+  id: lineId
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: lineId
+  nameWithType: Region.lineId
+  fullName: Gameplay.MetroDisplay.Model.Region.lineId
+  type: Field
+  source:
+    id: lineId
+    path: ''
+    startLine: 3680
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public int lineId
+    return:
+      type: System.Int32
+    content.vb: Public lineId As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.area
+  commentId: F:Gameplay.MetroDisplay.Model.Region.area
+  id: area
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: area
+  nameWithType: Region.area
+  fullName: Gameplay.MetroDisplay.Model.Region.area
+  type: Field
+  source:
+    id: area
+    path: ''
+    startLine: 3681
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Area area
+    return:
+      type: Gameplay.MetroDisplay.Model.Area
+    content.vb: Public area As Area
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,Gameplay.MetroDisplay.Model.Area,System.Int32)
+  commentId: M:Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,Gameplay.MetroDisplay.Model.Area,System.Int32)
+  id: '#ctor(Gameplay.MetroDisplay.Model.RegionType,Gameplay.MetroDisplay.Model.Area,System.Int32)'
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: Region(RegionType, Area, Int32)
+  nameWithType: Region.Region(RegionType, Area, Int32)
+  fullName: Gameplay.MetroDisplay.Model.Region.Region(Gameplay.MetroDisplay.Model.RegionType, Gameplay.MetroDisplay.Model.Area, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3683
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Region(RegionType type, Area area, int lineId)
+    parameters:
+    - id: type
+      type: Gameplay.MetroDisplay.Model.RegionType
+    - id: area
+      type: Gameplay.MetroDisplay.Model.Area
+    - id: lineId
+      type: System.Int32
+    content.vb: Public Sub New(type As RegionType, area As Area, lineId As Integer)
+  overload: Gameplay.MetroDisplay.Model.Region.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.Contains(Gameplay.MetroDisplay.Model.MetroStation)
+  commentId: M:Gameplay.MetroDisplay.Model.Region.Contains(Gameplay.MetroDisplay.Model.MetroStation)
+  id: Contains(Gameplay.MetroDisplay.Model.MetroStation)
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: Contains(MetroStation)
+  nameWithType: Region.Contains(MetroStation)
+  fullName: Gameplay.MetroDisplay.Model.Region.Contains(Gameplay.MetroDisplay.Model.MetroStation)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 3690
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool Contains(MetroStation station)
+    parameters:
+    - id: station
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    return:
+      type: System.Boolean
+    content.vb: Public Function Contains(station As MetroStation) As Boolean
+  overload: Gameplay.MetroDisplay.Model.Region.Contains*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.GetName(Gameplay.MetroDisplay.Model.Metro)
+  commentId: M:Gameplay.MetroDisplay.Model.Region.GetName(Gameplay.MetroDisplay.Model.Metro)
+  id: GetName(Gameplay.MetroDisplay.Model.Metro)
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: GetName(Metro)
+  nameWithType: Region.GetName(Metro)
+  fullName: Gameplay.MetroDisplay.Model.Region.GetName(Gameplay.MetroDisplay.Model.Metro)
+  type: Method
+  source:
+    id: GetName
+    path: ''
+    startLine: 3700
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string GetName(Metro metro)
+    parameters:
+    - id: metro
+      type: Gameplay.MetroDisplay.Model.Metro
+    return:
+      type: System.String
+    content.vb: Public Function GetName(metro As Metro) As String
+  overload: Gameplay.MetroDisplay.Model.Region.GetName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Region.GetFileName(Gameplay.MetroDisplay.Model.RegionType)
+  commentId: M:Gameplay.MetroDisplay.Model.Region.GetFileName(Gameplay.MetroDisplay.Model.RegionType)
+  id: GetFileName(Gameplay.MetroDisplay.Model.RegionType)
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: GetFileName(RegionType)
+  nameWithType: Region.GetFileName(RegionType)
+  fullName: Gameplay.MetroDisplay.Model.Region.GetFileName(Gameplay.MetroDisplay.Model.RegionType)
+  type: Method
+  source:
+    id: GetFileName
+    path: ''
+    startLine: 3718
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public static string GetFileName(RegionType regionType)
+    parameters:
+    - id: regionType
+      type: Gameplay.MetroDisplay.Model.RegionType
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetFileName(regionType As RegionType) As String
+  overload: Gameplay.MetroDisplay.Model.Region.GetFileName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.MetroDisplay.Model.Region.GetRegionCenter(Gameplay.MetroDisplay.Model.Metro)
+  commentId: M:Gameplay.MetroDisplay.Model.Region.GetRegionCenter(Gameplay.MetroDisplay.Model.Metro)
+  id: GetRegionCenter(Gameplay.MetroDisplay.Model.Metro)
+  parent: Gameplay.MetroDisplay.Model.Region
+  langs:
+  - csharp
+  - vb
+  name: GetRegionCenter(Metro)
+  nameWithType: Region.GetRegionCenter(Metro)
+  fullName: Gameplay.MetroDisplay.Model.Region.GetRegionCenter(Gameplay.MetroDisplay.Model.Metro)
+  type: Method
+  source:
+    id: GetRegionCenter
+    path: ''
+    startLine: 3736
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Vector2 GetRegionCenter(Metro metro)
+    parameters:
+    - id: metro
+      type: Gameplay.MetroDisplay.Model.Metro
+    return:
+      type: Global.Vector2
+    content.vb: Public Function GetRegionCenter(metro As Metro) As Vector2
+  overload: Gameplay.MetroDisplay.Model.Region.GetRegionCenter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.MetroDisplay.Model.Region.everywhere*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.everywhere
+  name: everywhere
+  nameWithType: Region.everywhere
+  fullName: Gameplay.MetroDisplay.Model.Region.everywhere
+- uid: Gameplay.MetroDisplay.Model.Region
+  commentId: T:Gameplay.MetroDisplay.Model.Region
+  parent: Gameplay.MetroDisplay.Model
+  name: Region
+  nameWithType: Region
+  fullName: Gameplay.MetroDisplay.Model.Region
+- uid: Gameplay.MetroDisplay.Model.RegionType
+  commentId: T:Gameplay.MetroDisplay.Model.RegionType
+  parent: Gameplay.MetroDisplay.Model
+  name: RegionType
+  nameWithType: RegionType
+  fullName: Gameplay.MetroDisplay.Model.RegionType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.MetroDisplay.Model.Area
+  commentId: T:Gameplay.MetroDisplay.Model.Area
+  parent: Gameplay.MetroDisplay.Model
+  name: Area
+  nameWithType: Area
+  fullName: Gameplay.MetroDisplay.Model.Area
+- uid: Gameplay.MetroDisplay.Model.Region.#ctor*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.#ctor
+  name: Region
+  nameWithType: Region.Region
+  fullName: Gameplay.MetroDisplay.Model.Region.Region
+- uid: Gameplay.MetroDisplay.Model.Region.Contains*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.Contains
+  name: Contains
+  nameWithType: Region.Contains
+  fullName: Gameplay.MetroDisplay.Model.Region.Contains
+- uid: Gameplay.MetroDisplay.Model.MetroStation
+  commentId: T:Gameplay.MetroDisplay.Model.MetroStation
+  parent: Gameplay.MetroDisplay.Model
+  name: MetroStation
+  nameWithType: MetroStation
+  fullName: Gameplay.MetroDisplay.Model.MetroStation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.MetroDisplay.Model.Region.GetName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.GetName
+  name: GetName
+  nameWithType: Region.GetName
+  fullName: Gameplay.MetroDisplay.Model.Region.GetName
+- uid: Gameplay.MetroDisplay.Model.Metro
+  commentId: T:Gameplay.MetroDisplay.Model.Metro
+  parent: Gameplay.MetroDisplay.Model
+  name: Metro
+  nameWithType: Metro
+  fullName: Gameplay.MetroDisplay.Model.Metro
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.MetroDisplay.Model.Region.GetFileName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.GetFileName
+  name: GetFileName
+  nameWithType: Region.GetFileName
+  fullName: Gameplay.MetroDisplay.Model.Region.GetFileName
+- uid: Gameplay.MetroDisplay.Model.Region.GetRegionCenter*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Region.GetRegionCenter
+  name: GetRegionCenter
+  nameWithType: Region.GetRegionCenter
+  fullName: Gameplay.MetroDisplay.Model.Region.GetRegionCenter
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2

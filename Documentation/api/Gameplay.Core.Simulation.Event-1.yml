@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Core.Simulation.Event`1
+  commentId: T:Gameplay.Core.Simulation.Event`1
+  id: Simulation.Event`1
+  parent: Gameplay.Core
+  children:
+  - Gameplay.Core.Simulation.Event`1.OnExecute
+  langs:
+  - csharp
+  - vb
+  name: Simulation.Event<T>
+  nameWithType: Simulation.Event<T>
+  fullName: Gameplay.Core.Simulation.Event<T>
+  type: Class
+  source:
+    id: Event
+    path: ''
+    startLine: 326
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nEvent adds the ability to hook into the OnExecute callback\nwhenever the event is executed. Use this class to allow functionality\nto be plugged into your application with minimal or zero configuration.\n"
+  example: []
+  syntax:
+    content: 'public abstract class Event<T> : Simulation.Event, IComparable<Simulation.Event> where T : Simulation.Event<T>'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public MustInherit Class Event(Of T As Simulation.Event(Of T))
+          Inherits Simulation.Event
+          Implements IComparable(Of Simulation.Event)
+  inheritance:
+  - System.Object
+  - Gameplay.Core.Simulation.Event
+  inheritedMembers:
+  - Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  - Gameplay.Core.Simulation.Event.Execute
+  - Gameplay.Core.Simulation.Event.Precondition
+  nameWithType.vb: Simulation.Event(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Gameplay.Core.Simulation.Event(Of T)
+  name.vb: Simulation.Event(Of T)
+- uid: Gameplay.Core.Simulation.Event`1.OnExecute
+  commentId: F:Gameplay.Core.Simulation.Event`1.OnExecute
+  id: OnExecute
+  parent: Gameplay.Core.Simulation.Event`1
+  langs:
+  - csharp
+  - vb
+  name: OnExecute
+  nameWithType: Simulation.Event<T>.OnExecute
+  fullName: Gameplay.Core.Simulation.Event<T>.OnExecute
+  type: Field
+  source:
+    id: OnExecute
+    path: ''
+    startLine: 328
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  syntax:
+    content: public static Action<T> OnExecute
+    return:
+      type: System.Action{{T}}
+    content.vb: Public Shared OnExecute As Action(Of T)
+  nameWithType.vb: Simulation.Event(Of T).OnExecute
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.Event(Of T).OnExecute
+references:
+- uid: Gameplay.Core
+  commentId: N:Gameplay.Core
+  name: Gameplay.Core
+  nameWithType: Gameplay.Core
+  fullName: Gameplay.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Gameplay.Core.Simulation.Event
+  commentId: T:Gameplay.Core.Simulation.Event
+  parent: Gameplay.Core
+  name: Simulation.Event
+  nameWithType: Simulation.Event
+  fullName: Gameplay.Core.Simulation.Event
+- uid: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  commentId: M:Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  parent: Gameplay.Core.Simulation.Event
+  name: CompareTo(Simulation.Event)
+  nameWithType: Simulation.Event.CompareTo(Simulation.Event)
+  fullName: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  spec.csharp:
+  - uid: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+    name: CompareTo
+    nameWithType: Simulation.Event.CompareTo
+    fullName: Gameplay.Core.Simulation.Event.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Gameplay.Core.Simulation.Event
+    name: Simulation.Event
+    nameWithType: Simulation.Event
+    fullName: Gameplay.Core.Simulation.Event
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+    name: CompareTo
+    nameWithType: Simulation.Event.CompareTo
+    fullName: Gameplay.Core.Simulation.Event.CompareTo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Gameplay.Core.Simulation.Event
+    name: Simulation.Event
+    nameWithType: Simulation.Event
+    fullName: Gameplay.Core.Simulation.Event
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Core.Simulation.Event.Execute
+  commentId: M:Gameplay.Core.Simulation.Event.Execute
+  parent: Gameplay.Core.Simulation.Event
+  name: Execute()
+  nameWithType: Simulation.Event.Execute()
+  fullName: Gameplay.Core.Simulation.Event.Execute()
+  spec.csharp:
+  - uid: Gameplay.Core.Simulation.Event.Execute
+    name: Execute
+    nameWithType: Simulation.Event.Execute
+    fullName: Gameplay.Core.Simulation.Event.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Core.Simulation.Event.Execute
+    name: Execute
+    nameWithType: Simulation.Event.Execute
+    fullName: Gameplay.Core.Simulation.Event.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Core.Simulation.Event.Precondition
+  commentId: M:Gameplay.Core.Simulation.Event.Precondition
+  parent: Gameplay.Core.Simulation.Event
+  name: Precondition()
+  nameWithType: Simulation.Event.Precondition()
+  fullName: Gameplay.Core.Simulation.Event.Precondition()
+  spec.csharp:
+  - uid: Gameplay.Core.Simulation.Event.Precondition
+    name: Precondition
+    nameWithType: Simulation.Event.Precondition
+    fullName: Gameplay.Core.Simulation.Event.Precondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Core.Simulation.Event.Precondition
+    name: Precondition
+    nameWithType: Simulation.Event.Precondition
+    fullName: Gameplay.Core.Simulation.Event.Precondition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

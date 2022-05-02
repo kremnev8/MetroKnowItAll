@@ -1,0 +1,360 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.UIAchievement
+  commentId: T:Gameplay.UI.UIAchievement
+  id: UIAchievement
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.UIAchievement.achievementData
+  - Gameplay.UI.UIAchievement.achievementIcon
+  - Gameplay.UI.UIAchievement.achievementName
+  - Gameplay.UI.UIAchievement.achievementText
+  - Gameplay.UI.UIAchievement.Popup(Achievement)
+  - Gameplay.UI.UIAchievement.timeIn
+  - Gameplay.UI.UIAchievement.timeOut
+  - Gameplay.UI.UIAchievement.timeStay
+  - Gameplay.UI.UIAchievement.UnlockAchievement(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UIAchievement
+  nameWithType: UIAchievement
+  fullName: Gameplay.UI.UIAchievement
+  type: Class
+  source:
+    id: UIAchievement
+    path: ''
+    startLine: 5429
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nUI element to display achievement popup\n"
+  example: []
+  syntax:
+    content: 'public class UIAchievement : MonoBehaviour'
+    content.vb: >-
+      Public Class UIAchievement
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.UI.UIAchievement.achievementName
+  commentId: F:Gameplay.UI.UIAchievement.achievementName
+  id: achievementName
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: achievementName
+  nameWithType: UIAchievement.achievementName
+  fullName: Gameplay.UI.UIAchievement.achievementName
+  type: Field
+  source:
+    id: achievementName
+    path: ''
+    startLine: 5431
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public TMP_Text achievementName
+    return:
+      type: Global.TMP_Text
+    content.vb: Public achievementName As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.achievementText
+  commentId: F:Gameplay.UI.UIAchievement.achievementText
+  id: achievementText
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: achievementText
+  nameWithType: UIAchievement.achievementText
+  fullName: Gameplay.UI.UIAchievement.achievementText
+  type: Field
+  source:
+    id: achievementText
+    path: ''
+    startLine: 5432
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public TMP_Text achievementText
+    return:
+      type: Global.TMP_Text
+    content.vb: Public achievementText As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.achievementIcon
+  commentId: F:Gameplay.UI.UIAchievement.achievementIcon
+  id: achievementIcon
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: achievementIcon
+  nameWithType: UIAchievement.achievementIcon
+  fullName: Gameplay.UI.UIAchievement.achievementIcon
+  type: Field
+  source:
+    id: achievementIcon
+    path: ''
+    startLine: 5433
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public Image achievementIcon
+    return:
+      type: Global.Image
+    content.vb: Public achievementIcon As Image
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.timeIn
+  commentId: F:Gameplay.UI.UIAchievement.timeIn
+  id: timeIn
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: timeIn
+  nameWithType: UIAchievement.timeIn
+  fullName: Gameplay.UI.UIAchievement.timeIn
+  type: Field
+  source:
+    id: timeIn
+    path: ''
+    startLine: 5434
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float timeIn
+    return:
+      type: System.Single
+    content.vb: Public timeIn As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.timeStay
+  commentId: F:Gameplay.UI.UIAchievement.timeStay
+  id: timeStay
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: timeStay
+  nameWithType: UIAchievement.timeStay
+  fullName: Gameplay.UI.UIAchievement.timeStay
+  type: Field
+  source:
+    id: timeStay
+    path: ''
+    startLine: 5435
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float timeStay
+    return:
+      type: System.Single
+    content.vb: Public timeStay As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.timeOut
+  commentId: F:Gameplay.UI.UIAchievement.timeOut
+  id: timeOut
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: timeOut
+  nameWithType: UIAchievement.timeOut
+  fullName: Gameplay.UI.UIAchievement.timeOut
+  type: Field
+  source:
+    id: timeOut
+    path: ''
+    startLine: 5436
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float timeOut
+    return:
+      type: System.Single
+    content.vb: Public timeOut As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.achievementData
+  commentId: F:Gameplay.UI.UIAchievement.achievementData
+  id: achievementData
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: achievementData
+  nameWithType: UIAchievement.achievementData
+  fullName: Gameplay.UI.UIAchievement.achievementData
+  type: Field
+  source:
+    id: achievementData
+    path: ''
+    startLine: 5439
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public AchievementDB achievementData
+    return:
+      type: Global.AchievementDB
+    content.vb: Public achievementData As AchievementDB
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.UIAchievement.UnlockAchievement(System.String)
+  commentId: M:Gameplay.UI.UIAchievement.UnlockAchievement(System.String)
+  id: UnlockAchievement(System.String)
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: UnlockAchievement(String)
+  nameWithType: UIAchievement.UnlockAchievement(String)
+  fullName: Gameplay.UI.UIAchievement.UnlockAchievement(System.String)
+  type: Method
+  source:
+    id: UnlockAchievement
+    path: ''
+    startLine: 5452
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public static void UnlockAchievement(string key)
+    parameters:
+    - id: key
+      type: System.String
+    content.vb: Public Shared Sub UnlockAchievement(key As String)
+  overload: Gameplay.UI.UIAchievement.UnlockAchievement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.UI.UIAchievement.Popup(Achievement)
+  commentId: M:Gameplay.UI.UIAchievement.Popup(Achievement)
+  id: Popup(Achievement)
+  parent: Gameplay.UI.UIAchievement
+  langs:
+  - csharp
+  - vb
+  name: Popup(Achievement)
+  nameWithType: UIAchievement.Popup(Achievement)
+  fullName: Gameplay.UI.UIAchievement.Popup(Achievement)
+  type: Method
+  source:
+    id: Popup
+    path: ''
+    startLine: 5472
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public void Popup(Achievement achievement)
+    parameters:
+    - id: achievement
+      type: Global.Achievement
+    content.vb: Public Sub Popup(achievement As Achievement)
+  overload: Gameplay.UI.UIAchievement.Popup*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Global.Image
+  commentId: '!:Global.Image'
+  isExternal: true
+  name: Image
+  nameWithType: Image
+  fullName: Image
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.AchievementDB
+  commentId: '!:Global.AchievementDB'
+  isExternal: true
+  name: AchievementDB
+  nameWithType: AchievementDB
+  fullName: AchievementDB
+- uid: Gameplay.UI.UIAchievement.UnlockAchievement*
+  commentId: Overload:Gameplay.UI.UIAchievement.UnlockAchievement
+  name: UnlockAchievement
+  nameWithType: UIAchievement.UnlockAchievement
+  fullName: Gameplay.UI.UIAchievement.UnlockAchievement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.UI.UIAchievement.Popup*
+  commentId: Overload:Gameplay.UI.UIAchievement.Popup
+  name: Popup
+  nameWithType: UIAchievement.Popup
+  fullName: Gameplay.UI.UIAchievement.Popup
+- uid: Global.Achievement
+  commentId: '!:Global.Achievement'
+  isExternal: true
+  name: Achievement
+  nameWithType: Achievement
+  fullName: Achievement

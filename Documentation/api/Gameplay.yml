@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay
+  commentId: N:Gameplay
+  id: Gameplay
+  children:
+  - Gameplay.GameController
+  - Gameplay.GameModel
+  - Gameplay.Health
+  - Gameplay.Health.IntEvent
+  - Gameplay.Health.PainEvent
+  - Gameplay.PainType
+  - Gameplay.SceneTransitionManager
+  langs:
+  - csharp
+  - vb
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.GameController
+  commentId: T:Gameplay.GameController
+  parent: Gameplay
+  name: GameController
+  nameWithType: GameController
+  fullName: Gameplay.GameController
+- uid: Gameplay.GameModel
+  commentId: T:Gameplay.GameModel
+  parent: Gameplay
+  name: GameModel
+  nameWithType: GameModel
+  fullName: Gameplay.GameModel
+- uid: Gameplay.PainType
+  commentId: T:Gameplay.PainType
+  parent: Gameplay
+  name: PainType
+  nameWithType: PainType
+  fullName: Gameplay.PainType
+- uid: Gameplay.Health
+  commentId: T:Gameplay.Health
+  name: Health
+  nameWithType: Health
+  fullName: Gameplay.Health
+- uid: Gameplay.Health.IntEvent
+  commentId: T:Gameplay.Health.IntEvent
+  parent: Gameplay
+  name: Health.IntEvent
+  nameWithType: Health.IntEvent
+  fullName: Gameplay.Health.IntEvent
+- uid: Gameplay.Health.PainEvent
+  commentId: T:Gameplay.Health.PainEvent
+  parent: Gameplay
+  name: Health.PainEvent
+  nameWithType: Health.PainEvent
+  fullName: Gameplay.Health.PainEvent
+- uid: Gameplay.SceneTransitionManager
+  commentId: T:Gameplay.SceneTransitionManager
+  parent: Gameplay
+  name: SceneTransitionManager
+  nameWithType: SceneTransitionManager
+  fullName: Gameplay.SceneTransitionManager
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay

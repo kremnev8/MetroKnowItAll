@@ -13,7 +13,7 @@ using UnityEditor;
 namespace Gameplay.MetroDisplay
 {
     /// <summary>
-    /// Controls entire <see cref="Metro"/> is displayed
+    /// Controls entire <see cref="Gameplay.MetroDisplay.Model.Metro"/> is displayed
     /// </summary>
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour

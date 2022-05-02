@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.Question
+  commentId: T:ScriptableObjects.Question
+  id: Question
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.Question.itemId
+  - ScriptableObjects.Question.ItemId
+  - ScriptableObjects.Question.QuestionAnswer
+  - ScriptableObjects.Question.QuestionText
+  langs:
+  - csharp
+  - vb
+  name: Question
+  nameWithType: Question
+  fullName: ScriptableObjects.Question
+  type: Class
+  source:
+    id: Question
+    path: ''
+    startLine: 4755
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nDefines a simple question\n"
+  example: []
+  syntax:
+    content: 'public class Question : GenericItem'
+    content.vb: >-
+      Public Class Question
+          Implements GenericItem
+  inheritance:
+  - System.Object
+  implements:
+  - ScriptableObjects.GenericItem
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ScriptableObjects.Question.itemId
+  commentId: F:ScriptableObjects.Question.itemId
+  id: itemId
+  parent: ScriptableObjects.Question
+  langs:
+  - csharp
+  - vb
+  name: itemId
+  nameWithType: Question.itemId
+  fullName: ScriptableObjects.Question.itemId
+  type: Field
+  source:
+    id: itemId
+    path: ''
+    startLine: 4758
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string itemId
+    return:
+      type: System.String
+    content.vb: Public itemId As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Question.ItemId
+  commentId: P:ScriptableObjects.Question.ItemId
+  id: ItemId
+  parent: ScriptableObjects.Question
+  langs:
+  - csharp
+  - vb
+  name: ItemId
+  nameWithType: Question.ItemId
+  fullName: ScriptableObjects.Question.ItemId
+  type: Property
+  source:
+    id: ItemId
+    path: ''
+    startLine: 4759
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string ItemId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ItemId As String
+  overload: ScriptableObjects.Question.ItemId*
+  implements:
+  - ScriptableObjects.GenericItem.ItemId
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: ScriptableObjects.Question.QuestionText
+  commentId: F:ScriptableObjects.Question.QuestionText
+  id: QuestionText
+  parent: ScriptableObjects.Question
+  langs:
+  - csharp
+  - vb
+  name: QuestionText
+  nameWithType: Question.QuestionText
+  fullName: ScriptableObjects.Question.QuestionText
+  type: Field
+  source:
+    id: QuestionText
+    path: ''
+    startLine: 4761
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string QuestionText
+    return:
+      type: System.String
+    content.vb: Public QuestionText As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Question.QuestionAnswer
+  commentId: F:ScriptableObjects.Question.QuestionAnswer
+  id: QuestionAnswer
+  parent: ScriptableObjects.Question
+  langs:
+  - csharp
+  - vb
+  name: QuestionAnswer
+  nameWithType: Question.QuestionAnswer
+  fullName: ScriptableObjects.Question.QuestionAnswer
+  type: Field
+  source:
+    id: QuestionAnswer
+    path: ''
+    startLine: 4762
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string QuestionAnswer
+    return:
+      type: System.String
+    content.vb: Public QuestionAnswer As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ScriptableObjects.GenericItem
+  commentId: T:ScriptableObjects.GenericItem
+  parent: ScriptableObjects
+  name: GenericItem
+  nameWithType: GenericItem
+  fullName: ScriptableObjects.GenericItem
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ScriptableObjects.Question.ItemId*
+  commentId: Overload:ScriptableObjects.Question.ItemId
+  name: ItemId
+  nameWithType: Question.ItemId
+  fullName: ScriptableObjects.Question.ItemId
+- uid: ScriptableObjects.GenericItem.ItemId
+  commentId: P:ScriptableObjects.GenericItem.ItemId
+  parent: ScriptableObjects.GenericItem
+  name: ItemId
+  nameWithType: GenericItem.ItemId
+  fullName: ScriptableObjects.GenericItem.ItemId

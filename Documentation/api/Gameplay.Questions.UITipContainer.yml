@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.UITipContainer
+  commentId: T:Gameplay.Questions.UITipContainer
+  id: UITipContainer
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.UITipContainer.numText
+  - Gameplay.Questions.UITipContainer.SetTip(System.String,System.Int32)
+  - Gameplay.Questions.UITipContainer.tipText
+  langs:
+  - csharp
+  - vb
+  name: UITipContainer
+  nameWithType: UITipContainer
+  fullName: Gameplay.Questions.UITipContainer
+  type: Class
+  source:
+    id: UITipContainer
+    path: ''
+    startLine: 4480
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nUI element to represent a tip\n"
+  example: []
+  syntax:
+    content: 'public class UITipContainer : MonoBehaviour'
+    content.vb: >-
+      Public Class UITipContainer
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Questions.UITipContainer.numText
+  commentId: F:Gameplay.Questions.UITipContainer.numText
+  id: numText
+  parent: Gameplay.Questions.UITipContainer
+  langs:
+  - csharp
+  - vb
+  name: numText
+  nameWithType: UITipContainer.numText
+  fullName: Gameplay.Questions.UITipContainer.numText
+  type: Field
+  source:
+    id: numText
+    path: ''
+    startLine: 4482
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text numText
+    return:
+      type: Global.TMP_Text
+    content.vb: Public numText As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipContainer.tipText
+  commentId: F:Gameplay.Questions.UITipContainer.tipText
+  id: tipText
+  parent: Gameplay.Questions.UITipContainer
+  langs:
+  - csharp
+  - vb
+  name: tipText
+  nameWithType: UITipContainer.tipText
+  fullName: Gameplay.Questions.UITipContainer.tipText
+  type: Field
+  source:
+    id: tipText
+    path: ''
+    startLine: 4483
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text tipText
+    return:
+      type: Global.TMP_Text
+    content.vb: Public tipText As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UITipContainer.SetTip(System.String,System.Int32)
+  commentId: M:Gameplay.Questions.UITipContainer.SetTip(System.String,System.Int32)
+  id: SetTip(System.String,System.Int32)
+  parent: Gameplay.Questions.UITipContainer
+  langs:
+  - csharp
+  - vb
+  name: SetTip(String, Int32)
+  nameWithType: UITipContainer.SetTip(String, Int32)
+  fullName: Gameplay.Questions.UITipContainer.SetTip(System.String, System.Int32)
+  type: Method
+  source:
+    id: SetTip
+    path: ''
+    startLine: 4485
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void SetTip(string text, int index)
+    parameters:
+    - id: text
+      type: System.String
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub SetTip(text As String, index As Integer)
+  overload: Gameplay.Questions.UITipContainer.SetTip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Gameplay.Questions.UITipContainer.SetTip*
+  commentId: Overload:Gameplay.Questions.UITipContainer.SetTip
+  name: SetTip
+  nameWithType: UITipContainer.SetTip
+  fullName: Gameplay.Questions.UITipContainer.SetTip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

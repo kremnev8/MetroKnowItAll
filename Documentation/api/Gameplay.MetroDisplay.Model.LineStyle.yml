@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.LineStyle
+  commentId: T:Gameplay.MetroDisplay.Model.LineStyle
+  id: LineStyle
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.LineStyle.GROUND
+  - Gameplay.MetroDisplay.Model.LineStyle.UNDERGROUND
+  langs:
+  - csharp
+  - vb
+  name: LineStyle
+  nameWithType: LineStyle
+  fullName: Gameplay.MetroDisplay.Model.LineStyle
+  type: Enum
+  source:
+    id: LineStyle
+    path: ''
+    startLine: 3134
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public enum LineStyle
+    content.vb: Public Enum LineStyle
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Gameplay.MetroDisplay.Model.LineStyle.UNDERGROUND
+  commentId: F:Gameplay.MetroDisplay.Model.LineStyle.UNDERGROUND
+  id: UNDERGROUND
+  parent: Gameplay.MetroDisplay.Model.LineStyle
+  langs:
+  - csharp
+  - vb
+  name: UNDERGROUND
+  nameWithType: LineStyle.UNDERGROUND
+  fullName: Gameplay.MetroDisplay.Model.LineStyle.UNDERGROUND
+  type: Field
+  source:
+    id: UNDERGROUND
+    path: ''
+    startLine: 3136
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: UNDERGROUND = 0
+    return:
+      type: Gameplay.MetroDisplay.Model.LineStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.LineStyle.GROUND
+  commentId: F:Gameplay.MetroDisplay.Model.LineStyle.GROUND
+  id: GROUND
+  parent: Gameplay.MetroDisplay.Model.LineStyle
+  langs:
+  - csharp
+  - vb
+  name: GROUND
+  nameWithType: LineStyle.GROUND
+  fullName: Gameplay.MetroDisplay.Model.LineStyle.GROUND
+  type: Field
+  source:
+    id: GROUND
+    path: ''
+    startLine: 3137
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: GROUND = 1
+    return:
+      type: Gameplay.MetroDisplay.Model.LineStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: Gameplay.MetroDisplay.Model.LineStyle
+  commentId: T:Gameplay.MetroDisplay.Model.LineStyle
+  parent: Gameplay.MetroDisplay.Model
+  name: LineStyle
+  nameWithType: LineStyle
+  fullName: Gameplay.MetroDisplay.Model.LineStyle

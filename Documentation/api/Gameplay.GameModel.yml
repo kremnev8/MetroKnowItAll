@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.GameModel
+  commentId: T:Gameplay.GameModel
+  id: GameModel
+  parent: Gameplay
+  children:
+  - Gameplay.GameModel.achievements
+  - Gameplay.GameModel.cameraController
+  - Gameplay.GameModel.input
+  - Gameplay.GameModel.palette
+  - Gameplay.GameModel.questions
+  - Gameplay.GameModel.renderer
+  - Gameplay.GameModel.statistics
+  langs:
+  - csharp
+  - vb
+  name: GameModel
+  nameWithType: GameModel
+  fullName: Gameplay.GameModel
+  type: Class
+  source:
+    id: GameModel
+    path: ''
+    startLine: 967
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nGame model contains all important game classes and stores them for easy access from anywhere\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class GameModel
+    content.vb: >-
+      <Serializable>
+
+      Public Class GameModel
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.GameModel.input
+  commentId: F:Gameplay.GameModel.input
+  id: input
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: input
+  nameWithType: GameModel.input
+  fullName: Gameplay.GameModel.input
+  type: Field
+  source:
+    id: input
+    path: ''
+    startLine: 970
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public PlayerInput input
+    return:
+      type: Global.PlayerInput
+    content.vb: Public input As PlayerInput
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.cameraController
+  commentId: F:Gameplay.GameModel.cameraController
+  id: cameraController
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: cameraController
+  nameWithType: GameModel.cameraController
+  fullName: Gameplay.GameModel.cameraController
+  type: Field
+  source:
+    id: cameraController
+    path: ''
+    startLine: 971
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public TouchCameraController cameraController
+    return:
+      type: Global.TouchCameraController
+    content.vb: Public cameraController As TouchCameraController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.renderer
+  commentId: F:Gameplay.GameModel.renderer
+  id: renderer
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: GameModel.renderer
+  fullName: Gameplay.GameModel.renderer
+  type: Field
+  source:
+    id: renderer
+    path: ''
+    startLine: 972
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public MetroRenderer renderer
+    return:
+      type: Global.MetroRenderer
+    content.vb: Public renderer As MetroRenderer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.questions
+  commentId: F:Gameplay.GameModel.questions
+  id: questions
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: questions
+  nameWithType: GameModel.questions
+  fullName: Gameplay.GameModel.questions
+  type: Field
+  source:
+    id: questions
+    path: ''
+    startLine: 973
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public QuestionController questions
+    return:
+      type: Global.QuestionController
+    content.vb: Public questions As QuestionController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.palette
+  commentId: F:Gameplay.GameModel.palette
+  id: palette
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: palette
+  nameWithType: GameModel.palette
+  fullName: Gameplay.GameModel.palette
+  type: Field
+  source:
+    id: palette
+    path: ''
+    startLine: 974
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public ColorPalette palette
+    return:
+      type: Global.ColorPalette
+    content.vb: Public palette As ColorPalette
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.statistics
+  commentId: F:Gameplay.GameModel.statistics
+  id: statistics
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: statistics
+  nameWithType: GameModel.statistics
+  fullName: Gameplay.GameModel.statistics
+  type: Field
+  source:
+    id: statistics
+    path: ''
+    startLine: 975
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public StatisticsManager statistics
+    return:
+      type: Global.StatisticsManager
+    content.vb: Public statistics As StatisticsManager
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameModel.achievements
+  commentId: F:Gameplay.GameModel.achievements
+  id: achievements
+  parent: Gameplay.GameModel
+  langs:
+  - csharp
+  - vb
+  name: achievements
+  nameWithType: GameModel.achievements
+  fullName: Gameplay.GameModel.achievements
+  type: Field
+  source:
+    id: achievements
+    path: ''
+    startLine: 976
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public UIAchievement achievements
+    return:
+      type: Global.UIAchievement
+    content.vb: Public achievements As UIAchievement
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.PlayerInput
+  commentId: '!:Global.PlayerInput'
+  isExternal: true
+  name: PlayerInput
+  nameWithType: PlayerInput
+  fullName: PlayerInput
+- uid: Global.TouchCameraController
+  commentId: '!:Global.TouchCameraController'
+  isExternal: true
+  name: TouchCameraController
+  nameWithType: TouchCameraController
+  fullName: TouchCameraController
+- uid: Global.MetroRenderer
+  isExternal: true
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: MetroRenderer
+- uid: Global.QuestionController
+  commentId: '!:Global.QuestionController'
+  isExternal: true
+  name: QuestionController
+  nameWithType: QuestionController
+  fullName: QuestionController
+- uid: Global.ColorPalette
+  commentId: '!:Global.ColorPalette'
+  isExternal: true
+  name: ColorPalette
+  nameWithType: ColorPalette
+  fullName: ColorPalette
+- uid: Global.StatisticsManager
+  commentId: '!:Global.StatisticsManager'
+  isExternal: true
+  name: StatisticsManager
+  nameWithType: StatisticsManager
+  fullName: StatisticsManager
+- uid: Global.UIAchievement
+  commentId: '!:Global.UIAchievement'
+  isExternal: true
+  name: UIAchievement
+  nameWithType: UIAchievement
+  fullName: UIAchievement

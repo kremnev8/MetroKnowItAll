@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.Model
+  commentId: N:Gameplay.Questions.Model
+  id: Gameplay.Questions.Model
+  children:
+  - Gameplay.Questions.Model.FindLineGenerator
+  - Gameplay.Questions.Model.FindStationGenerator
+  - Gameplay.Questions.Model.OrderStationsGenerator
+  - Gameplay.Questions.Model.UIQuestionFindLine
+  - Gameplay.Questions.Model.UIQuestionOrderStations
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.Questions.Model
+  nameWithType: Gameplay.Questions.Model
+  fullName: Gameplay.Questions.Model
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.Questions.Model.FindLineGenerator
+  commentId: T:Gameplay.Questions.Model.FindLineGenerator
+  name: FindLineGenerator
+  nameWithType: FindLineGenerator
+  fullName: Gameplay.Questions.Model.FindLineGenerator
+- uid: Gameplay.Questions.Model.FindStationGenerator
+  commentId: T:Gameplay.Questions.Model.FindStationGenerator
+  name: FindStationGenerator
+  nameWithType: FindStationGenerator
+  fullName: Gameplay.Questions.Model.FindStationGenerator
+- uid: Gameplay.Questions.Model.OrderStationsGenerator
+  commentId: T:Gameplay.Questions.Model.OrderStationsGenerator
+  name: OrderStationsGenerator
+  nameWithType: OrderStationsGenerator
+  fullName: Gameplay.Questions.Model.OrderStationsGenerator
+- uid: Gameplay.Questions.Model.UIQuestionFindLine
+  commentId: T:Gameplay.Questions.Model.UIQuestionFindLine
+  name: UIQuestionFindLine
+  nameWithType: UIQuestionFindLine
+  fullName: Gameplay.Questions.Model.UIQuestionFindLine
+- uid: Gameplay.Questions.Model.UIQuestionOrderStations
+  commentId: T:Gameplay.Questions.Model.UIQuestionOrderStations
+  name: UIQuestionOrderStations
+  nameWithType: UIQuestionOrderStations
+  fullName: Gameplay.Questions.Model.UIQuestionOrderStations

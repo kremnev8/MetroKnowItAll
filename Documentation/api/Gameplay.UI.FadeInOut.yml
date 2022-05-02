@@ -1,0 +1,201 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.FadeInOut
+  commentId: T:Gameplay.UI.FadeInOut
+  id: FadeInOut
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.FadeInOut.Fade(Gameplay.UI.FadeDirection)
+  - Gameplay.UI.FadeInOut.FadeIn
+  - Gameplay.UI.FadeInOut.FadeOut
+  - Gameplay.UI.FadeInOut.fadeTime
+  langs:
+  - csharp
+  - vb
+  name: FadeInOut
+  nameWithType: FadeInOut
+  fullName: Gameplay.UI.FadeInOut
+  type: Class
+  source:
+    id: FadeInOut
+    path: ''
+    startLine: 5155
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nUI helper that can fade a UI element in or out\n"
+  example: []
+  syntax:
+    content: 'public class FadeInOut : MonoBehaviour'
+    content.vb: >-
+      Public Class FadeInOut
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.UI.FadeInOut.fadeTime
+  commentId: F:Gameplay.UI.FadeInOut.fadeTime
+  id: fadeTime
+  parent: Gameplay.UI.FadeInOut
+  langs:
+  - csharp
+  - vb
+  name: fadeTime
+  nameWithType: FadeInOut.fadeTime
+  fullName: Gameplay.UI.FadeInOut.fadeTime
+  type: Field
+  source:
+    id: fadeTime
+    path: ''
+    startLine: 5158
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public float fadeTime
+    return:
+      type: System.Single
+    content.vb: Public fadeTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.FadeInOut.Fade(Gameplay.UI.FadeDirection)
+  commentId: M:Gameplay.UI.FadeInOut.Fade(Gameplay.UI.FadeDirection)
+  id: Fade(Gameplay.UI.FadeDirection)
+  parent: Gameplay.UI.FadeInOut
+  langs:
+  - csharp
+  - vb
+  name: Fade(FadeDirection)
+  nameWithType: FadeInOut.Fade(FadeDirection)
+  fullName: Gameplay.UI.FadeInOut.Fade(Gameplay.UI.FadeDirection)
+  type: Method
+  source:
+    id: Fade
+    path: ''
+    startLine: 5174
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nStart a fade in a certain direction\n"
+  example: []
+  syntax:
+    content: public void Fade(FadeDirection direction)
+    parameters:
+    - id: direction
+      type: Gameplay.UI.FadeDirection
+    content.vb: Public Sub Fade(direction As FadeDirection)
+  overload: Gameplay.UI.FadeInOut.Fade*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.FadeInOut.FadeIn
+  commentId: M:Gameplay.UI.FadeInOut.FadeIn
+  id: FadeIn
+  parent: Gameplay.UI.FadeInOut
+  langs:
+  - csharp
+  - vb
+  name: FadeIn()
+  nameWithType: FadeInOut.FadeIn()
+  fullName: Gameplay.UI.FadeInOut.FadeIn()
+  type: Method
+  source:
+    id: FadeIn
+    path: ''
+    startLine: 5189
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nStart a fade in\n"
+  example: []
+  syntax:
+    content: public void FadeIn()
+    content.vb: Public Sub FadeIn
+  overload: Gameplay.UI.FadeInOut.FadeIn*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.UI.FadeInOut.FadeOut
+  commentId: M:Gameplay.UI.FadeInOut.FadeOut
+  id: FadeOut
+  parent: Gameplay.UI.FadeInOut
+  langs:
+  - csharp
+  - vb
+  name: FadeOut()
+  nameWithType: FadeInOut.FadeOut()
+  fullName: Gameplay.UI.FadeInOut.FadeOut()
+  type: Method
+  source:
+    id: FadeOut
+    path: ''
+    startLine: 5201
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nStart a fade out\n"
+  example: []
+  syntax:
+    content: public void FadeOut()
+    content.vb: Public Sub FadeOut
+  overload: Gameplay.UI.FadeInOut.FadeOut*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.UI.FadeInOut.Fade*
+  commentId: Overload:Gameplay.UI.FadeInOut.Fade
+  name: Fade
+  nameWithType: FadeInOut.Fade
+  fullName: Gameplay.UI.FadeInOut.Fade
+- uid: Gameplay.UI.FadeDirection
+  commentId: T:Gameplay.UI.FadeDirection
+  parent: Gameplay.UI
+  name: FadeDirection
+  nameWithType: FadeDirection
+  fullName: Gameplay.UI.FadeDirection
+- uid: Gameplay.UI.FadeInOut.FadeIn*
+  commentId: Overload:Gameplay.UI.FadeInOut.FadeIn
+  name: FadeIn
+  nameWithType: FadeInOut.FadeIn
+  fullName: Gameplay.UI.FadeInOut.FadeIn
+- uid: Gameplay.UI.FadeInOut.FadeOut*
+  commentId: Overload:Gameplay.UI.FadeInOut.FadeOut
+  name: FadeOut
+  nameWithType: FadeInOut.FadeOut
+  fullName: Gameplay.UI.FadeInOut.FadeOut

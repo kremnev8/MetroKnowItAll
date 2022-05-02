@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Gameplay.MetroDisplay
 {
     /// <summary>
-    /// Controls how <see cref="MetroLine"/> are displayed
+    /// Controls how <see cref="Gameplay.MetroDisplay.Model.MetroLine"/> are displayed
     /// </summary>
     public class LineDisplay : MonoBehaviour
     {

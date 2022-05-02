@@ -1,0 +1,394 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.MetroConnection
+  commentId: T:Gameplay.MetroDisplay.Model.MetroConnection
+  id: MetroConnection
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
+  - Gameplay.MetroDisplay.Model.MetroConnection.displayName
+  - Gameplay.MetroDisplay.Model.MetroConnection.editorName
+  - Gameplay.MetroDisplay.Model.MetroConnection.endStationId
+  - Gameplay.MetroDisplay.Model.MetroConnection.isOpen
+  - Gameplay.MetroDisplay.Model.MetroConnection.lineId
+  - Gameplay.MetroDisplay.Model.MetroConnection.overrideBend
+  - Gameplay.MetroDisplay.Model.MetroConnection.startStationId
+  - Gameplay.MetroDisplay.Model.MetroConnection.ToString
+  - Gameplay.MetroDisplay.Model.MetroConnection.weight
+  langs:
+  - csharp
+  - vb
+  name: MetroConnection
+  nameWithType: MetroConnection
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection
+  type: Class
+  source:
+    id: MetroConnection
+    path: ''
+    startLine: 3466
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nDefines a connection between two stations. Also defines some display parameters\n"
+  example: []
+  syntax:
+    content: 'public class MetroConnection : INamedArrayElement'
+    content.vb: >-
+      Public Class MetroConnection
+          Inherits INamedArrayElement
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.lineId
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.lineId
+  id: lineId
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: lineId
+  nameWithType: MetroConnection.lineId
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.lineId
+  type: Field
+  source:
+    id: lineId
+    path: ''
+    startLine: 3470
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte lineId
+    return:
+      type: System.Byte
+    content.vb: Public lineId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.startStationId
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.startStationId
+  id: startStationId
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: startStationId
+  nameWithType: MetroConnection.startStationId
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.startStationId
+  type: Field
+  source:
+    id: startStationId
+    path: ''
+    startLine: 3472
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte startStationId
+    return:
+      type: System.Byte
+    content.vb: Public startStationId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.endStationId
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.endStationId
+  id: endStationId
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: endStationId
+  nameWithType: MetroConnection.endStationId
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.endStationId
+  type: Field
+  source:
+    id: endStationId
+    path: ''
+    startLine: 3473
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte endStationId
+    return:
+      type: System.Byte
+    content.vb: Public endStationId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.isOpen
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.isOpen
+  id: isOpen
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: isOpen
+  nameWithType: MetroConnection.isOpen
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.isOpen
+  type: Field
+  source:
+    id: isOpen
+    path: ''
+    startLine: 3475
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool isOpen
+    return:
+      type: System.Boolean
+    content.vb: Public isOpen As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.overrideBend
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.overrideBend
+  id: overrideBend
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: overrideBend
+  nameWithType: MetroConnection.overrideBend
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.overrideBend
+  type: Field
+  source:
+    id: overrideBend
+    path: ''
+    startLine: 3477
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool overrideBend
+    return:
+      type: System.Boolean
+    content.vb: Public overrideBend As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
+  id: bendPoint
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: bendPoint
+  nameWithType: MetroConnection.bendPoint
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
+  type: Field
+  source:
+    id: bendPoint
+    path: ''
+    startLine: 3478
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Vector2 bendPoint
+    return:
+      type: Global.Vector2
+    content.vb: Public bendPoint As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.weight
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.weight
+  id: weight
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: weight
+  nameWithType: MetroConnection.weight
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.weight
+  type: Field
+  source:
+    id: weight
+    path: ''
+    startLine: 3480
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public float weight
+    return:
+      type: System.Single
+    content.vb: Public weight As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.ToString
+  commentId: M:Gameplay.MetroDisplay.Model.MetroConnection.ToString
+  id: ToString
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MetroConnection.ToString()
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 3483
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: Gameplay.MetroDisplay.Model.MetroConnection.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.editorName
+  commentId: P:Gameplay.MetroDisplay.Model.MetroConnection.editorName
+  id: editorName
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: editorName
+  nameWithType: MetroConnection.editorName
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.editorName
+  type: Property
+  source:
+    id: editorName
+    path: ''
+    startLine: 3488
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string editorName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property editorName As String
+  overload: Gameplay.MetroDisplay.Model.MetroConnection.editorName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.displayName
+  commentId: P:Gameplay.MetroDisplay.Model.MetroConnection.displayName
+  id: displayName
+  parent: Gameplay.MetroDisplay.Model.MetroConnection
+  langs:
+  - csharp
+  - vb
+  name: displayName
+  nameWithType: MetroConnection.displayName
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.displayName
+  type: Property
+  source:
+    id: displayName
+    path: ''
+    startLine: 3489
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string displayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property displayName As String
+  overload: Gameplay.MetroDisplay.Model.MetroConnection.displayName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.ToString*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroConnection.ToString
+  name: ToString
+  nameWithType: MetroConnection.ToString
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.editorName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroConnection.editorName
+  name: editorName
+  nameWithType: MetroConnection.editorName
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.editorName
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.displayName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroConnection.displayName
+  name: displayName
+  nameWithType: MetroConnection.displayName
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.displayName

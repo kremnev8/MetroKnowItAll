@@ -1,0 +1,361 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.RegionType
+  commentId: T:Gameplay.MetroDisplay.Model.RegionType
+  id: RegionType
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.RegionType.CENTER
+  - Gameplay.MetroDisplay.Model.RegionType.EAST
+  - Gameplay.MetroDisplay.Model.RegionType.GLOBAL
+  - Gameplay.MetroDisplay.Model.RegionType.MAX_VALUE
+  - Gameplay.MetroDisplay.Model.RegionType.NORTH
+  - Gameplay.MetroDisplay.Model.RegionType.NORTH_EAST
+  - Gameplay.MetroDisplay.Model.RegionType.NORTH_WEST
+  - Gameplay.MetroDisplay.Model.RegionType.SOUTH
+  - Gameplay.MetroDisplay.Model.RegionType.SOUTH_EAST
+  - Gameplay.MetroDisplay.Model.RegionType.SOUTH_WEST
+  - Gameplay.MetroDisplay.Model.RegionType.WEST
+  langs:
+  - csharp
+  - vb
+  name: RegionType
+  nameWithType: RegionType
+  fullName: Gameplay.MetroDisplay.Model.RegionType
+  type: Enum
+  source:
+    id: RegionType
+    path: ''
+    startLine: 3748
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public enum RegionType
+    content.vb: Public Enum RegionType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Gameplay.MetroDisplay.Model.RegionType.GLOBAL
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.GLOBAL
+  id: GLOBAL
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: GLOBAL
+  nameWithType: RegionType.GLOBAL
+  fullName: Gameplay.MetroDisplay.Model.RegionType.GLOBAL
+  type: Field
+  source:
+    id: GLOBAL
+    path: ''
+    startLine: 3750
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: GLOBAL = 0
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.CENTER
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.CENTER
+  id: CENTER
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: CENTER
+  nameWithType: RegionType.CENTER
+  fullName: Gameplay.MetroDisplay.Model.RegionType.CENTER
+  type: Field
+  source:
+    id: CENTER
+    path: ''
+    startLine: 3751
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: CENTER = 1
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.NORTH
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.NORTH
+  id: NORTH
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: NORTH
+  nameWithType: RegionType.NORTH
+  fullName: Gameplay.MetroDisplay.Model.RegionType.NORTH
+  type: Field
+  source:
+    id: NORTH
+    path: ''
+    startLine: 3752
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: NORTH = 2
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.NORTH_EAST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.NORTH_EAST
+  id: NORTH_EAST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: NORTH_EAST
+  nameWithType: RegionType.NORTH_EAST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.NORTH_EAST
+  type: Field
+  source:
+    id: NORTH_EAST
+    path: ''
+    startLine: 3753
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: NORTH_EAST = 3
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.EAST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.EAST
+  id: EAST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: EAST
+  nameWithType: RegionType.EAST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.EAST
+  type: Field
+  source:
+    id: EAST
+    path: ''
+    startLine: 3754
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: EAST = 4
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.SOUTH_EAST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.SOUTH_EAST
+  id: SOUTH_EAST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: SOUTH_EAST
+  nameWithType: RegionType.SOUTH_EAST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.SOUTH_EAST
+  type: Field
+  source:
+    id: SOUTH_EAST
+    path: ''
+    startLine: 3755
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: SOUTH_EAST = 5
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.SOUTH
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.SOUTH
+  id: SOUTH
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: SOUTH
+  nameWithType: RegionType.SOUTH
+  fullName: Gameplay.MetroDisplay.Model.RegionType.SOUTH
+  type: Field
+  source:
+    id: SOUTH
+    path: ''
+    startLine: 3756
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: SOUTH = 6
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.SOUTH_WEST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.SOUTH_WEST
+  id: SOUTH_WEST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: SOUTH_WEST
+  nameWithType: RegionType.SOUTH_WEST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.SOUTH_WEST
+  type: Field
+  source:
+    id: SOUTH_WEST
+    path: ''
+    startLine: 3757
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: SOUTH_WEST = 7
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.WEST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.WEST
+  id: WEST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: WEST
+  nameWithType: RegionType.WEST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.WEST
+  type: Field
+  source:
+    id: WEST
+    path: ''
+    startLine: 3758
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: WEST = 8
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.NORTH_WEST
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.NORTH_WEST
+  id: NORTH_WEST
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: NORTH_WEST
+  nameWithType: RegionType.NORTH_WEST
+  fullName: Gameplay.MetroDisplay.Model.RegionType.NORTH_WEST
+  type: Field
+  source:
+    id: NORTH_WEST
+    path: ''
+    startLine: 3759
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: NORTH_WEST = 9
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.RegionType.MAX_VALUE
+  commentId: F:Gameplay.MetroDisplay.Model.RegionType.MAX_VALUE
+  id: MAX_VALUE
+  parent: Gameplay.MetroDisplay.Model.RegionType
+  langs:
+  - csharp
+  - vb
+  name: MAX_VALUE
+  nameWithType: RegionType.MAX_VALUE
+  fullName: Gameplay.MetroDisplay.Model.RegionType.MAX_VALUE
+  type: Field
+  source:
+    id: MAX_VALUE
+    path: ''
+    startLine: 3760
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: MAX_VALUE = 10
+    return:
+      type: Gameplay.MetroDisplay.Model.RegionType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: Gameplay.MetroDisplay.Model.RegionType
+  commentId: T:Gameplay.MetroDisplay.Model.RegionType
+  parent: Gameplay.MetroDisplay.Model
+  name: RegionType
+  nameWithType: RegionType
+  fullName: Gameplay.MetroDisplay.Model.RegionType

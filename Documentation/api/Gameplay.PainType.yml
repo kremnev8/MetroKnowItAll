@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.PainType
+  commentId: T:Gameplay.PainType
+  id: PainType
+  parent: Gameplay
+  children:
+  - Gameplay.PainType.Mental
+  - Gameplay.PainType.Physical
+  langs:
+  - csharp
+  - vb
+  name: PainType
+  nameWithType: PainType
+  fullName: Gameplay.PainType
+  type: Enum
+  source:
+    id: PainType
+    path: ''
+    startLine: 986
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public enum PainType
+    content.vb: Public Enum PainType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Gameplay.PainType.Physical
+  commentId: F:Gameplay.PainType.Physical
+  id: Physical
+  parent: Gameplay.PainType
+  langs:
+  - csharp
+  - vb
+  name: Physical
+  nameWithType: PainType.Physical
+  fullName: Gameplay.PainType.Physical
+  type: Field
+  source:
+    id: Physical
+    path: ''
+    startLine: 988
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: Physical = 0
+    return:
+      type: Gameplay.PainType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.PainType.Mental
+  commentId: F:Gameplay.PainType.Mental
+  id: Mental
+  parent: Gameplay.PainType
+  langs:
+  - csharp
+  - vb
+  name: Mental
+  nameWithType: PainType.Mental
+  fullName: Gameplay.PainType.Mental
+  type: Field
+  source:
+    id: Mental
+    path: ''
+    startLine: 989
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: Mental = 1
+    return:
+      type: Gameplay.PainType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: Gameplay.PainType
+  commentId: T:Gameplay.PainType
+  parent: Gameplay
+  name: PainType
+  nameWithType: PainType
+  fullName: Gameplay.PainType

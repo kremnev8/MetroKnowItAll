@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.ISelectable
+  commentId: T:Gameplay.Controls.ISelectable
+  id: ISelectable
+  parent: Gameplay.Controls
+  children:
+  - Gameplay.Controls.ISelectable.IsFocused(MetroRenderer)
+  - Gameplay.Controls.ISelectable.SetSelected(MetroRenderer,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Gameplay.Controls.ISelectable
+  type: Interface
+  source:
+    id: ISelectable
+    path: ''
+    startLine: 1216
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  summary: "\nDefines a selectable UI element\n"
+  example: []
+  syntax:
+    content: public interface ISelectable
+    content.vb: Public Interface ISelectable
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Gameplay.Controls.ISelectable.IsFocused(MetroRenderer)
+  commentId: M:Gameplay.Controls.ISelectable.IsFocused(MetroRenderer)
+  id: IsFocused(MetroRenderer)
+  parent: Gameplay.Controls.ISelectable
+  langs:
+  - csharp
+  - vb
+  name: IsFocused(MetroRenderer)
+  nameWithType: ISelectable.IsFocused(MetroRenderer)
+  fullName: Gameplay.Controls.ISelectable.IsFocused(MetroRenderer)
+  type: Method
+  source:
+    id: IsFocused
+    path: ''
+    startLine: 1218
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: bool IsFocused(MetroRenderer metroRenderer)
+    parameters:
+    - id: metroRenderer
+      type: Global.MetroRenderer
+    return:
+      type: System.Boolean
+    content.vb: Function IsFocused(metroRenderer As MetroRenderer) As Boolean
+  overload: Gameplay.Controls.ISelectable.IsFocused*
+- uid: Gameplay.Controls.ISelectable.SetSelected(MetroRenderer,System.Boolean)
+  commentId: M:Gameplay.Controls.ISelectable.SetSelected(MetroRenderer,System.Boolean)
+  id: SetSelected(MetroRenderer,System.Boolean)
+  parent: Gameplay.Controls.ISelectable
+  langs:
+  - csharp
+  - vb
+  name: SetSelected(MetroRenderer, Boolean)
+  nameWithType: ISelectable.SetSelected(MetroRenderer, Boolean)
+  fullName: Gameplay.Controls.ISelectable.SetSelected(MetroRenderer, System.Boolean)
+  type: Method
+  source:
+    id: SetSelected
+    path: ''
+    startLine: 1219
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: void SetSelected(MetroRenderer metroRenderer, bool value)
+    parameters:
+    - id: metroRenderer
+      type: Global.MetroRenderer
+    - id: value
+      type: System.Boolean
+    content.vb: Sub SetSelected(metroRenderer As MetroRenderer, value As Boolean)
+  overload: Gameplay.Controls.ISelectable.SetSelected*
+references:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: Gameplay.Controls.ISelectable.IsFocused*
+  commentId: Overload:Gameplay.Controls.ISelectable.IsFocused
+  name: IsFocused
+  nameWithType: ISelectable.IsFocused
+  fullName: Gameplay.Controls.ISelectable.IsFocused
+- uid: Global.MetroRenderer
+  isExternal: true
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: MetroRenderer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.Controls.ISelectable.SetSelected*
+  commentId: Overload:Gameplay.Controls.ISelectable.SetSelected
+  name: SetSelected
+  nameWithType: ISelectable.SetSelected
+  fullName: Gameplay.Controls.ISelectable.SetSelected

@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Core.Simulation.Event
+  commentId: T:Gameplay.Core.Simulation.Event
+  id: Simulation.Event
+  parent: Gameplay.Core
+  children:
+  - Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  - Gameplay.Core.Simulation.Event.Execute
+  - Gameplay.Core.Simulation.Event.Precondition
+  langs:
+  - csharp
+  - vb
+  name: Simulation.Event
+  nameWithType: Simulation.Event
+  fullName: Gameplay.Core.Simulation.Event
+  type: Class
+  source:
+    id: Event
+    path: ''
+    startLine: 292
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nAn event is something that happens at a point in time in a simulation.\nThe Precondition method is used to check if the event should be executed,\nas conditions may have changed in the simulation since the event was \noriginally scheduled.\n"
+  example: []
+  syntax:
+    content: 'public abstract class Event : IComparable<Simulation.Event>'
+    content.vb: >-
+      Public MustInherit Class Event
+          Implements IComparable(Of Simulation.Event)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Gameplay.Core.Simulation.Event`1
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  commentId: M:Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  id: CompareTo(Gameplay.Core.Simulation.Event)
+  parent: Gameplay.Core.Simulation.Event
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Simulation.Event)
+  nameWithType: Simulation.Event.CompareTo(Simulation.Event)
+  fullName: Gameplay.Core.Simulation.Event.CompareTo(Gameplay.Core.Simulation.Event)
+  type: Method
+  source:
+    id: CompareTo
+    path: ''
+    startLine: 296
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  syntax:
+    content: public int CompareTo(Simulation.Event other)
+    parameters:
+    - id: other
+      type: Gameplay.Core.Simulation.Event
+    return:
+      type: System.Int32
+    content.vb: Public Function CompareTo(other As Simulation.Event) As Integer
+  overload: Gameplay.Core.Simulation.Event.CompareTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Core.Simulation.Event.Execute
+  commentId: M:Gameplay.Core.Simulation.Event.Execute
+  id: Execute
+  parent: Gameplay.Core.Simulation.Event
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: Simulation.Event.Execute()
+  fullName: Gameplay.Core.Simulation.Event.Execute()
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 301
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  syntax:
+    content: public abstract void Execute()
+    content.vb: Public MustOverride Sub Execute
+  overload: Gameplay.Core.Simulation.Event.Execute*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Gameplay.Core.Simulation.Event.Precondition
+  commentId: M:Gameplay.Core.Simulation.Event.Precondition
+  id: Precondition
+  parent: Gameplay.Core.Simulation.Event
+  langs:
+  - csharp
+  - vb
+  name: Precondition()
+  nameWithType: Simulation.Event.Precondition()
+  fullName: Gameplay.Core.Simulation.Event.Precondition()
+  type: Method
+  source:
+    id: Precondition
+    path: ''
+    startLine: 303
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  syntax:
+    content: public virtual bool Precondition()
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function Precondition As Boolean
+  overload: Gameplay.Core.Simulation.Event.Precondition*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Gameplay.Core
+  commentId: N:Gameplay.Core
+  name: Gameplay.Core
+  nameWithType: Gameplay.Core
+  fullName: Gameplay.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.Core.Simulation.Event.CompareTo*
+  commentId: Overload:Gameplay.Core.Simulation.Event.CompareTo
+  name: CompareTo
+  nameWithType: Simulation.Event.CompareTo
+  fullName: Gameplay.Core.Simulation.Event.CompareTo
+- uid: Gameplay.Core.Simulation.Event
+  commentId: T:Gameplay.Core.Simulation.Event
+  parent: Gameplay.Core
+  name: Simulation.Event
+  nameWithType: Simulation.Event
+  fullName: Gameplay.Core.Simulation.Event
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.Core.Simulation.Event.Execute*
+  commentId: Overload:Gameplay.Core.Simulation.Event.Execute
+  name: Execute
+  nameWithType: Simulation.Event.Execute
+  fullName: Gameplay.Core.Simulation.Event.Execute
+- uid: Gameplay.Core.Simulation.Event.Precondition*
+  commentId: Overload:Gameplay.Core.Simulation.Event.Precondition
+  name: Precondition
+  nameWithType: Simulation.Event.Precondition
+  fullName: Gameplay.Core.Simulation.Event.Precondition
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

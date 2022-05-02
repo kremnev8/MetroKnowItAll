@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.RandomUtils
+  commentId: T:Util.RandomUtils
+  id: RandomUtils
+  parent: Util
+  children:
+  - Util.RandomUtils.ConstrainedRandom(Func{System.Int32,System.Boolean},System.Int32,System.Int32)
+  - Util.RandomUtils.ConstrainedRandom(List{System.Int32},System.Int32,System.Int32)
+  - Util.RandomUtils.ConstrainedRandom(System.Byte,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: RandomUtils
+  nameWithType: RandomUtils
+  fullName: Util.RandomUtils
+  type: Class
+  source:
+    id: RandomUtils
+    path: ''
+    startLine: 6343
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nHelper methods to generate random numbers\n"
+  example: []
+  syntax:
+    content: public static class RandomUtils
+    content.vb: Public Module RandomUtils
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.RandomUtils.ConstrainedRandom(Func{System.Int32,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Util.RandomUtils.ConstrainedRandom(Func{System.Int32,System.Boolean},System.Int32,System.Int32)
+  id: ConstrainedRandom(Func{System.Int32,System.Boolean},System.Int32,System.Int32)
+  parent: Util.RandomUtils
+  langs:
+  - csharp
+  - vb
+  name: ConstrainedRandom(Func<Int32, Boolean>, Int32, Int32)
+  nameWithType: RandomUtils.ConstrainedRandom(Func<Int32, Boolean>, Int32, Int32)
+  fullName: Util.RandomUtils.ConstrainedRandom(Func<System.Int32, System.Boolean>, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ConstrainedRandom
+    path: ''
+    startLine: 6350
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGenerate a number between min and max with a filter\n"
+  example: []
+  syntax:
+    content: public static int ConstrainedRandom(Func<int, bool> filter, int min, int max)
+    parameters:
+    - id: filter
+      type: Global.Func{System.Int32,System.Boolean}
+      description: Filter function, if function returns false for a number, it will not be included into random set
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ConstrainedRandom(filter As Func(Of Integer, Boolean), min As Integer, max As Integer) As Integer
+  overload: Util.RandomUtils.ConstrainedRandom*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: thrown if all numbers were excluded
+  nameWithType.vb: RandomUtils.ConstrainedRandom(Func(Of Int32, Boolean), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.RandomUtils.ConstrainedRandom(Func(Of System.Int32, System.Boolean), System.Int32, System.Int32)
+  name.vb: ConstrainedRandom(Func(Of Int32, Boolean), Int32, Int32)
+- uid: Util.RandomUtils.ConstrainedRandom(List{System.Int32},System.Int32,System.Int32)
+  commentId: M:Util.RandomUtils.ConstrainedRandom(List{System.Int32},System.Int32,System.Int32)
+  id: ConstrainedRandom(List{System.Int32},System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Util.RandomUtils
+  langs:
+  - csharp
+  - vb
+  name: ConstrainedRandom(List<Int32>, Int32, Int32)
+  nameWithType: RandomUtils.ConstrainedRandom(List<Int32>, Int32, Int32)
+  fullName: Util.RandomUtils.ConstrainedRandom(List<System.Int32>, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ConstrainedRandom
+    path: ''
+    startLine: 6363
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGenerate a number between min and max with a filter\n"
+  example: []
+  syntax:
+    content: public static int ConstrainedRandom(this List<int> blacklist, int min, int max)
+    parameters:
+    - id: blacklist
+      type: Global.List{System.Int32}
+      description: Any numbers in this list will no be added to random set
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConstrainedRandom(blacklist As List(Of Integer), min As Integer, max As Integer) As Integer
+  overload: Util.RandomUtils.ConstrainedRandom*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: thrown if all numbers were excluded
+  nameWithType.vb: RandomUtils.ConstrainedRandom(List(Of Int32), Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Util.RandomUtils.ConstrainedRandom(List(Of System.Int32), System.Int32, System.Int32)
+  name.vb: ConstrainedRandom(List(Of Int32), Int32, Int32)
+- uid: Util.RandomUtils.ConstrainedRandom(System.Byte,System.Int32,System.Int32)
+  commentId: M:Util.RandomUtils.ConstrainedRandom(System.Byte,System.Int32,System.Int32)
+  id: ConstrainedRandom(System.Byte,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Util.RandomUtils
+  langs:
+  - csharp
+  - vb
+  name: ConstrainedRandom(Byte, Int32, Int32)
+  nameWithType: RandomUtils.ConstrainedRandom(Byte, Int32, Int32)
+  fullName: Util.RandomUtils.ConstrainedRandom(System.Byte, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: ConstrainedRandom
+    path: ''
+    startLine: 6375
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nGenerate a number between min and max excluding a single number\n"
+  example: []
+  syntax:
+    content: public static int ConstrainedRandom(this byte exclude, int min, int max)
+    parameters:
+    - id: exclude
+      type: System.Byte
+    - id: min
+      type: System.Int32
+    - id: max
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ConstrainedRandom(exclude As Byte, min As Integer, max As Integer) As Integer
+  overload: Util.RandomUtils.ConstrainedRandom*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: thrown if all numbers were excluded
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Util.RandomUtils.ConstrainedRandom*
+  commentId: Overload:Util.RandomUtils.ConstrainedRandom
+  name: ConstrainedRandom
+  nameWithType: RandomUtils.ConstrainedRandom
+  fullName: Util.RandomUtils.ConstrainedRandom
+- uid: Global.Func{System.Int32,System.Boolean}
+  commentId: '!:Global.Func{System.Int32,System.Boolean}'
+  definition: Global.Func`2
+  name: Func<Int32, Boolean>
+  nameWithType: Func<Int32, Boolean>
+  fullName: Func<System.Int32, System.Boolean>
+  nameWithType.vb: Func(Of Int32, Boolean)
+  fullName.vb: Func(Of System.Int32, System.Boolean)
+  name.vb: Func(Of Int32, Boolean)
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Global.Func`2
+  isExternal: true
+  name: Func<, >
+  nameWithType: Func<, >
+  fullName: Func<, >
+  nameWithType.vb: Func(Of , )
+  fullName.vb: Func(Of , )
+  name.vb: Func(Of , )
+  spec.csharp:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List{System.Int32}
+  commentId: '!:Global.List{System.Int32}'
+  definition: Global.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte

@@ -1,0 +1,441 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Core.Simulation
+  commentId: T:Gameplay.Core.Simulation
+  id: Simulation
+  parent: Gameplay.Core
+  children:
+  - Gameplay.Core.Simulation.Clear
+  - Gameplay.Core.Simulation.DestroyModel``1
+  - Gameplay.Core.Simulation.GetModel``1
+  - Gameplay.Core.Simulation.New``1
+  - Gameplay.Core.Simulation.Reschedule``1(``0,System.Single)
+  - Gameplay.Core.Simulation.Schedule``1(System.Single)
+  - Gameplay.Core.Simulation.SetModel``1(``0)
+  - Gameplay.Core.Simulation.Tick
+  langs:
+  - csharp
+  - vb
+  name: Simulation
+  nameWithType: Simulation
+  fullName: Gameplay.Core.Simulation
+  type: Class
+  source:
+    id: Simulation
+    path: ''
+    startLine: 343
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nThe Simulation class implements the discrete event simulator pattern.\nEvents are pooled, with a default capacity of 4 instances.\n"
+  example: []
+  syntax:
+    content: public static class Simulation
+    content.vb: Public Module Simulation
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Gameplay.Core.Simulation.New``1
+  commentId: M:Gameplay.Core.Simulation.New``1
+  id: New``1
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: New<T>()
+  nameWithType: Simulation.New<T>()
+  fullName: Gameplay.Core.Simulation.New<T>()
+  type: Method
+  source:
+    id: New
+    path: ''
+    startLine: 165
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nCreate a new event of type T and return it, but do not schedule it.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T New<T>()
+          where T : Simulation.Event, new()
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function New(Of T As {Simulation.Event, New}) As T
+  overload: Gameplay.Core.Simulation.New*
+  nameWithType.vb: Simulation.New(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.New(Of T)()
+  name.vb: New(Of T)()
+- uid: Gameplay.Core.Simulation.Clear
+  commentId: M:Gameplay.Core.Simulation.Clear
+  id: Clear
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: Simulation.Clear()
+  fullName: Gameplay.Core.Simulation.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: ''
+    startLine: 183
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nClear all pending events and reset the tick to 0.\n"
+  example: []
+  syntax:
+    content: public static void Clear()
+    content.vb: Public Shared Sub Clear
+  overload: Gameplay.Core.Simulation.Clear*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.Core.Simulation.Schedule``1(System.Single)
+  commentId: M:Gameplay.Core.Simulation.Schedule``1(System.Single)
+  id: Schedule``1(System.Single)
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: Schedule<T>(Single)
+  nameWithType: Simulation.Schedule<T>(Single)
+  fullName: Gameplay.Core.Simulation.Schedule<T>(System.Single)
+  type: Method
+  source:
+    id: Schedule
+    path: ''
+    startLine: 194
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nSchedule an event for a future tick, and return it.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T Schedule<T>(float tick = 0F)
+          where T : Simulation.Event, new()
+    parameters:
+    - id: tick
+      type: System.Single
+      description: Tick.
+    typeParameters:
+    - id: T
+      description: The event type parameter.
+    return:
+      type: '{T}'
+      description: The event.
+    content.vb: Public Shared Function Schedule(Of T As {Simulation.Event, New})(tick As Single = 0F) As T
+  overload: Gameplay.Core.Simulation.Schedule*
+  nameWithType.vb: Simulation.Schedule(Of T)(Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.Schedule(Of T)(System.Single)
+  name.vb: Schedule(Of T)(Single)
+- uid: Gameplay.Core.Simulation.Reschedule``1(``0,System.Single)
+  commentId: M:Gameplay.Core.Simulation.Reschedule``1(``0,System.Single)
+  id: Reschedule``1(``0,System.Single)
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: Reschedule<T>(T, Single)
+  nameWithType: Simulation.Reschedule<T>(T, Single)
+  fullName: Gameplay.Core.Simulation.Reschedule<T>(T, System.Single)
+  type: Method
+  source:
+    id: Reschedule
+    path: ''
+    startLine: 208
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nReschedule an existing event for a future tick, and return it.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T Reschedule<T>(T event, float tick)
+          where T : Simulation.Event, new()
+    parameters:
+    - id: event
+      type: '{T}'
+    - id: tick
+      type: System.Single
+      description: Tick.
+    typeParameters:
+    - id: T
+      description: The event type parameter.
+    return:
+      type: '{T}'
+      description: The event.
+    content.vb: Public Shared Function Reschedule(Of T As {Simulation.Event, New})(event As T, tick As Single) As T
+  overload: Gameplay.Core.Simulation.Reschedule*
+  nameWithType.vb: Simulation.Reschedule(Of T)(T, Single)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.Reschedule(Of T)(T, System.Single)
+  name.vb: Reschedule(Of T)(T, Single)
+- uid: Gameplay.Core.Simulation.GetModel``1
+  commentId: M:Gameplay.Core.Simulation.GetModel``1
+  id: GetModel``1
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: GetModel<T>()
+  nameWithType: Simulation.GetModel<T>()
+  fullName: Gameplay.Core.Simulation.GetModel<T>()
+  type: Method
+  source:
+    id: GetModel
+    path: ''
+    startLine: 219
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nReturn the simulation model instance for a class.\n"
+  example: []
+  syntax:
+    content: >-
+      public static T GetModel<T>()
+          where T : class, new()
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function GetModel(Of T As {Class, New}) As T
+  overload: Gameplay.Core.Simulation.GetModel*
+  nameWithType.vb: Simulation.GetModel(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.GetModel(Of T)()
+  name.vb: GetModel(Of T)()
+- uid: Gameplay.Core.Simulation.SetModel``1(``0)
+  commentId: M:Gameplay.Core.Simulation.SetModel``1(``0)
+  id: SetModel``1(``0)
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: SetModel<T>(T)
+  nameWithType: Simulation.SetModel<T>(T)
+  fullName: Gameplay.Core.Simulation.SetModel<T>(T)
+  type: Method
+  source:
+    id: SetModel
+    path: ''
+    startLine: 228
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nSet a simulation model instance for a class.\n"
+  example: []
+  syntax:
+    content: >-
+      public static void SetModel<T>(T instance)
+          where T : class, new()
+    parameters:
+    - id: instance
+      type: '{T}'
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Shared Sub SetModel(Of T As {Class, New})(instance As T)
+  overload: Gameplay.Core.Simulation.SetModel*
+  nameWithType.vb: Simulation.SetModel(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.SetModel(Of T)(T)
+  name.vb: SetModel(Of T)(T)
+- uid: Gameplay.Core.Simulation.DestroyModel``1
+  commentId: M:Gameplay.Core.Simulation.DestroyModel``1
+  id: DestroyModel``1
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: DestroyModel<T>()
+  nameWithType: Simulation.DestroyModel<T>()
+  fullName: Gameplay.Core.Simulation.DestroyModel<T>()
+  type: Method
+  source:
+    id: DestroyModel
+    path: ''
+    startLine: 237
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nDestroy the simulation model instance for a class.\n"
+  example: []
+  syntax:
+    content: >-
+      public static void DestroyModel<T>()
+          where T : class, new()
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Shared Sub DestroyModel(Of T As {Class, New})
+  overload: Gameplay.Core.Simulation.DestroyModel*
+  nameWithType.vb: Simulation.DestroyModel(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Gameplay.Core.Simulation.DestroyModel(Of T)()
+  name.vb: DestroyModel(Of T)()
+- uid: Gameplay.Core.Simulation.Tick
+  commentId: M:Gameplay.Core.Simulation.Tick
+  id: Tick
+  parent: Gameplay.Core.Simulation
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: Simulation.Tick()
+  fullName: Gameplay.Core.Simulation.Tick()
+  type: Method
+  source:
+    id: Tick
+    path: ''
+    startLine: 248
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Core
+  summary: "\nTick the simulation. Returns the count of remaining events.\nIf remaining events is zero, the simulation is finished unless events are\ninjected from an external system via a Schedule() call.\n"
+  example: []
+  syntax:
+    content: public static int Tick()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Function Tick As Integer
+  overload: Gameplay.Core.Simulation.Tick*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Gameplay.Core
+  commentId: N:Gameplay.Core
+  name: Gameplay.Core
+  nameWithType: Gameplay.Core
+  fullName: Gameplay.Core
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.Core.Simulation.New*
+  commentId: Overload:Gameplay.Core.Simulation.New
+  name: New
+  nameWithType: Simulation.New
+  fullName: Gameplay.Core.Simulation.New
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Gameplay.Core.Simulation.Clear*
+  commentId: Overload:Gameplay.Core.Simulation.Clear
+  name: Clear
+  nameWithType: Simulation.Clear
+  fullName: Gameplay.Core.Simulation.Clear
+- uid: Gameplay.Core.Simulation.Schedule*
+  commentId: Overload:Gameplay.Core.Simulation.Schedule
+  name: Schedule
+  nameWithType: Simulation.Schedule
+  fullName: Gameplay.Core.Simulation.Schedule
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.Core.Simulation.Reschedule*
+  commentId: Overload:Gameplay.Core.Simulation.Reschedule
+  name: Reschedule
+  nameWithType: Simulation.Reschedule
+  fullName: Gameplay.Core.Simulation.Reschedule
+- uid: Gameplay.Core.Simulation.GetModel*
+  commentId: Overload:Gameplay.Core.Simulation.GetModel
+  name: GetModel
+  nameWithType: Simulation.GetModel
+  fullName: Gameplay.Core.Simulation.GetModel
+- uid: Gameplay.Core.Simulation.SetModel*
+  commentId: Overload:Gameplay.Core.Simulation.SetModel
+  name: SetModel
+  nameWithType: Simulation.SetModel
+  fullName: Gameplay.Core.Simulation.SetModel
+- uid: Gameplay.Core.Simulation.DestroyModel*
+  commentId: Overload:Gameplay.Core.Simulation.DestroyModel
+  name: DestroyModel
+  nameWithType: Simulation.DestroyModel
+  fullName: Gameplay.Core.Simulation.DestroyModel
+- uid: Gameplay.Core.Simulation.Tick*
+  commentId: Overload:Gameplay.Core.Simulation.Tick
+  name: Tick
+  nameWithType: Simulation.Tick
+  fullName: Gameplay.Core.Simulation.Tick
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

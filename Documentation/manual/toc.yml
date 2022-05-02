@@ -1,0 +1,4 @@
+- name: Игровой процесс
+  href: gameplay.md
+- name: Статистика и достижения
+  href: achievements.md

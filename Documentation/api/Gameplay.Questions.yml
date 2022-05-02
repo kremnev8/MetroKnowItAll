@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  id: Gameplay.Questions
+  children:
+  - Gameplay.Questions.BaseQuestionGenerator
+  - Gameplay.Questions.BaseUIQuestion
+  - Gameplay.Questions.ILineQuestion
+  - Gameplay.Questions.QuestionController
+  - Gameplay.Questions.QuestionGenerator`1
+  - Gameplay.Questions.UIQuestion
+  - Gameplay.Questions.UIQuestionFindStation
+  - Gameplay.Questions.UITipContainer
+  - Gameplay.Questions.UITipController
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  parent: Gameplay.Questions
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  parent: Gameplay.Questions
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+- uid: Gameplay.Questions.ILineQuestion
+  commentId: T:Gameplay.Questions.ILineQuestion
+  parent: Gameplay.Questions
+  name: ILineQuestion
+  nameWithType: ILineQuestion
+  fullName: Gameplay.Questions.ILineQuestion
+- uid: Gameplay.Questions.QuestionController
+  commentId: T:Gameplay.Questions.QuestionController
+  name: QuestionController
+  nameWithType: QuestionController
+  fullName: Gameplay.Questions.QuestionController
+- uid: Gameplay.Questions.QuestionGenerator`1
+  commentId: T:Gameplay.Questions.QuestionGenerator`1
+  name: QuestionGenerator<T>
+  nameWithType: QuestionGenerator<T>
+  fullName: Gameplay.Questions.QuestionGenerator<T>
+  nameWithType.vb: QuestionGenerator(Of T)
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T)
+  name.vb: QuestionGenerator(Of T)
+  spec.csharp:
+  - uid: Gameplay.Questions.QuestionGenerator`1
+    name: QuestionGenerator
+    nameWithType: QuestionGenerator
+    fullName: Gameplay.Questions.QuestionGenerator
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Questions.QuestionGenerator`1
+    name: QuestionGenerator
+    nameWithType: QuestionGenerator
+    fullName: Gameplay.Questions.QuestionGenerator
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.UIQuestion
+  commentId: T:Gameplay.Questions.UIQuestion
+  name: UIQuestion
+  nameWithType: UIQuestion
+  fullName: Gameplay.Questions.UIQuestion
+- uid: Gameplay.Questions.UIQuestionFindStation
+  commentId: T:Gameplay.Questions.UIQuestionFindStation
+  name: UIQuestionFindStation
+  nameWithType: UIQuestionFindStation
+  fullName: Gameplay.Questions.UIQuestionFindStation
+- uid: Gameplay.Questions.UITipContainer
+  commentId: T:Gameplay.Questions.UITipContainer
+  parent: Gameplay.Questions
+  name: UITipContainer
+  nameWithType: UITipContainer
+  fullName: Gameplay.Questions.UITipContainer
+- uid: Gameplay.Questions.UITipController
+  commentId: T:Gameplay.Questions.UITipController
+  name: UITipController
+  nameWithType: UITipController
+  fullName: Gameplay.Questions.UITipController
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions

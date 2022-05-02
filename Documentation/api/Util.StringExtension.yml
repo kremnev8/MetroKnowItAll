@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.StringExtension
+  commentId: T:Util.StringExtension
+  id: StringExtension
+  parent: Util
+  children:
+  - Util.StringExtension.FilterRuString(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtension
+  nameWithType: StringExtension
+  fullName: Util.StringExtension
+  type: Class
+  source:
+    id: StringExtension
+    path: ''
+    startLine: 6412
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public static class StringExtension
+    content.vb: Public Module StringExtension
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.StringExtension.FilterRuString(System.String)
+  commentId: M:Util.StringExtension.FilterRuString(System.String)
+  id: FilterRuString(System.String)
+  parent: Util.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: FilterRuString(String)
+  nameWithType: StringExtension.FilterRuString(String)
+  fullName: Util.StringExtension.FilterRuString(System.String)
+  type: Method
+  source:
+    id: FilterRuString
+    path: ''
+    startLine: 6414
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public static string FilterRuString(string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function FilterRuString(value As String) As String
+  overload: Util.StringExtension.FilterRuString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.StringExtension.FilterRuString*
+  commentId: Overload:Util.StringExtension.FilterRuString
+  name: FilterRuString
+  nameWithType: StringExtension.FilterRuString
+  fullName: Util.StringExtension.FilterRuString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

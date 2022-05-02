@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Health.PainEvent
+  commentId: T:Gameplay.Health.PainEvent
+  id: Health.PainEvent
+  parent: Gameplay
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Health.PainEvent
+  nameWithType: Health.PainEvent
+  fullName: Gameplay.Health.PainEvent
+  type: Class
+  source:
+    id: PainEvent
+    path: ''
+    startLine: 1003
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: 'public class PainEvent : UnityEvent<PainType>'
+    content.vb: >-
+      Public Class PainEvent
+          Inherits UnityEvent(Of PainType)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

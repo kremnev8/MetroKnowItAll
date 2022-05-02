@@ -1,0 +1,141 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.ConnData
+  commentId: T:Gameplay.MetroDisplay.ConnData
+  id: ConnData
+  parent: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.ConnData.#ctor(Vector2,MetroConnection)
+  - Gameplay.MetroDisplay.ConnData.connection
+  - Gameplay.MetroDisplay.ConnData.point
+  langs:
+  - csharp
+  - vb
+  name: ConnData
+  nameWithType: ConnData
+  fullName: Gameplay.MetroDisplay.ConnData
+  type: Struct
+  source:
+    id: ConnData
+    path: ''
+    startLine: 1961
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  summary: "\nTemporary data struct for line displays\n"
+  example: []
+  syntax:
+    content: public struct ConnData
+    content.vb: Public Structure ConnData
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Gameplay.MetroDisplay.ConnData.point
+  commentId: F:Gameplay.MetroDisplay.ConnData.point
+  id: point
+  parent: Gameplay.MetroDisplay.ConnData
+  langs:
+  - csharp
+  - vb
+  name: point
+  nameWithType: ConnData.point
+  fullName: Gameplay.MetroDisplay.ConnData.point
+  type: Field
+  source:
+    id: point
+    path: ''
+    startLine: 1963
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Vector2 point
+    return:
+      type: Global.Vector2
+    content.vb: Public point As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.ConnData.connection
+  commentId: F:Gameplay.MetroDisplay.ConnData.connection
+  id: connection
+  parent: Gameplay.MetroDisplay.ConnData
+  langs:
+  - csharp
+  - vb
+  name: connection
+  nameWithType: ConnData.connection
+  fullName: Gameplay.MetroDisplay.ConnData.connection
+  type: Field
+  source:
+    id: connection
+    path: ''
+    startLine: 1964
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public MetroConnection connection
+    return:
+      type: Global.MetroConnection
+    content.vb: Public connection As MetroConnection
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.ConnData.#ctor(Vector2,MetroConnection)
+  commentId: M:Gameplay.MetroDisplay.ConnData.#ctor(Vector2,MetroConnection)
+  id: '#ctor(Vector2,MetroConnection)'
+  parent: Gameplay.MetroDisplay.ConnData
+  langs:
+  - csharp
+  - vb
+  name: ConnData(Vector2, MetroConnection)
+  nameWithType: ConnData.ConnData(Vector2, MetroConnection)
+  fullName: Gameplay.MetroDisplay.ConnData.ConnData(Vector2, MetroConnection)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1966
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public ConnData(Vector2 point, MetroConnection connection)
+    parameters:
+    - id: point
+      type: Global.Vector2
+    - id: connection
+      type: Global.MetroConnection
+    content.vb: Public Sub New(point As Vector2, connection As MetroConnection)
+  overload: Gameplay.MetroDisplay.ConnData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: Global.MetroConnection
+  isExternal: true
+  name: MetroConnection
+  nameWithType: MetroConnection
+  fullName: MetroConnection
+- uid: Gameplay.MetroDisplay.ConnData.#ctor*
+  commentId: Overload:Gameplay.MetroDisplay.ConnData.#ctor
+  name: ConnData
+  nameWithType: ConnData.ConnData
+  fullName: Gameplay.MetroDisplay.ConnData.ConnData

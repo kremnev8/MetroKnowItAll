@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  id: BaseUIQuestion
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.BaseUIQuestion.bottomPane
+  - Gameplay.Questions.BaseUIQuestion.GetController
+  - Gameplay.Questions.BaseUIQuestion.HideElements
+  - Gameplay.Questions.BaseUIQuestion.questionLabel
+  - Gameplay.Questions.BaseUIQuestion.renderer
+  langs:
+  - csharp
+  - vb
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+  type: Class
+  source:
+    id: BaseUIQuestion
+    path: ''
+    startLine: 3799
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nBase class for all question UI classes\n"
+  example: []
+  syntax:
+    content: 'public abstract class BaseUIQuestion : MonoBehaviour'
+    content.vb: >-
+      Public MustInherit Class BaseUIQuestion
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Gameplay.Questions.Model.UIQuestionFindLine
+  - Gameplay.Questions.Model.UIQuestionOrderStations
+  - Gameplay.Questions.UIQuestionFindStation
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Gameplay.Questions.BaseUIQuestion.renderer
+  commentId: F:Gameplay.Questions.BaseUIQuestion.renderer
+  id: renderer
+  parent: Gameplay.Questions.BaseUIQuestion
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: BaseUIQuestion.renderer
+  fullName: Gameplay.Questions.BaseUIQuestion.renderer
+  type: Field
+  source:
+    id: renderer
+    path: ''
+    startLine: 3801
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public MetroRenderer renderer
+    return:
+      type: Global.MetroRenderer
+    content.vb: Public renderer As MetroRenderer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.BaseUIQuestion.bottomPane
+  commentId: F:Gameplay.Questions.BaseUIQuestion.bottomPane
+  id: bottomPane
+  parent: Gameplay.Questions.BaseUIQuestion
+  langs:
+  - csharp
+  - vb
+  name: bottomPane
+  nameWithType: BaseUIQuestion.bottomPane
+  fullName: Gameplay.Questions.BaseUIQuestion.bottomPane
+  type: Field
+  source:
+    id: bottomPane
+    path: ''
+    startLine: 3803
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public RectTransform bottomPane
+    return:
+      type: Global.RectTransform
+    content.vb: Public bottomPane As RectTransform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.BaseUIQuestion.questionLabel
+  commentId: F:Gameplay.Questions.BaseUIQuestion.questionLabel
+  id: questionLabel
+  parent: Gameplay.Questions.BaseUIQuestion
+  langs:
+  - csharp
+  - vb
+  name: questionLabel
+  nameWithType: BaseUIQuestion.questionLabel
+  fullName: Gameplay.Questions.BaseUIQuestion.questionLabel
+  type: Field
+  source:
+    id: questionLabel
+    path: ''
+    startLine: 3804
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text questionLabel
+    return:
+      type: Global.TMP_Text
+    content.vb: Public questionLabel As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.BaseUIQuestion.GetController
+  commentId: M:Gameplay.Questions.BaseUIQuestion.GetController
+  id: GetController
+  parent: Gameplay.Questions.BaseUIQuestion
+  langs:
+  - csharp
+  - vb
+  name: GetController()
+  nameWithType: BaseUIQuestion.GetController()
+  fullName: Gameplay.Questions.BaseUIQuestion.GetController()
+  type: Method
+  source:
+    id: GetController
+    path: ''
+    startLine: 3807
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public abstract BaseQuestionGenerator GetController()
+    return:
+      type: Gameplay.Questions.BaseQuestionGenerator
+    content.vb: Public MustOverride Function GetController As BaseQuestionGenerator
+  overload: Gameplay.Questions.BaseUIQuestion.GetController*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Gameplay.Questions.BaseUIQuestion.HideElements
+  commentId: M:Gameplay.Questions.BaseUIQuestion.HideElements
+  id: HideElements
+  parent: Gameplay.Questions.BaseUIQuestion
+  langs:
+  - csharp
+  - vb
+  name: HideElements()
+  nameWithType: BaseUIQuestion.HideElements()
+  fullName: Gameplay.Questions.BaseUIQuestion.HideElements()
+  type: Method
+  source:
+    id: HideElements
+    path: ''
+    startLine: 3809
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public virtual void HideElements()
+    content.vb: Public Overridable Sub HideElements
+  overload: Gameplay.Questions.BaseUIQuestion.HideElements*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.MetroRenderer
+  isExternal: true
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: MetroRenderer
+- uid: Global.RectTransform
+  commentId: '!:Global.RectTransform'
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Gameplay.Questions.BaseUIQuestion.GetController*
+  commentId: Overload:Gameplay.Questions.BaseUIQuestion.GetController
+  name: GetController
+  nameWithType: BaseUIQuestion.GetController
+  fullName: Gameplay.Questions.BaseUIQuestion.GetController
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  parent: Gameplay.Questions
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+- uid: Gameplay.Questions.BaseUIQuestion.HideElements*
+  commentId: Overload:Gameplay.Questions.BaseUIQuestion.HideElements
+  name: HideElements
+  nameWithType: BaseUIQuestion.HideElements
+  fullName: Gameplay.Questions.BaseUIQuestion.HideElements

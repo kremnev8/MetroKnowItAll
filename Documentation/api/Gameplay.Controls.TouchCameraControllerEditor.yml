@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.TouchCameraControllerEditor
+  commentId: T:Gameplay.Controls.TouchCameraControllerEditor
+  id: TouchCameraControllerEditor
+  parent: Gameplay.Controls
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: TouchCameraControllerEditor
+  nameWithType: TouchCameraControllerEditor
+  fullName: Gameplay.Controls.TouchCameraControllerEditor
+  type: Class
+  source:
+    id: TouchCameraControllerEditor
+    path: ''
+    startLine: 1529
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: 'public class TouchCameraControllerEditor : Editor'
+    content.vb: >-
+      Public Class TouchCameraControllerEditor
+          Inherits Editor
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.GenericItem
+  commentId: T:ScriptableObjects.GenericItem
+  id: GenericItem
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.GenericItem.ItemId
+  langs:
+  - csharp
+  - vb
+  name: GenericItem
+  nameWithType: GenericItem
+  fullName: ScriptableObjects.GenericItem
+  type: Interface
+  source:
+    id: GenericItem
+    path: ''
+    startLine: 4672
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nBase class for generic items keyed by string id&apos;s\n"
+  example: []
+  syntax:
+    content: public interface GenericItem
+    content.vb: Public Interface GenericItem
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: ScriptableObjects.GenericItem.ItemId
+  commentId: P:ScriptableObjects.GenericItem.ItemId
+  id: ItemId
+  parent: ScriptableObjects.GenericItem
+  langs:
+  - csharp
+  - vb
+  name: ItemId
+  nameWithType: GenericItem.ItemId
+  fullName: ScriptableObjects.GenericItem.ItemId
+  type: Property
+  source:
+    id: ItemId
+    path: ''
+    startLine: 4674
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: string ItemId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ItemId As String
+  overload: ScriptableObjects.GenericItem.ItemId*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: ScriptableObjects.GenericItem.ItemId*
+  commentId: Overload:ScriptableObjects.GenericItem.ItemId
+  name: ItemId
+  nameWithType: GenericItem.ItemId
+  fullName: ScriptableObjects.GenericItem.ItemId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

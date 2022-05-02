@@ -83,6 +83,7 @@ namespace Gameplay.Statistics
             current.correctAnswerStreak++;
             
             current.fastestCorrectAnswer = current.fastestCorrectAnswer > 0 ? Mathf.Min(current.fastestCorrectAnswer, time) : time;
+            current.maximumCorrectAnswerTime = Mathf.Max(current.fastestCorrectAnswer, time);
             current.averageAnswerTime = current.averageAnswerTime.Average(time, current.totalAnswers);
 
             if (current.correctAnswerStreak == 5)
@@ -93,6 +94,12 @@ namespace Gameplay.Statistics
             {
                 UIAchievement.UnlockAchievement("QuickAnswer");
             }
+
+            if (current.maximumCorrectAnswerTime > 80)
+            {
+                UIAchievement.UnlockAchievement("SlowThinking");
+            }
+            
 
             switch (current.correctAnswers)
             {

@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.GameController
+  commentId: T:Gameplay.GameController
+  id: GameController
+  parent: Gameplay
+  children:
+  - Gameplay.GameController.crossingMaterial
+  - Gameplay.GameController.instance
+  - Gameplay.GameController.lineMaterial
+  - Gameplay.GameController.model
+  - Gameplay.GameController.theme
+  - Gameplay.GameController.tmpOutlineMaterial
+  langs:
+  - csharp
+  - vb
+  name: GameController
+  nameWithType: GameController
+  fullName: Gameplay.GameController
+  type: Class
+  source:
+    id: GameController
+    path: ''
+    startLine: 897
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  summary: "\nMain game controller\n"
+  example: []
+  syntax:
+    content: 'public class GameController : MonoBehaviour'
+    content.vb: >-
+      Public Class GameController
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.GameController.instance
+  commentId: F:Gameplay.GameController.instance
+  id: instance
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: GameController.instance
+  fullName: Gameplay.GameController.instance
+  type: Field
+  source:
+    id: instance
+    path: ''
+    startLine: 900
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public static GameController instance
+    return:
+      type: Gameplay.GameController
+    content.vb: Public Shared instance As GameController
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.GameController.model
+  commentId: F:Gameplay.GameController.model
+  id: model
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: model
+  nameWithType: GameController.model
+  fullName: Gameplay.GameController.model
+  type: Field
+  source:
+    id: model
+    path: ''
+    startLine: 902
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public GameModel model
+    return:
+      type: Gameplay.GameModel
+    content.vb: Public model As GameModel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameController.theme
+  commentId: P:Gameplay.GameController.theme
+  id: theme
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: theme
+  nameWithType: GameController.theme
+  fullName: Gameplay.GameController.theme
+  type: Property
+  source:
+    id: theme
+    path: ''
+    startLine: 903
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public static Theme theme { get; }
+    parameters: []
+    return:
+      type: Global.Theme
+    content.vb: Public Shared ReadOnly Property theme As Theme
+  overload: Gameplay.GameController.theme*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Gameplay.GameController.lineMaterial
+  commentId: F:Gameplay.GameController.lineMaterial
+  id: lineMaterial
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: lineMaterial
+  nameWithType: GameController.lineMaterial
+  fullName: Gameplay.GameController.lineMaterial
+  type: Field
+  source:
+    id: lineMaterial
+    path: ''
+    startLine: 905
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Material lineMaterial
+    return:
+      type: Global.Material
+    content.vb: Public lineMaterial As Material
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameController.crossingMaterial
+  commentId: F:Gameplay.GameController.crossingMaterial
+  id: crossingMaterial
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: crossingMaterial
+  nameWithType: GameController.crossingMaterial
+  fullName: Gameplay.GameController.crossingMaterial
+  type: Field
+  source:
+    id: crossingMaterial
+    path: ''
+    startLine: 906
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Material crossingMaterial
+    return:
+      type: Global.Material
+    content.vb: Public crossingMaterial As Material
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.GameController.tmpOutlineMaterial
+  commentId: F:Gameplay.GameController.tmpOutlineMaterial
+  id: tmpOutlineMaterial
+  parent: Gameplay.GameController
+  langs:
+  - csharp
+  - vb
+  name: tmpOutlineMaterial
+  nameWithType: GameController.tmpOutlineMaterial
+  fullName: Gameplay.GameController.tmpOutlineMaterial
+  type: Field
+  source:
+    id: tmpOutlineMaterial
+    path: ''
+    startLine: 907
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public Material tmpOutlineMaterial
+    return:
+      type: Global.Material
+    content.vb: Public tmpOutlineMaterial As Material
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Gameplay.GameController
+  commentId: T:Gameplay.GameController
+  parent: Gameplay
+  name: GameController
+  nameWithType: GameController
+  fullName: Gameplay.GameController
+- uid: Gameplay.GameModel
+  commentId: T:Gameplay.GameModel
+  parent: Gameplay
+  name: GameModel
+  nameWithType: GameModel
+  fullName: Gameplay.GameModel
+- uid: Gameplay.GameController.theme*
+  commentId: Overload:Gameplay.GameController.theme
+  name: theme
+  nameWithType: GameController.theme
+  fullName: Gameplay.GameController.theme
+- uid: Global.Theme
+  commentId: '!:Global.Theme'
+  isExternal: true
+  name: Theme
+  nameWithType: Theme
+  fullName: Theme
+- uid: Global.Material
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: Material

@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing
+  commentId: T:Gameplay.MetroDisplay.Model.MetroCrossing
+  id: MetroCrossing
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
+  - Gameplay.MetroDisplay.Model.MetroCrossing.stationsGlobalIds
+  langs:
+  - csharp
+  - vb
+  name: MetroCrossing
+  nameWithType: MetroCrossing
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing
+  type: Class
+  source:
+    id: MetroCrossing
+    path: ''
+    startLine: 3510
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nDefines a crossing between lines\n"
+  example: []
+  syntax:
+    content: public class MetroCrossing
+    content.vb: Public Class MetroCrossing
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.stationsGlobalIds
+  commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.stationsGlobalIds
+  id: stationsGlobalIds
+  parent: Gameplay.MetroDisplay.Model.MetroCrossing
+  langs:
+  - csharp
+  - vb
+  name: stationsGlobalIds
+  nameWithType: MetroCrossing.stationsGlobalIds
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.stationsGlobalIds
+  type: Field
+  source:
+    id: stationsGlobalIds
+    path: ''
+    startLine: 3513
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<GlobalId> stationsGlobalIds
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.GlobalId}
+    content.vb: Public stationsGlobalIds As List(Of GlobalId)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
+  commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
+  id: isOpen
+  parent: Gameplay.MetroDisplay.Model.MetroCrossing
+  langs:
+  - csharp
+  - vb
+  name: isOpen
+  nameWithType: MetroCrossing.isOpen
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
+  type: Field
+  source:
+    id: isOpen
+    path: ''
+    startLine: 3515
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool isOpen
+    return:
+      type: System.Boolean
+    content.vb: Public isOpen As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Gameplay.MetroDisplay.Model.GlobalId}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.GlobalId}'
+  definition: Global.List`1
+  name: List<GlobalId>
+  nameWithType: List<GlobalId>
+  fullName: List<Gameplay.MetroDisplay.Model.GlobalId>
+  nameWithType.vb: List(Of GlobalId)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.GlobalId)
+  name.vb: List(Of GlobalId)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.GlobalId
+    name: GlobalId
+    nameWithType: GlobalId
+    fullName: Gameplay.MetroDisplay.Model.GlobalId
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.GlobalId
+    name: GlobalId
+    nameWithType: GlobalId
+    fullName: Gameplay.MetroDisplay.Model.GlobalId
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

@@ -1,0 +1,771 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.MetroLine
+  commentId: T:Gameplay.MetroDisplay.Model.MetroLine
+  id: MetroLine
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.MetroLine.connections
+  - Gameplay.MetroDisplay.Model.MetroLine.curveCenter
+  - Gameplay.MetroDisplay.Model.MetroLine.displayName
+  - Gameplay.MetroDisplay.Model.MetroLine.editorName
+  - Gameplay.MetroDisplay.Model.MetroLine.hideName
+  - Gameplay.MetroDisplay.Model.MetroLine.index
+  - Gameplay.MetroDisplay.Model.MetroLine.lineColor
+  - Gameplay.MetroDisplay.Model.MetroLine.lineId
+  - Gameplay.MetroDisplay.Model.MetroLine.name
+  - Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
+  - Gameplay.MetroDisplay.Model.MetroLine.namePosition
+  - Gameplay.MetroDisplay.Model.MetroLine.simpleLine
+  - Gameplay.MetroDisplay.Model.MetroLine.stations
+  - Gameplay.MetroDisplay.Model.MetroLine.style
+  - Gameplay.MetroDisplay.Model.MetroLine.useSmoothCurves
+  langs:
+  - csharp
+  - vb
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: Gameplay.MetroDisplay.Model.MetroLine
+  type: Class
+  source:
+    id: MetroLine
+    path: ''
+    startLine: 3531
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nDefines a line in the metro, contains <xref href=\"Gameplay.MetroDisplay.Model.MetroStation\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Gameplay.MetroDisplay.Model.MetroConnection\" data-throw-if-not-resolved=\"false\"></xref>\nAlso has some display parameters\n"
+  example: []
+  syntax:
+    content: 'public class MetroLine : INamedArrayElement'
+    content.vb: >-
+      Public Class MetroLine
+          Inherits INamedArrayElement
+  inheritance:
+  - System.Object
+  implements:
+  - Global.IIndexable{System.Int32}
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.MetroLine.lineId
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.lineId
+  id: lineId
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: lineId
+  nameWithType: MetroLine.lineId
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.lineId
+  type: Field
+  source:
+    id: lineId
+    path: ''
+    startLine: 3535
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte lineId
+    return:
+      type: System.Byte
+    content.vb: Public lineId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.name
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.name
+  id: name
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: MetroLine.name
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.name
+  type: Field
+  source:
+    id: name
+    path: ''
+    startLine: 3536
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.style
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.style
+  id: style
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: style
+  nameWithType: MetroLine.style
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.style
+  type: Field
+  source:
+    id: style
+    path: ''
+    startLine: 3538
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public LineStyle style
+    return:
+      type: Gameplay.MetroDisplay.Model.LineStyle
+    content.vb: Public style As LineStyle
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.useSmoothCurves
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.useSmoothCurves
+  id: useSmoothCurves
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: useSmoothCurves
+  nameWithType: MetroLine.useSmoothCurves
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.useSmoothCurves
+  type: Field
+  source:
+    id: useSmoothCurves
+    path: ''
+    startLine: 3539
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool useSmoothCurves
+    return:
+      type: System.Boolean
+    content.vb: Public useSmoothCurves As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.curveCenter
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.curveCenter
+  id: curveCenter
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: curveCenter
+  nameWithType: MetroLine.curveCenter
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.curveCenter
+  type: Field
+  source:
+    id: curveCenter
+    path: ''
+    startLine: 3540
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Vector2 curveCenter
+    return:
+      type: Global.Vector2
+    content.vb: Public curveCenter As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.lineColor
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.lineColor
+  id: lineColor
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: lineColor
+  nameWithType: MetroLine.lineColor
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.lineColor
+  type: Field
+  source:
+    id: lineColor
+    path: ''
+    startLine: 3542
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public Color lineColor
+    return:
+      type: Global.Color
+    content.vb: Public lineColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.stations
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.stations
+  id: stations
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: stations
+  nameWithType: MetroLine.stations
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.stations
+  type: Field
+  source:
+    id: stations
+    path: ''
+    startLine: 3545
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<MetroStation> stations
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroStation}
+    content.vb: Public stations As List(Of MetroStation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.connections
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.connections
+  id: connections
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: connections
+  nameWithType: MetroLine.connections
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.connections
+  type: Field
+  source:
+    id: connections
+    path: ''
+    startLine: 3548
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<MetroConnection> connections
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroConnection}
+    content.vb: Public connections As List(Of MetroConnection)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.simpleLine
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.simpleLine
+  id: simpleLine
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: simpleLine
+  nameWithType: MetroLine.simpleLine
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.simpleLine
+  type: Field
+  source:
+    id: simpleLine
+    path: ''
+    startLine: 3549
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool simpleLine
+    return:
+      type: System.Boolean
+    content.vb: Public simpleLine As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.hideName
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.hideName
+  id: hideName
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: hideName
+  nameWithType: MetroLine.hideName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.hideName
+  type: Field
+  source:
+    id: hideName
+    path: ''
+    startLine: 3552
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public bool hideName
+    return:
+      type: System.Boolean
+    content.vb: Public hideName As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.namePosition
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.namePosition
+  id: namePosition
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: namePosition
+  nameWithType: MetroLine.namePosition
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.namePosition
+  type: Field
+  source:
+    id: namePosition
+    path: ''
+    startLine: 3553
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public NamePosition namePosition
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+    content.vb: Public namePosition As NamePosition
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
+  id: nameAlignment
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: nameAlignment
+  nameWithType: MetroLine.nameAlignment
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
+  type: Field
+  source:
+    id: nameAlignment
+    path: ''
+    startLine: 3554
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public TextAlignmentOptions nameAlignment
+    return:
+      type: Global.TextAlignmentOptions
+    content.vb: Public nameAlignment As TextAlignmentOptions
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.MetroLine.editorName
+  commentId: P:Gameplay.MetroDisplay.Model.MetroLine.editorName
+  id: editorName
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: editorName
+  nameWithType: MetroLine.editorName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.editorName
+  type: Property
+  source:
+    id: editorName
+    path: ''
+    startLine: 3556
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string editorName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property editorName As String
+  overload: Gameplay.MetroDisplay.Model.MetroLine.editorName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.Model.MetroLine.displayName
+  commentId: P:Gameplay.MetroDisplay.Model.MetroLine.displayName
+  id: displayName
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: displayName
+  nameWithType: MetroLine.displayName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.displayName
+  type: Property
+  source:
+    id: displayName
+    path: ''
+    startLine: 3557
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public string displayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property displayName As String
+  overload: Gameplay.MetroDisplay.Model.MetroLine.displayName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.Model.MetroLine.index
+  commentId: P:Gameplay.MetroDisplay.Model.MetroLine.index
+  id: index
+  parent: Gameplay.MetroDisplay.Model.MetroLine
+  langs:
+  - csharp
+  - vb
+  name: index
+  nameWithType: MetroLine.index
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.index
+  type: Property
+  source:
+    id: index
+    path: ''
+    startLine: 3558
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public int index { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property index As Integer
+  overload: Gameplay.MetroDisplay.Model.MetroLine.index*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Gameplay.MetroDisplay.Model.MetroStation
+  commentId: T:Gameplay.MetroDisplay.Model.MetroStation
+  parent: Gameplay.MetroDisplay.Model
+  name: MetroStation
+  nameWithType: MetroStation
+  fullName: Gameplay.MetroDisplay.Model.MetroStation
+- uid: Gameplay.MetroDisplay.Model.MetroConnection
+  commentId: T:Gameplay.MetroDisplay.Model.MetroConnection
+  name: MetroConnection
+  nameWithType: MetroConnection
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Global.IIndexable{System.Int32}
+  commentId: '!:Global.IIndexable{System.Int32}'
+  definition: Global.IIndexable`1
+  name: IIndexable<Int32>
+  nameWithType: IIndexable<Int32>
+  fullName: IIndexable<System.Int32>
+  nameWithType.vb: IIndexable(Of Int32)
+  fullName.vb: IIndexable(Of System.Int32)
+  name.vb: IIndexable(Of Int32)
+  spec.csharp:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.IIndexable`1
+  isExternal: true
+  name: IIndexable<>
+  nameWithType: IIndexable<>
+  fullName: IIndexable<>
+  nameWithType.vb: IIndexable(Of )
+  fullName.vb: IIndexable(Of )
+  name.vb: IIndexable(Of )
+  spec.csharp:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: IIndexable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Gameplay.MetroDisplay.Model.LineStyle
+  commentId: T:Gameplay.MetroDisplay.Model.LineStyle
+  parent: Gameplay.MetroDisplay.Model
+  name: LineStyle
+  nameWithType: LineStyle
+  fullName: Gameplay.MetroDisplay.Model.LineStyle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Global.List{Gameplay.MetroDisplay.Model.MetroStation}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.MetroStation}'
+  definition: Global.List`1
+  name: List<MetroStation>
+  nameWithType: List<MetroStation>
+  fullName: List<Gameplay.MetroDisplay.Model.MetroStation>
+  nameWithType.vb: List(Of MetroStation)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.MetroStation)
+  name.vb: List(Of MetroStation)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: Gameplay.MetroDisplay.Model.MetroStation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: Gameplay.MetroDisplay.Model.MetroStation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List{Gameplay.MetroDisplay.Model.MetroConnection}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.MetroConnection}'
+  definition: Global.List`1
+  name: List<MetroConnection>
+  nameWithType: List<MetroConnection>
+  fullName: List<Gameplay.MetroDisplay.Model.MetroConnection>
+  nameWithType.vb: List(Of MetroConnection)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.MetroConnection)
+  name.vb: List(Of MetroConnection)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.MetroConnection
+    name: MetroConnection
+    nameWithType: MetroConnection
+    fullName: Gameplay.MetroDisplay.Model.MetroConnection
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.MetroConnection
+    name: MetroConnection
+    nameWithType: MetroConnection
+    fullName: Gameplay.MetroDisplay.Model.MetroConnection
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.MetroDisplay.Model.NamePosition
+  commentId: T:Gameplay.MetroDisplay.Model.NamePosition
+  parent: Gameplay.MetroDisplay.Model
+  name: NamePosition
+  nameWithType: NamePosition
+  fullName: Gameplay.MetroDisplay.Model.NamePosition
+- uid: Global.TextAlignmentOptions
+  isExternal: true
+  name: TextAlignmentOptions
+  nameWithType: TextAlignmentOptions
+  fullName: TextAlignmentOptions
+- uid: Gameplay.MetroDisplay.Model.MetroLine.editorName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroLine.editorName
+  name: editorName
+  nameWithType: MetroLine.editorName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.editorName
+- uid: Gameplay.MetroDisplay.Model.MetroLine.displayName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroLine.displayName
+  name: displayName
+  nameWithType: MetroLine.displayName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.displayName
+- uid: Gameplay.MetroDisplay.Model.MetroLine.index*
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroLine.index
+  name: index
+  nameWithType: MetroLine.index
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

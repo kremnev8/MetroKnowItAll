@@ -8,7 +8,6 @@
         /// as conditions may have changed in the simulation since the event was 
         /// originally scheduled.
         /// </summary>
-        /// <typeparam name="Event"></typeparam>
         public abstract class Event : System.IComparable<Event>
         {
             internal float tick;
@@ -39,11 +38,10 @@
         }
 
         /// <summary>
-        /// Event<T> adds the ability to hook into the OnExecute callback
+        /// Event adds the ability to hook into the OnExecute callback
         /// whenever the event is executed. Use this class to allow functionality
         /// to be plugged into your application with minimal or zero configuration.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
         public abstract class Event<T> : Event where T : Event<T>
         {
             public static System.Action<T> OnExecute;

@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.GameObjectExtensions
+  commentId: T:Util.GameObjectExtensions
+  id: GameObjectExtensions
+  parent: Util
+  children:
+  - Util.GameObjectExtensions.ClearChildren(GameObject)
+  - Util.GameObjectExtensions.Invoke(MonoBehaviour,System.String,System.Object,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: GameObjectExtensions
+  nameWithType: GameObjectExtensions
+  fullName: Util.GameObjectExtensions
+  type: Class
+  source:
+    id: GameObjectExtensions
+    path: ''
+    startLine: 5927
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nExtension methods for GameObjects and MonoBehaviors\n"
+  example: []
+  syntax:
+    content: public static class GameObjectExtensions
+    content.vb: Public Module GameObjectExtensions
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.GameObjectExtensions.Invoke(MonoBehaviour,System.String,System.Object,System.Single)
+  commentId: M:Util.GameObjectExtensions.Invoke(MonoBehaviour,System.String,System.Object,System.Single)
+  id: Invoke(MonoBehaviour,System.String,System.Object,System.Single)
+  isExtensionMethod: true
+  parent: Util.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: Invoke(MonoBehaviour, String, Object, Single)
+  nameWithType: GameObjectExtensions.Invoke(MonoBehaviour, String, Object, Single)
+  fullName: Util.GameObjectExtensions.Invoke(MonoBehaviour, System.String, System.Object, System.Single)
+  type: Method
+  source:
+    id: Invoke
+    path: ''
+    startLine: 5932
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nInvoke method after delay with arguments\n"
+  example: []
+  syntax:
+    content: public static void Invoke(this MonoBehaviour behaviour, string method, object options, float delay)
+    parameters:
+    - id: behaviour
+      type: Global.MonoBehaviour
+    - id: method
+      type: System.String
+    - id: options
+      type: System.Object
+    - id: delay
+      type: System.Single
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub Invoke(behaviour As MonoBehaviour, method As String, options As Object, delay As Single)
+  overload: Util.GameObjectExtensions.Invoke*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.GameObjectExtensions.ClearChildren(GameObject)
+  commentId: M:Util.GameObjectExtensions.ClearChildren(GameObject)
+  id: ClearChildren(GameObject)
+  isExtensionMethod: true
+  parent: Util.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: ClearChildren(GameObject)
+  nameWithType: GameObjectExtensions.ClearChildren(GameObject)
+  fullName: Util.GameObjectExtensions.ClearChildren(GameObject)
+  type: Method
+  source:
+    id: ClearChildren
+    path: ''
+    startLine: 5951
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nDestroy all children of this game object\n"
+  example: []
+  syntax:
+    content: public static void ClearChildren(this GameObject thatObject)
+    parameters:
+    - id: thatObject
+      type: Global.GameObject
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ClearChildren(thatObject As GameObject)
+  overload: Util.GameObjectExtensions.ClearChildren*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.GameObjectExtensions.Invoke*
+  commentId: Overload:Util.GameObjectExtensions.Invoke
+  name: Invoke
+  nameWithType: GameObjectExtensions.Invoke
+  fullName: Util.GameObjectExtensions.Invoke
+- uid: Global.MonoBehaviour
+  commentId: '!:Global.MonoBehaviour'
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: MonoBehaviour
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Util.GameObjectExtensions.ClearChildren*
+  commentId: Overload:Util.GameObjectExtensions.ClearChildren
+  name: ClearChildren
+  nameWithType: GameObjectExtensions.ClearChildren
+  fullName: Util.GameObjectExtensions.ClearChildren
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject

@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.RectUtils
+  commentId: T:Util.RectUtils
+  id: RectUtils
+  parent: Util
+  children:
+  - Util.RectUtils.ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: RectUtils
+  nameWithType: RectUtils
+  fullName: Util.RectUtils
+  type: Class
+  source:
+    id: RectUtils
+    path: ''
+    startLine: 5631
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public class RectUtils
+    content.vb: Public Class RectUtils
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Util.RectUtils.ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
+  commentId: M:Util.RectUtils.ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
+  id: ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
+  parent: Util.RectUtils
+  langs:
+  - csharp
+  - vb
+  name: ResizeRect(Rect, Handles.CapFunction, Color, Color, Single, Single)
+  nameWithType: RectUtils.ResizeRect(Rect, Handles.CapFunction, Color, Color, Single, Single)
+  fullName: Util.RectUtils.ResizeRect(Rect, Handles.CapFunction, Color, Color, System.Single, System.Single)
+  type: Method
+  source:
+    id: ResizeRect
+    path: ''
+    startLine: 5636
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nEditor util to create visual resize gizmos for a rect\n"
+  example: []
+  syntax:
+    content: public static Rect ResizeRect(Rect rect, Handles.CapFunction capFunc, Color capCol, Color fillCol, float capSize, float snap)
+    parameters:
+    - id: rect
+      type: Global.Rect
+    - id: capFunc
+      type: Global.Handles.CapFunction
+    - id: capCol
+      type: Global.Color
+    - id: fillCol
+      type: Global.Color
+    - id: capSize
+      type: System.Single
+    - id: snap
+      type: System.Single
+    return:
+      type: Global.Rect
+    content.vb: Public Shared Function ResizeRect(rect As Rect, capFunc As  Handles .CapFunction, capCol As Color, fillCol As Color, capSize As Single, snap As Single) As Rect
+  overload: Util.RectUtils.ResizeRect*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.RectUtils.ResizeRect*
+  commentId: Overload:Util.RectUtils.ResizeRect
+  name: ResizeRect
+  nameWithType: RectUtils.ResizeRect
+  fullName: Util.RectUtils.ResizeRect
+- uid: Global.Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: Global.Handles.CapFunction
+  commentId: '!:Global.Handles.CapFunction'
+  isExternal: true
+  name: Handles.CapFunction
+  nameWithType: Handles.CapFunction
+  fullName: Handles.CapFunction
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

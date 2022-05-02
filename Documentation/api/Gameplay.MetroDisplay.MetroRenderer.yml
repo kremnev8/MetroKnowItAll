@@ -1,0 +1,479 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.MetroRenderer
+  commentId: T:Gameplay.MetroDisplay.MetroRenderer
+  id: MetroRenderer
+  parent: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.MetroRenderer.ClearAll
+  - Gameplay.MetroDisplay.MetroRenderer.ClearFocus
+  - Gameplay.MetroDisplay.MetroRenderer.expectedLabelState
+  - Gameplay.MetroDisplay.MetroRenderer.focusRegion
+  - Gameplay.MetroDisplay.MetroRenderer.FocusRegion(Region)
+  - Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay(MetroStation)
+  - Gameplay.MetroDisplay.MetroRenderer.HideAllLabels
+  - Gameplay.MetroDisplay.MetroRenderer.metro
+  - Gameplay.MetroDisplay.MetroRenderer.Refresh
+  - Gameplay.MetroDisplay.MetroRenderer.Regenerate
+  - Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels
+  - Gameplay.MetroDisplay.MetroRenderer.stationSelect
+  langs:
+  - csharp
+  - vb
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: Gameplay.MetroDisplay.MetroRenderer
+  type: Class
+  source:
+    id: MetroRenderer
+    path: ''
+    startLine: 2562
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  summary: "\nControls entire <xref href=\"Gameplay.MetroDisplay.Model.Metro\" data-throw-if-not-resolved=\"false\"></xref> is displayed\n"
+  example: []
+  syntax:
+    content: 'public class MetroRenderer : MonoBehaviour'
+    content.vb: >-
+      Public Class MetroRenderer
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.MetroRenderer.metro
+  commentId: F:Gameplay.MetroDisplay.MetroRenderer.metro
+  id: metro
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: metro
+  nameWithType: MetroRenderer.metro
+  fullName: Gameplay.MetroDisplay.MetroRenderer.metro
+  type: Field
+  source:
+    id: metro
+    path: ''
+    startLine: 2582
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Metro metro
+    return:
+      type: Gameplay.MetroDisplay.Model.Metro
+    content.vb: Public metro As Metro
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.focusRegion
+  commentId: F:Gameplay.MetroDisplay.MetroRenderer.focusRegion
+  id: focusRegion
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: focusRegion
+  nameWithType: MetroRenderer.focusRegion
+  fullName: Gameplay.MetroDisplay.MetroRenderer.focusRegion
+  type: Field
+  source:
+    id: focusRegion
+    path: ''
+    startLine: 2590
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Region focusRegion
+    return:
+      type: Global.Region
+    content.vb: Public focusRegion As Region
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.expectedLabelState
+  commentId: F:Gameplay.MetroDisplay.MetroRenderer.expectedLabelState
+  id: expectedLabelState
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: expectedLabelState
+  nameWithType: MetroRenderer.expectedLabelState
+  fullName: Gameplay.MetroDisplay.MetroRenderer.expectedLabelState
+  type: Field
+  source:
+    id: expectedLabelState
+    path: ''
+    startLine: 2592
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public bool expectedLabelState
+    return:
+      type: System.Boolean
+    content.vb: Public expectedLabelState As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.stationSelect
+  commentId: P:Gameplay.MetroDisplay.MetroRenderer.stationSelect
+  id: stationSelect
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: stationSelect
+  nameWithType: MetroRenderer.stationSelect
+  fullName: Gameplay.MetroDisplay.MetroRenderer.stationSelect
+  type: Property
+  source:
+    id: stationSelect
+    path: ''
+    startLine: 2595
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public GameObject stationSelect { get; }
+    parameters: []
+    return:
+      type: Global.GameObject
+    content.vb: Public ReadOnly Property stationSelect As GameObject
+  overload: Gameplay.MetroDisplay.MetroRenderer.stationSelect*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.MetroRenderer.Regenerate
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.Regenerate
+  id: Regenerate
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: Regenerate()
+  nameWithType: MetroRenderer.Regenerate()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.Regenerate()
+  type: Method
+  source:
+    id: Regenerate
+    path: ''
+    startLine: 2636
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void Regenerate()
+    content.vb: Public Sub Regenerate
+  overload: Gameplay.MetroDisplay.MetroRenderer.Regenerate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.Refresh
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.Refresh
+  id: Refresh
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: MetroRenderer.Refresh()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.Refresh()
+  type: Method
+  source:
+    id: Refresh
+    path: ''
+    startLine: 2675
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh
+  overload: Gameplay.MetroDisplay.MetroRenderer.Refresh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.ClearAll
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.ClearAll
+  id: ClearAll
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: ClearAll()
+  nameWithType: MetroRenderer.ClearAll()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ClearAll()
+  type: Method
+  source:
+    id: ClearAll
+    path: ''
+    startLine: 2698
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void ClearAll()
+    content.vb: Public Sub ClearAll
+  overload: Gameplay.MetroDisplay.MetroRenderer.ClearAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay(MetroStation)
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay(MetroStation)
+  id: GetStationDisplay(MetroStation)
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetStationDisplay(MetroStation)
+  nameWithType: MetroRenderer.GetStationDisplay(MetroStation)
+  fullName: Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay(MetroStation)
+  type: Method
+  source:
+    id: GetStationDisplay
+    path: ''
+    startLine: 2711
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public StationDisplay GetStationDisplay(MetroStation station)
+    parameters:
+    - id: station
+      type: Global.MetroStation
+    return:
+      type: Gameplay.MetroDisplay.StationDisplay
+    content.vb: Public Function GetStationDisplay(station As MetroStation) As StationDisplay
+  overload: Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.HideAllLabels
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.HideAllLabels
+  id: HideAllLabels
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: HideAllLabels()
+  nameWithType: MetroRenderer.HideAllLabels()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.HideAllLabels()
+  type: Method
+  source:
+    id: HideAllLabels
+    path: ''
+    startLine: 2721
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void HideAllLabels()
+    content.vb: Public Sub HideAllLabels
+  overload: Gameplay.MetroDisplay.MetroRenderer.HideAllLabels*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels
+  id: ShowAllLabels
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: ShowAllLabels()
+  nameWithType: MetroRenderer.ShowAllLabels()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels()
+  type: Method
+  source:
+    id: ShowAllLabels
+    path: ''
+    startLine: 2729
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void ShowAllLabels()
+    content.vb: Public Sub ShowAllLabels
+  overload: Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.ClearFocus
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.ClearFocus
+  id: ClearFocus
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: ClearFocus()
+  nameWithType: MetroRenderer.ClearFocus()
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ClearFocus()
+  type: Method
+  source:
+    id: ClearFocus
+    path: ''
+    startLine: 2744
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void ClearFocus()
+    content.vb: Public Sub ClearFocus
+  overload: Gameplay.MetroDisplay.MetroRenderer.ClearFocus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.MetroRenderer.FocusRegion(Region)
+  commentId: M:Gameplay.MetroDisplay.MetroRenderer.FocusRegion(Region)
+  id: FocusRegion(Region)
+  parent: Gameplay.MetroDisplay.MetroRenderer
+  langs:
+  - csharp
+  - vb
+  name: FocusRegion(Region)
+  nameWithType: MetroRenderer.FocusRegion(Region)
+  fullName: Gameplay.MetroDisplay.MetroRenderer.FocusRegion(Region)
+  type: Method
+  source:
+    id: FocusRegion
+    path: ''
+    startLine: 2770
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void FocusRegion(Region region)
+    parameters:
+    - id: region
+      type: Global.Region
+    content.vb: Public Sub FocusRegion(region As Region)
+  overload: Gameplay.MetroDisplay.MetroRenderer.FocusRegion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model.Metro
+  commentId: T:Gameplay.MetroDisplay.Model.Metro
+  parent: Gameplay.MetroDisplay.Model
+  name: Metro
+  nameWithType: Metro
+  fullName: Gameplay.MetroDisplay.Model.Metro
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Region
+  isExternal: true
+  name: Region
+  nameWithType: Region
+  fullName: Region
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.MetroDisplay.MetroRenderer.stationSelect*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.stationSelect
+  name: stationSelect
+  nameWithType: MetroRenderer.stationSelect
+  fullName: Gameplay.MetroDisplay.MetroRenderer.stationSelect
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Gameplay.MetroDisplay.MetroRenderer.Regenerate*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.Regenerate
+  name: Regenerate
+  nameWithType: MetroRenderer.Regenerate
+  fullName: Gameplay.MetroDisplay.MetroRenderer.Regenerate
+- uid: Gameplay.MetroDisplay.MetroRenderer.Refresh*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.Refresh
+  name: Refresh
+  nameWithType: MetroRenderer.Refresh
+  fullName: Gameplay.MetroDisplay.MetroRenderer.Refresh
+- uid: Gameplay.MetroDisplay.MetroRenderer.ClearAll*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.ClearAll
+  name: ClearAll
+  nameWithType: MetroRenderer.ClearAll
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ClearAll
+- uid: Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay
+  name: GetStationDisplay
+  nameWithType: MetroRenderer.GetStationDisplay
+  fullName: Gameplay.MetroDisplay.MetroRenderer.GetStationDisplay
+- uid: Global.MetroStation
+  isExternal: true
+  name: MetroStation
+  nameWithType: MetroStation
+  fullName: MetroStation
+- uid: Gameplay.MetroDisplay.StationDisplay
+  commentId: T:Gameplay.MetroDisplay.StationDisplay
+  parent: Gameplay.MetroDisplay
+  name: StationDisplay
+  nameWithType: StationDisplay
+  fullName: Gameplay.MetroDisplay.StationDisplay
+- uid: Gameplay.MetroDisplay.MetroRenderer.HideAllLabels*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.HideAllLabels
+  name: HideAllLabels
+  nameWithType: MetroRenderer.HideAllLabels
+  fullName: Gameplay.MetroDisplay.MetroRenderer.HideAllLabels
+- uid: Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels
+  name: ShowAllLabels
+  nameWithType: MetroRenderer.ShowAllLabels
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ShowAllLabels
+- uid: Gameplay.MetroDisplay.MetroRenderer.ClearFocus*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.ClearFocus
+  name: ClearFocus
+  nameWithType: MetroRenderer.ClearFocus
+  fullName: Gameplay.MetroDisplay.MetroRenderer.ClearFocus
+- uid: Gameplay.MetroDisplay.MetroRenderer.FocusRegion*
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.FocusRegion
+  name: FocusRegion
+  nameWithType: MetroRenderer.FocusRegion
+  fullName: Gameplay.MetroDisplay.MetroRenderer.FocusRegion

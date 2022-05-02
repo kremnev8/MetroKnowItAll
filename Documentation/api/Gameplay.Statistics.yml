@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  id: Gameplay.Statistics
+  children:
+  - Gameplay.Statistics.BoolRecord`2
+  - Gameplay.Statistics.IIndexable`1
+  - Gameplay.Statistics.Statistics
+  - Gameplay.Statistics.StatisticsManager
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.Statistics.IIndexable`1
+  commentId: T:Gameplay.Statistics.IIndexable`1
+  name: IIndexable<T>
+  nameWithType: IIndexable<T>
+  fullName: Gameplay.Statistics.IIndexable<T>
+  nameWithType.vb: IIndexable(Of T)
+  fullName.vb: Gameplay.Statistics.IIndexable(Of T)
+  name.vb: IIndexable(Of T)
+  spec.csharp:
+  - uid: Gameplay.Statistics.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: Gameplay.Statistics.IIndexable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.IIndexable`1
+    name: IIndexable
+    nameWithType: IIndexable
+    fullName: Gameplay.Statistics.IIndexable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord`2
+  commentId: T:Gameplay.Statistics.BoolRecord`2
+  name: BoolRecord<T, TIndex>
+  nameWithType: BoolRecord<T, TIndex>
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>
+  nameWithType.vb: BoolRecord(Of T, TIndex)
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex)
+  name.vb: BoolRecord(Of T, TIndex)
+  spec.csharp:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.Statistics
+  commentId: T:Gameplay.Statistics.Statistics
+  parent: Gameplay.Statistics
+  name: Statistics
+  nameWithType: Statistics
+  fullName: Gameplay.Statistics.Statistics
+- uid: Gameplay.Statistics.StatisticsManager
+  commentId: T:Gameplay.Statistics.StatisticsManager
+  name: StatisticsManager
+  nameWithType: StatisticsManager
+  fullName: Gameplay.Statistics.StatisticsManager
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics

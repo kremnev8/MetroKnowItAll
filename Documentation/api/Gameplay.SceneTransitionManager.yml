@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.SceneTransitionManager
+  commentId: T:Gameplay.SceneTransitionManager
+  id: SceneTransitionManager
+  parent: Gameplay
+  children:
+  - Gameplay.SceneTransitionManager.crossfade
+  - Gameplay.SceneTransitionManager.instance
+  - Gameplay.SceneTransitionManager.LoadMenu
+  - Gameplay.SceneTransitionManager.StartGame
+  langs:
+  - csharp
+  - vb
+  name: SceneTransitionManager
+  nameWithType: SceneTransitionManager
+  fullName: Gameplay.SceneTransitionManager
+  type: Class
+  source:
+    id: SceneTransitionManager
+    path: ''
+    startLine: 1092
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: 'public class SceneTransitionManager : MonoBehaviour'
+    content.vb: >-
+      Public Class SceneTransitionManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.SceneTransitionManager.crossfade
+  commentId: F:Gameplay.SceneTransitionManager.crossfade
+  id: crossfade
+  parent: Gameplay.SceneTransitionManager
+  langs:
+  - csharp
+  - vb
+  name: crossfade
+  nameWithType: SceneTransitionManager.crossfade
+  fullName: Gameplay.SceneTransitionManager.crossfade
+  type: Field
+  source:
+    id: crossfade
+    path: ''
+    startLine: 1094
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public GameObject crossfade
+    return:
+      type: Global.GameObject
+    content.vb: Public crossfade As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.SceneTransitionManager.instance
+  commentId: F:Gameplay.SceneTransitionManager.instance
+  id: instance
+  parent: Gameplay.SceneTransitionManager
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: SceneTransitionManager.instance
+  fullName: Gameplay.SceneTransitionManager.instance
+  type: Field
+  source:
+    id: instance
+    path: ''
+    startLine: 1095
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public static SceneTransitionManager instance
+    return:
+      type: Gameplay.SceneTransitionManager
+    content.vb: Public Shared instance As SceneTransitionManager
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.SceneTransitionManager.StartGame
+  commentId: M:Gameplay.SceneTransitionManager.StartGame
+  id: StartGame
+  parent: Gameplay.SceneTransitionManager
+  langs:
+  - csharp
+  - vb
+  name: StartGame()
+  nameWithType: SceneTransitionManager.StartGame()
+  fullName: Gameplay.SceneTransitionManager.StartGame()
+  type: Method
+  source:
+    id: StartGame
+    path: ''
+    startLine: 1109
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public void StartGame()
+    content.vb: Public Sub StartGame
+  overload: Gameplay.SceneTransitionManager.StartGame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.SceneTransitionManager.LoadMenu
+  commentId: M:Gameplay.SceneTransitionManager.LoadMenu
+  id: LoadMenu
+  parent: Gameplay.SceneTransitionManager
+  langs:
+  - csharp
+  - vb
+  name: LoadMenu()
+  nameWithType: SceneTransitionManager.LoadMenu()
+  fullName: Gameplay.SceneTransitionManager.LoadMenu()
+  type: Method
+  source:
+    id: LoadMenu
+    path: ''
+    startLine: 1115
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay
+  syntax:
+    content: public void LoadMenu()
+    content.vb: Public Sub LoadMenu
+  overload: Gameplay.SceneTransitionManager.LoadMenu*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay
+  commentId: N:Gameplay
+  name: Gameplay
+  nameWithType: Gameplay
+  fullName: Gameplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Gameplay.SceneTransitionManager
+  commentId: T:Gameplay.SceneTransitionManager
+  parent: Gameplay
+  name: SceneTransitionManager
+  nameWithType: SceneTransitionManager
+  fullName: Gameplay.SceneTransitionManager
+- uid: Gameplay.SceneTransitionManager.StartGame*
+  commentId: Overload:Gameplay.SceneTransitionManager.StartGame
+  name: StartGame
+  nameWithType: SceneTransitionManager.StartGame
+  fullName: Gameplay.SceneTransitionManager.StartGame
+- uid: Gameplay.SceneTransitionManager.LoadMenu*
+  commentId: Overload:Gameplay.SceneTransitionManager.LoadMenu
+  name: LoadMenu
+  nameWithType: SceneTransitionManager.LoadMenu
+  fullName: Gameplay.SceneTransitionManager.LoadMenu

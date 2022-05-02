@@ -1,0 +1,665 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.LineSubDisplay
+  commentId: T:Gameplay.MetroDisplay.LineSubDisplay
+  id: LineSubDisplay
+  parent: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.LineSubDisplay.abovetrains
+  - Gameplay.MetroDisplay.LineSubDisplay.endCap
+  - Gameplay.MetroDisplay.LineSubDisplay.highlight
+  - Gameplay.MetroDisplay.LineSubDisplay.highlightShape
+  - Gameplay.MetroDisplay.LineSubDisplay.IsFocused(Gameplay.MetroDisplay.MetroRenderer)
+  - Gameplay.MetroDisplay.LineSubDisplay.line
+  - Gameplay.MetroDisplay.LineSubDisplay.Refresh
+  - Gameplay.MetroDisplay.LineSubDisplay.renderer
+  - Gameplay.MetroDisplay.LineSubDisplay.SetFocused(System.Boolean)
+  - Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
+  - Gameplay.MetroDisplay.LineSubDisplay.SetSelected(Gameplay.MetroDisplay.MetroRenderer,System.Boolean)
+  - Gameplay.MetroDisplay.LineSubDisplay.shape
+  - Gameplay.MetroDisplay.LineSubDisplay.spline
+  - Gameplay.MetroDisplay.LineSubDisplay.startCap
+  - Gameplay.MetroDisplay.LineSubDisplay.undergound
+  langs:
+  - csharp
+  - vb
+  name: LineSubDisplay
+  nameWithType: LineSubDisplay
+  fullName: Gameplay.MetroDisplay.LineSubDisplay
+  type: Class
+  source:
+    id: LineSubDisplay
+    path: ''
+    startLine: 2302
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  summary: "\nA sub segment of <xref href=\"Gameplay.MetroDisplay.LineDisplay\" data-throw-if-not-resolved=\"false\"></xref>, displaying a single continuous line segment\n"
+  example: []
+  syntax:
+    content: 'public class LineSubDisplay : MonoBehaviour'
+    content.vb: >-
+      Public Class LineSubDisplay
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  implements:
+  - Global.ISelectable
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.LineSubDisplay.line
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.line
+  id: line
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: line
+  nameWithType: LineSubDisplay.line
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.line
+  type: Field
+  source:
+    id: line
+    path: ''
+    startLine: 2304
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public MetroLine line
+    return:
+      type: Global.MetroLine
+    content.vb: Public line As MetroLine
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.renderer
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.renderer
+  id: renderer
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: LineSubDisplay.renderer
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.renderer
+  type: Field
+  source:
+    id: renderer
+    path: ''
+    startLine: 2308
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public SpriteShapeRenderer renderer
+    return:
+      type: Global.SpriteShapeRenderer
+    content.vb: Public renderer As SpriteShapeRenderer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.shape
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.shape
+  id: shape
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: shape
+  nameWithType: LineSubDisplay.shape
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.shape
+  type: Field
+  source:
+    id: shape
+    path: ''
+    startLine: 2309
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public SpriteShapeController shape
+    return:
+      type: Global.SpriteShapeController
+    content.vb: Public shape As SpriteShapeController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.spline
+  commentId: P:Gameplay.MetroDisplay.LineSubDisplay.spline
+  id: spline
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: spline
+  nameWithType: LineSubDisplay.spline
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.spline
+  type: Property
+  source:
+    id: spline
+    path: ''
+    startLine: 2310
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Spline spline { get; }
+    parameters: []
+    return:
+      type: Global.Spline
+    content.vb: Public ReadOnly Property spline As Spline
+  overload: Gameplay.MetroDisplay.LineSubDisplay.spline*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Gameplay.MetroDisplay.LineSubDisplay.undergound
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.undergound
+  id: undergound
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: undergound
+  nameWithType: LineSubDisplay.undergound
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.undergound
+  type: Field
+  source:
+    id: undergound
+    path: ''
+    startLine: 2312
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public SpriteShape undergound
+    return:
+      type: Global.SpriteShape
+    content.vb: Public undergound As SpriteShape
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.abovetrains
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.abovetrains
+  id: abovetrains
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: abovetrains
+  nameWithType: LineSubDisplay.abovetrains
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.abovetrains
+  type: Field
+  source:
+    id: abovetrains
+    path: ''
+    startLine: 2313
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public SpriteShape abovetrains
+    return:
+      type: Global.SpriteShape
+    content.vb: Public abovetrains As SpriteShape
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.highlight
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.highlight
+  id: highlight
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: highlight
+  nameWithType: LineSubDisplay.highlight
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.highlight
+  type: Field
+  source:
+    id: highlight
+    path: ''
+    startLine: 2316
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public GameObject highlight
+    return:
+      type: Global.GameObject
+    content.vb: Public highlight As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.highlightShape
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.highlightShape
+  id: highlightShape
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: highlightShape
+  nameWithType: LineSubDisplay.highlightShape
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.highlightShape
+  type: Field
+  source:
+    id: highlightShape
+    path: ''
+    startLine: 2317
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public SpriteShapeController highlightShape
+    return:
+      type: Global.SpriteShapeController
+    content.vb: Public highlightShape As SpriteShapeController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.startCap
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.startCap
+  id: startCap
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: startCap
+  nameWithType: LineSubDisplay.startCap
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.startCap
+  type: Field
+  source:
+    id: startCap
+    path: ''
+    startLine: 2318
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Transform startCap
+    return:
+      type: Global.Transform
+    content.vb: Public startCap As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.endCap
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.endCap
+  id: endCap
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: endCap
+  nameWithType: LineSubDisplay.endCap
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.endCap
+  type: Field
+  source:
+    id: endCap
+    path: ''
+    startLine: 2319
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Transform endCap
+    return:
+      type: Global.Transform
+    content.vb: Public endCap As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetFocused(System.Boolean)
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.SetFocused(System.Boolean)
+  id: SetFocused(System.Boolean)
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetFocused(Boolean)
+  nameWithType: LineSubDisplay.SetFocused(Boolean)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetFocused(System.Boolean)
+  type: Method
+  source:
+    id: SetFocused
+    path: ''
+    startLine: 2326
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetFocused(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetFocused(value As Boolean)
+  overload: Gameplay.MetroDisplay.LineSubDisplay.SetFocused*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.Refresh
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.Refresh
+  id: Refresh
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: LineSubDisplay.Refresh()
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.Refresh()
+  type: Method
+  source:
+    id: Refresh
+    path: ''
+    startLine: 2333
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh
+  overload: Gameplay.MetroDisplay.LineSubDisplay.Refresh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
+  id: SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetGroupData(List<ConnData>, MetroLine)
+  nameWithType: LineSubDisplay.SetGroupData(List<ConnData>, MetroLine)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List<Gameplay.MetroDisplay.ConnData>, MetroLine)
+  type: Method
+  source:
+    id: SetGroupData
+    path: ''
+    startLine: 2520
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetGroupData(List<ConnData> _points, MetroLine _line)
+    parameters:
+    - id: _points
+      type: Global.List{Gameplay.MetroDisplay.ConnData}
+    - id: _line
+      type: Global.MetroLine
+    content.vb: Public Sub SetGroupData(_points As List(Of ConnData), _line As MetroLine)
+  overload: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData*
+  nameWithType.vb: LineSubDisplay.SetGroupData(List(Of ConnData), MetroLine)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List(Of Gameplay.MetroDisplay.ConnData), MetroLine)
+  name.vb: SetGroupData(List(Of ConnData), MetroLine)
+- uid: Gameplay.MetroDisplay.LineSubDisplay.IsFocused(Gameplay.MetroDisplay.MetroRenderer)
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.IsFocused(Gameplay.MetroDisplay.MetroRenderer)
+  id: IsFocused(Gameplay.MetroDisplay.MetroRenderer)
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: IsFocused(MetroRenderer)
+  nameWithType: LineSubDisplay.IsFocused(MetroRenderer)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.IsFocused(Gameplay.MetroDisplay.MetroRenderer)
+  type: Method
+  source:
+    id: IsFocused
+    path: ''
+    startLine: 2529
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public bool IsFocused(MetroRenderer metroRenderer)
+    parameters:
+    - id: metroRenderer
+      type: Gameplay.MetroDisplay.MetroRenderer
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsFocused(metroRenderer As MetroRenderer) As Boolean
+  overload: Gameplay.MetroDisplay.LineSubDisplay.IsFocused*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetSelected(Gameplay.MetroDisplay.MetroRenderer,System.Boolean)
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.SetSelected(Gameplay.MetroDisplay.MetroRenderer,System.Boolean)
+  id: SetSelected(Gameplay.MetroDisplay.MetroRenderer,System.Boolean)
+  parent: Gameplay.MetroDisplay.LineSubDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetSelected(MetroRenderer, Boolean)
+  nameWithType: LineSubDisplay.SetSelected(MetroRenderer, Boolean)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetSelected(Gameplay.MetroDisplay.MetroRenderer, System.Boolean)
+  type: Method
+  source:
+    id: SetSelected
+    path: ''
+    startLine: 2539
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetSelected(MetroRenderer metroRenderer, bool value)
+    parameters:
+    - id: metroRenderer
+      type: Gameplay.MetroDisplay.MetroRenderer
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetSelected(metroRenderer As MetroRenderer, value As Boolean)
+  overload: Gameplay.MetroDisplay.LineSubDisplay.SetSelected*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.LineDisplay
+  commentId: T:Gameplay.MetroDisplay.LineDisplay
+  name: LineDisplay
+  nameWithType: LineDisplay
+  fullName: Gameplay.MetroDisplay.LineDisplay
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Global.ISelectable
+  isExternal: true
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: ISelectable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.MetroLine
+  isExternal: true
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: MetroLine
+- uid: Global.SpriteShapeRenderer
+  commentId: '!:Global.SpriteShapeRenderer'
+  isExternal: true
+  name: SpriteShapeRenderer
+  nameWithType: SpriteShapeRenderer
+  fullName: SpriteShapeRenderer
+- uid: Global.SpriteShapeController
+  isExternal: true
+  name: SpriteShapeController
+  nameWithType: SpriteShapeController
+  fullName: SpriteShapeController
+- uid: Gameplay.MetroDisplay.LineSubDisplay.spline*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.spline
+  name: spline
+  nameWithType: LineSubDisplay.spline
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.spline
+- uid: Global.Spline
+  isExternal: true
+  name: Spline
+  nameWithType: Spline
+  fullName: Spline
+- uid: Global.SpriteShape
+  isExternal: true
+  name: SpriteShape
+  nameWithType: SpriteShape
+  fullName: SpriteShape
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetFocused*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.SetFocused
+  name: SetFocused
+  nameWithType: LineSubDisplay.SetFocused
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetFocused
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.MetroDisplay.LineSubDisplay.Refresh*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.Refresh
+  name: Refresh
+  nameWithType: LineSubDisplay.Refresh
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.Refresh
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.SetGroupData
+  name: SetGroupData
+  nameWithType: LineSubDisplay.SetGroupData
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData
+- uid: Global.List{Gameplay.MetroDisplay.ConnData}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.ConnData}'
+  definition: Global.List`1
+  name: List<ConnData>
+  nameWithType: List<ConnData>
+  fullName: List<Gameplay.MetroDisplay.ConnData>
+  nameWithType.vb: List(Of ConnData)
+  fullName.vb: List(Of Gameplay.MetroDisplay.ConnData)
+  name.vb: List(Of ConnData)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.ConnData
+    name: ConnData
+    nameWithType: ConnData
+    fullName: Gameplay.MetroDisplay.ConnData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.ConnData
+    name: ConnData
+    nameWithType: ConnData
+    fullName: Gameplay.MetroDisplay.ConnData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.MetroDisplay.LineSubDisplay.IsFocused*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.IsFocused
+  name: IsFocused
+  nameWithType: LineSubDisplay.IsFocused
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.IsFocused
+- uid: Gameplay.MetroDisplay.MetroRenderer
+  commentId: T:Gameplay.MetroDisplay.MetroRenderer
+  parent: Gameplay.MetroDisplay
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: Gameplay.MetroDisplay.MetroRenderer
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetSelected*
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.SetSelected
+  name: SetSelected
+  nameWithType: LineSubDisplay.SetSelected
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetSelected

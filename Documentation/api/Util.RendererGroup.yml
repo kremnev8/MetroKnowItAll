@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.RendererGroup
+  commentId: T:Util.RendererGroup
+  id: RendererGroup
+  parent: Util
+  children:
+  - Util.RendererGroup.active
+  - Util.RendererGroup.SetState(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: RendererGroup
+  nameWithType: RendererGroup
+  fullName: Util.RendererGroup
+  type: Class
+  source:
+    id: RendererGroup
+    path: ''
+    startLine: 5688
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: 'public class RendererGroup : MonoBehaviour'
+    content.vb: >-
+      Public Class RendererGroup
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Util.RendererGroup.active
+  commentId: F:Util.RendererGroup.active
+  id: active
+  parent: Util.RendererGroup
+  langs:
+  - csharp
+  - vb
+  name: active
+  nameWithType: RendererGroup.active
+  fullName: Util.RendererGroup.active
+  type: Field
+  source:
+    id: active
+    path: ''
+    startLine: 5691
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public bool active
+    return:
+      type: System.Boolean
+    content.vb: Public active As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Util.RendererGroup.SetState(System.Boolean)
+  commentId: M:Util.RendererGroup.SetState(System.Boolean)
+  id: SetState(System.Boolean)
+  parent: Util.RendererGroup
+  langs:
+  - csharp
+  - vb
+  name: SetState(Boolean)
+  nameWithType: RendererGroup.SetState(Boolean)
+  fullName: Util.RendererGroup.SetState(System.Boolean)
+  type: Method
+  source:
+    id: SetState
+    path: ''
+    startLine: 5703
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public void SetState(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetState(value As Boolean)
+  overload: Util.RendererGroup.SetState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Util.RendererGroup.SetState*
+  commentId: Overload:Util.RendererGroup.SetState
+  name: SetState
+  nameWithType: RendererGroup.SetState
+  fullName: Util.RendererGroup.SetState

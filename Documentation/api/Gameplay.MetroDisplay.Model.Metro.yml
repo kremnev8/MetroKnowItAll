@@ -1,0 +1,703 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.Metro
+  commentId: T:Gameplay.MetroDisplay.Model.Metro
+  id: Metro
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.Metro.crossings
+  - Gameplay.MetroDisplay.Model.Metro.GetStation(System.Int32,System.Int32)
+  - Gameplay.MetroDisplay.Model.Metro.GetStationsByName(System.String)
+  - Gameplay.MetroDisplay.Model.Metro.lines
+  - Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
+  - Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region)
+  - Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  - Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange(Gameplay.MetroDisplay.Model.Region,System.Int32,List{System.Int32})
+  - Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
+  - Gameplay.MetroDisplay.Model.Metro.regions
+  langs:
+  - csharp
+  - vb
+  name: Metro
+  nameWithType: Metro
+  fullName: Gameplay.MetroDisplay.Model.Metro
+  type: Class
+  source:
+    id: Metro
+    path: ''
+    startLine: 3160
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nMain metro data class, contains all information about the metro\n"
+  example: []
+  syntax:
+    content: 'public class Metro : ScriptableObject'
+    content.vb: >-
+      Public Class Metro
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.Metro.lines
+  commentId: F:Gameplay.MetroDisplay.Model.Metro.lines
+  id: lines
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: lines
+  nameWithType: Metro.lines
+  fullName: Gameplay.MetroDisplay.Model.Metro.lines
+  type: Field
+  source:
+    id: lines
+    path: ''
+    startLine: 3163
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<MetroLine> lines
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroLine}
+    content.vb: Public lines As List(Of MetroLine)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.crossings
+  commentId: F:Gameplay.MetroDisplay.Model.Metro.crossings
+  id: crossings
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: crossings
+  nameWithType: Metro.crossings
+  fullName: Gameplay.MetroDisplay.Model.Metro.crossings
+  type: Field
+  source:
+    id: crossings
+    path: ''
+    startLine: 3164
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<MetroCrossing> crossings
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroCrossing}
+    content.vb: Public crossings As List(Of MetroCrossing)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.regions
+  commentId: F:Gameplay.MetroDisplay.Model.Metro.regions
+  id: regions
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: regions
+  nameWithType: Metro.regions
+  fullName: Gameplay.MetroDisplay.Model.Metro.regions
+  type: Field
+  source:
+    id: regions
+    path: ''
+    startLine: 3165
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public List<Region> regions
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.Region}
+    content.vb: Public regions As List(Of Region)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.GetStationsByName(System.String)
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.GetStationsByName(System.String)
+  id: GetStationsByName(System.String)
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: GetStationsByName(String)
+  nameWithType: Metro.GetStationsByName(String)
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetStationsByName(System.String)
+  type: Method
+  source:
+    id: GetStationsByName
+    path: ''
+    startLine: 3176
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nGet all stations with a name\n"
+  example: []
+  syntax:
+    content: public List<MetroStation> GetStationsByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Needed name
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroStation}
+      description: All matching stations
+    content.vb: Public Function GetStationsByName(name As String) As List(Of MetroStation)
+  overload: Gameplay.MetroDisplay.Model.Metro.GetStationsByName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.GetStation(System.Int32,System.Int32)
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.GetStation(System.Int32,System.Int32)
+  id: GetStation(System.Int32,System.Int32)
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: GetStation(Int32, Int32)
+  nameWithType: Metro.GetStation(Int32, Int32)
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetStation(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: GetStation
+    path: ''
+    startLine: 3199
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nGet stations for line and station id\n"
+  example: []
+  syntax:
+    content: public MetroStation GetStation(int lineId, int stationId)
+    parameters:
+    - id: lineId
+      type: System.Int32
+    - id: stationId
+      type: System.Int32
+    return:
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    content.vb: Public Function GetStation(lineId As Integer, stationId As Integer) As MetroStation
+  overload: Gameplay.MetroDisplay.Model.Metro.GetStation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
+  id: PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: PickStationNear(MetroStation)
+  nameWithType: Metro.PickStationNear(MetroStation)
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
+  type: Method
+  source:
+    id: PickStationNear
+    path: ''
+    startLine: 3207
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nPick a stations that is near another station\n"
+  example: []
+  syntax:
+    content: public MetroStation PickStationNear(MetroStation station)
+    parameters:
+    - id: station
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    return:
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    content.vb: Public Function PickStationNear(station As MetroStation) As MetroStation
+  overload: Gameplay.MetroDisplay.Model.Metro.PickStationNear*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region)
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region)
+  id: PickRandomStation(Gameplay.MetroDisplay.Model.Region)
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: PickRandomStation(Region)
+  nameWithType: Metro.PickRandomStation(Region)
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region)
+  type: Method
+  source:
+    id: PickRandomStation
+    path: ''
+    startLine: 3219
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nPick a random station within the region\n"
+  example: []
+  syntax:
+    content: public MetroStation PickRandomStation(Region region)
+    parameters:
+    - id: region
+      type: Gameplay.MetroDisplay.Model.Region
+    return:
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    content.vb: Public Function PickRandomStation(region As Region) As MetroStation
+  overload: Gameplay.MetroDisplay.Model.Metro.PickRandomStation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  id: PickRandomStation(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: PickRandomStation(Region, List<Int32>)
+  nameWithType: Metro.PickRandomStation(Region, List<Int32>)
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region, List<System.Int32>)
+  type: Method
+  source:
+    id: PickRandomStation
+    path: ''
+    startLine: 3247
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nPick a random station within the region\nExclude all stations that are in the blacklist\n"
+  example: []
+  syntax:
+    content: public MetroStation PickRandomStation(Region region, List<int> blacklist)
+    parameters:
+    - id: region
+      type: Gameplay.MetroDisplay.Model.Region
+    - id: blacklist
+      type: Global.List{System.Int32}
+      description: List of global station id&apos;s to ignore
+    return:
+      type: Gameplay.MetroDisplay.Model.MetroStation
+    content.vb: Public Function PickRandomStation(region As Region, blacklist As List(Of Integer)) As MetroStation
+  overload: Gameplay.MetroDisplay.Model.Metro.PickRandomStation*
+  nameWithType.vb: Metro.PickRandomStation(Region, List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.MetroDisplay.Model.Metro.PickRandomStation(Gameplay.MetroDisplay.Model.Region, List(Of System.Int32))
+  name.vb: PickRandomStation(Region, List(Of Int32))
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange(Gameplay.MetroDisplay.Model.Region,System.Int32,List{System.Int32})
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange(Gameplay.MetroDisplay.Model.Region,System.Int32,List{System.Int32})
+  id: PickRandomStationRange(Gameplay.MetroDisplay.Model.Region,System.Int32,List{System.Int32})
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: PickRandomStationRange(Region, Int32, List<Int32>)
+  nameWithType: Metro.PickRandomStationRange(Region, Int32, List<Int32>)
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange(Gameplay.MetroDisplay.Model.Region, System.Int32, List<System.Int32>)
+  type: Method
+  source:
+    id: PickRandomStationRange
+    path: ''
+    startLine: 3278
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nPick a line of stations in a random place within region\nExclude all stations that are in the blacklist\n"
+  example: []
+  syntax:
+    content: public List<MetroStation> PickRandomStationRange(Region region, int size, List<int> blacklist)
+    parameters:
+    - id: region
+      type: Gameplay.MetroDisplay.Model.Region
+    - id: size
+      type: System.Int32
+      description: How many stations range has to have
+    - id: blacklist
+      type: Global.List{System.Int32}
+      description: List of global station id&apos;s to ignore
+    return:
+      type: Global.List{Gameplay.MetroDisplay.Model.MetroStation}
+    content.vb: Public Function PickRandomStationRange(region As Region, size As Integer, blacklist As List(Of Integer)) As List(Of MetroStation)
+  overload: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange*
+  nameWithType.vb: Metro.PickRandomStationRange(Region, Int32, List(Of Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange(Gameplay.MetroDisplay.Model.Region, System.Int32, List(Of System.Int32))
+  name.vb: PickRandomStationRange(Region, Int32, List(Of Int32))
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
+  id: PickRandomLine(Gameplay.MetroDisplay.Model.Region)
+  parent: Gameplay.MetroDisplay.Model.Metro
+  langs:
+  - csharp
+  - vb
+  name: PickRandomLine(Region)
+  nameWithType: Metro.PickRandomLine(Region)
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
+  type: Method
+  source:
+    id: PickRandomLine
+    path: ''
+    startLine: 3319
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nPick random line within region\n"
+  example: []
+  syntax:
+    content: public MetroLine PickRandomLine(Region region)
+    parameters:
+    - id: region
+      type: Gameplay.MetroDisplay.Model.Region
+    return:
+      type: Gameplay.MetroDisplay.Model.MetroLine
+    content.vb: Public Function PickRandomLine(region As Region) As MetroLine
+  overload: Gameplay.MetroDisplay.Model.Metro.PickRandomLine*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Gameplay.MetroDisplay.Model.MetroLine}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.MetroLine}'
+  definition: Global.List`1
+  name: List<MetroLine>
+  nameWithType: List<MetroLine>
+  fullName: List<Gameplay.MetroDisplay.Model.MetroLine>
+  nameWithType.vb: List(Of MetroLine)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.MetroLine)
+  name.vb: List(Of MetroLine)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.MetroLine
+    name: MetroLine
+    nameWithType: MetroLine
+    fullName: Gameplay.MetroDisplay.Model.MetroLine
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.MetroLine
+    name: MetroLine
+    nameWithType: MetroLine
+    fullName: Gameplay.MetroDisplay.Model.MetroLine
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List{Gameplay.MetroDisplay.Model.MetroCrossing}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.MetroCrossing}'
+  definition: Global.List`1
+  name: List<MetroCrossing>
+  nameWithType: List<MetroCrossing>
+  fullName: List<Gameplay.MetroDisplay.Model.MetroCrossing>
+  nameWithType.vb: List(Of MetroCrossing)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.MetroCrossing)
+  name.vb: List(Of MetroCrossing)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.MetroCrossing
+    name: MetroCrossing
+    nameWithType: MetroCrossing
+    fullName: Gameplay.MetroDisplay.Model.MetroCrossing
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.MetroCrossing
+    name: MetroCrossing
+    nameWithType: MetroCrossing
+    fullName: Gameplay.MetroDisplay.Model.MetroCrossing
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List{Gameplay.MetroDisplay.Model.Region}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.Region}'
+  definition: Global.List`1
+  name: List<Region>
+  nameWithType: List<Region>
+  fullName: List<Gameplay.MetroDisplay.Model.Region>
+  nameWithType.vb: List(Of Region)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.Region)
+  name.vb: List(Of Region)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.Region
+    name: Region
+    nameWithType: Region
+    fullName: Gameplay.MetroDisplay.Model.Region
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.Region
+    name: Region
+    nameWithType: Region
+    fullName: Gameplay.MetroDisplay.Model.Region
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.MetroDisplay.Model.Metro.GetStationsByName*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.GetStationsByName
+  name: GetStationsByName
+  nameWithType: Metro.GetStationsByName
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetStationsByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Global.List{Gameplay.MetroDisplay.Model.MetroStation}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.Model.MetroStation}'
+  definition: Global.List`1
+  name: List<MetroStation>
+  nameWithType: List<MetroStation>
+  fullName: List<Gameplay.MetroDisplay.Model.MetroStation>
+  nameWithType.vb: List(Of MetroStation)
+  fullName.vb: List(Of Gameplay.MetroDisplay.Model.MetroStation)
+  name.vb: List(Of MetroStation)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.Model.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: Gameplay.MetroDisplay.Model.MetroStation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.Model.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: Gameplay.MetroDisplay.Model.MetroStation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.MetroDisplay.Model.Metro.GetStation*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.GetStation
+  name: GetStation
+  nameWithType: Metro.GetStation
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetStation
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.MetroDisplay.Model.MetroStation
+  commentId: T:Gameplay.MetroDisplay.Model.MetroStation
+  parent: Gameplay.MetroDisplay.Model
+  name: MetroStation
+  nameWithType: MetroStation
+  fullName: Gameplay.MetroDisplay.Model.MetroStation
+- uid: Gameplay.MetroDisplay.Model.Metro.PickStationNear*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.PickStationNear
+  name: PickStationNear
+  nameWithType: Metro.PickStationNear
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickStationNear
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomStation*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.PickRandomStation
+  name: PickRandomStation
+  nameWithType: Metro.PickRandomStation
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomStation
+- uid: Gameplay.MetroDisplay.Model.Region
+  commentId: T:Gameplay.MetroDisplay.Model.Region
+  parent: Gameplay.MetroDisplay.Model
+  name: Region
+  nameWithType: Region
+  fullName: Gameplay.MetroDisplay.Model.Region
+- uid: Global.List{System.Int32}
+  commentId: '!:Global.List{System.Int32}'
+  definition: Global.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange
+  name: PickRandomStationRange
+  nameWithType: Metro.PickRandomStationRange
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomStationRange
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomLine*
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.PickRandomLine
+  name: PickRandomLine
+  nameWithType: Metro.PickRandomLine
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomLine
+- uid: Gameplay.MetroDisplay.Model.MetroLine
+  commentId: T:Gameplay.MetroDisplay.Model.MetroLine
+  parent: Gameplay.MetroDisplay.Model
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: Gameplay.MetroDisplay.Model.MetroLine

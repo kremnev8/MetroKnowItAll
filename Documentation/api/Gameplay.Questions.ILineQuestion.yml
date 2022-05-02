@@ -1,0 +1,38 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.ILineQuestion
+  commentId: T:Gameplay.Questions.ILineQuestion
+  id: ILineQuestion
+  parent: Gameplay.Questions
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ILineQuestion
+  nameWithType: ILineQuestion
+  fullName: Gameplay.Questions.ILineQuestion
+  type: Interface
+  source:
+    id: ILineQuestion
+    path: ''
+    startLine: 3821
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nDeclares that this question generator is focused on lines\n"
+  example: []
+  syntax:
+    content: public interface ILineQuestion
+    content.vb: Public Interface ILineQuestion
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions

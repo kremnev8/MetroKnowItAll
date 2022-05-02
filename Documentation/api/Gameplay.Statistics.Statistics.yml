@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Statistics.Statistics
+  commentId: T:Gameplay.Statistics.Statistics
+  id: Statistics
+  parent: Gameplay.Statistics
+  children:
+  - Gameplay.Statistics.Statistics.averageAnswerTime
+  - Gameplay.Statistics.Statistics.correctAnswers
+  - Gameplay.Statistics.Statistics.correctAnswerStreak
+  - Gameplay.Statistics.Statistics.dataVersion
+  - Gameplay.Statistics.Statistics.fastestCorrectAnswer
+  - Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
+  - Gameplay.Statistics.Statistics.totalAnswers
+  - Gameplay.Statistics.Statistics.unlockedAchievements
+  - Gameplay.Statistics.Statistics.unlockedLines
+  - Gameplay.Statistics.Statistics.unlockedStations
+  langs:
+  - csharp
+  - vb
+  name: Statistics
+  nameWithType: Statistics
+  fullName: Gameplay.Statistics.Statistics
+  type: Class
+  source:
+    id: Statistics
+    path: ''
+    startLine: 4840
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nModel class for game statistics data\n"
+  example: []
+  syntax:
+    content: public class Statistics
+    content.vb: Public Class Statistics
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Statistics.Statistics.dataVersion
+  commentId: F:Gameplay.Statistics.Statistics.dataVersion
+  id: dataVersion
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: dataVersion
+  nameWithType: Statistics.dataVersion
+  fullName: Gameplay.Statistics.Statistics.dataVersion
+  type: Field
+  source:
+    id: dataVersion
+    path: ''
+    startLine: 4842
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public int dataVersion
+    return:
+      type: System.Int32
+    content.vb: Public dataVersion As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.unlockedStations
+  commentId: F:Gameplay.Statistics.Statistics.unlockedStations
+  id: unlockedStations
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: unlockedStations
+  nameWithType: Statistics.unlockedStations
+  fullName: Gameplay.Statistics.Statistics.unlockedStations
+  type: Field
+  source:
+    id: unlockedStations
+    path: ''
+    startLine: 4843
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public BoolRecord<MetroStation, int> unlockedStations
+    return:
+      type: Gameplay.Statistics.BoolRecord{MetroStation,System.Int32}
+    content.vb: Public unlockedStations As BoolRecord(Of MetroStation, Integer)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.unlockedLines
+  commentId: F:Gameplay.Statistics.Statistics.unlockedLines
+  id: unlockedLines
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: unlockedLines
+  nameWithType: Statistics.unlockedLines
+  fullName: Gameplay.Statistics.Statistics.unlockedLines
+  type: Field
+  source:
+    id: unlockedLines
+    path: ''
+    startLine: 4844
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public BoolRecord<MetroLine, int> unlockedLines
+    return:
+      type: Gameplay.Statistics.BoolRecord{MetroLine,System.Int32}
+    content.vb: Public unlockedLines As BoolRecord(Of MetroLine, Integer)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.unlockedAchievements
+  commentId: F:Gameplay.Statistics.Statistics.unlockedAchievements
+  id: unlockedAchievements
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: unlockedAchievements
+  nameWithType: Statistics.unlockedAchievements
+  fullName: Gameplay.Statistics.Statistics.unlockedAchievements
+  type: Field
+  source:
+    id: unlockedAchievements
+    path: ''
+    startLine: 4846
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public BoolRecord<Achievement, string> unlockedAchievements
+    return:
+      type: Gameplay.Statistics.BoolRecord{Achievement,System.String}
+    content.vb: Public unlockedAchievements As BoolRecord(Of Achievement, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.correctAnswers
+  commentId: F:Gameplay.Statistics.Statistics.correctAnswers
+  id: correctAnswers
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: correctAnswers
+  nameWithType: Statistics.correctAnswers
+  fullName: Gameplay.Statistics.Statistics.correctAnswers
+  type: Field
+  source:
+    id: correctAnswers
+    path: ''
+    startLine: 4848
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public int correctAnswers
+    return:
+      type: System.Int32
+    content.vb: Public correctAnswers As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.totalAnswers
+  commentId: F:Gameplay.Statistics.Statistics.totalAnswers
+  id: totalAnswers
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: totalAnswers
+  nameWithType: Statistics.totalAnswers
+  fullName: Gameplay.Statistics.Statistics.totalAnswers
+  type: Field
+  source:
+    id: totalAnswers
+    path: ''
+    startLine: 4849
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public int totalAnswers
+    return:
+      type: System.Int32
+    content.vb: Public totalAnswers As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.correctAnswerStreak
+  commentId: F:Gameplay.Statistics.Statistics.correctAnswerStreak
+  id: correctAnswerStreak
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: correctAnswerStreak
+  nameWithType: Statistics.correctAnswerStreak
+  fullName: Gameplay.Statistics.Statistics.correctAnswerStreak
+  type: Field
+  source:
+    id: correctAnswerStreak
+    path: ''
+    startLine: 4851
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public int correctAnswerStreak
+    return:
+      type: System.Int32
+    content.vb: Public correctAnswerStreak As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.fastestCorrectAnswer
+  commentId: F:Gameplay.Statistics.Statistics.fastestCorrectAnswer
+  id: fastestCorrectAnswer
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: fastestCorrectAnswer
+  nameWithType: Statistics.fastestCorrectAnswer
+  fullName: Gameplay.Statistics.Statistics.fastestCorrectAnswer
+  type: Field
+  source:
+    id: fastestCorrectAnswer
+    path: ''
+    startLine: 4853
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public float fastestCorrectAnswer
+    return:
+      type: System.Single
+    content.vb: Public fastestCorrectAnswer As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.averageAnswerTime
+  commentId: F:Gameplay.Statistics.Statistics.averageAnswerTime
+  id: averageAnswerTime
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: averageAnswerTime
+  nameWithType: Statistics.averageAnswerTime
+  fullName: Gameplay.Statistics.Statistics.averageAnswerTime
+  type: Field
+  source:
+    id: averageAnswerTime
+    path: ''
+    startLine: 4854
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public float averageAnswerTime
+    return:
+      type: System.Single
+    content.vb: Public averageAnswerTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
+  commentId: F:Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
+  id: maximumCorrectAnswerTime
+  parent: Gameplay.Statistics.Statistics
+  langs:
+  - csharp
+  - vb
+  name: maximumCorrectAnswerTime
+  nameWithType: Statistics.maximumCorrectAnswerTime
+  fullName: Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
+  type: Field
+  source:
+    id: maximumCorrectAnswerTime
+    path: ''
+    startLine: 4855
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public float maximumCorrectAnswerTime
+    return:
+      type: System.Single
+    content.vb: Public maximumCorrectAnswerTime As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Gameplay.Statistics.BoolRecord{MetroStation,System.Int32}
+  commentId: T:Gameplay.Statistics.BoolRecord{MetroStation,System.Int32}
+  parent: Gameplay.Statistics
+  definition: Gameplay.Statistics.BoolRecord`2
+  name: BoolRecord<MetroStation, Int32>
+  nameWithType: BoolRecord<MetroStation, Int32>
+  fullName: Gameplay.Statistics.BoolRecord<MetroStation, System.Int32>
+  nameWithType.vb: BoolRecord(Of MetroStation, Int32)
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of MetroStation, System.Int32)
+  name.vb: BoolRecord(Of MetroStation, Int32)
+  spec.csharp:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: MetroStation
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.MetroStation
+    name: MetroStation
+    nameWithType: MetroStation
+    fullName: MetroStation
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord`2
+  commentId: T:Gameplay.Statistics.BoolRecord`2
+  name: BoolRecord<T, TIndex>
+  nameWithType: BoolRecord<T, TIndex>
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>
+  nameWithType.vb: BoolRecord(Of T, TIndex)
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex)
+  name.vb: BoolRecord(Of T, TIndex)
+  spec.csharp:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord{MetroLine,System.Int32}
+  commentId: T:Gameplay.Statistics.BoolRecord{MetroLine,System.Int32}
+  parent: Gameplay.Statistics
+  definition: Gameplay.Statistics.BoolRecord`2
+  name: BoolRecord<MetroLine, Int32>
+  nameWithType: BoolRecord<MetroLine, Int32>
+  fullName: Gameplay.Statistics.BoolRecord<MetroLine, System.Int32>
+  nameWithType.vb: BoolRecord(Of MetroLine, Int32)
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of MetroLine, System.Int32)
+  name.vb: BoolRecord(Of MetroLine, Int32)
+  spec.csharp:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.MetroLine
+    name: MetroLine
+    nameWithType: MetroLine
+    fullName: MetroLine
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.MetroLine
+    name: MetroLine
+    nameWithType: MetroLine
+    fullName: MetroLine
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord{Achievement,System.String}
+  commentId: T:Gameplay.Statistics.BoolRecord{Achievement,System.String}
+  parent: Gameplay.Statistics
+  definition: Gameplay.Statistics.BoolRecord`2
+  name: BoolRecord<Achievement, String>
+  nameWithType: BoolRecord<Achievement, String>
+  fullName: Gameplay.Statistics.BoolRecord<Achievement, System.String>
+  nameWithType.vb: BoolRecord(Of Achievement, String)
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of Achievement, System.String)
+  name.vb: BoolRecord(Of Achievement, String)
+  spec.csharp:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Global.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: Achievement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord
+    nameWithType: BoolRecord
+    fullName: Gameplay.Statistics.BoolRecord
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Global.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: Achievement
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

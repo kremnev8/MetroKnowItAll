@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.AchievementDB
+  commentId: T:ScriptableObjects.AchievementDB
+  id: AchievementDB
+  parent: ScriptableObjects
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AchievementDB
+  nameWithType: AchievementDB
+  fullName: ScriptableObjects.AchievementDB
+  type: Class
+  source:
+    id: AchievementDB
+    path: ''
+    startLine: 4594
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nData store for existing achievements\n"
+  example: []
+  syntax:
+    content: 'public class AchievementDB : GenericDB<Achievement>'
+    content.vb: >-
+      Public Class AchievementDB
+          Inherits GenericDB(Of Achievement)
+  inheritance:
+  - System.Object
+  - ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  inheritedMembers:
+  - ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Get(System.String)
+  - ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.GetAll
+  - ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Count
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  commentId: T:ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  parent: ScriptableObjects
+  definition: ScriptableObjects.GenericDB`1
+  name: GenericDB<Achievement>
+  nameWithType: GenericDB<Achievement>
+  fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>
+  nameWithType.vb: GenericDB(Of Achievement)
+  fullName.vb: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement)
+  name.vb: GenericDB(Of Achievement)
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: ScriptableObjects.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: ScriptableObjects.Achievement
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: ScriptableObjects.Achievement
+    name: Achievement
+    nameWithType: Achievement
+    fullName: ScriptableObjects.Achievement
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Get(System.String)
+  commentId: M:ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Get(System.String)
+  parent: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  definition: ScriptableObjects.GenericDB`1.Get(System.String)
+  name: Get(String)
+  nameWithType: GenericDB<Achievement>.Get(String)
+  fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.Get(System.String)
+  nameWithType.vb: GenericDB(Of Achievement).Get(String)
+  fullName.vb: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).Get(System.String)
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.Get(System.String)
+    name: Get
+    nameWithType: GenericDB<Achievement>.Get
+    fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.Get(System.String)
+    name: Get
+    nameWithType: GenericDB(Of Achievement).Get
+    fullName: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.GetAll
+  commentId: M:ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.GetAll
+  parent: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  definition: ScriptableObjects.GenericDB`1.GetAll
+  name: GetAll()
+  nameWithType: GenericDB<Achievement>.GetAll()
+  fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.GetAll()
+  nameWithType.vb: GenericDB(Of Achievement).GetAll()
+  fullName.vb: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).GetAll()
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.GetAll
+    name: GetAll
+    nameWithType: GenericDB<Achievement>.GetAll
+    fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.GetAll
+    name: GetAll
+    nameWithType: GenericDB(Of Achievement).GetAll
+    fullName: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Count
+  commentId: M:ScriptableObjects.GenericDB{ScriptableObjects.Achievement}.Count
+  parent: ScriptableObjects.GenericDB{ScriptableObjects.Achievement}
+  definition: ScriptableObjects.GenericDB`1.Count
+  name: Count()
+  nameWithType: GenericDB<Achievement>.Count()
+  fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.Count()
+  nameWithType.vb: GenericDB(Of Achievement).Count()
+  fullName.vb: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).Count()
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.Count
+    name: Count
+    nameWithType: GenericDB<Achievement>.Count
+    fullName: ScriptableObjects.GenericDB<ScriptableObjects.Achievement>.Count
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.Count
+    name: Count
+    nameWithType: GenericDB(Of Achievement).Count
+    fullName: ScriptableObjects.GenericDB(Of ScriptableObjects.Achievement).Count
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ScriptableObjects.GenericDB`1
+  commentId: T:ScriptableObjects.GenericDB`1
+  name: GenericDB<T>
+  nameWithType: GenericDB<T>
+  fullName: ScriptableObjects.GenericDB<T>
+  nameWithType.vb: GenericDB(Of T)
+  fullName.vb: ScriptableObjects.GenericDB(Of T)
+  name.vb: GenericDB(Of T)
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB
+    nameWithType: GenericDB
+    fullName: ScriptableObjects.GenericDB
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB`1.Get(System.String)
+  commentId: M:ScriptableObjects.GenericDB`1.Get(System.String)
+  isExternal: true
+  name: Get(String)
+  nameWithType: GenericDB<T>.Get(String)
+  fullName: ScriptableObjects.GenericDB<T>.Get(System.String)
+  nameWithType.vb: GenericDB(Of T).Get(String)
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Get(System.String)
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.Get(System.String)
+    name: Get
+    nameWithType: GenericDB<T>.Get
+    fullName: ScriptableObjects.GenericDB<T>.Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.Get(System.String)
+    name: Get
+    nameWithType: GenericDB(Of T).Get
+    fullName: ScriptableObjects.GenericDB(Of T).Get
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB`1.GetAll
+  commentId: M:ScriptableObjects.GenericDB`1.GetAll
+  name: GetAll()
+  nameWithType: GenericDB<T>.GetAll()
+  fullName: ScriptableObjects.GenericDB<T>.GetAll()
+  nameWithType.vb: GenericDB(Of T).GetAll()
+  fullName.vb: ScriptableObjects.GenericDB(Of T).GetAll()
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.GetAll
+    name: GetAll
+    nameWithType: GenericDB<T>.GetAll
+    fullName: ScriptableObjects.GenericDB<T>.GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.GetAll
+    name: GetAll
+    nameWithType: GenericDB(Of T).GetAll
+    fullName: ScriptableObjects.GenericDB(Of T).GetAll
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ScriptableObjects.GenericDB`1.Count
+  commentId: M:ScriptableObjects.GenericDB`1.Count
+  name: Count()
+  nameWithType: GenericDB<T>.Count()
+  fullName: ScriptableObjects.GenericDB<T>.Count()
+  nameWithType.vb: GenericDB(Of T).Count()
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Count()
+  spec.csharp:
+  - uid: ScriptableObjects.GenericDB`1.Count
+    name: Count
+    nameWithType: GenericDB<T>.Count
+    fullName: ScriptableObjects.GenericDB<T>.Count
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ScriptableObjects.GenericDB`1.Count
+    name: Count
+    nameWithType: GenericDB(Of T).Count
+    fullName: ScriptableObjects.GenericDB(Of T).Count
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

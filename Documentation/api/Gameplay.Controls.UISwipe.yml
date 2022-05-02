@@ -1,0 +1,363 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Controls.UISwipe
+  commentId: T:Gameplay.Controls.UISwipe
+  id: UISwipe
+  parent: Gameplay.Controls
+  children:
+  - Gameplay.Controls.UISwipe.closedPosition
+  - Gameplay.Controls.UISwipe.closeThreshold
+  - Gameplay.Controls.UISwipe.content
+  - Gameplay.Controls.UISwipe.ForceOpen
+  - Gameplay.Controls.UISwipe.friction
+  - Gameplay.Controls.UISwipe.isReturning
+  - Gameplay.Controls.UISwipe.moveAxis
+  - Gameplay.Controls.UISwipe.returnSpeed
+  - Gameplay.Controls.UISwipe.shouldDisableContent
+  - Gameplay.Controls.UISwipe.twoWay
+  langs:
+  - csharp
+  - vb
+  name: UISwipe
+  nameWithType: UISwipe
+  fullName: Gameplay.Controls.UISwipe
+  type: Class
+  source:
+    id: UISwipe
+    path: ''
+    startLine: 1783
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  summary: "\nUI control that allows to swipe an UI element up and down to open and hide it\n"
+  example: []
+  syntax:
+    content: 'public class UISwipe : MonoBehaviour'
+    content.vb: >-
+      Public Class UISwipe
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Controls.UISwipe.isReturning
+  commentId: F:Gameplay.Controls.UISwipe.isReturning
+  id: isReturning
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: isReturning
+  nameWithType: UISwipe.isReturning
+  fullName: Gameplay.Controls.UISwipe.isReturning
+  type: Field
+  source:
+    id: isReturning
+    path: ''
+    startLine: 1794
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public bool isReturning
+    return:
+      type: System.Boolean
+    content.vb: Public isReturning As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.content
+  commentId: F:Gameplay.Controls.UISwipe.content
+  id: content
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: content
+  nameWithType: UISwipe.content
+  fullName: Gameplay.Controls.UISwipe.content
+  type: Field
+  source:
+    id: content
+    path: ''
+    startLine: 1802
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public GameObject content
+    return:
+      type: Global.GameObject
+    content.vb: Public content As GameObject
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.returnSpeed
+  commentId: F:Gameplay.Controls.UISwipe.returnSpeed
+  id: returnSpeed
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: returnSpeed
+  nameWithType: UISwipe.returnSpeed
+  fullName: Gameplay.Controls.UISwipe.returnSpeed
+  type: Field
+  source:
+    id: returnSpeed
+    path: ''
+    startLine: 1805
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float returnSpeed
+    return:
+      type: System.Single
+    content.vb: Public returnSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.moveAxis
+  commentId: F:Gameplay.Controls.UISwipe.moveAxis
+  id: moveAxis
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: moveAxis
+  nameWithType: UISwipe.moveAxis
+  fullName: Gameplay.Controls.UISwipe.moveAxis
+  type: Field
+  source:
+    id: moveAxis
+    path: ''
+    startLine: 1806
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public Vector2 moveAxis
+    return:
+      type: Global.Vector2
+    content.vb: Public moveAxis As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.friction
+  commentId: F:Gameplay.Controls.UISwipe.friction
+  id: friction
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: friction
+  nameWithType: UISwipe.friction
+  fullName: Gameplay.Controls.UISwipe.friction
+  type: Field
+  source:
+    id: friction
+    path: ''
+    startLine: 1807
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public float friction
+    return:
+      type: System.Single
+    content.vb: Public friction As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.closedPosition
+  commentId: F:Gameplay.Controls.UISwipe.closedPosition
+  id: closedPosition
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: closedPosition
+  nameWithType: UISwipe.closedPosition
+  fullName: Gameplay.Controls.UISwipe.closedPosition
+  type: Field
+  source:
+    id: closedPosition
+    path: ''
+    startLine: 1810
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public Vector2 closedPosition
+    return:
+      type: Global.Vector2
+    content.vb: Public closedPosition As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.closeThreshold
+  commentId: F:Gameplay.Controls.UISwipe.closeThreshold
+  id: closeThreshold
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: closeThreshold
+  nameWithType: UISwipe.closeThreshold
+  fullName: Gameplay.Controls.UISwipe.closeThreshold
+  type: Field
+  source:
+    id: closeThreshold
+    path: ''
+    startLine: 1811
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public Vector2 closeThreshold
+    return:
+      type: Global.Vector2
+    content.vb: Public closeThreshold As Vector2
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.shouldDisableContent
+  commentId: F:Gameplay.Controls.UISwipe.shouldDisableContent
+  id: shouldDisableContent
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: shouldDisableContent
+  nameWithType: UISwipe.shouldDisableContent
+  fullName: Gameplay.Controls.UISwipe.shouldDisableContent
+  type: Field
+  source:
+    id: shouldDisableContent
+    path: ''
+    startLine: 1812
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public bool shouldDisableContent
+    return:
+      type: System.Boolean
+    content.vb: Public shouldDisableContent As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.twoWay
+  commentId: F:Gameplay.Controls.UISwipe.twoWay
+  id: twoWay
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: twoWay
+  nameWithType: UISwipe.twoWay
+  fullName: Gameplay.Controls.UISwipe.twoWay
+  type: Field
+  source:
+    id: twoWay
+    path: ''
+    startLine: 1813
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public bool twoWay
+    return:
+      type: System.Boolean
+    content.vb: Public twoWay As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Controls.UISwipe.ForceOpen
+  commentId: M:Gameplay.Controls.UISwipe.ForceOpen
+  id: ForceOpen
+  parent: Gameplay.Controls.UISwipe
+  langs:
+  - csharp
+  - vb
+  name: ForceOpen()
+  nameWithType: UISwipe.ForceOpen()
+  fullName: Gameplay.Controls.UISwipe.ForceOpen()
+  type: Method
+  source:
+    id: ForceOpen
+    path: ''
+    startLine: 1830
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Controls
+  syntax:
+    content: public void ForceOpen()
+    content.vb: Public Sub ForceOpen
+  overload: Gameplay.Controls.UISwipe.ForceOpen*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Controls
+  commentId: N:Gameplay.Controls
+  name: Gameplay.Controls
+  nameWithType: Gameplay.Controls
+  fullName: Gameplay.Controls
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: Gameplay.Controls.UISwipe.ForceOpen*
+  commentId: Overload:Gameplay.Controls.UISwipe.ForceOpen
+  name: ForceOpen
+  nameWithType: UISwipe.ForceOpen
+  fullName: Gameplay.Controls.UISwipe.ForceOpen

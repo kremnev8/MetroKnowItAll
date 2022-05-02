@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.GenericDB`1
+  commentId: T:ScriptableObjects.GenericDB`1
+  id: GenericDB`1
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.GenericDB`1.Count
+  - ScriptableObjects.GenericDB`1.Get(System.String)
+  - ScriptableObjects.GenericDB`1.GetAll
+  langs:
+  - csharp
+  - vb
+  name: GenericDB<T>
+  nameWithType: GenericDB<T>
+  fullName: ScriptableObjects.GenericDB<T>
+  type: Class
+  source:
+    id: GenericDB
+    path: ''
+    startLine: 4681
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nGeneric data store for any item keyed by string id&apos;s\n"
+  example: []
+  syntax:
+    content: 'public class GenericDB<T> : ScriptableObject where T : GenericItem'
+    typeParameters:
+    - id: T
+      description: Model class, implementing <xref href="ScriptableObjects.GenericItem" data-throw-if-not-resolved="false"></xref>
+    content.vb: >-
+      Public Class GenericDB(Of T As GenericItem)
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - ScriptableObjects.AchievementDB
+  - ScriptableObjects.QuestionsDB
+  nameWithType.vb: GenericDB(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: ScriptableObjects.GenericDB(Of T)
+  name.vb: GenericDB(Of T)
+- uid: ScriptableObjects.GenericDB`1.Get(System.String)
+  commentId: M:ScriptableObjects.GenericDB`1.Get(System.String)
+  id: Get(System.String)
+  parent: ScriptableObjects.GenericDB`1
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: GenericDB<T>.Get(String)
+  fullName: ScriptableObjects.GenericDB<T>.Get(System.String)
+  type: Method
+  source:
+    id: Get
+    path: ''
+    startLine: 4687
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public T Get(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: '{T}'
+    content.vb: Public Function Get(key As String) As T
+  overload: ScriptableObjects.GenericDB`1.Get*
+  nameWithType.vb: GenericDB(Of T).Get(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Get(System.String)
+- uid: ScriptableObjects.GenericDB`1.GetAll
+  commentId: M:ScriptableObjects.GenericDB`1.GetAll
+  id: GetAll
+  parent: ScriptableObjects.GenericDB`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: GenericDB<T>.GetAll()
+  fullName: ScriptableObjects.GenericDB<T>.GetAll()
+  type: Method
+  source:
+    id: GetAll
+    path: ''
+    startLine: 4702
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public T[] GetAll()
+    return:
+      type: '{T}[]'
+    content.vb: Public Function GetAll As T()
+  overload: ScriptableObjects.GenericDB`1.GetAll*
+  nameWithType.vb: GenericDB(Of T).GetAll()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ScriptableObjects.GenericDB(Of T).GetAll()
+- uid: ScriptableObjects.GenericDB`1.Count
+  commentId: M:ScriptableObjects.GenericDB`1.Count
+  id: Count
+  parent: ScriptableObjects.GenericDB`1
+  langs:
+  - csharp
+  - vb
+  name: Count()
+  nameWithType: GenericDB<T>.Count()
+  fullName: ScriptableObjects.GenericDB<T>.Count()
+  type: Method
+  source:
+    id: Count
+    path: ''
+    startLine: 4707
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public int Count()
+    return:
+      type: System.Int32
+    content.vb: Public Function Count As Integer
+  overload: ScriptableObjects.GenericDB`1.Count*
+  nameWithType.vb: GenericDB(Of T).Count()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Count()
+references:
+- uid: ScriptableObjects.GenericItem
+  commentId: T:ScriptableObjects.GenericItem
+  parent: ScriptableObjects
+  name: GenericItem
+  nameWithType: GenericItem
+  fullName: ScriptableObjects.GenericItem
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ScriptableObjects.GenericDB`1.Get*
+  commentId: Overload:ScriptableObjects.GenericDB`1.Get
+  name: Get
+  nameWithType: GenericDB<T>.Get
+  fullName: ScriptableObjects.GenericDB<T>.Get
+  nameWithType.vb: GenericDB(Of T).Get
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: ScriptableObjects.GenericDB`1.GetAll*
+  commentId: Overload:ScriptableObjects.GenericDB`1.GetAll
+  name: GetAll
+  nameWithType: GenericDB<T>.GetAll
+  fullName: ScriptableObjects.GenericDB<T>.GetAll
+  nameWithType.vb: GenericDB(Of T).GetAll
+  fullName.vb: ScriptableObjects.GenericDB(Of T).GetAll
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: ScriptableObjects.GenericDB`1.Count*
+  commentId: Overload:ScriptableObjects.GenericDB`1.Count
+  name: Count
+  nameWithType: GenericDB<T>.Count
+  fullName: ScriptableObjects.GenericDB<T>.Count
+  nameWithType.vb: GenericDB(Of T).Count
+  fullName.vb: ScriptableObjects.GenericDB(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

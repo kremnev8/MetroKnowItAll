@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.RenameAttribute
+  commentId: T:Util.RenameAttribute
+  id: RenameAttribute
+  parent: Util
+  children:
+  - Util.RenameAttribute.#ctor(System.String)
+  - Util.RenameAttribute.NewName
+  langs:
+  - csharp
+  - vb
+  name: RenameAttribute
+  nameWithType: RenameAttribute
+  fullName: Util.RenameAttribute
+  type: Class
+  source:
+    id: RenameAttribute
+    path: ''
+    startLine: 5759
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nProperty drawer attribute to rename property\n"
+  example: []
+  syntax:
+    content: 'public class RenameAttribute : PropertyAttribute'
+    content.vb: >-
+      Public Class RenameAttribute
+          Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Util.RenameAttribute.NewName
+  commentId: P:Util.RenameAttribute.NewName
+  id: NewName
+  parent: Util.RenameAttribute
+  langs:
+  - csharp
+  - vb
+  name: NewName
+  nameWithType: RenameAttribute.NewName
+  fullName: Util.RenameAttribute.NewName
+  type: Property
+  source:
+    id: NewName
+    path: ''
+    startLine: 5761
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public string NewName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property NewName As String
+  overload: Util.RenameAttribute.NewName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Util.RenameAttribute.#ctor(System.String)
+  commentId: M:Util.RenameAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Util.RenameAttribute
+  langs:
+  - csharp
+  - vb
+  name: RenameAttribute(String)
+  nameWithType: RenameAttribute.RenameAttribute(String)
+  fullName: Util.RenameAttribute.RenameAttribute(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5762
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public RenameAttribute(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: Util.RenameAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.RenameAttribute.NewName*
+  commentId: Overload:Util.RenameAttribute.NewName
+  name: NewName
+  nameWithType: RenameAttribute.NewName
+  fullName: Util.RenameAttribute.NewName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Util.RenameAttribute.#ctor*
+  commentId: Overload:Util.RenameAttribute.#ctor
+  name: RenameAttribute
+  nameWithType: RenameAttribute.RenameAttribute
+  fullName: Util.RenameAttribute.RenameAttribute

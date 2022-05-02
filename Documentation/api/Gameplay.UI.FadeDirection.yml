@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.FadeDirection
+  commentId: T:Gameplay.UI.FadeDirection
+  id: FadeDirection
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.FadeDirection.FADE_IN
+  - Gameplay.UI.FadeDirection.FADE_OUT
+  langs:
+  - csharp
+  - vb
+  name: FadeDirection
+  nameWithType: FadeDirection
+  fullName: Gameplay.UI.FadeDirection
+  type: Enum
+  source:
+    id: FadeDirection
+    path: ''
+    startLine: 5146
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public enum FadeDirection
+    content.vb: Public Enum FadeDirection
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Gameplay.UI.FadeDirection.FADE_IN
+  commentId: F:Gameplay.UI.FadeDirection.FADE_IN
+  id: FADE_IN
+  parent: Gameplay.UI.FadeDirection
+  langs:
+  - csharp
+  - vb
+  name: FADE_IN
+  nameWithType: FadeDirection.FADE_IN
+  fullName: Gameplay.UI.FadeDirection.FADE_IN
+  type: Field
+  source:
+    id: FADE_IN
+    path: ''
+    startLine: 5148
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: FADE_IN = 0
+    return:
+      type: Gameplay.UI.FadeDirection
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.UI.FadeDirection.FADE_OUT
+  commentId: F:Gameplay.UI.FadeDirection.FADE_OUT
+  id: FADE_OUT
+  parent: Gameplay.UI.FadeDirection
+  langs:
+  - csharp
+  - vb
+  name: FADE_OUT
+  nameWithType: FadeDirection.FADE_OUT
+  fullName: Gameplay.UI.FadeDirection.FADE_OUT
+  type: Field
+  source:
+    id: FADE_OUT
+    path: ''
+    startLine: 5149
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: FADE_OUT = 1
+    return:
+      type: Gameplay.UI.FadeDirection
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: Gameplay.UI.FadeDirection
+  commentId: T:Gameplay.UI.FadeDirection
+  parent: Gameplay.UI
+  name: FadeDirection
+  nameWithType: FadeDirection
+  fullName: Gameplay.UI.FadeDirection

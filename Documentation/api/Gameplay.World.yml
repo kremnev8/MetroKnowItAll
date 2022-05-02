@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.World
+  commentId: N:Gameplay.World
+  id: Gameplay.World
+  children:
+  - Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.World
+  nameWithType: Gameplay.World
+  fullName: Gameplay.World
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.World.RandomAudioSource
+  commentId: T:Gameplay.World.RandomAudioSource
+  name: RandomAudioSource
+  nameWithType: RandomAudioSource
+  fullName: Gameplay.World.RandomAudioSource

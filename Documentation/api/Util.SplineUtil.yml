@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.SplineUtil
+  commentId: T:Util.SplineUtil
+  id: SplineUtil
+  parent: Util
+  children:
+  - Util.SplineUtil.CopyValues(Spline,Spline)
+  langs:
+  - csharp
+  - vb
+  name: SplineUtil
+  nameWithType: SplineUtil
+  fullName: Util.SplineUtil
+  type: Class
+  source:
+    id: SplineUtil
+    path: ''
+    startLine: 6388
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nExtension class to work with splines\n"
+  example: []
+  syntax:
+    content: public static class SplineUtil
+    content.vb: Public Module SplineUtil
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.SplineUtil.CopyValues(Spline,Spline)
+  commentId: M:Util.SplineUtil.CopyValues(Spline,Spline)
+  id: CopyValues(Spline,Spline)
+  isExtensionMethod: true
+  parent: Util.SplineUtil
+  langs:
+  - csharp
+  - vb
+  name: CopyValues(Spline, Spline)
+  nameWithType: SplineUtil.CopyValues(Spline, Spline)
+  fullName: Util.SplineUtil.CopyValues(Spline, Spline)
+  type: Method
+  source:
+    id: CopyValues
+    path: ''
+    startLine: 6393
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nCopy all properties of the other spline to this one\n"
+  example: []
+  syntax:
+    content: public static void CopyValues(this Spline spline, Spline other)
+    parameters:
+    - id: spline
+      type: Global.Spline
+    - id: other
+      type: Global.Spline
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub CopyValues(spline As Spline, other As Spline)
+  overload: Util.SplineUtil.CopyValues*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.SplineUtil.CopyValues*
+  commentId: Overload:Util.SplineUtil.CopyValues
+  name: CopyValues
+  nameWithType: SplineUtil.CopyValues
+  fullName: Util.SplineUtil.CopyValues
+- uid: Global.Spline
+  isExternal: true
+  name: Spline
+  nameWithType: Spline
+  fullName: Spline

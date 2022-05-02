@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.UIQuestion
+  commentId: T:Gameplay.Questions.UIQuestion
+  id: UIQuestion
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.UIQuestion.answerField
+  - Gameplay.Questions.UIQuestion.CheckAnswer
+  - Gameplay.Questions.UIQuestion.progressBar
+  - Gameplay.Questions.UIQuestion.questions
+  - Gameplay.Questions.UIQuestion.questionText
+  - Gameplay.Questions.UIQuestion.resultText
+  langs:
+  - csharp
+  - vb
+  name: UIQuestion
+  nameWithType: UIQuestion
+  fullName: Gameplay.Questions.UIQuestion
+  type: Class
+  source:
+    id: UIQuestion
+    path: ''
+    startLine: 4042
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: 'public class UIQuestion : MonoBehaviour'
+    content.vb: >-
+      Public Class UIQuestion
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Questions.UIQuestion.questionText
+  commentId: F:Gameplay.Questions.UIQuestion.questionText
+  id: questionText
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: questionText
+  nameWithType: UIQuestion.questionText
+  fullName: Gameplay.Questions.UIQuestion.questionText
+  type: Field
+  source:
+    id: questionText
+    path: ''
+    startLine: 4044
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text questionText
+    return:
+      type: Global.TMP_Text
+    content.vb: Public questionText As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UIQuestion.answerField
+  commentId: F:Gameplay.Questions.UIQuestion.answerField
+  id: answerField
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: answerField
+  nameWithType: UIQuestion.answerField
+  fullName: Gameplay.Questions.UIQuestion.answerField
+  type: Field
+  source:
+    id: answerField
+    path: ''
+    startLine: 4045
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_InputField answerField
+    return:
+      type: Global.TMP_InputField
+    content.vb: Public answerField As TMP_InputField
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UIQuestion.resultText
+  commentId: F:Gameplay.Questions.UIQuestion.resultText
+  id: resultText
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: resultText
+  nameWithType: UIQuestion.resultText
+  fullName: Gameplay.Questions.UIQuestion.resultText
+  type: Field
+  source:
+    id: resultText
+    path: ''
+    startLine: 4047
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public TMP_Text resultText
+    return:
+      type: Global.TMP_Text
+    content.vb: Public resultText As TMP_Text
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UIQuestion.progressBar
+  commentId: F:Gameplay.Questions.UIQuestion.progressBar
+  id: progressBar
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: progressBar
+  nameWithType: UIQuestion.progressBar
+  fullName: Gameplay.Questions.UIQuestion.progressBar
+  type: Field
+  source:
+    id: progressBar
+    path: ''
+    startLine: 4049
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Slider progressBar
+    return:
+      type: Global.Slider
+    content.vb: Public progressBar As Slider
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UIQuestion.questions
+  commentId: F:Gameplay.Questions.UIQuestion.questions
+  id: questions
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: questions
+  nameWithType: UIQuestion.questions
+  fullName: Gameplay.Questions.UIQuestion.questions
+  type: Field
+  source:
+    id: questions
+    path: ''
+    startLine: 4051
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public QuestionsDB questions
+    return:
+      type: Global.QuestionsDB
+    content.vb: Public questions As QuestionsDB
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.UIQuestion.CheckAnswer
+  commentId: M:Gameplay.Questions.UIQuestion.CheckAnswer
+  id: CheckAnswer
+  parent: Gameplay.Questions.UIQuestion
+  langs:
+  - csharp
+  - vb
+  name: CheckAnswer()
+  nameWithType: UIQuestion.CheckAnswer()
+  fullName: Gameplay.Questions.UIQuestion.CheckAnswer()
+  type: Method
+  source:
+    id: CheckAnswer
+    path: ''
+    startLine: 4087
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void CheckAnswer()
+    content.vb: Public Sub CheckAnswer
+  overload: Gameplay.Questions.UIQuestion.CheckAnswer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.TMP_Text
+  isExternal: true
+  name: TMP_Text
+  nameWithType: TMP_Text
+  fullName: TMP_Text
+- uid: Global.TMP_InputField
+  commentId: '!:Global.TMP_InputField'
+  isExternal: true
+  name: TMP_InputField
+  nameWithType: TMP_InputField
+  fullName: TMP_InputField
+- uid: Global.Slider
+  commentId: '!:Global.Slider'
+  isExternal: true
+  name: Slider
+  nameWithType: Slider
+  fullName: Slider
+- uid: Global.QuestionsDB
+  commentId: '!:Global.QuestionsDB'
+  isExternal: true
+  name: QuestionsDB
+  nameWithType: QuestionsDB
+  fullName: QuestionsDB
+- uid: Gameplay.Questions.UIQuestion.CheckAnswer*
+  commentId: Overload:Gameplay.Questions.UIQuestion.CheckAnswer
+  name: CheckAnswer
+  nameWithType: UIQuestion.CheckAnswer
+  fullName: Gameplay.Questions.UIQuestion.CheckAnswer

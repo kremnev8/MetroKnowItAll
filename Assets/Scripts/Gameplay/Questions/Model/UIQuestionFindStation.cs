@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Gameplay.Questions
 {
     /// <summary>
-    /// UI for <see cref="FindStationGenerator"/>
+    /// UI for <see cref="Gameplay.Questions.Model.FindStationGenerator"/>
     /// </summary>
     public class UIQuestionFindStation : BaseUIQuestion
     {

@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.INamedArrayElement
+  commentId: T:Util.INamedArrayElement
+  id: INamedArrayElement
+  parent: Util
+  children:
+  - Util.INamedArrayElement.displayName
+  - Util.INamedArrayElement.editorName
+  langs:
+  - csharp
+  - vb
+  name: INamedArrayElement
+  nameWithType: INamedArrayElement
+  fullName: Util.INamedArrayElement
+  type: Interface
+  source:
+    id: INamedArrayElement
+    path: ''
+    startLine: 5745
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public interface INamedArrayElement
+    content.vb: Public Interface INamedArrayElement
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Util.INamedArrayElement.editorName
+  commentId: P:Util.INamedArrayElement.editorName
+  id: editorName
+  parent: Util.INamedArrayElement
+  langs:
+  - csharp
+  - vb
+  name: editorName
+  nameWithType: INamedArrayElement.editorName
+  fullName: Util.INamedArrayElement.editorName
+  type: Property
+  source:
+    id: editorName
+    path: ''
+    startLine: 5747
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: string editorName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property editorName As String
+  overload: Util.INamedArrayElement.editorName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Util.INamedArrayElement.displayName
+  commentId: P:Util.INamedArrayElement.displayName
+  id: displayName
+  parent: Util.INamedArrayElement
+  langs:
+  - csharp
+  - vb
+  name: displayName
+  nameWithType: INamedArrayElement.displayName
+  fullName: Util.INamedArrayElement.displayName
+  type: Property
+  source:
+    id: displayName
+    path: ''
+    startLine: 5748
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: string displayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property displayName As String
+  overload: Util.INamedArrayElement.displayName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: Util.INamedArrayElement.editorName*
+  commentId: Overload:Util.INamedArrayElement.editorName
+  name: editorName
+  nameWithType: INamedArrayElement.editorName
+  fullName: Util.INamedArrayElement.editorName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Util.INamedArrayElement.displayName*
+  commentId: Overload:Util.INamedArrayElement.displayName
+  name: displayName
+  nameWithType: INamedArrayElement.displayName
+  fullName: Util.INamedArrayElement.displayName

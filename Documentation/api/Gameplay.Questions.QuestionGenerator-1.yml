@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.QuestionGenerator`1
+  commentId: T:Gameplay.Questions.QuestionGenerator`1
+  id: QuestionGenerator`1
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.QuestionGenerator`1.blacklistedIds
+  - Gameplay.Questions.QuestionGenerator`1.currentRegion
+  - Gameplay.Questions.QuestionGenerator`1.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  - Gameplay.Questions.QuestionGenerator`1.SetRegion(Region)
+  - Gameplay.Questions.QuestionGenerator`1.uiController
+  langs:
+  - csharp
+  - vb
+  name: QuestionGenerator<T>
+  nameWithType: QuestionGenerator<T>
+  fullName: Gameplay.Questions.QuestionGenerator<T>
+  type: Class
+  source:
+    id: QuestionGenerator
+    path: ''
+    startLine: 4011
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nBase class for question generators that are focused on a region of the metro\n"
+  example: []
+  syntax:
+    content: 'public abstract class QuestionGenerator<T> : BaseQuestionGenerator where T : BaseUIQuestion'
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: >-
+      Public MustInherit Class QuestionGenerator(Of T As BaseUIQuestion)
+          Inherits BaseQuestionGenerator
+  inheritance:
+  - System.Object
+  - Gameplay.Questions.BaseQuestionGenerator
+  derivedClasses:
+  - Gameplay.Questions.Model.FindLineGenerator
+  - Gameplay.Questions.Model.FindStationGenerator
+  - Gameplay.Questions.Model.OrderStationsGenerator
+  inheritedMembers:
+  - Gameplay.Questions.BaseQuestionGenerator.renderer
+  - Gameplay.Questions.BaseQuestionGenerator.metro
+  - Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  - Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  - Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  nameWithType.vb: QuestionGenerator(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T)
+  name.vb: QuestionGenerator(Of T)
+- uid: Gameplay.Questions.QuestionGenerator`1.currentRegion
+  commentId: F:Gameplay.Questions.QuestionGenerator`1.currentRegion
+  id: currentRegion
+  parent: Gameplay.Questions.QuestionGenerator`1
+  langs:
+  - csharp
+  - vb
+  name: currentRegion
+  nameWithType: QuestionGenerator<T>.currentRegion
+  fullName: Gameplay.Questions.QuestionGenerator<T>.currentRegion
+  type: Field
+  source:
+    id: currentRegion
+    path: ''
+    startLine: 4013
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Region currentRegion
+    return:
+      type: Global.Region
+    content.vb: Public currentRegion As Region
+  nameWithType.vb: QuestionGenerator(Of T).currentRegion
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).currentRegion
+- uid: Gameplay.Questions.QuestionGenerator`1.blacklistedIds
+  commentId: F:Gameplay.Questions.QuestionGenerator`1.blacklistedIds
+  id: blacklistedIds
+  parent: Gameplay.Questions.QuestionGenerator`1
+  langs:
+  - csharp
+  - vb
+  name: blacklistedIds
+  nameWithType: QuestionGenerator<T>.blacklistedIds
+  fullName: Gameplay.Questions.QuestionGenerator<T>.blacklistedIds
+  type: Field
+  source:
+    id: blacklistedIds
+    path: ''
+    startLine: 4014
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: protected List<int> blacklistedIds
+    return:
+      type: Global.List{System.Int32}
+    content.vb: Protected blacklistedIds As List(Of Integer)
+  nameWithType.vb: QuestionGenerator(Of T).blacklistedIds
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).blacklistedIds
+- uid: Gameplay.Questions.QuestionGenerator`1.uiController
+  commentId: F:Gameplay.Questions.QuestionGenerator`1.uiController
+  id: uiController
+  parent: Gameplay.Questions.QuestionGenerator`1
+  langs:
+  - csharp
+  - vb
+  name: uiController
+  nameWithType: QuestionGenerator<T>.uiController
+  fullName: Gameplay.Questions.QuestionGenerator<T>.uiController
+  type: Field
+  source:
+    id: uiController
+    path: ''
+    startLine: 4016
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public T uiController
+    return:
+      type: '{T}'
+    content.vb: Public uiController As T
+  nameWithType.vb: QuestionGenerator(Of T).uiController
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).uiController
+- uid: Gameplay.Questions.QuestionGenerator`1.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  commentId: M:Gameplay.Questions.QuestionGenerator`1.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  id: Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  parent: Gameplay.Questions.QuestionGenerator`1
+  langs:
+  - csharp
+  - vb
+  name: Init(MetroRenderer, BaseUIQuestion)
+  nameWithType: QuestionGenerator<T>.Init(MetroRenderer, BaseUIQuestion)
+  fullName: Gameplay.Questions.QuestionGenerator<T>.Init(MetroRenderer, Gameplay.Questions.BaseUIQuestion)
+  type: Method
+  source:
+    id: Init
+    path: ''
+    startLine: 4018
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public override void Init(MetroRenderer _renderer, BaseUIQuestion root)
+    parameters:
+    - id: _renderer
+      type: Global.MetroRenderer
+    - id: root
+      type: Gameplay.Questions.BaseUIQuestion
+    content.vb: Public Overrides Sub Init(_renderer As MetroRenderer, root As BaseUIQuestion)
+  overridden: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  overload: Gameplay.Questions.QuestionGenerator`1.Init*
+  nameWithType.vb: QuestionGenerator(Of T).Init(MetroRenderer, BaseUIQuestion)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).Init(MetroRenderer, Gameplay.Questions.BaseUIQuestion)
+- uid: Gameplay.Questions.QuestionGenerator`1.SetRegion(Region)
+  commentId: M:Gameplay.Questions.QuestionGenerator`1.SetRegion(Region)
+  id: SetRegion(Region)
+  parent: Gameplay.Questions.QuestionGenerator`1
+  langs:
+  - csharp
+  - vb
+  name: SetRegion(Region)
+  nameWithType: QuestionGenerator<T>.SetRegion(Region)
+  fullName: Gameplay.Questions.QuestionGenerator<T>.SetRegion(Region)
+  type: Method
+  source:
+    id: SetRegion
+    path: ''
+    startLine: 4025
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public override void SetRegion(Region region)
+    parameters:
+    - id: region
+      type: Global.Region
+    content.vb: Public Overrides Sub SetRegion(region As Region)
+  overridden: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  overload: Gameplay.Questions.QuestionGenerator`1.SetRegion*
+  nameWithType.vb: QuestionGenerator(Of T).SetRegion(Region)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).SetRegion(Region)
+references:
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  parent: Gameplay.Questions
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+- uid: Gameplay.Questions.BaseQuestionGenerator.renderer
+  commentId: F:Gameplay.Questions.BaseQuestionGenerator.renderer
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  name: renderer
+  nameWithType: BaseQuestionGenerator.renderer
+  fullName: Gameplay.Questions.BaseQuestionGenerator.renderer
+- uid: Gameplay.Questions.BaseQuestionGenerator.metro
+  commentId: F:Gameplay.Questions.BaseQuestionGenerator.metro
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  name: metro
+  nameWithType: BaseQuestionGenerator.metro
+  fullName: Gameplay.Questions.BaseQuestionGenerator.metro
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  name: GenerateNew()
+  nameWithType: BaseQuestionGenerator.GenerateNew()
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateNew()
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+    name: GenerateNew
+    nameWithType: BaseQuestionGenerator.GenerateNew
+    fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+    name: GenerateNew
+    nameWithType: BaseQuestionGenerator.GenerateNew
+    fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateNew
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  isExternal: true
+  name: GenerateTip(Int32)
+  nameWithType: BaseQuestionGenerator.GenerateTip(Int32)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+    name: GenerateTip
+    nameWithType: BaseQuestionGenerator.GenerateTip
+    fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateTip
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.GenerateTip(System.Int32)
+    name: GenerateTip
+    nameWithType: BaseQuestionGenerator.GenerateTip
+    fullName: Gameplay.Questions.BaseQuestionGenerator.GenerateTip
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  name: ValidateAnswer()
+  nameWithType: BaseQuestionGenerator.ValidateAnswer()
+  fullName: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer()
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+    name: ValidateAnswer
+    nameWithType: BaseQuestionGenerator.ValidateAnswer
+    fullName: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+    name: ValidateAnswer
+    nameWithType: BaseQuestionGenerator.ValidateAnswer
+    fullName: Gameplay.Questions.BaseQuestionGenerator.ValidateAnswer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Region
+  isExternal: true
+  name: Region
+  nameWithType: Region
+  fullName: Region
+- uid: Global.List{System.Int32}
+  commentId: '!:Global.List{System.Int32}'
+  definition: Global.List`1
+  name: List<Int32>
+  nameWithType: List<Int32>
+  fullName: List<System.Int32>
+  nameWithType.vb: List(Of Int32)
+  fullName.vb: List(Of System.Int32)
+  name.vb: List(Of Int32)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  isExternal: true
+  name: Init(MetroRenderer, BaseUIQuestion)
+  nameWithType: BaseQuestionGenerator.Init(MetroRenderer, BaseUIQuestion)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer, Gameplay.Questions.BaseUIQuestion)
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+    name: Init
+    nameWithType: BaseQuestionGenerator.Init
+    fullName: Gameplay.Questions.BaseQuestionGenerator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Global.MetroRenderer
+    name: MetroRenderer
+    nameWithType: MetroRenderer
+    fullName: MetroRenderer
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Gameplay.Questions.BaseUIQuestion
+    name: BaseUIQuestion
+    nameWithType: BaseUIQuestion
+    fullName: Gameplay.Questions.BaseUIQuestion
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)
+    name: Init
+    nameWithType: BaseQuestionGenerator.Init
+    fullName: Gameplay.Questions.BaseQuestionGenerator.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Global.MetroRenderer
+    name: MetroRenderer
+    nameWithType: MetroRenderer
+    fullName: MetroRenderer
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Gameplay.Questions.BaseUIQuestion
+    name: BaseUIQuestion
+    nameWithType: BaseUIQuestion
+    fullName: Gameplay.Questions.BaseUIQuestion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.QuestionGenerator`1.Init*
+  commentId: Overload:Gameplay.Questions.QuestionGenerator`1.Init
+  name: Init
+  nameWithType: QuestionGenerator<T>.Init
+  fullName: Gameplay.Questions.QuestionGenerator<T>.Init
+  nameWithType.vb: QuestionGenerator(Of T).Init
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).Init
+- uid: Global.MetroRenderer
+  isExternal: true
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: MetroRenderer
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  parent: Gameplay.Questions
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+- uid: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  commentId: M:Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  parent: Gameplay.Questions.BaseQuestionGenerator
+  isExternal: true
+  name: SetRegion(Region)
+  nameWithType: BaseQuestionGenerator.SetRegion(Region)
+  fullName: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+  spec.csharp:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+    name: SetRegion
+    nameWithType: BaseQuestionGenerator.SetRegion
+    fullName: Gameplay.Questions.BaseQuestionGenerator.SetRegion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Global.Region
+    name: Region
+    nameWithType: Region
+    fullName: Region
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Gameplay.Questions.BaseQuestionGenerator.SetRegion(Region)
+    name: SetRegion
+    nameWithType: BaseQuestionGenerator.SetRegion
+    fullName: Gameplay.Questions.BaseQuestionGenerator.SetRegion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Global.Region
+    name: Region
+    nameWithType: Region
+    fullName: Region
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Questions.QuestionGenerator`1.SetRegion*
+  commentId: Overload:Gameplay.Questions.QuestionGenerator`1.SetRegion
+  name: SetRegion
+  nameWithType: QuestionGenerator<T>.SetRegion
+  fullName: Gameplay.Questions.QuestionGenerator<T>.SetRegion
+  nameWithType.vb: QuestionGenerator(Of T).SetRegion
+  fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).SetRegion

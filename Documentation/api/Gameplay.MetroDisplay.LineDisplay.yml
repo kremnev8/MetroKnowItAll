@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.LineDisplay
+  commentId: T:Gameplay.MetroDisplay.LineDisplay
+  id: LineDisplay
+  parent: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.LineDisplay.line
+  - Gameplay.MetroDisplay.LineDisplay.Refresh
+  - Gameplay.MetroDisplay.LineDisplay.SetFocused(System.Boolean)
+  - Gameplay.MetroDisplay.LineDisplay.SetGroupData(MetroLine)
+  - Gameplay.MetroDisplay.LineDisplay.subDisplayPrefab
+  - Gameplay.MetroDisplay.LineDisplay.subDisplays
+  langs:
+  - csharp
+  - vb
+  name: LineDisplay
+  nameWithType: LineDisplay
+  fullName: Gameplay.MetroDisplay.LineDisplay
+  type: Class
+  source:
+    id: LineDisplay
+    path: ''
+    startLine: 2194
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  summary: "\nControls how <xref href=\"Gameplay.MetroDisplay.Model.MetroLine\" data-throw-if-not-resolved=\"false\"></xref> are displayed\n"
+  example: []
+  syntax:
+    content: 'public class LineDisplay : MonoBehaviour'
+    content.vb: >-
+      Public Class LineDisplay
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.LineDisplay.subDisplays
+  commentId: F:Gameplay.MetroDisplay.LineDisplay.subDisplays
+  id: subDisplays
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: subDisplays
+  nameWithType: LineDisplay.subDisplays
+  fullName: Gameplay.MetroDisplay.LineDisplay.subDisplays
+  type: Field
+  source:
+    id: subDisplays
+    path: ''
+    startLine: 2196
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public List<LineSubDisplay> subDisplays
+    return:
+      type: Global.List{Gameplay.MetroDisplay.LineSubDisplay}
+    content.vb: Public subDisplays As List(Of LineSubDisplay)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineDisplay.line
+  commentId: F:Gameplay.MetroDisplay.LineDisplay.line
+  id: line
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: line
+  nameWithType: LineDisplay.line
+  fullName: Gameplay.MetroDisplay.LineDisplay.line
+  type: Field
+  source:
+    id: line
+    path: ''
+    startLine: 2197
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public MetroLine line
+    return:
+      type: Global.MetroLine
+    content.vb: Public line As MetroLine
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineDisplay.subDisplayPrefab
+  commentId: F:Gameplay.MetroDisplay.LineDisplay.subDisplayPrefab
+  id: subDisplayPrefab
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: subDisplayPrefab
+  nameWithType: LineDisplay.subDisplayPrefab
+  fullName: Gameplay.MetroDisplay.LineDisplay.subDisplayPrefab
+  type: Field
+  source:
+    id: subDisplayPrefab
+    path: ''
+    startLine: 2199
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public LineSubDisplay subDisplayPrefab
+    return:
+      type: Gameplay.MetroDisplay.LineSubDisplay
+    content.vb: Public subDisplayPrefab As LineSubDisplay
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineDisplay.SetFocused(System.Boolean)
+  commentId: M:Gameplay.MetroDisplay.LineDisplay.SetFocused(System.Boolean)
+  id: SetFocused(System.Boolean)
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetFocused(Boolean)
+  nameWithType: LineDisplay.SetFocused(Boolean)
+  fullName: Gameplay.MetroDisplay.LineDisplay.SetFocused(System.Boolean)
+  type: Method
+  source:
+    id: SetFocused
+    path: ''
+    startLine: 2201
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetFocused(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Public Sub SetFocused(value As Boolean)
+  overload: Gameplay.MetroDisplay.LineDisplay.SetFocused*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineDisplay.Refresh
+  commentId: M:Gameplay.MetroDisplay.LineDisplay.Refresh
+  id: Refresh
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: LineDisplay.Refresh()
+  fullName: Gameplay.MetroDisplay.LineDisplay.Refresh()
+  type: Method
+  source:
+    id: Refresh
+    path: ''
+    startLine: 2209
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void Refresh()
+    content.vb: Public Sub Refresh
+  overload: Gameplay.MetroDisplay.LineDisplay.Refresh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.LineDisplay.SetGroupData(MetroLine)
+  commentId: M:Gameplay.MetroDisplay.LineDisplay.SetGroupData(MetroLine)
+  id: SetGroupData(MetroLine)
+  parent: Gameplay.MetroDisplay.LineDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetGroupData(MetroLine)
+  nameWithType: LineDisplay.SetGroupData(MetroLine)
+  fullName: Gameplay.MetroDisplay.LineDisplay.SetGroupData(MetroLine)
+  type: Method
+  source:
+    id: SetGroupData
+    path: ''
+    startLine: 2217
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetGroupData(MetroLine _line)
+    parameters:
+    - id: _line
+      type: Global.MetroLine
+    content.vb: Public Sub SetGroupData(_line As MetroLine)
+  overload: Gameplay.MetroDisplay.LineDisplay.SetGroupData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model.MetroLine
+  commentId: T:Gameplay.MetroDisplay.Model.MetroLine
+  parent: Gameplay.MetroDisplay.Model
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: Gameplay.MetroDisplay.Model.MetroLine
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.List{Gameplay.MetroDisplay.LineSubDisplay}
+  commentId: '!:Global.List{Gameplay.MetroDisplay.LineSubDisplay}'
+  definition: Global.List`1
+  name: List<LineSubDisplay>
+  nameWithType: List<LineSubDisplay>
+  fullName: List<Gameplay.MetroDisplay.LineSubDisplay>
+  nameWithType.vb: List(Of LineSubDisplay)
+  fullName.vb: List(Of Gameplay.MetroDisplay.LineSubDisplay)
+  name.vb: List(Of LineSubDisplay)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.MetroDisplay.LineSubDisplay
+    name: LineSubDisplay
+    nameWithType: LineSubDisplay
+    fullName: Gameplay.MetroDisplay.LineSubDisplay
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.MetroDisplay.LineSubDisplay
+    name: LineSubDisplay
+    nameWithType: LineSubDisplay
+    fullName: Gameplay.MetroDisplay.LineSubDisplay
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.MetroLine
+  isExternal: true
+  name: MetroLine
+  nameWithType: MetroLine
+  fullName: MetroLine
+- uid: Gameplay.MetroDisplay.LineSubDisplay
+  commentId: T:Gameplay.MetroDisplay.LineSubDisplay
+  parent: Gameplay.MetroDisplay
+  name: LineSubDisplay
+  nameWithType: LineSubDisplay
+  fullName: Gameplay.MetroDisplay.LineSubDisplay
+- uid: Gameplay.MetroDisplay.LineDisplay.SetFocused*
+  commentId: Overload:Gameplay.MetroDisplay.LineDisplay.SetFocused
+  name: SetFocused
+  nameWithType: LineDisplay.SetFocused
+  fullName: Gameplay.MetroDisplay.LineDisplay.SetFocused
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.MetroDisplay.LineDisplay.Refresh*
+  commentId: Overload:Gameplay.MetroDisplay.LineDisplay.Refresh
+  name: Refresh
+  nameWithType: LineDisplay.Refresh
+  fullName: Gameplay.MetroDisplay.LineDisplay.Refresh
+- uid: Gameplay.MetroDisplay.LineDisplay.SetGroupData*
+  commentId: Overload:Gameplay.MetroDisplay.LineDisplay.SetGroupData
+  name: SetGroupData
+  nameWithType: LineDisplay.SetGroupData
+  fullName: Gameplay.MetroDisplay.LineDisplay.SetGroupData

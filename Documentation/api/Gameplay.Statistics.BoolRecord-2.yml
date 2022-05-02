@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Statistics.BoolRecord`2
+  commentId: T:Gameplay.Statistics.BoolRecord`2
+  id: BoolRecord`2
+  parent: Gameplay.Statistics
+  children:
+  - Gameplay.Statistics.BoolRecord`2.data
+  - Gameplay.Statistics.BoolRecord`2.IsUnlocked(`0)
+  - Gameplay.Statistics.BoolRecord`2.Prepare(IEnumerable{`0})
+  - Gameplay.Statistics.BoolRecord`2.Unlock(`0)
+  langs:
+  - csharp
+  - vb
+  name: BoolRecord<T, TIndex>
+  nameWithType: BoolRecord<T, TIndex>
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>
+  type: Class
+  source:
+    id: BoolRecord
+    path: ''
+    startLine: 4792
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nBool record for any index-able type\n"
+  example: []
+  syntax:
+    content: >-
+      public class BoolRecord<T, TIndex>
+          where T : IIndexable<TIndex>
+    typeParameters:
+    - id: T
+      description: Source type
+    - id: TIndex
+      description: Index type
+    content.vb: Public Class BoolRecord(Of T As IIndexable(Of TIndex), TIndex)
+  inheritance:
+  - System.Object
+  nameWithType.vb: BoolRecord(Of T, TIndex)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex)
+  name.vb: BoolRecord(Of T, TIndex)
+- uid: Gameplay.Statistics.BoolRecord`2.data
+  commentId: F:Gameplay.Statistics.BoolRecord`2.data
+  id: data
+  parent: Gameplay.Statistics.BoolRecord`2
+  langs:
+  - csharp
+  - vb
+  name: data
+  nameWithType: BoolRecord<T, TIndex>.data
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.data
+  type: Field
+  source:
+    id: data
+    path: ''
+    startLine: 4795
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  syntax:
+    content: public Dictionary<TIndex, bool> data
+    return:
+      type: Global.Dictionary{{TIndex},System.Boolean}
+    content.vb: Public data As Dictionary(Of TIndex, Boolean)
+  nameWithType.vb: BoolRecord(Of T, TIndex).data
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).data
+- uid: Gameplay.Statistics.BoolRecord`2.Prepare(IEnumerable{`0})
+  commentId: M:Gameplay.Statistics.BoolRecord`2.Prepare(IEnumerable{`0})
+  id: Prepare(IEnumerable{`0})
+  parent: Gameplay.Statistics.BoolRecord`2
+  langs:
+  - csharp
+  - vb
+  name: Prepare(IEnumerable<T>)
+  nameWithType: BoolRecord<T, TIndex>.Prepare(IEnumerable<T>)
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.Prepare(IEnumerable<T>)
+  type: Method
+  source:
+    id: Prepare
+    path: ''
+    startLine: 4801
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nInitialize the record with intial data\n"
+  example: []
+  syntax:
+    content: public void Prepare(IEnumerable<T> allEntries)
+    parameters:
+    - id: allEntries
+      type: Global.IEnumerable{{T}}
+      description: ''
+    content.vb: Public Sub Prepare(allEntries As IEnumerable(Of T))
+  overload: Gameplay.Statistics.BoolRecord`2.Prepare*
+  nameWithType.vb: BoolRecord(Of T, TIndex).Prepare(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).Prepare(IEnumerable(Of T))
+  name.vb: Prepare(IEnumerable(Of T))
+- uid: Gameplay.Statistics.BoolRecord`2.Unlock(`0)
+  commentId: M:Gameplay.Statistics.BoolRecord`2.Unlock(`0)
+  id: Unlock(`0)
+  parent: Gameplay.Statistics.BoolRecord`2
+  langs:
+  - csharp
+  - vb
+  name: Unlock(T)
+  nameWithType: BoolRecord<T, TIndex>.Unlock(T)
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.Unlock(T)
+  type: Method
+  source:
+    id: Unlock
+    path: ''
+    startLine: 4813
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nUnlock a record\n"
+  example: []
+  syntax:
+    content: public void Unlock(T station)
+    parameters:
+    - id: station
+      type: '{T}'
+      description: ''
+    content.vb: Public Sub Unlock(station As T)
+  overload: Gameplay.Statistics.BoolRecord`2.Unlock*
+  nameWithType.vb: BoolRecord(Of T, TIndex).Unlock(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).Unlock(T)
+- uid: Gameplay.Statistics.BoolRecord`2.IsUnlocked(`0)
+  commentId: M:Gameplay.Statistics.BoolRecord`2.IsUnlocked(`0)
+  id: IsUnlocked(`0)
+  parent: Gameplay.Statistics.BoolRecord`2
+  langs:
+  - csharp
+  - vb
+  name: IsUnlocked(T)
+  nameWithType: BoolRecord<T, TIndex>.IsUnlocked(T)
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.IsUnlocked(T)
+  type: Method
+  source:
+    id: IsUnlocked
+    path: ''
+    startLine: 4821
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Statistics
+  summary: "\nIs record unlocked?\n"
+  example: []
+  syntax:
+    content: public bool IsUnlocked(T station)
+    parameters:
+    - id: station
+      type: '{T}'
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsUnlocked(station As T) As Boolean
+  overload: Gameplay.Statistics.BoolRecord`2.IsUnlocked*
+  nameWithType.vb: BoolRecord(Of T, TIndex).IsUnlocked(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).IsUnlocked(T)
+references:
+- uid: Gameplay.Statistics
+  commentId: N:Gameplay.Statistics
+  name: Gameplay.Statistics
+  nameWithType: Gameplay.Statistics
+  fullName: Gameplay.Statistics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Dictionary{{TIndex},System.Boolean}
+  commentId: '!:Global.Dictionary{`1,System.Boolean}'
+  definition: Global.Dictionary`2
+  name: Dictionary<TIndex, Boolean>
+  nameWithType: Dictionary<TIndex, Boolean>
+  fullName: Dictionary<TIndex, System.Boolean>
+  nameWithType.vb: Dictionary(Of TIndex, Boolean)
+  fullName.vb: Dictionary(Of TIndex, System.Boolean)
+  name.vb: Dictionary(Of TIndex, Boolean)
+  spec.csharp:
+  - uid: Global.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TIndex
+    nameWithType: TIndex
+    fullName: TIndex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Dictionary`2
+  commentId: '!:Global.Dictionary`2'
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Global.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord`2.Prepare*
+  commentId: Overload:Gameplay.Statistics.BoolRecord`2.Prepare
+  name: Prepare
+  nameWithType: BoolRecord<T, TIndex>.Prepare
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.Prepare
+  nameWithType.vb: BoolRecord(Of T, TIndex).Prepare
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).Prepare
+- uid: Global.IEnumerable{{T}}
+  commentId: '!:Global.IEnumerable{`0}'
+  definition: Global.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Statistics.BoolRecord`2.Unlock*
+  commentId: Overload:Gameplay.Statistics.BoolRecord`2.Unlock
+  name: Unlock
+  nameWithType: BoolRecord<T, TIndex>.Unlock
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.Unlock
+  nameWithType.vb: BoolRecord(Of T, TIndex).Unlock
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).Unlock
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Gameplay.Statistics.BoolRecord`2.IsUnlocked*
+  commentId: Overload:Gameplay.Statistics.BoolRecord`2.IsUnlocked
+  name: IsUnlocked
+  nameWithType: BoolRecord<T, TIndex>.IsUnlocked
+  fullName: Gameplay.Statistics.BoolRecord<T, TIndex>.IsUnlocked
+  nameWithType.vb: BoolRecord(Of T, TIndex).IsUnlocked
+  fullName.vb: Gameplay.Statistics.BoolRecord(Of T, TIndex).IsUnlocked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

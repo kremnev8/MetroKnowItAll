@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.GlobalId
+  commentId: T:Gameplay.MetroDisplay.Model.GlobalId
+  id: GlobalId
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.GlobalId.lineId
+  - Gameplay.MetroDisplay.Model.GlobalId.stationId
+  langs:
+  - csharp
+  - vb
+  name: GlobalId
+  nameWithType: GlobalId
+  fullName: Gameplay.MetroDisplay.Model.GlobalId
+  type: Class
+  source:
+    id: GlobalId
+    path: ''
+    startLine: 3500
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nClass that combines line and station id&apos;s\n"
+  example: []
+  syntax:
+    content: public class GlobalId
+    content.vb: Public Class GlobalId
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.Model.GlobalId.lineId
+  commentId: F:Gameplay.MetroDisplay.Model.GlobalId.lineId
+  id: lineId
+  parent: Gameplay.MetroDisplay.Model.GlobalId
+  langs:
+  - csharp
+  - vb
+  name: lineId
+  nameWithType: GlobalId.lineId
+  fullName: Gameplay.MetroDisplay.Model.GlobalId.lineId
+  type: Field
+  source:
+    id: lineId
+    path: ''
+    startLine: 3503
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte lineId
+    return:
+      type: System.Byte
+    content.vb: Public lineId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.Model.GlobalId.stationId
+  commentId: F:Gameplay.MetroDisplay.Model.GlobalId.stationId
+  id: stationId
+  parent: Gameplay.MetroDisplay.Model.GlobalId
+  langs:
+  - csharp
+  - vb
+  name: stationId
+  nameWithType: GlobalId.stationId
+  fullName: Gameplay.MetroDisplay.Model.GlobalId.stationId
+  type: Field
+  source:
+    id: stationId
+    path: ''
+    startLine: 3504
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: public byte stationId
+    return:
+      type: System.Byte
+    content.vb: Public stationId As Byte
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte

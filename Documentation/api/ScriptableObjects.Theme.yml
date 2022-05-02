@@ -1,0 +1,345 @@
+### YamlMime:ManagedReference
+items:
+- uid: ScriptableObjects.Theme
+  commentId: T:ScriptableObjects.Theme
+  id: Theme
+  parent: ScriptableObjects
+  children:
+  - ScriptableObjects.Theme.background
+  - ScriptableObjects.Theme.buttonColor
+  - ScriptableObjects.Theme.highlightColor
+  - ScriptableObjects.Theme.lineColor
+  - ScriptableObjects.Theme.rightAnswer
+  - ScriptableObjects.Theme.secondareBackground
+  - ScriptableObjects.Theme.textColor
+  - ScriptableObjects.Theme.themeName
+  - ScriptableObjects.Theme.unfocusedColor
+  - ScriptableObjects.Theme.wrongAnswer
+  langs:
+  - csharp
+  - vb
+  name: Theme
+  nameWithType: Theme
+  fullName: ScriptableObjects.Theme
+  type: Class
+  source:
+    id: Theme
+    path: ''
+    startLine: 4609
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  summary: "\nDefines a theme with all of the palette colors\n"
+  example: []
+  syntax:
+    content: public class Theme
+    content.vb: Public Class Theme
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ScriptableObjects.Theme.themeName
+  commentId: F:ScriptableObjects.Theme.themeName
+  id: themeName
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: themeName
+  nameWithType: Theme.themeName
+  fullName: ScriptableObjects.Theme.themeName
+  type: Field
+  source:
+    id: themeName
+    path: ''
+    startLine: 4613
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public string themeName
+    return:
+      type: System.String
+    content.vb: Public themeName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.rightAnswer
+  commentId: F:ScriptableObjects.Theme.rightAnswer
+  id: rightAnswer
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: rightAnswer
+  nameWithType: Theme.rightAnswer
+  fullName: ScriptableObjects.Theme.rightAnswer
+  type: Field
+  source:
+    id: rightAnswer
+    path: ''
+    startLine: 4615
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color rightAnswer
+    return:
+      type: Global.Color
+    content.vb: Public rightAnswer As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.wrongAnswer
+  commentId: F:ScriptableObjects.Theme.wrongAnswer
+  id: wrongAnswer
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: wrongAnswer
+  nameWithType: Theme.wrongAnswer
+  fullName: ScriptableObjects.Theme.wrongAnswer
+  type: Field
+  source:
+    id: wrongAnswer
+    path: ''
+    startLine: 4616
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color wrongAnswer
+    return:
+      type: Global.Color
+    content.vb: Public wrongAnswer As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.background
+  commentId: F:ScriptableObjects.Theme.background
+  id: background
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: background
+  nameWithType: Theme.background
+  fullName: ScriptableObjects.Theme.background
+  type: Field
+  source:
+    id: background
+    path: ''
+    startLine: 4618
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color background
+    return:
+      type: Global.Color
+    content.vb: Public background As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.secondareBackground
+  commentId: F:ScriptableObjects.Theme.secondareBackground
+  id: secondareBackground
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: secondareBackground
+  nameWithType: Theme.secondareBackground
+  fullName: ScriptableObjects.Theme.secondareBackground
+  type: Field
+  source:
+    id: secondareBackground
+    path: ''
+    startLine: 4619
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color secondareBackground
+    return:
+      type: Global.Color
+    content.vb: Public secondareBackground As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.textColor
+  commentId: F:ScriptableObjects.Theme.textColor
+  id: textColor
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: textColor
+  nameWithType: Theme.textColor
+  fullName: ScriptableObjects.Theme.textColor
+  type: Field
+  source:
+    id: textColor
+    path: ''
+    startLine: 4621
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color textColor
+    return:
+      type: Global.Color
+    content.vb: Public textColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.buttonColor
+  commentId: F:ScriptableObjects.Theme.buttonColor
+  id: buttonColor
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: buttonColor
+  nameWithType: Theme.buttonColor
+  fullName: ScriptableObjects.Theme.buttonColor
+  type: Field
+  source:
+    id: buttonColor
+    path: ''
+    startLine: 4622
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color buttonColor
+    return:
+      type: Global.Color
+    content.vb: Public buttonColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.lineColor
+  commentId: F:ScriptableObjects.Theme.lineColor
+  id: lineColor
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: lineColor
+  nameWithType: Theme.lineColor
+  fullName: ScriptableObjects.Theme.lineColor
+  type: Field
+  source:
+    id: lineColor
+    path: ''
+    startLine: 4624
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color lineColor
+    return:
+      type: Global.Color
+    content.vb: Public lineColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.unfocusedColor
+  commentId: F:ScriptableObjects.Theme.unfocusedColor
+  id: unfocusedColor
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: unfocusedColor
+  nameWithType: Theme.unfocusedColor
+  fullName: ScriptableObjects.Theme.unfocusedColor
+  type: Field
+  source:
+    id: unfocusedColor
+    path: ''
+    startLine: 4625
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color unfocusedColor
+    return:
+      type: Global.Color
+    content.vb: Public unfocusedColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ScriptableObjects.Theme.highlightColor
+  commentId: F:ScriptableObjects.Theme.highlightColor
+  id: highlightColor
+  parent: ScriptableObjects.Theme
+  langs:
+  - csharp
+  - vb
+  name: highlightColor
+  nameWithType: Theme.highlightColor
+  fullName: ScriptableObjects.Theme.highlightColor
+  type: Field
+  source:
+    id: highlightColor
+    path: ''
+    startLine: 4627
+  assemblies:
+  - cs.temp.dll
+  namespace: ScriptableObjects
+  syntax:
+    content: public Color highlightColor
+    return:
+      type: Global.Color
+    content.vb: Public highlightColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ScriptableObjects
+  commentId: N:ScriptableObjects
+  name: ScriptableObjects
+  nameWithType: ScriptableObjects
+  fullName: ScriptableObjects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Global.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color

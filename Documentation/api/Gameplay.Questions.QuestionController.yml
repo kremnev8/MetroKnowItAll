@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Questions.QuestionController
+  commentId: T:Gameplay.Questions.QuestionController
+  id: QuestionController
+  parent: Gameplay.Questions
+  children:
+  - Gameplay.Questions.QuestionController.AnswerTimeElapsed
+  - Gameplay.Questions.QuestionController.CheckAnswer
+  - Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
+  - Gameplay.Questions.QuestionController.isResting
+  - Gameplay.Questions.QuestionController.onQuestionChanged
+  - Gameplay.Questions.QuestionController.questionGenerators
+  - Gameplay.Questions.QuestionController.questionsPerRegion
+  - Gameplay.Questions.QuestionController.questionUI
+  - Gameplay.Questions.QuestionController.ResumeGame
+  - Gameplay.Questions.QuestionController.SelectNextController
+  - Gameplay.Questions.QuestionController.timeout
+  - Gameplay.Questions.QuestionController.topBar
+  - Gameplay.Questions.QuestionController.uiQuestionTransfrom
+  langs:
+  - csharp
+  - vb
+  name: QuestionController
+  nameWithType: QuestionController
+  fullName: Gameplay.Questions.QuestionController
+  type: Class
+  source:
+    id: QuestionController
+    path: ''
+    startLine: 3840
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  summary: "\nSelects and Manages question asking process. Contains all active <xref href=\"Gameplay.Questions.BaseQuestionGenerator\" data-throw-if-not-resolved=\"false\"></xref> and <xref href=\"Gameplay.Questions.BaseUIQuestion\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: 'public class QuestionController : MonoBehaviour'
+    content.vb: >-
+      Public Class QuestionController
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.Questions.QuestionController.uiQuestionTransfrom
+  commentId: F:Gameplay.Questions.QuestionController.uiQuestionTransfrom
+  id: uiQuestionTransfrom
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: uiQuestionTransfrom
+  nameWithType: QuestionController.uiQuestionTransfrom
+  fullName: Gameplay.Questions.QuestionController.uiQuestionTransfrom
+  type: Field
+  source:
+    id: uiQuestionTransfrom
+    path: ''
+    startLine: 3842
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public Transform uiQuestionTransfrom
+    return:
+      type: Global.Transform
+    content.vb: Public uiQuestionTransfrom As Transform
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.topBar
+  commentId: F:Gameplay.Questions.QuestionController.topBar
+  id: topBar
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: topBar
+  nameWithType: QuestionController.topBar
+  fullName: Gameplay.Questions.QuestionController.topBar
+  type: Field
+  source:
+    id: topBar
+    path: ''
+    startLine: 3843
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public UITopBar topBar
+    return:
+      type: Global.UITopBar
+    content.vb: Public topBar As UITopBar
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.questionUI
+  commentId: F:Gameplay.Questions.QuestionController.questionUI
+  id: questionUI
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: questionUI
+  nameWithType: QuestionController.questionUI
+  fullName: Gameplay.Questions.QuestionController.questionUI
+  type: Field
+  source:
+    id: questionUI
+    path: ''
+    startLine: 3846
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public List<BaseUIQuestion> questionUI
+    return:
+      type: Global.List{Gameplay.Questions.BaseUIQuestion}
+    content.vb: Public questionUI As List(Of BaseUIQuestion)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.questionGenerators
+  commentId: F:Gameplay.Questions.QuestionController.questionGenerators
+  id: questionGenerators
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: questionGenerators
+  nameWithType: QuestionController.questionGenerators
+  fullName: Gameplay.Questions.QuestionController.questionGenerators
+  type: Field
+  source:
+    id: questionGenerators
+    path: ''
+    startLine: 3847
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public List<BaseQuestionGenerator> questionGenerators
+    return:
+      type: Global.List{Gameplay.Questions.BaseQuestionGenerator}
+    content.vb: Public questionGenerators As List(Of BaseQuestionGenerator)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.questionsPerRegion
+  commentId: F:Gameplay.Questions.QuestionController.questionsPerRegion
+  id: questionsPerRegion
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: questionsPerRegion
+  nameWithType: QuestionController.questionsPerRegion
+  fullName: Gameplay.Questions.QuestionController.questionsPerRegion
+  type: Field
+  source:
+    id: questionsPerRegion
+    path: ''
+    startLine: 3857
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public int questionsPerRegion
+    return:
+      type: System.Int32
+    content.vb: Public questionsPerRegion As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.timeout
+  commentId: F:Gameplay.Questions.QuestionController.timeout
+  id: timeout
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: timeout
+  nameWithType: QuestionController.timeout
+  fullName: Gameplay.Questions.QuestionController.timeout
+  type: Field
+  source:
+    id: timeout
+    path: ''
+    startLine: 3859
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public float timeout
+    return:
+      type: System.Single
+    content.vb: Public timeout As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.onQuestionChanged
+  commentId: F:Gameplay.Questions.QuestionController.onQuestionChanged
+  id: onQuestionChanged
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: onQuestionChanged
+  nameWithType: QuestionController.onQuestionChanged
+  fullName: Gameplay.Questions.QuestionController.onQuestionChanged
+  type: Field
+  source:
+    id: onQuestionChanged
+    path: ''
+    startLine: 3861
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public static Action onQuestionChanged
+    return:
+      type: Global.Action
+    content.vb: Public Shared onQuestionChanged As Action
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Gameplay.Questions.QuestionController.isResting
+  commentId: F:Gameplay.Questions.QuestionController.isResting
+  id: isResting
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: isResting
+  nameWithType: QuestionController.isResting
+  fullName: Gameplay.Questions.QuestionController.isResting
+  type: Field
+  source:
+    id: isResting
+    path: ''
+    startLine: 3863
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public bool isResting
+    return:
+      type: System.Boolean
+    content.vb: Public isResting As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.AnswerTimeElapsed
+  commentId: F:Gameplay.Questions.QuestionController.AnswerTimeElapsed
+  id: AnswerTimeElapsed
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: AnswerTimeElapsed
+  nameWithType: QuestionController.AnswerTimeElapsed
+  fullName: Gameplay.Questions.QuestionController.AnswerTimeElapsed
+  type: Field
+  source:
+    id: AnswerTimeElapsed
+    path: ''
+    startLine: 3865
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public float AnswerTimeElapsed
+    return:
+      type: System.Single
+    content.vb: Public AnswerTimeElapsed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.CheckAnswer
+  commentId: M:Gameplay.Questions.QuestionController.CheckAnswer
+  id: CheckAnswer
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: CheckAnswer()
+  nameWithType: QuestionController.CheckAnswer()
+  fullName: Gameplay.Questions.QuestionController.CheckAnswer()
+  type: Method
+  source:
+    id: CheckAnswer
+    path: ''
+    startLine: 3885
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void CheckAnswer()
+    content.vb: Public Sub CheckAnswer
+  overload: Gameplay.Questions.QuestionController.CheckAnswer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.SelectNextController
+  commentId: M:Gameplay.Questions.QuestionController.SelectNextController
+  id: SelectNextController
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: SelectNextController()
+  nameWithType: QuestionController.SelectNextController()
+  fullName: Gameplay.Questions.QuestionController.SelectNextController()
+  type: Method
+  source:
+    id: SelectNextController
+    path: ''
+    startLine: 3912
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void SelectNextController()
+    content.vb: Public Sub SelectNextController
+  overload: Gameplay.Questions.QuestionController.SelectNextController*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.ResumeGame
+  commentId: M:Gameplay.Questions.QuestionController.ResumeGame
+  id: ResumeGame
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: ResumeGame()
+  nameWithType: QuestionController.ResumeGame()
+  fullName: Gameplay.Questions.QuestionController.ResumeGame()
+  type: Method
+  source:
+    id: ResumeGame
+    path: ''
+    startLine: 3974
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public void ResumeGame()
+    content.vb: Public Sub ResumeGame
+  overload: Gameplay.Questions.QuestionController.ResumeGame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
+  commentId: M:Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
+  id: GetNextTip(System.Int32)
+  parent: Gameplay.Questions.QuestionController
+  langs:
+  - csharp
+  - vb
+  name: GetNextTip(Int32)
+  nameWithType: QuestionController.GetNextTip(Int32)
+  fullName: Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
+  type: Method
+  source:
+    id: GetNextTip
+    path: ''
+    startLine: 3989
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.Questions
+  syntax:
+    content: public string GetNextTip(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetNextTip(index As Integer) As String
+  overload: Gameplay.Questions.QuestionController.GetNextTip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.Questions.BaseQuestionGenerator
+  commentId: T:Gameplay.Questions.BaseQuestionGenerator
+  parent: Gameplay.Questions
+  name: BaseQuestionGenerator
+  nameWithType: BaseQuestionGenerator
+  fullName: Gameplay.Questions.BaseQuestionGenerator
+- uid: Gameplay.Questions.BaseUIQuestion
+  commentId: T:Gameplay.Questions.BaseUIQuestion
+  parent: Gameplay.Questions
+  name: BaseUIQuestion
+  nameWithType: BaseUIQuestion
+  fullName: Gameplay.Questions.BaseUIQuestion
+- uid: Gameplay.Questions
+  commentId: N:Gameplay.Questions
+  name: Gameplay.Questions
+  nameWithType: Gameplay.Questions
+  fullName: Gameplay.Questions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Global.UITopBar
+  commentId: '!:Global.UITopBar'
+  isExternal: true
+  name: UITopBar
+  nameWithType: UITopBar
+  fullName: UITopBar
+- uid: Global.List{Gameplay.Questions.BaseUIQuestion}
+  commentId: '!:Global.List{Gameplay.Questions.BaseUIQuestion}'
+  definition: Global.List`1
+  name: List<BaseUIQuestion>
+  nameWithType: List<BaseUIQuestion>
+  fullName: List<Gameplay.Questions.BaseUIQuestion>
+  nameWithType.vb: List(Of BaseUIQuestion)
+  fullName.vb: List(Of Gameplay.Questions.BaseUIQuestion)
+  name.vb: List(Of BaseUIQuestion)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.Questions.BaseUIQuestion
+    name: BaseUIQuestion
+    nameWithType: BaseUIQuestion
+    fullName: Gameplay.Questions.BaseUIQuestion
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.Questions.BaseUIQuestion
+    name: BaseUIQuestion
+    nameWithType: BaseUIQuestion
+    fullName: Gameplay.Questions.BaseUIQuestion
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.List{Gameplay.Questions.BaseQuestionGenerator}
+  commentId: '!:Global.List{Gameplay.Questions.BaseQuestionGenerator}'
+  definition: Global.List`1
+  name: List<BaseQuestionGenerator>
+  nameWithType: List<BaseQuestionGenerator>
+  fullName: List<Gameplay.Questions.BaseQuestionGenerator>
+  nameWithType.vb: List(Of BaseQuestionGenerator)
+  fullName.vb: List(Of Gameplay.Questions.BaseQuestionGenerator)
+  name.vb: List(Of BaseQuestionGenerator)
+  spec.csharp:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Gameplay.Questions.BaseQuestionGenerator
+    name: BaseQuestionGenerator
+    nameWithType: BaseQuestionGenerator
+    fullName: Gameplay.Questions.BaseQuestionGenerator
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Gameplay.Questions.BaseQuestionGenerator
+    name: BaseQuestionGenerator
+    nameWithType: BaseQuestionGenerator
+    fullName: Gameplay.Questions.BaseQuestionGenerator
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.Action
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: Action
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Gameplay.Questions.QuestionController.CheckAnswer*
+  commentId: Overload:Gameplay.Questions.QuestionController.CheckAnswer
+  name: CheckAnswer
+  nameWithType: QuestionController.CheckAnswer
+  fullName: Gameplay.Questions.QuestionController.CheckAnswer
+- uid: Gameplay.Questions.QuestionController.SelectNextController*
+  commentId: Overload:Gameplay.Questions.QuestionController.SelectNextController
+  name: SelectNextController
+  nameWithType: QuestionController.SelectNextController
+  fullName: Gameplay.Questions.QuestionController.SelectNextController
+- uid: Gameplay.Questions.QuestionController.ResumeGame*
+  commentId: Overload:Gameplay.Questions.QuestionController.ResumeGame
+  name: ResumeGame
+  nameWithType: QuestionController.ResumeGame
+  fullName: Gameplay.Questions.QuestionController.ResumeGame
+- uid: Gameplay.Questions.QuestionController.GetNextTip*
+  commentId: Overload:Gameplay.Questions.QuestionController.GetNextTip
+  name: GetNextTip
+  nameWithType: QuestionController.GetNextTip
+  fullName: Gameplay.Questions.QuestionController.GetNextTip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

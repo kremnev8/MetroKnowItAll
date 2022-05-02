@@ -21,5 +21,6 @@ namespace Gameplay.Statistics
         
         public float fastestCorrectAnswer;
         public float averageAnswerTime;
+        public float maximumCorrectAnswerTime;
     }
 }

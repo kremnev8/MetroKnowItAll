@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.UI.CanvasSafeArea
+  commentId: T:Gameplay.UI.CanvasSafeArea
+  id: CanvasSafeArea
+  parent: Gameplay.UI
+  children:
+  - Gameplay.UI.CanvasSafeArea.OnResolutionOrOrientationChanged
+  langs:
+  - csharp
+  - vb
+  name: CanvasSafeArea
+  nameWithType: CanvasSafeArea
+  fullName: Gameplay.UI.CanvasSafeArea
+  type: Class
+  source:
+    id: CanvasSafeArea
+    path: ''
+    startLine: 4999
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  summary: "\nHelper UI class that ensures that all UI elements are within device safe area\n"
+  example: []
+  syntax:
+    content: 'public class CanvasSafeArea : MonoBehaviour'
+    content.vb: >-
+      Public Class CanvasSafeArea
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.UI.CanvasSafeArea.OnResolutionOrOrientationChanged
+  commentId: F:Gameplay.UI.CanvasSafeArea.OnResolutionOrOrientationChanged
+  id: OnResolutionOrOrientationChanged
+  parent: Gameplay.UI.CanvasSafeArea
+  langs:
+  - csharp
+  - vb
+  name: OnResolutionOrOrientationChanged
+  nameWithType: CanvasSafeArea.OnResolutionOrOrientationChanged
+  fullName: Gameplay.UI.CanvasSafeArea.OnResolutionOrOrientationChanged
+  type: Field
+  source:
+    id: OnResolutionOrOrientationChanged
+    path: ''
+    startLine: 5004
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.UI
+  syntax:
+    content: public static UnityEvent OnResolutionOrOrientationChanged
+    return:
+      type: Global.UnityEvent
+    content.vb: Public Shared OnResolutionOrOrientationChanged As UnityEvent
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Gameplay.UI
+  commentId: N:Gameplay.UI
+  name: Gameplay.UI
+  nameWithType: Gameplay.UI
+  fullName: Gameplay.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.UnityEvent
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEvent

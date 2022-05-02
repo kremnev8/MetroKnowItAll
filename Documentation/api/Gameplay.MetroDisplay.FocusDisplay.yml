@@ -1,0 +1,173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.FocusDisplay
+  commentId: T:Gameplay.MetroDisplay.FocusDisplay
+  id: FocusDisplay
+  parent: Gameplay.MetroDisplay
+  children:
+  - Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
+  - Gameplay.MetroDisplay.FocusDisplay.region
+  - Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
+  langs:
+  - csharp
+  - vb
+  name: FocusDisplay
+  nameWithType: FocusDisplay
+  fullName: Gameplay.MetroDisplay.FocusDisplay
+  type: Class
+  source:
+    id: FocusDisplay
+    path: ''
+    startLine: 2128
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  summary: "\nControls how region focus UI is displayed\n"
+  example: []
+  syntax:
+    content: 'public class FocusDisplay : MonoBehaviour'
+    content.vb: >-
+      Public Class FocusDisplay
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.MetroDisplay.FocusDisplay.region
+  commentId: F:Gameplay.MetroDisplay.FocusDisplay.region
+  id: region
+  parent: Gameplay.MetroDisplay.FocusDisplay
+  langs:
+  - csharp
+  - vb
+  name: region
+  nameWithType: FocusDisplay.region
+  fullName: Gameplay.MetroDisplay.FocusDisplay.region
+  type: Field
+  source:
+    id: region
+    path: ''
+    startLine: 2130
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public Region region
+    return:
+      type: Global.Region
+    content.vb: Public region As Region
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
+  commentId: M:Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
+  id: SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
+  parent: Gameplay.MetroDisplay.FocusDisplay
+  langs:
+  - csharp
+  - vb
+  name: SetRegion(MetroRenderer, Region)
+  nameWithType: FocusDisplay.SetRegion(MetroRenderer, Region)
+  fullName: Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer, Region)
+  type: Method
+  source:
+    id: SetRegion
+    path: ''
+    startLine: 2142
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void SetRegion(MetroRenderer metroRenderer, Region region)
+    parameters:
+    - id: metroRenderer
+      type: Gameplay.MetroDisplay.MetroRenderer
+    - id: region
+      type: Global.Region
+    content.vb: Public Sub SetRegion(metroRenderer As MetroRenderer, region As Region)
+  overload: Gameplay.MetroDisplay.FocusDisplay.SetRegion*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
+  commentId: M:Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
+  id: Refresh(System.Boolean)
+  parent: Gameplay.MetroDisplay.FocusDisplay
+  langs:
+  - csharp
+  - vb
+  name: Refresh(Boolean)
+  nameWithType: FocusDisplay.Refresh(Boolean)
+  fullName: Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
+  type: Method
+  source:
+    id: Refresh
+    path: ''
+    startLine: 2150
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay
+  syntax:
+    content: public void Refresh(bool refreshShape)
+    parameters:
+    - id: refreshShape
+      type: System.Boolean
+    content.vb: Public Sub Refresh(refreshShape As Boolean)
+  overload: Gameplay.MetroDisplay.FocusDisplay.Refresh*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.MetroDisplay
+  commentId: N:Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  nameWithType: Gameplay.MetroDisplay
+  fullName: Gameplay.MetroDisplay
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Region
+  isExternal: true
+  name: Region
+  nameWithType: Region
+  fullName: Region
+- uid: Gameplay.MetroDisplay.FocusDisplay.SetRegion*
+  commentId: Overload:Gameplay.MetroDisplay.FocusDisplay.SetRegion
+  name: SetRegion
+  nameWithType: FocusDisplay.SetRegion
+  fullName: Gameplay.MetroDisplay.FocusDisplay.SetRegion
+- uid: Gameplay.MetroDisplay.MetroRenderer
+  commentId: T:Gameplay.MetroDisplay.MetroRenderer
+  parent: Gameplay.MetroDisplay
+  name: MetroRenderer
+  nameWithType: MetroRenderer
+  fullName: Gameplay.MetroDisplay.MetroRenderer
+- uid: Gameplay.MetroDisplay.FocusDisplay.Refresh*
+  commentId: Overload:Gameplay.MetroDisplay.FocusDisplay.Refresh
+  name: Refresh
+  nameWithType: FocusDisplay.Refresh
+  fullName: Gameplay.MetroDisplay.FocusDisplay.Refresh
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

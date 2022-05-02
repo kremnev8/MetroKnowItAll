@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.Core
+  commentId: N:Gameplay.Core
+  id: Gameplay.Core
+  children:
+  - Gameplay.Core.HeapQueue`1
+  - Gameplay.Core.Simulation
+  - Gameplay.Core.Simulation.Event
+  - Gameplay.Core.Simulation.Event`1
+  langs:
+  - csharp
+  - vb
+  name: Gameplay.Core
+  nameWithType: Gameplay.Core
+  fullName: Gameplay.Core
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Gameplay.Core.HeapQueue`1
+  commentId: T:Gameplay.Core.HeapQueue`1
+  name: HeapQueue<T>
+  nameWithType: HeapQueue<T>
+  fullName: Gameplay.Core.HeapQueue<T>
+  nameWithType.vb: HeapQueue(Of T)
+  fullName.vb: Gameplay.Core.HeapQueue(Of T)
+  name.vb: HeapQueue(Of T)
+  spec.csharp:
+  - uid: Gameplay.Core.HeapQueue`1
+    name: HeapQueue
+    nameWithType: HeapQueue
+    fullName: Gameplay.Core.HeapQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Core.HeapQueue`1
+    name: HeapQueue
+    nameWithType: HeapQueue
+    fullName: Gameplay.Core.HeapQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Core.Simulation
+  commentId: T:Gameplay.Core.Simulation
+  name: Simulation
+  nameWithType: Simulation
+  fullName: Gameplay.Core.Simulation
+- uid: Gameplay.Core.Simulation.Event
+  commentId: T:Gameplay.Core.Simulation.Event
+  parent: Gameplay.Core
+  name: Simulation.Event
+  nameWithType: Simulation.Event
+  fullName: Gameplay.Core.Simulation.Event
+- uid: Gameplay.Core.Simulation.Event`1
+  commentId: T:Gameplay.Core.Simulation.Event`1
+  name: Simulation.Event<T>
+  nameWithType: Simulation.Event<T>
+  fullName: Gameplay.Core.Simulation.Event<T>
+  nameWithType.vb: Simulation.Event(Of T)
+  fullName.vb: Gameplay.Core.Simulation.Event(Of T)
+  name.vb: Simulation.Event(Of T)
+  spec.csharp:
+  - uid: Gameplay.Core.Simulation.Event`1
+    name: Simulation.Event
+    nameWithType: Simulation.Event
+    fullName: Gameplay.Core.Simulation.Event
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Gameplay.Core.Simulation.Event`1
+    name: Simulation.Event
+    nameWithType: Simulation.Event
+    fullName: Gameplay.Core.Simulation.Event
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Gameplay.Core
+  commentId: N:Gameplay.Core
+  name: Gameplay.Core
+  nameWithType: Gameplay.Core
+  fullName: Gameplay.Core

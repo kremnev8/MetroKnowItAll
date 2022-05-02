@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.ShowWhenAttribute
+  commentId: T:Util.ShowWhenAttribute
+  id: ShowWhenAttribute
+  parent: Util
+  children:
+  - Util.ShowWhenAttribute.#ctor(System.String)
+  - Util.ShowWhenAttribute.#ctor(System.String,System.Object)
+  - Util.ShowWhenAttribute.#ctor(System.String,System.Object[])
+  - Util.ShowWhenAttribute.comparationValue
+  - Util.ShowWhenAttribute.comparationValueArray
+  - Util.ShowWhenAttribute.conditionFieldName
+  langs:
+  - csharp
+  - vb
+  name: ShowWhenAttribute
+  nameWithType: ShowWhenAttribute
+  fullName: Util.ShowWhenAttribute
+  type: Class
+  source:
+    id: ShowWhenAttribute
+    path: ''
+    startLine: 5777
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAttribute used to show or hide the Field depending on certain conditions\n"
+  example: []
+  syntax:
+    content: 'public class ShowWhenAttribute : PropertyAttribute'
+    content.vb: >-
+      Public Class ShowWhenAttribute
+          Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Util.ShowWhenAttribute.conditionFieldName
+  commentId: F:Util.ShowWhenAttribute.conditionFieldName
+  id: conditionFieldName
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: conditionFieldName
+  nameWithType: ShowWhenAttribute.conditionFieldName
+  fullName: Util.ShowWhenAttribute.conditionFieldName
+  type: Field
+  source:
+    id: conditionFieldName
+    path: ''
+    startLine: 5780
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public readonly string conditionFieldName
+    return:
+      type: System.String
+    content.vb: Public ReadOnly conditionFieldName As String
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Util.ShowWhenAttribute.comparationValue
+  commentId: F:Util.ShowWhenAttribute.comparationValue
+  id: comparationValue
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: comparationValue
+  nameWithType: ShowWhenAttribute.comparationValue
+  fullName: Util.ShowWhenAttribute.comparationValue
+  type: Field
+  source:
+    id: comparationValue
+    path: ''
+    startLine: 5781
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public readonly object comparationValue
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly comparationValue As Object
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Util.ShowWhenAttribute.comparationValueArray
+  commentId: F:Util.ShowWhenAttribute.comparationValueArray
+  id: comparationValueArray
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: comparationValueArray
+  nameWithType: ShowWhenAttribute.comparationValueArray
+  fullName: Util.ShowWhenAttribute.comparationValueArray
+  type: Field
+  source:
+    id: comparationValueArray
+    path: ''
+    startLine: 5782
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public readonly object[] comparationValueArray
+    return:
+      type: System.Object[]
+    content.vb: Public ReadOnly comparationValueArray As Object()
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Util.ShowWhenAttribute.#ctor(System.String)
+  commentId: M:Util.ShowWhenAttribute.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShowWhenAttribute(String)
+  nameWithType: ShowWhenAttribute.ShowWhenAttribute(String)
+  fullName: Util.ShowWhenAttribute.ShowWhenAttribute(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5788
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAttribute used to show or hide the Field depending on certain conditions\n"
+  example: []
+  syntax:
+    content: public ShowWhenAttribute(string conditionFieldName)
+    parameters:
+    - id: conditionFieldName
+      type: System.String
+      description: Name of the bool condition Field
+    content.vb: Public Sub New(conditionFieldName As String)
+  overload: Util.ShowWhenAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Util.ShowWhenAttribute.#ctor(System.String,System.Object)
+  commentId: M:Util.ShowWhenAttribute.#ctor(System.String,System.Object)
+  id: '#ctor(System.String,System.Object)'
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShowWhenAttribute(String, Object)
+  nameWithType: ShowWhenAttribute.ShowWhenAttribute(String, Object)
+  fullName: Util.ShowWhenAttribute.ShowWhenAttribute(System.String, System.Object)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5798
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAttribute used to show or hide the Field depending on certain conditions\n"
+  example: []
+  syntax:
+    content: public ShowWhenAttribute(string conditionFieldName, object comparationValue = null)
+    parameters:
+    - id: conditionFieldName
+      type: System.String
+      description: Name of the Field to compare (bool, enum, int or float)
+    - id: comparationValue
+      type: System.Object
+      description: Value to compare
+    content.vb: Public Sub New(conditionFieldName As String, comparationValue As Object = Nothing)
+  overload: Util.ShowWhenAttribute.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Util.ShowWhenAttribute.#ctor(System.String,System.Object[])
+  commentId: M:Util.ShowWhenAttribute.#ctor(System.String,System.Object[])
+  id: '#ctor(System.String,System.Object[])'
+  parent: Util.ShowWhenAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShowWhenAttribute(String, Object[])
+  nameWithType: ShowWhenAttribute.ShowWhenAttribute(String, Object[])
+  fullName: Util.ShowWhenAttribute.ShowWhenAttribute(System.String, System.Object[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 5809
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nAttribute used to show or hide the Field depending on certain conditions\n"
+  example: []
+  syntax:
+    content: public ShowWhenAttribute(string conditionFieldName, object[] comparationValueArray = null)
+    parameters:
+    - id: conditionFieldName
+      type: System.String
+      description: Name of the Field to compare (bool, enum, int or float)
+    - id: comparationValueArray
+      type: System.Object[]
+      description: Array of values to compare (only for enums)
+    content.vb: Public Sub New(conditionFieldName As String, comparationValueArray As Object() = Nothing)
+  overload: Util.ShowWhenAttribute.#ctor*
+  nameWithType.vb: ShowWhenAttribute.ShowWhenAttribute(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Util.ShowWhenAttribute.ShowWhenAttribute(System.String, System.Object())
+  name.vb: ShowWhenAttribute(String, Object())
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Util.ShowWhenAttribute.#ctor*
+  commentId: Overload:Util.ShowWhenAttribute.#ctor
+  name: ShowWhenAttribute
+  nameWithType: ShowWhenAttribute.ShowWhenAttribute
+  fullName: Util.ShowWhenAttribute.ShowWhenAttribute

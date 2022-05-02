@@ -1,0 +1,305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.MetroDisplay.Model.NamePosition
+  commentId: T:Gameplay.MetroDisplay.Model.NamePosition
+  id: NamePosition
+  parent: Gameplay.MetroDisplay.Model
+  children:
+  - Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_CENTER
+  - Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_LEFT
+  - Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_RIGHT
+  - Gameplay.MetroDisplay.Model.NamePosition.CENTER_LEFT
+  - Gameplay.MetroDisplay.Model.NamePosition.CENTER_RIGHT
+  - Gameplay.MetroDisplay.Model.NamePosition.DEFAULT
+  - Gameplay.MetroDisplay.Model.NamePosition.TOP_CENTER
+  - Gameplay.MetroDisplay.Model.NamePosition.TOP_LEFT
+  - Gameplay.MetroDisplay.Model.NamePosition.TOP_RIGHT
+  langs:
+  - csharp
+  - vb
+  name: NamePosition
+  nameWithType: NamePosition
+  fullName: Gameplay.MetroDisplay.Model.NamePosition
+  type: Enum
+  source:
+    id: NamePosition
+    path: ''
+    startLine: 3613
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  summary: "\nText alignment options\n"
+  example: []
+  syntax:
+    content: public enum NamePosition
+    content.vb: Public Enum NamePosition
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Gameplay.MetroDisplay.Model.NamePosition.DEFAULT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.DEFAULT
+  id: DEFAULT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: DEFAULT
+  nameWithType: NamePosition.DEFAULT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.DEFAULT
+  type: Field
+  source:
+    id: DEFAULT
+    path: ''
+    startLine: 3615
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: DEFAULT = 0
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.TOP_LEFT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.TOP_LEFT
+  id: TOP_LEFT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: TOP_LEFT
+  nameWithType: NamePosition.TOP_LEFT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.TOP_LEFT
+  type: Field
+  source:
+    id: TOP_LEFT
+    path: ''
+    startLine: 3616
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: TOP_LEFT = 1
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.TOP_CENTER
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.TOP_CENTER
+  id: TOP_CENTER
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: TOP_CENTER
+  nameWithType: NamePosition.TOP_CENTER
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.TOP_CENTER
+  type: Field
+  source:
+    id: TOP_CENTER
+    path: ''
+    startLine: 3617
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: TOP_CENTER = 2
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.TOP_RIGHT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.TOP_RIGHT
+  id: TOP_RIGHT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: TOP_RIGHT
+  nameWithType: NamePosition.TOP_RIGHT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.TOP_RIGHT
+  type: Field
+  source:
+    id: TOP_RIGHT
+    path: ''
+    startLine: 3618
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: TOP_RIGHT = 3
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_LEFT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_LEFT
+  id: BOTTOM_LEFT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: BOTTOM_LEFT
+  nameWithType: NamePosition.BOTTOM_LEFT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_LEFT
+  type: Field
+  source:
+    id: BOTTOM_LEFT
+    path: ''
+    startLine: 3619
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: BOTTOM_LEFT = 4
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_CENTER
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_CENTER
+  id: BOTTOM_CENTER
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: BOTTOM_CENTER
+  nameWithType: NamePosition.BOTTOM_CENTER
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_CENTER
+  type: Field
+  source:
+    id: BOTTOM_CENTER
+    path: ''
+    startLine: 3620
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: BOTTOM_CENTER = 5
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_RIGHT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_RIGHT
+  id: BOTTOM_RIGHT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: BOTTOM_RIGHT
+  nameWithType: NamePosition.BOTTOM_RIGHT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.BOTTOM_RIGHT
+  type: Field
+  source:
+    id: BOTTOM_RIGHT
+    path: ''
+    startLine: 3621
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: BOTTOM_RIGHT = 6
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.CENTER_LEFT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.CENTER_LEFT
+  id: CENTER_LEFT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: CENTER_LEFT
+  nameWithType: NamePosition.CENTER_LEFT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.CENTER_LEFT
+  type: Field
+  source:
+    id: CENTER_LEFT
+    path: ''
+    startLine: 3622
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: CENTER_LEFT = 7
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Gameplay.MetroDisplay.Model.NamePosition.CENTER_RIGHT
+  commentId: F:Gameplay.MetroDisplay.Model.NamePosition.CENTER_RIGHT
+  id: CENTER_RIGHT
+  parent: Gameplay.MetroDisplay.Model.NamePosition
+  langs:
+  - csharp
+  - vb
+  name: CENTER_RIGHT
+  nameWithType: NamePosition.CENTER_RIGHT
+  fullName: Gameplay.MetroDisplay.Model.NamePosition.CENTER_RIGHT
+  type: Field
+  source:
+    id: CENTER_RIGHT
+    path: ''
+    startLine: 3623
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.MetroDisplay.Model
+  syntax:
+    content: CENTER_RIGHT = 8
+    return:
+      type: Gameplay.MetroDisplay.Model.NamePosition
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Gameplay.MetroDisplay.Model
+  commentId: N:Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  nameWithType: Gameplay.MetroDisplay.Model
+  fullName: Gameplay.MetroDisplay.Model
+- uid: Gameplay.MetroDisplay.Model.NamePosition
+  commentId: T:Gameplay.MetroDisplay.Model.NamePosition
+  parent: Gameplay.MetroDisplay.Model
+  name: NamePosition
+  nameWithType: NamePosition
+  fullName: Gameplay.MetroDisplay.Model.NamePosition

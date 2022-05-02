@@ -1,0 +1,219 @@
+### YamlMime:TableOfContent
+- uid: Gameplay
+  name: Gameplay
+  items:
+  - uid: Gameplay.GameController
+    name: GameController
+  - uid: Gameplay.GameModel
+    name: GameModel
+  - uid: Gameplay.Health
+    name: Health
+  - uid: Gameplay.Health.IntEvent
+    name: Health.IntEvent
+  - uid: Gameplay.Health.PainEvent
+    name: Health.PainEvent
+  - uid: Gameplay.PainType
+    name: PainType
+  - uid: Gameplay.SceneTransitionManager
+    name: SceneTransitionManager
+- uid: Gameplay.Controls
+  name: Gameplay.Controls
+  items:
+  - uid: Gameplay.Controls.ISelectable
+    name: ISelectable
+  - uid: Gameplay.Controls.TouchButton
+    name: TouchButton
+  - uid: Gameplay.Controls.TouchCameraController
+    name: TouchCameraController
+  - uid: Gameplay.Controls.TouchCameraControllerEditor
+    name: TouchCameraControllerEditor
+  - uid: Gameplay.Controls.UIDragableButton
+    name: UIDragableButton
+  - uid: Gameplay.Controls.UIDraggableButtonList
+    name: UIDraggableButtonList
+  - uid: Gameplay.Controls.UISwipe
+    name: UISwipe
+- uid: Gameplay.Core
+  name: Gameplay.Core
+  items:
+  - uid: Gameplay.Core.HeapQueue`1
+    name: HeapQueue<T>
+    name.vb: HeapQueue(Of T)
+  - uid: Gameplay.Core.Simulation
+    name: Simulation
+  - uid: Gameplay.Core.Simulation.Event
+    name: Simulation.Event
+  - uid: Gameplay.Core.Simulation.Event`1
+    name: Simulation.Event<T>
+    name.vb: Simulation.Event(Of T)
+- uid: Gameplay.MetroDisplay
+  name: Gameplay.MetroDisplay
+  items:
+  - uid: Gameplay.MetroDisplay.ConnData
+    name: ConnData
+  - uid: Gameplay.MetroDisplay.CrossingDisplay
+    name: CrossingDisplay
+  - uid: Gameplay.MetroDisplay.FocusDisplay
+    name: FocusDisplay
+  - uid: Gameplay.MetroDisplay.LineDisplay
+    name: LineDisplay
+  - uid: Gameplay.MetroDisplay.LineSubDisplay
+    name: LineSubDisplay
+  - uid: Gameplay.MetroDisplay.MetroRenderer
+    name: MetroRenderer
+  - uid: Gameplay.MetroDisplay.StationDisplay
+    name: StationDisplay
+- uid: Gameplay.MetroDisplay.Model
+  name: Gameplay.MetroDisplay.Model
+  items:
+  - uid: Gameplay.MetroDisplay.Model.Area
+    name: Area
+  - uid: Gameplay.MetroDisplay.Model.EnumHelper
+    name: EnumHelper
+  - uid: Gameplay.MetroDisplay.Model.GlobalId
+    name: GlobalId
+  - uid: Gameplay.MetroDisplay.Model.LineStyle
+    name: LineStyle
+  - uid: Gameplay.MetroDisplay.Model.Metro
+    name: Metro
+  - uid: Gameplay.MetroDisplay.Model.MetroConnection
+    name: MetroConnection
+  - uid: Gameplay.MetroDisplay.Model.MetroCrossing
+    name: MetroCrossing
+  - uid: Gameplay.MetroDisplay.Model.MetroLine
+    name: MetroLine
+  - uid: Gameplay.MetroDisplay.Model.MetroStation
+    name: MetroStation
+  - uid: Gameplay.MetroDisplay.Model.NamePosition
+    name: NamePosition
+  - uid: Gameplay.MetroDisplay.Model.Region
+    name: Region
+  - uid: Gameplay.MetroDisplay.Model.RegionType
+    name: RegionType
+- uid: Gameplay.Questions
+  name: Gameplay.Questions
+  items:
+  - uid: Gameplay.Questions.BaseQuestionGenerator
+    name: BaseQuestionGenerator
+  - uid: Gameplay.Questions.BaseUIQuestion
+    name: BaseUIQuestion
+  - uid: Gameplay.Questions.ILineQuestion
+    name: ILineQuestion
+  - uid: Gameplay.Questions.QuestionController
+    name: QuestionController
+  - uid: Gameplay.Questions.QuestionGenerator`1
+    name: QuestionGenerator<T>
+    name.vb: QuestionGenerator(Of T)
+  - uid: Gameplay.Questions.UIQuestion
+    name: UIQuestion
+  - uid: Gameplay.Questions.UIQuestionFindStation
+    name: UIQuestionFindStation
+  - uid: Gameplay.Questions.UITipContainer
+    name: UITipContainer
+  - uid: Gameplay.Questions.UITipController
+    name: UITipController
+- uid: Gameplay.Questions.Model
+  name: Gameplay.Questions.Model
+  items:
+  - uid: Gameplay.Questions.Model.FindLineGenerator
+    name: FindLineGenerator
+  - uid: Gameplay.Questions.Model.FindStationGenerator
+    name: FindStationGenerator
+  - uid: Gameplay.Questions.Model.OrderStationsGenerator
+    name: OrderStationsGenerator
+  - uid: Gameplay.Questions.Model.UIQuestionFindLine
+    name: UIQuestionFindLine
+  - uid: Gameplay.Questions.Model.UIQuestionOrderStations
+    name: UIQuestionOrderStations
+- uid: Gameplay.Statistics
+  name: Gameplay.Statistics
+  items:
+  - uid: Gameplay.Statistics.BoolRecord`2
+    name: BoolRecord<T, TIndex>
+    name.vb: BoolRecord(Of T, TIndex)
+  - uid: Gameplay.Statistics.IIndexable`1
+    name: IIndexable<T>
+    name.vb: IIndexable(Of T)
+  - uid: Gameplay.Statistics.Statistics
+    name: Statistics
+  - uid: Gameplay.Statistics.StatisticsManager
+    name: StatisticsManager
+- uid: Gameplay.UI
+  name: Gameplay.UI
+  items:
+  - uid: Gameplay.UI.CanvasSafeArea
+    name: CanvasSafeArea
+  - uid: Gameplay.UI.DynamicText
+    name: DynamicText
+  - uid: Gameplay.UI.FadeDirection
+    name: FadeDirection
+  - uid: Gameplay.UI.FadeInOut
+    name: FadeInOut
+  - uid: Gameplay.UI.PaletteGraphic
+    name: PaletteGraphic
+  - uid: Gameplay.UI.SlowPlayback
+    name: SlowPlayback
+  - uid: Gameplay.UI.UIAchievement
+    name: UIAchievement
+  - uid: Gameplay.UI.UITopBar
+    name: UITopBar
+  - uid: Gameplay.UI.VersionText
+    name: VersionText
+- uid: Gameplay.World
+  name: Gameplay.World
+  items:
+  - uid: Gameplay.World.RandomAudioSource
+    name: RandomAudioSource
+- uid: ScriptableObjects
+  name: ScriptableObjects
+  items:
+  - uid: ScriptableObjects.Achievement
+    name: Achievement
+  - uid: ScriptableObjects.AchievementDB
+    name: AchievementDB
+  - uid: ScriptableObjects.ColorPalette
+    name: ColorPalette
+  - uid: ScriptableObjects.GenericDB`1
+    name: GenericDB<T>
+    name.vb: GenericDB(Of T)
+  - uid: ScriptableObjects.GenericItem
+    name: GenericItem
+  - uid: ScriptableObjects.PlayerConfig
+    name: PlayerConfig
+  - uid: ScriptableObjects.Question
+    name: Question
+  - uid: ScriptableObjects.QuestionsDB
+    name: QuestionsDB
+  - uid: ScriptableObjects.Theme
+    name: Theme
+- uid: Util
+  name: Util
+  items:
+  - uid: Util.EditorExtensions
+    name: EditorExtensions
+  - uid: Util.GameObjectExtensions
+    name: GameObjectExtensions
+  - uid: Util.HideOnStart
+    name: HideOnStart
+  - uid: Util.INamedArrayElement
+    name: INamedArrayElement
+  - uid: Util.LabeledArrayAttribute
+    name: LabeledArrayAttribute
+  - uid: Util.MathExtensions
+    name: MathExtensions
+  - uid: Util.RandomUtils
+    name: RandomUtils
+  - uid: Util.RectUtils
+    name: RectUtils
+  - uid: Util.RenameAttribute
+    name: RenameAttribute
+  - uid: Util.RendererGroup
+    name: RendererGroup
+  - uid: Util.ShowWhenAttribute
+    name: ShowWhenAttribute
+  - uid: Util.SplineUtil
+    name: SplineUtil
+  - uid: Util.StringExtension
+    name: StringExtension
+  - uid: Util.UIUtil
+    name: UIUtil

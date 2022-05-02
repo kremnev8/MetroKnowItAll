@@ -1,0 +1,304 @@
+### YamlMime:ManagedReference
+items:
+- uid: Gameplay.World.RandomAudioSource
+  commentId: T:Gameplay.World.RandomAudioSource
+  id: RandomAudioSource
+  parent: Gameplay.World
+  children:
+  - Gameplay.World.RandomAudioSource.clips
+  - Gameplay.World.RandomAudioSource.loop
+  - Gameplay.World.RandomAudioSource.Play
+  - Gameplay.World.RandomAudioSource.playbackDelay
+  - Gameplay.World.RandomAudioSource.selectedClip
+  - Gameplay.World.RandomAudioSource.selectOnAwake
+  - Gameplay.World.RandomAudioSource.Stop
+  langs:
+  - csharp
+  - vb
+  name: RandomAudioSource
+  nameWithType: RandomAudioSource
+  fullName: Gameplay.World.RandomAudioSource
+  type: Class
+  source:
+    id: RandomAudioSource
+    path: ''
+    startLine: 1142
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: 'public class RandomAudioSource : MonoBehaviour'
+    content.vb: >-
+      Public Class RandomAudioSource
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Gameplay.World.RandomAudioSource.clips
+  commentId: F:Gameplay.World.RandomAudioSource.clips
+  id: clips
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: clips
+  nameWithType: RandomAudioSource.clips
+  fullName: Gameplay.World.RandomAudioSource.clips
+  type: Field
+  source:
+    id: clips
+    path: ''
+    startLine: 1146
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public AudioClip[] clips
+    return:
+      type: Global.AudioClip[]
+    content.vb: Public clips As AudioClip()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.selectOnAwake
+  commentId: F:Gameplay.World.RandomAudioSource.selectOnAwake
+  id: selectOnAwake
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: selectOnAwake
+  nameWithType: RandomAudioSource.selectOnAwake
+  fullName: Gameplay.World.RandomAudioSource.selectOnAwake
+  type: Field
+  source:
+    id: selectOnAwake
+    path: ''
+    startLine: 1148
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public bool selectOnAwake
+    return:
+      type: System.Boolean
+    content.vb: Public selectOnAwake As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.loop
+  commentId: F:Gameplay.World.RandomAudioSource.loop
+  id: loop
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: loop
+  nameWithType: RandomAudioSource.loop
+  fullName: Gameplay.World.RandomAudioSource.loop
+  type: Field
+  source:
+    id: loop
+    path: ''
+    startLine: 1149
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public bool loop
+    return:
+      type: System.Boolean
+    content.vb: Public loop As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.selectedClip
+  commentId: F:Gameplay.World.RandomAudioSource.selectedClip
+  id: selectedClip
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: selectedClip
+  nameWithType: RandomAudioSource.selectedClip
+  fullName: Gameplay.World.RandomAudioSource.selectedClip
+  type: Field
+  source:
+    id: selectedClip
+    path: ''
+    startLine: 1150
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public int selectedClip
+    return:
+      type: System.Int32
+    content.vb: Public selectedClip As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.playbackDelay
+  commentId: F:Gameplay.World.RandomAudioSource.playbackDelay
+  id: playbackDelay
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: playbackDelay
+  nameWithType: RandomAudioSource.playbackDelay
+  fullName: Gameplay.World.RandomAudioSource.playbackDelay
+  type: Field
+  source:
+    id: playbackDelay
+    path: ''
+    startLine: 1153
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public float playbackDelay
+    return:
+      type: System.Single
+    content.vb: Public playbackDelay As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.Play
+  commentId: M:Gameplay.World.RandomAudioSource.Play
+  id: Play
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: RandomAudioSource.Play()
+  fullName: Gameplay.World.RandomAudioSource.Play()
+  type: Method
+  source:
+    id: Play
+    path: ''
+    startLine: 1166
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play
+  overload: Gameplay.World.RandomAudioSource.Play*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Gameplay.World.RandomAudioSource.Stop
+  commentId: M:Gameplay.World.RandomAudioSource.Stop
+  id: Stop
+  parent: Gameplay.World.RandomAudioSource
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: RandomAudioSource.Stop()
+  fullName: Gameplay.World.RandomAudioSource.Stop()
+  type: Method
+  source:
+    id: Stop
+    path: ''
+    startLine: 1189
+  assemblies:
+  - cs.temp.dll
+  namespace: Gameplay.World
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub Stop
+  overload: Gameplay.World.RandomAudioSource.Stop*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Gameplay.World
+  commentId: N:Gameplay.World
+  name: Gameplay.World
+  nameWithType: Gameplay.World
+  fullName: Gameplay.World
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.AudioClip[]
+  isExternal: true
+  name: AudioClip[]
+  nameWithType: AudioClip[]
+  fullName: AudioClip[]
+  nameWithType.vb: AudioClip()
+  fullName.vb: AudioClip()
+  name.vb: AudioClip()
+  spec.csharp:
+  - uid: Global.AudioClip
+    name: AudioClip
+    nameWithType: AudioClip
+    fullName: AudioClip
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Global.AudioClip
+    name: AudioClip
+    nameWithType: AudioClip
+    fullName: AudioClip
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Gameplay.World.RandomAudioSource.Play*
+  commentId: Overload:Gameplay.World.RandomAudioSource.Play
+  name: Play
+  nameWithType: RandomAudioSource.Play
+  fullName: Gameplay.World.RandomAudioSource.Play
+- uid: Gameplay.World.RandomAudioSource.Stop*
+  commentId: Overload:Gameplay.World.RandomAudioSource.Stop
+  name: Stop
+  nameWithType: RandomAudioSource.Stop
+  fullName: Gameplay.World.RandomAudioSource.Stop

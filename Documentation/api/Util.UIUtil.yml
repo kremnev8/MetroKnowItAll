@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Util.UIUtil
+  commentId: T:Util.UIUtil
+  id: UIUtil
+  parent: Util
+  children:
+  - Util.UIUtil.IsPointerOverAnyUI(Vector2)
+  - Util.UIUtil.IsPointerOverUIElement(GameObject,Vector2)
+  - Util.UIUtil.UILayer
+  langs:
+  - csharp
+  - vb
+  name: UIUtil
+  nameWithType: UIUtil
+  fullName: Util.UIUtil
+  type: Class
+  source:
+    id: UIUtil
+    path: ''
+    startLine: 6430
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nHelper class to detect UI raycast hits\n"
+  example: []
+  syntax:
+    content: public static class UIUtil
+    content.vb: Public Module UIUtil
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Util.UIUtil.UILayer
+  commentId: F:Util.UIUtil.UILayer
+  id: UILayer
+  parent: Util.UIUtil
+  langs:
+  - csharp
+  - vb
+  name: UILayer
+  nameWithType: UIUtil.UILayer
+  fullName: Util.UIUtil.UILayer
+  type: Field
+  source:
+    id: UILayer
+    path: ''
+    startLine: 6432
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  syntax:
+    content: public static int UILayer
+    return:
+      type: System.Int32
+    content.vb: Public Shared UILayer As Integer
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.UIUtil.IsPointerOverUIElement(GameObject,Vector2)
+  commentId: M:Util.UIUtil.IsPointerOverUIElement(GameObject,Vector2)
+  id: IsPointerOverUIElement(GameObject,Vector2)
+  parent: Util.UIUtil
+  langs:
+  - csharp
+  - vb
+  name: IsPointerOverUIElement(GameObject, Vector2)
+  nameWithType: UIUtil.IsPointerOverUIElement(GameObject, Vector2)
+  fullName: Util.UIUtil.IsPointerOverUIElement(GameObject, Vector2)
+  type: Method
+  source:
+    id: IsPointerOverUIElement
+    path: ''
+    startLine: 6437
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nIs cursorPos over this UI element?\n"
+  example: []
+  syntax:
+    content: public static bool IsPointerOverUIElement(GameObject target, Vector2 cursorPos)
+    parameters:
+    - id: target
+      type: Global.GameObject
+    - id: cursorPos
+      type: Global.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPointerOverUIElement(target As GameObject, cursorPos As Vector2) As Boolean
+  overload: Util.UIUtil.IsPointerOverUIElement*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Util.UIUtil.IsPointerOverAnyUI(Vector2)
+  commentId: M:Util.UIUtil.IsPointerOverAnyUI(Vector2)
+  id: IsPointerOverAnyUI(Vector2)
+  parent: Util.UIUtil
+  langs:
+  - csharp
+  - vb
+  name: IsPointerOverAnyUI(Vector2)
+  nameWithType: UIUtil.IsPointerOverAnyUI(Vector2)
+  fullName: Util.UIUtil.IsPointerOverAnyUI(Vector2)
+  type: Method
+  source:
+    id: IsPointerOverAnyUI
+    path: ''
+    startLine: 6445
+  assemblies:
+  - cs.temp.dll
+  namespace: Util
+  summary: "\nIs cursorPos over any UI element?\n"
+  example: []
+  syntax:
+    content: public static bool IsPointerOverAnyUI(Vector2 cursorPos)
+    parameters:
+    - id: cursorPos
+      type: Global.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPointerOverAnyUI(cursorPos As Vector2) As Boolean
+  overload: Util.UIUtil.IsPointerOverAnyUI*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Util
+  commentId: N:Util
+  name: Util
+  nameWithType: Util
+  fullName: Util
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Util.UIUtil.IsPointerOverUIElement*
+  commentId: Overload:Util.UIUtil.IsPointerOverUIElement
+  name: IsPointerOverUIElement
+  nameWithType: UIUtil.IsPointerOverUIElement
+  fullName: Util.UIUtil.IsPointerOverUIElement
+- uid: Global.GameObject
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: GameObject
+- uid: Global.Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Util.UIUtil.IsPointerOverAnyUI*
+  commentId: Overload:Util.UIUtil.IsPointerOverAnyUI
+  name: IsPointerOverAnyUI
+  nameWithType: UIUtil.IsPointerOverAnyUI
+  fullName: Util.UIUtil.IsPointerOverAnyUI
