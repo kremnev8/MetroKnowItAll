@@ -1,0 +1,1682 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Projects/Unity/Projects/MetroKnowItAll/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.ISelectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.ISelectable.html",
+          "hash": "mY1Pi8Sa06tHlYy9qKZ5vbZwt8R4DRIhwvfHJO+dJhs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.TouchButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.TouchButton.html",
+          "hash": "NYyAnCX4cDYmSO3EIqWKyiP6mnVKe83iJqQq66BFoU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.TouchCameraController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.TouchCameraController.html",
+          "hash": "H4wbQoy59eLlyBjWO5aIovpdJ3HTg7MOUxU6dvccVMw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.TouchCameraControllerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.TouchCameraControllerEditor.html",
+          "hash": "4/81z6qpgXbrb9dHOMmRIFU15ZDLge3ctGsIfZE695w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.UIDragableButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.UIDragableButton.html",
+          "hash": "2UFNoABrVDBD6/Vg/62PWjW+5K5G30jHfwimxNJoZ1c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.UIDraggableButtonList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.UIDraggableButtonList.html",
+          "hash": "RPFQ2w6cqojH0/n+9NAKbKdg8geIYYwSLf9J6Mq/6Fc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.UISwipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.UISwipe.html",
+          "hash": "Fa+QOp3bGHUs/CqbC8J5xAgG4vVocLmwZmzTrWv5QmU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Controls.html",
+          "hash": "x5/T/ICUp/9xE88ynid/7p1nXHEauOUbNjMa7SRDUFc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Core.HeapQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Core.HeapQueue-1.html",
+          "hash": "N71M7UQSm4HungOlYTHaAgByRF/I0WRmZM++yHBxnB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Core.Simulation.Event-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Core.Simulation.Event-1.html",
+          "hash": "cohZ2CRrPUg4ET4Ksm/xcZZsV4V2ds9MTamuPzwf1NE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Core.Simulation.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Core.Simulation.Event.html",
+          "hash": "Y92VhN2bLcfpiaUs4Ocm0kC+UBabFfpx6fZNgLroahw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Core.Simulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Core.Simulation.html",
+          "hash": "Uei+KG8PpvCi+F/8CNMuktXChXyrlDDzyn0+qpgODqo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Core.html",
+          "hash": "1YGkeU6snWF6cZQ6J9HNmKt058czwM2yW0suiR+sL08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.GameController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.GameController.html",
+          "hash": "djE4j3S6b0G/wwbA+lRcHLVFzJRKWWO5TJKOIddNUsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.GameModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.GameModel.html",
+          "hash": "Ta8Y70+3SoUuhiX/fCxyG6W9hB9qZxOO2h9OaCunGS4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Health.IntEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Health.IntEvent.html",
+          "hash": "Z5thaYzOv2FTPyznO34SHDHYiGQlf7YkXwSP33GWO40="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Health.PainEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Health.PainEvent.html",
+          "hash": "Ie0Cek2lh0myFmwQXz8E/N1jVLnN7pdx+ClYqeIsV60="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Health.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Health.html",
+          "hash": "f/FRfgTEOPhkYU9hMlA2X14IEYiAEDHr3S/uoSelzng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.ConnData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.ConnData.html",
+          "hash": "9btiqXNrhY3bDYptFzorsm6VgpzUQpVfcweGYLjc3/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.CrossingDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.CrossingDisplay.html",
+          "hash": "jQTWkef3QldBPT1RwOPT44ujfn2eEP/LKOK8SIO+qLM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.FocusDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.FocusDisplay.html",
+          "hash": "mQlwFG2BHQXjGpjIsWkEPY/8DoxORuT4rwdgnoiILIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.LineDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.LineDisplay.html",
+          "hash": "dF75wCPtGFyr5watSQ3kzve7gSslQaug7vZNzkvXCns="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.LineSubDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.LineSubDisplay.html",
+          "hash": "Se2lxL+KJmsSz0RD15+j8NH49Gjl8kKCIRzgJKnKZXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.MetroRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.MetroRenderer.html",
+          "hash": "3WmoEzr0QfvLiFwy/WQoAtpWdrBqHul47lJDfHK0KkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.Area.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.Area.html",
+          "hash": "wJhA/lIyLt6//GXSQw49VgEqLk4IS0lhCZKaBKyYnOk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.EnumHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.EnumHelper.html",
+          "hash": "7UjyFgJUzi/E+bTVXWdOCZ9DFS09Pbokbz7ZTuIiGZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.GlobalId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.GlobalId.html",
+          "hash": "AXzSBgXvC4OjAHcexKtS6qyz6rTPfRaXnn8I6dG7ImE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.LineStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.LineStyle.html",
+          "hash": "/q1nG4gJIpe9cTKyOal8EcaoCZA9iTrh4ki5Eai2JsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.Metro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.Metro.html",
+          "hash": "a8BPCQIanlvnEHpTQSVTVOG8sldijFubSdJsAVoStpw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.MetroConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.MetroConnection.html",
+          "hash": "i3+kdN0nQglTZJXjo/2weHkqcOngxOtsBVaRCayJkLw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.MetroCrossing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.MetroCrossing.html",
+          "hash": "Xqu+osY3xUjYo3ouDCD1XRUP5mEBATRsFhUFWwRtwqw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.MetroLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.MetroLine.html",
+          "hash": "ylqy+97yINfrjHoI7f29lo9GPlYtv15I8fpccF/MeA4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.MetroStation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.MetroStation.html",
+          "hash": "xLVM2muWE8rSZ68lnIMqBnYN5+gAhzt0LopulDzzbB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.NamePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.NamePosition.html",
+          "hash": "nPrBZW5LU+bq+oo+cxS7PkR8nGcUZgVypyKVYWeBnd8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.Region.html",
+          "hash": "stgEDermMRPD4fO8v6ax7eiolaVynvabeLpqu4hYpEA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.RegionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.RegionType.html",
+          "hash": "J94DWh+qU0qukWqbbHDoTPI/WZIXV3YyjtBmZ39kzGA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.html",
+          "hash": "YsK2I7SB4PkqWa8pCOTtIGlzz8B1oI3C9p1Hyd2jLu0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.StationDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.StationDisplay.html",
+          "hash": "hu76AoV5n1E7+1wA5JL+WtrIMOCZyYfaQCQin4Avv+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.html",
+          "hash": "MAZSI96QfSuOtagPBjPAP11c3nXXEx6abq7eK9000rA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.PainType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.PainType.html",
+          "hash": "4qTCpEzrRsu3JPCUkqafR/QGdBRf2RsfU8FIt7fj0is="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.BaseQuestionGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.BaseQuestionGenerator.html",
+          "hash": "3dxEf/0PACBtfMmO12TC7PUm4OOlbv7roK/WPhxoYqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.BaseUIQuestion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.BaseUIQuestion.html",
+          "hash": "3Dwt3PLDZO01AL2d59ROdvdxq1biJdEdQQLvR4Gq9bg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.ILineQuestion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.ILineQuestion.html",
+          "hash": "8UejVKh+m7K0dKaNjpeXwHMggdE0pLYoCQipCHo1P/Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.FindLineGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.FindLineGenerator.html",
+          "hash": "Oqlrzj2WHK6ZtYl07AxDft9U7+MfUOig1OGV6JmoS2s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.FindStationGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.FindStationGenerator.html",
+          "hash": "ye29fnboM6hQKS0vSBlU+kPbR/a3qvNFo3mVMBZ/mIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.OrderStationsGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.OrderStationsGenerator.html",
+          "hash": "oW2w7XEUs7NdRk8FEYVVuJmRcBWLH96OkQo1BineHOg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.UIQuestionFindLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.UIQuestionFindLine.html",
+          "hash": "7CO95TVS5UMmtGpJmdg4r38zm5uetBwkRGDt/IRowzQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.UIQuestionOrderStations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.UIQuestionOrderStations.html",
+          "hash": "GnyLPzVjdAydMTTD3Djt6Vviyp1nkrgIs/kihyN7zS8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.Model.html",
+          "hash": "e15yFz18pFRrmrQ93QFyoPTAfIs0mz7upZQ6GhfIsyI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.QuestionController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.QuestionController.html",
+          "hash": "YlBt+yNvq6CH/6q/kFKcyzW4eNaklMn3dTNPJLd045s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.QuestionGenerator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.QuestionGenerator-1.html",
+          "hash": "JsmW+HLVsFtl1QtdkR4umb0G35D9h6gxqJrs5YNS/Ts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.UIQuestion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.UIQuestion.html",
+          "hash": "Bueif2VgL3gFgQo+Tu/bWpWXgvgRAgZoWwjrT8WP2Xc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.UIQuestionFindStation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.UIQuestionFindStation.html",
+          "hash": "btOwkUFvcMqTX7QxnILlF5g1Q9lv400tw+j8loUBlWo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.UITipContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.UITipContainer.html",
+          "hash": "1jwmJsb4lHbUC853tvgiVY9g/CNF1FF5xDHY5FyU/58="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.UITipController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.UITipController.html",
+          "hash": "a91i8YDVKGNSusuLi8dRzFK7rl0olbobBO53BoIQAC4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Questions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Questions.html",
+          "hash": "jDFDq/M+NghU+QG89tgjB0G8yE8wOGYoHukbo9y4z4o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.SceneTransitionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.SceneTransitionManager.html",
+          "hash": "wQZ5IEr6CpaGMzXRPmQi1ttfd/+iYXm5C07JFiijehk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Statistics.BoolRecord-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Statistics.BoolRecord-2.html",
+          "hash": "5QowvyDpdbuhuLu8L9PFRXycqVNYZpS/9QIjLAiUPuQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Statistics.IIndexable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Statistics.IIndexable-1.html",
+          "hash": "1X+mo3BZKvOQl6bl5pDGBLi/Ydl+zP8/o8PUHSuJ4HE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Statistics.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Statistics.Statistics.html",
+          "hash": "5caelc8cpqk2U4id4JfrQRVspN6DeQtiIBCj0CziztQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Statistics.StatisticsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Statistics.StatisticsManager.html",
+          "hash": "Ue1n0Ut6SjSAQrFOIX6G9XursLK67v04xeOUcgyux5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.Statistics.html",
+          "hash": "qaF29Y5BphpDkzPIsIfe3pZTzVjC1Xvpwqw5Adyilhs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.CanvasSafeArea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.CanvasSafeArea.html",
+          "hash": "8ZpnKoVDYFZdqESmbWipS0x98eAGk2Mi3xzaVlmrlJg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.DynamicText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.DynamicText.html",
+          "hash": "JH6KjfFmqVNUPD6LxnD+qd2DMioAiaNrSMsg0iMxjHs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.FadeDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.FadeDirection.html",
+          "hash": "WNIy5ADV0oFXB0H97i8Va0m7If+qb7aFjXp9cZt5pp0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.FadeInOut.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.FadeInOut.html",
+          "hash": "WM8Cnxiw991rC1R1lOlXAJhaDPEuNjDOLH8CDjkDS2k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.PaletteGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.PaletteGraphic.html",
+          "hash": "QSE8/kKOiRy/3t21Aty0+hMjgNXTBte2MbpBNtEhD38="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.SlowPlayback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.SlowPlayback.html",
+          "hash": "LKBITi1gVhRU1EzoAhDHbvDl9zSmeXJOXGJHDiFkvM8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.UIAchievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.UIAchievement.html",
+          "hash": "/vb2Hd3svCAow0eT7Egq9ss4jARAqHt0/hi97Hgxm3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.UITopBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.UITopBar.html",
+          "hash": "nZpBfp+byG6EeZKVFD5Xy2i14mJ2XTOOwIyV4tF1nB8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.VersionText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.VersionText.html",
+          "hash": "cT8FmL68t3dM56yiJTiIX9DGxrafmUoMtidp3dZ5fvc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.html",
+          "hash": "TvN+JPVbI86MHtn7LQGQm90qMRXJlfKWqgzae3h9Yi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.World.RandomAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.World.RandomAudioSource.html",
+          "hash": "xWnPCxmbttrvU4MEv0BGLmgUu1BV6Va7brFmd1Rp5vo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.World.html",
+          "hash": "t95TQ0jbTbYuQuDm5SgosLguSgp45Tg9X7vEjzTJvx8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.html",
+          "hash": "YH99z9j0bW53giG8fwPoJAPgXxArPqU1v0fqubDIXi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.Achievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.Achievement.html",
+          "hash": "KAwuFqV0b4LwsGr55IlhTAWdJPCRcuFm8NyQY2Bdup0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.AchievementDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.AchievementDB.html",
+          "hash": "lMW86yPNU0g0iaCtB8wVPmQZir7ZlLdkJL2yDHJycKQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.ColorPalette.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.ColorPalette.html",
+          "hash": "mAJK2ikepZDBm94ZOrHOHbGFkA5mFVX7faTY5GHMkaE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.GenericDB-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.GenericDB-1.html",
+          "hash": "RwNeKIFDzoiq9NjXVC7A+gQ1CKv3B4xJ4KpRGt8oDQg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.GenericItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.GenericItem.html",
+          "hash": "UCjieD35E06ph7iypGadKQ1CgWEUIcIbNcfPHykncdQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.PlayerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.PlayerConfig.html",
+          "hash": "m9y5tg2U23HJTxIJ5hI4jYPD7REpBXmd4pPqhbZ6W/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.Question.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.Question.html",
+          "hash": "h2rzL4Ej5KIRLmorn2aO7xlnEau/v1E755UrzR/nJbA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.QuestionsDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.QuestionsDB.html",
+          "hash": "3iWbcy/Z/4Scer/NdpAH1Fq1TyjKzsclkgJSXMzm39g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.Theme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.Theme.html",
+          "hash": "xz56FDVCkH4daklKir0QclSx88KcByouCNL3ZzVCwiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ScriptableObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ScriptableObjects.html",
+          "hash": "zF74RSUbFQcjyzietctabUPSaKhHi/K5LhNJ2OJB3/g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.EditorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.EditorExtensions.html",
+          "hash": "0ghG53Uct3HZ0OrPtZnJH4CWC8aJAMRypfPkPwMzg1A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.GameObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.GameObjectExtensions.html",
+          "hash": "XCe8cTvLk6c9/RbwFYz5E1PtDItpEa2TL7YTJDhPPlM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.HideOnStart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.HideOnStart.html",
+          "hash": "kQqDH7Z6bMolhXrFY2sPCtYjxWaxqhvdDS77vmJ5mco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.INamedArrayElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.INamedArrayElement.html",
+          "hash": "HvAK8B4ne9k7b3M+J3qxr0G198iQ7kKV1mxQM6rzQGg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.LabeledArrayAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.LabeledArrayAttribute.html",
+          "hash": "xqLEGqjCVl9FImcz/HYU6XyExzeOx0rhDMKrmb/AsX8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.MathExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.MathExtensions.html",
+          "hash": "omJ1CR/Frm7+LzCamodYr+CnTP47bw2eIg6kPel6/vY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.RandomUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.RandomUtils.html",
+          "hash": "5JXK7Y3sLl58gJ6PNQwqgBn8Tm+ixIWaKA+EK1YgNKk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.RectUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.RectUtils.html",
+          "hash": "L2LPOk7sJD2W8kibdkhYXVlRzmlAUHlQtdfcjBwhB9c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.RenameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.RenameAttribute.html",
+          "hash": "lCJWLTNhBuH3vZmwo2jqdj4cGrNM34C1povPOyV++ZE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.RendererGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.RendererGroup.html",
+          "hash": "H2PcxL07Vk14em9Ne3RunJRJYLMhHraN1mwYswLRVuo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.ShowWhenAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.ShowWhenAttribute.html",
+          "hash": "mfW4Xf5i8ifDe0/OBO3uUMWcFfQ+8+h+emnahEzk270="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.SplineUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.SplineUtil.html",
+          "hash": "9sefBEInYojJlaFfSoimmpjpGW/8B8fXRhH23xIQHFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.StringExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.StringExtension.html",
+          "hash": "toqem3BH/91qp4Qm8zHVOS7OWHRHC4wXy6y12PDr5c8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.UIUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.UIUtil.html",
+          "hash": "tyhts84H8ADqV+QUpFZmRjmHKqDsgwIms602fQjahJ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.html",
+          "hash": "T8Q5HFHtXcKAv8sDn+BDC9KOLcunKVcfGilhd2uvXqI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ieXOpcxVGhg/w5GqqZtfL3qHb0Y/d1JXn0T3LM0Ap/k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "ikctrW0djjgWPP4cwRd1DKSjPdUadHIePGNZljzA5WM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/achievements.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/achievements.html",
+          "hash": "WzvxQm6Ocl3mWShVryRGq7V1L2tPmldh33P7bjr4Bx4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/gameplay.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/gameplay.html",
+          "hash": "6QhrFCKuhkXDYS7WozFwFiu49ySpuErF6C3rBEq9vLY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "PqNfRC0laHvzLSQr0A1jovChlITCo97VmfPxRs1QjOw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/all-correct.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/all-correct.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/all-correct.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/all-correct.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/bug.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/bug.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/bug.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/bug.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/bug.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/bug.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/bug.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/bug.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/driver.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/driver.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/driver.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/driver.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/driver.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/driver.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/driver.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/driver.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/fast.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/fast.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/fast.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/fast.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/fast.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/fast.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/fast.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/fast.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/newbie.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/newbie.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/newbie.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/newbie.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/newbie.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/newbie.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/newbie.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/newbie.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/passanger.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/passanger.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/passanger.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/passanger.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/passanger.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/passanger.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/passanger.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/passanger.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy50.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy50.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy50.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy50.png.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy50.psd",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy50.psd"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Achievments/trophy50.psd.meta",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Achievments/trophy50.psd.meta"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "qVM0uywA2N3KibcbtfVvxbwH0qRbzjlTeZIkS9FqlLw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 100,
+          "skipped_file_count": 100
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
