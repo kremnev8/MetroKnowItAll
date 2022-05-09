@@ -368,5 +368,10 @@ namespace Util
         {
             return current * (total - 1) / total + newValue / total;
         }
+
+        public static float Average(this float current, float other, int currentCount, int otherCount)
+        {
+            return current * currentCount / (currentCount + otherCount) + other * otherCount / (currentCount + otherCount);
+        }
     }
 }

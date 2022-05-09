@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Conrollers;
 using Gameplay.Controls;
 using Gameplay.MetroDisplay.Model;
 using TMPro;
@@ -64,7 +65,7 @@ namespace Gameplay.Questions.Generators
             
             
             questionLabel.text = "Поместите станций в порядке на линий";
-            float height = 130 + questionLabel.preferredHeight + stations.Count * 80;
+            float height = 230 + stations.Count * 80;
             bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, height);
         }
         

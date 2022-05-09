@@ -27,6 +27,7 @@ namespace Gameplay
         public SettingsController settings;
         
         public UIAchievement achievements;
+        public UIGameOverScreen gameOverScreen;
 
     }
 }

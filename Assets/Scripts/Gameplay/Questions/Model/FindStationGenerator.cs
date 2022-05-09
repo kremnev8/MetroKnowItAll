@@ -1,4 +1,6 @@
 ﻿using System;
+using Gameplay.Conrollers;
+using Gameplay.Core;
 using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions.Generators
@@ -46,7 +48,11 @@ namespace Gameplay.Questions.Generators
                 result = true;
             }
             
+            if (result) 
+                Simulation.GetModel<GameModel>().statistics.TryUnlockStation(currentQuestion);
+            
             uiController.DisplayResult(result);
+
 
             blacklistedIds.Add(selectedStation.globalId);
             return result;

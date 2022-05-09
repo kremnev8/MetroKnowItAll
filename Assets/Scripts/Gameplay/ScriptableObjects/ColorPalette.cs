@@ -29,26 +29,26 @@ namespace ScriptableObjects
     }
     
     /// <summary>
-    /// Data store for know <see cref="Theme"/>
+    /// Data store for known <see cref="Theme"/>
     /// </summary>
     [CreateAssetMenu(fileName = "Color Palette", menuName = "SO/New Color Palette", order = 0)]
     public class ColorPalette : ScriptableObject
     {
         public List<Theme> themes = new List<Theme>();
         [SerializeField]
-        private bool m_lightTheme;
-
+        public int themeIndex;
+        
         public bool lightTheme
         {
-            get => m_lightTheme;
+            get => themeIndex == 0;
             set
             {
-                m_lightTheme = value;
+                themeIndex = value ? 0 : 1;
                 paletteChanged?.Invoke();
             }
         }
 
-        public Theme currentTheme => m_lightTheme ? themes[0] : themes[1];
+        public Theme currentTheme => themes[themeIndex];
 
         public static Action paletteChanged;
 #if UNITY_EDITOR

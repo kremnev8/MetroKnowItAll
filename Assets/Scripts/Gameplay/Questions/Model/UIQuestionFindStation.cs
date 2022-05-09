@@ -1,4 +1,5 @@
 ﻿using System;
+using Gameplay.Conrollers;
 using Gameplay.Controls;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
@@ -7,7 +8,7 @@ using UnityEngine;
 namespace Gameplay.Questions.Generators
 {
     /// <summary>
-    /// UI for <see cref="Gameplay.Questions.Model.FindStationGenerator"/>
+    /// UI for <see cref="FindStationGenerator"/>
     /// </summary>
     public class UIQuestionFindStation : BaseUIQuestion
     {

@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Core;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 using Util;
+using Random = UnityEngine.Random;
 
 namespace Gameplay.Questions.Generators
 {
@@ -22,8 +25,22 @@ namespace Gameplay.Questions.Generators
             currentCount = Random.Range(3, 7);
             currentQuestionStations.Clear();
             tipBlacklisted.Clear();
-            
-            currentQuestionStations = metro.PickRandomStationRange(currentRegion, currentCount, blacklistedIds);
+
+            bool selected = false;
+
+            while (!selected)
+            {
+                try
+                {
+                    currentQuestionStations = metro.PickRandomStationRange(currentRegion, currentCount, blacklistedIds);
+                    selected = true;
+                }
+                catch (Exception e)
+                {
+                    Debug.Log($"Failed to generate, Reg: {currentRegion}, count: {currentCount}, blacklist: {string.Join(", ", blacklistedIds)}");
+                }
+            }
+
             blacklistedIds.AddRange(currentQuestionStations.Select(station => station.globalId));
 
             List<MetroStation> shuffled = new List<MetroStation>(currentQuestionStations);
@@ -75,6 +92,14 @@ namespace Gameplay.Questions.Generators
             bool allCorrect = correct == correctnessList.Count;
             
             uiController.DisplayResult(correctnessList, allCorrect);
+            for (int i = 0; i < currentQuestionStations.Count; i++)
+            {
+                MetroStation station = currentQuestionStations[i];
+                if (station.globalId == selection[i].globalId)
+                {
+                    Simulation.GetModel<GameModel>().statistics.TryUnlockStation(station);
+                }
+            }
 
             return allCorrect;
         }
