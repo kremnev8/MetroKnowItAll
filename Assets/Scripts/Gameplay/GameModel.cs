@@ -1,4 +1,5 @@
-﻿using Gameplay.Controls;
+﻿using Gameplay.Conrollers;
+using Gameplay.Controls;
 using Gameplay.MetroDisplay;
 using Gameplay.Questions;
 using Gameplay.Statistics;
@@ -17,10 +18,14 @@ namespace Gameplay
     {
         public PlayerInput input;
         public TouchCameraController cameraController;
+        
         public MetroRenderer renderer;
         public QuestionController questions;
         public ColorPalette palette;
+        
         public StatisticsManager statistics;
+        public SettingsController settings;
+        
         public UIAchievement achievements;
 
     }

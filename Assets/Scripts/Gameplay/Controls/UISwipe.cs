@@ -1,4 +1,5 @@
-﻿using Gameplay.Questions;
+﻿using Gameplay.Conrollers;
+using Gameplay.Questions;
 using Gameplay.UI;
 using Gameplay.Core;
 using UnityEngine;
@@ -63,6 +64,11 @@ namespace Gameplay.Controls
             moveDelta = Vector2.zero;
         }
 
+        public void ForceClosed()
+        {
+            rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis + closedPosition;
+        }
+
         private void OnEnable()
         {
             if (rectTransform != null)
@@ -70,13 +76,6 @@ namespace Gameplay.Controls
                 isReturning = true;
                 rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis;
             }
-
-            QuestionController.onQuestionChanged += ForceOpen;
-        }
-
-        private void OnDisable()
-        {
-            QuestionController.onQuestionChanged -= ForceOpen;
         }
 
         private void Update()

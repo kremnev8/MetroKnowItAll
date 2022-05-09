@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Controls;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
 using Gameplay.UI;
 using Gameplay.Core;
+using Gameplay.Questions;
 using UnityEngine;
 using Util;
 using Random = UnityEngine.Random;
 
-namespace Gameplay.Questions
+namespace Gameplay.Conrollers
 {
     /// <summary>
     /// Selects and Manages question asking process. Contains all active <see cref="BaseQuestionGenerator"/> and <see cref="BaseUIQuestion"/>
@@ -18,6 +20,7 @@ namespace Gameplay.Questions
     {
         public Transform uiQuestionTransfrom;
         public UITopBar topBar;
+        public UISwipe answerPanelSwipe;
         
         [HideInInspector]
         public List<BaseUIQuestion> questionUI = new List<BaseUIQuestion>();
@@ -28,20 +31,19 @@ namespace Gameplay.Questions
         private GameModel model;
         private new MetroRenderer renderer;
 
+        // Game state
         private int currentController;
-
         private int currentRegionIndex;
         private Region currentRegion;
-        
+        public bool isResting;
+
+        private int attemptsLeft;
+        private int partialAttempts;
         private int questionsRemain;
         public int questionsPerRegion;
 
         public float timeout = 10;
-
         public static Action onQuestionChanged;
-
-        public bool isResting;
-
         public float AnswerTimeElapsed;
         
 
@@ -52,7 +54,24 @@ namespace Gameplay.Questions
 
             InitializeQuestions();
             InitializeRegions();
+            StartNewGame();
+        }
+
+        public void StartNewGame()
+        {
+            attemptsLeft = model.settings.currentDifficulty.maxAttempts;
+            partialAttempts = 0;
+            topBar.SetCurrentAttemptsImmidiate(attemptsLeft, 0);
+            model.statistics.OnNewGame();
             Invoke(nameof(SelectNextRegion), 1f);
+        }
+
+        public void GameOver()
+        {
+            answerPanelSwipe.ForceClosed();
+            model.gameOverScreen.Popup(model.statistics.sesion, model.statistics.sesionUnlockedStations);
+            isResting = true;
+            Debug.Log("Game Over!");
         }
 
         private void InitializeQuestions()
@@ -103,18 +122,13 @@ namespace Gameplay.Questions
                 return;
             }
 
-            if (result)
+            CalculateAttempts(result);
+            if (attemptsLeft < 0)
             {
-                model.statistics.OnCorrectAnswer(AnswerTimeElapsed);
+                GameOver();
+                return;
             }
-            else
-            {
-                model.statistics.OnWrongAnswer(AnswerTimeElapsed);
-            }
-            questionsRemain--;
-            
-            topBar.UpdateStatus(result, questionsPerRegion - questionsRemain, questionsPerRegion);
-            
+
             if (questionsRemain == 0)
             {
                 Invoke(nameof(SelectNextRegion), 1.5f);
@@ -122,6 +136,44 @@ namespace Gameplay.Questions
             }
             
             Invoke(nameof(SelectNextController), 1.5f);
+        }
+
+        private void CalculateAttempts(bool result)
+        {
+            if (result)
+            {
+                if (attemptsLeft < model.settings.currentDifficulty.maxAttempts)
+                {
+                    partialAttempts += 2;
+                    partialAttempts += model.statistics.sesion.correctAnswerStreak;
+                }
+
+                model.statistics.OnCorrectAnswer(AnswerTimeElapsed);
+            }
+            else
+            {
+                model.statistics.OnWrongAnswer(AnswerTimeElapsed);
+                attemptsLeft--;
+            }
+
+            questionsRemain--;
+
+            int patialMax = model.settings.currentDifficulty.partialPerAttempt;
+            int oldAttempts = attemptsLeft;
+            float oldPartial = partialAttempts / (float)patialMax;
+
+            topBar.UpdateStatus(result, questionsPerRegion - questionsRemain, questionsPerRegion);
+
+            if (partialAttempts > patialMax)
+            {
+                int attemptAdd = partialAttempts / patialMax;
+                attemptAdd = Mathf.Min(model.settings.currentDifficulty.maxAttempts - attemptsLeft, attemptAdd);
+
+                partialAttempts -= attemptAdd * partialAttempts;
+                attemptsLeft += attemptAdd;
+            }
+
+            topBar.SetCurrentAttempts(oldAttempts, attemptsLeft, oldPartial);
         }
 
         public void SelectNextController()
@@ -154,6 +206,7 @@ namespace Gameplay.Questions
             }
             
             onQuestionChanged?.Invoke();
+            answerPanelSwipe.ForceOpen();
             AnswerTimeElapsed = 0;
         }
 
