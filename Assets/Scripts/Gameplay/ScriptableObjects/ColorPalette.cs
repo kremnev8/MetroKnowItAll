@@ -36,19 +36,19 @@ namespace ScriptableObjects
     {
         public List<Theme> themes = new List<Theme>();
         [SerializeField]
-        public int themeIndex;
+        public int m_themeIndex;
         
-        public bool lightTheme
+        public int themeIndex
         {
-            get => themeIndex == 0;
+            get => m_themeIndex;
             set
             {
-                themeIndex = value ? 0 : 1;
+                m_themeIndex = value;
                 paletteChanged?.Invoke();
             }
         }
 
-        public Theme currentTheme => themes[themeIndex];
+        public Theme currentTheme => themes[m_themeIndex];
 
         public static Action paletteChanged;
 #if UNITY_EDITOR

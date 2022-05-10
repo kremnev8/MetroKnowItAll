@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Gameplay.Conrollers;
+using Gameplay.Core;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
@@ -48,6 +49,7 @@ namespace Gameplay.MetroDisplay
         
         public bool expectedLabelState = true;
 
+        private GameModel model;
         private GameObject m_stationSelect;
         public GameObject stationSelect
         {
@@ -79,6 +81,11 @@ namespace Gameplay.MetroDisplay
             {
                 Regenerate();
             }
+        }
+
+        private void Start()
+        {
+            model = Simulation.GetModel<GameModel>();
         }
 
         private void Update()
@@ -209,7 +216,13 @@ namespace Gameplay.MetroDisplay
             {
                 foreach (StationDisplay display in stationDisplays.Values)
                 {
-                    display.SetLabelVisible(true, GameController.theme.textColor);
+                    Color textColor = GameController.theme.textColor;
+                    if (model.statistics.current.unlockedStations.IsUnlocked(display.station))
+                    {
+                        textColor = GameController.theme.rightAnswer;
+                    }
+                    
+                    display.SetLabelVisible(true, textColor);
                 }
             }
             catch (Exception e)

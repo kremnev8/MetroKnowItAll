@@ -59,6 +59,7 @@ namespace Gameplay.Conrollers
 
         public void StartNewGame()
         {
+            isResting = false;
             attemptsLeft = model.settings.currentDifficulty.maxAttempts;
             partialAttempts = 0;
             topBar.SetCurrentAttemptsImmidiate(attemptsLeft, 0);

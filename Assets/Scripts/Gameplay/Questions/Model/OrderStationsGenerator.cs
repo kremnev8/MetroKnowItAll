@@ -38,6 +38,11 @@ namespace Gameplay.Questions.Generators
                 catch (Exception e)
                 {
                     Debug.Log($"Failed to generate, Reg: {currentRegion}, count: {currentCount}, blacklist: {string.Join(", ", blacklistedIds)}");
+                    currentCount--;
+                    if (currentCount < 3)
+                    {
+                        throw new Exception("Failed to generate Order question!");
+                    }
                 }
             }
 

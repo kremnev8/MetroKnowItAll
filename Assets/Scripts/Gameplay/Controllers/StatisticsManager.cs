@@ -66,6 +66,13 @@ namespace Gameplay.Conrollers
             if (sesion != null)
             {
                 current.Append(sesion);
+                
+                int score = sesion.CalculateScore().Select(item => item.points).Sum();
+                current.maxScore = Mathf.Max(current.maxScore, score);
+                if (current.maxScore >= 1000)
+                {
+                    UIAchievement.UnlockAchievement("MorePoints");
+                }
                 foreach (MetroStation station in sesionUnlockedStations)
                 {
                     current.unlockedStations.Unlock(station);

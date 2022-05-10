@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft.Json;
 using ScriptableObjects;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ namespace Gameplay.Conrollers
     public class SettingsEntry : ISaveData
     {
         public int dataVersion;
+        
+        [JsonIgnore]
         public int Version
         {
             get => dataVersion;

@@ -11,6 +11,7 @@ namespace Gameplay.Conrollers
 {
     public interface ISaveData
     {
+        [JsonIgnore]
         public int Version { get; set; }
     }
     
@@ -63,8 +64,8 @@ namespace Gameplay.Conrollers
         {
             if (current != null)
             {
-                string dataPath = Application.persistentDataPath + "/statistics.json";
-                string json = JsonConvert.SerializeObject(current);
+                string dataPath = $"{Application.persistentDataPath}/{Filename}.json";
+                string json = JsonConvert.SerializeObject(current, Formatting.Indented);
                 File.WriteAllText(dataPath, json, Encoding.UTF8);
             }
         }

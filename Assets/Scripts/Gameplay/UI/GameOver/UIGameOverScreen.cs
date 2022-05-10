@@ -26,8 +26,6 @@ namespace Gameplay.UI
     
     public class UIGameOverScreen : MonoBehaviour
     {
-        public VerticalLayoutGroup layoutGroup;
-        
         public Transform statsTrans;
         public TMP_Text totalScoreText;
         public TMP_Text unlockedStationsText;
@@ -48,8 +46,8 @@ namespace Gameplay.UI
             foreach (ScoreItem item in score)
             {
                 UIScoreItem scoreDisplay = Instantiate(scoreItemPrefab, statsTrans);
-                scoreDisplay.scoreLabel.text = $"{item.name}:";
-                scoreDisplay.scoreCountText.text = $"{item.stateText} - {item.points:000} оч.";
+                scoreDisplay.scoreLabel.text = $"{item.name} - {item.stateText}";
+                scoreDisplay.scoreCountText.text = $"{item.points:000} оч.";
                 totalScore += item.points;
             }
 

@@ -2,6 +2,7 @@
 using Gameplay.Conrollers;
 using Gameplay.MetroDisplay.Model;
 using Gameplay.UI;
+using Newtonsoft.Json;
 using ScriptableObjects;
 using UnityEngine;
 using Util;
@@ -31,6 +32,7 @@ namespace Gameplay.Statistics
 
         public int maxScore;
         
+        [JsonIgnore]
         public int Version
         {
             get => dataVersion;
@@ -43,9 +45,8 @@ namespace Gameplay.Statistics
             List<ScoreItem> scoreItems = new List<ScoreItem>
             {
                 new ScoreItem( "Всего верных ответов", correctAnswers.ToString(),correctAnswers * 50),
-                new ScoreItem( "Среднее время ответа", $"{averageAnswerTime:0.00}с",Mathf.Max(0, Mathf.RoundToInt((150 + (5 - averageAnswerTime) * 50) * correctMultiplier))),
-                new ScoreItem( "Наибольшая серия верных ответов", logestCorrectAnswerStreak.ToString(),logestCorrectAnswerStreak * 100),
-                new ScoreItem( "Процент верных ответов", $"{correctAnswers}/{totalAnswers}",Mathf.RoundToInt(correctMultiplier * 500))
+                new ScoreItem( "Среднее время ответа", $"{averageAnswerTime:0.00}с",Mathf.Max(0, Mathf.RoundToInt((150 + (5 - averageAnswerTime) * 50)))),
+                new ScoreItem( "Процент верных ответов", $"{correctAnswers}/{totalAnswers}",Mathf.RoundToInt(correctMultiplier * 1000))
             };
 
             return scoreItems;
