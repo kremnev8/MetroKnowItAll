@@ -9,12 +9,19 @@ using UnityEngine;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Interface for data model classes for <see cref="Gameplay.Conrollers.SaveDataBaseController"/>
+    /// </summary>
     public interface ISaveData
     {
         [JsonIgnore]
         public int Version { get; set; }
     }
     
+    /// <summary>
+    /// Base class for controllers that need to save data in a json file.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class SaveDataBaseController<T> : MonoBehaviour
     where T : class, ISaveData, new()
     {

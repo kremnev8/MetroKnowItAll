@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Settings data model
+    /// </summary>
     [Serializable]
     public class SettingsEntry : ISaveData
     {

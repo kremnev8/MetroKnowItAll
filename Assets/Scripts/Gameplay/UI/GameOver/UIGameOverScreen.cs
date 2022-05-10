@@ -10,6 +10,9 @@ using Util;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Struct for data about one score point
+    /// </summary>
     public struct ScoreItem
     {
         public string name;
@@ -24,6 +27,9 @@ namespace Gameplay.UI
         }
     }
     
+    /// <summary>
+    /// Controls how game over screen is displayed.
+    /// </summary>
     public class UIGameOverScreen : MonoBehaviour
     {
         public Transform statsTrans;
