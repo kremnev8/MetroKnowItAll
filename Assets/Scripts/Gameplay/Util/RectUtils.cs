@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 namespace Util
@@ -56,3 +57,4 @@ namespace Util
         }
     }
 }
+#endif

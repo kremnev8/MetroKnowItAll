@@ -1,6 +1,9 @@
 ﻿using Gameplay.Core;
 using ScriptableObjects;
 using UnityEngine;
+#if !UNITY_EDITOR
+using UnityEngine.InputSystem;
+#endif
 
 namespace Gameplay.Conrollers
 {

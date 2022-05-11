@@ -2,11 +2,13 @@
 using System.Collections;
 using Gameplay.Core;
 using ScriptableObjects;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Util;
-using RectUtils = Util.RectUtils;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace Gameplay.Controls
 {
@@ -33,22 +35,22 @@ namespace Gameplay.Controls
         private InputAction secondDeltaAction;
         private InputAction secondPositionAction;
         private InputAction secondContactAction;
-        
+
 #if UNITY_EDITOR
         private InputAction scrollAction;
 #endif
-        
+
         // STATE
         private Coroutine zoomCoroutine;
 
         private Vector2 initialPosition;
         private Vector3 currentDir;
         private Vector3 cameraVelocity;
-        
+
         private bool isDragging;
         private int zoomCounter;
         private bool isZooming => zoomCounter > 0;
-        
+
         // CAMERA LERP
         private Vector3 lerpTarget;
         private bool shouldLerp;
@@ -56,15 +58,15 @@ namespace Gameplay.Controls
         public float lerpTime = 5;
         public float endLerpThreshold = 1;
 
-        public void LerpTo(Vector3 position) 
+        public void LerpTo(Vector3 position)
         {
-            position.z = -10; 
+            position.z = -10;
             lerpTarget = position;
             shouldLerp = true;
             lerpTimeElapsed = 0;
         }
-        
-        
+
+
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
@@ -139,12 +141,12 @@ namespace Gameplay.Controls
             float mouseScroll = scrollAction.ReadValue<Vector2>().y / config.scrollSensitivity;
             camera.orthographicSize += mouseScroll * Time.deltaTime;
 #endif
-            
+
             if (zoomCounter > 0)
                 zoomCounter--;
-            
+
             bool onUI = UIUtil.IsPointerOverAnyUI(primaryPositionAction.ReadValue<Vector2>());
-            
+
             if (controlEnabled && isDragging && !isZooming && !onUI)
             {
                 Vector2 touchPos = primaryPositionAction.ReadValue<Vector2>();
@@ -152,7 +154,7 @@ namespace Gameplay.Controls
                 {
                     Vector2 targetDir = camera.ScreenToWorldPoint(touchPos);
                     targetDir -= initialPosition;
-                    
+
                     currentDir = targetDir.ToVector3() * config.normalMaxSpeed;
                 }
             }
@@ -173,7 +175,7 @@ namespace Gameplay.Controls
                     {
                         shouldLerp = false;
                     }
-                    
+
                     pos -= currentDir * Time.deltaTime / 4;
                     camera.transform.position = worldBounds.Clamp3(pos);
                 }
@@ -250,12 +252,13 @@ namespace Gameplay.Controls
             }
         }
     }
-    
+
+#if UNITY_EDITOR
     [CustomEditor(typeof(TouchCameraController))]
     public class TouchCameraControllerEditor : Editor
     {
         private void OnSceneGUI()
-        { 
+        {
             Debug.Log("Scene GUI");
             var rectExample = (TouchCameraController)target;
 
@@ -265,9 +268,10 @@ namespace Gameplay.Controls
                 Color.green,
                 Color.yellow,
                 HandleUtility.GetHandleSize(Vector3.zero) * .1f,
-                1); 
+                1);
 
             rectExample.worldBounds = rect;
         }
     }
+#endif
 }
