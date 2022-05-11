@@ -219,7 +219,7 @@ namespace Gameplay.MetroDisplay
                     Color textColor = GameController.theme.textColor;
                     if (model.statistics.current.unlockedStations.IsUnlocked(display.station))
                     {
-                        textColor = GameController.theme.rightAnswer;
+                      //  textColor = GameController.theme.rightAnswer;
                     }
                     
                     display.SetLabelVisible(true, textColor);

@@ -174,7 +174,10 @@ namespace Gameplay.Conrollers
                 attemptsLeft += attemptAdd;
             }
 
-            topBar.SetCurrentAttempts(oldAttempts, attemptsLeft, oldPartial);
+            if (attemptsLeft >= 0)
+            {
+                topBar.SetCurrentAttempts(oldAttempts, attemptsLeft, oldPartial);
+            }
         }
 
         public void SelectNextController()
@@ -217,6 +220,7 @@ namespace Gameplay.Conrollers
             
             isResting = true;
             questionUI[currentController].HideElements();
+            answerPanelSwipe.ForceClosed();
 
             currentRegion = allRegions.Where((region, i) => i != currentRegionIndex).RandomElementByWeight(region =>
             {

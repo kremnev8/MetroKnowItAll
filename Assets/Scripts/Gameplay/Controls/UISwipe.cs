@@ -1,4 +1,5 @@
-﻿using Gameplay.Conrollers;
+﻿using System;
+using Gameplay.Conrollers;
 using Gameplay.Questions;
 using Gameplay.UI;
 using Gameplay.Core;
@@ -57,6 +58,8 @@ namespace Gameplay.Controls
             primaryContactAction.started += StartSwipe;
             primaryContactAction.canceled += EndSwipe;
         }
+        
+        
 
         public void ForceOpen()
         {
@@ -75,6 +78,21 @@ namespace Gameplay.Controls
             {
                 isReturning = true;
                 rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis;
+            }
+
+            if (primaryContactAction != null)
+            {
+                primaryContactAction.started += StartSwipe;
+                primaryContactAction.canceled += EndSwipe;
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (primaryContactAction != null)
+            {
+                primaryContactAction.started -= StartSwipe;
+                primaryContactAction.canceled -= EndSwipe;
             }
         }
 

@@ -33,7 +33,9 @@ namespace Gameplay.Conrollers
         public ColorPalette palette;
 
         public Difficulty currentDifficulty => difficultyConfig.difficulties[current.difficulty];
-        
+
+        public static Action<Difficulty> difficultyChanged;
+
         public override int Version => 1;
         public override string Filename => "settings";
         public override void OnVersionChanged(int oldVersion)
@@ -47,6 +49,18 @@ namespace Gameplay.Conrollers
         public override void OnSaveDataLoaded()
         {
             palette.themeIndex = current.theme;
+        }
+
+        private void Start()
+        {
+            difficultyChanged?.Invoke(currentDifficulty);
+        }
+
+        public void MarkDirty()
+        {
+            palette.themeIndex = current.theme;
+            difficultyChanged?.Invoke(currentDifficulty);
+            Save();
         }
     }
 }

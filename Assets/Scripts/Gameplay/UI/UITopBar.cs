@@ -1,4 +1,6 @@
-﻿using Gameplay.Conrollers;
+﻿using System;
+using Gameplay.Conrollers;
+using ScriptableObjects;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +16,8 @@ namespace Gameplay.UI
         public TMP_Text attemptsLabel;
         public TMP_Text statusLabel;
 
+        public GameObject tipButtonObject;
+
         public Image attemptsFill;
         public float fillSpeed = 1;
 
@@ -24,6 +28,21 @@ namespace Gameplay.UI
         private int realAttemptCount;
 
         private float countdownTimer;
+
+        private void OnEnable()
+        {
+            SettingsController.difficultyChanged += OnDifficultyChanged;
+        }
+
+        private void OnDisable()
+        {
+            SettingsController.difficultyChanged -= OnDifficultyChanged;
+        }
+        
+        private void OnDifficultyChanged(Difficulty difficulty)
+        {
+            tipButtonObject.SetActive(difficulty.allowHints);
+        }
 
         public void SetCurrentLabel(string text)
         {

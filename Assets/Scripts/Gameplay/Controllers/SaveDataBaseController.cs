@@ -67,7 +67,7 @@ namespace Gameplay.Conrollers
             Save();
         }
 
-        private void Save()
+        protected void Save()
         {
             if (current != null)
             {

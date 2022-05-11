@@ -17,6 +17,7 @@ namespace ScriptableObjects
         public Color wrongAnswer;
         
         public Color background;
+        public Color middleBackground;
         public Color secondareBackground;
         
         public Color textColor;

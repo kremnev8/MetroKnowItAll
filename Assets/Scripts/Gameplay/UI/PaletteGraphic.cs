@@ -22,8 +22,10 @@ namespace Gameplay.UI
         private new Renderer renderer;
         private SpriteRenderer spriteRenderer;
         private SpriteShapeRenderer shapeRenderer;
+        private new Camera camera;
 
         public bool useColorOnSprites;
+        public bool keepAlpha;
         
         [NonSerialized]
         internal ColorPalette palette;
@@ -37,6 +39,7 @@ namespace Gameplay.UI
         {
             graphic = GetComponent<Graphic>();
             renderer = GetComponent<Renderer>();
+            camera = GetComponent<Camera>();
 
             if (renderer != null)
             {
@@ -45,8 +48,10 @@ namespace Gameplay.UI
             }
 
             palette = Simulation.GetModel<GameModel>()?.palette;
+        }
 
-            
+        private void Start()
+        {
             ApplyColor();
         }
 
@@ -61,17 +66,20 @@ namespace Gameplay.UI
 
                 if (graphic != null)
                 {
-                    graphic.color = color;
+                    graphic.color = GetColor(graphic.color, color);
                 }else if (shapeRenderer != null)
                 {
-                    shapeRenderer.color = color;
+                    shapeRenderer.color = GetColor(shapeRenderer.color, color);
                 }else if (spriteRenderer != null && useColorOnSprites)
                 {
-                    spriteRenderer.color = color;
+                    spriteRenderer.color = GetColor(spriteRenderer.color, color);
                 }
                 else if (renderer != null && renderer.sharedMaterial != null)
                 {
-                    renderer.sharedMaterial.color = color;
+                    renderer.sharedMaterial.color = GetColor(renderer.sharedMaterial.color, color);
+                }else if (camera != null)
+                {
+                    camera.backgroundColor = color;
                 }
             }
         }
@@ -84,6 +92,16 @@ namespace Gameplay.UI
         private void OnEnable()
         {
             ColorPalette.paletteChanged += ApplyColor;
+        }
+
+        private Color GetColor(Color oldColor, Color paletteColor)
+        {
+            if (keepAlpha)
+            {
+                return new Color(paletteColor.r, paletteColor.g, paletteColor.b, oldColor.a);
+            }
+
+            return paletteColor;
         }
     }
 

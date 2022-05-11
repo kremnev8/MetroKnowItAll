@@ -42,15 +42,22 @@ namespace Gameplay.Conrollers
         
         private void UpdateMaterials()
         {
-            lineMaterial.SetColor(backColor, theme.lineColor);
-            lineMaterial.SetColor(unfocusedColor, theme.unfocusedColor);
-            
-            crossingMaterial.SetColor(color, theme.lineColor);
-            crossingMaterial.SetColor(unfocusedColor, theme.unfocusedColor);
-            
-            tmpOutlineMaterial.SetColor(underlayColor, theme.secondareBackground);
+            if (lineMaterial != null)
+            {
+                lineMaterial.SetColor(backColor, theme.lineColor);
+                lineMaterial.SetColor(unfocusedColor, theme.unfocusedColor);
+            }
+
+            if (crossingMaterial != null)
+            {
+                crossingMaterial.SetColor(color, theme.lineColor);
+                crossingMaterial.SetColor(unfocusedColor, theme.unfocusedColor);
+            }
+
+            if (tmpOutlineMaterial != null)
+                tmpOutlineMaterial.SetColor(underlayColor, theme.secondareBackground);
         }
-        
+
 #if UNITY_EDITOR
         private void Update()
         {

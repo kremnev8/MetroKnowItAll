@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Gameplay.Core;
 using ScriptableObjects;
 using UnityEditor;
@@ -87,6 +88,36 @@ namespace Gameplay.Controls
 
             secondContactAction.started += ZoomStart;
             secondContactAction.canceled += ZoomEnd;
+        }
+
+        private void OnEnable()
+        {
+            if (primaryContactAction != null)
+            {
+                primaryContactAction.started += StartDrag;
+                primaryContactAction.canceled += EndDrag;
+            }
+
+            if (secondContactAction != null)
+            {
+                secondContactAction.started += ZoomStart;
+                secondContactAction.canceled += ZoomEnd;
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (primaryContactAction != null)
+            {
+                primaryContactAction.started -= StartDrag;
+                primaryContactAction.canceled -= EndDrag;
+            }
+
+            if (secondContactAction != null)
+            {
+                secondContactAction.started -= ZoomStart;
+                secondContactAction.canceled -= ZoomEnd;
+            }
         }
 
         private void StartDrag(InputAction.CallbackContext obj)

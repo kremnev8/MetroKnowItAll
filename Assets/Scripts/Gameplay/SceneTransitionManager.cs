@@ -24,7 +24,9 @@ namespace Gameplay
 
         public void StartGame()
         {
-            crossfade.SetActive(true);
+            if (crossfade != null)
+                crossfade.SetActive(true);
+            
             StartCoroutine(LoadLevel("Game"));
         }
 
