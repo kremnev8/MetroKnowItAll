@@ -69,7 +69,7 @@ namespace Gameplay.Controls
 
         public void ForceClosed()
         {
-            rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis + closedPosition;
+            rectTransform.anchoredPosition = rectTransform.rect.size * moveAxis + closedPosition;
         }
 
         private void OnEnable()
@@ -77,7 +77,7 @@ namespace Gameplay.Controls
             if (rectTransform != null)
             {
                 isReturning = true;
-                rectTransform.anchoredPosition = rectTransform.sizeDelta * moveAxis;
+                rectTransform.anchoredPosition = rectTransform.rect.size * moveAxis;
             }
 
             if (primaryContactAction != null)
@@ -111,7 +111,7 @@ namespace Gameplay.Controls
                     lastDeltaPosition = newPosition;
                 }
 
-                Vector2 closedPos = rectTransform.sizeDelta - closedPosition;
+                Vector2 closedPos = rectTransform.rect.size * moveAxis.Abs() - closedPosition;
                 if (posMove && (rectTransform.anchoredPosition * moveAxis).Greater(closedPos))
                 {
                     isSwiping = false;
@@ -137,11 +137,11 @@ namespace Gameplay.Controls
 
         private void UpdateReleased()
         {
-            Vector2 _closeThreshold = rectTransform.sizeDelta - closeThreshold;
+            Vector2 _closeThreshold = rectTransform.rect.size * moveAxis.Abs() - closeThreshold;
             
             if ((rectTransform.anchoredPosition * moveAxis).Greater(_closeThreshold) && !isReturning)
             {
-                Vector2 closedPos = rectTransform.sizeDelta * moveAxis + closedPosition;
+                Vector2 closedPos = rectTransform.rect.size * moveAxis + closedPosition;
                 rectTransform.anchoredPosition = closedPos;
                 if (shouldDisableContent && content.activeSelf)
                 {

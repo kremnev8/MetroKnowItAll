@@ -13,6 +13,8 @@ namespace Gameplay.UI
         public Toggle themeToggle;
         public EventToggleGroup difficultyToggleGroup;
         
+        public GameObject crossfade;
+        
         private GameModel model;
 
         private void Start()
@@ -37,8 +39,12 @@ namespace Gameplay.UI
 
         public void LoadGame()
         {
+            Debug.Log(SceneTransitionManager.instance != null);
             if (SceneTransitionManager.instance != null)
             {
+                if (crossfade != null)
+                    crossfade.SetActive(true);
+                
                 SceneTransitionManager.instance.StartGame();
             }
         }

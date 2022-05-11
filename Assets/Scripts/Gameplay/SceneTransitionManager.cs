@@ -7,7 +7,6 @@ namespace Gameplay
 {
     public class SceneTransitionManager : MonoBehaviour
     {
-        public GameObject crossfade;
         public static SceneTransitionManager instance;
 
 
@@ -16,6 +15,7 @@ namespace Gameplay
             if (instance != null)
             {
                 Destroy(gameObject);
+                return;
             }
         
             instance = this;
@@ -24,9 +24,6 @@ namespace Gameplay
 
         public void StartGame()
         {
-            if (crossfade != null)
-                crossfade.SetActive(true);
-            
             StartCoroutine(LoadLevel("Game"));
         }
 

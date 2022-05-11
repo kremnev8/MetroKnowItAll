@@ -1426,7 +1426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2413682faf9f40c4843770271f11ae95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crossfade: {fileID: 725114871}
 --- !u!4 &1189080163
 Transform:
   m_ObjectHideFlags: 0
@@ -1932,6 +1931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1132772410046164826, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
+      propertyPath: crossfade
+      value: 
+      objectReference: {fileID: 725114871}
     - target: {fileID: 5439083718440602566, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
       propertyPath: m_Name
       value: MenuRoot
