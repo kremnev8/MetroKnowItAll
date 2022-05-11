@@ -62,3 +62,6 @@ TagManager:
   - name: Labels
     uniqueID: 2581874139
     locked: 0
+  - name: Selector
+    uniqueID: 3989440595
+    locked: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3704639613181245995}
   - component: {fileID: 3704639613181245992}
   - component: {fileID: 3704639613181245993}
+  - component: {fileID: 4207227618272207567}
   m_Layer: 5
   m_Name: GameOverText (1)
   m_TagString: Untagged
@@ -74,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4292138196
+  m_fontColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -134,6 +135,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4207227618272207567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704639613181246164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useColorOnSprites: 0
+  keepAlpha: 0
+  colorName: textColor
 --- !u!1 &3704639613557991748
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +161,7 @@ GameObject:
   - component: {fileID: 3704639613557991771}
   - component: {fileID: 3704639613557991769}
   - component: {fileID: 3704639613557991770}
+  - component: {fileID: 1454515300474049149}
   m_Layer: 5
   m_Name: GameOverText (4)
   m_TagString: Untagged
@@ -268,6 +285,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1454515300474049149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3704639613557991748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useColorOnSprites: 0
+  keepAlpha: 0
+  colorName: textColor
 --- !u!1 &3704639614185564078
 GameObject:
   m_ObjectHideFlags: 0

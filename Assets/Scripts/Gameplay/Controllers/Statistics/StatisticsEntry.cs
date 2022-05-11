@@ -45,7 +45,7 @@ namespace Gameplay.Statistics
             List<ScoreItem> scoreItems = new List<ScoreItem>
             {
                 new ScoreItem( "Всего верных ответов", correctAnswers.ToString(),correctAnswers * 50),
-                new ScoreItem( "Среднее время ответа", $"{averageAnswerTime:0.00}с",Mathf.Max(0, Mathf.RoundToInt((150 + (5 - averageAnswerTime) * 50)))),
+                new ScoreItem( "Среднее время ответа", $"{averageAnswerTime:0.00}с",Mathf.Max(0, Mathf.RoundToInt((200 + (10 - averageAnswerTime) * 50)))),
                 new ScoreItem( "Процент верных ответов", $"{correctAnswers}/{totalAnswers}",Mathf.RoundToInt(correctMultiplier * 1000))
             };
 

@@ -35,6 +35,14 @@ namespace Gameplay.UI
             model.settings.MarkDirty();
         }
 
+        public void LoadGame()
+        {
+            if (SceneTransitionManager.instance != null)
+            {
+                SceneTransitionManager.instance.StartGame();
+            }
+        }
+        
         public void LoadMenu()
         {
             if (SceneTransitionManager.instance != null)
