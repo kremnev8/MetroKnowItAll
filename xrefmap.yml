@@ -7,6 +7,636 @@ references:
   commentId: N:Gameplay
   fullName: Gameplay
   nameWithType: Gameplay
+- uid: Gameplay.Conrollers
+  name: Gameplay.Conrollers
+  href: api/Gameplay.Conrollers.html
+  commentId: N:Gameplay.Conrollers
+  fullName: Gameplay.Conrollers
+  nameWithType: Gameplay.Conrollers
+- uid: Gameplay.Conrollers.GameController
+  name: GameController
+  href: api/Gameplay.Conrollers.GameController.html
+  commentId: T:Gameplay.Conrollers.GameController
+  fullName: Gameplay.Conrollers.GameController
+  nameWithType: GameController
+- uid: Gameplay.Conrollers.GameController.crossingMaterial
+  name: crossingMaterial
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_crossingMaterial
+  commentId: F:Gameplay.Conrollers.GameController.crossingMaterial
+  fullName: Gameplay.Conrollers.GameController.crossingMaterial
+  nameWithType: GameController.crossingMaterial
+- uid: Gameplay.Conrollers.GameController.instance
+  name: instance
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_instance
+  commentId: F:Gameplay.Conrollers.GameController.instance
+  fullName: Gameplay.Conrollers.GameController.instance
+  nameWithType: GameController.instance
+- uid: Gameplay.Conrollers.GameController.lineMaterial
+  name: lineMaterial
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_lineMaterial
+  commentId: F:Gameplay.Conrollers.GameController.lineMaterial
+  fullName: Gameplay.Conrollers.GameController.lineMaterial
+  nameWithType: GameController.lineMaterial
+- uid: Gameplay.Conrollers.GameController.model
+  name: model
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_model
+  commentId: F:Gameplay.Conrollers.GameController.model
+  fullName: Gameplay.Conrollers.GameController.model
+  nameWithType: GameController.model
+- uid: Gameplay.Conrollers.GameController.theme
+  name: theme
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_theme
+  commentId: P:Gameplay.Conrollers.GameController.theme
+  fullName: Gameplay.Conrollers.GameController.theme
+  nameWithType: GameController.theme
+- uid: Gameplay.Conrollers.GameController.theme*
+  name: theme
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_theme_
+  commentId: Overload:Gameplay.Conrollers.GameController.theme
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.GameController.theme
+  nameWithType: GameController.theme
+- uid: Gameplay.Conrollers.GameController.tmpOutlineMaterial
+  name: tmpOutlineMaterial
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_tmpOutlineMaterial
+  commentId: F:Gameplay.Conrollers.GameController.tmpOutlineMaterial
+  fullName: Gameplay.Conrollers.GameController.tmpOutlineMaterial
+  nameWithType: GameController.tmpOutlineMaterial
+- uid: Gameplay.Conrollers.ISaveData
+  name: ISaveData
+  href: api/Gameplay.Conrollers.ISaveData.html
+  commentId: T:Gameplay.Conrollers.ISaveData
+  fullName: Gameplay.Conrollers.ISaveData
+  nameWithType: ISaveData
+- uid: Gameplay.Conrollers.ISaveData.Version
+  name: Version
+  href: api/Gameplay.Conrollers.ISaveData.html#Gameplay_Conrollers_ISaveData_Version
+  commentId: P:Gameplay.Conrollers.ISaveData.Version
+  fullName: Gameplay.Conrollers.ISaveData.Version
+  nameWithType: ISaveData.Version
+- uid: Gameplay.Conrollers.ISaveData.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.ISaveData.html#Gameplay_Conrollers_ISaveData_Version_
+  commentId: Overload:Gameplay.Conrollers.ISaveData.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ISaveData.Version
+  nameWithType: ISaveData.Version
+- uid: Gameplay.Conrollers.QuestionController
+  name: QuestionController
+  href: api/Gameplay.Conrollers.QuestionController.html
+  commentId: T:Gameplay.Conrollers.QuestionController
+  fullName: Gameplay.Conrollers.QuestionController
+  nameWithType: QuestionController
+- uid: Gameplay.Conrollers.QuestionController.allRegions
+  name: allRegions
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_allRegions
+  commentId: F:Gameplay.Conrollers.QuestionController.allRegions
+  fullName: Gameplay.Conrollers.QuestionController.allRegions
+  nameWithType: QuestionController.allRegions
+- uid: Gameplay.Conrollers.QuestionController.answerPanelSwipe
+  name: answerPanelSwipe
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_answerPanelSwipe
+  commentId: F:Gameplay.Conrollers.QuestionController.answerPanelSwipe
+  fullName: Gameplay.Conrollers.QuestionController.answerPanelSwipe
+  nameWithType: QuestionController.answerPanelSwipe
+- uid: Gameplay.Conrollers.QuestionController.AnswerTimeElapsed
+  name: AnswerTimeElapsed
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_AnswerTimeElapsed
+  commentId: F:Gameplay.Conrollers.QuestionController.AnswerTimeElapsed
+  fullName: Gameplay.Conrollers.QuestionController.AnswerTimeElapsed
+  nameWithType: QuestionController.AnswerTimeElapsed
+- uid: Gameplay.Conrollers.QuestionController.CheckAnswer
+  name: CheckAnswer()
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_CheckAnswer
+  commentId: M:Gameplay.Conrollers.QuestionController.CheckAnswer
+  fullName: Gameplay.Conrollers.QuestionController.CheckAnswer()
+  nameWithType: QuestionController.CheckAnswer()
+- uid: Gameplay.Conrollers.QuestionController.CheckAnswer*
+  name: CheckAnswer
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_CheckAnswer_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.CheckAnswer
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.CheckAnswer
+  nameWithType: QuestionController.CheckAnswer
+- uid: Gameplay.Conrollers.QuestionController.GameOver
+  name: GameOver()
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_GameOver
+  commentId: M:Gameplay.Conrollers.QuestionController.GameOver
+  fullName: Gameplay.Conrollers.QuestionController.GameOver()
+  nameWithType: QuestionController.GameOver()
+- uid: Gameplay.Conrollers.QuestionController.GameOver*
+  name: GameOver
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_GameOver_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.GameOver
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.GameOver
+  nameWithType: QuestionController.GameOver
+- uid: Gameplay.Conrollers.QuestionController.GetNextTip(System.Int32)
+  name: GetNextTip(Int32)
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_GetNextTip_System_Int32_
+  commentId: M:Gameplay.Conrollers.QuestionController.GetNextTip(System.Int32)
+  fullName: Gameplay.Conrollers.QuestionController.GetNextTip(System.Int32)
+  nameWithType: QuestionController.GetNextTip(Int32)
+- uid: Gameplay.Conrollers.QuestionController.GetNextTip*
+  name: GetNextTip
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_GetNextTip_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.GetNextTip
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.GetNextTip
+  nameWithType: QuestionController.GetNextTip
+- uid: Gameplay.Conrollers.QuestionController.isResting
+  name: isResting
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_isResting
+  commentId: F:Gameplay.Conrollers.QuestionController.isResting
+  fullName: Gameplay.Conrollers.QuestionController.isResting
+  nameWithType: QuestionController.isResting
+- uid: Gameplay.Conrollers.QuestionController.onQuestionChanged
+  name: onQuestionChanged
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_onQuestionChanged
+  commentId: F:Gameplay.Conrollers.QuestionController.onQuestionChanged
+  fullName: Gameplay.Conrollers.QuestionController.onQuestionChanged
+  nameWithType: QuestionController.onQuestionChanged
+- uid: Gameplay.Conrollers.QuestionController.questionGenerators
+  name: questionGenerators
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_questionGenerators
+  commentId: F:Gameplay.Conrollers.QuestionController.questionGenerators
+  fullName: Gameplay.Conrollers.QuestionController.questionGenerators
+  nameWithType: QuestionController.questionGenerators
+- uid: Gameplay.Conrollers.QuestionController.questionsPerRegion
+  name: questionsPerRegion
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_questionsPerRegion
+  commentId: F:Gameplay.Conrollers.QuestionController.questionsPerRegion
+  fullName: Gameplay.Conrollers.QuestionController.questionsPerRegion
+  nameWithType: QuestionController.questionsPerRegion
+- uid: Gameplay.Conrollers.QuestionController.questionUI
+  name: questionUI
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_questionUI
+  commentId: F:Gameplay.Conrollers.QuestionController.questionUI
+  fullName: Gameplay.Conrollers.QuestionController.questionUI
+  nameWithType: QuestionController.questionUI
+- uid: Gameplay.Conrollers.QuestionController.ResumeGame
+  name: ResumeGame()
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_ResumeGame
+  commentId: M:Gameplay.Conrollers.QuestionController.ResumeGame
+  fullName: Gameplay.Conrollers.QuestionController.ResumeGame()
+  nameWithType: QuestionController.ResumeGame()
+- uid: Gameplay.Conrollers.QuestionController.ResumeGame*
+  name: ResumeGame
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_ResumeGame_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.ResumeGame
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.ResumeGame
+  nameWithType: QuestionController.ResumeGame
+- uid: Gameplay.Conrollers.QuestionController.SelectNextController
+  name: SelectNextController()
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_SelectNextController
+  commentId: M:Gameplay.Conrollers.QuestionController.SelectNextController
+  fullName: Gameplay.Conrollers.QuestionController.SelectNextController()
+  nameWithType: QuestionController.SelectNextController()
+- uid: Gameplay.Conrollers.QuestionController.SelectNextController*
+  name: SelectNextController
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_SelectNextController_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.SelectNextController
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.SelectNextController
+  nameWithType: QuestionController.SelectNextController
+- uid: Gameplay.Conrollers.QuestionController.StartNewGame
+  name: StartNewGame()
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_StartNewGame
+  commentId: M:Gameplay.Conrollers.QuestionController.StartNewGame
+  fullName: Gameplay.Conrollers.QuestionController.StartNewGame()
+  nameWithType: QuestionController.StartNewGame()
+- uid: Gameplay.Conrollers.QuestionController.StartNewGame*
+  name: StartNewGame
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_StartNewGame_
+  commentId: Overload:Gameplay.Conrollers.QuestionController.StartNewGame
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.QuestionController.StartNewGame
+  nameWithType: QuestionController.StartNewGame
+- uid: Gameplay.Conrollers.QuestionController.timeout
+  name: timeout
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_timeout
+  commentId: F:Gameplay.Conrollers.QuestionController.timeout
+  fullName: Gameplay.Conrollers.QuestionController.timeout
+  nameWithType: QuestionController.timeout
+- uid: Gameplay.Conrollers.QuestionController.topBar
+  name: topBar
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_topBar
+  commentId: F:Gameplay.Conrollers.QuestionController.topBar
+  fullName: Gameplay.Conrollers.QuestionController.topBar
+  nameWithType: QuestionController.topBar
+- uid: Gameplay.Conrollers.QuestionController.uiQuestionTransfrom
+  name: uiQuestionTransfrom
+  href: api/Gameplay.Conrollers.QuestionController.html#Gameplay_Conrollers_QuestionController_uiQuestionTransfrom
+  commentId: F:Gameplay.Conrollers.QuestionController.uiQuestionTransfrom
+  fullName: Gameplay.Conrollers.QuestionController.uiQuestionTransfrom
+  nameWithType: QuestionController.uiQuestionTransfrom
+- uid: Gameplay.Conrollers.SaveDataBaseController`1
+  name: SaveDataBaseController<T>
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html
+  commentId: T:Gameplay.Conrollers.SaveDataBaseController`1
+  name.vb: SaveDataBaseController(Of T)
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T)
+  nameWithType: SaveDataBaseController<T>
+  nameWithType.vb: SaveDataBaseController(Of T)
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.current
+  name: current
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_current
+  commentId: F:Gameplay.Conrollers.SaveDataBaseController`1.current
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.current
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).current
+  nameWithType: SaveDataBaseController<T>.current
+  nameWithType.vb: SaveDataBaseController(Of T).current
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Filename
+  name: Filename
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Filename
+  commentId: P:Gameplay.Conrollers.SaveDataBaseController`1.Filename
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Filename
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Filename
+  nameWithType: SaveDataBaseController<T>.Filename
+  nameWithType.vb: SaveDataBaseController(Of T).Filename
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Filename*
+  name: Filename
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Filename_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.Filename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Filename
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Filename
+  nameWithType: SaveDataBaseController<T>.Filename
+  nameWithType.vb: SaveDataBaseController(Of T).Filename
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData(`0)
+  name: InitializeSaveData(T)
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_InitializeSaveData__0_
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData(`0)
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.InitializeSaveData(T)
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).InitializeSaveData(T)
+  nameWithType: SaveDataBaseController<T>.InitializeSaveData(T)
+  nameWithType.vb: SaveDataBaseController(Of T).InitializeSaveData(T)
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData*
+  name: InitializeSaveData
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_InitializeSaveData_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.InitializeSaveData
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).InitializeSaveData
+  nameWithType: SaveDataBaseController<T>.InitializeSaveData
+  nameWithType.vb: SaveDataBaseController(Of T).InitializeSaveData
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded
+  name: OnSaveDataLoaded()
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_OnSaveDataLoaded
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.OnSaveDataLoaded()
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).OnSaveDataLoaded()
+  nameWithType: SaveDataBaseController<T>.OnSaveDataLoaded()
+  nameWithType.vb: SaveDataBaseController(Of T).OnSaveDataLoaded()
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded*
+  name: OnSaveDataLoaded
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_OnSaveDataLoaded_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.OnSaveDataLoaded
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).OnSaveDataLoaded
+  nameWithType: SaveDataBaseController<T>.OnSaveDataLoaded
+  nameWithType.vb: SaveDataBaseController(Of T).OnSaveDataLoaded
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged(System.Int32)
+  name: OnVersionChanged(Int32)
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_OnVersionChanged_System_Int32_
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged(System.Int32)
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.OnVersionChanged(System.Int32)
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).OnVersionChanged(System.Int32)
+  nameWithType: SaveDataBaseController<T>.OnVersionChanged(Int32)
+  nameWithType.vb: SaveDataBaseController(Of T).OnVersionChanged(Int32)
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged*
+  name: OnVersionChanged
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_OnVersionChanged_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.OnVersionChanged
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).OnVersionChanged
+  nameWithType: SaveDataBaseController<T>.OnVersionChanged
+  nameWithType.vb: SaveDataBaseController(Of T).OnVersionChanged
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Save
+  name: Save()
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Save
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.Save
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Save()
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Save()
+  nameWithType: SaveDataBaseController<T>.Save()
+  nameWithType.vb: SaveDataBaseController(Of T).Save()
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Save*
+  name: Save
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Save_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.Save
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Save
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Save
+  nameWithType: SaveDataBaseController<T>.Save
+  nameWithType.vb: SaveDataBaseController(Of T).Save
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Version
+  name: Version
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Version
+  commentId: P:Gameplay.Conrollers.SaveDataBaseController`1.Version
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Version
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Version
+  nameWithType: SaveDataBaseController<T>.Version
+  nameWithType.vb: SaveDataBaseController(Of T).Version
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Version_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Version
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Version
+  nameWithType: SaveDataBaseController<T>.Version
+  nameWithType.vb: SaveDataBaseController(Of T).Version
+- uid: Gameplay.Conrollers.SettingsController
+  name: SettingsController
+  href: api/Gameplay.Conrollers.SettingsController.html
+  commentId: T:Gameplay.Conrollers.SettingsController
+  fullName: Gameplay.Conrollers.SettingsController
+  nameWithType: SettingsController
+- uid: Gameplay.Conrollers.SettingsController.currentDifficulty
+  name: currentDifficulty
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_currentDifficulty
+  commentId: P:Gameplay.Conrollers.SettingsController.currentDifficulty
+  fullName: Gameplay.Conrollers.SettingsController.currentDifficulty
+  nameWithType: SettingsController.currentDifficulty
+- uid: Gameplay.Conrollers.SettingsController.currentDifficulty*
+  name: currentDifficulty
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_currentDifficulty_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.currentDifficulty
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.currentDifficulty
+  nameWithType: SettingsController.currentDifficulty
+- uid: Gameplay.Conrollers.SettingsController.difficultyChanged
+  name: difficultyChanged
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_difficultyChanged
+  commentId: F:Gameplay.Conrollers.SettingsController.difficultyChanged
+  fullName: Gameplay.Conrollers.SettingsController.difficultyChanged
+  nameWithType: SettingsController.difficultyChanged
+- uid: Gameplay.Conrollers.SettingsController.difficultyConfig
+  name: difficultyConfig
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_difficultyConfig
+  commentId: F:Gameplay.Conrollers.SettingsController.difficultyConfig
+  fullName: Gameplay.Conrollers.SettingsController.difficultyConfig
+  nameWithType: SettingsController.difficultyConfig
+- uid: Gameplay.Conrollers.SettingsController.Filename
+  name: Filename
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_Filename
+  commentId: P:Gameplay.Conrollers.SettingsController.Filename
+  fullName: Gameplay.Conrollers.SettingsController.Filename
+  nameWithType: SettingsController.Filename
+- uid: Gameplay.Conrollers.SettingsController.Filename*
+  name: Filename
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_Filename_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.Filename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.Filename
+  nameWithType: SettingsController.Filename
+- uid: Gameplay.Conrollers.SettingsController.InitializeSaveData(Gameplay.Conrollers.SettingsEntry)
+  name: InitializeSaveData(SettingsEntry)
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_InitializeSaveData_Gameplay_Conrollers_SettingsEntry_
+  commentId: M:Gameplay.Conrollers.SettingsController.InitializeSaveData(Gameplay.Conrollers.SettingsEntry)
+  fullName: Gameplay.Conrollers.SettingsController.InitializeSaveData(Gameplay.Conrollers.SettingsEntry)
+  nameWithType: SettingsController.InitializeSaveData(SettingsEntry)
+- uid: Gameplay.Conrollers.SettingsController.InitializeSaveData*
+  name: InitializeSaveData
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_InitializeSaveData_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.InitializeSaveData
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.InitializeSaveData
+  nameWithType: SettingsController.InitializeSaveData
+- uid: Gameplay.Conrollers.SettingsController.MarkDirty
+  name: MarkDirty()
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_MarkDirty
+  commentId: M:Gameplay.Conrollers.SettingsController.MarkDirty
+  fullName: Gameplay.Conrollers.SettingsController.MarkDirty()
+  nameWithType: SettingsController.MarkDirty()
+- uid: Gameplay.Conrollers.SettingsController.MarkDirty*
+  name: MarkDirty
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_MarkDirty_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.MarkDirty
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.MarkDirty
+  nameWithType: SettingsController.MarkDirty
+- uid: Gameplay.Conrollers.SettingsController.OnSaveDataLoaded
+  name: OnSaveDataLoaded()
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_OnSaveDataLoaded
+  commentId: M:Gameplay.Conrollers.SettingsController.OnSaveDataLoaded
+  fullName: Gameplay.Conrollers.SettingsController.OnSaveDataLoaded()
+  nameWithType: SettingsController.OnSaveDataLoaded()
+- uid: Gameplay.Conrollers.SettingsController.OnSaveDataLoaded*
+  name: OnSaveDataLoaded
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_OnSaveDataLoaded_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.OnSaveDataLoaded
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.OnSaveDataLoaded
+  nameWithType: SettingsController.OnSaveDataLoaded
+- uid: Gameplay.Conrollers.SettingsController.OnVersionChanged(System.Int32)
+  name: OnVersionChanged(Int32)
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_OnVersionChanged_System_Int32_
+  commentId: M:Gameplay.Conrollers.SettingsController.OnVersionChanged(System.Int32)
+  fullName: Gameplay.Conrollers.SettingsController.OnVersionChanged(System.Int32)
+  nameWithType: SettingsController.OnVersionChanged(Int32)
+- uid: Gameplay.Conrollers.SettingsController.OnVersionChanged*
+  name: OnVersionChanged
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_OnVersionChanged_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.OnVersionChanged
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.OnVersionChanged
+  nameWithType: SettingsController.OnVersionChanged
+- uid: Gameplay.Conrollers.SettingsController.palette
+  name: palette
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_palette
+  commentId: F:Gameplay.Conrollers.SettingsController.palette
+  fullName: Gameplay.Conrollers.SettingsController.palette
+  nameWithType: SettingsController.palette
+- uid: Gameplay.Conrollers.SettingsController.Version
+  name: Version
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_Version
+  commentId: P:Gameplay.Conrollers.SettingsController.Version
+  fullName: Gameplay.Conrollers.SettingsController.Version
+  nameWithType: SettingsController.Version
+- uid: Gameplay.Conrollers.SettingsController.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_Version_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.Version
+  nameWithType: SettingsController.Version
+- uid: Gameplay.Conrollers.SettingsEntry
+  name: SettingsEntry
+  href: api/Gameplay.Conrollers.SettingsEntry.html
+  commentId: T:Gameplay.Conrollers.SettingsEntry
+  fullName: Gameplay.Conrollers.SettingsEntry
+  nameWithType: SettingsEntry
+- uid: Gameplay.Conrollers.SettingsEntry.dataVersion
+  name: dataVersion
+  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_dataVersion
+  commentId: F:Gameplay.Conrollers.SettingsEntry.dataVersion
+  fullName: Gameplay.Conrollers.SettingsEntry.dataVersion
+  nameWithType: SettingsEntry.dataVersion
+- uid: Gameplay.Conrollers.SettingsEntry.difficulty
+  name: difficulty
+  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_difficulty
+  commentId: F:Gameplay.Conrollers.SettingsEntry.difficulty
+  fullName: Gameplay.Conrollers.SettingsEntry.difficulty
+  nameWithType: SettingsEntry.difficulty
+- uid: Gameplay.Conrollers.SettingsEntry.theme
+  name: theme
+  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_theme
+  commentId: F:Gameplay.Conrollers.SettingsEntry.theme
+  fullName: Gameplay.Conrollers.SettingsEntry.theme
+  nameWithType: SettingsEntry.theme
+- uid: Gameplay.Conrollers.SettingsEntry.Version
+  name: Version
+  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_Version
+  commentId: P:Gameplay.Conrollers.SettingsEntry.Version
+  fullName: Gameplay.Conrollers.SettingsEntry.Version
+  nameWithType: SettingsEntry.Version
+- uid: Gameplay.Conrollers.SettingsEntry.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_Version_
+  commentId: Overload:Gameplay.Conrollers.SettingsEntry.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsEntry.Version
+  nameWithType: SettingsEntry.Version
+- uid: Gameplay.Conrollers.StatisticsManager
+  name: StatisticsManager
+  href: api/Gameplay.Conrollers.StatisticsManager.html
+  commentId: T:Gameplay.Conrollers.StatisticsManager
+  fullName: Gameplay.Conrollers.StatisticsManager
+  nameWithType: StatisticsManager
+- uid: Gameplay.Conrollers.StatisticsManager.Filename
+  name: Filename
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_Filename
+  commentId: P:Gameplay.Conrollers.StatisticsManager.Filename
+  fullName: Gameplay.Conrollers.StatisticsManager.Filename
+  nameWithType: StatisticsManager.Filename
+- uid: Gameplay.Conrollers.StatisticsManager.Filename*
+  name: Filename
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_Filename_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.Filename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.Filename
+  nameWithType: StatisticsManager.Filename
+- uid: Gameplay.Conrollers.StatisticsManager.InitializeSaveData(StatisticsEntry)
+  name: InitializeSaveData(StatisticsEntry)
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_InitializeSaveData_StatisticsEntry_
+  commentId: M:Gameplay.Conrollers.StatisticsManager.InitializeSaveData(StatisticsEntry)
+  fullName: Gameplay.Conrollers.StatisticsManager.InitializeSaveData(StatisticsEntry)
+  nameWithType: StatisticsManager.InitializeSaveData(StatisticsEntry)
+- uid: Gameplay.Conrollers.StatisticsManager.InitializeSaveData*
+  name: InitializeSaveData
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_InitializeSaveData_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.InitializeSaveData
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.InitializeSaveData
+  nameWithType: StatisticsManager.InitializeSaveData
+- uid: Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer(System.Single)
+  name: OnCorrectAnswer(Single)
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnCorrectAnswer_System_Single_
+  commentId: M:Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer(System.Single)
+  fullName: Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer(System.Single)
+  nameWithType: StatisticsManager.OnCorrectAnswer(Single)
+- uid: Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer*
+  name: OnCorrectAnswer
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnCorrectAnswer_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.OnCorrectAnswer
+  nameWithType: StatisticsManager.OnCorrectAnswer
+- uid: Gameplay.Conrollers.StatisticsManager.OnNewGame
+  name: OnNewGame()
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnNewGame
+  commentId: M:Gameplay.Conrollers.StatisticsManager.OnNewGame
+  fullName: Gameplay.Conrollers.StatisticsManager.OnNewGame()
+  nameWithType: StatisticsManager.OnNewGame()
+- uid: Gameplay.Conrollers.StatisticsManager.OnNewGame*
+  name: OnNewGame
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnNewGame_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.OnNewGame
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.OnNewGame
+  nameWithType: StatisticsManager.OnNewGame
+- uid: Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded
+  name: OnSaveDataLoaded()
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnSaveDataLoaded
+  commentId: M:Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded
+  fullName: Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded()
+  nameWithType: StatisticsManager.OnSaveDataLoaded()
+- uid: Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded*
+  name: OnSaveDataLoaded
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnSaveDataLoaded_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.OnSaveDataLoaded
+  nameWithType: StatisticsManager.OnSaveDataLoaded
+- uid: Gameplay.Conrollers.StatisticsManager.OnVersionChanged(System.Int32)
+  name: OnVersionChanged(Int32)
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnVersionChanged_System_Int32_
+  commentId: M:Gameplay.Conrollers.StatisticsManager.OnVersionChanged(System.Int32)
+  fullName: Gameplay.Conrollers.StatisticsManager.OnVersionChanged(System.Int32)
+  nameWithType: StatisticsManager.OnVersionChanged(Int32)
+- uid: Gameplay.Conrollers.StatisticsManager.OnVersionChanged*
+  name: OnVersionChanged
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnVersionChanged_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.OnVersionChanged
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.OnVersionChanged
+  nameWithType: StatisticsManager.OnVersionChanged
+- uid: Gameplay.Conrollers.StatisticsManager.OnWrongAnswer(System.Single)
+  name: OnWrongAnswer(Single)
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnWrongAnswer_System_Single_
+  commentId: M:Gameplay.Conrollers.StatisticsManager.OnWrongAnswer(System.Single)
+  fullName: Gameplay.Conrollers.StatisticsManager.OnWrongAnswer(System.Single)
+  nameWithType: StatisticsManager.OnWrongAnswer(Single)
+- uid: Gameplay.Conrollers.StatisticsManager.OnWrongAnswer*
+  name: OnWrongAnswer
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_OnWrongAnswer_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.OnWrongAnswer
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.OnWrongAnswer
+  nameWithType: StatisticsManager.OnWrongAnswer
+- uid: Gameplay.Conrollers.StatisticsManager.sesion
+  name: sesion
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_sesion
+  commentId: F:Gameplay.Conrollers.StatisticsManager.sesion
+  fullName: Gameplay.Conrollers.StatisticsManager.sesion
+  nameWithType: StatisticsManager.sesion
+- uid: Gameplay.Conrollers.StatisticsManager.sesionUnlockedStations
+  name: sesionUnlockedStations
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_sesionUnlockedStations
+  commentId: F:Gameplay.Conrollers.StatisticsManager.sesionUnlockedStations
+  fullName: Gameplay.Conrollers.StatisticsManager.sesionUnlockedStations
+  nameWithType: StatisticsManager.sesionUnlockedStations
+- uid: Gameplay.Conrollers.StatisticsManager.TryUnlockStation(MetroStation)
+  name: TryUnlockStation(MetroStation)
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_TryUnlockStation_MetroStation_
+  commentId: M:Gameplay.Conrollers.StatisticsManager.TryUnlockStation(MetroStation)
+  fullName: Gameplay.Conrollers.StatisticsManager.TryUnlockStation(MetroStation)
+  nameWithType: StatisticsManager.TryUnlockStation(MetroStation)
+- uid: Gameplay.Conrollers.StatisticsManager.TryUnlockStation*
+  name: TryUnlockStation
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_TryUnlockStation_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.TryUnlockStation
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.TryUnlockStation
+  nameWithType: StatisticsManager.TryUnlockStation
+- uid: Gameplay.Conrollers.StatisticsManager.Version
+  name: Version
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_Version
+  commentId: P:Gameplay.Conrollers.StatisticsManager.Version
+  fullName: Gameplay.Conrollers.StatisticsManager.Version
+  nameWithType: StatisticsManager.Version
+- uid: Gameplay.Conrollers.StatisticsManager.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.StatisticsManager.html#Gameplay_Conrollers_StatisticsManager_Version_
+  commentId: Overload:Gameplay.Conrollers.StatisticsManager.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsManager.Version
+  nameWithType: StatisticsManager.Version
 - uid: Gameplay.Controls
   name: Gameplay.Controls
   href: api/Gameplay.Controls.html
@@ -169,12 +799,6 @@ references:
   commentId: F:Gameplay.Controls.TouchCameraController.worldBounds
   fullName: Gameplay.Controls.TouchCameraController.worldBounds
   nameWithType: TouchCameraController.worldBounds
-- uid: Gameplay.Controls.TouchCameraControllerEditor
-  name: TouchCameraControllerEditor
-  href: api/Gameplay.Controls.TouchCameraControllerEditor.html
-  commentId: T:Gameplay.Controls.TouchCameraControllerEditor
-  fullName: Gameplay.Controls.TouchCameraControllerEditor
-  nameWithType: TouchCameraControllerEditor
 - uid: Gameplay.Controls.UIDragableButton
   name: UIDragableButton
   href: api/Gameplay.Controls.UIDragableButton.html
@@ -378,6 +1002,19 @@ references:
   commentId: F:Gameplay.Controls.UISwipe.content
   fullName: Gameplay.Controls.UISwipe.content
   nameWithType: UISwipe.content
+- uid: Gameplay.Controls.UISwipe.ForceClosed
+  name: ForceClosed()
+  href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_ForceClosed
+  commentId: M:Gameplay.Controls.UISwipe.ForceClosed
+  fullName: Gameplay.Controls.UISwipe.ForceClosed()
+  nameWithType: UISwipe.ForceClosed()
+- uid: Gameplay.Controls.UISwipe.ForceClosed*
+  name: ForceClosed
+  href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_ForceClosed_
+  commentId: Overload:Gameplay.Controls.UISwipe.ForceClosed
+  isSpec: "True"
+  fullName: Gameplay.Controls.UISwipe.ForceClosed
+  nameWithType: UISwipe.ForceClosed
 - uid: Gameplay.Controls.UISwipe.ForceOpen
   name: ForceOpen()
   href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_ForceOpen
@@ -802,55 +1439,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.Core.Simulation.Tick
   nameWithType: Simulation.Tick
-- uid: Gameplay.GameController
-  name: GameController
-  href: api/Gameplay.GameController.html
-  commentId: T:Gameplay.GameController
-  fullName: Gameplay.GameController
-  nameWithType: GameController
-- uid: Gameplay.GameController.crossingMaterial
-  name: crossingMaterial
-  href: api/Gameplay.GameController.html#Gameplay_GameController_crossingMaterial
-  commentId: F:Gameplay.GameController.crossingMaterial
-  fullName: Gameplay.GameController.crossingMaterial
-  nameWithType: GameController.crossingMaterial
-- uid: Gameplay.GameController.instance
-  name: instance
-  href: api/Gameplay.GameController.html#Gameplay_GameController_instance
-  commentId: F:Gameplay.GameController.instance
-  fullName: Gameplay.GameController.instance
-  nameWithType: GameController.instance
-- uid: Gameplay.GameController.lineMaterial
-  name: lineMaterial
-  href: api/Gameplay.GameController.html#Gameplay_GameController_lineMaterial
-  commentId: F:Gameplay.GameController.lineMaterial
-  fullName: Gameplay.GameController.lineMaterial
-  nameWithType: GameController.lineMaterial
-- uid: Gameplay.GameController.model
-  name: model
-  href: api/Gameplay.GameController.html#Gameplay_GameController_model
-  commentId: F:Gameplay.GameController.model
-  fullName: Gameplay.GameController.model
-  nameWithType: GameController.model
-- uid: Gameplay.GameController.theme
-  name: theme
-  href: api/Gameplay.GameController.html#Gameplay_GameController_theme
-  commentId: P:Gameplay.GameController.theme
-  fullName: Gameplay.GameController.theme
-  nameWithType: GameController.theme
-- uid: Gameplay.GameController.theme*
-  name: theme
-  href: api/Gameplay.GameController.html#Gameplay_GameController_theme_
-  commentId: Overload:Gameplay.GameController.theme
-  isSpec: "True"
-  fullName: Gameplay.GameController.theme
-  nameWithType: GameController.theme
-- uid: Gameplay.GameController.tmpOutlineMaterial
-  name: tmpOutlineMaterial
-  href: api/Gameplay.GameController.html#Gameplay_GameController_tmpOutlineMaterial
-  commentId: F:Gameplay.GameController.tmpOutlineMaterial
-  fullName: Gameplay.GameController.tmpOutlineMaterial
-  nameWithType: GameController.tmpOutlineMaterial
 - uid: Gameplay.GameModel
   name: GameModel
   href: api/Gameplay.GameModel.html
@@ -869,6 +1457,12 @@ references:
   commentId: F:Gameplay.GameModel.cameraController
   fullName: Gameplay.GameModel.cameraController
   nameWithType: GameModel.cameraController
+- uid: Gameplay.GameModel.gameOverScreen
+  name: gameOverScreen
+  href: api/Gameplay.GameModel.html#Gameplay_GameModel_gameOverScreen
+  commentId: F:Gameplay.GameModel.gameOverScreen
+  fullName: Gameplay.GameModel.gameOverScreen
+  nameWithType: GameModel.gameOverScreen
 - uid: Gameplay.GameModel.input
   name: input
   href: api/Gameplay.GameModel.html#Gameplay_GameModel_input
@@ -893,6 +1487,12 @@ references:
   commentId: F:Gameplay.GameModel.renderer
   fullName: Gameplay.GameModel.renderer
   nameWithType: GameModel.renderer
+- uid: Gameplay.GameModel.settings
+  name: settings
+  href: api/Gameplay.GameModel.html#Gameplay_GameModel_settings
+  commentId: F:Gameplay.GameModel.settings
+  fullName: Gameplay.GameModel.settings
+  nameWithType: GameModel.settings
 - uid: Gameplay.GameModel.statistics
   name: statistics
   href: api/Gameplay.GameModel.html#Gameplay_GameModel_statistics
@@ -2693,6 +3293,18 @@ references:
   isSpec: "True"
   fullName: Gameplay.Questions.Generators.FindLineGenerator.GenerateTip
   nameWithType: FindLineGenerator.GenerateTip
+- uid: Gameplay.Questions.Generators.FindLineGenerator.questionStation
+  name: questionStation
+  href: api/Gameplay.Questions.Generators.FindLineGenerator.html#Gameplay_Questions_Generators_FindLineGenerator_questionStation
+  commentId: F:Gameplay.Questions.Generators.FindLineGenerator.questionStation
+  fullName: Gameplay.Questions.Generators.FindLineGenerator.questionStation
+  nameWithType: FindLineGenerator.questionStation
+- uid: Gameplay.Questions.Generators.FindLineGenerator.questionUsedLineName
+  name: questionUsedLineName
+  href: api/Gameplay.Questions.Generators.FindLineGenerator.html#Gameplay_Questions_Generators_FindLineGenerator_questionUsedLineName
+  commentId: F:Gameplay.Questions.Generators.FindLineGenerator.questionUsedLineName
+  fullName: Gameplay.Questions.Generators.FindLineGenerator.questionUsedLineName
+  nameWithType: FindLineGenerator.questionUsedLineName
 - uid: Gameplay.Questions.Generators.FindLineGenerator.ValidateAnswer
   name: ValidateAnswer()
   href: api/Gameplay.Questions.Generators.FindLineGenerator.html#Gameplay_Questions_Generators_FindLineGenerator_ValidateAnswer
@@ -2877,6 +3489,12 @@ references:
   commentId: M:Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroLine)
   fullName: Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroLine)
   nameWithType: UIQuestionFindLine.SetQuestion(MetroLine)
+- uid: Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroStation)
+  name: SetQuestion(MetroStation)
+  href: api/Gameplay.Questions.Generators.UIQuestionFindLine.html#Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_MetroStation_
+  commentId: M:Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroStation)
+  fullName: Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroStation)
+  nameWithType: UIQuestionFindLine.SetQuestion(MetroStation)
 - uid: Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion*
   name: SetQuestion
   href: api/Gameplay.Questions.Generators.UIQuestionFindLine.html#Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_
@@ -3056,118 +3674,6 @@ references:
   commentId: T:Gameplay.Questions.ILineQuestion
   fullName: Gameplay.Questions.ILineQuestion
   nameWithType: ILineQuestion
-- uid: Gameplay.Questions.QuestionController
-  name: QuestionController
-  href: api/Gameplay.Questions.QuestionController.html
-  commentId: T:Gameplay.Questions.QuestionController
-  fullName: Gameplay.Questions.QuestionController
-  nameWithType: QuestionController
-- uid: Gameplay.Questions.QuestionController.AnswerTimeElapsed
-  name: AnswerTimeElapsed
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_AnswerTimeElapsed
-  commentId: F:Gameplay.Questions.QuestionController.AnswerTimeElapsed
-  fullName: Gameplay.Questions.QuestionController.AnswerTimeElapsed
-  nameWithType: QuestionController.AnswerTimeElapsed
-- uid: Gameplay.Questions.QuestionController.CheckAnswer
-  name: CheckAnswer()
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_CheckAnswer
-  commentId: M:Gameplay.Questions.QuestionController.CheckAnswer
-  fullName: Gameplay.Questions.QuestionController.CheckAnswer()
-  nameWithType: QuestionController.CheckAnswer()
-- uid: Gameplay.Questions.QuestionController.CheckAnswer*
-  name: CheckAnswer
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_CheckAnswer_
-  commentId: Overload:Gameplay.Questions.QuestionController.CheckAnswer
-  isSpec: "True"
-  fullName: Gameplay.Questions.QuestionController.CheckAnswer
-  nameWithType: QuestionController.CheckAnswer
-- uid: Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
-  name: GetNextTip(Int32)
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_GetNextTip_System_Int32_
-  commentId: M:Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
-  fullName: Gameplay.Questions.QuestionController.GetNextTip(System.Int32)
-  nameWithType: QuestionController.GetNextTip(Int32)
-- uid: Gameplay.Questions.QuestionController.GetNextTip*
-  name: GetNextTip
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_GetNextTip_
-  commentId: Overload:Gameplay.Questions.QuestionController.GetNextTip
-  isSpec: "True"
-  fullName: Gameplay.Questions.QuestionController.GetNextTip
-  nameWithType: QuestionController.GetNextTip
-- uid: Gameplay.Questions.QuestionController.isResting
-  name: isResting
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_isResting
-  commentId: F:Gameplay.Questions.QuestionController.isResting
-  fullName: Gameplay.Questions.QuestionController.isResting
-  nameWithType: QuestionController.isResting
-- uid: Gameplay.Questions.QuestionController.onQuestionChanged
-  name: onQuestionChanged
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_onQuestionChanged
-  commentId: F:Gameplay.Questions.QuestionController.onQuestionChanged
-  fullName: Gameplay.Questions.QuestionController.onQuestionChanged
-  nameWithType: QuestionController.onQuestionChanged
-- uid: Gameplay.Questions.QuestionController.questionGenerators
-  name: questionGenerators
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_questionGenerators
-  commentId: F:Gameplay.Questions.QuestionController.questionGenerators
-  fullName: Gameplay.Questions.QuestionController.questionGenerators
-  nameWithType: QuestionController.questionGenerators
-- uid: Gameplay.Questions.QuestionController.questionsPerRegion
-  name: questionsPerRegion
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_questionsPerRegion
-  commentId: F:Gameplay.Questions.QuestionController.questionsPerRegion
-  fullName: Gameplay.Questions.QuestionController.questionsPerRegion
-  nameWithType: QuestionController.questionsPerRegion
-- uid: Gameplay.Questions.QuestionController.questionUI
-  name: questionUI
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_questionUI
-  commentId: F:Gameplay.Questions.QuestionController.questionUI
-  fullName: Gameplay.Questions.QuestionController.questionUI
-  nameWithType: QuestionController.questionUI
-- uid: Gameplay.Questions.QuestionController.ResumeGame
-  name: ResumeGame()
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_ResumeGame
-  commentId: M:Gameplay.Questions.QuestionController.ResumeGame
-  fullName: Gameplay.Questions.QuestionController.ResumeGame()
-  nameWithType: QuestionController.ResumeGame()
-- uid: Gameplay.Questions.QuestionController.ResumeGame*
-  name: ResumeGame
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_ResumeGame_
-  commentId: Overload:Gameplay.Questions.QuestionController.ResumeGame
-  isSpec: "True"
-  fullName: Gameplay.Questions.QuestionController.ResumeGame
-  nameWithType: QuestionController.ResumeGame
-- uid: Gameplay.Questions.QuestionController.SelectNextController
-  name: SelectNextController()
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_SelectNextController
-  commentId: M:Gameplay.Questions.QuestionController.SelectNextController
-  fullName: Gameplay.Questions.QuestionController.SelectNextController()
-  nameWithType: QuestionController.SelectNextController()
-- uid: Gameplay.Questions.QuestionController.SelectNextController*
-  name: SelectNextController
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_SelectNextController_
-  commentId: Overload:Gameplay.Questions.QuestionController.SelectNextController
-  isSpec: "True"
-  fullName: Gameplay.Questions.QuestionController.SelectNextController
-  nameWithType: QuestionController.SelectNextController
-- uid: Gameplay.Questions.QuestionController.timeout
-  name: timeout
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_timeout
-  commentId: F:Gameplay.Questions.QuestionController.timeout
-  fullName: Gameplay.Questions.QuestionController.timeout
-  nameWithType: QuestionController.timeout
-- uid: Gameplay.Questions.QuestionController.topBar
-  name: topBar
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_topBar
-  commentId: F:Gameplay.Questions.QuestionController.topBar
-  fullName: Gameplay.Questions.QuestionController.topBar
-  nameWithType: QuestionController.topBar
-- uid: Gameplay.Questions.QuestionController.uiQuestionTransfrom
-  name: uiQuestionTransfrom
-  href: api/Gameplay.Questions.QuestionController.html#Gameplay_Questions_QuestionController_uiQuestionTransfrom
-  commentId: F:Gameplay.Questions.QuestionController.uiQuestionTransfrom
-  fullName: Gameplay.Questions.QuestionController.uiQuestionTransfrom
-  nameWithType: QuestionController.uiQuestionTransfrom
 - uid: Gameplay.Questions.QuestionGenerator`1
   name: QuestionGenerator<T>
   href: api/Gameplay.Questions.QuestionGenerator-1.html
@@ -3515,116 +4021,123 @@ references:
   fullName.vb: Gameplay.Statistics.IIndexable(Of T).index
   nameWithType: IIndexable<T>.index
   nameWithType.vb: IIndexable(Of T).index
-- uid: Gameplay.Statistics.Statistics
-  name: Statistics
-  href: api/Gameplay.Statistics.Statistics.html
-  commentId: T:Gameplay.Statistics.Statistics
-  fullName: Gameplay.Statistics.Statistics
-  nameWithType: Statistics
-- uid: Gameplay.Statistics.Statistics.averageAnswerTime
+- uid: Gameplay.Statistics.StatisticsEntry
+  name: StatisticsEntry
+  href: api/Gameplay.Statistics.StatisticsEntry.html
+  commentId: T:Gameplay.Statistics.StatisticsEntry
+  fullName: Gameplay.Statistics.StatisticsEntry
+  nameWithType: StatisticsEntry
+- uid: Gameplay.Statistics.StatisticsEntry.Append(Gameplay.Statistics.StatisticsEntry)
+  name: Append(StatisticsEntry)
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_Append_Gameplay_Statistics_StatisticsEntry_
+  commentId: M:Gameplay.Statistics.StatisticsEntry.Append(Gameplay.Statistics.StatisticsEntry)
+  fullName: Gameplay.Statistics.StatisticsEntry.Append(Gameplay.Statistics.StatisticsEntry)
+  nameWithType: StatisticsEntry.Append(StatisticsEntry)
+- uid: Gameplay.Statistics.StatisticsEntry.Append*
+  name: Append
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_Append_
+  commentId: Overload:Gameplay.Statistics.StatisticsEntry.Append
+  isSpec: "True"
+  fullName: Gameplay.Statistics.StatisticsEntry.Append
+  nameWithType: StatisticsEntry.Append
+- uid: Gameplay.Statistics.StatisticsEntry.averageAnswerTime
   name: averageAnswerTime
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_averageAnswerTime
-  commentId: F:Gameplay.Statistics.Statistics.averageAnswerTime
-  fullName: Gameplay.Statistics.Statistics.averageAnswerTime
-  nameWithType: Statistics.averageAnswerTime
-- uid: Gameplay.Statistics.Statistics.correctAnswers
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_averageAnswerTime
+  commentId: F:Gameplay.Statistics.StatisticsEntry.averageAnswerTime
+  fullName: Gameplay.Statistics.StatisticsEntry.averageAnswerTime
+  nameWithType: StatisticsEntry.averageAnswerTime
+- uid: Gameplay.Statistics.StatisticsEntry.CalculateScore
+  name: CalculateScore()
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_CalculateScore
+  commentId: M:Gameplay.Statistics.StatisticsEntry.CalculateScore
+  fullName: Gameplay.Statistics.StatisticsEntry.CalculateScore()
+  nameWithType: StatisticsEntry.CalculateScore()
+- uid: Gameplay.Statistics.StatisticsEntry.CalculateScore*
+  name: CalculateScore
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_CalculateScore_
+  commentId: Overload:Gameplay.Statistics.StatisticsEntry.CalculateScore
+  isSpec: "True"
+  fullName: Gameplay.Statistics.StatisticsEntry.CalculateScore
+  nameWithType: StatisticsEntry.CalculateScore
+- uid: Gameplay.Statistics.StatisticsEntry.correctAnswers
   name: correctAnswers
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_correctAnswers
-  commentId: F:Gameplay.Statistics.Statistics.correctAnswers
-  fullName: Gameplay.Statistics.Statistics.correctAnswers
-  nameWithType: Statistics.correctAnswers
-- uid: Gameplay.Statistics.Statistics.correctAnswerStreak
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_correctAnswers
+  commentId: F:Gameplay.Statistics.StatisticsEntry.correctAnswers
+  fullName: Gameplay.Statistics.StatisticsEntry.correctAnswers
+  nameWithType: StatisticsEntry.correctAnswers
+- uid: Gameplay.Statistics.StatisticsEntry.correctAnswerStreak
   name: correctAnswerStreak
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_correctAnswerStreak
-  commentId: F:Gameplay.Statistics.Statistics.correctAnswerStreak
-  fullName: Gameplay.Statistics.Statistics.correctAnswerStreak
-  nameWithType: Statistics.correctAnswerStreak
-- uid: Gameplay.Statistics.Statistics.dataVersion
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_correctAnswerStreak
+  commentId: F:Gameplay.Statistics.StatisticsEntry.correctAnswerStreak
+  fullName: Gameplay.Statistics.StatisticsEntry.correctAnswerStreak
+  nameWithType: StatisticsEntry.correctAnswerStreak
+- uid: Gameplay.Statistics.StatisticsEntry.dataVersion
   name: dataVersion
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_dataVersion
-  commentId: F:Gameplay.Statistics.Statistics.dataVersion
-  fullName: Gameplay.Statistics.Statistics.dataVersion
-  nameWithType: Statistics.dataVersion
-- uid: Gameplay.Statistics.Statistics.fastestCorrectAnswer
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_dataVersion
+  commentId: F:Gameplay.Statistics.StatisticsEntry.dataVersion
+  fullName: Gameplay.Statistics.StatisticsEntry.dataVersion
+  nameWithType: StatisticsEntry.dataVersion
+- uid: Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
   name: fastestCorrectAnswer
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_fastestCorrectAnswer
-  commentId: F:Gameplay.Statistics.Statistics.fastestCorrectAnswer
-  fullName: Gameplay.Statistics.Statistics.fastestCorrectAnswer
-  nameWithType: Statistics.fastestCorrectAnswer
-- uid: Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_fastestCorrectAnswer
+  commentId: F:Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
+  fullName: Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
+  nameWithType: StatisticsEntry.fastestCorrectAnswer
+- uid: Gameplay.Statistics.StatisticsEntry.logestCorrectAnswerStreak
+  name: logestCorrectAnswerStreak
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_logestCorrectAnswerStreak
+  commentId: F:Gameplay.Statistics.StatisticsEntry.logestCorrectAnswerStreak
+  fullName: Gameplay.Statistics.StatisticsEntry.logestCorrectAnswerStreak
+  nameWithType: StatisticsEntry.logestCorrectAnswerStreak
+- uid: Gameplay.Statistics.StatisticsEntry.maximumCorrectAnswerTime
   name: maximumCorrectAnswerTime
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_maximumCorrectAnswerTime
-  commentId: F:Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
-  fullName: Gameplay.Statistics.Statistics.maximumCorrectAnswerTime
-  nameWithType: Statistics.maximumCorrectAnswerTime
-- uid: Gameplay.Statistics.Statistics.totalAnswers
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_maximumCorrectAnswerTime
+  commentId: F:Gameplay.Statistics.StatisticsEntry.maximumCorrectAnswerTime
+  fullName: Gameplay.Statistics.StatisticsEntry.maximumCorrectAnswerTime
+  nameWithType: StatisticsEntry.maximumCorrectAnswerTime
+- uid: Gameplay.Statistics.StatisticsEntry.maxScore
+  name: maxScore
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_maxScore
+  commentId: F:Gameplay.Statistics.StatisticsEntry.maxScore
+  fullName: Gameplay.Statistics.StatisticsEntry.maxScore
+  nameWithType: StatisticsEntry.maxScore
+- uid: Gameplay.Statistics.StatisticsEntry.totalAnswers
   name: totalAnswers
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_totalAnswers
-  commentId: F:Gameplay.Statistics.Statistics.totalAnswers
-  fullName: Gameplay.Statistics.Statistics.totalAnswers
-  nameWithType: Statistics.totalAnswers
-- uid: Gameplay.Statistics.Statistics.unlockedAchievements
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_totalAnswers
+  commentId: F:Gameplay.Statistics.StatisticsEntry.totalAnswers
+  fullName: Gameplay.Statistics.StatisticsEntry.totalAnswers
+  nameWithType: StatisticsEntry.totalAnswers
+- uid: Gameplay.Statistics.StatisticsEntry.unlockedAchievements
   name: unlockedAchievements
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_unlockedAchievements
-  commentId: F:Gameplay.Statistics.Statistics.unlockedAchievements
-  fullName: Gameplay.Statistics.Statistics.unlockedAchievements
-  nameWithType: Statistics.unlockedAchievements
-- uid: Gameplay.Statistics.Statistics.unlockedLines
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_unlockedAchievements
+  commentId: F:Gameplay.Statistics.StatisticsEntry.unlockedAchievements
+  fullName: Gameplay.Statistics.StatisticsEntry.unlockedAchievements
+  nameWithType: StatisticsEntry.unlockedAchievements
+- uid: Gameplay.Statistics.StatisticsEntry.unlockedLines
   name: unlockedLines
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_unlockedLines
-  commentId: F:Gameplay.Statistics.Statistics.unlockedLines
-  fullName: Gameplay.Statistics.Statistics.unlockedLines
-  nameWithType: Statistics.unlockedLines
-- uid: Gameplay.Statistics.Statistics.unlockedStations
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_unlockedLines
+  commentId: F:Gameplay.Statistics.StatisticsEntry.unlockedLines
+  fullName: Gameplay.Statistics.StatisticsEntry.unlockedLines
+  nameWithType: StatisticsEntry.unlockedLines
+- uid: Gameplay.Statistics.StatisticsEntry.unlockedStations
   name: unlockedStations
-  href: api/Gameplay.Statistics.Statistics.html#Gameplay_Statistics_Statistics_unlockedStations
-  commentId: F:Gameplay.Statistics.Statistics.unlockedStations
-  fullName: Gameplay.Statistics.Statistics.unlockedStations
-  nameWithType: Statistics.unlockedStations
-- uid: Gameplay.Statistics.StatisticsManager
-  name: StatisticsManager
-  href: api/Gameplay.Statistics.StatisticsManager.html
-  commentId: T:Gameplay.Statistics.StatisticsManager
-  fullName: Gameplay.Statistics.StatisticsManager
-  nameWithType: StatisticsManager
-- uid: Gameplay.Statistics.StatisticsManager.current
-  name: current
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_current
-  commentId: F:Gameplay.Statistics.StatisticsManager.current
-  fullName: Gameplay.Statistics.StatisticsManager.current
-  nameWithType: StatisticsManager.current
-- uid: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
-  name: OnCorrectAnswer(Single)
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_OnCorrectAnswer_System_Single_
-  commentId: M:Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
-  fullName: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer(System.Single)
-  nameWithType: StatisticsManager.OnCorrectAnswer(Single)
-- uid: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer*
-  name: OnCorrectAnswer
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_OnCorrectAnswer_
-  commentId: Overload:Gameplay.Statistics.StatisticsManager.OnCorrectAnswer
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_unlockedStations
+  commentId: F:Gameplay.Statistics.StatisticsEntry.unlockedStations
+  fullName: Gameplay.Statistics.StatisticsEntry.unlockedStations
+  nameWithType: StatisticsEntry.unlockedStations
+- uid: Gameplay.Statistics.StatisticsEntry.Version
+  name: Version
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_Version
+  commentId: P:Gameplay.Statistics.StatisticsEntry.Version
+  fullName: Gameplay.Statistics.StatisticsEntry.Version
+  nameWithType: StatisticsEntry.Version
+- uid: Gameplay.Statistics.StatisticsEntry.Version*
+  name: Version
+  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_Version_
+  commentId: Overload:Gameplay.Statistics.StatisticsEntry.Version
   isSpec: "True"
-  fullName: Gameplay.Statistics.StatisticsManager.OnCorrectAnswer
-  nameWithType: StatisticsManager.OnCorrectAnswer
-- uid: Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
-  name: OnWrongAnswer(Single)
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_OnWrongAnswer_System_Single_
-  commentId: M:Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
-  fullName: Gameplay.Statistics.StatisticsManager.OnWrongAnswer(System.Single)
-  nameWithType: StatisticsManager.OnWrongAnswer(Single)
-- uid: Gameplay.Statistics.StatisticsManager.OnWrongAnswer*
-  name: OnWrongAnswer
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_OnWrongAnswer_
-  commentId: Overload:Gameplay.Statistics.StatisticsManager.OnWrongAnswer
-  isSpec: "True"
-  fullName: Gameplay.Statistics.StatisticsManager.OnWrongAnswer
-  nameWithType: StatisticsManager.OnWrongAnswer
-- uid: Gameplay.Statistics.StatisticsManager.version
-  name: version
-  href: api/Gameplay.Statistics.StatisticsManager.html#Gameplay_Statistics_StatisticsManager_version
-  commentId: F:Gameplay.Statistics.StatisticsManager.version
-  fullName: Gameplay.Statistics.StatisticsManager.version
-  nameWithType: StatisticsManager.version
+  fullName: Gameplay.Statistics.StatisticsEntry.Version
+  nameWithType: StatisticsEntry.Version
 - uid: Gameplay.UI
   name: Gameplay.UI
   href: api/Gameplay.UI.html
@@ -3755,12 +4268,80 @@ references:
   commentId: F:Gameplay.UI.PaletteGraphic.colorName
   fullName: Gameplay.UI.PaletteGraphic.colorName
   nameWithType: PaletteGraphic.colorName
+- uid: Gameplay.UI.PaletteGraphic.keepAlpha
+  name: keepAlpha
+  href: api/Gameplay.UI.PaletteGraphic.html#Gameplay_UI_PaletteGraphic_keepAlpha
+  commentId: F:Gameplay.UI.PaletteGraphic.keepAlpha
+  fullName: Gameplay.UI.PaletteGraphic.keepAlpha
+  nameWithType: PaletteGraphic.keepAlpha
 - uid: Gameplay.UI.PaletteGraphic.useColorOnSprites
   name: useColorOnSprites
   href: api/Gameplay.UI.PaletteGraphic.html#Gameplay_UI_PaletteGraphic_useColorOnSprites
   commentId: F:Gameplay.UI.PaletteGraphic.useColorOnSprites
   fullName: Gameplay.UI.PaletteGraphic.useColorOnSprites
   nameWithType: PaletteGraphic.useColorOnSprites
+- uid: Gameplay.UI.PaletteSpriteSwitch
+  name: PaletteSpriteSwitch
+  href: api/Gameplay.UI.PaletteSpriteSwitch.html
+  commentId: T:Gameplay.UI.PaletteSpriteSwitch
+  fullName: Gameplay.UI.PaletteSpriteSwitch
+  nameWithType: PaletteSpriteSwitch
+- uid: Gameplay.UI.PaletteSpriteSwitch.ApplySprite
+  name: ApplySprite()
+  href: api/Gameplay.UI.PaletteSpriteSwitch.html#Gameplay_UI_PaletteSpriteSwitch_ApplySprite
+  commentId: M:Gameplay.UI.PaletteSpriteSwitch.ApplySprite
+  fullName: Gameplay.UI.PaletteSpriteSwitch.ApplySprite()
+  nameWithType: PaletteSpriteSwitch.ApplySprite()
+- uid: Gameplay.UI.PaletteSpriteSwitch.ApplySprite*
+  name: ApplySprite
+  href: api/Gameplay.UI.PaletteSpriteSwitch.html#Gameplay_UI_PaletteSpriteSwitch_ApplySprite_
+  commentId: Overload:Gameplay.UI.PaletteSpriteSwitch.ApplySprite
+  isSpec: "True"
+  fullName: Gameplay.UI.PaletteSpriteSwitch.ApplySprite
+  nameWithType: PaletteSpriteSwitch.ApplySprite
+- uid: Gameplay.UI.PaletteSpriteSwitch.paletteSprites
+  name: paletteSprites
+  href: api/Gameplay.UI.PaletteSpriteSwitch.html#Gameplay_UI_PaletteSpriteSwitch_paletteSprites
+  commentId: F:Gameplay.UI.PaletteSpriteSwitch.paletteSprites
+  fullName: Gameplay.UI.PaletteSpriteSwitch.paletteSprites
+  nameWithType: PaletteSpriteSwitch.paletteSprites
+- uid: Gameplay.UI.ScoreItem
+  name: ScoreItem
+  href: api/Gameplay.UI.ScoreItem.html
+  commentId: T:Gameplay.UI.ScoreItem
+  fullName: Gameplay.UI.ScoreItem
+  nameWithType: ScoreItem
+- uid: Gameplay.UI.ScoreItem.#ctor(System.String,System.String,System.Int32)
+  name: ScoreItem(String, String, Int32)
+  href: api/Gameplay.UI.ScoreItem.html#Gameplay_UI_ScoreItem__ctor_System_String_System_String_System_Int32_
+  commentId: M:Gameplay.UI.ScoreItem.#ctor(System.String,System.String,System.Int32)
+  fullName: Gameplay.UI.ScoreItem.ScoreItem(System.String, System.String, System.Int32)
+  nameWithType: ScoreItem.ScoreItem(String, String, Int32)
+- uid: Gameplay.UI.ScoreItem.#ctor*
+  name: ScoreItem
+  href: api/Gameplay.UI.ScoreItem.html#Gameplay_UI_ScoreItem__ctor_
+  commentId: Overload:Gameplay.UI.ScoreItem.#ctor
+  isSpec: "True"
+  fullName: Gameplay.UI.ScoreItem.ScoreItem
+  nameWithType: ScoreItem.ScoreItem
+- uid: Gameplay.UI.ScoreItem.name
+  name: name
+  href: api/Gameplay.UI.ScoreItem.html#Gameplay_UI_ScoreItem_name
+  commentId: F:Gameplay.UI.ScoreItem.name
+  fullName: Gameplay.UI.ScoreItem.name
+  nameWithType: ScoreItem.name
+- uid: Gameplay.UI.ScoreItem.points
+  name: points
+  href: api/Gameplay.UI.ScoreItem.html#Gameplay_UI_ScoreItem_points
+  commentId: F:Gameplay.UI.ScoreItem.points
+  fullName: Gameplay.UI.ScoreItem.points
+  nameWithType: ScoreItem.points
+- uid: Gameplay.UI.ScoreItem.stateText
+  name: stateText
+  href: api/Gameplay.UI.ScoreItem.html#Gameplay_UI_ScoreItem_stateText
+  commentId: F:Gameplay.UI.ScoreItem.stateText
+  fullName: Gameplay.UI.ScoreItem.stateText
+  nameWithType: ScoreItem.stateText
 - uid: Gameplay.UI.SlowPlayback
   name: SlowPlayback
   href: api/Gameplay.UI.SlowPlayback.html
@@ -3859,30 +4440,176 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UIAchievement.UnlockAchievement
   nameWithType: UIAchievement.UnlockAchievement
+- uid: Gameplay.UI.UIGameOverScreen
+  name: UIGameOverScreen
+  href: api/Gameplay.UI.UIGameOverScreen.html
+  commentId: T:Gameplay.UI.UIGameOverScreen
+  fullName: Gameplay.UI.UIGameOverScreen
+  nameWithType: UIGameOverScreen
+- uid: Gameplay.UI.UIGameOverScreen.Popup(StatisticsEntry,List{MetroStation})
+  name: Popup(StatisticsEntry, List<MetroStation>)
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_Popup_StatisticsEntry_List_MetroStation__
+  commentId: M:Gameplay.UI.UIGameOverScreen.Popup(StatisticsEntry,List{MetroStation})
+  name.vb: Popup(StatisticsEntry, List(Of MetroStation))
+  fullName: Gameplay.UI.UIGameOverScreen.Popup(StatisticsEntry, List<MetroStation>)
+  fullName.vb: Gameplay.UI.UIGameOverScreen.Popup(StatisticsEntry, List(Of MetroStation))
+  nameWithType: UIGameOverScreen.Popup(StatisticsEntry, List<MetroStation>)
+  nameWithType.vb: UIGameOverScreen.Popup(StatisticsEntry, List(Of MetroStation))
+- uid: Gameplay.UI.UIGameOverScreen.Popup*
+  name: Popup
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_Popup_
+  commentId: Overload:Gameplay.UI.UIGameOverScreen.Popup
+  isSpec: "True"
+  fullName: Gameplay.UI.UIGameOverScreen.Popup
+  nameWithType: UIGameOverScreen.Popup
+- uid: Gameplay.UI.UIGameOverScreen.scoreItemPrefab
+  name: scoreItemPrefab
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_scoreItemPrefab
+  commentId: F:Gameplay.UI.UIGameOverScreen.scoreItemPrefab
+  fullName: Gameplay.UI.UIGameOverScreen.scoreItemPrefab
+  nameWithType: UIGameOverScreen.scoreItemPrefab
+- uid: Gameplay.UI.UIGameOverScreen.statsTrans
+  name: statsTrans
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_statsTrans
+  commentId: F:Gameplay.UI.UIGameOverScreen.statsTrans
+  fullName: Gameplay.UI.UIGameOverScreen.statsTrans
+  nameWithType: UIGameOverScreen.statsTrans
+- uid: Gameplay.UI.UIGameOverScreen.totalScoreText
+  name: totalScoreText
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_totalScoreText
+  commentId: F:Gameplay.UI.UIGameOverScreen.totalScoreText
+  fullName: Gameplay.UI.UIGameOverScreen.totalScoreText
+  nameWithType: UIGameOverScreen.totalScoreText
+- uid: Gameplay.UI.UIGameOverScreen.unlockedStationsText
+  name: unlockedStationsText
+  href: api/Gameplay.UI.UIGameOverScreen.html#Gameplay_UI_UIGameOverScreen_unlockedStationsText
+  commentId: F:Gameplay.UI.UIGameOverScreen.unlockedStationsText
+  fullName: Gameplay.UI.UIGameOverScreen.unlockedStationsText
+  nameWithType: UIGameOverScreen.unlockedStationsText
+- uid: Gameplay.UI.UIScoreItem
+  name: UIScoreItem
+  href: api/Gameplay.UI.UIScoreItem.html
+  commentId: T:Gameplay.UI.UIScoreItem
+  fullName: Gameplay.UI.UIScoreItem
+  nameWithType: UIScoreItem
+- uid: Gameplay.UI.UIScoreItem.scoreCountText
+  name: scoreCountText
+  href: api/Gameplay.UI.UIScoreItem.html#Gameplay_UI_UIScoreItem_scoreCountText
+  commentId: F:Gameplay.UI.UIScoreItem.scoreCountText
+  fullName: Gameplay.UI.UIScoreItem.scoreCountText
+  nameWithType: UIScoreItem.scoreCountText
+- uid: Gameplay.UI.UIScoreItem.scoreLabel
+  name: scoreLabel
+  href: api/Gameplay.UI.UIScoreItem.html#Gameplay_UI_UIScoreItem_scoreLabel
+  commentId: F:Gameplay.UI.UIScoreItem.scoreLabel
+  fullName: Gameplay.UI.UIScoreItem.scoreLabel
+  nameWithType: UIScoreItem.scoreLabel
+- uid: Gameplay.UI.UISettings
+  name: UISettings
+  href: api/Gameplay.UI.UISettings.html
+  commentId: T:Gameplay.UI.UISettings
+  fullName: Gameplay.UI.UISettings
+  nameWithType: UISettings
+- uid: Gameplay.UI.UISettings.difficultyToggleGroup
+  name: difficultyToggleGroup
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_difficultyToggleGroup
+  commentId: F:Gameplay.UI.UISettings.difficultyToggleGroup
+  fullName: Gameplay.UI.UISettings.difficultyToggleGroup
+  nameWithType: UISettings.difficultyToggleGroup
+- uid: Gameplay.UI.UISettings.LoadGame
+  name: LoadGame()
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadGame
+  commentId: M:Gameplay.UI.UISettings.LoadGame
+  fullName: Gameplay.UI.UISettings.LoadGame()
+  nameWithType: UISettings.LoadGame()
+- uid: Gameplay.UI.UISettings.LoadGame*
+  name: LoadGame
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadGame_
+  commentId: Overload:Gameplay.UI.UISettings.LoadGame
+  isSpec: "True"
+  fullName: Gameplay.UI.UISettings.LoadGame
+  nameWithType: UISettings.LoadGame
+- uid: Gameplay.UI.UISettings.LoadMenu
+  name: LoadMenu()
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadMenu
+  commentId: M:Gameplay.UI.UISettings.LoadMenu
+  fullName: Gameplay.UI.UISettings.LoadMenu()
+  nameWithType: UISettings.LoadMenu()
+- uid: Gameplay.UI.UISettings.LoadMenu*
+  name: LoadMenu
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadMenu_
+  commentId: Overload:Gameplay.UI.UISettings.LoadMenu
+  isSpec: "True"
+  fullName: Gameplay.UI.UISettings.LoadMenu
+  nameWithType: UISettings.LoadMenu
+- uid: Gameplay.UI.UISettings.SetDifficulty(System.Int32)
+  name: SetDifficulty(Int32)
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_SetDifficulty_System_Int32_
+  commentId: M:Gameplay.UI.UISettings.SetDifficulty(System.Int32)
+  fullName: Gameplay.UI.UISettings.SetDifficulty(System.Int32)
+  nameWithType: UISettings.SetDifficulty(Int32)
+- uid: Gameplay.UI.UISettings.SetDifficulty*
+  name: SetDifficulty
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_SetDifficulty_
+  commentId: Overload:Gameplay.UI.UISettings.SetDifficulty
+  isSpec: "True"
+  fullName: Gameplay.UI.UISettings.SetDifficulty
+  nameWithType: UISettings.SetDifficulty
+- uid: Gameplay.UI.UISettings.SetTheme(System.Boolean)
+  name: SetTheme(Boolean)
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_SetTheme_System_Boolean_
+  commentId: M:Gameplay.UI.UISettings.SetTheme(System.Boolean)
+  fullName: Gameplay.UI.UISettings.SetTheme(System.Boolean)
+  nameWithType: UISettings.SetTheme(Boolean)
+- uid: Gameplay.UI.UISettings.SetTheme*
+  name: SetTheme
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_SetTheme_
+  commentId: Overload:Gameplay.UI.UISettings.SetTheme
+  isSpec: "True"
+  fullName: Gameplay.UI.UISettings.SetTheme
+  nameWithType: UISettings.SetTheme
+- uid: Gameplay.UI.UISettings.themeToggle
+  name: themeToggle
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_themeToggle
+  commentId: F:Gameplay.UI.UISettings.themeToggle
+  fullName: Gameplay.UI.UISettings.themeToggle
+  nameWithType: UISettings.themeToggle
 - uid: Gameplay.UI.UITopBar
   name: UITopBar
   href: api/Gameplay.UI.UITopBar.html
   commentId: T:Gameplay.UI.UITopBar
   fullName: Gameplay.UI.UITopBar
   nameWithType: UITopBar
+- uid: Gameplay.UI.UITopBar.attemptsFill
+  name: attemptsFill
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_attemptsFill
+  commentId: F:Gameplay.UI.UITopBar.attemptsFill
+  fullName: Gameplay.UI.UITopBar.attemptsFill
+  nameWithType: UITopBar.attemptsFill
 - uid: Gameplay.UI.UITopBar.attemptsLabel
   name: attemptsLabel
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_attemptsLabel
   commentId: F:Gameplay.UI.UITopBar.attemptsLabel
   fullName: Gameplay.UI.UITopBar.attemptsLabel
   nameWithType: UITopBar.attemptsLabel
+- uid: Gameplay.UI.UITopBar.fillSpeed
+  name: fillSpeed
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_fillSpeed
+  commentId: F:Gameplay.UI.UITopBar.fillSpeed
+  fullName: Gameplay.UI.UITopBar.fillSpeed
+  nameWithType: UITopBar.fillSpeed
 - uid: Gameplay.UI.UITopBar.gameModeLabel
   name: gameModeLabel
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_gameModeLabel
   commentId: F:Gameplay.UI.UITopBar.gameModeLabel
   fullName: Gameplay.UI.UITopBar.gameModeLabel
   nameWithType: UITopBar.gameModeLabel
-- uid: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
-  name: SetCurrentAttempts(Int32)
-  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentAttempts_System_Int32_
-  commentId: M:Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
-  fullName: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32)
-  nameWithType: UITopBar.SetCurrentAttempts(Int32)
+- uid: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32,System.Int32,System.Single)
+  name: SetCurrentAttempts(Int32, Int32, Single)
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentAttempts_System_Int32_System_Int32_System_Single_
+  commentId: M:Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32,System.Int32,System.Single)
+  fullName: Gameplay.UI.UITopBar.SetCurrentAttempts(System.Int32, System.Int32, System.Single)
+  nameWithType: UITopBar.SetCurrentAttempts(Int32, Int32, Single)
 - uid: Gameplay.UI.UITopBar.SetCurrentAttempts*
   name: SetCurrentAttempts
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentAttempts_
@@ -3890,6 +4617,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UITopBar.SetCurrentAttempts
   nameWithType: UITopBar.SetCurrentAttempts
+- uid: Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate(System.Int32,System.Single)
+  name: SetCurrentAttemptsImmidiate(Int32, Single)
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentAttemptsImmidiate_System_Int32_System_Single_
+  commentId: M:Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate(System.Int32,System.Single)
+  fullName: Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate(System.Int32, System.Single)
+  nameWithType: UITopBar.SetCurrentAttemptsImmidiate(Int32, Single)
+- uid: Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate*
+  name: SetCurrentAttemptsImmidiate
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentAttemptsImmidiate_
+  commentId: Overload:Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate
+  isSpec: "True"
+  fullName: Gameplay.UI.UITopBar.SetCurrentAttemptsImmidiate
+  nameWithType: UITopBar.SetCurrentAttemptsImmidiate
 - uid: Gameplay.UI.UITopBar.SetCurrentLabel(System.String)
   name: SetCurrentLabel(String)
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_SetCurrentLabel_System_String_
@@ -3903,6 +4643,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UITopBar.SetCurrentLabel
   nameWithType: UITopBar.SetCurrentLabel
+- uid: Gameplay.UI.UITopBar.ShowMessage(System.String)
+  name: ShowMessage(String)
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_ShowMessage_System_String_
+  commentId: M:Gameplay.UI.UITopBar.ShowMessage(System.String)
+  fullName: Gameplay.UI.UITopBar.ShowMessage(System.String)
+  nameWithType: UITopBar.ShowMessage(String)
+- uid: Gameplay.UI.UITopBar.ShowMessage*
+  name: ShowMessage
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_ShowMessage_
+  commentId: Overload:Gameplay.UI.UITopBar.ShowMessage
+  isSpec: "True"
+  fullName: Gameplay.UI.UITopBar.ShowMessage
+  nameWithType: UITopBar.ShowMessage
 - uid: Gameplay.UI.UITopBar.StartCountdown(System.Single)
   name: StartCountdown(Single)
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_StartCountdown_System_Single_
@@ -3922,6 +4675,12 @@ references:
   commentId: F:Gameplay.UI.UITopBar.statusLabel
   fullName: Gameplay.UI.UITopBar.statusLabel
   nameWithType: UITopBar.statusLabel
+- uid: Gameplay.UI.UITopBar.tipButtonObject
+  name: tipButtonObject
+  href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_tipButtonObject
+  commentId: F:Gameplay.UI.UITopBar.tipButtonObject
+  fullName: Gameplay.UI.UITopBar.tipButtonObject
+  nameWithType: UITopBar.tipButtonObject
 - uid: Gameplay.UI.UITopBar.UpdateStatus(System.Boolean,System.Int32,System.Int32)
   name: UpdateStatus(Boolean, Int32, Int32)
   href: api/Gameplay.UI.UITopBar.html#Gameplay_UI_UITopBar_UpdateStatus_System_Boolean_System_Int32_System_Int32_
@@ -4096,31 +4855,79 @@ references:
   isSpec: "True"
   fullName: ScriptableObjects.ColorPalette.currentTheme
   nameWithType: ColorPalette.currentTheme
-- uid: ScriptableObjects.ColorPalette.lightTheme
-  name: lightTheme
-  href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_lightTheme
-  commentId: P:ScriptableObjects.ColorPalette.lightTheme
-  fullName: ScriptableObjects.ColorPalette.lightTheme
-  nameWithType: ColorPalette.lightTheme
-- uid: ScriptableObjects.ColorPalette.lightTheme*
-  name: lightTheme
-  href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_lightTheme_
-  commentId: Overload:ScriptableObjects.ColorPalette.lightTheme
-  isSpec: "True"
-  fullName: ScriptableObjects.ColorPalette.lightTheme
-  nameWithType: ColorPalette.lightTheme
+- uid: ScriptableObjects.ColorPalette.m_themeIndex
+  name: m_themeIndex
+  href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_m_themeIndex
+  commentId: F:ScriptableObjects.ColorPalette.m_themeIndex
+  fullName: ScriptableObjects.ColorPalette.m_themeIndex
+  nameWithType: ColorPalette.m_themeIndex
 - uid: ScriptableObjects.ColorPalette.paletteChanged
   name: paletteChanged
   href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_paletteChanged
   commentId: F:ScriptableObjects.ColorPalette.paletteChanged
   fullName: ScriptableObjects.ColorPalette.paletteChanged
   nameWithType: ColorPalette.paletteChanged
+- uid: ScriptableObjects.ColorPalette.themeIndex
+  name: themeIndex
+  href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_themeIndex
+  commentId: P:ScriptableObjects.ColorPalette.themeIndex
+  fullName: ScriptableObjects.ColorPalette.themeIndex
+  nameWithType: ColorPalette.themeIndex
+- uid: ScriptableObjects.ColorPalette.themeIndex*
+  name: themeIndex
+  href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_themeIndex_
+  commentId: Overload:ScriptableObjects.ColorPalette.themeIndex
+  isSpec: "True"
+  fullName: ScriptableObjects.ColorPalette.themeIndex
+  nameWithType: ColorPalette.themeIndex
 - uid: ScriptableObjects.ColorPalette.themes
   name: themes
   href: api/ScriptableObjects.ColorPalette.html#ScriptableObjects_ColorPalette_themes
   commentId: F:ScriptableObjects.ColorPalette.themes
   fullName: ScriptableObjects.ColorPalette.themes
   nameWithType: ColorPalette.themes
+- uid: ScriptableObjects.Difficulty
+  name: Difficulty
+  href: api/ScriptableObjects.Difficulty.html
+  commentId: T:ScriptableObjects.Difficulty
+  fullName: ScriptableObjects.Difficulty
+  nameWithType: Difficulty
+- uid: ScriptableObjects.Difficulty.allowHints
+  name: allowHints
+  href: api/ScriptableObjects.Difficulty.html#ScriptableObjects_Difficulty_allowHints
+  commentId: F:ScriptableObjects.Difficulty.allowHints
+  fullName: ScriptableObjects.Difficulty.allowHints
+  nameWithType: Difficulty.allowHints
+- uid: ScriptableObjects.Difficulty.difficultyName
+  name: difficultyName
+  href: api/ScriptableObjects.Difficulty.html#ScriptableObjects_Difficulty_difficultyName
+  commentId: F:ScriptableObjects.Difficulty.difficultyName
+  fullName: ScriptableObjects.Difficulty.difficultyName
+  nameWithType: Difficulty.difficultyName
+- uid: ScriptableObjects.Difficulty.maxAttempts
+  name: maxAttempts
+  href: api/ScriptableObjects.Difficulty.html#ScriptableObjects_Difficulty_maxAttempts
+  commentId: F:ScriptableObjects.Difficulty.maxAttempts
+  fullName: ScriptableObjects.Difficulty.maxAttempts
+  nameWithType: Difficulty.maxAttempts
+- uid: ScriptableObjects.Difficulty.partialPerAttempt
+  name: partialPerAttempt
+  href: api/ScriptableObjects.Difficulty.html#ScriptableObjects_Difficulty_partialPerAttempt
+  commentId: F:ScriptableObjects.Difficulty.partialPerAttempt
+  fullName: ScriptableObjects.Difficulty.partialPerAttempt
+  nameWithType: Difficulty.partialPerAttempt
+- uid: ScriptableObjects.DifficultyConfig
+  name: DifficultyConfig
+  href: api/ScriptableObjects.DifficultyConfig.html
+  commentId: T:ScriptableObjects.DifficultyConfig
+  fullName: ScriptableObjects.DifficultyConfig
+  nameWithType: DifficultyConfig
+- uid: ScriptableObjects.DifficultyConfig.difficulties
+  name: difficulties
+  href: api/ScriptableObjects.DifficultyConfig.html#ScriptableObjects_DifficultyConfig_difficulties
+  commentId: F:ScriptableObjects.DifficultyConfig.difficulties
+  fullName: ScriptableObjects.DifficultyConfig.difficulties
+  nameWithType: DifficultyConfig.difficulties
 - uid: ScriptableObjects.GenericDB`1
   name: GenericDB<T>
   href: api/ScriptableObjects.GenericDB-1.html
@@ -4327,6 +5134,12 @@ references:
   commentId: F:ScriptableObjects.Theme.lineColor
   fullName: ScriptableObjects.Theme.lineColor
   nameWithType: Theme.lineColor
+- uid: ScriptableObjects.Theme.middleBackground
+  name: middleBackground
+  href: api/ScriptableObjects.Theme.html#ScriptableObjects_Theme_middleBackground
+  commentId: F:ScriptableObjects.Theme.middleBackground
+  fullName: ScriptableObjects.Theme.middleBackground
+  nameWithType: Theme.middleBackground
 - uid: ScriptableObjects.Theme.rightAnswer
   name: rightAnswer
   href: api/ScriptableObjects.Theme.html#ScriptableObjects_Theme_rightAnswer
@@ -4375,6 +5188,37 @@ references:
   commentId: T:Util.EditorExtensions
   fullName: Util.EditorExtensions
   nameWithType: EditorExtensions
+- uid: Util.EventToggleGroup
+  name: EventToggleGroup
+  href: api/Util.EventToggleGroup.html
+  commentId: T:Util.EventToggleGroup
+  fullName: Util.EventToggleGroup
+  nameWithType: EventToggleGroup
+- uid: Util.EventToggleGroup.onActiveTogglesChanged
+  name: onActiveTogglesChanged
+  href: api/Util.EventToggleGroup.html#Util_EventToggleGroup_onActiveTogglesChanged
+  commentId: F:Util.EventToggleGroup.onActiveTogglesChanged
+  fullName: Util.EventToggleGroup.onActiveTogglesChanged
+  nameWithType: EventToggleGroup.onActiveTogglesChanged
+- uid: Util.EventToggleGroup.SetToggle(System.Int32)
+  name: SetToggle(Int32)
+  href: api/Util.EventToggleGroup.html#Util_EventToggleGroup_SetToggle_System_Int32_
+  commentId: M:Util.EventToggleGroup.SetToggle(System.Int32)
+  fullName: Util.EventToggleGroup.SetToggle(System.Int32)
+  nameWithType: EventToggleGroup.SetToggle(Int32)
+- uid: Util.EventToggleGroup.SetToggle*
+  name: SetToggle
+  href: api/Util.EventToggleGroup.html#Util_EventToggleGroup_SetToggle_
+  commentId: Overload:Util.EventToggleGroup.SetToggle
+  isSpec: "True"
+  fullName: Util.EventToggleGroup.SetToggle
+  nameWithType: EventToggleGroup.SetToggle
+- uid: Util.EventToggleGroup.ToggleEvent
+  name: EventToggleGroup.ToggleEvent
+  href: api/Util.EventToggleGroup.ToggleEvent.html
+  commentId: T:Util.EventToggleGroup.ToggleEvent
+  fullName: Util.EventToggleGroup.ToggleEvent
+  nameWithType: EventToggleGroup.ToggleEvent
 - uid: Util.GameObjectExtensions
   name: GameObjectExtensions
   href: api/Util.GameObjectExtensions.html
@@ -4540,6 +5384,12 @@ references:
   commentId: M:Util.MathExtensions.Average(System.Single,System.Single,System.Int32)
   fullName: Util.MathExtensions.Average(System.Single, System.Single, System.Int32)
   nameWithType: MathExtensions.Average(Single, Single, Int32)
+- uid: Util.MathExtensions.Average(System.Single,System.Single,System.Int32,System.Int32)
+  name: Average(Single, Single, Int32, Int32)
+  href: api/Util.MathExtensions.html#Util_MathExtensions_Average_System_Single_System_Single_System_Int32_System_Int32_
+  commentId: M:Util.MathExtensions.Average(System.Single,System.Single,System.Int32,System.Int32)
+  fullName: Util.MathExtensions.Average(System.Single, System.Single, System.Int32, System.Int32)
+  nameWithType: MathExtensions.Average(Single, Single, Int32, Int32)
 - uid: Util.MathExtensions.Average*
   name: Average
   href: api/Util.MathExtensions.html#Util_MathExtensions_Average_
@@ -4846,6 +5696,12 @@ references:
   isSpec: "True"
   fullName: Util.MathExtensions.WithY
   nameWithType: MathExtensions.WithY
+- uid: Util.PauseController
+  name: PauseController
+  href: api/Util.PauseController.html
+  commentId: T:Util.PauseController
+  fullName: Util.PauseController
+  nameWithType: PauseController
 - uid: Util.RandomUtils
   name: RandomUtils
   href: api/Util.RandomUtils.html
@@ -4876,6 +5732,12 @@ references:
   commentId: M:Util.RandomUtils.ConstrainedRandom(System.Byte,System.Int32,System.Int32)
   fullName: Util.RandomUtils.ConstrainedRandom(System.Byte, System.Int32, System.Int32)
   nameWithType: RandomUtils.ConstrainedRandom(Byte, Int32, Int32)
+- uid: Util.RandomUtils.ConstrainedRandom(System.Int32,System.Int32,System.Int32)
+  name: ConstrainedRandom(Int32, Int32, Int32)
+  href: api/Util.RandomUtils.html#Util_RandomUtils_ConstrainedRandom_System_Int32_System_Int32_System_Int32_
+  commentId: M:Util.RandomUtils.ConstrainedRandom(System.Int32,System.Int32,System.Int32)
+  fullName: Util.RandomUtils.ConstrainedRandom(System.Int32, System.Int32, System.Int32)
+  nameWithType: RandomUtils.ConstrainedRandom(Int32, Int32, Int32)
 - uid: Util.RandomUtils.ConstrainedRandom*
   name: ConstrainedRandom
   href: api/Util.RandomUtils.html#Util_RandomUtils_ConstrainedRandom_
@@ -4883,25 +5745,22 @@ references:
   isSpec: "True"
   fullName: Util.RandomUtils.ConstrainedRandom
   nameWithType: RandomUtils.ConstrainedRandom
-- uid: Util.RectUtils
-  name: RectUtils
-  href: api/Util.RectUtils.html
-  commentId: T:Util.RectUtils
-  fullName: Util.RectUtils
-  nameWithType: RectUtils
-- uid: Util.RectUtils.ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
-  name: ResizeRect(Rect, Handles.CapFunction, Color, Color, Single, Single)
-  href: api/Util.RectUtils.html#Util_RectUtils_ResizeRect_Rect_Handles_CapFunction_Color_Color_System_Single_System_Single_
-  commentId: M:Util.RectUtils.ResizeRect(Rect,Handles.CapFunction,Color,Color,System.Single,System.Single)
-  fullName: Util.RectUtils.ResizeRect(Rect, Handles.CapFunction, Color, Color, System.Single, System.Single)
-  nameWithType: RectUtils.ResizeRect(Rect, Handles.CapFunction, Color, Color, Single, Single)
-- uid: Util.RectUtils.ResizeRect*
-  name: ResizeRect
-  href: api/Util.RectUtils.html#Util_RectUtils_ResizeRect_
-  commentId: Overload:Util.RectUtils.ResizeRect
+- uid: Util.RandomUtils.RandomElementByWeight*
+  name: RandomElementByWeight
+  href: api/Util.RandomUtils.html#Util_RandomUtils_RandomElementByWeight_
+  commentId: Overload:Util.RandomUtils.RandomElementByWeight
   isSpec: "True"
-  fullName: Util.RectUtils.ResizeRect
-  nameWithType: RectUtils.ResizeRect
+  fullName: Util.RandomUtils.RandomElementByWeight
+  nameWithType: RandomUtils.RandomElementByWeight
+- uid: Util.RandomUtils.RandomElementByWeight``1(IEnumerable{``0},Func{``0,System.Single})
+  name: RandomElementByWeight<T>(IEnumerable<T>, Func<T, Single>)
+  href: api/Util.RandomUtils.html#Util_RandomUtils_RandomElementByWeight__1_IEnumerable___0__Func___0_System_Single__
+  commentId: M:Util.RandomUtils.RandomElementByWeight``1(IEnumerable{``0},Func{``0,System.Single})
+  name.vb: RandomElementByWeight(Of T)(IEnumerable(Of T), Func(Of T, Single))
+  fullName: Util.RandomUtils.RandomElementByWeight<T>(IEnumerable<T>, Func<T, System.Single>)
+  fullName.vb: Util.RandomUtils.RandomElementByWeight(Of T)(IEnumerable(Of T), Func(Of T, System.Single))
+  nameWithType: RandomUtils.RandomElementByWeight<T>(IEnumerable<T>, Func<T, Single>)
+  nameWithType.vb: RandomUtils.RandomElementByWeight(Of T)(IEnumerable(Of T), Func(Of T, Single))
 - uid: Util.RenameAttribute
   name: RenameAttribute
   href: api/Util.RenameAttribute.html

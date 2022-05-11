@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class GameModel
+    <title>Struct ScoreItem
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class GameModel
+    <meta name="title" content="Struct ScoreItem
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,36 +78,69 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.GameModel">
+            <article class="content wrap" id="_content" data-uid="Gameplay.UI.ScoreItem">
   
   
-  <h1 id="Gameplay_GameModel" data-uid="Gameplay.GameModel" class="text-break">Class GameModel
+  <h1 id="Gameplay_UI_ScoreItem" data-uid="Gameplay.UI.ScoreItem" class="text-break">Struct ScoreItem
   </h1>
-  <div class="markdown level0 summary"><p>Game model contains all important game classes and stores them for easy access from anywhere</p>
+  <div class="markdown level0 summary"><p>Struct for data about one score point</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">GameModel</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.html">Gameplay</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.UI.html">Gameplay.UI</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_GameModel_syntax">Syntax</h5>
+  <h5 id="Gameplay_UI_ScoreItem_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class GameModel</code></pre>
+    <pre><code class="lang-csharp hljs">public struct ScoreItem</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Gameplay_UI_ScoreItem__ctor_" data-uid="Gameplay.UI.ScoreItem.#ctor*"></a>
+  <h4 id="Gameplay_UI_ScoreItem__ctor_System_String_System_String_System_Int32_" data-uid="Gameplay.UI.ScoreItem.#ctor(System.String,System.String,System.Int32)">ScoreItem(String, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScoreItem(string name, string stateText, int points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">stateText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Gameplay_GameModel_achievements" data-uid="Gameplay.GameModel.achievements">achievements</h4>
+  <h4 id="Gameplay_UI_ScoreItem_name" data-uid="Gameplay.UI.ScoreItem.name">name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIAchievement achievements</code></pre>
+    <pre><code class="lang-csharp hljs">public string name</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,19 +152,19 @@ public class GameModel</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UIAchievement</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_GameModel_cameraController" data-uid="Gameplay.GameModel.cameraController">cameraController</h4>
+  <h4 id="Gameplay_UI_ScoreItem_points" data-uid="Gameplay.UI.ScoreItem.points">points</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TouchCameraController cameraController</code></pre>
+    <pre><code class="lang-csharp hljs">public int points</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,19 +176,19 @@ public class GameModel</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TouchCameraController</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_GameModel_gameOverScreen" data-uid="Gameplay.GameModel.gameOverScreen">gameOverScreen</h4>
+  <h4 id="Gameplay_UI_ScoreItem_stateText" data-uid="Gameplay.UI.ScoreItem.stateText">stateText</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UIGameOverScreen gameOverScreen</code></pre>
+    <pre><code class="lang-csharp hljs">public string stateText</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,151 +200,7 @@ public class GameModel</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UIGameOverScreen</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_input" data-uid="Gameplay.GameModel.input">input</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlayerInput input</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">PlayerInput</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_palette" data-uid="Gameplay.GameModel.palette">palette</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ColorPalette palette</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ColorPalette</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_questions" data-uid="Gameplay.GameModel.questions">questions</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QuestionController questions</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">QuestionController</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_renderer" data-uid="Gameplay.GameModel.renderer">renderer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MetroRenderer renderer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MetroRenderer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_settings" data-uid="Gameplay.GameModel.settings">settings</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SettingsController settings</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SettingsController</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_GameModel_statistics" data-uid="Gameplay.GameModel.statistics">statistics</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public StatisticsManager statistics</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">StatisticsManager</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>

@@ -404,6 +404,63 @@
   </table>
   
   
+  <a id="Util_MathExtensions_Average_" data-uid="Util.MathExtensions.Average*"></a>
+  <h4 id="Util_MathExtensions_Average_System_Single_System_Single_System_Int32_System_Int32_" data-uid="Util.MathExtensions.Average(System.Single,System.Single,System.Int32,System.Int32)">Average(Single, Single, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Average(this float current, float other, int currentCount, int otherCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">current</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">currentCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">otherCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Util_MathExtensions_Clamp2_" data-uid="Util.MathExtensions.Clamp2*"></a>
   <h4 id="Util_MathExtensions_Clamp2_Rect_Vector2_System_Single_" data-uid="Util.MathExtensions.Clamp2(Rect,Vector2,System.Single)">Clamp2(Rect, Vector2, Single)</h4>
   <div class="markdown level1 summary"><p>Extends/shrinks the rect by extendDistance to each side and then restricts the given vector to the resulting rect.</p>
@@ -1337,7 +1394,7 @@ The z component is kept.</p>
   
   <a id="Util_MathExtensions_Shuffle_" data-uid="Util.MathExtensions.Shuffle*"></a>
   <h4 id="Util_MathExtensions_Shuffle__1_IList___0__" data-uid="Util.MathExtensions.Shuffle``1(IList{``0})">Shuffle&lt;T&gt;(IList&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Randomly shuffle a list</p>
+  <div class="markdown level1 summary"><p>Randomly shuffle a list, such that no element can stay in it&apos;s original index</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

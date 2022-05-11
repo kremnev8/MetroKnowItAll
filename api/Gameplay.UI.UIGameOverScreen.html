@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UIQuestionFindLine
+    <title>Class UIGameOverScreen
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UIQuestionFindLine
+    <meta name="title" content="Class UIGameOverScreen
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,51 +78,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine">
+            <article class="content wrap" id="_content" data-uid="Gameplay.UI.UIGameOverScreen">
   
   
-  <h1 id="Gameplay_Questions_Generators_UIQuestionFindLine" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine" class="text-break">Class UIQuestionFindLine
+  <h1 id="Gameplay_UI_UIGameOverScreen" data-uid="Gameplay.UI.UIGameOverScreen" class="text-break">Class UIGameOverScreen
   </h1>
-  <div class="markdown level0 summary"><p>UI for <a class="xref" href="Gameplay.Questions.Generators.FindLineGenerator.html">FindLineGenerator</a></p>
+  <div class="markdown level0 summary"><p>Controls how game over screen is displayed.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html">BaseUIQuestion</a></div>
-    <div class="level2"><span class="xref">UIQuestionFindLine</span></div>
+    <div class="level1"><span class="xref">UIGameOverScreen</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_renderer">BaseUIQuestion.renderer</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_bottomPane">BaseUIQuestion.bottomPane</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_questionLabel">BaseUIQuestion.questionLabel</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_HideElements">BaseUIQuestion.HideElements()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Questions.Generators.html">Gameplay.Questions.Generators</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.UI.html">Gameplay.UI</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_Questions_Generators_UIQuestionFindLine_syntax">Syntax</h5>
+  <h5 id="Gameplay_UI_UIGameOverScreen_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UIQuestionFindLine : BaseUIQuestion</code></pre>
+    <pre><code class="lang-csharp hljs">public class UIGameOverScreen : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_button" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.button">button</h4>
+  <h4 id="Gameplay_UI_UIGameOverScreen_scoreItemPrefab" data-uid="Gameplay.UI.UIGameOverScreen.scoreItemPrefab">scoreItemPrefab</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TouchButton button</code></pre>
+    <pre><code class="lang-csharp hljs">public UIScoreItem scoreItemPrefab</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,7 +118,79 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TouchButton</span></td>
+        <td><a class="xref" href="Gameplay.UI.UIScoreItem.html">UIScoreItem</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_UI_UIGameOverScreen_statsTrans" data-uid="Gameplay.UI.UIGameOverScreen.statsTrans">statsTrans</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform statsTrans</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_UI_UIGameOverScreen_totalScoreText" data-uid="Gameplay.UI.UIGameOverScreen.totalScoreText">totalScoreText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMP_Text totalScoreText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMP_Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_UI_UIGameOverScreen_unlockedStationsText" data-uid="Gameplay.UI.UIGameOverScreen.unlockedStationsText">unlockedStationsText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMP_Text unlockedStationsText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMP_Text</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -143,38 +199,13 @@
   </h3>
   
   
-  <a id="Gameplay_Questions_Generators_UIQuestionFindLine_CurrentSelection_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.CurrentSelection*"></a>
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_CurrentSelection" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.CurrentSelection">CurrentSelection()</h4>
+  <a id="Gameplay_UI_UIGameOverScreen_Popup_" data-uid="Gameplay.UI.UIGameOverScreen.Popup*"></a>
+  <h4 id="Gameplay_UI_UIGameOverScreen_Popup_StatisticsEntry_List_MetroStation__" data-uid="Gameplay.UI.UIGameOverScreen.Popup(StatisticsEntry,List{MetroStation})">Popup(StatisticsEntry, List&lt;MetroStation&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MetroLine CurrentSelection()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MetroLine</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Gameplay_Questions_Generators_UIQuestionFindLine_DisplayResult_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.DisplayResult*"></a>
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_DisplayResult_System_Boolean_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.DisplayResult(System.Boolean)">DisplayResult(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DisplayResult(bool result)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Popup(StatisticsEntry statistics, List&lt;MetroStation&gt; unlockedStations)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,89 +218,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">result</span></td>
+        <td><span class="xref">StatisticsEntry</span></td>
+        <td><span class="parametername">statistics</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Gameplay_Questions_Generators_UIQuestionFindLine_GetController_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.GetController*"></a>
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_GetController" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.GetController">GetController()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override BaseQuestionGenerator GetController()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html">BaseQuestionGenerator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html#Gameplay_Questions_BaseUIQuestion_GetController">BaseUIQuestion.GetController()</a></div>
-  
-  
-  <a id="Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion*"></a>
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_MetroLine_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroLine)">SetQuestion(MetroLine)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetQuestion(MetroLine line)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MetroLine</span></td>
-        <td><span class="parametername">line</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion*"></a>
-  <h4 id="Gameplay_Questions_Generators_UIQuestionFindLine_SetQuestion_MetroStation_" data-uid="Gameplay.Questions.Generators.UIQuestionFindLine.SetQuestion(MetroStation)">SetQuestion(MetroStation)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetQuestion(MetroStation station)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MetroStation</span></td>
-        <td><span class="parametername">station</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
+        <td><span class="parametername">unlockedStations</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UISwipe
+    <title>Class QuestionController
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UISwipe
+    <meta name="title" content="Class QuestionController
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,35 +78,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.Controls.UISwipe">
+            <article class="content wrap" id="_content" data-uid="Gameplay.Conrollers.QuestionController">
   
   
-  <h1 id="Gameplay_Controls_UISwipe" data-uid="Gameplay.Controls.UISwipe" class="text-break">Class UISwipe
+  <h1 id="Gameplay_Conrollers_QuestionController" data-uid="Gameplay.Conrollers.QuestionController" class="text-break">Class QuestionController
   </h1>
-  <div class="markdown level0 summary"><p>UI control that allows to swipe an UI element up and down to open and hide it</p>
+  <div class="markdown level0 summary"><p>Selects and Manages question asking process. Contains all active <see cref="!:BaseQuestionGenerator"></see> and <see cref="!:BaseUIQuestion"></see></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">UISwipe</span></div>
+    <div class="level1"><span class="xref">QuestionController</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Controls.html">Gameplay.Controls</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_Controls_UISwipe_syntax">Syntax</h5>
+  <h5 id="Gameplay_Conrollers_QuestionController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UISwipe : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class QuestionController : MonoBehaviour</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_closedPosition" data-uid="Gameplay.Controls.UISwipe.closedPosition">closedPosition</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_allRegions" data-uid="Gameplay.Conrollers.QuestionController.allRegions">allRegions</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 closedPosition</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;Region&gt; allRegions</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,19 +118,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><span class="xref">List</span>&lt;<span class="xref">Region</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_closeThreshold" data-uid="Gameplay.Controls.UISwipe.closeThreshold">closeThreshold</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_answerPanelSwipe" data-uid="Gameplay.Conrollers.QuestionController.answerPanelSwipe">answerPanelSwipe</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 closeThreshold</code></pre>
+    <pre><code class="lang-csharp hljs">public UISwipe answerPanelSwipe</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -142,43 +142,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><span class="xref">UISwipe</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_content" data-uid="Gameplay.Controls.UISwipe.content">content</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_AnswerTimeElapsed" data-uid="Gameplay.Conrollers.QuestionController.AnswerTimeElapsed">AnswerTimeElapsed</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject content</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">GameObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_Controls_UISwipe_friction" data-uid="Gameplay.Controls.UISwipe.friction">friction</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float friction</code></pre>
+    <pre><code class="lang-csharp hljs">public float AnswerTimeElapsed</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,12 +173,12 @@
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_isReturning" data-uid="Gameplay.Controls.UISwipe.isReturning">isReturning</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_isResting" data-uid="Gameplay.Conrollers.QuestionController.isResting">isResting</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool isReturning</code></pre>
+    <pre><code class="lang-csharp hljs">public bool isResting</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,12 +197,12 @@
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_moveAxis" data-uid="Gameplay.Controls.UISwipe.moveAxis">moveAxis</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_onQuestionChanged" data-uid="Gameplay.Conrollers.QuestionController.onQuestionChanged">onQuestionChanged</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector2 moveAxis</code></pre>
+    <pre><code class="lang-csharp hljs">public static Action onQuestionChanged</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -238,19 +214,91 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Vector2</span></td>
+        <td><span class="xref">Action</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_returnSpeed" data-uid="Gameplay.Controls.UISwipe.returnSpeed">returnSpeed</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_questionGenerators" data-uid="Gameplay.Conrollers.QuestionController.questionGenerators">questionGenerators</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float returnSpeed</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;BaseQuestionGenerator&gt; questionGenerators</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">BaseQuestionGenerator</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_QuestionController_questionsPerRegion" data-uid="Gameplay.Conrollers.QuestionController.questionsPerRegion">questionsPerRegion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int questionsPerRegion</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_QuestionController_questionUI" data-uid="Gameplay.Conrollers.QuestionController.questionUI">questionUI</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BaseUIQuestion&gt; questionUI</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">BaseUIQuestion</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_QuestionController_timeout" data-uid="Gameplay.Conrollers.QuestionController.timeout">timeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeout</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,12 +317,12 @@
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_shouldDisableContent" data-uid="Gameplay.Controls.UISwipe.shouldDisableContent">shouldDisableContent</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_topBar" data-uid="Gameplay.Conrollers.QuestionController.topBar">topBar</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool shouldDisableContent</code></pre>
+    <pre><code class="lang-csharp hljs">public UITopBar topBar</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,19 +334,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">UITopBar</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Gameplay_Controls_UISwipe_twoWay" data-uid="Gameplay.Controls.UISwipe.twoWay">twoWay</h4>
+  <h4 id="Gameplay_Conrollers_QuestionController_uiQuestionTransfrom" data-uid="Gameplay.Conrollers.QuestionController.uiQuestionTransfrom">uiQuestionTransfrom</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool twoWay</code></pre>
+    <pre><code class="lang-csharp hljs">public Transform uiQuestionTransfrom</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,7 +358,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">Transform</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -319,23 +367,95 @@
   </h3>
   
   
-  <a id="Gameplay_Controls_UISwipe_ForceClosed_" data-uid="Gameplay.Controls.UISwipe.ForceClosed*"></a>
-  <h4 id="Gameplay_Controls_UISwipe_ForceClosed" data-uid="Gameplay.Controls.UISwipe.ForceClosed">ForceClosed()</h4>
+  <a id="Gameplay_Conrollers_QuestionController_CheckAnswer_" data-uid="Gameplay.Conrollers.QuestionController.CheckAnswer*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_CheckAnswer" data-uid="Gameplay.Conrollers.QuestionController.CheckAnswer">CheckAnswer()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ForceClosed()</code></pre>
+    <pre><code class="lang-csharp hljs">public void CheckAnswer()</code></pre>
   </div>
   
   
-  <a id="Gameplay_Controls_UISwipe_ForceOpen_" data-uid="Gameplay.Controls.UISwipe.ForceOpen*"></a>
-  <h4 id="Gameplay_Controls_UISwipe_ForceOpen" data-uid="Gameplay.Controls.UISwipe.ForceOpen">ForceOpen()</h4>
+  <a id="Gameplay_Conrollers_QuestionController_GameOver_" data-uid="Gameplay.Conrollers.QuestionController.GameOver*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_GameOver" data-uid="Gameplay.Conrollers.QuestionController.GameOver">GameOver()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ForceOpen()</code></pre>
+    <pre><code class="lang-csharp hljs">public void GameOver()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_QuestionController_GetNextTip_" data-uid="Gameplay.Conrollers.QuestionController.GetNextTip*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_GetNextTip_System_Int32_" data-uid="Gameplay.Conrollers.QuestionController.GetNextTip(System.Int32)">GetNextTip(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetNextTip(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_QuestionController_ResumeGame_" data-uid="Gameplay.Conrollers.QuestionController.ResumeGame*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_ResumeGame" data-uid="Gameplay.Conrollers.QuestionController.ResumeGame">ResumeGame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeGame()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_QuestionController_SelectNextController_" data-uid="Gameplay.Conrollers.QuestionController.SelectNextController*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_SelectNextController" data-uid="Gameplay.Conrollers.QuestionController.SelectNextController">SelectNextController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectNextController()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_QuestionController_StartNewGame_" data-uid="Gameplay.Conrollers.QuestionController.StartNewGame*"></a>
+  <h4 id="Gameplay_Conrollers_QuestionController_StartNewGame" data-uid="Gameplay.Conrollers.QuestionController.StartNewGame">StartNewGame()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartNewGame()</code></pre>
   </div>
 </article>
           </div>
