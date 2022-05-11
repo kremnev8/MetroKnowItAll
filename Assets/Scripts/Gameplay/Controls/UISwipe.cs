@@ -95,6 +95,7 @@ namespace Gameplay.Controls
                 primaryContactAction.canceled -= EndSwipe;
             }
         }
+        
 
         private void Update()
         {
@@ -156,7 +157,7 @@ namespace Gameplay.Controls
                 
                 if (moveDelta.sqrMagnitude < 0.1f || Vector2.Dot(moveDelta.normalized, moveAxis) <= 0)
                 {
-                    rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, Vector2.zero, returnSpeed * Time.deltaTime);
+                    rectTransform.anchoredPosition = Vector2.Lerp(rectTransform.anchoredPosition, Vector2.zero, returnSpeed * Time.unscaledDeltaTime);
 
                     if (rectTransform.anchoredPosition.sqrMagnitude < 1) isReturning = false;
                     moveDelta = Vector2.zero;
