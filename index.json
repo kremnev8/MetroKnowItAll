@@ -312,7 +312,7 @@
   "api/Gameplay.SceneTransitionManager.html": {
     "href": "api/Gameplay.SceneTransitionManager.html",
     "title": "Class SceneTransitionManager | Metro Connoisseur documentation",
-    "keywords": "Class SceneTransitionManager Inheritance Object SceneTransitionManager Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public class SceneTransitionManager : MonoBehaviour Fields crossfade Declaration public GameObject crossfade Field Value Type Description GameObject instance Declaration public static SceneTransitionManager instance Field Value Type Description SceneTransitionManager Methods LoadMenu() Declaration public void LoadMenu() StartGame() Declaration public void StartGame()"
+    "keywords": "Class SceneTransitionManager Inheritance Object SceneTransitionManager Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public class SceneTransitionManager : MonoBehaviour Fields instance Declaration public static SceneTransitionManager instance Field Value Type Description SceneTransitionManager Methods LoadMenu() Declaration public void LoadMenu() StartGame() Declaration public void StartGame()"
   },
   "api/Gameplay.Statistics.BoolRecord-2.html": {
     "href": "api/Gameplay.Statistics.BoolRecord-2.html",
@@ -397,7 +397,7 @@
   "api/Gameplay.UI.UISettings.html": {
     "href": "api/Gameplay.UI.UISettings.html",
     "title": "Class UISettings | Metro Connoisseur documentation",
-    "keywords": "Class UISettings Inheritance Object UISettings Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UISettings : MonoBehaviour Fields difficultyToggleGroup Declaration public EventToggleGroup difficultyToggleGroup Field Value Type Description EventToggleGroup themeToggle Declaration public Toggle themeToggle Field Value Type Description Toggle Methods LoadGame() Declaration public void LoadGame() LoadMenu() Declaration public void LoadMenu() SetDifficulty(Int32) Declaration public void SetDifficulty(int level) Parameters Type Name Description Int32 level SetTheme(Boolean) Declaration public void SetTheme(bool light) Parameters Type Name Description Boolean light"
+    "keywords": "Class UISettings Inheritance Object UISettings Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UISettings : MonoBehaviour Fields crossfade Declaration public GameObject crossfade Field Value Type Description GameObject difficultyToggleGroup Declaration public EventToggleGroup difficultyToggleGroup Field Value Type Description EventToggleGroup themeToggle Declaration public Toggle themeToggle Field Value Type Description Toggle Methods LoadGame() Declaration public void LoadGame() LoadMenu() Declaration public void LoadMenu() SetDifficulty(Int32) Declaration public void SetDifficulty(int level) Parameters Type Name Description Int32 level SetTheme(Boolean) Declaration public void SetTheme(bool light) Parameters Type Name Description Boolean light"
   },
   "api/Gameplay.UI.UITopBar.html": {
     "href": "api/Gameplay.UI.UITopBar.html",

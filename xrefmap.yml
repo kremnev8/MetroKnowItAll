@@ -3882,12 +3882,6 @@ references:
   commentId: T:Gameplay.SceneTransitionManager
   fullName: Gameplay.SceneTransitionManager
   nameWithType: SceneTransitionManager
-- uid: Gameplay.SceneTransitionManager.crossfade
-  name: crossfade
-  href: api/Gameplay.SceneTransitionManager.html#Gameplay_SceneTransitionManager_crossfade
-  commentId: F:Gameplay.SceneTransitionManager.crossfade
-  fullName: Gameplay.SceneTransitionManager.crossfade
-  nameWithType: SceneTransitionManager.crossfade
 - uid: Gameplay.SceneTransitionManager.instance
   name: instance
   href: api/Gameplay.SceneTransitionManager.html#Gameplay_SceneTransitionManager_instance
@@ -4510,6 +4504,12 @@ references:
   commentId: T:Gameplay.UI.UISettings
   fullName: Gameplay.UI.UISettings
   nameWithType: UISettings
+- uid: Gameplay.UI.UISettings.crossfade
+  name: crossfade
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_crossfade
+  commentId: F:Gameplay.UI.UISettings.crossfade
+  fullName: Gameplay.UI.UISettings.crossfade
+  nameWithType: UISettings.crossfade
 - uid: Gameplay.UI.UISettings.difficultyToggleGroup
   name: difficultyToggleGroup
   href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_difficultyToggleGroup
