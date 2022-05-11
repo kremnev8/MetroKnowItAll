@@ -114,7 +114,7 @@ namespace Gameplay.Controls
                 Vector2 closedPos = rectTransform.rect.size * moveAxis.Abs() - closedPosition;
                 if (posMove && (rectTransform.anchoredPosition * moveAxis).Greater(closedPos))
                 {
-                    isSwiping = false;
+                    isSwiping = false; 
                 }
             }
             else
