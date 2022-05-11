@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg2179"
+   sodipodi:docname="light-mode.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2181"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="256px"
+     inkscape:zoom="4.1877625"
+     inkscape:cx="104.59046"
+     inkscape:cy="77.607075"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2176" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#ffffff;stroke-width:3.46501;stroke-linecap:round;stroke-linejoin:round"
+       id="path2262"
+       cx="23.141697"
+       cy="15.010831"
+       rx="4.7355595"
+       ry="3.3953068" />
+    <circle
+       style="fill:#fdffb6;fill-opacity:1;stroke-width:3.47804;stroke-linecap:round;stroke-linejoin:round"
+       id="path2290"
+       cx="20"
+       cy="20"
+       r="20" />
+    <circle
+       style="fill:#fff25a;fill-opacity:1;stroke-width:3.45273;stroke-linecap:round;stroke-linejoin:round"
+       id="path2460"
+       cx="20"
+       cy="20"
+       r="17.25" />
+    <circle
+       style="fill:#ffe539;fill-opacity:1;stroke-width:3.42771;stroke-linecap:round;stroke-linejoin:round"
+       id="path2586"
+       cx="20"
+       cy="20"
+       r="14.5" />
+  </g>
+</svg>
