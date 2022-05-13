@@ -1767,6 +1767,80 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.FocusDisplay.SetRegion
   nameWithType: FocusDisplay.SetRegion
+- uid: Gameplay.MetroDisplay.HighlightDisplay
+  name: HighlightDisplay
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html
+  commentId: T:Gameplay.MetroDisplay.HighlightDisplay
+  fullName: Gameplay.MetroDisplay.HighlightDisplay
+  nameWithType: HighlightDisplay
+- uid: Gameplay.MetroDisplay.HighlightDisplay.Clear
+  name: Clear()
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_Clear
+  commentId: M:Gameplay.MetroDisplay.HighlightDisplay.Clear
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.Clear()
+  nameWithType: HighlightDisplay.Clear()
+- uid: Gameplay.MetroDisplay.HighlightDisplay.Clear*
+  name: Clear
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_Clear_
+  commentId: Overload:Gameplay.MetroDisplay.HighlightDisplay.Clear
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.Clear
+  nameWithType: HighlightDisplay.Clear
+- uid: Gameplay.MetroDisplay.HighlightDisplay.metro
+  name: metro
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_metro
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.metro
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.metro
+  nameWithType: HighlightDisplay.metro
+- uid: Gameplay.MetroDisplay.HighlightDisplay.quadTrans
+  name: quadTrans
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_quadTrans
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.quadTrans
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.quadTrans
+  nameWithType: HighlightDisplay.quadTrans
+- uid: Gameplay.MetroDisplay.HighlightDisplay.Refresh
+  name: Refresh()
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_Refresh
+  commentId: M:Gameplay.MetroDisplay.HighlightDisplay.Refresh
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.Refresh()
+  nameWithType: HighlightDisplay.Refresh()
+- uid: Gameplay.MetroDisplay.HighlightDisplay.Refresh*
+  name: Refresh
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_Refresh_
+  commentId: Overload:Gameplay.MetroDisplay.HighlightDisplay.Refresh
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.Refresh
+  nameWithType: HighlightDisplay.Refresh
+- uid: Gameplay.MetroDisplay.HighlightDisplay.region
+  name: region
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_region
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.region
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.region
+  nameWithType: HighlightDisplay.region
+- uid: Gameplay.MetroDisplay.HighlightDisplay.renderTexture
+  name: renderTexture
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_renderTexture
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.renderTexture
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.renderTexture
+  nameWithType: HighlightDisplay.renderTexture
+- uid: Gameplay.MetroDisplay.HighlightDisplay.scale
+  name: scale
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_scale
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.scale
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.scale
+  nameWithType: HighlightDisplay.scale
+- uid: Gameplay.MetroDisplay.HighlightDisplay.smallBlueMat
+  name: smallBlueMat
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_smallBlueMat
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.smallBlueMat
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.smallBlueMat
+  nameWithType: HighlightDisplay.smallBlueMat
+- uid: Gameplay.MetroDisplay.HighlightDisplay.smallBlur
+  name: smallBlur
+  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_smallBlur
+  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.smallBlur
+  fullName: Gameplay.MetroDisplay.HighlightDisplay.smallBlur
+  nameWithType: HighlightDisplay.smallBlur
 - uid: Gameplay.MetroDisplay.LineDisplay
   name: LineDisplay
   href: api/Gameplay.MetroDisplay.LineDisplay.html
@@ -2257,6 +2331,12 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.Metro.crossings
   fullName: Gameplay.MetroDisplay.Model.Metro.crossings
   nameWithType: Metro.crossings
+- uid: Gameplay.MetroDisplay.Model.Metro.GetStation(Gameplay.MetroDisplay.Model.GlobalId)
+  name: GetStation(GlobalId)
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_GetStation_Gameplay_MetroDisplay_Model_GlobalId_
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.GetStation(Gameplay.MetroDisplay.Model.GlobalId)
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetStation(Gameplay.MetroDisplay.Model.GlobalId)
+  nameWithType: Metro.GetStation(GlobalId)
 - uid: Gameplay.MetroDisplay.Model.Metro.GetStation(System.Int32,System.Int32)
   name: GetStation(Int32, Int32)
   href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_GetStation_System_Int32_System_Int32_
@@ -5289,6 +5369,12 @@ references:
   isSpec: "True"
   fullName: Util.INamedArrayElement.editorName
   nameWithType: INamedArrayElement.editorName
+- uid: Util.InspectorButtonAttribute
+  name: InspectorButtonAttribute
+  href: api/Util.InspectorButtonAttribute.html
+  commentId: T:Util.InspectorButtonAttribute
+  fullName: Util.InspectorButtonAttribute
+  nameWithType: InspectorButtonAttribute
 - uid: Util.LabeledArrayAttribute
   name: LabeledArrayAttribute
   href: api/Util.LabeledArrayAttribute.html
@@ -5870,6 +5956,24 @@ references:
   commentId: F:Util.ShowWhenAttribute.conditionFieldName
   fullName: Util.ShowWhenAttribute.conditionFieldName
   nameWithType: ShowWhenAttribute.conditionFieldName
+- uid: Util.SortingLayer
+  name: SortingLayer
+  href: api/Util.SortingLayer.html
+  commentId: T:Util.SortingLayer
+  fullName: Util.SortingLayer
+  nameWithType: SortingLayer
+- uid: Util.SortingLayer.sortingLayer
+  name: sortingLayer
+  href: api/Util.SortingLayer.html#Util_SortingLayer_sortingLayer
+  commentId: F:Util.SortingLayer.sortingLayer
+  fullName: Util.SortingLayer.sortingLayer
+  nameWithType: SortingLayer.sortingLayer
+- uid: Util.SortingLayer.sortingOrder
+  name: sortingOrder
+  href: api/Util.SortingLayer.html#Util_SortingLayer_sortingOrder
+  commentId: F:Util.SortingLayer.sortingOrder
+  fullName: Util.SortingLayer.sortingOrder
+  nameWithType: SortingLayer.sortingOrder
 - uid: Util.SplineUtil
   name: SplineUtil
   href: api/Util.SplineUtil.html

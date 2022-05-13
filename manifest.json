@@ -348,6 +348,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.HighlightDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.HighlightDisplay.html",
+          "hash": "OszG3awmKUYAx8HwEo1egqFCpCO3VcZ4OJzRf6LJzmw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.MetroDisplay.LineDisplay.yml",
       "output": {
         ".html": {
@@ -436,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.Metro.html",
-          "hash": "a8BPCQIanlvnEHpTQSVTVOG8sldijFubSdJsAVoStpw="
+          "hash": "+VC80Lopr2YM6VEKD5BxlUexmKHEYgYWJ0Z6af6krI8="
         }
       },
       "is_incremental": false,
@@ -556,7 +568,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.html",
-          "hash": "Lu3reV2RuyDpua+fu63VnqCibWHnjETwSnjYW7YJmMQ="
+          "hash": "dhPPs1A7GxrKrqebXNPRF3NnqW+5uxoKRZoOU22Qr0E="
         }
       },
       "is_incremental": false,
@@ -1248,6 +1260,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Util.InspectorButtonAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.InspectorButtonAttribute.html",
+          "hash": "zDAklNek49LeB6GZvtHQHfCj8zdM9r7Ggm6YnOTs4Lg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Util.LabeledArrayAttribute.yml",
       "output": {
         ".html": {
@@ -1332,6 +1356,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Util.SortingLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Util.SortingLayer.html",
+          "hash": "+E8T+aXYIddg2YaVFeBQzjKzqCrNi3M5xj7Z7phDMPI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Util.SplineUtil.yml",
       "output": {
         ".html": {
@@ -1372,7 +1408,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.html",
-          "hash": "mc7yIg8CpCa3U2UCAOpbvRsRR1QdhevW5+GD/uBTUpY="
+          "hash": "UdrlT15J8Nxhfo95ttyVXu55uqNpVv4ls0GI63qKqxo="
         }
       },
       "is_incremental": false,
@@ -1384,7 +1420,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "T9uaDVWYsLcaMmFi2Q6uh3GNEtp5nrv5UgFODvElyA4="
+          "hash": "xGCfqoJGRo1K/7iCl7Tzra0QxamvQpJrEQuA69VJFWM="
         }
       },
       "is_incremental": false,
@@ -1801,7 +1837,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 113,
+          "total_file_count": 116,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
