@@ -63,6 +63,14 @@ namespace Gameplay.MetroDisplay.Model
         }
         
         /// <summary>
+        /// Get stations for line and station id
+        /// </summary>
+        public MetroStation GetStation(GlobalId globalId)
+        {
+            return lines[globalId.lineId].stations[globalId.stationId];
+        }
+        
+        /// <summary>
         /// Pick a stations that is near another station
         /// </summary>
         public MetroStation PickStationNear(MetroStation station)

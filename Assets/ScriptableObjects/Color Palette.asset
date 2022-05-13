@@ -35,4 +35,4 @@ MonoBehaviour:
     lineColor: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 1}
     unfocusedColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 0.8156863}
     highlightColor: {r: 0.7490196, g: 0.91764706, b: 0.972549, a: 1}
-  m_themeIndex: 1
+  m_themeIndex: 0

@@ -35,14 +35,14 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private LineDisplay linePrefab;
         [SerializeField] private CrossingDisplay crossingPrefab;
         [SerializeField] private GameObject stationSelectPrefab;
-        [SerializeField] private FocusDisplay focusPrefab;
+
+        [SerializeField] private HighlightDisplay highlightDisplay;
 
         public Metro metro;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
-        private List<FocusDisplay> focusDisplays = new List<FocusDisplay>();
         internal bool dirty;
 
         public Region focusRegion;
@@ -128,15 +128,6 @@ namespace Gameplay.MetroDisplay
                 crossingDisplay.SetCrossing(metro, crossing);
                 crossingDisplays.Add(crossingDisplay);
             }
-            
-            foreach (Region region in metro.regions)
-            {
-                if (region.regionType == RegionType.GLOBAL) continue;
-                
-                FocusDisplay focusDisplay = Instantiate(focusPrefab, focusRoot);
-                focusDisplay.SetRegion(this, region);
-                focusDisplays.Add(focusDisplay);
-            }
         }
 
         /// <summary>
@@ -158,11 +149,8 @@ namespace Gameplay.MetroDisplay
             {
                 display.Refresh();
             }
-
-            foreach (FocusDisplay display in focusDisplays)
-            {
-                display.Refresh(false);
-            }
+            
+            highlightDisplay.Refresh();
         }
 
         /// <summary>
@@ -178,7 +166,7 @@ namespace Gameplay.MetroDisplay
             stationDisplays.Clear();
             lineDisplays.Clear();
             crossingDisplays.Clear();
-            focusDisplays.Clear();
+            highlightDisplay.Clear();
         }
 
         /// <summary>
@@ -254,10 +242,8 @@ namespace Gameplay.MetroDisplay
                 display.SetFocused(true);
             }
 
-            foreach (FocusDisplay display in focusDisplays)
-            {
-                display.Refresh(false);
-            }
+            highlightDisplay.region = focusRegion;
+            highlightDisplay.Refresh();
         }
 
         /// <summary>
@@ -288,10 +274,8 @@ namespace Gameplay.MetroDisplay
                     display.SetFocused(display.crossing.stationsGlobalIds.Any(id => id.lineId == region.lineId));
                 }
 
-                foreach (FocusDisplay display in focusDisplays)
-                {
-                    display.Refresh(false);
-                }
+                highlightDisplay.region = focusRegion;
+                highlightDisplay.Refresh();
             }
             else
             {
@@ -316,10 +300,8 @@ namespace Gameplay.MetroDisplay
                     display.SetFocused(true);
                 }
                 
-                foreach (FocusDisplay display in focusDisplays)
-                {
-                    display.Refresh(false);
-                }
+                highlightDisplay.region = focusRegion;
+                highlightDisplay.Refresh();
             }
         }
     }
