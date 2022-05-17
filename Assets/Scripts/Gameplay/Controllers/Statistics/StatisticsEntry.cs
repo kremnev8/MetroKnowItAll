@@ -33,6 +33,9 @@ namespace Gameplay.Statistics
 
         public int maxScore;
         public int tickets;
+
+        public bool isArcadeInitialized;
+        public bool isLearningInitialized;
         
         [JsonIgnore]
         public int Version

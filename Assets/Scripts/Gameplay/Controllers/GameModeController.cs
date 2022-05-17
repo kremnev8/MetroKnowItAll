@@ -39,8 +39,22 @@ namespace Gameplay.Conrollers
                 gameMode.Init(this);
                 gameModes.Add(gameMode.gameModeId, gameMode);
             }
-            
-            StartGame(LearningModeController.MODE_ID);
+        }
+
+        public void StartGame(int gameModeId)
+        {
+            switch (gameModeId)
+            {
+                case 0:
+                    StartGame(ArcadeModeController.MODE_ID);
+                    break;
+                case 1:
+                    StartGame(LearningModeController.MODE_ID);
+                    break;
+                case 2:
+                    throw new NotImplementedException();
+                    break;
+            }
         }
 
         public void StartGame(string gameModeId)

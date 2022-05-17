@@ -41,13 +41,13 @@ namespace Gameplay.Conrollers
             }
         }
 
-        private void OnEnable()
+        private void Start()
         {
             EventManager.StartListening(EventTypes.SESSION_STARTED, OnNewGame);
             EventManager.StartListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             EventManager.StopListening(EventTypes.SESSION_STARTED, OnNewGame);
             EventManager.StopListening(EventTypes.QUESTION_ANSWERED, OnAnswer);

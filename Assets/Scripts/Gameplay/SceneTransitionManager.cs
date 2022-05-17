@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Gameplay.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,8 @@ namespace Gameplay
     {
         public static SceneTransitionManager instance;
 
+        private static int gameMode;
+        
 
         private void Awake()
         {
@@ -22,8 +25,9 @@ namespace Gameplay
             DontDestroyOnLoad(gameObject);
         }
 
-        public void StartGame()
+        public void StartGame(int newGameMode)
         {
+            gameMode = newGameMode;
             StartCoroutine(LoadLevel("Game"));
         }
 
@@ -42,10 +46,15 @@ namespace Gameplay
             {
                 yield return null;
             }
-
-            yield return new WaitForSeconds(1);
-            async.allowSceneActivation = true;
             
+            async.allowSceneActivation = true;
+            while (Simulation.GetModel<GameModel>().gameModeController == null)
+            {
+                yield return new WaitForSeconds(0.01f);
+            }
+            Debug.Log("Starting!");
+            Simulation.GetModel<GameModel>().gameModeController.StartGame(gameMode);
+
         }
     }
 }

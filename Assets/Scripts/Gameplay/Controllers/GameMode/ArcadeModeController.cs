@@ -240,8 +240,13 @@ namespace Gameplay.Conrollers
 
         public override string GetNextTip(int index)
         {
-            BaseQuestionGenerator generator = main.GetGenerator(game.currentGenerator);
-            return generator.GenerateTip(index);
+            if (game.isPlaying)
+            {
+                BaseQuestionGenerator generator = main.GetGenerator(game.currentGenerator);
+                return generator.GenerateTip(index);
+            }
+
+            return "";
         }
         
         public override void ManualUpdate()

@@ -32,14 +32,10 @@ namespace Gameplay.Questions
         {
             currentTip = 0;
             controller = Simulation.GetModel<GameModel>().gameModeController;
-        }
-
-        private void OnEnable()
-        {
             EventManager.StartListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             EventManager.StopListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
         }

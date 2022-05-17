@@ -37,7 +37,7 @@ namespace Gameplay.UI
             model.settings.MarkDirty();
         }
 
-        public void LoadGame()
+        public void LoadGame(int gameMode)
         {
             Debug.Log(SceneTransitionManager.instance != null);
             if (SceneTransitionManager.instance != null)
@@ -45,7 +45,7 @@ namespace Gameplay.UI
                 if (crossfade != null)
                     crossfade.SetActive(true);
                 
-                SceneTransitionManager.instance.StartGame();
+                SceneTransitionManager.instance.StartGame(gameMode);
             }
         }
         
