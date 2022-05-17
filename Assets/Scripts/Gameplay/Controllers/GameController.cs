@@ -1,8 +1,11 @@
-﻿using Gameplay.Core;
+﻿using Gameplay.Controls;
+using Gameplay.Core;
 using ScriptableObjects;
 using UnityEngine;
-#if !UNITY_EDITOR
 using UnityEngine.InputSystem;
+
+#if UNITY_EDITOR
+using UnityEditor;
 #endif
 
 namespace Gameplay.Conrollers
@@ -14,35 +17,64 @@ namespace Gameplay.Conrollers
     public class GameController : MonoBehaviour
     {
         public static GameController instance;
-        
+
         public GameModel model;
         public static Theme theme => instance.model.palette.currentTheme;
 
         public Material lineMaterial;
         public Material crossingMaterial;
         public Material tmpOutlineMaterial;
-        
+
+        public bool shouldBackCloseGame;
+
         private static readonly int unfocusedColor = Shader.PropertyToID("_UnfocusedColor");
         private static readonly int backColor = Shader.PropertyToID("_BackColor");
         private static readonly int color = Shader.PropertyToID("_Color");
         private static readonly int underlayColor = Shader.PropertyToID("_UnderlayColor");
-        
+
         private void Awake()
         {
             instance = this;
             Simulation.SetModel(model);
 
             ColorPalette.paletteChanged += UpdateMaterials;
-            
-#if !UNITY_EDITOR
+
             InputAction backAction = model.input.actions["Back"];
-            backAction.started += context =>
+            backAction.started += OnBack;
+        }
+
+        private void OnBack(InputAction.CallbackContext obj)
+        {
+            BackHandler top = BackHandler.GetTop();
+            if (top != null)
             {
-                Application.Quit();
-            };
+                top.gameObject.SetActive(false);
+            }
+            else if (shouldBackCloseGame)
+            {
+                Exit();
+            }
+        }
+
+        private static void Exit()
+        {
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#elif UNITY_ANDROID
+            try
+            {
+                AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+                activity.Call<bool>("moveTaskToBack", true);
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
+#elif UNITY_STANDALONE
+            Application.Quit();
 #endif
         }
-        
+
         private void UpdateMaterials()
         {
             if (lineMaterial != null)

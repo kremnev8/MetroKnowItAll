@@ -549,7 +549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fb6f71419238f74d80118e819bf847e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 354a81e387f979c4fb460a2581eacd37, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+  m_Color: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0.7647059}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7647059}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1300,8 +1300,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279769112
-  m_fontColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+    rgba: 4291151301
+  m_fontColor: {r: 0.77254903, g: 0.77254903, b: 0.77254903, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1754,8 +1754,9 @@ MonoBehaviour:
   model:
     input: {fileID: 1873144930}
     cameraController: {fileID: 0}
+    uiGame: {fileID: 0}
     renderer: {fileID: 0}
-    questions: {fileID: 0}
+    gameModeController: {fileID: 0}
     palette: {fileID: 11400000, guid: 2252f4209f1e32846a390bd754414d98, type: 2}
     statistics: {fileID: 0}
     settings: {fileID: 1873144929}
@@ -1764,6 +1765,7 @@ MonoBehaviour:
   lineMaterial: {fileID: 0}
   crossingMaterial: {fileID: 0}
   tmpOutlineMaterial: {fileID: 0}
+  shouldBackCloseGame: 1
 --- !u!4 &1873144928
 Transform:
   m_ObjectHideFlags: 0
