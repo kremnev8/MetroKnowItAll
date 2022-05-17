@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Gameplay.Conrollers;
 using Gameplay.Core;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
@@ -19,6 +20,8 @@ namespace Gameplay.Questions.Generators
         public int currentCount;
 
         public List<int> tipBlacklisted = new List<int>();
+        
+        public override string questionId => "station-order";
 
         public override void GenerateNew()
         {
@@ -46,7 +49,7 @@ namespace Gameplay.Questions.Generators
                 }
             }
 
-            blacklistedIds.AddRange(currentQuestionStations.Select(station => station.globalId));
+            blacklistedIds.AddRange(currentQuestionStations.Select(station => (int)station.globalId));
 
             List<MetroStation> shuffled = new List<MetroStation>(currentQuestionStations);
             shuffled.Shuffle();

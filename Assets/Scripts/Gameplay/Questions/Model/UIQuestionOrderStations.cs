@@ -51,7 +51,7 @@ namespace Gameplay.Questions.Generators
             buttons.SetData(stations.Select(station => station as INamedArrayElement).ToList());
 
             mapLabels.Capacity = stations.Count;
-            List<MetroStation> orderedStations = stations.OrderBy(station => station.globalId).ToList();
+            List<MetroStation> orderedStations = stations.OrderBy(station => (int)station.globalId).ToList();
             
             foreach (MetroStation station in orderedStations)
             {

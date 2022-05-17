@@ -33,7 +33,7 @@ namespace Gameplay.MetroDisplay
         
         public void Refresh(bool refreshShape)
         {
-            if (refreshShape)
+          /*  if (refreshShape)
             {
                 spline.Clear();
                 spline.isOpenEnded = false;
@@ -62,7 +62,7 @@ namespace Gameplay.MetroDisplay
             else
             {
                 renderer.enabled = false;
-            }
+            }*/
         }
     }
 }

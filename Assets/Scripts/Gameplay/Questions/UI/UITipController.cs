@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Gameplay.Conrollers;
 using Gameplay.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Util;
 
 namespace Gameplay.Questions
 {
@@ -24,14 +26,27 @@ namespace Gameplay.Questions
         
         private List<UITipContainer> tips = new List<UITipContainer>();
         private int currentTip;
-        private QuestionController controller;
+        private GameModeController controller;
         
         private void Start()
         {
             currentTip = 0;
-            controller = Simulation.GetModel<GameModel>().questions;
+            controller = Simulation.GetModel<GameModel>().gameModeController;
+        }
 
-            QuestionController.onQuestionChanged += ClearTips;
+        private void OnEnable()
+        {
+            EventManager.StartListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
+        }
+
+        private void OnDisable()
+        {
+            EventManager.StopListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
+        }
+        
+        private void OnAnswer(object[] obj)
+        {
+            ClearTips();
         }
 
         private void ClearTips()

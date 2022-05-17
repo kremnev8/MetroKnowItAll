@@ -12,6 +12,8 @@ namespace Gameplay.Questions.Generators
     {
         public MetroStation currentQuestion;
 
+        public override string questionId => "find-station";
+
         public override void GenerateNew()
         {
             currentQuestion = metro.PickRandomStation(currentRegion, blacklistedIds);

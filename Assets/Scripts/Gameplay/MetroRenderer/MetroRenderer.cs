@@ -252,7 +252,7 @@ namespace Gameplay.MetroDisplay
         /// <param name="region">Target region</param>
         public void FocusRegion(Region region)
         {
-            if (region.regionType == RegionType.GLOBAL)
+            if (region.regionType == RegionType.GLOBAL_LINE && region.lineId != -1)
             {
                 focusRegion = region;
                 foreach (LineDisplay lineDisplay in lineDisplays)

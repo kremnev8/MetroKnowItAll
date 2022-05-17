@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Statistics
 {
@@ -19,19 +20,8 @@ namespace Gameplay.Statistics
     public class BoolRecord<T, TIndex>
     where T : IIndexable<TIndex>
     {
-        public Dictionary<TIndex, bool> data = new Dictionary<TIndex, bool>();
-
-        /// <summary>
-        /// Initialize the record with intial data
-        /// </summary>
-        /// <param name="allEntries"></param>
-        public void Prepare(IEnumerable<T> allEntries)
-        {
-            foreach (T entry in allEntries)
-            {
-                data[entry.index] = false;
-            }
-        }
+        public HashSet<TIndex> data = new HashSet<TIndex>();
+        
         
         /// <summary>
         /// Unlock a record
@@ -39,7 +29,7 @@ namespace Gameplay.Statistics
         /// <param name="station"></param>
         public void Unlock(T station)
         {
-            data[station.index] = true;
+            data.Add(station.index);
         }
         
         /// <summary>
@@ -47,12 +37,7 @@ namespace Gameplay.Statistics
         /// </summary>
         public bool IsUnlocked(T station)
         {
-            if (data.ContainsKey(station.index))
-            {
-                return data[station.index];
-            }
-
-            return false;
+            return data.Contains(station.index);
         }
     }
 }

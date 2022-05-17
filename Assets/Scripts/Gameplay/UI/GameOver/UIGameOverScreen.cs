@@ -32,18 +32,24 @@ namespace Gameplay.UI
     /// </summary>
     public class UIGameOverScreen : MonoBehaviour
     {
+        public GameObject arcadeScreen;
+        public GameObject learningScreen;
+
         public Transform statsTrans;
         public TMP_Text totalScoreText;
-        public TMP_Text unlockedStationsText;
-
         public UIScoreItem scoreItemPrefab;
+
+        public TMP_Text correctText;
+        public TMP_Text ticketsText;
+        public new UIFillAnimation animation;
 
         private void Awake()
         {
-            gameObject.SetActive(false);
+            arcadeScreen.SetActive(false);
+            learningScreen.SetActive(false);
         }
 
-        public void Popup(StatisticsEntry statistics, List<MetroStation> unlockedStations)
+        public void PopupArcade(StatisticsEntry statistics, List<MetroStation> unlockedStations)
         {
             statsTrans.gameObject.ClearChildren();
             
@@ -58,22 +64,20 @@ namespace Gameplay.UI
             }
 
             totalScoreText.text = $"Всего {totalScore} оч.";
+            arcadeScreen.SetActive(true);
+            learningScreen.SetActive(false);
+        }
+        
+        public void PopupLearning(int correct, int total, int tickets)
+        {
+            statsTrans.gameObject.ClearChildren();
 
-            StringBuilder builder = new StringBuilder();
-            for (int i = 0; i < unlockedStations.Count; i++)
-            {
-                MetroStation station = unlockedStations[i];
-                builder.Append(station.currentName);
-                if (i != unlockedStations.Count - 1)
-                {
-                    builder.Append(", ");
-                }
-            }
-
-            unlockedStationsText.text = builder.ToString();
-            gameObject.SetActive(true);
-            gameObject.SetActive(false);
-            gameObject.SetActive(true);
+            correctText.text = $"Вы ответили верно\nна {correct} из {total} вопросов!";
+            ticketsText.text = $"Получено {tickets} билетов";
+            animation.Display(0, correct / (float)total);
+            
+            arcadeScreen.SetActive(false);
+            learningScreen.SetActive(true);
         }
 
     }

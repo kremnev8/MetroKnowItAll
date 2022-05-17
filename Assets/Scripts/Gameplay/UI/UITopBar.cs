@@ -19,6 +19,7 @@ namespace Gameplay.UI
         public GameObject tipButtonObject;
 
         public Image attemptsFill;
+        public Image troykaImage;
         public float fillSpeed = 1;
 
         private int statusHideTimer;
@@ -55,6 +56,8 @@ namespace Gameplay.UI
             realAttemptCount = newValue;
             attemptsLabel.text = current.ToString();
             targetFillAmount = partial;
+            attemptsFill.enabled = true;
+            troykaImage.enabled = false;
         }
         
         public void SetCurrentAttemptsImmidiate(int value, float partial)
@@ -63,6 +66,8 @@ namespace Gameplay.UI
             realAttemptCount = value;
             attemptsLabel.text = value.ToString();
             attemptsFill.fillAmount = partial;
+            attemptsFill.enabled = true;
+            troykaImage.enabled = false;
         }
 
         public void UpdateStatus(bool lastCorrect, int current, int total)
@@ -72,6 +77,13 @@ namespace Gameplay.UI
             statusLabel.text = $"<color=#{ColorUtility.ToHtmlStringRGB(textColor)}>{correctText}</color>\nПрогресс {current}/{total}";
             statusLabel.gameObject.SetActive(true);
             statusHideTimer = 120;
+        }
+
+        public void UpdateTickets(int tickets)
+        {
+            attemptsLabel.text = tickets.ToString();
+            attemptsFill.enabled = false;
+            troykaImage.enabled = true;
         }
 
         public void ShowMessage(string message)

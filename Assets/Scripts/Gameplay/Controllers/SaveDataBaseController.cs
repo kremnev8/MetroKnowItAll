@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using Gameplay.MetroDisplay.Model;
@@ -32,11 +33,20 @@ namespace Gameplay.Conrollers
             string dataPath = $"{Application.persistentDataPath}/{Filename}.json";
             if (File.Exists(dataPath))
             {
-                string json = File.ReadAllText(dataPath, Encoding.UTF8);
-                current = JsonConvert.DeserializeObject<T>(json);
-                if (current.Version < Version)
+                try
                 {
-                    OnVersionChanged(current.Version);
+                    string json = File.ReadAllText(dataPath, Encoding.UTF8);
+                    current = JsonConvert.DeserializeObject<T>(json);
+                    if (current.Version < Version)
+                    {
+                        OnVersionChanged(current.Version);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.Log("Failed to deserialize statistics file. Creating new one!");
+                    current = new T();
+                    InitializeSaveData(current);
                 }
             }
             else

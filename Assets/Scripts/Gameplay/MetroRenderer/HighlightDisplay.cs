@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
@@ -22,29 +23,58 @@ namespace Gameplay.MetroDisplay
 
         public Vector2 scale;
 
+        private void Awake()
+        {
+            tempTexture = new Texture2D(256, 256, GraphicsFormat.R8G8B8A8_UNorm, TextureCreationFlags.None);
+        }
+
         [InspectorButton]
         public void Refresh()
         {
-            tempTexture = new Texture2D(256, 256, GraphicsFormat.R8G8B8A8_UNorm, TextureCreationFlags.None);
+            if (tempTexture == null)
+            {
+                tempTexture = new Texture2D(256, 256, GraphicsFormat.R8G8B8A8_UNorm, TextureCreationFlags.None);
+            }
+
+            if (region.regionType != RegionType.GLOBAL_LINE || region.lineId == -1)
+            {
+                RedrawHighlight();
+            }
+            else
+            {
+                ClearHighlight();
+            }
+        }
+
+        private void ClearHighlight()
+        {
+            Color[] pixels = Enumerable.Repeat(Color.white, Screen.width * Screen.height).ToArray();
+            tempTexture.SetPixels(pixels);
+            tempTexture.Apply();
+            Graphics.Blit(tempTexture, renderTexture);
+        }
+
+        private void RedrawHighlight()
+        {
             Color[] pixels = Enumerable.Repeat(Color.clear, Screen.width * Screen.height).ToArray();
             tempTexture.SetPixels(pixels);
             tempTexture.Apply();
             Graphics.Blit(tempTexture, renderTexture);
-
+            
             Vector2 quadScale = quadTrans.localScale / 2;
 
             RenderTexture.active = renderTexture;
-            GL.PushMatrix ();                               
-            GL.LoadPixelMatrix (0, 256, 256, 0);   
+            GL.PushMatrix();
+            GL.LoadPixelMatrix(0, 256, 256, 0);
 
             foreach (MetroLine line in metro.lines)
             {
                 foreach (MetroStation station in line.stations)
                 {
-                    if (region.Contains(station) || region.regionType == RegionType.GLOBAL)
+                    if (region.Contains(station))
                     {
                         var drawPos = new Vector2(quadScale.x + station.position.x, quadScale.y - station.position.y);
-                        drawPos = drawPos * (128 / quadScale.x);
+                        drawPos *= (128 / quadScale.x);
                         Rect rect = new Rect(drawPos.x - scale.x / 2, drawPos.y - scale.x / 2, scale.x,
                             scale.x);
                         Graphics.DrawTexture(rect, smallBlur, smallBlueMat);
@@ -52,7 +82,7 @@ namespace Gameplay.MetroDisplay
                 }
             }
 
-            GL.PopMatrix ();
+            GL.PopMatrix();
             RenderTexture.active = null;
         }
 

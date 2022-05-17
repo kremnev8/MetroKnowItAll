@@ -1,4 +1,5 @@
-﻿using Gameplay.MetroDisplay;
+﻿using Gameplay.Conrollers;
+using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Questions
@@ -17,11 +18,23 @@ namespace Gameplay.Questions
             metro = _renderer.metro;
         }
 
+        public abstract string questionId { get; }
+
         public abstract void SetRegion(Region region);
         
         public abstract void GenerateNew();
         public abstract string GenerateTip(int tipNumber);
         public abstract bool ValidateAnswer();
-        
+
+        public virtual bool ShouldUse(Game game, int questionNumber)
+        {
+            if (game.questionId.Equals(Game.ANY_QUESTIONS))
+            {
+                return true;
+            }
+            
+            return game.questionId.Equals(questionId);
+        }
+
     }
 }

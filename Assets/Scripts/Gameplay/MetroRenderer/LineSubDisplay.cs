@@ -241,7 +241,7 @@ namespace Gameplay.MetroDisplay
 
         public bool IsFocused(MetroRenderer metroRenderer)
         {
-            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL)
+            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL_LINE)
             {
                 return metroRenderer.focusRegion.lineId == line.lineId;
             }

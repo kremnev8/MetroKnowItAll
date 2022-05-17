@@ -18,12 +18,14 @@ namespace Gameplay
     {
         public PlayerInput input;
         public TouchCameraController cameraController;
+
+        public UIGame uiGame;
         
         public MetroRenderer renderer;
-        public QuestionController questions;
+        public GameModeController gameModeController;
         public ColorPalette palette;
         
-        public StatisticsManager statistics;
+        public StatisticsController statistics;
         public SettingsController settings;
         
         public UIAchievement achievements;

@@ -14,7 +14,8 @@ namespace Gameplay.MetroDisplay.Model
     public class MetroStation : INamedArrayElement, IIndexable<int>
     {
         
-        public int globalId => lineId * 100 + stationId;
+        public GlobalId globalId => new GlobalId(lineId, stationId);
+        public int index => lineId * 100 + stationId;
         public string currentName => names[currentNameIndex];
         
         [HideInInspector]
@@ -40,6 +41,5 @@ namespace Gameplay.MetroDisplay.Model
 
         public string editorName => $"{globalId} {currentName}";
         public string displayName => currentName;
-        public int index => globalId;
     }
 }

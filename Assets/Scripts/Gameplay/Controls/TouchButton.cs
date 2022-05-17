@@ -33,18 +33,21 @@ namespace Gameplay.Controls
 
         public bool isEnabled;
         public Func<ISelectable, bool> filter;
+        public bool overrideFocus;
 
         private RaycastHit2D[] hits = new RaycastHit2D[5];
 
-        public void Enable( Func<ISelectable, bool> filter)
+        public void Enable( Func<ISelectable, bool> filter, bool overrideFocus = false)
         {
             isEnabled = true;
             this.filter = filter;
+            this.overrideFocus = overrideFocus;
         }
 
         public void Disable()
         {
             isEnabled = false;
+            overrideFocus = false;
             selectedStation?.SetSelected(renderer, false);
             selectedStation = null;
         }
@@ -90,7 +93,7 @@ namespace Gameplay.Controls
                     if (hit.collider == null) continue;
                     
                     ISelectable display = hit.collider.gameObject.GetComponent<ISelectable>();
-                    if (display != null && filter(display) && display.IsFocused(renderer))
+                    if (display != null && filter(display) && (display.IsFocused(renderer) || overrideFocus))
                     {
                         selectedStation?.SetSelected(renderer, false);
                         display.SetSelected(renderer, true);

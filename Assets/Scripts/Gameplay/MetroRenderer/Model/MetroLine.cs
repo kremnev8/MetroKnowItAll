@@ -17,6 +17,7 @@ namespace Gameplay.MetroDisplay.Model
         
         public byte lineId;
         public string name;
+        public bool isLooped;
         
         public LineStyle style;
         public bool useSmoothCurves;

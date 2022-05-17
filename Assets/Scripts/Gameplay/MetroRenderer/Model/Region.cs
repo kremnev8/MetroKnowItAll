@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Util;
@@ -11,38 +12,69 @@ namespace Gameplay.MetroDisplay.Model
     [Serializable]
     public class Region
     {
-        public static Region everywhere => new Region(RegionType.GLOBAL, Area.Everywhere, -1);
+        public static Region everywhere => new Region(RegionType.GLOBAL_LINE, -1);
         
         public RegionType regionType;
         public int lineId;
-        public Area area;
-
-        public Region(RegionType type, Area area, int lineId)
+        public HashSet<int> stations;
+        
+        public Region(RegionType type, HashSet<int> stations, int lineId)
         {
             regionType = type;
-            this.area = area;
+            this.stations = stations;
+            this.lineId = lineId;
+            if (this.stations == null)
+            {
+                this.stations = new HashSet<int>();
+            }
+            
+        }
+        
+        public Region(RegionType type, int lineId)
+        {
+            regionType = type;
+            stations = new HashSet<int>();
             this.lineId = lineId;
         }
 
         public bool Contains(MetroStation station)
         {
-            if (regionType == RegionType.GLOBAL)
+            if (lineId == -1 && regionType != RegionType.GLOBAL_LINE && regionType != RegionType.GLOBAL_STATIONS)
             {
-                return lineId == station.lineId;
+                return StationsContain(station.globalId) && regionType == station.regionType;
+            }
+            
+            if (lineId == -1 && regionType == RegionType.GLOBAL_STATIONS)
+            {
+                return StationsContain(station.globalId);
             }
 
-            if (lineId != -1)
+            if (regionType != RegionType.GLOBAL_LINE && regionType != RegionType.GLOBAL_STATIONS)
             {
-                return lineId == station.lineId && regionType == station.regionType;
+                return regionType == station.regionType && lineId == station.lineId && StationsContain(station.globalId);
             }
-            return regionType == station.regionType;
+            
+            return lineId == station.lineId && StationsContain(station.globalId);
+        }
+
+        private bool StationsContain(GlobalId globalId)
+        {
+            if (stations == null || stations.Count == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return stations.Contains(globalId);
+            }
         }
         
         public string GetName(Metro metro)
         {
             return regionType switch
             {
-                RegionType.GLOBAL => metro.lines[lineId].name.Replace("линия", ""),
+                RegionType.GLOBAL_LINE => metro.lines[lineId].name.Replace("линия", ""),
+                RegionType.GLOBAL_STATIONS => "Изученные станций",
                 RegionType.CENTER => "Центр",
                 RegionType.NORTH => "Сервер",
                 RegionType.NORTH_EAST => "Северо-восток",
@@ -60,7 +92,7 @@ namespace Gameplay.MetroDisplay.Model
         {
             return regionType switch
             {
-                RegionType.GLOBAL => "",
+                RegionType.GLOBAL_LINE => "",
                 RegionType.CENTER => "ЦЕНТРАЛЬНЫЙ ОКРУГ",
                 RegionType.NORTH => "СЕВЕРНЫЙ ОКРУГ",
                 RegionType.NORTH_EAST => "СЕВЕРО-ВОСТОЧНЫЙ ОКРУГ",
@@ -76,19 +108,73 @@ namespace Gameplay.MetroDisplay.Model
 
         public Vector2 GetRegionCenter(Metro metro)
         {
-            if (regionType == RegionType.GLOBAL)
+            if (regionType == RegionType.GLOBAL_LINE && lineId != -1)
             {
                 MetroLine line = metro.lines[lineId];
                 return line.stations.Select(station => station.position).GetCenter(line.stations.Count);
             }
 
-            return area.points.GetCenter();
+            if (stations != null && stations.Count > 0)
+            {
+                return stations.Select(id => metro.GetStation(id).position).GetCenter(stations.Count);
+            }
+
+            Vector2 center = Vector2.zero;
+            int count = 0;
+            foreach (MetroLine line in metro.lines)
+            {
+                foreach (MetroStation station in line.stations) 
+                {
+                    if (station.regionType == regionType)
+                    {
+                        center += station.position;
+                        count++;
+                    }
+                }
+            }
+
+            return center / count;
+        }
+
+        protected bool Equals(Region other)
+        {
+            if (stations != null && other.stations != null)
+            {
+                return regionType == other.regionType && lineId == other.lineId && stations.SetEquals(other.stations);
+            }
+            
+            if (stations == null && other.stations == null)
+            {
+                return regionType == other.regionType && lineId == other.lineId;
+            }
+
+            return false;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is null) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Region)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int hashCode = (int)regionType;
+                hashCode = (hashCode * 397) ^ lineId;
+                hashCode = (hashCode * 397) ^ (stations != null ? stations.GetHashCode() : 0);
+                return hashCode;
+            }
         }
     }
 
     public enum RegionType
     {
-        GLOBAL = 0,
+        GLOBAL_LINE = 0,
+        GLOBAL_STATIONS = 11,
         CENTER = 1,
         NORTH = 2,
         NORTH_EAST = 3,

@@ -1,4 +1,6 @@
-﻿using Gameplay.MetroDisplay.Model;
+﻿using Gameplay.Conrollers;
+using Gameplay.MetroDisplay.Model;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 
 namespace Gameplay.Questions.Generators
@@ -6,17 +8,19 @@ namespace Gameplay.Questions.Generators
     /// <summary>
     /// This generator generates questions like: Where is that line on the map
     /// </summary>
-    public class FindLineGenerator : QuestionGenerator<UIQuestionFindLine>, ILineQuestion
+    public class FindLineGenerator : QuestionGenerator<UIQuestionFindLine>
     {
         public MetroLine currentQuestion;
         
         public MetroStation questionStation;
         public bool questionUsedLineName;
         
+        public override string questionId => "find-line";
+        
         public override void GenerateNew()
         {
             questionUsedLineName = Random.Range(0, 2) > 0;
-            if (currentRegion.regionType == RegionType.GLOBAL && currentRegion.lineId != -1)
+            if (currentRegion.regionType == RegionType.GLOBAL_LINE && currentRegion.lineId != -1)
             {
                 currentQuestion = metro.lines[currentRegion.lineId];
             }
@@ -27,7 +31,7 @@ namespace Gameplay.Questions.Generators
 
             if (questionUsedLineName)
             {
-                questionStation = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.area, currentQuestion.lineId));
+                questionStation = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.stations, currentQuestion.lineId));
                 uiController.SetQuestion(questionStation);
             }
             else
@@ -49,7 +53,7 @@ namespace Gameplay.Questions.Generators
                 case 0 when !questionUsedLineName:
                 case 1:
                 case 2:
-                    MetroStation station = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.area, currentQuestion.lineId));
+                    MetroStation station = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.stations, currentQuestion.lineId));
                     return $"Станиция {station.currentName} распологается на этой линий";
             }
 
@@ -64,6 +68,16 @@ namespace Gameplay.Questions.Generators
              uiController.DisplayResult(result);
 
              return result;
+        }
+
+        public override bool ShouldUse(Game game, int questionNumber)
+        {
+            if (game.mode == ArcadeModeController.MODE_ID && game.currentRegion.lineId == -1 && questionNumber == 0)
+            {
+                return base.ShouldUse(game, questionNumber);
+            }
+
+            return false;
         }
     }
 }

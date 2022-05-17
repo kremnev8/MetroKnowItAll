@@ -121,7 +121,7 @@ namespace Gameplay.MetroDisplay
 
         public bool IsFocused(MetroRenderer metroRenderer)
         {
-            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL)
+            if (metroRenderer.focusRegion.regionType == RegionType.GLOBAL_LINE)
             {
                 return station.lineId == metroRenderer.focusRegion.lineId;
             }
