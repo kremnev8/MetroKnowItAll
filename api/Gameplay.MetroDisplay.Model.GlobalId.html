@@ -91,12 +91,50 @@
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">GlobalId</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IComparable</span>&lt;<a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a>&gt;</div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.MetroDisplay.Model.html">Gameplay.MetroDisplay.Model</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Gameplay_MetroDisplay_Model_GlobalId_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GlobalId</code></pre>
+    <pre><code class="lang-csharp hljs">public class GlobalId : IEquatable&lt;GlobalId&gt;</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId__ctor_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.#ctor*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId__ctor_System_Int32_System_Int32_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.#ctor(System.Int32,System.Int32)">GlobalId(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalId(int lineId, int stationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">lineId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">stationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="fields">Fields
   </h3>
   
@@ -147,6 +185,343 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_CompareTo_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.CompareTo*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_CompareTo_Gameplay_MetroDisplay_Model_GlobalId_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.CompareTo(Gameplay.MetroDisplay.Model.GlobalId)">CompareTo(GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(GlobalId other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_Equals_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.Equals*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_Equals_Gameplay_MetroDisplay_Model_GlobalId_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.Equals(Gameplay.MetroDisplay.Model.GlobalId)">Equals(GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(GlobalId other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_Equals_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.Equals*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_Equals_System_Object_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_GetHashCode_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.GetHashCode*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_GetHashCode" data-uid="Gameplay.MetroDisplay.Model.GlobalId.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_op_Equality_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Equality*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_op_Equality_Gameplay_MetroDisplay_Model_GlobalId_Gameplay_MetroDisplay_Model_GlobalId_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Equality(Gameplay.MetroDisplay.Model.GlobalId,Gameplay.MetroDisplay.Model.GlobalId)">Equality(GlobalId, GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(GlobalId lhs, GlobalId rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_op_Implicit_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Implicit*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_op_Implicit_Gameplay_MetroDisplay_Model_GlobalId__System_Int32" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Implicit(Gameplay.MetroDisplay.Model.GlobalId)~System.Int32">Implicit(GlobalId to Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int (GlobalId id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_op_Implicit_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Implicit*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_op_Implicit_System_Int32__Gameplay_MetroDisplay_Model_GlobalId" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Implicit(System.Int32)~Gameplay.MetroDisplay.Model.GlobalId">Implicit(Int32 to GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator GlobalId(int number)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_GlobalId_op_Inequality_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Inequality*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_GlobalId_op_Inequality_Gameplay_MetroDisplay_Model_GlobalId_Gameplay_MetroDisplay_Model_GlobalId_" data-uid="Gameplay.MetroDisplay.Model.GlobalId.op_Inequality(Gameplay.MetroDisplay.Model.GlobalId,Gameplay.MetroDisplay.Model.GlobalId)">Inequality(GlobalId, GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(GlobalId lhs, GlobalId rhs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">lhs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.GlobalId.html">GlobalId</a></td>
+        <td><span class="parametername">rhs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IComparable&lt;&gt;</span>
+  </div>
 </article>
           </div>
           

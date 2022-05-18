@@ -102,12 +102,12 @@
   
   
   <a id="Gameplay_MetroDisplay_Model_Region__ctor_" data-uid="Gameplay.MetroDisplay.Model.Region.#ctor*"></a>
-  <h4 id="Gameplay_MetroDisplay_Model_Region__ctor_Gameplay_MetroDisplay_Model_RegionType_Gameplay_MetroDisplay_Model_Area_System_Int32_" data-uid="Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,Gameplay.MetroDisplay.Model.Area,System.Int32)">Region(RegionType, Area, Int32)</h4>
+  <h4 id="Gameplay_MetroDisplay_Model_Region__ctor_Gameplay_MetroDisplay_Model_RegionType_HashSet_System_Int32__System_Int32_" data-uid="Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,HashSet{System.Int32},System.Int32)">Region(RegionType, HashSet&lt;Int32&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Region(RegionType type, Area area, int lineId)</code></pre>
+    <pre><code class="lang-csharp hljs">public Region(RegionType type, HashSet&lt;int&gt; stations, int lineId)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -125,8 +125,40 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Gameplay.MetroDisplay.Model.Area.html">Area</a></td>
-        <td><span class="parametername">area</span></td>
+        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">stations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">lineId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_Region__ctor_" data-uid="Gameplay.MetroDisplay.Model.Region.#ctor*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_Region__ctor_Gameplay_MetroDisplay_Model_RegionType_System_Int32_" data-uid="Gameplay.MetroDisplay.Model.Region.#ctor(Gameplay.MetroDisplay.Model.RegionType,System.Int32)">Region(RegionType, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Region(RegionType type, int lineId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.RegionType.html">RegionType</a></td>
+        <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
       <tr>
@@ -138,30 +170,6 @@
   </table>
   <h3 id="fields">Fields
   </h3>
-  
-  
-  <h4 id="Gameplay_MetroDisplay_Model_Region_area" data-uid="Gameplay.MetroDisplay.Model.Region.area">area</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Area area</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gameplay.MetroDisplay.Model.Area.html">Area</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <h4 id="Gameplay_MetroDisplay_Model_Region_lineId" data-uid="Gameplay.MetroDisplay.Model.Region.lineId">lineId</h4>
@@ -206,6 +214,30 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Gameplay.MetroDisplay.Model.RegionType.html">RegionType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_MetroDisplay_Model_Region_stations" data-uid="Gameplay.MetroDisplay.Model.Region.stations">stations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashSet&lt;int&gt; stations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -283,6 +315,92 @@
   </table>
   
   
+  <a id="Gameplay_MetroDisplay_Model_Region_Equals_" data-uid="Gameplay.MetroDisplay.Model.Region.Equals*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_Region_Equals_Gameplay_MetroDisplay_Model_Region_" data-uid="Gameplay.MetroDisplay.Model.Region.Equals(Gameplay.MetroDisplay.Model.Region)">Equals(Region)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Equals(Region other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.Region.html">Region</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_Region_Equals_" data-uid="Gameplay.MetroDisplay.Model.Region.Equals*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_Region_Equals_System_Object_" data-uid="Gameplay.MetroDisplay.Model.Region.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a></div>
+  
+  
   <a id="Gameplay_MetroDisplay_Model_Region_GetFileName_" data-uid="Gameplay.MetroDisplay.Model.Region.GetFileName*"></a>
   <h4 id="Gameplay_MetroDisplay_Model_Region_GetFileName_Gameplay_MetroDisplay_Model_RegionType_" data-uid="Gameplay.MetroDisplay.Model.Region.GetFileName(Gameplay.MetroDisplay.Model.RegionType)">GetFileName(RegionType)</h4>
   <div class="markdown level1 summary"></div>
@@ -323,6 +441,33 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_Region_GetHashCode_" data-uid="Gameplay.MetroDisplay.Model.Region.GetHashCode*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_Region_GetHashCode" data-uid="Gameplay.MetroDisplay.Model.Region.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a></div>
   
   
   <a id="Gameplay_MetroDisplay_Model_Region_GetName_" data-uid="Gameplay.MetroDisplay.Model.Region.GetName*"></a>

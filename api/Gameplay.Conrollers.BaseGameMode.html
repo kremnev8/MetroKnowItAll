@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class QuestionGenerator&lt;T&gt;
+    <title>Class BaseGameMode
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class QuestionGenerator&lt;T&gt;
+    <meta name="title" content="Class BaseGameMode
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,80 +78,38 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.Questions.QuestionGenerator`1">
+            <article class="content wrap" id="_content" data-uid="Gameplay.Conrollers.BaseGameMode">
   
   
-  <h1 id="Gameplay_Questions_QuestionGenerator_1" data-uid="Gameplay.Questions.QuestionGenerator`1" class="text-break">Class QuestionGenerator&lt;T&gt;
+  <h1 id="Gameplay_Conrollers_BaseGameMode" data-uid="Gameplay.Conrollers.BaseGameMode" class="text-break">Class BaseGameMode
   </h1>
-  <div class="markdown level0 summary"><p>Base class for question generators that are focused on a region of the metro</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html">BaseQuestionGenerator</a></div>
-    <div class="level2"><span class="xref">QuestionGenerator&lt;T&gt;</span></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.FindLineGenerator.html">FindLineGenerator</a></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.FindStationGenerator.html">FindStationGenerator</a></div>
-      <div class="level3"><a class="xref" href="Gameplay.Questions.Generators.OrderStationsGenerator.html">OrderStationsGenerator</a></div>
+    <div class="level1"><span class="xref">BaseGameMode</span></div>
+      <div class="level2"><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html">ArcadeModeController</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_renderer">BaseQuestionGenerator.renderer</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_metro">BaseQuestionGenerator.metro</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_questionId">BaseQuestionGenerator.questionId</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_GenerateNew">BaseQuestionGenerator.GenerateNew()</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_GenerateTip_System_Int32_">BaseQuestionGenerator.GenerateTip(Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_ValidateAnswer">BaseQuestionGenerator.ValidateAnswer()</a>
-    </div>
-    <div>
-      <a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_ShouldUse_Game_System_Int32_">BaseQuestionGenerator.ShouldUse(Game, Int32)</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Questions.html">Gameplay.Questions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_Questions_QuestionGenerator_1_syntax">Syntax</h5>
+  <h5 id="Gameplay_Conrollers_BaseGameMode_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class QuestionGenerator&lt;T&gt; : BaseQuestionGenerator where T : BaseUIQuestion</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseGameMode : MonoBehaviour</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
+  <h3 id="properties">Properties
   </h3>
   
   
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_blacklistedIds" data-uid="Gameplay.Questions.QuestionGenerator`1.blacklistedIds">blacklistedIds</h4>
+  <a id="Gameplay_Conrollers_BaseGameMode_gameModeId_" data-uid="Gameplay.Conrollers.BaseGameMode.gameModeId*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_gameModeId" data-uid="Gameplay.Conrollers.BaseGameMode.gameModeId">gameModeId</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;int&gt; blacklistedIds</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract string gameModeId { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -161,55 +119,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_currentRegion" data-uid="Gameplay.Questions.QuestionGenerator`1.currentRegion">currentRegion</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Region currentRegion</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Region</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_uiController" data-uid="Gameplay.Questions.QuestionGenerator`1.uiController">uiController</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T uiController</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -218,13 +128,23 @@
   </h3>
   
   
-  <a id="Gameplay_Questions_QuestionGenerator_1_Init_" data-uid="Gameplay.Questions.QuestionGenerator`1.Init*"></a>
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_Init_MetroRenderer_Gameplay_Questions_BaseUIQuestion_" data-uid="Gameplay.Questions.QuestionGenerator`1.Init(MetroRenderer,Gameplay.Questions.BaseUIQuestion)">Init(MetroRenderer, BaseUIQuestion)</h4>
+  <a id="Gameplay_Conrollers_BaseGameMode_ConfirmPressed_" data-uid="Gameplay.Conrollers.BaseGameMode.ConfirmPressed*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_ConfirmPressed" data-uid="Gameplay.Conrollers.BaseGameMode.ConfirmPressed">ConfirmPressed()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Init(MetroRenderer _renderer, BaseUIQuestion root)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void ConfirmPressed()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_ContinueSession_" data-uid="Gameplay.Conrollers.BaseGameMode.ContinueSession*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_ContinueSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.BaseGameMode.ContinueSession(Gameplay.Conrollers.Game)">ContinueSession(Game)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ContinueSession(Game gameState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -237,28 +157,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MetroRenderer</span></td>
-        <td><span class="parametername">_renderer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Gameplay.Questions.BaseUIQuestion.html">BaseUIQuestion</a></td>
-        <td><span class="parametername">root</span></td>
+        <td><a class="xref" href="Gameplay.Conrollers.Game.html">Game</a></td>
+        <td><span class="parametername">gameState</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_Init_MetroRenderer_Gameplay_Questions_BaseUIQuestion_">BaseQuestionGenerator.Init(MetroRenderer, BaseUIQuestion)</a></div>
   
   
-  <a id="Gameplay_Questions_QuestionGenerator_1_SetRegion_" data-uid="Gameplay.Questions.QuestionGenerator`1.SetRegion*"></a>
-  <h4 id="Gameplay_Questions_QuestionGenerator_1_SetRegion_Region_" data-uid="Gameplay.Questions.QuestionGenerator`1.SetRegion(Region)">SetRegion(Region)</h4>
+  <a id="Gameplay_Conrollers_BaseGameMode_GetNextTip_" data-uid="Gameplay.Conrollers.BaseGameMode.GetNextTip*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_GetNextTip_System_Int32_" data-uid="Gameplay.Conrollers.BaseGameMode.GetNextTip(System.Int32)">GetNextTip(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetRegion(Region region)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract string GetNextTip(int index)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,14 +184,101 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Region</span></td>
-        <td><span class="parametername">region</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Questions.BaseQuestionGenerator.html#Gameplay_Questions_BaseQuestionGenerator_SetRegion_Region_">BaseQuestionGenerator.SetRegion(Region)</a></div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_Init_" data-uid="Gameplay.Conrollers.BaseGameMode.Init*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_Init_Gameplay_Conrollers_GameModeController_" data-uid="Gameplay.Conrollers.BaseGameMode.Init(Gameplay.Conrollers.GameModeController)">Init(GameModeController)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Init(GameModeController mainController)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.Conrollers.GameModeController.html">GameModeController</a></td>
+        <td><span class="parametername">mainController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_ManualUpdate_" data-uid="Gameplay.Conrollers.BaseGameMode.ManualUpdate*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_ManualUpdate" data-uid="Gameplay.Conrollers.BaseGameMode.ManualUpdate">ManualUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ManualUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_StartGamePressed_" data-uid="Gameplay.Conrollers.BaseGameMode.StartGamePressed*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_StartGamePressed" data-uid="Gameplay.Conrollers.BaseGameMode.StartGamePressed">StartGamePressed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void StartGamePressed()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_StartNewSession_" data-uid="Gameplay.Conrollers.BaseGameMode.StartNewSession*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_StartNewSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.BaseGameMode.StartNewSession(Gameplay.Conrollers.Game)">StartNewSession(Game)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void StartNewSession(Game gameState)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.Conrollers.Game.html">Game</a></td>
+        <td><span class="parametername">gameState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

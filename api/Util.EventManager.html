@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum RegionType
+    <title>Class EventManager
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum RegionType
+    <meta name="title" content="Class EventManager
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,79 +78,122 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.MetroDisplay.Model.RegionType">
+            <article class="content wrap" id="_content" data-uid="Util.EventManager">
   
   
-  <h1 id="Gameplay_MetroDisplay_Model_RegionType" data-uid="Gameplay.MetroDisplay.Model.RegionType" class="text-break">Enum RegionType
+  <h1 id="Util_EventManager" data-uid="Util.EventManager" class="text-break">Class EventManager
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.MetroDisplay.Model.html">Gameplay.MetroDisplay.Model</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_MetroDisplay_Model_RegionType_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum RegionType</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EventManager</span></div>
   </div>
-  <h3 id="fields">Fields
+  <h6><strong>Namespace</strong>: <a class="xref" href="Util.html">Util</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Util_EventManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EventManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Util_EventManager_StartListening_" data-uid="Util.EventManager.StartListening*"></a>
+  <h4 id="Util_EventManager_StartListening_System_String_Action_System_Object____" data-uid="Util.EventManager.StartListening(System.String,Action{System.Object[]})">StartListening(String, Action&lt;Object[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartListening(string eventType, Action&lt;object[]&gt; listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_CENTER">CENTER</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventType</span></td>
         <td></td>
       </tr>
       <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_EAST">EAST</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_GLOBAL_LINE">GLOBAL_LINE</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_GLOBAL_STATIONS">GLOBAL_STATIONS</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_MAX_VALUE">MAX_VALUE</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_NORTH">NORTH</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_NORTH_EAST">NORTH_EAST</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_NORTH_WEST">NORTH_WEST</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_SOUTH">SOUTH</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_SOUTH_EAST">SOUTH_EAST</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_SOUTH_WEST">SOUTH_WEST</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="Gameplay_MetroDisplay_Model_RegionType_WEST">WEST</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]&gt;</td>
+        <td><span class="parametername">listener</span></td>
         <td></td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
+  
+  
+  <a id="Util_EventManager_StopListening_" data-uid="Util.EventManager.StopListening*"></a>
+  <h4 id="Util_EventManager_StopListening_System_String_Action_System_Object____" data-uid="Util.EventManager.StopListening(System.String,Action{System.Object[]})">StopListening(String, Action&lt;Object[]&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StopListening(string eventType, Action&lt;object[]&gt; listener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]&gt;</td>
+        <td><span class="parametername">listener</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Util_EventManager_TriggerEvent_" data-uid="Util.EventManager.TriggerEvent*"></a>
+  <h4 id="Util_EventManager_TriggerEvent_System_String_System_Object___" data-uid="Util.EventManager.TriggerEvent(System.String,System.Object[])">TriggerEvent(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TriggerEvent(string eventType, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
