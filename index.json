@@ -534,11 +534,6 @@
     "title": "Class Theme | Metro Connoisseur documentation",
     "keywords": "Class Theme Defines a theme with all of the palette colors Inheritance Object Theme Namespace : ScriptableObjects Assembly : cs.temp.dll.dll Syntax public class Theme Fields background Declaration public Color background Field Value Type Description Color buttonColor Declaration public Color buttonColor Field Value Type Description Color highlightColor Declaration public Color highlightColor Field Value Type Description Color lineColor Declaration public Color lineColor Field Value Type Description Color middleBackground Declaration public Color middleBackground Field Value Type Description Color rightAnswer Declaration public Color rightAnswer Field Value Type Description Color secondareBackground Declaration public Color secondareBackground Field Value Type Description Color textColor Declaration public Color textColor Field Value Type Description Color themeName Declaration public string themeName Field Value Type Description String unfocusedColor Declaration public Color unfocusedColor Field Value Type Description Color wrongAnswer Declaration public Color wrongAnswer Field Value Type Description Color"
   },
-  "api/Util.EditorExtensions.html": {
-    "href": "api/Util.EditorExtensions.html",
-    "title": "Class EditorExtensions | Metro Connoisseur documentation",
-    "keywords": "Class EditorExtensions Helper methods for creating property drawers Inheritance Object EditorExtensions Namespace : Util Assembly : cs.temp.dll.dll Syntax public static class EditorExtensions"
-  },
   "api/Util.EventManager.html": {
     "href": "api/Util.EventManager.html",
     "title": "Class EventManager | Metro Connoisseur documentation",
@@ -567,7 +562,7 @@
   "api/Util.html": {
     "href": "api/Util.html",
     "title": "Namespace Util | Metro Connoisseur documentation",
-    "keywords": "Namespace Util Classes EditorExtensions Helper methods for creating property drawers EventManager EventToggleGroup EventToggleGroup.ToggleEvent GameObjectExtensions Extension methods for GameObjects and MonoBehaviors HideOnStart Hide game object this is attached to InspectorButtonAttribute LabeledArrayAttribute Property drawer attribute to name all array elements, elements must implement INamedArrayElement MathExtensions Math and Vector extension methods PauseController RandomUtils Helper methods to generate random numbers RenameAttribute Property drawer attribute to rename property RendererGroup ShowWhenAttribute Attribute used to show or hide the Field depending on certain conditions SortingLayer SplineUtil Extension class to work with splines StringExtension UIUtil Helper class to detect UI raycast hits Interfaces INamedArrayElement"
+    "keywords": "Namespace Util Classes EventManager EventToggleGroup EventToggleGroup.ToggleEvent GameObjectExtensions Extension methods for GameObjects and MonoBehaviors HideOnStart Hide game object this is attached to InspectorButtonAttribute LabeledArrayAttribute Property drawer attribute to name all array elements, elements must implement INamedArrayElement MathExtensions Math and Vector extension methods PauseController RandomUtils Helper methods to generate random numbers RenameAttribute Property drawer attribute to rename property RendererGroup ShowWhenAttribute Attribute used to show or hide the Field depending on certain conditions SortingLayer SplineUtil Extension class to work with splines StringExtension UIUtil Helper class to detect UI raycast hits Interfaces INamedArrayElement"
   },
   "api/Util.INamedArrayElement.html": {
     "href": "api/Util.INamedArrayElement.html",

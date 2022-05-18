@@ -1308,18 +1308,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Util.EditorExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Util.EditorExtensions.html",
-          "hash": "0ghG53Uct3HZ0OrPtZnJH4CWC8aJAMRypfPkPwMzg1A="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Util.EventManager.yml",
       "output": {
         ".html": {
@@ -1540,7 +1528,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.html",
-          "hash": "9Sd+MzTYVi6bdtAjpnaPZYU/JFzFZHEaa7TZLGTGsYU="
+          "hash": "2aB/VjWnG2kmmZq4D4Iv263DiasBmfkXqPvEXeRIYI0="
         }
       },
       "is_incremental": false,
@@ -1552,7 +1540,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "QDBB4KEvKTpL9UjGwM3meUWHO25JXoXV+D8o6a6qzjU="
+          "hash": "8gK3COtKPDBzapBIrpCl29EYhTBH5N0IY+snbpmCmdM="
         }
       },
       "is_incremental": false,
@@ -1969,7 +1957,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 127,
+          "total_file_count": 126,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -6426,12 +6426,6 @@ references:
   commentId: N:Util
   fullName: Util
   nameWithType: Util
-- uid: Util.EditorExtensions
-  name: EditorExtensions
-  href: api/Util.EditorExtensions.html
-  commentId: T:Util.EditorExtensions
-  fullName: Util.EditorExtensions
-  nameWithType: EditorExtensions
 - uid: Util.EventManager
   name: EventManager
   href: api/Util.EventManager.html
