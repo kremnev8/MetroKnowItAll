@@ -34,9 +34,8 @@ namespace Gameplay.Statistics
         public int maxScore;
         public int tickets;
 
-        public bool isArcadeInitialized;
-        public bool isLearningInitialized;
-        
+        public Dictionary<string, bool> gameModeState = new Dictionary<string, bool>();
+
         [JsonIgnore]
         public int Version
         {
@@ -69,6 +68,30 @@ namespace Gameplay.Statistics
             
             fastestCorrectAnswer = fastestCorrectAnswer > 0 ? Mathf.Min(fastestCorrectAnswer, other.fastestCorrectAnswer) : other.fastestCorrectAnswer;
             maximumCorrectAnswerTime = Mathf.Max(maximumCorrectAnswerTime, other.maximumCorrectAnswerTime);
+        }
+
+        public bool GetGameState(string gameMode)
+        {
+            if (gameModeState.ContainsKey(gameMode))
+            {
+                return gameModeState[gameMode];
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+        public void SetGameState(string gameMode, bool value)
+        { 
+            if (gameModeState.ContainsKey(gameMode))
+            {
+                gameModeState[gameMode] = value;
+            }
+            else
+            {
+                gameModeState.Add(gameMode, value);
+            }
         }
     }
 }

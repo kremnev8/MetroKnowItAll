@@ -39,17 +39,18 @@ namespace Gameplay.MetroDisplay.Model
 
         public bool Contains(MetroStation station)
         {
-            if (lineId == -1 && regionType != RegionType.GLOBAL_LINE && regionType != RegionType.GLOBAL_STATIONS)
+            if (regionType == RegionType.GLOBAL_STATIONS)
+            {
+                if (stations == null || stations.Count == 0) return false;
+                return stations.Contains(station.globalId);
+            }
+            
+            if (lineId == -1 && regionType != RegionType.GLOBAL_LINE)
             {
                 return StationsContain(station.globalId) && regionType == station.regionType;
             }
-            
-            if (lineId == -1 && regionType == RegionType.GLOBAL_STATIONS)
-            {
-                return StationsContain(station.globalId);
-            }
 
-            if (regionType != RegionType.GLOBAL_LINE && regionType != RegionType.GLOBAL_STATIONS)
+            if (regionType != RegionType.GLOBAL_LINE)
             {
                 return regionType == station.regionType && lineId == station.lineId && StationsContain(station.globalId);
             }

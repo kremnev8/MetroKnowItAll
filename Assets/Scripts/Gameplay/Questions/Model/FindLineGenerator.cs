@@ -15,7 +15,8 @@ namespace Gameplay.Questions.Generators
         public MetroStation questionStation;
         public bool questionUsedLineName;
         
-        public override string questionId => "find-line";
+        public const string QUESTION_ID = "find-line";
+        public override string questionId => QUESTION_ID;
         
         public override void GenerateNew()
         {

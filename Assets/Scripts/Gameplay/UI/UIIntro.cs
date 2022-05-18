@@ -26,11 +26,15 @@ namespace Gameplay.UI
         private void OnNewGame(object[] obj)
         {
             Game game = (Game)obj[0];
-            arcadeCard.SetActive(game.mode == ArcadeModeController.MODE_ID);
-            learningCard.SetActive(game.mode == LearningModeController.MODE_ID);
-            historicCard.SetActive(false);
-            
-            gameObject.SetActive(true);
+            bool newGame = (bool)obj[1];
+            if (newGame)
+            {
+                arcadeCard.SetActive(game.mode == ArcadeModeController.MODE_ID);
+                learningCard.SetActive(game.mode == LearningModeController.MODE_ID);
+                historicCard.SetActive(false);
+
+                gameObject.SetActive(true);
+            }
         }
     }
 }

@@ -61,16 +61,27 @@ namespace Gameplay.Conrollers
 
         public override void StartNewSession(Game gameState)
         {
+            InitGameState(gameState);
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, true);
+        }
+
+        public override void ContinueSession(Game gameState)
+        {
+            InitGameState(gameState);
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, false);
+        }
+
+        private void InitGameState(Game gameState)
+        {
             game = gameState;
             game.currentQuestion = 0;
-            
+
             game.attemptsLeft = model.settings.currentDifficulty.maxAttempts;
             game.partialAttempts = 0;
             game.questionId = Game.ANY_QUESTIONS;
-            
+
             game.isPlaying = true;
             uiGame.topBar.SetCurrentAttemptsImmidiate(game.attemptsLeft, 0);
-            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
             Invoke(nameof(PrepareNewGame), 1f);
         }
 
@@ -172,7 +183,14 @@ namespace Gameplay.Conrollers
 
         public void SelectNextController(int exclude)
         {
-            main.GetUI(game.currentGenerator).HideElements();
+            try
+            {
+                main.GetUI(game.currentGenerator).HideElements();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
 
             main.SelectGenerator(game, exclude);
             BaseQuestionGenerator generator = main.GetGenerator(game.currentGenerator);
@@ -201,7 +219,10 @@ namespace Gameplay.Conrollers
             game.currentRegion = SelectRegion();
 
             Vector2 center = game.currentRegion.GetRegionCenter(renderer.metro);
-            model.cameraController.LerpTo(center);
+            if (!center.IsInfinity())
+            {
+                model.cameraController.LerpTo(center);
+            }
 
             OnRestStarted();
         }

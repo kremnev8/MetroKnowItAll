@@ -23,6 +23,7 @@ namespace Gameplay.Conrollers
         
         private GameModel model;
         private new MetroRenderer renderer;
+        private StatisticsController statistics;
         
         public Game gameState;
         
@@ -30,6 +31,7 @@ namespace Gameplay.Conrollers
         {
             model = Simulation.GetModel<GameModel>();
             renderer = model.renderer;
+            statistics = model.statistics;
 
             InitializeQuestions();
 
@@ -66,7 +68,16 @@ namespace Gameplay.Conrollers
                 gameState.maxQuestions = 10;
                 gameState.mode = gameModeId;
                 currentGameMode = gameModeId;
-                gameMode.StartNewSession(gameState);
+
+                if (statistics.current.GetGameState(gameModeId))
+                {
+                    gameMode.ContinueSession(gameState);
+                }
+                else
+                {
+                    gameMode.StartNewSession(gameState);
+                    statistics.current.SetGameState(gameModeId, true);
+                }
             }
             
         }

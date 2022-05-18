@@ -71,7 +71,12 @@ namespace Gameplay.Controls
             
             primaryContactAction.started += CheckPress;
         }
-        
+
+        private void OnDestroy()
+        {
+            primaryContactAction.started -= CheckPress;
+        }
+
 
         private void CheckPress(InputAction.CallbackContext obj)
         {

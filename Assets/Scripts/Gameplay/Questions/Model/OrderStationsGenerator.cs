@@ -21,7 +21,8 @@ namespace Gameplay.Questions.Generators
 
         public List<int> tipBlacklisted = new List<int>();
         
-        public override string questionId => "station-order";
+        public const string QUESTION_ID = "station-order";
+        public override string questionId => QUESTION_ID;
 
         public override void GenerateNew()
         {

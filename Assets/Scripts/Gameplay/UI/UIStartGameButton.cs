@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
@@ -7,5 +8,6 @@ namespace Gameplay.UI
     {
         public TMP_Text buttonTitle;
         public TMP_Text gameModeText;
+        public Button button;
     }
 }

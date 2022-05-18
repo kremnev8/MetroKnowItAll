@@ -17,6 +17,12 @@ namespace Gameplay.UI
         {
             startGameButton.gameModeText.text = gameModeText;
             startGameButton.gameObject.SetActive(true);
+            startGameButton.button.interactable = true;
+        }
+
+        public void SetStartInteractable(bool interactable)
+        {
+            startGameButton.button.interactable = interactable;
         }
 
         public void DisableStartButton()

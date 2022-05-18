@@ -248,7 +248,8 @@ namespace Util
         /// <returns></returns>
         public static bool IsInfinity(this Vector2 vector)
         {
-            return float.IsInfinity(vector.x) || float.IsInfinity(vector.y);
+            return float.IsInfinity(vector.x) || float.IsInfinity(vector.y) ||
+                   float.IsNaN(vector.x) || float.IsNaN(vector.y);
         }
         
         /// <summary>

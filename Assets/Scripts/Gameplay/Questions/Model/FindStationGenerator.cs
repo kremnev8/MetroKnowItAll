@@ -12,7 +12,8 @@ namespace Gameplay.Questions.Generators
     {
         public MetroStation currentQuestion;
 
-        public override string questionId => "find-station";
+        public const string QUESTION_ID = "find-station";
+        public override string questionId => QUESTION_ID;
 
         public override void GenerateNew()
         {

@@ -3,6 +3,8 @@ using System.Linq;
 using Gameplay.Controls;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
+using Gameplay.Questions.Generators;
+using Gameplay.Statistics;
 using TMPro;
 using UnityEngine;
 using Util;
@@ -25,6 +27,19 @@ namespace Gameplay.Conrollers
         {
             base.Init(mainController);
             statistics = model.statistics;
+        }
+
+        public override void StartNewSession(Game gameState)
+        {
+            statistics.current.tickets = 10;
+            statistics.current.unlockedStations = new BoolRecord<MetroStation, int>();
+            ContinueSession(gameState);
+        }
+
+        public override void ContinueSession(Game gameState)
+        {
+            base.ContinueSession(gameState);
+            game.questionId = FindStationGenerator.QUESTION_ID;
         }
 
         protected override void OnRestStarted()
@@ -60,12 +75,13 @@ namespace Gameplay.Conrollers
             base.OnRestStarted();
             Refresh();
             uiGame.SetConfirmText("Открыть");
-            
+
             uiGame.touchButton.Enable(selectable =>
             {
                 if (selectable is StationDisplay display)
                 {
-                    if (renderer.metro.IsStationAdjacent(display.station, statistics.current.unlockedStations.data))
+                    if (renderer.metro.IsStationAdjacent(display.station, statistics.current.unlockedStations.data) ||
+                        statistics.current.unlockedStations.data.Count == 0)
                     {
                         return true;
                     }
@@ -146,6 +162,16 @@ namespace Gameplay.Conrollers
             uiGame.topBar.UpdateTickets(statistics.current.tickets);
             game.currentRegion = SelectRegion();
             renderer.FocusRegion(game.currentRegion);
+            if (statistics.current.unlockedStations.data.Count < 10)
+            {
+                int need = 10 - statistics.current.unlockedStations.data.Count;
+                uiGame.EnableStartButton( $"Откройте {need} станций");
+            }
+            else
+            {
+                uiGame.EnableStartButton($"{game.maxQuestions} вопросов");
+            }
+            uiGame.SetStartInteractable(statistics.current.unlockedStations.data.Count > 10);
         }
     }
 }

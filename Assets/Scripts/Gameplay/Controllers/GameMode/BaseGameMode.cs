@@ -8,6 +8,7 @@ namespace Gameplay.Conrollers
 
         public abstract void Init(GameModeController mainController);
         public abstract void StartNewSession(Game gameState);
+        public abstract void ContinueSession(Game gameState);
         public abstract void ConfirmPressed();
         public abstract void StartGamePressed();
         public abstract void ManualUpdate();
