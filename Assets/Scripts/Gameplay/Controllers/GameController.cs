@@ -25,6 +25,7 @@ namespace Gameplay.Conrollers
         public Material lineMaterial;
         public Material crossingMaterial;
         public Material tmpOutlineMaterial;
+        public Material highlightMaterial;
 
         public bool shouldBackCloseGame;
 
@@ -92,6 +93,11 @@ namespace Gameplay.Conrollers
 
             if (tmpOutlineMaterial != null)
                 tmpOutlineMaterial.SetColor(underlayColor, theme.secondareBackground);
+
+            if (highlightMaterial != null)
+            {
+                highlightMaterial.SetColor(color, theme.background);
+            }
         }
 
 #if UNITY_EDITOR

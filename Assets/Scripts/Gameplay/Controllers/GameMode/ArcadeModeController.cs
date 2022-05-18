@@ -70,8 +70,7 @@ namespace Gameplay.Conrollers
             InitGameState(gameState);
             EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, false);
         }
-
-        private void InitGameState(Game gameState)
+        protected void InitGameState(Game gameState)
         {
             game = gameState;
             game.currentQuestion = 0;

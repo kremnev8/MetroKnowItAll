@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5082408180292393233}
   - component: {fileID: 4064005923402888182}
   - component: {fileID: 8193508040809294224}
+  - component: {fileID: 1568869073100479826}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -134,6 +135,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1568869073100479826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358088892266589075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useColorOnSprites: 0
+  keepAlpha: 0
+  colorName: textColor
 --- !u!1 &2175850875341031725
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +161,7 @@ GameObject:
   - component: {fileID: 7220843227865498841}
   - component: {fileID: 8714054529007583741}
   - component: {fileID: 1921293077065486815}
+  - component: {fileID: 2318149678240180685}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -272,6 +289,21 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2318149678240180685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175850875341031725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useColorOnSprites: 0
+  keepAlpha: 0
+  colorName: textColor
 --- !u!1 &2242082706673376656
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +316,7 @@ GameObject:
   - component: {fileID: 5478510703906372856}
   - component: {fileID: 5650594762474755555}
   - component: {fileID: 7073219829223922484}
+  - component: {fileID: 553411813448665493}
   m_Layer: 5
   m_Name: GameModeButton
   m_TagString: Untagged
@@ -395,6 +428,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &553411813448665493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2242082706673376656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e24ecb355c334604b57a29b72ac533f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useColorOnSprites: 0
+  keepAlpha: 0
+  colorName: secondareBackground
 --- !u!1 &7300405252979896372
 GameObject:
   m_ObjectHideFlags: 0

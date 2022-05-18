@@ -92,6 +92,7 @@ namespace Gameplay.UI
         private void OnEnable()
         {
             ColorPalette.paletteChanged += ApplyColor;
+            ApplyColor();
         }
 
         private Color GetColor(Color oldColor, Color paletteColor)

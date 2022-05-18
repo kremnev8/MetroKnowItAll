@@ -44,6 +44,8 @@ namespace Gameplay.Conrollers
 
         public override void InitializeSaveData(SettingsEntry data)
         {
+            palette.themeIndex = data.theme;
+            difficultyChanged?.Invoke(currentDifficulty);
         }
 
         public override void OnSaveDataLoaded()

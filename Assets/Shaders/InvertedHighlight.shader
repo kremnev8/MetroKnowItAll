@@ -5,6 +5,7 @@ Shader "Metro/InvertedHighlight"
     Properties
     {
         _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
+        _Color ("Color", Color) = (1,1,1,1)
     }
 
     SubShader
@@ -41,6 +42,8 @@ Shader "Metro/InvertedHighlight"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            float4 _Color;
+
             v2f vert(appdata_t v)
             {
                 v2f o;
@@ -52,7 +55,7 @@ Shader "Metro/InvertedHighlight"
             fixed4 frag(v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.texcoord);
-                col.rgb = 1;
+                col.rgb = _Color.rgb;
                 if (col.a > 0.5f)
                 {
                     col.a = 1;

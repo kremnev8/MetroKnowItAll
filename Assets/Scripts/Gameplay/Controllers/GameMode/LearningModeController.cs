@@ -33,13 +33,15 @@ namespace Gameplay.Conrollers
         {
             statistics.current.tickets = 10;
             statistics.current.unlockedStations = new BoolRecord<MetroStation, int>();
-            ContinueSession(gameState);
+            InitGameState(gameState);
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, true);
         }
 
         public override void ContinueSession(Game gameState)
         {
-            base.ContinueSession(gameState);
+            InitGameState(gameState);
             game.questionId = FindStationGenerator.QUESTION_ID;
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, false);
         }
 
         protected override void OnRestStarted()
