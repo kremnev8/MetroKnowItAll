@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Reflection;
 using UnityEditor;
 
@@ -9,7 +10,6 @@ namespace Util
     /// </summary>
     public static class EditorExtensions
     {
-#if UNITY_EDITOR
 
         public static SerializedProperty GetParent(this SerializedProperty aProperty)
         {
@@ -94,6 +94,6 @@ namespace Util
 
             return enm.Current;
         }
-#endif
     }
 }
+#endif
