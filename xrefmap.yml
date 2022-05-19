@@ -103,6 +103,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.Init
   nameWithType: ArcadeModeController.Init
+- uid: Gameplay.Conrollers.ArcadeModeController.InitGameState(Gameplay.Conrollers.Game)
+  name: InitGameState(Game)
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_InitGameState_Gameplay_Conrollers_Game_
+  commentId: M:Gameplay.Conrollers.ArcadeModeController.InitGameState(Gameplay.Conrollers.Game)
+  fullName: Gameplay.Conrollers.ArcadeModeController.InitGameState(Gameplay.Conrollers.Game)
+  nameWithType: ArcadeModeController.InitGameState(Game)
+- uid: Gameplay.Conrollers.ArcadeModeController.InitGameState*
+  name: InitGameState
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_InitGameState_
+  commentId: Overload:Gameplay.Conrollers.ArcadeModeController.InitGameState
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeModeController.InitGameState
+  nameWithType: ArcadeModeController.InitGameState
 - uid: Gameplay.Conrollers.ArcadeModeController.main
   name: main
   href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_main
@@ -469,6 +482,12 @@ references:
   commentId: F:Gameplay.Conrollers.GameController.crossingMaterial
   fullName: Gameplay.Conrollers.GameController.crossingMaterial
   nameWithType: GameController.crossingMaterial
+- uid: Gameplay.Conrollers.GameController.highlightMaterial
+  name: highlightMaterial
+  href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_highlightMaterial
+  commentId: F:Gameplay.Conrollers.GameController.highlightMaterial
+  fullName: Gameplay.Conrollers.GameController.highlightMaterial
+  nameWithType: GameController.highlightMaterial
 - uid: Gameplay.Conrollers.GameController.instance
   name: instance
   href: api/Gameplay.Conrollers.GameController.html#Gameplay_Conrollers_GameController_instance
@@ -1277,6 +1296,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Controls.ISelectable.SetSelected
   nameWithType: ISelectable.SetSelected
+- uid: Gameplay.Controls.ISelectable.ShowLabel(System.Boolean)
+  name: ShowLabel(Boolean)
+  href: api/Gameplay.Controls.ISelectable.html#Gameplay_Controls_ISelectable_ShowLabel_System_Boolean_
+  commentId: M:Gameplay.Controls.ISelectable.ShowLabel(System.Boolean)
+  fullName: Gameplay.Controls.ISelectable.ShowLabel(System.Boolean)
+  nameWithType: ISelectable.ShowLabel(Boolean)
+- uid: Gameplay.Controls.ISelectable.ShowLabel*
+  name: ShowLabel
+  href: api/Gameplay.Controls.ISelectable.html#Gameplay_Controls_ISelectable_ShowLabel_
+  commentId: Overload:Gameplay.Controls.ISelectable.ShowLabel
+  isSpec: "True"
+  fullName: Gameplay.Controls.ISelectable.ShowLabel
+  nameWithType: ISelectable.ShowLabel
 - uid: Gameplay.Controls.TouchButton
   name: TouchButton
   href: api/Gameplay.Controls.TouchButton.html
@@ -1302,15 +1334,15 @@ references:
   isSpec: "True"
   fullName: Gameplay.Controls.TouchButton.Disable
   nameWithType: TouchButton.Disable
-- uid: Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean},System.Boolean)
-  name: Enable(Func<ISelectable, Boolean>, Boolean)
-  href: api/Gameplay.Controls.TouchButton.html#Gameplay_Controls_TouchButton_Enable_Func_Gameplay_Controls_ISelectable_System_Boolean__System_Boolean_
-  commentId: M:Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean},System.Boolean)
-  name.vb: Enable(Func(Of ISelectable, Boolean), Boolean)
-  fullName: Gameplay.Controls.TouchButton.Enable(Func<Gameplay.Controls.ISelectable, System.Boolean>, System.Boolean)
-  fullName.vb: Gameplay.Controls.TouchButton.Enable(Func(Of Gameplay.Controls.ISelectable, System.Boolean), System.Boolean)
-  nameWithType: TouchButton.Enable(Func<ISelectable, Boolean>, Boolean)
-  nameWithType.vb: TouchButton.Enable(Func(Of ISelectable, Boolean), Boolean)
+- uid: Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean},System.Boolean,System.Boolean)
+  name: Enable(Func<ISelectable, Boolean>, Boolean, Boolean)
+  href: api/Gameplay.Controls.TouchButton.html#Gameplay_Controls_TouchButton_Enable_Func_Gameplay_Controls_ISelectable_System_Boolean__System_Boolean_System_Boolean_
+  commentId: M:Gameplay.Controls.TouchButton.Enable(Func{Gameplay.Controls.ISelectable,System.Boolean},System.Boolean,System.Boolean)
+  name.vb: Enable(Func(Of ISelectable, Boolean), Boolean, Boolean)
+  fullName: Gameplay.Controls.TouchButton.Enable(Func<Gameplay.Controls.ISelectable, System.Boolean>, System.Boolean, System.Boolean)
+  fullName.vb: Gameplay.Controls.TouchButton.Enable(Func(Of Gameplay.Controls.ISelectable, System.Boolean), System.Boolean, System.Boolean)
+  nameWithType: TouchButton.Enable(Func<ISelectable, Boolean>, Boolean, Boolean)
+  nameWithType.vb: TouchButton.Enable(Func(Of ISelectable, Boolean), Boolean, Boolean)
 - uid: Gameplay.Controls.TouchButton.Enable*
   name: Enable
   href: api/Gameplay.Controls.TouchButton.html#Gameplay_Controls_TouchButton_Enable_
@@ -2670,6 +2702,19 @@ references:
   commentId: F:Gameplay.MetroDisplay.LineSubDisplay.shape
   fullName: Gameplay.MetroDisplay.LineSubDisplay.shape
   nameWithType: LineSubDisplay.shape
+- uid: Gameplay.MetroDisplay.LineSubDisplay.ShowLabel(System.Boolean)
+  name: ShowLabel(Boolean)
+  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_ShowLabel_System_Boolean_
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.ShowLabel(System.Boolean)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.ShowLabel(System.Boolean)
+  nameWithType: LineSubDisplay.ShowLabel(Boolean)
+- uid: Gameplay.MetroDisplay.LineSubDisplay.ShowLabel*
+  name: ShowLabel
+  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_ShowLabel_
+  commentId: Overload:Gameplay.MetroDisplay.LineSubDisplay.ShowLabel
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.ShowLabel
+  nameWithType: LineSubDisplay.ShowLabel
 - uid: Gameplay.MetroDisplay.LineSubDisplay.spline
   name: spline
   href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_spline
@@ -3972,6 +4017,19 @@ references:
   commentId: F:Gameplay.MetroDisplay.StationDisplay.shouldLabelDisplay
   fullName: Gameplay.MetroDisplay.StationDisplay.shouldLabelDisplay
   nameWithType: StationDisplay.shouldLabelDisplay
+- uid: Gameplay.MetroDisplay.StationDisplay.ShowLabel(System.Boolean)
+  name: ShowLabel(Boolean)
+  href: api/Gameplay.MetroDisplay.StationDisplay.html#Gameplay_MetroDisplay_StationDisplay_ShowLabel_System_Boolean_
+  commentId: M:Gameplay.MetroDisplay.StationDisplay.ShowLabel(System.Boolean)
+  fullName: Gameplay.MetroDisplay.StationDisplay.ShowLabel(System.Boolean)
+  nameWithType: StationDisplay.ShowLabel(Boolean)
+- uid: Gameplay.MetroDisplay.StationDisplay.ShowLabel*
+  name: ShowLabel
+  href: api/Gameplay.MetroDisplay.StationDisplay.html#Gameplay_MetroDisplay_StationDisplay_ShowLabel_
+  commentId: Overload:Gameplay.MetroDisplay.StationDisplay.ShowLabel
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.StationDisplay.ShowLabel
+  nameWithType: StationDisplay.ShowLabel
 - uid: Gameplay.MetroDisplay.StationDisplay.ShowLabelFor(Color,System.Int32)
   name: ShowLabelFor(Color, Int32)
   href: api/Gameplay.MetroDisplay.StationDisplay.html#Gameplay_MetroDisplay_StationDisplay_ShowLabelFor_Color_System_Int32_
@@ -5498,6 +5556,12 @@ references:
   commentId: F:Gameplay.UI.UIGame.answerPanelSwipe
   fullName: Gameplay.UI.UIGame.answerPanelSwipe
   nameWithType: UIGame.answerPanelSwipe
+- uid: Gameplay.UI.UIGame.confirmButton
+  name: confirmButton
+  href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_confirmButton
+  commentId: F:Gameplay.UI.UIGame.confirmButton
+  fullName: Gameplay.UI.UIGame.confirmButton
+  nameWithType: UIGame.confirmButton
 - uid: Gameplay.UI.UIGame.confirmButtonText
   name: confirmButtonText
   href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_confirmButtonText
@@ -5530,12 +5594,12 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UIGame.EnableStartButton
   nameWithType: UIGame.EnableStartButton
-- uid: Gameplay.UI.UIGame.SetConfirmText(System.String)
-  name: SetConfirmText(String)
-  href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_SetConfirmText_System_String_
-  commentId: M:Gameplay.UI.UIGame.SetConfirmText(System.String)
-  fullName: Gameplay.UI.UIGame.SetConfirmText(System.String)
-  nameWithType: UIGame.SetConfirmText(String)
+- uid: Gameplay.UI.UIGame.SetConfirmText(System.String,System.Boolean)
+  name: SetConfirmText(String, Boolean)
+  href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_SetConfirmText_System_String_System_Boolean_
+  commentId: M:Gameplay.UI.UIGame.SetConfirmText(System.String,System.Boolean)
+  fullName: Gameplay.UI.UIGame.SetConfirmText(System.String, System.Boolean)
+  nameWithType: UIGame.SetConfirmText(String, Boolean)
 - uid: Gameplay.UI.UIGame.SetConfirmText*
   name: SetConfirmText
   href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_SetConfirmText_

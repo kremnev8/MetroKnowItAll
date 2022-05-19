@@ -2,775 +2,775 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.ArcadeModeController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.BaseGameMode.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.Game.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.GameController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.GameModeController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.ISaveData.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.LearningModeController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.SaveDataBaseController-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.SettingsController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.SettingsEntry.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.StatisticsController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Conrollers.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.BackHandler.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.ISelectable.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.TouchButton.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.TouchCameraController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.UIDragableButton.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.UIDraggableButtonList.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.UISwipe.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Controls.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Core.HeapQueue-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Core.Simulation.Event.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Core.Simulation.Event-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Core.Simulation.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Core.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.EventTypes.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.GameModel.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Health.IntEvent.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Health.PainEvent.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Health.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.ConnData.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.CrossingDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.FocusDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.HighlightDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.LineDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.LineSubDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.MetroRenderer.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.Area.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.EnumHelper.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.GlobalId.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.LineStyle.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.Metro.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.MetroConnection.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.MetroCrossing.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.MetroLine.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.MetroStation.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.NamePosition.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.Region.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.RegionType.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.Model.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.StationDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.MetroDisplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.PainType.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.BaseQuestionGenerator.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.BaseUIQuestion.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.FindLineGenerator.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.FindStationGenerator.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.OrderStationsGenerator.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.UIQuestionFindLine.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.UIQuestionFindStation.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.UIQuestionOrderStations.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.Generators.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.ILineQuestion.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.QuestionGenerator-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.UIQuestion.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.UITipContainer.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.UITipController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Questions.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.SceneTransitionManager.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Statistics.BoolRecord-2.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Statistics.IIndexable-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Statistics.StatisticsEntry.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.Statistics.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.CanvasSafeArea.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.DynamicText.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.FadeDirection.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.FadeInOut.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.PaletteGraphic.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.PaletteSpriteSwitch.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.ScoreItem.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.SlowPlayback.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIAchievement.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIFillAnimation.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIGame.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIGameOverScreen.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIIntro.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIScoreItem.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UISettings.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UIStartGameButton.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.UITopBar.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.VersionText.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.UI.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.World.RandomAudioSource.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.World.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Gameplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.Achievement.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.AchievementDB.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.ColorPalette.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.Difficulty.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.DifficultyConfig.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.GenericDB-1.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.GenericItem.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.PlayerConfig.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.Question.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.QuestionsDB.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.Theme.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/ScriptableObjects.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.EventManager.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.EventToggleGroup.ToggleEvent.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.EventToggleGroup.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.GameObjectExtensions.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.HideOnStart.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.INamedArrayElement.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.InspectorButtonAttribute.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.LabeledArrayAttribute.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.MathExtensions.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.PauseController.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.RandomUtils.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.RenameAttribute.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.RendererGroup.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.ShowWhenAttribute.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.SortingLayer.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.SplineUtil.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.StringExtension.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.UIUtil.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/api/Util.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/index.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/manual/achievements.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kremnev8.github.io/MetroKnowItAll/manual/gameplay.html</loc>
-    <lastmod>2022-05-18T08:35:08+00:00</lastmod>
+    <lastmod>2022-05-19T01:05:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
