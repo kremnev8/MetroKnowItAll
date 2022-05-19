@@ -45,6 +45,7 @@ namespace Gameplay.Conrollers
                 catch (Exception e)
                 {
                     Debug.Log("Failed to deserialize statistics file. Creating new one!");
+                    Debug.Log(e);
                     current = new T();
                     InitializeSaveData(current);
                 }
@@ -55,6 +56,11 @@ namespace Gameplay.Conrollers
                 InitializeSaveData(current);
             }
             current.Version = Version;
+        }
+
+        private void OnDestroy()
+        {
+            Save();
         }
 
         public abstract int Version { get; }
