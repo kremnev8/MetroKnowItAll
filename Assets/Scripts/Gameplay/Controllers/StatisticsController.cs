@@ -25,7 +25,7 @@ namespace Gameplay.Conrollers
         public StatisticsEntry sesion;
         public List<MetroStation> sesionUnlockedStations = new List<MetroStation>();
 
-        public override int Version => 1;
+        public override int Version => 2;
         public override string Filename => "statistics";
         public override void OnVersionChanged(int oldVersion)
         {
