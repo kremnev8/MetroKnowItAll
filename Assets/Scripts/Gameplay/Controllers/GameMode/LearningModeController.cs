@@ -14,8 +14,6 @@ namespace Gameplay.Conrollers
     public class LearningModeController : ArcadeModeController
     {
 
-        protected StatisticsController statistics;
-
         public new const string MODE_ID = "learning";
         public override string gameModeId => MODE_ID;
 
@@ -23,25 +21,24 @@ namespace Gameplay.Conrollers
         public int maxQuestions;
         public int questionIncrement;
 
-        public override void Init(GameModeController mainController)
+        public override ISaveController CreateModelHandler()
         {
-            base.Init(mainController);
-            statistics = model.statistics;
+            LearningSaveController saveController = gameObject.AddComponent<LearningSaveController>();
+            return saveController;
         }
 
-        public override void StartNewSession(Game gameState)
+        public override void SetupNewSession(Game gameState)
         {
-            statistics.current.tickets = 10;
-            statistics.current.unlockedStations = new BoolRecord<MetroStation, int>();
-            InitGameState(gameState);
-            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, true);
+            GetModel<LearningSaveInterface>().tokens = 10;
+            GetModel<LearningSaveInterface>().unlockedStations = new BoolRecord<MetroStation, int>();
+            uiGame.intro.ShowIntro(gameState);
         }
 
         public override void ContinueSession(Game gameState)
         {
             InitGameState(gameState);
             game.questionId = FindStationGenerator.QUESTION_ID;
-            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, false);
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }
 
         protected override void OnRestStarted()
@@ -52,7 +49,7 @@ namespace Gameplay.Conrollers
             {
                 score *= 2;
                 int newMax = gameMaxQuestions + questionIncrement;
-                if (statistics.current.unlockedStations.data.Count > newMax && newMax <= maxQuestions)
+                if (GetModel<LearningSaveInterface>().unlockedStations.data.Count > newMax && newMax <= maxQuestions)
                 {
                     game.maxQuestions = newMax;
                 }
@@ -67,7 +64,7 @@ namespace Gameplay.Conrollers
             }
 
             int tickets = Mathf.RoundToInt(score);
-            statistics.current.tickets += tickets;
+            GetModel<LearningSaveInterface>().tokens += tickets;
 
             if (game.correctAnswers > 0)
             {
@@ -82,8 +79,8 @@ namespace Gameplay.Conrollers
             {
                 if (selectable is StationDisplay display)
                 {
-                    if (renderer.metro.IsStationAdjacent(display.station, statistics.current.unlockedStations.data) ||
-                        statistics.current.unlockedStations.data.Count == 0)
+                    if (renderer.metro.IsStationAdjacent(display.station, GetModel<LearningSaveInterface>().unlockedStations.data) ||
+                        GetModel<LearningSaveInterface>().unlockedStations.data.Count == 0)
                     {
                         return true;
                     }
@@ -121,7 +118,7 @@ namespace Gameplay.Conrollers
 
         protected override Region SelectRegion()
         {
-            return new Region(RegionType.GLOBAL_STATIONS, statistics.current.unlockedStations.data, -1);
+            return new Region(RegionType.GLOBAL_STATIONS, GetModel<LearningSaveInterface>().unlockedStations.data, -1);
         }
 
         protected override void UpdateGameState(bool result)
@@ -145,12 +142,12 @@ namespace Gameplay.Conrollers
                 return;
             }
             
-            if (display == null || statistics.current.tickets <= 0) return;
+            if (display == null || GetModel<LearningSaveInterface>().tokens <= 0) return;
 
-            if (!statistics.current.unlockedStations.IsUnlocked(display.station))
+            if (!GetModel<LearningSaveInterface>().unlockedStations.IsUnlocked(display.station))
             {
-                statistics.current.unlockedStations.Unlock(display.station);
-                statistics.current.tickets -= 1;
+                GetModel<LearningSaveInterface>().unlockedStations.Unlock(display.station);
+                GetModel<LearningSaveInterface>().tokens -= 1;
                 try
                 {
                     MetroCrossing crossing =
@@ -159,7 +156,7 @@ namespace Gameplay.Conrollers
                     {
                         if (globalId != display.station.globalId)
                         {
-                            statistics.current.unlockedStations.Unlock(renderer.metro.GetStation(globalId));
+                            GetModel<LearningSaveInterface>().unlockedStations.Unlock(renderer.metro.GetStation(globalId));
                         }
                     }
                 }
@@ -171,19 +168,19 @@ namespace Gameplay.Conrollers
 
         private void Refresh()
         {
-            uiGame.topBar.UpdateTickets(statistics.current.tickets);
+            uiGame.topBar.UpdateTickets(GetModel<LearningSaveInterface>().tokens);
             game.currentRegion = SelectRegion();
             renderer.FocusRegion(game.currentRegion);
-            if (statistics.current.unlockedStations.data.Count < 10)
+            if (GetModel<LearningSaveInterface>().unlockedStations.data.Count < 10)
             {
-                int need = 10 - statistics.current.unlockedStations.data.Count;
+                int need = 10 - GetModel<LearningSaveInterface>().unlockedStations.data.Count;
                 uiGame.EnableStartButton( $"Откройте {need} станций");
             }
             else
             {
                 uiGame.EnableStartButton($"{game.maxQuestions} вопросов");
             }
-            uiGame.SetStartInteractable(statistics.current.unlockedStations.data.Count > 10);
+            uiGame.SetStartInteractable(GetModel<LearningSaveInterface>().unlockedStations.data.Count > 10);
         }
     }
 }

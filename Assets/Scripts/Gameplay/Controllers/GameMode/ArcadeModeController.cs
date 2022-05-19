@@ -30,8 +30,15 @@ namespace Gameplay.Conrollers
         public const string MODE_ID = "arcade";
         public override string gameModeId => MODE_ID;
 
+        public override ISaveController CreateModelHandler()
+        {
+            ArcadeSaveController saveController = gameObject.AddComponent<ArcadeSaveController>();
+            return saveController;
+        }
+
         public override void Init(GameModeController mainController)
         {
+            base.Init(mainController);
             model = Simulation.GetModel<GameModel>();
             renderer = model.renderer;
             uiGame = model.uiGame;
@@ -59,16 +66,15 @@ namespace Gameplay.Conrollers
             }
         }
 
-        public override void StartNewSession(Game gameState)
+        public override void SetupNewSession(Game gameState)
         {
-            InitGameState(gameState);
-            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, true);
+            uiGame.intro.ShowIntro(gameState);
         }
 
         public override void ContinueSession(Game gameState)
         {
             InitGameState(gameState);
-            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game, false);
+            EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }
         protected void InitGameState(Game gameState)
         {

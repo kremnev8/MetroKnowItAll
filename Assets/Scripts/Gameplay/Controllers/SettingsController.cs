@@ -11,14 +11,7 @@ namespace Gameplay.Conrollers
     [Serializable]
     public class SettingsEntry : ISaveData
     {
-        public int dataVersion;
-        
-        [JsonIgnore]
-        public int Version
-        {
-            get => dataVersion;
-            set => dataVersion = value;
-        }
+        public int Version { get; set; }
 
         public int difficulty;
         public int theme;
@@ -27,7 +20,7 @@ namespace Gameplay.Conrollers
     /// <summary>
     /// Controller that handles saving and loading player settings
     /// </summary>
-    public class SettingsController : SaveDataBaseController<SettingsEntry>
+    public class SettingsController : AutomaticSaveDataController<SettingsEntry>
     {
         public DifficultyConfig difficultyConfig;
         public ColorPalette palette;
@@ -38,6 +31,8 @@ namespace Gameplay.Conrollers
 
         public override int Version => 1;
         public override string Filename => "settings";
+        public override void SetFilename(string filename) { }
+
         public override void OnVersionChanged(int oldVersion)
         {
         }

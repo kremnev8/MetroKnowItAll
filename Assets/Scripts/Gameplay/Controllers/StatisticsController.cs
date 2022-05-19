@@ -17,7 +17,7 @@ namespace Gameplay.Conrollers
     /// <summary>
     /// Manages statistics and achievements. Also saves and loads statistics data to disk
     /// </summary>
-    public class StatisticsController : SaveDataBaseController<StatisticsEntry>
+    public class StatisticsController : AutomaticSaveDataController<StatisticsEntry>
     {
         [SerializeField] private Metro metro;
         [SerializeField] private AchievementDB achievements;
@@ -27,6 +27,8 @@ namespace Gameplay.Conrollers
 
         public override int Version => 2;
         public override string Filename => "statistics";
+        
+        public override void SetFilename(string filename) { }
         public override void OnVersionChanged(int oldVersion)
         {
             if (oldVersion <= 0)

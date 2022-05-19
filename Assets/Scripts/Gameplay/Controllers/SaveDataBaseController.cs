@@ -18,19 +18,55 @@ namespace Gameplay.Conrollers
         [JsonIgnore]
         public int Version { get; set; }
     }
-    
+
+    public interface ISaveController
+    {
+        public void SetFilename(string filename);
+        public bool Load();
+        public void Save();
+    }
+
+    public abstract class AutomaticSaveDataController<T> : SaveDataBaseController<T>
+        where T : class, ISaveData, new()
+    {
+        private void Awake()
+        {
+            Load();
+        }
+        
+        private void OnApplicationFocus(bool hasFocus)
+        {
+            if (!hasFocus)
+            {
+                Save();
+            }
+        }
+
+        private void OnApplicationQuit()
+        {
+            Save();
+        }
+        
+        private void OnDestroy()
+        {
+            Save();
+        }
+    }
+
     /// <summary>
     /// Base class for controllers that need to save data in a json file.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class SaveDataBaseController<T> : MonoBehaviour
+    public abstract class SaveDataBaseController<T> : MonoBehaviour, ISaveController
     where T : class, ISaveData, new()
     {
         public T current;
 
-        private void Awake()
+        public bool Load()
         {
             string dataPath = $"{Application.persistentDataPath}/{Filename}.json";
+            string dirPath = Path.GetDirectoryName(dataPath);
+            Directory.CreateDirectory(dirPath);
             if (File.Exists(dataPath))
             {
                 try
@@ -48,42 +84,21 @@ namespace Gameplay.Conrollers
                     Debug.Log(e);
                     current = new T();
                     InitializeSaveData(current);
+                    return false;
                 }
             }
             else
             {
                 current = new T();
                 InitializeSaveData(current);
+                return false;
             }
+
             current.Version = Version;
+            return true;
         }
 
-        private void OnDestroy()
-        {
-            Save();
-        }
-
-        public abstract int Version { get; }
-        public abstract string Filename { get; }
-
-        public abstract void OnVersionChanged(int oldVersion);
-        public abstract void InitializeSaveData(T data);
-        public abstract void OnSaveDataLoaded();
-
-        private void OnApplicationFocus(bool hasFocus)
-        {
-            if (!hasFocus)
-            {
-                Save();
-            }
-        }
-
-        private void OnApplicationQuit()
-        {
-            Save();
-        }
-
-        protected void Save()
+        public void Save()
         {
             if (current != null)
             {
@@ -92,5 +107,13 @@ namespace Gameplay.Conrollers
                 File.WriteAllText(dataPath, json, Encoding.UTF8);
             }
         }
+
+        public abstract int Version { get; }
+        public abstract string Filename { get; }
+
+        public abstract void SetFilename(string filename);
+        public abstract void OnVersionChanged(int oldVersion);
+        public abstract void InitializeSaveData(T data);
+        public abstract void OnSaveDataLoaded();
     }
 }

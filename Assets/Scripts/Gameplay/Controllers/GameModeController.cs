@@ -68,16 +68,8 @@ namespace Gameplay.Conrollers
                 gameState.maxQuestions = 10;
                 gameState.mode = gameModeId;
                 currentGameMode = gameModeId;
-
-                if (statistics.current.GetGameState(gameModeId))
-                {
-                    gameMode.ContinueSession(gameState);
-                }
-                else
-                {
-                    gameMode.StartNewSession(gameState);
-                    statistics.current.SetGameState(gameModeId, true);
-                }
+                
+                gameMode.StartSession(gameState);
             }
             
         }

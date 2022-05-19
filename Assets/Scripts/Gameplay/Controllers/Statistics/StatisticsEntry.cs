@@ -15,7 +15,7 @@ namespace Gameplay.Statistics
     /// </summary>
     public class StatisticsEntry : ISaveData
     {
-        public int dataVersion;
+        public int Version { get; set; }
         public BoolRecord<MetroStation, int> unlockedStations = new BoolRecord<MetroStation, int>();
         public BoolRecord<MetroLine, int> unlockedLines = new BoolRecord<MetroLine, int>();
 
@@ -33,15 +33,6 @@ namespace Gameplay.Statistics
 
         public int maxScore;
         public int tickets;
-
-        public Dictionary<string, bool> gameModeState = new Dictionary<string, bool>();
-
-        [JsonIgnore]
-        public int Version
-        {
-            get => dataVersion;
-            set => dataVersion = value;
-        }
 
         public List<ScoreItem> CalculateScore()
         {
@@ -68,30 +59,6 @@ namespace Gameplay.Statistics
             
             fastestCorrectAnswer = fastestCorrectAnswer > 0 ? Mathf.Min(fastestCorrectAnswer, other.fastestCorrectAnswer) : other.fastestCorrectAnswer;
             maximumCorrectAnswerTime = Mathf.Max(maximumCorrectAnswerTime, other.maximumCorrectAnswerTime);
-        }
-
-        public bool GetGameState(string gameMode)
-        {
-            if (gameModeState.ContainsKey(gameMode))
-            {
-                return gameModeState[gameMode];
-            }
-            else
-            {
-                return false;
-            }
-        }
-        
-        public void SetGameState(string gameMode, bool value)
-        { 
-            if (gameModeState.ContainsKey(gameMode))
-            {
-                gameModeState[gameMode] = value;
-            }
-            else
-            {
-                gameModeState.Add(gameMode, value);
-            }
         }
     }
 }

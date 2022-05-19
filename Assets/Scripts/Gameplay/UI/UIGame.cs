@@ -14,6 +14,7 @@ namespace Gameplay.UI
         
         public UISwipe answerPanelSwipe;
         public TouchButton touchButton;
+        public UIIntro intro;
 
 
         public void EnableStartButton(string gameModeText)
