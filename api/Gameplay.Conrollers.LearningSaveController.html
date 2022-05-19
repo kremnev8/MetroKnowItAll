@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SaveDataBaseController&lt;T&gt;
+    <title>Class LearningSaveController
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SaveDataBaseController&lt;T&gt;
+    <meta name="title" content="Class LearningSaveController
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,84 +78,54 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Gameplay.Conrollers.SaveDataBaseController`1">
+            <article class="content wrap" id="_content" data-uid="Gameplay.Conrollers.LearningSaveController">
   
   
-  <h1 id="Gameplay_Conrollers_SaveDataBaseController_1" data-uid="Gameplay.Conrollers.SaveDataBaseController`1" class="text-break">Class SaveDataBaseController&lt;T&gt;
+  <h1 id="Gameplay_Conrollers_LearningSaveController" data-uid="Gameplay.Conrollers.LearningSaveController" class="text-break">Class LearningSaveController
   </h1>
-  <div class="markdown level0 summary"><p>Base class for controllers that need to save data in a json file.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">SaveDataBaseController&lt;T&gt;</span></div>
-      <div class="level2"><a class="xref" href="Gameplay.Conrollers.ArcadeSaveController.html">ArcadeSaveController</a></div>
-      <div class="level2"><a class="xref" href="Gameplay.Conrollers.AutomaticSaveDataController-1.html">AutomaticSaveDataController&lt;T&gt;</a></div>
-      <div class="level2"><a class="xref" href="Gameplay.Conrollers.LearningSaveController.html">LearningSaveController</a></div>
+    <div class="level1"><a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html">SaveDataBaseController</a>&lt;<a class="xref" href="Gameplay.Conrollers.LearningModel.html">LearningModel</a>&gt;</div>
+    <div class="level2"><span class="xref">LearningSaveController</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></div>
+    <div><a class="xref" href="Gameplay.Conrollers.ArcadeSaveInterface.html">ArcadeSaveInterface</a></div>
+    <div><a class="xref" href="Gameplay.Conrollers.LearningSaveInterface.html">LearningSaveInterface</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_current">SaveDataBaseController&lt;LearningModel&gt;.current</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Load">SaveDataBaseController&lt;LearningModel&gt;.Load()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Save">SaveDataBaseController&lt;LearningModel&gt;.Save()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Gameplay_Conrollers_SaveDataBaseController_1_syntax">Syntax</h5>
+  <h5 id="Gameplay_Conrollers_LearningSaveController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SaveDataBaseController&lt;T&gt; : MonoBehaviour, ISaveController where T : class, ISaveData, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public class LearningSaveController : SaveDataBaseController&lt;LearningModel&gt;, ISaveController, ArcadeSaveInterface, LearningSaveInterface</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_current" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.current">current</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T current</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_Filename_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Filename*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_Filename" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Filename">Filename</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_Filename_" data-uid="Gameplay.Conrollers.LearningSaveController.Filename*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_Filename" data-uid="Gameplay.Conrollers.LearningSaveController.Filename">Filename</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract string Filename { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string Filename { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,15 +142,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.Filename</span></div>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_Version_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Version*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_Version" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Version">Version</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_tokens_" data-uid="Gameplay.Conrollers.LearningSaveController.tokens*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_tokens" data-uid="Gameplay.Conrollers.LearningSaveController.tokens">tokens</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract int Version { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int tokens { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,17 +169,69 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_InitializeSaveData_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_InitializeSaveData__0_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.InitializeSaveData(`0)">InitializeSaveData(T)</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_unlockedStations_" data-uid="Gameplay.Conrollers.LearningSaveController.unlockedStations*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_unlockedStations" data-uid="Gameplay.Conrollers.LearningSaveController.unlockedStations">unlockedStations</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void InitializeSaveData(T data)</code></pre>
+    <pre><code class="lang-csharp hljs">public BoolRecord&lt;MetroStation, int&gt; unlockedStations { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoolRecord</span>&lt;<span class="xref">MetroStation</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_LearningSaveController_Version_" data-uid="Gameplay.Conrollers.LearningSaveController.Version*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_Version" data-uid="Gameplay.Conrollers.LearningSaveController.Version">Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.Version</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gameplay_Conrollers_LearningSaveController_InitializeSaveData_" data-uid="Gameplay.Conrollers.LearningSaveController.InitializeSaveData*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_InitializeSaveData_Gameplay_Conrollers_LearningModel_" data-uid="Gameplay.Conrollers.LearningSaveController.InitializeSaveData(Gameplay.Conrollers.LearningModel)">InitializeSaveData(LearningModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitializeSaveData(LearningModel data)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -220,56 +244,35 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><a class="xref" href="Gameplay.Conrollers.LearningModel.html">LearningModel</a></td>
         <td><span class="parametername">data</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.InitializeSaveData(Gameplay.Conrollers.LearningModel)</span></div>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_Load_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Load*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_Load" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Load">Load()</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_OnSaveDataLoaded_" data-uid="Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_OnSaveDataLoaded" data-uid="Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded">OnSaveDataLoaded()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Load()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnSaveDataLoaded()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.OnSaveDataLoaded()</span></div>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_OnSaveDataLoaded_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_OnSaveDataLoaded" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded">OnSaveDataLoaded()</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_OnVersionChanged_" data-uid="Gameplay.Conrollers.LearningSaveController.OnVersionChanged*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_OnVersionChanged_System_Int32_" data-uid="Gameplay.Conrollers.LearningSaveController.OnVersionChanged(System.Int32)">OnVersionChanged(Int32)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void OnSaveDataLoaded()</code></pre>
-  </div>
-  
-  
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_OnVersionChanged_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_OnVersionChanged_System_Int32_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.OnVersionChanged(System.Int32)">OnVersionChanged(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void OnVersionChanged(int oldVersion)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnVersionChanged(int oldVersion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -288,25 +291,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.OnVersionChanged(System.Int32)</span></div>
   
   
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_Save_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Save*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_Save" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.Save">Save()</h4>
+  <a id="Gameplay_Conrollers_LearningSaveController_SetFilename_" data-uid="Gameplay.Conrollers.LearningSaveController.SetFilename*"></a>
+  <h4 id="Gameplay_Conrollers_LearningSaveController_SetFilename_System_String_" data-uid="Gameplay.Conrollers.LearningSaveController.SetFilename(System.String)">SetFilename(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save()</code></pre>
-  </div>
-  
-  
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.SetFilename*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_System_String_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.SetFilename(System.String)">SetFilename(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void SetFilename(string filename)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetFilename(string filename)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -325,9 +320,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;Gameplay.Conrollers.LearningModel&gt;.SetFilename(System.String)</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a>
+  </div>
+  <div>
+      <a class="xref" href="Gameplay.Conrollers.ArcadeSaveInterface.html">ArcadeSaveInterface</a>
+  </div>
+  <div>
+      <a class="xref" href="Gameplay.Conrollers.LearningSaveInterface.html">LearningSaveInterface</a>
   </div>
 </article>
           </div>

@@ -93,6 +93,15 @@
     <div class="level2"><span class="xref">ArcadeModeController</span></div>
       <div class="level3"><a class="xref" href="Gameplay.Conrollers.LearningModeController.html">LearningModeController</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetModel__1">BaseGameMode.GetModel&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartSession_Gameplay_Conrollers_Game_">BaseGameMode.StartSession(Game)</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Gameplay_Conrollers_ArcadeModeController_syntax">Syntax</h5>
@@ -329,6 +338,33 @@
   <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_ContinueSession_Gameplay_Conrollers_Game_">BaseGameMode.ContinueSession(Game)</a></div>
   
   
+  <a id="Gameplay_Conrollers_ArcadeModeController_CreateModelHandler_" data-uid="Gameplay.Conrollers.ArcadeModeController.CreateModelHandler*"></a>
+  <h4 id="Gameplay_Conrollers_ArcadeModeController_CreateModelHandler" data-uid="Gameplay.Conrollers.ArcadeModeController.CreateModelHandler">CreateModelHandler()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ISaveController CreateModelHandler()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_CreateModelHandler">BaseGameMode.CreateModelHandler()</a></div>
+  
+  
   <a id="Gameplay_Conrollers_ArcadeModeController_GetNextTip_" data-uid="Gameplay.Conrollers.ArcadeModeController.GetNextTip*"></a>
   <h4 id="Gameplay_Conrollers_ArcadeModeController_GetNextTip_System_Int32_" data-uid="Gameplay.Conrollers.ArcadeModeController.GetNextTip(System.Int32)">GetNextTip(Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -533,25 +569,13 @@
   </div>
   
   
-  <a id="Gameplay_Conrollers_ArcadeModeController_StartGamePressed_" data-uid="Gameplay.Conrollers.ArcadeModeController.StartGamePressed*"></a>
-  <h4 id="Gameplay_Conrollers_ArcadeModeController_StartGamePressed" data-uid="Gameplay.Conrollers.ArcadeModeController.StartGamePressed">StartGamePressed()</h4>
+  <a id="Gameplay_Conrollers_ArcadeModeController_SetupNewSession_" data-uid="Gameplay.Conrollers.ArcadeModeController.SetupNewSession*"></a>
+  <h4 id="Gameplay_Conrollers_ArcadeModeController_SetupNewSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.ArcadeModeController.SetupNewSession(Gameplay.Conrollers.Game)">SetupNewSession(Game)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void StartGamePressed()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartGamePressed">BaseGameMode.StartGamePressed()</a></div>
-  
-  
-  <a id="Gameplay_Conrollers_ArcadeModeController_StartNewSession_" data-uid="Gameplay.Conrollers.ArcadeModeController.StartNewSession*"></a>
-  <h4 id="Gameplay_Conrollers_ArcadeModeController_StartNewSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.ArcadeModeController.StartNewSession(Gameplay.Conrollers.Game)">StartNewSession(Game)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void StartNewSession(Game gameState)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetupNewSession(Game gameState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -571,7 +595,19 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartNewSession_Gameplay_Conrollers_Game_">BaseGameMode.StartNewSession(Game)</a></div>
+  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_SetupNewSession_Gameplay_Conrollers_Game_">BaseGameMode.SetupNewSession(Game)</a></div>
+  
+  
+  <a id="Gameplay_Conrollers_ArcadeModeController_StartGamePressed_" data-uid="Gameplay.Conrollers.ArcadeModeController.StartGamePressed*"></a>
+  <h4 id="Gameplay_Conrollers_ArcadeModeController_StartGamePressed" data-uid="Gameplay.Conrollers.ArcadeModeController.StartGamePressed">StartGamePressed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void StartGamePressed()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartGamePressed">BaseGameMode.StartGamePressed()</a></div>
   
   
   <a id="Gameplay_Conrollers_ArcadeModeController_UpdateGameState_" data-uid="Gameplay.Conrollers.ArcadeModeController.UpdateGameState*"></a>

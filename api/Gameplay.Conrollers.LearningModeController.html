@@ -110,6 +110,9 @@
       <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_main">ArcadeModeController.main</a>
     </div>
     <div>
+      <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_Init_Gameplay_Conrollers_GameModeController_">ArcadeModeController.Init(GameModeController)</a>
+    </div>
+    <div>
       <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_InitGameState_Gameplay_Conrollers_Game_">ArcadeModeController.InitGameState(Game)</a>
     </div>
     <div>
@@ -129,6 +132,12 @@
     </div>
     <div>
       <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_ManualUpdate">ArcadeModeController.ManualUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetModel__1">BaseGameMode.GetModel&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartSession_Gameplay_Conrollers_Game_">BaseGameMode.StartSession(Game)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
@@ -235,30 +244,6 @@
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Gameplay_Conrollers_LearningModeController_statistics" data-uid="Gameplay.Conrollers.LearningModeController.statistics">statistics</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected StatisticsController statistics</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gameplay.Conrollers.StatisticsController.html">StatisticsController</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -333,33 +318,31 @@
   <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_ContinueSession_Gameplay_Conrollers_Game_">ArcadeModeController.ContinueSession(Game)</a></div>
   
   
-  <a id="Gameplay_Conrollers_LearningModeController_Init_" data-uid="Gameplay.Conrollers.LearningModeController.Init*"></a>
-  <h4 id="Gameplay_Conrollers_LearningModeController_Init_Gameplay_Conrollers_GameModeController_" data-uid="Gameplay.Conrollers.LearningModeController.Init(Gameplay.Conrollers.GameModeController)">Init(GameModeController)</h4>
+  <a id="Gameplay_Conrollers_LearningModeController_CreateModelHandler_" data-uid="Gameplay.Conrollers.LearningModeController.CreateModelHandler*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_CreateModelHandler" data-uid="Gameplay.Conrollers.LearningModeController.CreateModelHandler">CreateModelHandler()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Init(GameModeController mainController)</code></pre>
+    <pre><code class="lang-csharp hljs">public override ISaveController CreateModelHandler()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Gameplay.Conrollers.GameModeController.html">GameModeController</a></td>
-        <td><span class="parametername">mainController</span></td>
+        <td><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_Init_Gameplay_Conrollers_GameModeController_">ArcadeModeController.Init(GameModeController)</a></div>
+  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_CreateModelHandler">ArcadeModeController.CreateModelHandler()</a></div>
   
   
   <a id="Gameplay_Conrollers_LearningModeController_OnRestStarted_" data-uid="Gameplay.Conrollers.LearningModeController.OnRestStarted*"></a>
@@ -423,25 +406,13 @@
   <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SessionOver">ArcadeModeController.SessionOver()</a></div>
   
   
-  <a id="Gameplay_Conrollers_LearningModeController_StartGamePressed_" data-uid="Gameplay.Conrollers.LearningModeController.StartGamePressed*"></a>
-  <h4 id="Gameplay_Conrollers_LearningModeController_StartGamePressed" data-uid="Gameplay.Conrollers.LearningModeController.StartGamePressed">StartGamePressed()</h4>
+  <a id="Gameplay_Conrollers_LearningModeController_SetupNewSession_" data-uid="Gameplay.Conrollers.LearningModeController.SetupNewSession*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_SetupNewSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.LearningModeController.SetupNewSession(Gameplay.Conrollers.Game)">SetupNewSession(Game)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void StartGamePressed()</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartGamePressed">ArcadeModeController.StartGamePressed()</a></div>
-  
-  
-  <a id="Gameplay_Conrollers_LearningModeController_StartNewSession_" data-uid="Gameplay.Conrollers.LearningModeController.StartNewSession*"></a>
-  <h4 id="Gameplay_Conrollers_LearningModeController_StartNewSession_Gameplay_Conrollers_Game_" data-uid="Gameplay.Conrollers.LearningModeController.StartNewSession(Gameplay.Conrollers.Game)">StartNewSession(Game)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void StartNewSession(Game gameState)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetupNewSession(Game gameState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -461,7 +432,19 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartNewSession_Gameplay_Conrollers_Game_">ArcadeModeController.StartNewSession(Game)</a></div>
+  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SetupNewSession_Gameplay_Conrollers_Game_">ArcadeModeController.SetupNewSession(Game)</a></div>
+  
+  
+  <a id="Gameplay_Conrollers_LearningModeController_StartGamePressed_" data-uid="Gameplay.Conrollers.LearningModeController.StartGamePressed*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_StartGamePressed" data-uid="Gameplay.Conrollers.LearningModeController.StartGamePressed">StartGamePressed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void StartGamePressed()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartGamePressed">ArcadeModeController.StartGamePressed()</a></div>
   
   
   <a id="Gameplay_Conrollers_LearningModeController_UpdateGameState_" data-uid="Gameplay.Conrollers.LearningModeController.UpdateGameState*"></a>

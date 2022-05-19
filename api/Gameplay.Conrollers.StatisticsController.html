@@ -90,12 +90,20 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html">SaveDataBaseController</a>&lt;<span class="xref">StatisticsEntry</span>&gt;</div>
-    <div class="level2"><span class="xref">StatisticsController</span></div>
+    <div class="level2"><a class="xref" href="Gameplay.Conrollers.AutomaticSaveDataController-1.html">AutomaticSaveDataController</a>&lt;<span class="xref">StatisticsEntry</span>&gt;</div>
+    <div class="level3"><span class="xref">StatisticsController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_current">SaveDataBaseController&lt;StatisticsEntry&gt;.current</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Load">SaveDataBaseController&lt;StatisticsEntry&gt;.Load()</a>
     </div>
     <div>
       <a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Save">SaveDataBaseController&lt;StatisticsEntry&gt;.Save()</a>
@@ -105,7 +113,7 @@
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Gameplay_Conrollers_StatisticsController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class StatisticsController : SaveDataBaseController&lt;StatisticsEntry&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class StatisticsController : AutomaticSaveDataController&lt;StatisticsEntry&gt;, ISaveController</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -314,6 +322,35 @@
   <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;StatisticsEntry&gt;.OnVersionChanged(System.Int32)</span></div>
   
   
+  <a id="Gameplay_Conrollers_StatisticsController_SetFilename_" data-uid="Gameplay.Conrollers.StatisticsController.SetFilename*"></a>
+  <h4 id="Gameplay_Conrollers_StatisticsController_SetFilename_System_String_" data-uid="Gameplay.Conrollers.StatisticsController.SetFilename(System.String)">SetFilename(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetFilename(string filename)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filename</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Gameplay.Conrollers.SaveDataBaseController&lt;StatisticsEntry&gt;.SetFilename(System.String)</span></div>
+  
+  
   <a id="Gameplay_Conrollers_StatisticsController_TryUnlockStation_" data-uid="Gameplay.Conrollers.StatisticsController.TryUnlockStation*"></a>
   <h4 id="Gameplay_Conrollers_StatisticsController_TryUnlockStation_MetroStation_" data-uid="Gameplay.Conrollers.StatisticsController.TryUnlockStation(MetroStation)">TryUnlockStation(MetroStation)</h4>
   <div class="markdown level1 summary"></div>
@@ -339,6 +376,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a>
+  </div>
 </article>
           </div>
           

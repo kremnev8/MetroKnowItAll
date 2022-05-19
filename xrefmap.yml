@@ -58,6 +58,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.ContinueSession
   nameWithType: ArcadeModeController.ContinueSession
+- uid: Gameplay.Conrollers.ArcadeModeController.CreateModelHandler
+  name: CreateModelHandler()
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_CreateModelHandler
+  commentId: M:Gameplay.Conrollers.ArcadeModeController.CreateModelHandler
+  fullName: Gameplay.Conrollers.ArcadeModeController.CreateModelHandler()
+  nameWithType: ArcadeModeController.CreateModelHandler()
+- uid: Gameplay.Conrollers.ArcadeModeController.CreateModelHandler*
+  name: CreateModelHandler
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_CreateModelHandler_
+  commentId: Overload:Gameplay.Conrollers.ArcadeModeController.CreateModelHandler
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeModeController.CreateModelHandler
+  nameWithType: ArcadeModeController.CreateModelHandler
 - uid: Gameplay.Conrollers.ArcadeModeController.game
   name: game
   href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_game
@@ -224,6 +237,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.SessionOver
   nameWithType: ArcadeModeController.SessionOver
+- uid: Gameplay.Conrollers.ArcadeModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  name: SetupNewSession(Game)
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SetupNewSession_Gameplay_Conrollers_Game_
+  commentId: M:Gameplay.Conrollers.ArcadeModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  fullName: Gameplay.Conrollers.ArcadeModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  nameWithType: ArcadeModeController.SetupNewSession(Game)
+- uid: Gameplay.Conrollers.ArcadeModeController.SetupNewSession*
+  name: SetupNewSession
+  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SetupNewSession_
+  commentId: Overload:Gameplay.Conrollers.ArcadeModeController.SetupNewSession
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeModeController.SetupNewSession
+  nameWithType: ArcadeModeController.SetupNewSession
 - uid: Gameplay.Conrollers.ArcadeModeController.StartGamePressed
   name: StartGamePressed()
   href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartGamePressed
@@ -237,19 +263,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.StartGamePressed
   nameWithType: ArcadeModeController.StartGamePressed
-- uid: Gameplay.Conrollers.ArcadeModeController.StartNewSession(Gameplay.Conrollers.Game)
-  name: StartNewSession(Game)
-  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartNewSession_Gameplay_Conrollers_Game_
-  commentId: M:Gameplay.Conrollers.ArcadeModeController.StartNewSession(Gameplay.Conrollers.Game)
-  fullName: Gameplay.Conrollers.ArcadeModeController.StartNewSession(Gameplay.Conrollers.Game)
-  nameWithType: ArcadeModeController.StartNewSession(Game)
-- uid: Gameplay.Conrollers.ArcadeModeController.StartNewSession*
-  name: StartNewSession
-  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_StartNewSession_
-  commentId: Overload:Gameplay.Conrollers.ArcadeModeController.StartNewSession
-  isSpec: "True"
-  fullName: Gameplay.Conrollers.ArcadeModeController.StartNewSession
-  nameWithType: ArcadeModeController.StartNewSession
 - uid: Gameplay.Conrollers.ArcadeModeController.uiGame
   name: uiGame
   href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_uiGame
@@ -269,6 +282,124 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.UpdateGameState
   nameWithType: ArcadeModeController.UpdateGameState
+- uid: Gameplay.Conrollers.ArcadeModel
+  name: ArcadeModel
+  href: api/Gameplay.Conrollers.ArcadeModel.html
+  commentId: T:Gameplay.Conrollers.ArcadeModel
+  fullName: Gameplay.Conrollers.ArcadeModel
+  nameWithType: ArcadeModel
+- uid: Gameplay.Conrollers.ArcadeModel.Version
+  name: Version
+  href: api/Gameplay.Conrollers.ArcadeModel.html#Gameplay_Conrollers_ArcadeModel_Version
+  commentId: P:Gameplay.Conrollers.ArcadeModel.Version
+  fullName: Gameplay.Conrollers.ArcadeModel.Version
+  nameWithType: ArcadeModel.Version
+- uid: Gameplay.Conrollers.ArcadeModel.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.ArcadeModel.html#Gameplay_Conrollers_ArcadeModel_Version_
+  commentId: Overload:Gameplay.Conrollers.ArcadeModel.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeModel.Version
+  nameWithType: ArcadeModel.Version
+- uid: Gameplay.Conrollers.ArcadeSaveController
+  name: ArcadeSaveController
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html
+  commentId: T:Gameplay.Conrollers.ArcadeSaveController
+  fullName: Gameplay.Conrollers.ArcadeSaveController
+  nameWithType: ArcadeSaveController
+- uid: Gameplay.Conrollers.ArcadeSaveController.Filename
+  name: Filename
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_Filename
+  commentId: P:Gameplay.Conrollers.ArcadeSaveController.Filename
+  fullName: Gameplay.Conrollers.ArcadeSaveController.Filename
+  nameWithType: ArcadeSaveController.Filename
+- uid: Gameplay.Conrollers.ArcadeSaveController.Filename*
+  name: Filename
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_Filename_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.Filename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.Filename
+  nameWithType: ArcadeSaveController.Filename
+- uid: Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData(Gameplay.Conrollers.ArcadeModel)
+  name: InitializeSaveData(ArcadeModel)
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_InitializeSaveData_Gameplay_Conrollers_ArcadeModel_
+  commentId: M:Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData(Gameplay.Conrollers.ArcadeModel)
+  fullName: Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData(Gameplay.Conrollers.ArcadeModel)
+  nameWithType: ArcadeSaveController.InitializeSaveData(ArcadeModel)
+- uid: Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData*
+  name: InitializeSaveData
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_InitializeSaveData_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.InitializeSaveData
+  nameWithType: ArcadeSaveController.InitializeSaveData
+- uid: Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded
+  name: OnSaveDataLoaded()
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_OnSaveDataLoaded
+  commentId: M:Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded
+  fullName: Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded()
+  nameWithType: ArcadeSaveController.OnSaveDataLoaded()
+- uid: Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded*
+  name: OnSaveDataLoaded
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_OnSaveDataLoaded_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.OnSaveDataLoaded
+  nameWithType: ArcadeSaveController.OnSaveDataLoaded
+- uid: Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged(System.Int32)
+  name: OnVersionChanged(Int32)
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_OnVersionChanged_System_Int32_
+  commentId: M:Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged(System.Int32)
+  fullName: Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged(System.Int32)
+  nameWithType: ArcadeSaveController.OnVersionChanged(Int32)
+- uid: Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged*
+  name: OnVersionChanged
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_OnVersionChanged_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.OnVersionChanged
+  nameWithType: ArcadeSaveController.OnVersionChanged
+- uid: Gameplay.Conrollers.ArcadeSaveController.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.ArcadeSaveController.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.ArcadeSaveController.SetFilename(System.String)
+  nameWithType: ArcadeSaveController.SetFilename(String)
+- uid: Gameplay.Conrollers.ArcadeSaveController.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.SetFilename
+  nameWithType: ArcadeSaveController.SetFilename
+- uid: Gameplay.Conrollers.ArcadeSaveController.Version
+  name: Version
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_Version
+  commentId: P:Gameplay.Conrollers.ArcadeSaveController.Version
+  fullName: Gameplay.Conrollers.ArcadeSaveController.Version
+  nameWithType: ArcadeSaveController.Version
+- uid: Gameplay.Conrollers.ArcadeSaveController.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.ArcadeSaveController.html#Gameplay_Conrollers_ArcadeSaveController_Version_
+  commentId: Overload:Gameplay.Conrollers.ArcadeSaveController.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ArcadeSaveController.Version
+  nameWithType: ArcadeSaveController.Version
+- uid: Gameplay.Conrollers.ArcadeSaveInterface
+  name: ArcadeSaveInterface
+  href: api/Gameplay.Conrollers.ArcadeSaveInterface.html
+  commentId: T:Gameplay.Conrollers.ArcadeSaveInterface
+  fullName: Gameplay.Conrollers.ArcadeSaveInterface
+  nameWithType: ArcadeSaveInterface
+- uid: Gameplay.Conrollers.AutomaticSaveDataController`1
+  name: AutomaticSaveDataController<T>
+  href: api/Gameplay.Conrollers.AutomaticSaveDataController-1.html
+  commentId: T:Gameplay.Conrollers.AutomaticSaveDataController`1
+  name.vb: AutomaticSaveDataController(Of T)
+  fullName: Gameplay.Conrollers.AutomaticSaveDataController<T>
+  fullName.vb: Gameplay.Conrollers.AutomaticSaveDataController(Of T)
+  nameWithType: AutomaticSaveDataController<T>
+  nameWithType.vb: AutomaticSaveDataController(Of T)
 - uid: Gameplay.Conrollers.BaseGameMode
   name: BaseGameMode
   href: api/Gameplay.Conrollers.BaseGameMode.html
@@ -301,6 +432,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.BaseGameMode.ContinueSession
   nameWithType: BaseGameMode.ContinueSession
+- uid: Gameplay.Conrollers.BaseGameMode.CreateModelHandler
+  name: CreateModelHandler()
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_CreateModelHandler
+  commentId: M:Gameplay.Conrollers.BaseGameMode.CreateModelHandler
+  fullName: Gameplay.Conrollers.BaseGameMode.CreateModelHandler()
+  nameWithType: BaseGameMode.CreateModelHandler()
+- uid: Gameplay.Conrollers.BaseGameMode.CreateModelHandler*
+  name: CreateModelHandler
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_CreateModelHandler_
+  commentId: Overload:Gameplay.Conrollers.BaseGameMode.CreateModelHandler
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.BaseGameMode.CreateModelHandler
+  nameWithType: BaseGameMode.CreateModelHandler
 - uid: Gameplay.Conrollers.BaseGameMode.gameModeId
   name: gameModeId
   href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_gameModeId
@@ -314,6 +458,22 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.BaseGameMode.gameModeId
   nameWithType: BaseGameMode.gameModeId
+- uid: Gameplay.Conrollers.BaseGameMode.GetModel*
+  name: GetModel
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetModel_
+  commentId: Overload:Gameplay.Conrollers.BaseGameMode.GetModel
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.BaseGameMode.GetModel
+  nameWithType: BaseGameMode.GetModel
+- uid: Gameplay.Conrollers.BaseGameMode.GetModel``1
+  name: GetModel<T>()
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetModel__1
+  commentId: M:Gameplay.Conrollers.BaseGameMode.GetModel``1
+  name.vb: GetModel(Of T)()
+  fullName: Gameplay.Conrollers.BaseGameMode.GetModel<T>()
+  fullName.vb: Gameplay.Conrollers.BaseGameMode.GetModel(Of T)()
+  nameWithType: BaseGameMode.GetModel<T>()
+  nameWithType.vb: BaseGameMode.GetModel(Of T)()
 - uid: Gameplay.Conrollers.BaseGameMode.GetNextTip(System.Int32)
   name: GetNextTip(Int32)
   href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetNextTip_System_Int32_
@@ -353,6 +513,25 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.BaseGameMode.ManualUpdate
   nameWithType: BaseGameMode.ManualUpdate
+- uid: Gameplay.Conrollers.BaseGameMode.model
+  name: model
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_model
+  commentId: F:Gameplay.Conrollers.BaseGameMode.model
+  fullName: Gameplay.Conrollers.BaseGameMode.model
+  nameWithType: BaseGameMode.model
+- uid: Gameplay.Conrollers.BaseGameMode.SetupNewSession(Gameplay.Conrollers.Game)
+  name: SetupNewSession(Game)
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_SetupNewSession_Gameplay_Conrollers_Game_
+  commentId: M:Gameplay.Conrollers.BaseGameMode.SetupNewSession(Gameplay.Conrollers.Game)
+  fullName: Gameplay.Conrollers.BaseGameMode.SetupNewSession(Gameplay.Conrollers.Game)
+  nameWithType: BaseGameMode.SetupNewSession(Game)
+- uid: Gameplay.Conrollers.BaseGameMode.SetupNewSession*
+  name: SetupNewSession
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_SetupNewSession_
+  commentId: Overload:Gameplay.Conrollers.BaseGameMode.SetupNewSession
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.BaseGameMode.SetupNewSession
+  nameWithType: BaseGameMode.SetupNewSession
 - uid: Gameplay.Conrollers.BaseGameMode.StartGamePressed
   name: StartGamePressed()
   href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartGamePressed
@@ -366,19 +545,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.BaseGameMode.StartGamePressed
   nameWithType: BaseGameMode.StartGamePressed
-- uid: Gameplay.Conrollers.BaseGameMode.StartNewSession(Gameplay.Conrollers.Game)
-  name: StartNewSession(Game)
-  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartNewSession_Gameplay_Conrollers_Game_
-  commentId: M:Gameplay.Conrollers.BaseGameMode.StartNewSession(Gameplay.Conrollers.Game)
-  fullName: Gameplay.Conrollers.BaseGameMode.StartNewSession(Gameplay.Conrollers.Game)
-  nameWithType: BaseGameMode.StartNewSession(Game)
-- uid: Gameplay.Conrollers.BaseGameMode.StartNewSession*
-  name: StartNewSession
-  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartNewSession_
-  commentId: Overload:Gameplay.Conrollers.BaseGameMode.StartNewSession
+- uid: Gameplay.Conrollers.BaseGameMode.StartSession(Gameplay.Conrollers.Game)
+  name: StartSession(Game)
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartSession_Gameplay_Conrollers_Game_
+  commentId: M:Gameplay.Conrollers.BaseGameMode.StartSession(Gameplay.Conrollers.Game)
+  fullName: Gameplay.Conrollers.BaseGameMode.StartSession(Gameplay.Conrollers.Game)
+  nameWithType: BaseGameMode.StartSession(Game)
+- uid: Gameplay.Conrollers.BaseGameMode.StartSession*
+  name: StartSession
+  href: api/Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartSession_
+  commentId: Overload:Gameplay.Conrollers.BaseGameMode.StartSession
   isSpec: "True"
-  fullName: Gameplay.Conrollers.BaseGameMode.StartNewSession
-  nameWithType: BaseGameMode.StartNewSession
+  fullName: Gameplay.Conrollers.BaseGameMode.StartSession
+  nameWithType: BaseGameMode.StartSession
 - uid: Gameplay.Conrollers.Game
   name: Game
   href: api/Gameplay.Conrollers.Game.html
@@ -658,6 +837,51 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.GameModeController.StartGamePressed
   nameWithType: GameModeController.StartGamePressed
+- uid: Gameplay.Conrollers.ISaveController
+  name: ISaveController
+  href: api/Gameplay.Conrollers.ISaveController.html
+  commentId: T:Gameplay.Conrollers.ISaveController
+  fullName: Gameplay.Conrollers.ISaveController
+  nameWithType: ISaveController
+- uid: Gameplay.Conrollers.ISaveController.Load
+  name: Load()
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_Load
+  commentId: M:Gameplay.Conrollers.ISaveController.Load
+  fullName: Gameplay.Conrollers.ISaveController.Load()
+  nameWithType: ISaveController.Load()
+- uid: Gameplay.Conrollers.ISaveController.Load*
+  name: Load
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_Load_
+  commentId: Overload:Gameplay.Conrollers.ISaveController.Load
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ISaveController.Load
+  nameWithType: ISaveController.Load
+- uid: Gameplay.Conrollers.ISaveController.Save
+  name: Save()
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_Save
+  commentId: M:Gameplay.Conrollers.ISaveController.Save
+  fullName: Gameplay.Conrollers.ISaveController.Save()
+  nameWithType: ISaveController.Save()
+- uid: Gameplay.Conrollers.ISaveController.Save*
+  name: Save
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_Save_
+  commentId: Overload:Gameplay.Conrollers.ISaveController.Save
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ISaveController.Save
+  nameWithType: ISaveController.Save
+- uid: Gameplay.Conrollers.ISaveController.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.ISaveController.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.ISaveController.SetFilename(System.String)
+  nameWithType: ISaveController.SetFilename(String)
+- uid: Gameplay.Conrollers.ISaveController.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.ISaveController.html#Gameplay_Conrollers_ISaveController_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.ISaveController.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.ISaveController.SetFilename
+  nameWithType: ISaveController.SetFilename
 - uid: Gameplay.Conrollers.ISaveData
   name: ISaveData
   href: api/Gameplay.Conrollers.ISaveData.html
@@ -709,6 +933,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.LearningModeController.ContinueSession
   nameWithType: LearningModeController.ContinueSession
+- uid: Gameplay.Conrollers.LearningModeController.CreateModelHandler
+  name: CreateModelHandler()
+  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_CreateModelHandler
+  commentId: M:Gameplay.Conrollers.LearningModeController.CreateModelHandler
+  fullName: Gameplay.Conrollers.LearningModeController.CreateModelHandler()
+  nameWithType: LearningModeController.CreateModelHandler()
+- uid: Gameplay.Conrollers.LearningModeController.CreateModelHandler*
+  name: CreateModelHandler
+  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_CreateModelHandler_
+  commentId: Overload:Gameplay.Conrollers.LearningModeController.CreateModelHandler
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningModeController.CreateModelHandler
+  nameWithType: LearningModeController.CreateModelHandler
 - uid: Gameplay.Conrollers.LearningModeController.gameModeId
   name: gameModeId
   href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_gameModeId
@@ -722,19 +959,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.LearningModeController.gameModeId
   nameWithType: LearningModeController.gameModeId
-- uid: Gameplay.Conrollers.LearningModeController.Init(Gameplay.Conrollers.GameModeController)
-  name: Init(GameModeController)
-  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_Init_Gameplay_Conrollers_GameModeController_
-  commentId: M:Gameplay.Conrollers.LearningModeController.Init(Gameplay.Conrollers.GameModeController)
-  fullName: Gameplay.Conrollers.LearningModeController.Init(Gameplay.Conrollers.GameModeController)
-  nameWithType: LearningModeController.Init(GameModeController)
-- uid: Gameplay.Conrollers.LearningModeController.Init*
-  name: Init
-  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_Init_
-  commentId: Overload:Gameplay.Conrollers.LearningModeController.Init
-  isSpec: "True"
-  fullName: Gameplay.Conrollers.LearningModeController.Init
-  nameWithType: LearningModeController.Init
 - uid: Gameplay.Conrollers.LearningModeController.maxQuestions
   name: maxQuestions
   href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_maxQuestions
@@ -811,6 +1035,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.LearningModeController.SessionOver
   nameWithType: LearningModeController.SessionOver
+- uid: Gameplay.Conrollers.LearningModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  name: SetupNewSession(Game)
+  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_SetupNewSession_Gameplay_Conrollers_Game_
+  commentId: M:Gameplay.Conrollers.LearningModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  fullName: Gameplay.Conrollers.LearningModeController.SetupNewSession(Gameplay.Conrollers.Game)
+  nameWithType: LearningModeController.SetupNewSession(Game)
+- uid: Gameplay.Conrollers.LearningModeController.SetupNewSession*
+  name: SetupNewSession
+  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_SetupNewSession_
+  commentId: Overload:Gameplay.Conrollers.LearningModeController.SetupNewSession
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningModeController.SetupNewSession
+  nameWithType: LearningModeController.SetupNewSession
 - uid: Gameplay.Conrollers.LearningModeController.StartGamePressed
   name: StartGamePressed()
   href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_StartGamePressed
@@ -824,25 +1061,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.LearningModeController.StartGamePressed
   nameWithType: LearningModeController.StartGamePressed
-- uid: Gameplay.Conrollers.LearningModeController.StartNewSession(Gameplay.Conrollers.Game)
-  name: StartNewSession(Game)
-  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_StartNewSession_Gameplay_Conrollers_Game_
-  commentId: M:Gameplay.Conrollers.LearningModeController.StartNewSession(Gameplay.Conrollers.Game)
-  fullName: Gameplay.Conrollers.LearningModeController.StartNewSession(Gameplay.Conrollers.Game)
-  nameWithType: LearningModeController.StartNewSession(Game)
-- uid: Gameplay.Conrollers.LearningModeController.StartNewSession*
-  name: StartNewSession
-  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_StartNewSession_
-  commentId: Overload:Gameplay.Conrollers.LearningModeController.StartNewSession
-  isSpec: "True"
-  fullName: Gameplay.Conrollers.LearningModeController.StartNewSession
-  nameWithType: LearningModeController.StartNewSession
-- uid: Gameplay.Conrollers.LearningModeController.statistics
-  name: statistics
-  href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_statistics
-  commentId: F:Gameplay.Conrollers.LearningModeController.statistics
-  fullName: Gameplay.Conrollers.LearningModeController.statistics
-  nameWithType: LearningModeController.statistics
 - uid: Gameplay.Conrollers.LearningModeController.UpdateGameState(System.Boolean)
   name: UpdateGameState(Boolean)
   href: api/Gameplay.Conrollers.LearningModeController.html#Gameplay_Conrollers_LearningModeController_UpdateGameState_System_Boolean_
@@ -856,6 +1074,179 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.LearningModeController.UpdateGameState
   nameWithType: LearningModeController.UpdateGameState
+- uid: Gameplay.Conrollers.LearningModel
+  name: LearningModel
+  href: api/Gameplay.Conrollers.LearningModel.html
+  commentId: T:Gameplay.Conrollers.LearningModel
+  fullName: Gameplay.Conrollers.LearningModel
+  nameWithType: LearningModel
+- uid: Gameplay.Conrollers.LearningModel.tokens
+  name: tokens
+  href: api/Gameplay.Conrollers.LearningModel.html#Gameplay_Conrollers_LearningModel_tokens
+  commentId: F:Gameplay.Conrollers.LearningModel.tokens
+  fullName: Gameplay.Conrollers.LearningModel.tokens
+  nameWithType: LearningModel.tokens
+- uid: Gameplay.Conrollers.LearningModel.unlockedStations
+  name: unlockedStations
+  href: api/Gameplay.Conrollers.LearningModel.html#Gameplay_Conrollers_LearningModel_unlockedStations
+  commentId: F:Gameplay.Conrollers.LearningModel.unlockedStations
+  fullName: Gameplay.Conrollers.LearningModel.unlockedStations
+  nameWithType: LearningModel.unlockedStations
+- uid: Gameplay.Conrollers.LearningModel.Version
+  name: Version
+  href: api/Gameplay.Conrollers.LearningModel.html#Gameplay_Conrollers_LearningModel_Version
+  commentId: P:Gameplay.Conrollers.LearningModel.Version
+  fullName: Gameplay.Conrollers.LearningModel.Version
+  nameWithType: LearningModel.Version
+- uid: Gameplay.Conrollers.LearningModel.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.LearningModel.html#Gameplay_Conrollers_LearningModel_Version_
+  commentId: Overload:Gameplay.Conrollers.LearningModel.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningModel.Version
+  nameWithType: LearningModel.Version
+- uid: Gameplay.Conrollers.LearningSaveController
+  name: LearningSaveController
+  href: api/Gameplay.Conrollers.LearningSaveController.html
+  commentId: T:Gameplay.Conrollers.LearningSaveController
+  fullName: Gameplay.Conrollers.LearningSaveController
+  nameWithType: LearningSaveController
+- uid: Gameplay.Conrollers.LearningSaveController.Filename
+  name: Filename
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_Filename
+  commentId: P:Gameplay.Conrollers.LearningSaveController.Filename
+  fullName: Gameplay.Conrollers.LearningSaveController.Filename
+  nameWithType: LearningSaveController.Filename
+- uid: Gameplay.Conrollers.LearningSaveController.Filename*
+  name: Filename
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_Filename_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.Filename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.Filename
+  nameWithType: LearningSaveController.Filename
+- uid: Gameplay.Conrollers.LearningSaveController.InitializeSaveData(Gameplay.Conrollers.LearningModel)
+  name: InitializeSaveData(LearningModel)
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_InitializeSaveData_Gameplay_Conrollers_LearningModel_
+  commentId: M:Gameplay.Conrollers.LearningSaveController.InitializeSaveData(Gameplay.Conrollers.LearningModel)
+  fullName: Gameplay.Conrollers.LearningSaveController.InitializeSaveData(Gameplay.Conrollers.LearningModel)
+  nameWithType: LearningSaveController.InitializeSaveData(LearningModel)
+- uid: Gameplay.Conrollers.LearningSaveController.InitializeSaveData*
+  name: InitializeSaveData
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_InitializeSaveData_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.InitializeSaveData
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.InitializeSaveData
+  nameWithType: LearningSaveController.InitializeSaveData
+- uid: Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded
+  name: OnSaveDataLoaded()
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_OnSaveDataLoaded
+  commentId: M:Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded
+  fullName: Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded()
+  nameWithType: LearningSaveController.OnSaveDataLoaded()
+- uid: Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded*
+  name: OnSaveDataLoaded
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_OnSaveDataLoaded_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.OnSaveDataLoaded
+  nameWithType: LearningSaveController.OnSaveDataLoaded
+- uid: Gameplay.Conrollers.LearningSaveController.OnVersionChanged(System.Int32)
+  name: OnVersionChanged(Int32)
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_OnVersionChanged_System_Int32_
+  commentId: M:Gameplay.Conrollers.LearningSaveController.OnVersionChanged(System.Int32)
+  fullName: Gameplay.Conrollers.LearningSaveController.OnVersionChanged(System.Int32)
+  nameWithType: LearningSaveController.OnVersionChanged(Int32)
+- uid: Gameplay.Conrollers.LearningSaveController.OnVersionChanged*
+  name: OnVersionChanged
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_OnVersionChanged_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.OnVersionChanged
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.OnVersionChanged
+  nameWithType: LearningSaveController.OnVersionChanged
+- uid: Gameplay.Conrollers.LearningSaveController.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.LearningSaveController.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.LearningSaveController.SetFilename(System.String)
+  nameWithType: LearningSaveController.SetFilename(String)
+- uid: Gameplay.Conrollers.LearningSaveController.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.SetFilename
+  nameWithType: LearningSaveController.SetFilename
+- uid: Gameplay.Conrollers.LearningSaveController.tokens
+  name: tokens
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_tokens
+  commentId: P:Gameplay.Conrollers.LearningSaveController.tokens
+  fullName: Gameplay.Conrollers.LearningSaveController.tokens
+  nameWithType: LearningSaveController.tokens
+- uid: Gameplay.Conrollers.LearningSaveController.tokens*
+  name: tokens
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_tokens_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.tokens
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.tokens
+  nameWithType: LearningSaveController.tokens
+- uid: Gameplay.Conrollers.LearningSaveController.unlockedStations
+  name: unlockedStations
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_unlockedStations
+  commentId: P:Gameplay.Conrollers.LearningSaveController.unlockedStations
+  fullName: Gameplay.Conrollers.LearningSaveController.unlockedStations
+  nameWithType: LearningSaveController.unlockedStations
+- uid: Gameplay.Conrollers.LearningSaveController.unlockedStations*
+  name: unlockedStations
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_unlockedStations_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.unlockedStations
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.unlockedStations
+  nameWithType: LearningSaveController.unlockedStations
+- uid: Gameplay.Conrollers.LearningSaveController.Version
+  name: Version
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_Version
+  commentId: P:Gameplay.Conrollers.LearningSaveController.Version
+  fullName: Gameplay.Conrollers.LearningSaveController.Version
+  nameWithType: LearningSaveController.Version
+- uid: Gameplay.Conrollers.LearningSaveController.Version*
+  name: Version
+  href: api/Gameplay.Conrollers.LearningSaveController.html#Gameplay_Conrollers_LearningSaveController_Version_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveController.Version
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveController.Version
+  nameWithType: LearningSaveController.Version
+- uid: Gameplay.Conrollers.LearningSaveInterface
+  name: LearningSaveInterface
+  href: api/Gameplay.Conrollers.LearningSaveInterface.html
+  commentId: T:Gameplay.Conrollers.LearningSaveInterface
+  fullName: Gameplay.Conrollers.LearningSaveInterface
+  nameWithType: LearningSaveInterface
+- uid: Gameplay.Conrollers.LearningSaveInterface.tokens
+  name: tokens
+  href: api/Gameplay.Conrollers.LearningSaveInterface.html#Gameplay_Conrollers_LearningSaveInterface_tokens
+  commentId: P:Gameplay.Conrollers.LearningSaveInterface.tokens
+  fullName: Gameplay.Conrollers.LearningSaveInterface.tokens
+  nameWithType: LearningSaveInterface.tokens
+- uid: Gameplay.Conrollers.LearningSaveInterface.tokens*
+  name: tokens
+  href: api/Gameplay.Conrollers.LearningSaveInterface.html#Gameplay_Conrollers_LearningSaveInterface_tokens_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveInterface.tokens
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveInterface.tokens
+  nameWithType: LearningSaveInterface.tokens
+- uid: Gameplay.Conrollers.LearningSaveInterface.unlockedStations
+  name: unlockedStations
+  href: api/Gameplay.Conrollers.LearningSaveInterface.html#Gameplay_Conrollers_LearningSaveInterface_unlockedStations
+  commentId: P:Gameplay.Conrollers.LearningSaveInterface.unlockedStations
+  fullName: Gameplay.Conrollers.LearningSaveInterface.unlockedStations
+  nameWithType: LearningSaveInterface.unlockedStations
+- uid: Gameplay.Conrollers.LearningSaveInterface.unlockedStations*
+  name: unlockedStations
+  href: api/Gameplay.Conrollers.LearningSaveInterface.html#Gameplay_Conrollers_LearningSaveInterface_unlockedStations_
+  commentId: Overload:Gameplay.Conrollers.LearningSaveInterface.unlockedStations
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.LearningSaveInterface.unlockedStations
+  nameWithType: LearningSaveInterface.unlockedStations
 - uid: Gameplay.Conrollers.SaveDataBaseController`1
   name: SaveDataBaseController<T>
   href: api/Gameplay.Conrollers.SaveDataBaseController-1.html
@@ -907,6 +1298,23 @@ references:
   fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).InitializeSaveData
   nameWithType: SaveDataBaseController<T>.InitializeSaveData
   nameWithType.vb: SaveDataBaseController(Of T).InitializeSaveData
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Load
+  name: Load()
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Load
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.Load
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Load()
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Load()
+  nameWithType: SaveDataBaseController<T>.Load()
+  nameWithType.vb: SaveDataBaseController(Of T).Load()
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.Load*
+  name: Load
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Load_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.Load
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.Load
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Load
+  nameWithType: SaveDataBaseController<T>.Load
+  nameWithType.vb: SaveDataBaseController(Of T).Load
 - uid: Gameplay.Conrollers.SaveDataBaseController`1.OnSaveDataLoaded
   name: OnSaveDataLoaded()
   href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_OnSaveDataLoaded
@@ -958,6 +1366,23 @@ references:
   fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).Save
   nameWithType: SaveDataBaseController<T>.Save
   nameWithType.vb: SaveDataBaseController(Of T).Save
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.SaveDataBaseController`1.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.SetFilename(System.String)
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).SetFilename(System.String)
+  nameWithType: SaveDataBaseController<T>.SetFilename(String)
+  nameWithType.vb: SaveDataBaseController(Of T).SetFilename(String)
+- uid: Gameplay.Conrollers.SaveDataBaseController`1.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.SaveDataBaseController`1.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SaveDataBaseController<T>.SetFilename
+  fullName.vb: Gameplay.Conrollers.SaveDataBaseController(Of T).SetFilename
+  nameWithType: SaveDataBaseController<T>.SetFilename
+  nameWithType.vb: SaveDataBaseController(Of T).SetFilename
 - uid: Gameplay.Conrollers.SaveDataBaseController`1.Version
   name: Version
   href: api/Gameplay.Conrollers.SaveDataBaseController-1.html#Gameplay_Conrollers_SaveDataBaseController_1_Version
@@ -1077,6 +1502,19 @@ references:
   commentId: F:Gameplay.Conrollers.SettingsController.palette
   fullName: Gameplay.Conrollers.SettingsController.palette
   nameWithType: SettingsController.palette
+- uid: Gameplay.Conrollers.SettingsController.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.SettingsController.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.SettingsController.SetFilename(System.String)
+  nameWithType: SettingsController.SetFilename(String)
+- uid: Gameplay.Conrollers.SettingsController.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.SettingsController.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.SettingsController.SetFilename
+  nameWithType: SettingsController.SetFilename
 - uid: Gameplay.Conrollers.SettingsController.Version
   name: Version
   href: api/Gameplay.Conrollers.SettingsController.html#Gameplay_Conrollers_SettingsController_Version
@@ -1096,12 +1534,6 @@ references:
   commentId: T:Gameplay.Conrollers.SettingsEntry
   fullName: Gameplay.Conrollers.SettingsEntry
   nameWithType: SettingsEntry
-- uid: Gameplay.Conrollers.SettingsEntry.dataVersion
-  name: dataVersion
-  href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_dataVersion
-  commentId: F:Gameplay.Conrollers.SettingsEntry.dataVersion
-  fullName: Gameplay.Conrollers.SettingsEntry.dataVersion
-  nameWithType: SettingsEntry.dataVersion
 - uid: Gameplay.Conrollers.SettingsEntry.difficulty
   name: difficulty
   href: api/Gameplay.Conrollers.SettingsEntry.html#Gameplay_Conrollers_SettingsEntry_difficulty
@@ -1213,6 +1645,19 @@ references:
   commentId: F:Gameplay.Conrollers.StatisticsController.sesionUnlockedStations
   fullName: Gameplay.Conrollers.StatisticsController.sesionUnlockedStations
   nameWithType: StatisticsController.sesionUnlockedStations
+- uid: Gameplay.Conrollers.StatisticsController.SetFilename(System.String)
+  name: SetFilename(String)
+  href: api/Gameplay.Conrollers.StatisticsController.html#Gameplay_Conrollers_StatisticsController_SetFilename_System_String_
+  commentId: M:Gameplay.Conrollers.StatisticsController.SetFilename(System.String)
+  fullName: Gameplay.Conrollers.StatisticsController.SetFilename(System.String)
+  nameWithType: StatisticsController.SetFilename(String)
+- uid: Gameplay.Conrollers.StatisticsController.SetFilename*
+  name: SetFilename
+  href: api/Gameplay.Conrollers.StatisticsController.html#Gameplay_Conrollers_StatisticsController_SetFilename_
+  commentId: Overload:Gameplay.Conrollers.StatisticsController.SetFilename
+  isSpec: "True"
+  fullName: Gameplay.Conrollers.StatisticsController.SetFilename
+  nameWithType: StatisticsController.SetFilename
 - uid: Gameplay.Conrollers.StatisticsController.TryUnlockStation(MetroStation)
   name: TryUnlockStation(MetroStation)
   href: api/Gameplay.Conrollers.StatisticsController.html#Gameplay_Conrollers_StatisticsController_TryUnlockStation_MetroStation_
@@ -5112,37 +5557,12 @@ references:
   commentId: F:Gameplay.Statistics.StatisticsEntry.correctAnswerStreak
   fullName: Gameplay.Statistics.StatisticsEntry.correctAnswerStreak
   nameWithType: StatisticsEntry.correctAnswerStreak
-- uid: Gameplay.Statistics.StatisticsEntry.dataVersion
-  name: dataVersion
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_dataVersion
-  commentId: F:Gameplay.Statistics.StatisticsEntry.dataVersion
-  fullName: Gameplay.Statistics.StatisticsEntry.dataVersion
-  nameWithType: StatisticsEntry.dataVersion
 - uid: Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
   name: fastestCorrectAnswer
   href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_fastestCorrectAnswer
   commentId: F:Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
   fullName: Gameplay.Statistics.StatisticsEntry.fastestCorrectAnswer
   nameWithType: StatisticsEntry.fastestCorrectAnswer
-- uid: Gameplay.Statistics.StatisticsEntry.gameModeState
-  name: gameModeState
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_gameModeState
-  commentId: F:Gameplay.Statistics.StatisticsEntry.gameModeState
-  fullName: Gameplay.Statistics.StatisticsEntry.gameModeState
-  nameWithType: StatisticsEntry.gameModeState
-- uid: Gameplay.Statistics.StatisticsEntry.GetGameState(System.String)
-  name: GetGameState(String)
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_GetGameState_System_String_
-  commentId: M:Gameplay.Statistics.StatisticsEntry.GetGameState(System.String)
-  fullName: Gameplay.Statistics.StatisticsEntry.GetGameState(System.String)
-  nameWithType: StatisticsEntry.GetGameState(String)
-- uid: Gameplay.Statistics.StatisticsEntry.GetGameState*
-  name: GetGameState
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_GetGameState_
-  commentId: Overload:Gameplay.Statistics.StatisticsEntry.GetGameState
-  isSpec: "True"
-  fullName: Gameplay.Statistics.StatisticsEntry.GetGameState
-  nameWithType: StatisticsEntry.GetGameState
 - uid: Gameplay.Statistics.StatisticsEntry.logestCorrectAnswerStreak
   name: logestCorrectAnswerStreak
   href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_logestCorrectAnswerStreak
@@ -5161,19 +5581,6 @@ references:
   commentId: F:Gameplay.Statistics.StatisticsEntry.maxScore
   fullName: Gameplay.Statistics.StatisticsEntry.maxScore
   nameWithType: StatisticsEntry.maxScore
-- uid: Gameplay.Statistics.StatisticsEntry.SetGameState(System.String,System.Boolean)
-  name: SetGameState(String, Boolean)
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_SetGameState_System_String_System_Boolean_
-  commentId: M:Gameplay.Statistics.StatisticsEntry.SetGameState(System.String,System.Boolean)
-  fullName: Gameplay.Statistics.StatisticsEntry.SetGameState(System.String, System.Boolean)
-  nameWithType: StatisticsEntry.SetGameState(String, Boolean)
-- uid: Gameplay.Statistics.StatisticsEntry.SetGameState*
-  name: SetGameState
-  href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_SetGameState_
-  commentId: Overload:Gameplay.Statistics.StatisticsEntry.SetGameState
-  isSpec: "True"
-  fullName: Gameplay.Statistics.StatisticsEntry.SetGameState
-  nameWithType: StatisticsEntry.SetGameState
 - uid: Gameplay.Statistics.StatisticsEntry.tickets
   name: tickets
   href: api/Gameplay.Statistics.StatisticsEntry.html#Gameplay_Statistics_StatisticsEntry_tickets
@@ -5594,6 +6001,12 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UIGame.EnableStartButton
   nameWithType: UIGame.EnableStartButton
+- uid: Gameplay.UI.UIGame.intro
+  name: intro
+  href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_intro
+  commentId: F:Gameplay.UI.UIGame.intro
+  fullName: Gameplay.UI.UIGame.intro
+  nameWithType: UIGame.intro
 - uid: Gameplay.UI.UIGame.SetConfirmText(System.String,System.Boolean)
   name: SetConfirmText(String, Boolean)
   href: api/Gameplay.UI.UIGame.html#Gameplay_UI_UIGame_SetConfirmText_System_String_System_Boolean_
@@ -5745,6 +6158,19 @@ references:
   commentId: F:Gameplay.UI.UIIntro.learningCard
   fullName: Gameplay.UI.UIIntro.learningCard
   nameWithType: UIIntro.learningCard
+- uid: Gameplay.UI.UIIntro.ShowIntro(Game)
+  name: ShowIntro(Game)
+  href: api/Gameplay.UI.UIIntro.html#Gameplay_UI_UIIntro_ShowIntro_Game_
+  commentId: M:Gameplay.UI.UIIntro.ShowIntro(Game)
+  fullName: Gameplay.UI.UIIntro.ShowIntro(Game)
+  nameWithType: UIIntro.ShowIntro(Game)
+- uid: Gameplay.UI.UIIntro.ShowIntro*
+  name: ShowIntro
+  href: api/Gameplay.UI.UIIntro.html#Gameplay_UI_UIIntro_ShowIntro_
+  commentId: Overload:Gameplay.UI.UIIntro.ShowIntro
+  isSpec: "True"
+  fullName: Gameplay.UI.UIIntro.ShowIntro
+  nameWithType: UIIntro.ShowIntro
 - uid: Gameplay.UI.UIScoreItem
   name: UIScoreItem
   href: api/Gameplay.UI.UIScoreItem.html
@@ -6490,6 +6916,63 @@ references:
   commentId: N:Util
   fullName: Util
   nameWithType: Util
+- uid: Util.AotTypeEnforcer
+  name: AotTypeEnforcer
+  href: api/Util.AotTypeEnforcer.html
+  commentId: T:Util.AotTypeEnforcer
+  fullName: Util.AotTypeEnforcer
+  nameWithType: AotTypeEnforcer
+- uid: Util.AotTypeEnforcer.Awake
+  name: Awake()
+  href: api/Util.AotTypeEnforcer.html#Util_AotTypeEnforcer_Awake
+  commentId: M:Util.AotTypeEnforcer.Awake
+  fullName: Util.AotTypeEnforcer.Awake()
+  nameWithType: AotTypeEnforcer.Awake()
+- uid: Util.AotTypeEnforcer.Awake*
+  name: Awake
+  href: api/Util.AotTypeEnforcer.html#Util_AotTypeEnforcer_Awake_
+  commentId: Overload:Util.AotTypeEnforcer.Awake
+  isSpec: "True"
+  fullName: Util.AotTypeEnforcer.Awake
+  nameWithType: AotTypeEnforcer.Awake
+- uid: Util.DictionaryExtension
+  name: DictionaryExtension
+  href: api/Util.DictionaryExtension.html
+  commentId: T:Util.DictionaryExtension
+  fullName: Util.DictionaryExtension
+  nameWithType: DictionaryExtension
+- uid: Util.DictionaryExtension.TryGet*
+  name: TryGet
+  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TryGet_
+  commentId: Overload:Util.DictionaryExtension.TryGet
+  isSpec: "True"
+  fullName: Util.DictionaryExtension.TryGet
+  nameWithType: DictionaryExtension.TryGet
+- uid: Util.DictionaryExtension.TryGet``2(Dictionary{``0,``1},``0)
+  name: TryGet<TK, TV>(Dictionary<TK, TV>, TK)
+  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TryGet__2_Dictionary___0___1____0_
+  commentId: M:Util.DictionaryExtension.TryGet``2(Dictionary{``0,``1},``0)
+  name.vb: TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
+  fullName: Util.DictionaryExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
+  fullName.vb: Util.DictionaryExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
+  nameWithType: DictionaryExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
+  nameWithType.vb: DictionaryExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
+- uid: Util.DictionaryExtension.TrySet*
+  name: TrySet
+  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TrySet_
+  commentId: Overload:Util.DictionaryExtension.TrySet
+  isSpec: "True"
+  fullName: Util.DictionaryExtension.TrySet
+  nameWithType: DictionaryExtension.TrySet
+- uid: Util.DictionaryExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
+  name: TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
+  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TrySet__2_Dictionary___0___1____0___1_
+  commentId: M:Util.DictionaryExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
+  name.vb: TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
+  fullName: Util.DictionaryExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
+  fullName.vb: Util.DictionaryExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
+  nameWithType: DictionaryExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
+  nameWithType.vb: DictionaryExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
 - uid: Util.EventManager
   name: EventManager
   href: api/Util.EventManager.html
