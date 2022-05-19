@@ -115,7 +115,7 @@ namespace Gameplay.Conrollers
             }
             catch (InvalidOperationException e)
             {
-                uiGame.topBar.ShowMessage("Выберете ответ!");
+                uiGame.topBar.ShowMessage("Выберите ответ!");
                 return;
             }
 
@@ -239,6 +239,7 @@ namespace Gameplay.Conrollers
             renderer.ShowAllLabels();
             renderer.FocusRegion(game.currentRegion);
             uiGame.EnableStartButton($"{game.maxQuestions} вопросов");
+            uiGame.SetConfirmText("Подтвердить", false);
             uiGame.topBar.SetCurrentLabel("Перерыв");
         }
 

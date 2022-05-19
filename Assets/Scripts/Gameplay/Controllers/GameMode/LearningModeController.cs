@@ -76,7 +76,7 @@ namespace Gameplay.Conrollers
 
             base.OnRestStarted();
             Refresh();
-            uiGame.SetConfirmText("Открыть");
+            uiGame.SetConfirmText("Открыть", true);
 
             uiGame.touchButton.Enable(selectable =>
             {
@@ -90,7 +90,7 @@ namespace Gameplay.Conrollers
                 }
 
                 return false;
-            }, true);
+            }, true, true);
         }
         
         public override void SessionOver()
@@ -134,7 +134,17 @@ namespace Gameplay.Conrollers
 
         public void Purchase()
         {
-            StationDisplay display = uiGame.touchButton.GetSelected<StationDisplay>();
+            StationDisplay display;
+            try
+            {
+                display = uiGame.touchButton.GetSelected<StationDisplay>();
+            }
+            catch (Exception e)
+            {
+                uiGame.topBar.ShowMessage("Выберите станцию!");
+                return;
+            }
+            
             if (display == null || statistics.current.tickets <= 0) return;
 
             if (!statistics.current.unlockedStations.IsUnlocked(display.station))

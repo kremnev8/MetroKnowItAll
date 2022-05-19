@@ -16,6 +16,7 @@ MonoBehaviour:
   - lineId: 0
     name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -128,7 +129,7 @@ MonoBehaviour:
       m_override: 1
       hideName: 0
       namePosition: 6
-      nameAlignment: 513
+      nameAlignment: 257
       isOpen: 1
     - lineId: 0
       stationId: 9
@@ -518,6 +519,7 @@ MonoBehaviour:
   - lineId: 1
     name: "\u0417\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -980,6 +982,7 @@ MonoBehaviour:
   - lineId: 2
     name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -1244,10 +1247,10 @@ MonoBehaviour:
       names:
       - "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
       currentNameIndex: 0
-      m_override: 0
+      m_override: 1
       hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 2
+      nameAlignment: 514
       isOpen: 1
     connections:
     - lineId: 2
@@ -1403,6 +1406,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 3
     name: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -1656,6 +1660,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 4
     name: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 1
     curveCenter: {x: 0.5, y: 10}
@@ -1897,6 +1902,7 @@ MonoBehaviour:
   - lineId: 5
     name: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0420\u0438\u0436\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -2008,8 +2014,8 @@ MonoBehaviour:
       currentNameIndex: 0
       m_override: 1
       hideName: 0
-      namePosition: 7
-      nameAlignment: 516
+      namePosition: 2
+      nameAlignment: 1026
       isOpen: 1
     - lineId: 5
       stationId: 9
@@ -2360,6 +2366,7 @@ MonoBehaviour:
   - lineId: 6
     name: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -2504,10 +2511,10 @@ MonoBehaviour:
       names:
       - "\u041A\u0443\u0437\u043D\u0435\u0446\u043A\u0438\u0439 \u041C\u043E\u0441\u0442"
       currentNameIndex: 0
-      m_override: 0
+      m_override: 1
       hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 1
+      nameAlignment: 1028
       isOpen: 1
     - lineId: 6
       stationId: 12
@@ -2804,6 +2811,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 7
     name: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -2961,6 +2969,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 8
     name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -3196,6 +3205,7 @@ MonoBehaviour:
   - lineId: 9
     name: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -3679,6 +3689,7 @@ MonoBehaviour:
   - lineId: 10
     name: "\u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -3801,7 +3812,7 @@ MonoBehaviour:
       currentNameIndex: 0
       m_override: 1
       hideName: 0
-      namePosition: 5
+      namePosition: 6
       nameAlignment: 258
       isOpen: 1
     - lineId: 10
@@ -4123,6 +4134,7 @@ MonoBehaviour:
   - lineId: 11
     name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 1
     curveCenter: {x: 0, y: 0}
@@ -4257,8 +4269,8 @@ MonoBehaviour:
       currentNameIndex: 0
       m_override: 1
       hideName: 0
-      namePosition: 8
-      nameAlignment: 1025
+      namePosition: 5
+      nameAlignment: 514
       isOpen: 1
     - lineId: 11
       stationId: 11
@@ -4395,6 +4407,7 @@ MonoBehaviour:
   - lineId: 12
     name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F A"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -4514,6 +4527,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 13
     name: "\u0411\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -4654,6 +4668,7 @@ MonoBehaviour:
   - lineId: 14
     name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
       \u043A\u043E\u043B\u044C\u0446\u043E"
+    isLooped: 0
     style: 1
     useSmoothCurves: 1
     curveCenter: {x: 0.5, y: 10}
@@ -4727,10 +4742,10 @@ MonoBehaviour:
       names:
       - "\u0411\u0430\u043B\u0442\u0438\u0439\u0441\u043A\u0430\u044F"
       currentNameIndex: 0
-      m_override: 0
+      m_override: 1
       hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 8
+      nameAlignment: 513
       isOpen: 1
     - lineId: 14
       stationId: 6
@@ -5257,6 +5272,7 @@ MonoBehaviour:
   - lineId: 15
     name: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F
       \u043B\u0438\u043D\u0438\u044F"
+    isLooped: 0
     style: 0
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -5471,6 +5487,7 @@ MonoBehaviour:
     nameAlignment: 513
   - lineId: 16
     name: "\u041C\u0426\u0414-1"
+    isLooped: 0
     style: 1
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -5951,6 +5968,7 @@ MonoBehaviour:
     nameAlignment: 516
   - lineId: 17
     name: "\u041C\u0426\u0414-2"
+    isLooped: 0
     style: 1
     useSmoothCurves: 0
     curveCenter: {x: 0, y: 0}
@@ -6275,8 +6293,8 @@ MonoBehaviour:
       names:
       - "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
       currentNameIndex: 0
-      m_override: 0
-      hideName: 0
+      m_override: 1
+      hideName: 1
       namePosition: 0
       nameAlignment: 0
       isOpen: 1
@@ -6937,143 +6955,21 @@ MonoBehaviour:
   regions:
   - regionType: 0
     lineId: -1
-    area:
-      points: []
-      everywhere: 0
   - regionType: 1
     lineId: -1
-    area:
-      points:
-      - {x: -50.550217, y: -33.55413}
-      - {x: 16.492147, y: -31.97554}
-      - {x: 47.639805, y: -15.659843}
-      - {x: 48.14823, y: 35.429752}
-      - {x: 30.325905, y: 47.658115}
-      - {x: -15.638435, y: 46.821632}
-      - {x: -40.63469, y: 31.72354}
-      - {x: -64.1489, y: 23.28678}
-      - {x: -66.38481, y: 11.678507}
-      - {x: -56.732292, y: -0.8178978}
-      - {x: -32.872627, y: 1.6815987}
-      - {x: -32.79624, y: -7.5924683}
-      - {x: -51.43792, y: -25.799416}
-      everywhere: 0
   - regionType: 2
     lineId: -1
-    area:
-      points:
-      - {x: -15.604721, y: 139.78555}
-      - {x: -44.1435, y: 139.76125}
-      - {x: -65.82347, y: 95.455765}
-      - {x: -65.43213, y: 61.055298}
-      - {x: -57.604546, y: 49.94745}
-      - {x: -64.369354, y: 37.109055}
-      - {x: -61.36886, y: 24.313997}
-      - {x: -40.654778, y: 31.703041}
-      - {x: -15.320152, y: 47.011524}
-      everywhere: 0
   - regionType: 3
     lineId: -1
-    area:
-      points:
-      - {x: -15.301693, y: 46.826717}
-      - {x: 30.338173, y: 47.66846}
-      - {x: 33.465336, y: 73.4608}
-      - {x: 33.31766, y: 102.39567}
-      - {x: -15.483276, y: 102.1923}
-      everywhere: 0
   - regionType: 4
     lineId: -1
-    area:
-      points:
-      - {x: 105.78035, y: 5.84198}
-      - {x: 105.572, y: 73.3744}
-      - {x: 33.406475, y: 73.00969}
-      - {x: 30.325905, y: 47.658115}
-      - {x: 48.15085, y: 35.426926}
-      - {x: 48.02619, y: 21.724865}
-      - {x: 58.721046, y: 6.776119}
-      everywhere: 0
   - regionType: 5
     lineId: -1
-    area:
-      points:
-      - {x: 53.21332, y: -37.11183}
-      - {x: 52.731934, y: -64.795296}
-      - {x: 131.57455, y: -64.3769}
-      - {x: 130.84392, y: -39.164047}
-      - {x: 105.98385, y: 5.8350067}
-      - {x: 58.71596, y: 6.7762337}
-      - {x: 48.03482, y: 21.812674}
-      - {x: 47.637638, y: -15.647896}
-      - {x: 37.09592, y: -21.145554}
-      everywhere: 0
   - regionType: 6
     lineId: -1
-    area:
-      points:
-      - {x: -22.331367, y: -42.929207}
-      - {x: 2.5359077, y: -45.25701}
-      - {x: 14.748314, y: -52.34948}
-      - {x: 27.539429, y: -52.61596}
-      - {x: 28.27257, y: -129.55933}
-      - {x: 132.3271, y: -129.96695}
-      - {x: 131.5724, y: -64.380295}
-      - {x: 52.730217, y: -64.767235}
-      - {x: 53.216187, y: -37.117287}
-      - {x: 37.104656, y: -21.169548}
-      - {x: 16.47571, y: -31.978836}
-      - {x: -22.421154, y: -32.88906}
-      everywhere: 0
   - regionType: 7
     lineId: -1
-    area:
-      points:
-      - {x: -22.421154, y: -32.88906}
-      - {x: -50.566, y: -33.58291}
-      - {x: -50.957733, y: -46.97274}
-      - {x: -36.064384, y: -54.33058}
-      - {x: -36.03486, y: -69.62038}
-      - {x: -50.887978, y: -74.68416}
-      - {x: -51.375923, y: -130.45355}
-      - {x: 28.27257, y: -129.55933}
-      - {x: 27.539429, y: -52.61596}
-      - {x: 14.748314, y: -52.34948}
-      - {x: 2.5359077, y: -45.25701}
-      - {x: -22.331367, y: -42.929207}
-      everywhere: 0
   - regionType: 8
     lineId: -1
-    area:
-      points:
-      - {x: -51.43792, y: -25.799416}
-      - {x: -32.79624, y: -7.5924683}
-      - {x: -32.872627, y: 1.6815987}
-      - {x: -56.744743, y: -0.8192177}
-      - {x: -66.36892, y: 11.686977}
-      - {x: -64.18615, y: 23.219698}
-      - {x: -78.49695, y: 17.647581}
-      - {x: -95.652504, y: 22.269684}
-      - {x: -121.769295, y: 22.56915}
-      - {x: -101.3316, y: -72.815765}
-      - {x: -50.767212, y: -74.64061}
-      - {x: -36.061424, y: -69.66132}
-      - {x: -36.061424, y: -54.314476}
-      - {x: -50.943214, y: -46.989845}
-      - {x: -50.550217, y: -33.55413}
-      everywhere: 0
   - regionType: 9
     lineId: -1
-    area:
-      points:
-      - {x: -95.64182, y: 22.265194}
-      - {x: -78.54705, y: 17.660208}
-      - {x: -61.38842, y: 24.30304}
-      - {x: -64.37217, y: 37.09795}
-      - {x: -57.605614, y: 49.956875}
-      - {x: -65.43213, y: 61.055298}
-      - {x: -65.82347, y: 95.455765}
-      - {x: -127.20278, y: 95.8916}
-      - {x: -126.05233, y: 28.55035}
-      - {x: -121.86474, y: 22.587002}
-      everywhere: 0

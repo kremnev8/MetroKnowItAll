@@ -14,6 +14,8 @@ namespace Gameplay.Controls
     {
         public bool IsFocused(MetroRenderer metroRenderer);
         public void SetSelected(MetroRenderer metroRenderer, bool value);
+
+        public void ShowLabel(bool visible);
     }
     
     /// <summary>
@@ -34,14 +36,16 @@ namespace Gameplay.Controls
         public bool isEnabled;
         public Func<ISelectable, bool> filter;
         public bool overrideFocus;
+        private bool showStationName;
 
         private RaycastHit2D[] hits = new RaycastHit2D[5];
 
-        public void Enable( Func<ISelectable, bool> filter, bool overrideFocus = false)
+        public void Enable( Func<ISelectable, bool> filter, bool overrideFocus = false, bool showStationName = false)
         {
             isEnabled = true;
             this.filter = filter;
             this.overrideFocus = overrideFocus;
+            this.showStationName = showStationName;
         }
 
         public void Disable()
@@ -100,9 +104,14 @@ namespace Gameplay.Controls
                     ISelectable display = hit.collider.gameObject.GetComponent<ISelectable>();
                     if (display != null && filter(display) && (display.IsFocused(renderer) || overrideFocus))
                     {
+                        if (showStationName)
+                            selectedStation?.ShowLabel(false);
                         selectedStation?.SetSelected(renderer, false);
                         display.SetSelected(renderer, true);
                         selectedStation = display;
+                        if (showStationName)
+                            display.ShowLabel(true);
+                        
                         break;
                     }
                 }

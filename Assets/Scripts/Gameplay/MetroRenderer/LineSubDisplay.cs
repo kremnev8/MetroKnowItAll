@@ -254,6 +254,10 @@ namespace Gameplay.MetroDisplay
             highlight.SetActive(value);
         }
 
+        public void ShowLabel(bool visible)
+        {
+        }
+
         private void Start()
         {
             Invoke(nameof(HideOnStart), 0.3f);

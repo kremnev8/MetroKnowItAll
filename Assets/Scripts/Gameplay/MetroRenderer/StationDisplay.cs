@@ -139,5 +139,12 @@ namespace Gameplay.MetroDisplay
                 selector.transform.localPosition = Vector3.zero;
             }
         }
+
+        public void ShowLabel(bool visible)
+        {
+            label.color = Color.white;
+            label.gameObject.SetActive(visible);
+            timeToHideLabel = -1;
+        }
     }
 }

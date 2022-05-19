@@ -39,7 +39,7 @@ namespace Gameplay.MetroDisplay.Model
 
         public bool isOpen;
 
-        public string editorName => $"{globalId} {currentName}";
+        public string editorName => $"{(int)globalId} {currentName}";
         public string displayName => currentName;
     }
 }

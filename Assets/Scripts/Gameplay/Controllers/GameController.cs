@@ -45,6 +45,11 @@ namespace Gameplay.Conrollers
             backAction.started += OnBack;
         }
 
+        private void Start()
+        {
+            UpdateMaterials();
+        }
+
         private void OnBack(InputAction.CallbackContext obj)
         {
             BackHandler top = BackHandler.GetTop();
