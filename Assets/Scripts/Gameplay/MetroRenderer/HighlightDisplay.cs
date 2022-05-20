@@ -21,6 +21,8 @@ namespace Gameplay.MetroDisplay
         public Texture2D smallBlur;
         public Material smallBlueMat;
 
+        public GameObject outerBox;
+        
         public Vector2 scale;
 
         private void Awake()
@@ -36,13 +38,15 @@ namespace Gameplay.MetroDisplay
                 tempTexture = new Texture2D(256, 256, GraphicsFormat.R8G8B8A8_UNorm, TextureCreationFlags.None);
             }
 
-            if (region.regionType != RegionType.GLOBAL_LINE || region.lineId == -1)
+            if (region.regionType != RegionType.GLOBAL_LINE)
             {
                 RedrawHighlight();
+                outerBox.SetActive(true);
             }
             else
             {
                 ClearHighlight();
+                outerBox.SetActive(false);
             }
         }
 

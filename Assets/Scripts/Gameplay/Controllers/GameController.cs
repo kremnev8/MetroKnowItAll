@@ -4,6 +4,7 @@ using Gameplay.Core;
 using ScriptableObjects;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Object = System.Object;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -29,6 +30,8 @@ namespace Gameplay.Conrollers
 
         public bool shouldBackCloseGame;
 
+        private InputAction backAction;
+
         private static readonly int unfocusedColor = Shader.PropertyToID("_UnfocusedColor");
         private static readonly int backColor = Shader.PropertyToID("_BackColor");
         private static readonly int color = Shader.PropertyToID("_Color");
@@ -41,8 +44,13 @@ namespace Gameplay.Conrollers
 
             ColorPalette.paletteChanged += UpdateMaterials;
 
-            InputAction backAction = model.input.actions["Back"];
-            backAction.started += OnBack;
+            backAction = model.input.actions["Back"];
+            backAction.performed += OnBack;
+        }
+
+        private void OnDestroy()
+        {
+            backAction.performed -= OnBack;
         }
 
         private void Start()
