@@ -304,6 +304,36 @@ namespace Gameplay.MetroDisplay
                 highlightDisplay.Refresh();
             }
         }
+
+        public StationDisplay GetPrimaryDisplay(StationDisplay current)
+        {
+            try
+            {
+                MetroCrossing crossing = metro.crossings.First(metroCrossing => metroCrossing.stationsGlobalIds.Contains(current.station.globalId));
+                List<MetroStation> neighbors = crossing.stationsGlobalIds.Select(id => metro.GetStation(id))
+                    .Where(station => station.currentName.Equals(current.station.currentName))
+                    .ToList();
+                if (neighbors.Count > 1)
+                {
+                    return GetStationDisplay(neighbors.First(station =>
+                    {
+                        if (station.m_override)
+                        {
+                            return !station.hideName;
+                        }
+                        return true;
+                    }));
+                }
+
+                return current;
+
+            }
+            catch (Exception e)
+            {
+                return current;
+            }
+        }
+        
     }
 }
 
@@ -322,7 +352,7 @@ public class MetroEditor : Editor
         
         if (GUILayout.Button("Set Focus"))
         {
-            renderer.FocusRegion(renderer.metro.regions.First(region => region.regionType == regionType));
+            renderer.FocusRegion(new Region(regionType, -1));
         }
         
         if (GUILayout.Button("Toggle Names"))

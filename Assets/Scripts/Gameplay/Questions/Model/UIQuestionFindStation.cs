@@ -29,15 +29,8 @@ namespace Gameplay.Questions.Generators
 
         public void DisplayResult(bool result)
         {
-            if (result)
-            {
-                
-                button.GetSelected<StationDisplay>().ShowLabelFor(GameController.theme.rightAnswer, 120);
-            }
-            else
-            {
-                button.GetSelected<StationDisplay>().ShowLabelFor(GameController.theme.wrongAnswer, 120);
-            }
+            StationDisplay display = renderer.GetPrimaryDisplay(button.GetSelected<StationDisplay>());
+            display.ShowLabelFor(result ? GameController.theme.rightAnswer : GameController.theme.wrongAnswer, 120);
             button.Disable();
         }
 

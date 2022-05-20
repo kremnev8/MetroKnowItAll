@@ -142,9 +142,12 @@ namespace Gameplay.MetroDisplay
 
         public void ShowLabel(bool visible)
         {
-            label.color = Color.white;
-            label.gameObject.SetActive(visible);
-            timeToHideLabel = -1;
+            if (!shouldLabelDisplay)
+            {
+                label.color = Color.white;
+                label.gameObject.SetActive(visible);
+                timeToHideLabel = -1;
+            }
         }
     }
 }

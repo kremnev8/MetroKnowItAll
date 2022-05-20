@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Util
@@ -71,6 +72,12 @@ namespace Util
             }
 
             return default(T);
+        }
+
+        public static Vector2 RandomizePoint(this Vector2 point, float magnitude)
+        {
+            float angle = Random.Range(-Mathf.PI, Mathf.PI);
+            return new Vector2(point.x + Mathf.Cos(angle) * magnitude, point.y + Mathf.Sin(angle) * magnitude);
         }
     }
 }

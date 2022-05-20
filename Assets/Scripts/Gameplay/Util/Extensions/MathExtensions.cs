@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using DelaunatorSharp;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -58,6 +59,16 @@ namespace Util
         public static Vector2 ToVector2(this Vector3Int vector)
         {
             return new Vector2(vector.x, vector.y);
+        }
+        
+        public static Vector2 ToVector2(this Point point)
+        {
+            return new Vector2((float)point.X, (float)point.Y);
+        }
+        
+        public static Point ToPoint(this Vector2 point)
+        {
+            return new Point(point.x, point.y);
         }
 
         /// <summary>

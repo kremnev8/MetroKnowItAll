@@ -6644,6 +6644,7 @@ MonoBehaviour:
     - lineId: 5
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 2
       stationId: 8
@@ -6652,6 +6653,7 @@ MonoBehaviour:
     - lineId: 0
       stationId: 9
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 2
       stationId: 9
@@ -6662,6 +6664,7 @@ MonoBehaviour:
     - lineId: 3
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 6
       stationId: 10
@@ -6670,60 +6673,70 @@ MonoBehaviour:
     - lineId: 9
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 0
     - lineId: 0
       stationId: 12
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 1
     - lineId: 5
       stationId: 12
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 2
     - lineId: 9
       stationId: 13
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 3
     - lineId: 1
       stationId: 13
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 6
     - lineId: 0
       stationId: 5
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 7
     - lineId: 5
       stationId: 7
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 8
     - lineId: 9
       stationId: 8
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 9
     - lineId: 1
       stationId: 8
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 10
     - lineId: 6
       stationId: 9
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 11
@@ -6732,6 +6745,7 @@ MonoBehaviour:
     - lineId: 2
       stationId: 11
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 6
       stationId: 13
@@ -6740,6 +6754,7 @@ MonoBehaviour:
     - lineId: 7
       stationId: 6
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 7
       stationId: 7
@@ -6748,6 +6763,7 @@ MonoBehaviour:
     - lineId: 5
       stationId: 11
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 5
       stationId: 9
@@ -6756,12 +6772,14 @@ MonoBehaviour:
     - lineId: 10
       stationId: 9
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 10
       stationId: 8
     - lineId: 9
       stationId: 9
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 2
       stationId: 7
@@ -6772,102 +6790,119 @@ MonoBehaviour:
     - lineId: 10
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 12
       stationId: 5
     - lineId: 9
       stationId: 7
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 12
       stationId: 4
     - lineId: 1
       stationId: 7
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 12
       stationId: 2
     - lineId: 6
       stationId: 6
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 12
       stationId: 1
     - lineId: 14
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 11
     - lineId: 3
       stationId: 11
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 3
       stationId: 5
     - lineId: 14
       stationId: 12
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 8
       stationId: 1
     - lineId: 2
       stationId: 12
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 5
       stationId: 14
     - lineId: 14
       stationId: 14
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 10
       stationId: 12
     - lineId: 6
       stationId: 14
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 10
       stationId: 11
     - lineId: 7
       stationId: 5
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 22
     - lineId: 15
       stationId: 3
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 21
     - lineId: 17
       stationId: 19
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 27
     - lineId: 0
       stationId: 1
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 1
     - lineId: 9
       stationId: 3
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 16
       stationId: 11
     - lineId: 9
       stationId: 5
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 14
       stationId: 6
     - lineId: 17
       stationId: 10
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 4
       stationId: 11
@@ -6876,6 +6911,7 @@ MonoBehaviour:
     - lineId: 2
       stationId: 11
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 8
       stationId: 0
@@ -6884,6 +6920,7 @@ MonoBehaviour:
     - lineId: 12
       stationId: 0
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 11
       stationId: 9
@@ -6892,66 +6929,302 @@ MonoBehaviour:
     - lineId: 2
       stationId: 14
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 8
       stationId: 5
     - lineId: 11
       stationId: 6
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 0
       stationId: 17
     - lineId: 11
       stationId: 5
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 5
       stationId: 18
     - lineId: 11
       stationId: 3
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 9
       stationId: 18
     - lineId: 11
       stationId: 1
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 13
       stationId: 0
     - lineId: 5
       stationId: 23
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 13
       stationId: 2
     - lineId: 9
       stationId: 24
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 10
       stationId: 22
     - lineId: 1
       stationId: 22
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 6
       stationId: 20
     - lineId: 15
       stationId: 7
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 6
       stationId: 16
     - lineId: 17
       stationId: 20
     isOpen: 1
+    isAbove: 0
   - stationsGlobalIds:
     - lineId: 10
       stationId: 3
     - lineId: 9
       stationId: 4
     isOpen: 1
+    isAbove: 0
+  - stationsGlobalIds:
+    - lineId: 8
+      stationId: 0
+    - lineId: 16
+      stationId: 15
+    - lineId: 12
+      stationId: 1
+    - lineId: 14
+      stationId: 11
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 16
+      stationId: 13
+    - lineId: 4
+      stationId: 9
+    - lineId: 1
+      stationId: 8
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 5
+      stationId: 6
+    - lineId: 17
+      stationId: 14
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 15
+    - lineId: 4
+      stationId: 6
+    - lineId: 0
+      stationId: 5
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 17
+    - lineId: 10
+      stationId: 11
+    - lineId: 7
+      stationId: 5
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 0
+    - lineId: 2
+      stationId: 5
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 24
+    - lineId: 7
+      stationId: 3
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 15
+      stationId: 2
+    - lineId: 7
+      stationId: 4
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 3
+    - lineId: 14
+      stationId: 26
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 1
+      stationId: 14
+    - lineId: 14
+      stationId: 18
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 13
+    - lineId: 14
+      stationId: 19
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 1
+      stationId: 19
+    - lineId: 17
+      stationId: 26
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 9
+      stationId: 15
+    - lineId: 14
+      stationId: 16
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 9
+      stationId: 15
+    - lineId: 14
+      stationId: 16
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 0
+      stationId: 14
+    - lineId: 14
+      stationId: 13
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 3
+      stationId: 4
+    - lineId: 16
+      stationId: 16
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 16
+      stationId: 18
+    - lineId: 2
+      stationId: 14
+    - lineId: 3
+      stationId: 0
+    - lineId: 11
+      stationId: 9
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 9
+    - lineId: 6
+      stationId: 6
+    - lineId: 11
+      stationId: 13
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 7
+    - lineId: 6
+      stationId: 5
+    - lineId: 14
+      stationId: 8
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 9
+    - lineId: 6
+      stationId: 4
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 8
+    - lineId: 6
+      stationId: 2
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 17
+      stationId: 6
+    - lineId: 2
+      stationId: 19
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 6
+    - lineId: 1
+      stationId: 4
+    - lineId: 14
+      stationId: 5
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 10
+      stationId: 2
+    - lineId: 16
+      stationId: 10
+    - lineId: 14
+      stationId: 2
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 9
+      stationId: 6
+    - lineId: 17
+      stationId: 13
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 12
+      stationId: 5
+    - lineId: 16
+      stationId: 12
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 0
+    - lineId: 5
+      stationId: 3
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 14
+      stationId: 28
+    - lineId: 0
+      stationId: 0
+    isOpen: 1
+    isAbove: 1
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 13
+    - lineId: 16
+      stationId: 17
+    isOpen: 1
+    isAbove: 0
   regions:
   - regionType: 0
     lineId: -1

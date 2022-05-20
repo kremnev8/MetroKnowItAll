@@ -83,5 +83,6 @@ namespace Gameplay.MetroDisplay.Model
         public List<GlobalId> stationsGlobalIds;
 
         public bool isOpen;
+        public bool isAbove;
     }
 }
