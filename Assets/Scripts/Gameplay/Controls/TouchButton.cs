@@ -53,7 +53,10 @@ namespace Gameplay.Controls
             isEnabled = false;
             overrideFocus = false;
             selectedStation?.SetSelected(renderer, false);
+            if (showStationName)
+                selectedStation?.ShowLabel(false);
             selectedStation = null;
+            showStationName = false;
         }
 
         public T GetSelected<T>() where T : class

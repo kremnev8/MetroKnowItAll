@@ -36,6 +36,11 @@ namespace Gameplay.UI
                 float t = timeElapsed / fillTime;
                 fillImage.fillAmount = Mathf.Lerp(startFill, endFill, t);
             }
+            else
+            {
+                fillImage.fillAmount = endFill;
+            }
+            
             
         }
     }

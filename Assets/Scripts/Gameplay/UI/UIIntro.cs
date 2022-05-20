@@ -11,6 +11,11 @@ namespace Gameplay.UI
         public GameObject learningCard;
         public GameObject historicCard;
 
+        private void Awake()
+        {
+            gameObject.SetActive(false);
+        }
+
         public void ShowIntro(Game game)
         {
             arcadeCard.SetActive(game.mode == ArcadeModeController.MODE_ID);

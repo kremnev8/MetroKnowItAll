@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0469406"
-     inkscape:cx="491.43189"
-     inkscape:cy="155.69174"
+     inkscape:zoom="2.0938812"
+     inkscape:cx="88.830255"
+     inkscape:cy="71.15972"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -39,10 +39,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       stroke-width="2.3179"
+       stroke-width="2.11147"
        fill="#ffffff"
        stroke="#000000"
-       d="M 1.1589498,9.0883014 V 28.911696 a 10.841049,7.9293579 0 0 0 21.6820972,0 V 9.0883014 a 10.841049,7.9293579 0 0 0 -21.6820972,0"
+       d="m 1.0557331,9.030952 v 19.938093 a 8.944267,7.9752374 0 0 0 17.8885339,0 V 9.030952 a 8.944267,7.9752374 0 0 0 -17.8885339,0"
        id="path450"
        style="stroke:#7f7f7f;stroke-opacity:1" />
   </g>
