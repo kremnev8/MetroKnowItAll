@@ -39,7 +39,6 @@ namespace Gameplay.UI
 
         public void LoadGame(int gameMode)
         {
-            Debug.Log(SceneTransitionManager.instance != null);
             if (SceneTransitionManager.instance != null)
             {
                 if (crossfade != null)

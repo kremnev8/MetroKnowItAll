@@ -56,7 +56,6 @@ namespace Gameplay
             {
                 yield return new WaitForSeconds(0.01f);
             }
-            Debug.Log("Starting!");
             Simulation.GetModel<GameModel>().gameModeController.StartGame(gameMode);
 
         }

@@ -50,34 +50,6 @@ namespace Gameplay.Conrollers
 
         protected override void OnRestStarted()
         {
-            float score = game.correctAnswers * 0.2f;
-            int gameMaxQuestions = maxQuestions;
-            if (game.correctAnswers == maxQuestions)
-            {
-                score *= 2;
-                int newMax = gameMaxQuestions + questionIncrement;
-                if (unlockedStations.data.Count > newMax && newMax <= maxQuestionsConfig)
-                {
-                    maxQuestions = newMax;
-                }
-            }
-            else
-            {
-                int newMax = gameMaxQuestions - questionIncrement;
-                if (newMax >= minQuestionsConfig)
-                {
-                    maxQuestions = newMax;
-                }
-            }
-
-            int tickets = Mathf.RoundToInt(score);
-            tokens += tickets;
-
-            if (game.correctAnswers > 0)
-            {
-                model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tickets);
-            }
-
             base.OnRestStarted();
             Refresh();
             uiGame.SetConfirmText("Открыть", true);
@@ -135,6 +107,39 @@ namespace Gameplay.Conrollers
             {
                 game.correctAnswers++;
             }
+
+            if (game.currentQuestion >= maxQuestions)
+            {
+                Invoke(nameof(CalculateTickets), 1.5f);
+            }
+        }
+
+        private void CalculateTickets()
+        {
+            float score = game.correctAnswers * 0.2f;
+            int gameMaxQuestions = maxQuestions;
+            if (game.correctAnswers == maxQuestions)
+            {
+                score *= 2;
+                int newMax = gameMaxQuestions + questionIncrement;
+                if (unlockedStations.data.Count > newMax && newMax <= maxQuestionsConfig)
+                {
+                    maxQuestions = newMax;
+                }
+            }
+            else
+            {
+                int newMax = gameMaxQuestions - questionIncrement;
+                if (newMax >= minQuestionsConfig)
+                {
+                    maxQuestions = newMax;
+                }
+            }
+
+            int tickets = Mathf.RoundToInt(score);
+            tokens += tickets;
+
+            model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tickets);
         }
 
         public void Purchase()
