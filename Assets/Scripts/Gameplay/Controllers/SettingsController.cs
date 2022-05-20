@@ -31,7 +31,6 @@ namespace Gameplay.Conrollers
 
         public override int Version => 1;
         public override string Filename => "settings";
-        public override void SetFilename(string filename) { }
 
         public override void OnVersionChanged(int oldVersion)
         {

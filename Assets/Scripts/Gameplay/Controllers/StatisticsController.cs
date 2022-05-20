@@ -27,8 +27,6 @@ namespace Gameplay.Conrollers
 
         public override int Version => 2;
         public override string Filename => "statistics";
-        
-        public override void SetFilename(string filename) { }
         public override void OnVersionChanged(int oldVersion)
         {
             if (oldVersion <= 0)

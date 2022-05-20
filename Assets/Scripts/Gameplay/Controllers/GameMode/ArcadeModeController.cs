@@ -7,6 +7,7 @@ using Gameplay.MetroDisplay.Model;
 using Gameplay.UI;
 using Gameplay.Core;
 using Gameplay.Questions;
+using Newtonsoft.Json;
 using TMPro;
 using UnityEngine;
 using Util;
@@ -17,6 +18,7 @@ namespace Gameplay.Conrollers
     /// <summary>
     /// Selects and Manages question asking process. Contains all active <see cref="BaseQuestionGenerator"/> and <see cref="BaseUIQuestion"/>
     /// </summary>
+    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class ArcadeModeController : BaseGameMode
     {
         protected UIGame uiGame;
@@ -25,20 +27,18 @@ namespace Gameplay.Conrollers
         protected new MetroRenderer renderer;
         protected GameModeController main;
         
-        private List<Region> allRegions = new List<Region>();
+       private List<Region> allRegions = new List<Region>();
 
         public const string MODE_ID = "arcade";
         public override string gameModeId => MODE_ID;
-
-        public override ISaveController CreateModelHandler()
-        {
-            ArcadeSaveController saveController = gameObject.AddComponent<ArcadeSaveController>();
-            return saveController;
-        }
+        
+        [JsonProperty]
+        [HideInInspector]
+        public int maxQuestions;
+        
 
         public override void Init(GameModeController mainController)
         {
-            base.Init(mainController);
             model = Simulation.GetModel<GameModel>();
             renderer = model.renderer;
             uiGame = model.uiGame;
@@ -61,7 +61,7 @@ namespace Gameplay.Conrollers
                 }
                 else
                 {
-                    allRegions.Add(renderer.metro.regions.Find(region => region.regionType == regionType));
+                    allRegions.Add(new Region(regionType, -1));
                 }
             }
         }
@@ -69,6 +69,7 @@ namespace Gameplay.Conrollers
         public override void SetupNewSession(Game gameState)
         {
             uiGame.intro.ShowIntro(gameState);
+            maxQuestions = 10;
         }
 
         public override void ContinueSession(Game gameState)
@@ -87,11 +88,12 @@ namespace Gameplay.Conrollers
 
             game.isPlaying = true;
             uiGame.topBar.SetCurrentAttemptsImmidiate(game.attemptsLeft, 0);
-            Invoke(nameof(PrepareNewGame), 1f);
+            Invoke(nameof(PrepareNewGame), 0.2f);
         }
 
         public virtual void SessionOver()
         {
+            Save();
             uiGame.answerPanelSwipe.ForceClosed();
             model.gameOverScreen.PopupArcade(model.statistics.sesion, model.statistics.sesionUnlockedStations);
             game.isPlaying = false;
@@ -126,7 +128,7 @@ namespace Gameplay.Conrollers
             }
 
             game.currentQuestion++;
-            uiGame.topBar.UpdateStatus(result, game.currentQuestion, game.maxQuestions);
+            uiGame.topBar.UpdateStatus(result, game.currentQuestion, maxQuestions);
             
             UpdateGameState(result);
             
@@ -138,7 +140,7 @@ namespace Gameplay.Conrollers
             
             EventManager.TriggerEvent(EventTypes.QUESTION_ANSWERED, result, game.answerTimeElapsed);
 
-            if (game.currentQuestion >= game.maxQuestions)
+            if (game.currentQuestion >= maxQuestions)
             {
                 Invoke(nameof(PrepareNewGame), 1.5f);
                 return;
@@ -244,7 +246,7 @@ namespace Gameplay.Conrollers
         {
             renderer.ShowAllLabels();
             renderer.FocusRegion(game.currentRegion);
-            uiGame.EnableStartButton($"{game.maxQuestions} вопросов");
+            uiGame.EnableStartButton($"{maxQuestions} вопросов");
             uiGame.SetConfirmText("Подтвердить", false);
             uiGame.topBar.SetCurrentLabel("Перерыв");
         }
@@ -275,7 +277,11 @@ namespace Gameplay.Conrollers
 
             return "";
         }
-        
+
+        public override void OnVersionChanged(int oldVersion)
+        {
+        }
+
         public override void ManualUpdate()
         {
             game.answerTimeElapsed += Time.deltaTime;

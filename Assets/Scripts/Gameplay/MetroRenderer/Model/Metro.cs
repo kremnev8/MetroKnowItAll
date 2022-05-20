@@ -23,7 +23,6 @@ namespace Gameplay.MetroDisplay.Model
     {
         [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
-        public List<Region> regions = new List<Region>();
 
 #if UNITY_EDITOR
         public Dictionary<string, SpriteShapeController> controllers = new Dictionary<string, SpriteShapeController>();

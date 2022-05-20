@@ -65,7 +65,6 @@ namespace Gameplay.Conrollers
             {
                 BaseGameMode gameMode = gameModes[gameModeId];
                 gameState.Reset();
-                gameState.maxQuestions = 10;
                 gameState.mode = gameModeId;
                 currentGameMode = gameModeId;
                 

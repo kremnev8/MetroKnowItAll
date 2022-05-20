@@ -11,6 +11,8 @@ namespace Gameplay
         public static SceneTransitionManager instance;
 
         private static int gameMode;
+
+        public static Action sceneUnloaded;
         
 
         private void Awake()
@@ -28,12 +30,14 @@ namespace Gameplay
         public void StartGame(int newGameMode)
         {
             gameMode = newGameMode;
+            sceneUnloaded?.Invoke();
             StartCoroutine(LoadLevel("Game"));
         }
 
         public void LoadMenu()
         {
             Time.timeScale = 1f;
+            sceneUnloaded?.Invoke();
             StartCoroutine(LoadLevel("MainMenu"));
         }
 

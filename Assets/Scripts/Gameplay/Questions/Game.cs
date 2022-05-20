@@ -11,8 +11,7 @@ namespace Gameplay.Conrollers
         // Parameters
         public string mode;
         public string questionId;
-        public int maxQuestions;
-        
+
         //Game state
         public bool isPlaying;
         public int currentGenerator;

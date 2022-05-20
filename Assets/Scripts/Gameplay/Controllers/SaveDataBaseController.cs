@@ -19,21 +19,15 @@ namespace Gameplay.Conrollers
         public int Version { get; set; }
     }
 
-    public interface ISaveController
-    {
-        public void SetFilename(string filename);
-        public bool Load();
-        public void Save();
-    }
-
     public abstract class AutomaticSaveDataController<T> : SaveDataBaseController<T>
         where T : class, ISaveData, new()
     {
         private void Awake()
         {
             Load();
+            SceneTransitionManager.sceneUnloaded += OnSceneUnloaded;
         }
-        
+
         private void OnApplicationFocus(bool hasFocus)
         {
             if (!hasFocus)
@@ -49,6 +43,11 @@ namespace Gameplay.Conrollers
         
         private void OnDestroy()
         {
+            SceneTransitionManager.sceneUnloaded -= OnSceneUnloaded;
+        }
+        
+        private void OnSceneUnloaded()
+        {
             Save();
         }
     }
@@ -57,7 +56,7 @@ namespace Gameplay.Conrollers
     /// Base class for controllers that need to save data in a json file.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class SaveDataBaseController<T> : MonoBehaviour, ISaveController
+    public abstract class SaveDataBaseController<T> : MonoBehaviour
     where T : class, ISaveData, new()
     {
         public T current;
@@ -110,8 +109,6 @@ namespace Gameplay.Conrollers
 
         public abstract int Version { get; }
         public abstract string Filename { get; }
-
-        public abstract void SetFilename(string filename);
         public abstract void OnVersionChanged(int oldVersion);
         public abstract void InitializeSaveData(T data);
         public abstract void OnSaveDataLoaded();
