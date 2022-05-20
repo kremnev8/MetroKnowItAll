@@ -12,6 +12,7 @@
 xdoc/
 xdoc.meta
 /[Oo]ther/
+user.keystore
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
