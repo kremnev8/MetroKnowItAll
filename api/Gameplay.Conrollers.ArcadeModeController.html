@@ -96,10 +96,22 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_GetModel__1">BaseGameMode.GetModel&lt;T&gt;()</a>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_LatestVersion">BaseGameMode.LatestVersion</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_Version">BaseGameMode.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_isInitialized">BaseGameMode.isInitialized</a>
     </div>
     <div>
       <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_StartSession_Gameplay_Conrollers_Game_">BaseGameMode.StartSession(Game)</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_Load">BaseGameMode.Load()</a>
+    </div>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_Save">BaseGameMode.Save()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
@@ -154,6 +166,30 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Gameplay.Conrollers.GameModeController.html">GameModeController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_ArcadeModeController_maxQuestions" data-uid="Gameplay.Conrollers.ArcadeModeController.maxQuestions">maxQuestions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int maxQuestions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -338,33 +374,6 @@
   <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_ContinueSession_Gameplay_Conrollers_Game_">BaseGameMode.ContinueSession(Game)</a></div>
   
   
-  <a id="Gameplay_Conrollers_ArcadeModeController_CreateModelHandler_" data-uid="Gameplay.Conrollers.ArcadeModeController.CreateModelHandler*"></a>
-  <h4 id="Gameplay_Conrollers_ArcadeModeController_CreateModelHandler" data-uid="Gameplay.Conrollers.ArcadeModeController.CreateModelHandler">CreateModelHandler()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ISaveController CreateModelHandler()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_CreateModelHandler">BaseGameMode.CreateModelHandler()</a></div>
-  
-  
   <a id="Gameplay_Conrollers_ArcadeModeController_GetNextTip_" data-uid="Gameplay.Conrollers.ArcadeModeController.GetNextTip*"></a>
   <h4 id="Gameplay_Conrollers_ArcadeModeController_GetNextTip_System_Int32_" data-uid="Gameplay.Conrollers.ArcadeModeController.GetNextTip(System.Int32)">GetNextTip(Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -485,6 +494,35 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected virtual void OnRestStarted()</code></pre>
   </div>
+  
+  
+  <a id="Gameplay_Conrollers_ArcadeModeController_OnVersionChanged_" data-uid="Gameplay.Conrollers.ArcadeModeController.OnVersionChanged*"></a>
+  <h4 id="Gameplay_Conrollers_ArcadeModeController_OnVersionChanged_System_Int32_" data-uid="Gameplay.Conrollers.ArcadeModeController.OnVersionChanged(System.Int32)">OnVersionChanged(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVersionChanged(int oldVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">oldVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html#Gameplay_Conrollers_BaseGameMode_OnVersionChanged_System_Int32_">BaseGameMode.OnVersionChanged(Int32)</a></div>
   
   
   <a id="Gameplay_Conrollers_ArcadeModeController_ResumeGame_" data-uid="Gameplay.Conrollers.ArcadeModeController.ResumeGame*"></a>

@@ -90,19 +90,13 @@
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">SaveDataBaseController&lt;T&gt;</span></div>
-      <div class="level2"><a class="xref" href="Gameplay.Conrollers.ArcadeSaveController.html">ArcadeSaveController</a></div>
       <div class="level2"><a class="xref" href="Gameplay.Conrollers.AutomaticSaveDataController-1.html">AutomaticSaveDataController&lt;T&gt;</a></div>
-      <div class="level2"><a class="xref" href="Gameplay.Conrollers.LearningSaveController.html">LearningSaveController</a></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.Conrollers.html">Gameplay.Conrollers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Gameplay_Conrollers_SaveDataBaseController_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SaveDataBaseController&lt;T&gt; : MonoBehaviour, ISaveController where T : class, ISaveData, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SaveDataBaseController&lt;T&gt; : MonoBehaviour where T : class, ISaveData, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -297,37 +291,6 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Save()</code></pre>
-  </div>
-  
-  
-  <a id="Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.SetFilename*"></a>
-  <h4 id="Gameplay_Conrollers_SaveDataBaseController_1_SetFilename_System_String_" data-uid="Gameplay.Conrollers.SaveDataBaseController`1.SetFilename(System.String)">SetFilename(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void SetFilename(string filename)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">filename</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a>
   </div>
 </article>
           </div>

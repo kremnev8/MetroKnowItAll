@@ -101,12 +101,12 @@
   </h3>
   
   
-  <h4 id="Gameplay_Conrollers_BaseGameMode_model" data-uid="Gameplay.Conrollers.BaseGameMode.model">model</h4>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_isInitialized" data-uid="Gameplay.Conrollers.BaseGameMode.isInitialized">isInitialized</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ISaveController model</code></pre>
+    <pre><code class="lang-csharp hljs">public bool isInitialized</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,7 +118,31 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_BaseGameMode_Version" data-uid="Gameplay.Conrollers.BaseGameMode.Version">Version</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Version</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -146,6 +170,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_LatestVersion_" data-uid="Gameplay.Conrollers.BaseGameMode.LatestVersion*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_LatestVersion" data-uid="Gameplay.Conrollers.BaseGameMode.LatestVersion">LatestVersion</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int LatestVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -185,72 +234,6 @@
       <tr>
         <td><a class="xref" href="Gameplay.Conrollers.Game.html">Game</a></td>
         <td><span class="parametername">gameState</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Gameplay_Conrollers_BaseGameMode_CreateModelHandler_" data-uid="Gameplay.Conrollers.BaseGameMode.CreateModelHandler*"></a>
-  <h4 id="Gameplay_Conrollers_BaseGameMode_CreateModelHandler" data-uid="Gameplay.Conrollers.BaseGameMode.CreateModelHandler">CreateModelHandler()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ISaveController CreateModelHandler()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Gameplay.Conrollers.ISaveController.html">ISaveController</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Gameplay_Conrollers_BaseGameMode_GetModel_" data-uid="Gameplay.Conrollers.BaseGameMode.GetModel*"></a>
-  <h4 id="Gameplay_Conrollers_BaseGameMode_GetModel__1" data-uid="Gameplay.Conrollers.BaseGameMode.GetModel``1">GetModel&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T GetModel&lt;T&gt;()
-    where T : class</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -305,7 +288,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void Init(GameModeController mainController)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void Init(GameModeController mainController)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -326,6 +309,31 @@
   </table>
   
   
+  <a id="Gameplay_Conrollers_BaseGameMode_Load_" data-uid="Gameplay.Conrollers.BaseGameMode.Load*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_Load" data-uid="Gameplay.Conrollers.BaseGameMode.Load">Load()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Load()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Gameplay_Conrollers_BaseGameMode_ManualUpdate_" data-uid="Gameplay.Conrollers.BaseGameMode.ManualUpdate*"></a>
   <h4 id="Gameplay_Conrollers_BaseGameMode_ManualUpdate" data-uid="Gameplay.Conrollers.BaseGameMode.ManualUpdate">ManualUpdate()</h4>
   <div class="markdown level1 summary"></div>
@@ -333,6 +341,43 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract void ManualUpdate()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_OnVersionChanged_" data-uid="Gameplay.Conrollers.BaseGameMode.OnVersionChanged*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_OnVersionChanged_System_Int32_" data-uid="Gameplay.Conrollers.BaseGameMode.OnVersionChanged(System.Int32)">OnVersionChanged(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void OnVersionChanged(int oldVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">oldVersion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_BaseGameMode_Save_" data-uid="Gameplay.Conrollers.BaseGameMode.Save*"></a>
+  <h4 id="Gameplay_Conrollers_BaseGameMode_Save" data-uid="Gameplay.Conrollers.BaseGameMode.Save">Save()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Save()</code></pre>
   </div>
   
   
