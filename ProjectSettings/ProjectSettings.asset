@@ -6,7 +6,7 @@ PlayerSettings:
   serializedVersion: 22
   productGUID: 0d364e6e8685b4a47b82023872a53be9
   AndroidProfiler: 0
-  AndroidFilterTouchesWhenObscured: 1
+  AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 1
   defaultScreenOrientation: 0
   targetDevice: 2
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1.4
+  bundleVersion: 0.1.3
   preloadedAssets:
   - {fileID: 11400000, guid: bf6c989ff51382148807f32144f1fb47, type: 2}
   - {fileID: 11400000, guid: 3fe4b86b88063214a8c548633fdb8513, type: 2}
@@ -251,18 +251,18 @@ PlayerSettings:
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 1
-  AndroidTargetDevices: 1
+  AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: user.keystore'
-  AndroidKeyaliasName: metroknowitall
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 1
+  androidUseCustomKeystore: 0
   m_AndroidBanners:
   - width: 320
     height: 180
