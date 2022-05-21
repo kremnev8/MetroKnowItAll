@@ -204,12 +204,6 @@ references:
   commentId: M:Gameplay.Conrollers.ArcadeModeController.SelectNextController
   fullName: Gameplay.Conrollers.ArcadeModeController.SelectNextController()
   nameWithType: ArcadeModeController.SelectNextController()
-- uid: Gameplay.Conrollers.ArcadeModeController.SelectNextController(System.Int32)
-  name: SelectNextController(Int32)
-  href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SelectNextController_System_Int32_
-  commentId: M:Gameplay.Conrollers.ArcadeModeController.SelectNextController(System.Int32)
-  fullName: Gameplay.Conrollers.ArcadeModeController.SelectNextController(System.Int32)
-  nameWithType: ArcadeModeController.SelectNextController(Int32)
 - uid: Gameplay.Conrollers.ArcadeModeController.SelectNextController*
   name: SelectNextController
   href: api/Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_SelectNextController_
@@ -712,12 +706,15 @@ references:
   commentId: F:Gameplay.Conrollers.GameModeController.questionUI
   fullName: Gameplay.Conrollers.GameModeController.questionUI
   nameWithType: GameModeController.questionUI
-- uid: Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game,System.Int32)
-  name: SelectGenerator(Game, Int32)
-  href: api/Gameplay.Conrollers.GameModeController.html#Gameplay_Conrollers_GameModeController_SelectGenerator_Gameplay_Conrollers_Game_System_Int32_
-  commentId: M:Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game,System.Int32)
-  fullName: Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game, System.Int32)
-  nameWithType: GameModeController.SelectGenerator(Game, Int32)
+- uid: Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game,HashSet{System.Int32})
+  name: SelectGenerator(Game, HashSet<Int32>)
+  href: api/Gameplay.Conrollers.GameModeController.html#Gameplay_Conrollers_GameModeController_SelectGenerator_Gameplay_Conrollers_Game_HashSet_System_Int32__
+  commentId: M:Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game,HashSet{System.Int32})
+  name.vb: SelectGenerator(Game, HashSet(Of Int32))
+  fullName: Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game, HashSet<System.Int32>)
+  fullName.vb: Gameplay.Conrollers.GameModeController.SelectGenerator(Gameplay.Conrollers.Game, HashSet(Of System.Int32))
+  nameWithType: GameModeController.SelectGenerator(Game, HashSet<Int32>)
+  nameWithType.vb: GameModeController.SelectGenerator(Game, HashSet(Of Int32))
 - uid: Gameplay.Conrollers.GameModeController.SelectGenerator*
   name: SelectGenerator
   href: api/Gameplay.Conrollers.GameModeController.html#Gameplay_Conrollers_GameModeController_SelectGenerator_
@@ -2613,12 +2610,6 @@ references:
   commentId: F:Gameplay.MetroDisplay.HighlightDisplay.metro
   fullName: Gameplay.MetroDisplay.HighlightDisplay.metro
   nameWithType: HighlightDisplay.metro
-- uid: Gameplay.MetroDisplay.HighlightDisplay.outerBox
-  name: outerBox
-  href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_outerBox
-  commentId: F:Gameplay.MetroDisplay.HighlightDisplay.outerBox
-  fullName: Gameplay.MetroDisplay.HighlightDisplay.outerBox
-  nameWithType: HighlightDisplay.outerBox
 - uid: Gameplay.MetroDisplay.HighlightDisplay.quadTrans
   name: quadTrans
   href: api/Gameplay.MetroDisplay.HighlightDisplay.html#Gameplay_MetroDisplay_HighlightDisplay_quadTrans
@@ -3328,15 +3319,15 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.Model.Metro.GetStationsByName
   nameWithType: Metro.GetStationsByName
-- uid: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean)
-  name: IsStationAdjacent(MetroStation, HashSet<Int32>, Boolean)
-  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_Gameplay_MetroDisplay_Model_MetroStation_HashSet_System_Int32__System_Boolean_
-  commentId: M:Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean)
-  name.vb: IsStationAdjacent(MetroStation, HashSet(Of Int32), Boolean)
-  fullName: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation, HashSet<System.Int32>, System.Boolean)
-  fullName.vb: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation, HashSet(Of System.Int32), System.Boolean)
-  nameWithType: Metro.IsStationAdjacent(MetroStation, HashSet<Int32>, Boolean)
-  nameWithType.vb: Metro.IsStationAdjacent(MetroStation, HashSet(Of Int32), Boolean)
+- uid: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean,System.Boolean)
+  name: IsStationAdjacent(MetroStation, HashSet<Int32>, Boolean, Boolean)
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_Gameplay_MetroDisplay_Model_MetroStation_HashSet_System_Int32__System_Boolean_System_Boolean_
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean,System.Boolean)
+  name.vb: IsStationAdjacent(MetroStation, HashSet(Of Int32), Boolean, Boolean)
+  fullName: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation, HashSet<System.Int32>, System.Boolean, System.Boolean)
+  fullName.vb: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation, HashSet(Of System.Int32), System.Boolean, System.Boolean)
+  nameWithType: Metro.IsStationAdjacent(MetroStation, HashSet<Int32>, Boolean, Boolean)
+  nameWithType.vb: Metro.IsStationAdjacent(MetroStation, HashSet(Of Int32), Boolean, Boolean)
 - uid: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent*
   name: IsStationAdjacent
   href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_
@@ -5926,6 +5917,18 @@ references:
   commentId: F:Gameplay.UI.UISettings.difficultyToggleGroup
   fullName: Gameplay.UI.UISettings.difficultyToggleGroup
   nameWithType: UISettings.difficultyToggleGroup
+- uid: Gameplay.UI.UISettings.exitDialogText
+  name: exitDialogText
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_exitDialogText
+  commentId: F:Gameplay.UI.UISettings.exitDialogText
+  fullName: Gameplay.UI.UISettings.exitDialogText
+  nameWithType: UISettings.exitDialogText
+- uid: Gameplay.UI.UISettings.exitDialogWindow
+  name: exitDialogWindow
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_exitDialogWindow
+  commentId: F:Gameplay.UI.UISettings.exitDialogWindow
+  fullName: Gameplay.UI.UISettings.exitDialogWindow
+  nameWithType: UISettings.exitDialogWindow
 - uid: Gameplay.UI.UISettings.LoadGame(System.Int32)
   name: LoadGame(Int32)
   href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadGame_System_Int32_
@@ -5984,6 +5987,25 @@ references:
   commentId: F:Gameplay.UI.UISettings.themeToggle
   fullName: Gameplay.UI.UISettings.themeToggle
   nameWithType: UISettings.themeToggle
+- uid: Gameplay.UI.UISettings.TryExitGame
+  name: TryExitGame()
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_TryExitGame
+  commentId: M:Gameplay.UI.UISettings.TryExitGame
+  fullName: Gameplay.UI.UISettings.TryExitGame()
+  nameWithType: UISettings.TryExitGame()
+- uid: Gameplay.UI.UISettings.TryExitGame*
+  name: TryExitGame
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_TryExitGame_
+  commentId: Overload:Gameplay.UI.UISettings.TryExitGame
+  isSpec: "True"
+  fullName: Gameplay.UI.UISettings.TryExitGame
+  nameWithType: UISettings.TryExitGame
+- uid: Gameplay.UI.UISettings.warningIcon
+  name: warningIcon
+  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_warningIcon
+  commentId: F:Gameplay.UI.UISettings.warningIcon
+  fullName: Gameplay.UI.UISettings.warningIcon
+  nameWithType: UISettings.warningIcon
 - uid: Gameplay.UI.UIStartGameButton
   name: UIStartGameButton
   href: api/Gameplay.UI.UIStartGameButton.html
@@ -7186,6 +7208,19 @@ references:
   isSpec: "True"
   fullName: Util.MathExtensions.Mod
   nameWithType: MathExtensions.Mod
+- uid: Util.MathExtensions.OrthographicSize(Camera)
+  name: OrthographicSize(Camera)
+  href: api/Util.MathExtensions.html#Util_MathExtensions_OrthographicSize_Camera_
+  commentId: M:Util.MathExtensions.OrthographicSize(Camera)
+  fullName: Util.MathExtensions.OrthographicSize(Camera)
+  nameWithType: MathExtensions.OrthographicSize(Camera)
+- uid: Util.MathExtensions.OrthographicSize*
+  name: OrthographicSize
+  href: api/Util.MathExtensions.html#Util_MathExtensions_OrthographicSize_
+  commentId: Overload:Util.MathExtensions.OrthographicSize
+  isSpec: "True"
+  fullName: Util.MathExtensions.OrthographicSize
+  nameWithType: MathExtensions.OrthographicSize
 - uid: Util.MathExtensions.Rotate(Vector2,System.Single)
   name: Rotate(Vector2, Single)
   href: api/Util.MathExtensions.html#Util_MathExtensions_Rotate_Vector2_System_Single_

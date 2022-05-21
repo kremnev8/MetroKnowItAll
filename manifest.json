@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.ArcadeModeController.html",
-          "hash": "6yZp7m9xKJNq9V5qVuCCe0wmQwNeKH6EOq6P/1aBbVk="
+          "hash": "S6qAPHmEL4j9pvblqcNyxYj5mXKav4cfNRRtpT18xt8="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.GameModeController.html",
-          "hash": "GySrOkHo7ssGAMYL7eACkQ7LET8p41tQcOulTXBaGCk="
+          "hash": "3XzphVtc5pvTMRbH3MLo99gUojJXCSzXEYhRtykUyRw="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.LearningModeController.html",
-          "hash": "46Kgi1w6bKGQ7Z6Xo3ucqN6PBAjt/0lcSrmdUpnJGbc="
+          "hash": "vdNoC1mbpKCgdqDCkUvpP6r74MkHxpul25gpE4naVww="
         }
       },
       "is_incremental": false,
@@ -436,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.HighlightDisplay.html",
-          "hash": "0L1fKcfwwO+6BnIxosiHrffpI5DUmlJPlrBEq8s2n7I="
+          "hash": "OszG3awmKUYAx8HwEo1egqFCpCO3VcZ4OJzRf6LJzmw="
         }
       },
       "is_incremental": false,
@@ -532,7 +532,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.Metro.html",
-          "hash": "bnI00Y3vSmfX5S8zSS3rdJ0yfWfoiLWor+SapsD8Xj0="
+          "hash": "1gImQTqNNI0TESaXKL0rRC7nhIgpP0C5DNwKmGHHXF4="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UISettings.html",
-          "hash": "7GDvvGxX3dvoinkpcxQXn+P0gpoi6wTJpf+oBJqbzyc="
+          "hash": "9NmJUTZ/xPdEK1TwnJ2sIPJHQYrBsSHtVlahdSkIw50="
         }
       },
       "is_incremental": false,
@@ -1444,7 +1444,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.MathExtensions.html",
-          "hash": "tVCF5Te7+zOLE9IKtehZPHRaDClxHKGjqsKbPcrPYIQ="
+          "hash": "vnPaphm7WWgLSjmWjNgvO9FiHlwCJn343fyif1V/k1c="
         }
       },
       "is_incremental": false,
