@@ -21,12 +21,10 @@ namespace Gameplay.MetroDisplay.Model
     [CreateAssetMenu(fileName = "Metro", menuName = "SO/New Metro", order = 0)]
     public class Metro : ScriptableObject
     {
-        [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
+        [LabeledArray] 
+        public List<MetroLine> lines = new List<MetroLine>();
         public List<MetroCrossing> crossings = new List<MetroCrossing>();
-
-#if UNITY_EDITOR
-        public Dictionary<string, SpriteShapeController> controllers = new Dictionary<string, SpriteShapeController>();
-#endif
+        
 
         /// <summary>
         /// Get all stations with a name
