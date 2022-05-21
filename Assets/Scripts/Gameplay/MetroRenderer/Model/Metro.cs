@@ -64,7 +64,7 @@ namespace Gameplay.MetroDisplay.Model
             return lines[globalId.lineId].stations[globalId.stationId];
         }
 
-        public bool IsStationAdjacent(MetroStation station, HashSet<int> unlockedStations, bool checkAdjecent = true)
+        public bool IsStationAdjacent(MetroStation station, HashSet<int> unlockedStations, bool checkAdjecent = true, bool checkCrossings = true)
         {
             if (unlockedStations.Contains(station.globalId)) return true;
 
@@ -75,7 +75,7 @@ namespace Gameplay.MetroDisplay.Model
                 int next = line.isLooped ? (station.stationId + 1).Mod(line.stations.Count) : station.stationId + 1;
                 if (next < line.stations.Count)
                 {
-                    if (IsStationAdjacent(line.stations[next], unlockedStations, false))
+                    if (IsStationAdjacent(line.stations[next], unlockedStations, false, false))
                     {
                         return true;
                     }
@@ -84,38 +84,43 @@ namespace Gameplay.MetroDisplay.Model
                 next = line.isLooped ? (station.stationId - 1).Mod(line.stations.Count) : station.stationId - 1;
                 if (next >= 0)
                 {
-                    if (IsStationAdjacent(line.stations[next], unlockedStations, false))
+                    if (IsStationAdjacent(line.stations[next], unlockedStations, false, false))
                     {
                         return true;
                     }
                 }
             }
 
-            try
+            if (checkCrossings)
             {
-                var cross = crossings.First(crossing => crossing.stationsGlobalIds.Contains(station.globalId));
-
-                foreach (GlobalId globalId in cross.stationsGlobalIds)
+                try
                 {
-                    if (station.globalId != globalId)
+                    var cross = crossings.First(crossing => crossing.stationsGlobalIds.Contains(station.globalId));
+
+                    foreach (GlobalId globalId in cross.stationsGlobalIds)
                     {
-                        if (unlockedStations.Contains(globalId))
+                        if (station.globalId != globalId)
                         {
-                            return true;
+                            if (IsStationAdjacent(GetStation(globalId), unlockedStations, true, false))
+                            {
+                                return true;
+                            }
                         }
                     }
                 }
+                catch (InvalidOperationException) { }
             }
-            catch (InvalidOperationException) { }
 
             foreach (MetroLine metroLine in lines)
             {
                 foreach (MetroStation station1 in metroLine.stations)
                 {
-                    if (station1.globalId != station.globalId)
+                    if (unlockedStations.Contains(station1.globalId) &&
+                        station1.globalId != station.globalId && 
+                        station.lineId == station1.lineId)
                     {
                         float dist = (station.position - station1.position).magnitude;
-                        if (dist < 1.5f && station.lineId == station1.lineId)
+                        if (dist < 3f)
                         {
                             return true;
                         }

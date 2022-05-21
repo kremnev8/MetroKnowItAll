@@ -122,18 +122,24 @@ namespace Gameplay.Conrollers
             throw new ArgumentException($"Index is out of range! index: {index}");
         }
 
-        public void SelectGenerator(Game game, int exclude = -1)
+        public bool SelectGenerator(Game game, HashSet<int> blacklist)
         {
-            var generators = Enumerable.Range(0, questionGenerators.Count)
+            List<int> generators = Enumerable.Range(0, questionGenerators.Count)
                 .Where(index =>
                 {
-                    if (exclude != -1 && index == exclude) return false;
+                    if (blacklist.Contains(index)) return false;
                     return questionGenerators[index].ShouldUse(game, game.currentQuestion);
                 })
                 .ToList();
+
+            if (generators.Count == 0)
+            {
+                return false;
+            }
             
             int option = Random.Range(0, generators.Count);
             game.currentGenerator = generators[option];
+            return true;
         }
 
         private void Update()

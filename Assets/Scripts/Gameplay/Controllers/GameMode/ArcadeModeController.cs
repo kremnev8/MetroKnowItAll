@@ -26,16 +26,14 @@ namespace Gameplay.Conrollers
         protected GameModel model;
         protected new MetroRenderer renderer;
         protected GameModeController main;
-        
-       private List<Region> allRegions = new List<Region>();
+
+        private List<Region> allRegions = new List<Region>();
 
         public const string MODE_ID = "arcade";
         public override string gameModeId => MODE_ID;
-        
-        [JsonProperty]
-        [HideInInspector]
-        public int maxQuestions;
-        
+
+        [JsonProperty] [HideInInspector] public int maxQuestions;
+
 
         public override void Init(GameModeController mainController)
         {
@@ -45,7 +43,7 @@ namespace Gameplay.Conrollers
             main = mainController;
             InitializeRegions();
         }
-        
+
         private void InitializeRegions()
         {
             allRegions.Clear();
@@ -77,6 +75,7 @@ namespace Gameplay.Conrollers
             InitGameState(gameState);
             EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }
+
         protected void InitGameState(Game gameState)
         {
             game = gameState;
@@ -112,14 +111,14 @@ namespace Gameplay.Conrollers
             uiGame.DisableStartButton();
             uiGame.SetConfirmText("Подтвердить");
         }
-        
+
 
         protected void CheckAnswer()
         {
             bool result;
             try
             {
-                 result = main.GetGenerator(game.currentGenerator).ValidateAnswer(); 
+                result = main.GetGenerator(game.currentGenerator).ValidateAnswer();
             }
             catch (InvalidOperationException e)
             {
@@ -129,15 +128,15 @@ namespace Gameplay.Conrollers
 
             game.currentQuestion++;
             uiGame.topBar.UpdateStatus(result, game.currentQuestion, maxQuestions);
-            
+
             UpdateGameState(result);
-            
+
             if (game.attemptsLeft < 0)
             {
                 SessionOver();
                 return;
             }
-            
+
             EventManager.TriggerEvent(EventTypes.QUESTION_ANSWERED, result, game.answerTimeElapsed);
 
             if (game.currentQuestion >= maxQuestions)
@@ -145,7 +144,7 @@ namespace Gameplay.Conrollers
                 Invoke(nameof(PrepareNewGame), 1.5f);
                 return;
             }
-            
+
             Invoke(nameof(SelectNextController), 1.5f);
         }
 
@@ -185,11 +184,6 @@ namespace Gameplay.Conrollers
 
         public void SelectNextController()
         {
-            SelectNextController(-1);
-        }
-
-        public void SelectNextController(int exclude)
-        {
             try
             {
                 main.GetUI(game.currentGenerator).HideElements();
@@ -199,20 +193,32 @@ namespace Gameplay.Conrollers
                 Debug.Log(e);
             }
 
-            main.SelectGenerator(game, exclude);
-            BaseQuestionGenerator generator = main.GetGenerator(game.currentGenerator);
-            
-            try
+            bool questionSelected = false;
+            HashSet<int> controllerBlacklist = new HashSet<int>();
+
+            while (!questionSelected)
             {
-                generator.GenerateNew();
+                bool success = main.SelectGenerator(game, controllerBlacklist);
+                if (!success)
+                {
+                    Invoke(nameof(PrepareNewGame), 1.5f);
+                    return;
+                }
+
+                BaseQuestionGenerator generator = main.GetGenerator(game.currentGenerator);
+
+                try
+                {
+                    generator.GenerateNew();
+                    questionSelected = true;
+                }
+                catch (Exception e)
+                {
+                    controllerBlacklist.Add(game.currentGenerator);
+                    Debug.Log($"Controller {generator.GetType().Name} failed to generate!\n{e.Message}\n{e.StackTrace}");
+                }
             }
-            catch (Exception e)
-            {
-                SelectNextController(game.currentGenerator);
-                Debug.Log($"{e.Message}\n{e.StackTrace}");
-                return;
-            }
-            
+
             uiGame.answerPanelSwipe.ForceOpen();
             game.answerTimeElapsed = 0;
         }
@@ -222,7 +228,7 @@ namespace Gameplay.Conrollers
             game.isPlaying = false;
             main.GetUI(game.currentGenerator).HideElements();
             uiGame.answerPanelSwipe.ForceClosed();
-            
+
             game.currentRegion = SelectRegion();
 
             Vector2 center = game.currentRegion.GetRegionCenter(renderer.metro);
@@ -254,7 +260,7 @@ namespace Gameplay.Conrollers
         public void ResumeGame()
         {
             game.isPlaying = true;
-            
+
             game.currentQuestion = 0;
             game.correctAnswers = 0;
 
@@ -262,7 +268,7 @@ namespace Gameplay.Conrollers
             {
                 generator.SetRegion(game.currentRegion);
             }
-            
+
             uiGame.topBar.SetCurrentLabel(game.currentRegion.GetName(renderer.metro));
             SelectNextController();
         }
@@ -278,9 +284,7 @@ namespace Gameplay.Conrollers
             return "";
         }
 
-        public override void OnVersionChanged(int oldVersion)
-        {
-        }
+        public override void OnVersionChanged(int oldVersion) { }
 
         public override void ManualUpdate()
         {

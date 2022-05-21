@@ -21,8 +21,6 @@ namespace Gameplay.MetroDisplay
         public Texture2D smallBlur;
         public Material smallBlueMat;
 
-        public GameObject outerBox;
-        
         public Vector2 scale;
 
         private void Awake()
@@ -41,12 +39,10 @@ namespace Gameplay.MetroDisplay
             if (region.regionType != RegionType.GLOBAL_LINE)
             {
                 RedrawHighlight();
-                outerBox.SetActive(true);
             }
             else
             {
                 ClearHighlight();
-                outerBox.SetActive(false);
             }
         }
 

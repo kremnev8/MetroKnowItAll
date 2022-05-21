@@ -85,6 +85,7 @@ namespace Gameplay.Controls
                 primaryContactAction.started += StartSwipe;
                 primaryContactAction.canceled += EndSwipe;
             }
+            moveDelta = Vector2.zero;
         }
 
         private void OnDisable()

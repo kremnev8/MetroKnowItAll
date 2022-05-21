@@ -76,6 +76,13 @@ namespace Gameplay.Conrollers
 #if UNITY_EDITOR
             EditorApplication.isPlaying = false;
 #elif UNITY_ANDROID
+            Application.Quit();
+#endif
+        }
+
+        private static void ToBackground()
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
             try
             {
                 AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
@@ -85,11 +92,9 @@ namespace Gameplay.Conrollers
             {
                 Debug.Log(e);
             }
-#elif UNITY_STANDALONE
-            Application.Quit();
 #endif
         }
-
+        
         private void UpdateMaterials()
         {
             if (lineMaterial != null)

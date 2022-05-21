@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Player Config
   m_EditorClassIdentifier: 
   zoomSpeed: 5
-  minZoom: 40
-  maxZoom: 140
+  minZoom: 30
+  maxZoom: 130
   scrollSensitivity: -0.1
   normalMaxSpeed: 12
   moveSmoothTime: 0.05

@@ -1,4 +1,7 @@
-﻿using Gameplay.Controls;
+﻿using System;
+using Gameplay.Conrollers;
+using Gameplay.Controls;
+using Gameplay.Core;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +18,6 @@ namespace Gameplay.UI
         public UISwipe answerPanelSwipe;
         public TouchButton touchButton;
         public UIIntro intro;
-
 
         public void EnableStartButton(string gameModeText)
         {
@@ -39,6 +41,5 @@ namespace Gameplay.UI
             confirmButtonText.text = text;
             confirmButton.interactable = interactable;
         }
-
     }
 }

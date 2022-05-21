@@ -4,7 +4,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using DelaunatorSharp;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Util
 {
@@ -384,6 +383,13 @@ namespace Util
         public static float Average(this float current, float other, int currentCount, int otherCount)
         {
             return current * currentCount / (currentCount + otherCount) + other * otherCount / (currentCount + otherCount);
+        }
+        
+        public static Vector2 OrthographicSize(this Camera camera)
+        {
+            float screenAspect = Screen.width / (float)Screen.height;
+            float cameraHeight = camera.orthographicSize * 2;
+            return new Vector2(cameraHeight * screenAspect, cameraHeight);
         }
     }
 }

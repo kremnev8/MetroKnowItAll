@@ -181,7 +181,7 @@ namespace Gameplay.Controls
                     }
 
                     pos -= currentDir * Time.deltaTime / 4;
-                    camera.transform.position = worldBounds.Clamp3(pos);
+                    SetPosClamped(pos);
                 }
                 else
                 {
@@ -191,8 +191,23 @@ namespace Gameplay.Controls
             else
             {
                 Vector3 newPos = camera.transform.position - currentDir * Time.deltaTime;
-                camera.transform.position = worldBounds.Clamp3(newPos);
+                SetPosClamped(newPos);
             }
+        }
+        
+        
+        void SetPosClamped(Vector3 pos)
+        {
+            Vector2 screenSize = camera.OrthographicSize();
+
+            Rect screenBounds = new Rect(
+                worldBounds.position + screenSize / 2, 
+                worldBounds.size - screenSize);
+            
+            pos.x = Mathf.Clamp(pos.x, screenBounds.xMin, screenBounds.xMax);
+            pos.y = Mathf.Clamp(pos.y, screenBounds.yMin, screenBounds.yMax);
+
+            camera.transform.position = pos;
         }
 
         private void ZoomStart(InputAction.CallbackContext obj)
@@ -275,18 +290,21 @@ namespace Gameplay.Controls
     {
         private void OnSceneGUI()
         {
-            Debug.Log("Scene GUI");
-            var rectExample = (TouchCameraController)target;
+            if (!Application.isPlaying)
+            {
+                Debug.Log("Scene GUI");
+                var rectExample = (TouchCameraController)target;
 
-            var rect = RectUtils.ResizeRect(
-                rectExample.worldBounds,
-                Handles.CubeHandleCap,
-                Color.green,
-                Color.yellow,
-                HandleUtility.GetHandleSize(Vector3.zero) * .1f,
-                1);
+                var rect = RectUtils.ResizeRect(
+                    rectExample.worldBounds,
+                    Handles.CubeHandleCap,
+                    Color.green,
+                    Color.yellow,
+                    HandleUtility.GetHandleSize(Vector3.zero) * .1f,
+                    1);
 
-            rectExample.worldBounds = rect;
+                rectExample.worldBounds = rect;
+            }
         }
     }
 #endif
