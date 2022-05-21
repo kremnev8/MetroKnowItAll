@@ -360,42 +360,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Health.IntEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Health.IntEvent.html",
-          "hash": "Z5thaYzOv2FTPyznO34SHDHYiGQlf7YkXwSP33GWO40="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Health.PainEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Health.PainEvent.html",
-          "hash": "Ie0Cek2lh0myFmwQXz8E/N1jVLnN7pdx+ClYqeIsV60="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Health.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Health.html",
-          "hash": "f/FRfgTEOPhkYU9hMlA2X14IEYiAEDHr3S/uoSelzng="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.MetroDisplay.ConnData.yml",
       "output": {
         ".html": {
@@ -413,18 +377,6 @@
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.CrossingDisplay.html",
           "hash": "7W1679wBQxmieomQGSfk99j5orrr8eEFakuga8KQr8w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.MetroDisplay.FocusDisplay.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.MetroDisplay.FocusDisplay.html",
-          "hash": "mQlwFG2BHQXjGpjIsWkEPY/8DoxORuT4rwdgnoiILIQ="
         }
       },
       "is_incremental": false,
@@ -473,18 +425,6 @@
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.MetroRenderer.html",
           "hash": "6Z02Oae1bFpb9IQKhM+2UmK8g6XMljYGJO5xEw+eebU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.MetroDisplay.Model.Area.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.MetroDisplay.Model.Area.html",
-          "hash": "wJhA/lIyLt6//GXSQw49VgEqLk4IS0lhCZKaBKyYnOk="
         }
       },
       "is_incremental": false,
@@ -628,7 +568,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.html",
-          "hash": "YsK2I7SB4PkqWa8pCOTtIGlzz8B1oI3C9p1Hyd2jLu0="
+          "hash": "ohXBDb/FEuZwxdWOap2o9kKdlJqe4hwKCEfuts2whMY="
         }
       },
       "is_incremental": false,
@@ -652,19 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.html",
-          "hash": "dhPPs1A7GxrKrqebXNPRF3NnqW+5uxoKRZoOU22Qr0E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.PainType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.PainType.html",
-          "hash": "4qTCpEzrRsu3JPCUkqafR/QGdBRf2RsfU8FIt7fj0is="
+          "hash": "iNx9IhO2Dxv1Kg94vcUysl0+vOtqW4wu+nw9daf1ZP4="
         }
       },
       "is_incremental": false,
@@ -780,18 +708,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.ILineQuestion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.ILineQuestion.html",
-          "hash": "8UejVKh+m7K0dKaNjpeXwHMggdE0pLYoCQipCHo1P/Q="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.Questions.QuestionGenerator-1.yml",
       "output": {
         ".html": {
@@ -844,7 +760,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Questions.html",
-          "hash": "vMQZEcfkDe1br2R3kpeLG/k1YljbntZrg6Jr7zrlu7o="
+          "hash": "iIKPCfHq6KUJ+kZELlozstYazDpKF76X43Uwd1ZRwuI="
         }
       },
       "is_incremental": false,
@@ -1168,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.html",
-          "hash": "Gt9804pWMbBhxUCt56tITDD2X/84spPpm4/HJbMFlU0="
+          "hash": "cVWaJbm2sT7BNiqopL2DUwQxVKeN2a5zJ0tRiJYaA2M="
         }
       },
       "is_incremental": false,
@@ -1488,18 +1404,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Util.RendererGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Util.RendererGroup.html",
-          "hash": "H2PcxL07Vk14em9Ne3RunJRJYLMhHraN1mwYswLRVuo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Util.ShowWhenAttribute.yml",
       "output": {
         ".html": {
@@ -1564,7 +1468,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.html",
-          "hash": "Em1s3NxtwanSHiQ7mSoAmEJT0XFs0GYb84XeP6Jr7o0="
+          "hash": "YrNxw08PRdl+s+h9qtNKULfum/4g9Y95WSTqJBDgTgI="
         }
       },
       "is_incremental": false,
@@ -1576,7 +1480,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gXucA/2T1VDDjKruRnpJM2XYDxXUJ3w6sL/4L616X5g="
+          "hash": "OA3ipAGo9WwIt0SYWZ+HxuJHgfbKPUV7/JYwusslQHg="
         }
       },
       "is_incremental": false,
@@ -1993,7 +1897,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 129,
+          "total_file_count": 121,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -139,25 +139,10 @@
     "title": "Class GameModel | Metro Connoisseur documentation",
     "keywords": "Class GameModel Game model contains all important game classes and stores them for easy access from anywhere Inheritance Object GameModel Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax [Serializable] public class GameModel Fields achievements Declaration public UIAchievement achievements Field Value Type Description UIAchievement cameraController Declaration public TouchCameraController cameraController Field Value Type Description TouchCameraController gameModeController Declaration public GameModeController gameModeController Field Value Type Description GameModeController gameOverScreen Declaration public UIGameOverScreen gameOverScreen Field Value Type Description UIGameOverScreen input Declaration public PlayerInput input Field Value Type Description PlayerInput palette Declaration public ColorPalette palette Field Value Type Description ColorPalette renderer Declaration public MetroRenderer renderer Field Value Type Description MetroRenderer settings Declaration public SettingsController settings Field Value Type Description SettingsController statistics Declaration public StatisticsController statistics Field Value Type Description StatisticsController uiGame Declaration public UIGame uiGame Field Value Type Description UIGame"
   },
-  "api/Gameplay.Health.html": {
-    "href": "api/Gameplay.Health.html",
-    "title": "Class Health | Metro Connoisseur documentation",
-    "keywords": "Class Health Represebts the current vital statistics of some game entity. Inheritance Object Health Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public class Health : MonoBehaviour Fields healed Declaration public Health.IntEvent healed Field Value Type Description Health.IntEvent hurt Declaration public Health.IntEvent hurt Field Value Type Description Health.IntEvent hurtBy Declaration public Health.PainEvent hurtBy Field Value Type Description Health.PainEvent isZero Declaration public UnityEvent isZero Field Value Type Description UnityEvent maxHp Declaration public int maxHp Field Value Type Description Int32 regenerate Declaration public bool regenerate Field Value Type Description Boolean regenerateRate Declaration public int regenerateRate Field Value Type Description Int32 Properties IsAlive Declaration public bool IsAlive { get; } Property Value Type Description Boolean Methods Decrement(Int32, PainType) Decrement the HP of the entity. Will trigger a HealthIsZero event when current HP reaches 0. Declaration public void Decrement(int damage = 1, PainType type = PainType.Physical) Parameters Type Name Description Int32 damage PainType type Die() Decrement the HP of the entitiy until HP reaches 0. Declaration public void Die() Increment(Int32) Increment the HP of the entity. Declaration public void Increment(int heal = 1) Parameters Type Name Description Int32 heal"
-  },
-  "api/Gameplay.Health.IntEvent.html": {
-    "href": "api/Gameplay.Health.IntEvent.html",
-    "title": "Class Health.IntEvent | Metro Connoisseur documentation",
-    "keywords": "Class Health.IntEvent Inheritance Object Health.IntEvent Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public class IntEvent : UnityEvent<int>"
-  },
-  "api/Gameplay.Health.PainEvent.html": {
-    "href": "api/Gameplay.Health.PainEvent.html",
-    "title": "Class Health.PainEvent | Metro Connoisseur documentation",
-    "keywords": "Class Health.PainEvent Inheritance Object Health.PainEvent Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public class PainEvent : UnityEvent<PainType>"
-  },
   "api/Gameplay.html": {
     "href": "api/Gameplay.html",
     "title": "Namespace Gameplay | Metro Connoisseur documentation",
-    "keywords": "Namespace Gameplay Classes EventTypes GameModel Game model contains all important game classes and stores them for easy access from anywhere Health Represebts the current vital statistics of some game entity. Health.IntEvent Health.PainEvent SceneTransitionManager Enums PainType"
+    "keywords": "Namespace Gameplay Classes EventTypes GameModel Game model contains all important game classes and stores them for easy access from anywhere SceneTransitionManager"
   },
   "api/Gameplay.MetroDisplay.ConnData.html": {
     "href": "api/Gameplay.MetroDisplay.ConnData.html",
@@ -169,11 +154,6 @@
     "title": "Class CrossingDisplay | Metro Connoisseur documentation",
     "keywords": "Class CrossingDisplay Controls how MetroCrossing are displayed Inheritance Object CrossingDisplay Namespace : Gameplay.MetroDisplay Assembly : cs.temp.dll.dll Syntax public class CrossingDisplay : MonoBehaviour Fields aboveRoot Declaration public GameObject aboveRoot Field Value Type Description GameObject crossing Declaration public MetroCrossing crossing Field Value Type Description MetroCrossing dotPrefab Declaration public SpriteRenderer dotPrefab Field Value Type Description SpriteRenderer dotsRoot Declaration public Transform dotsRoot Field Value Type Description Transform JunctionFor2 Declaration public Sprite JunctionFor2 Field Value Type Description Sprite JunctionFor3 Declaration public Sprite JunctionFor3 Field Value Type Description Sprite JunctionFor3Triangle Declaration public Sprite JunctionFor3Triangle Field Value Type Description Sprite JunctionFor4 Declaration public Sprite JunctionFor4 Field Value Type Description Sprite renderer Declaration public SpriteRenderer renderer Field Value Type Description SpriteRenderer shape Declaration public SpriteShapeController shape Field Value Type Description SpriteShapeController shapeRenderer Declaration public SpriteShapeRenderer shapeRenderer Field Value Type Description SpriteShapeRenderer underRoot Declaration public GameObject underRoot Field Value Type Description GameObject Methods Refresh() Declaration public void Refresh() SetCrossing(Metro, MetroCrossing) Declaration public void SetCrossing(Metro metro, MetroCrossing crossing) Parameters Type Name Description Metro metro MetroCrossing crossing SetFocused(Boolean) Declaration public void SetFocused(bool value) Parameters Type Name Description Boolean value"
   },
-  "api/Gameplay.MetroDisplay.FocusDisplay.html": {
-    "href": "api/Gameplay.MetroDisplay.FocusDisplay.html",
-    "title": "Class FocusDisplay | Metro Connoisseur documentation",
-    "keywords": "Class FocusDisplay Controls how region focus UI is displayed Inheritance Object FocusDisplay Namespace : Gameplay.MetroDisplay Assembly : cs.temp.dll.dll Syntax public class FocusDisplay : MonoBehaviour Fields region Declaration public Region region Field Value Type Description Region Methods Refresh(Boolean) Declaration public void Refresh(bool refreshShape) Parameters Type Name Description Boolean refreshShape SetRegion(MetroRenderer, Region) Declaration public void SetRegion(MetroRenderer metroRenderer, Region region) Parameters Type Name Description MetroRenderer metroRenderer Region region"
-  },
   "api/Gameplay.MetroDisplay.HighlightDisplay.html": {
     "href": "api/Gameplay.MetroDisplay.HighlightDisplay.html",
     "title": "Class HighlightDisplay | Metro Connoisseur documentation",
@@ -182,7 +162,7 @@
   "api/Gameplay.MetroDisplay.html": {
     "href": "api/Gameplay.MetroDisplay.html",
     "title": "Namespace Gameplay.MetroDisplay | Metro Connoisseur documentation",
-    "keywords": "Namespace Gameplay.MetroDisplay Classes CrossingDisplay Controls how MetroCrossing are displayed FocusDisplay Controls how region focus UI is displayed HighlightDisplay LineDisplay Controls how MetroLine are displayed LineSubDisplay A sub segment of LineDisplay , displaying a single continuous line segment MetroRenderer Controls how entire Metro is displayed StationDisplay Controls how MetroStation is displayed Structs ConnData Temporary data struct for line displays"
+    "keywords": "Namespace Gameplay.MetroDisplay Classes CrossingDisplay Controls how MetroCrossing are displayed HighlightDisplay LineDisplay Controls how MetroLine are displayed LineSubDisplay A sub segment of LineDisplay , displaying a single continuous line segment MetroRenderer Controls how entire Metro is displayed StationDisplay Controls how MetroStation is displayed Structs ConnData Temporary data struct for line displays"
   },
   "api/Gameplay.MetroDisplay.LineDisplay.html": {
     "href": "api/Gameplay.MetroDisplay.LineDisplay.html",
@@ -199,11 +179,6 @@
     "title": "Class MetroRenderer | Metro Connoisseur documentation",
     "keywords": "Class MetroRenderer Controls how entire Metro is displayed Inheritance Object MetroRenderer Namespace : Gameplay.MetroDisplay Assembly : cs.temp.dll.dll Syntax public class MetroRenderer : MonoBehaviour Fields expectedLabelState Declaration public bool expectedLabelState Field Value Type Description Boolean focusRegion Declaration public Region focusRegion Field Value Type Description Region metro Declaration public Metro metro Field Value Type Description Metro Properties stationSelect Declaration public GameObject stationSelect { get; } Property Value Type Description GameObject Methods ClearAll() Destroy all display objects Declaration public void ClearAll() ClearFocus() Clear focus and display everything Declaration public void ClearFocus() FocusRegion(Region) Focus a region, other places will be overlayed with white mask, and names will be hidden Declaration public void FocusRegion(Region region) Parameters Type Name Description Region region Target region GetPrimaryDisplay(StationDisplay) Declaration public StationDisplay GetPrimaryDisplay(StationDisplay current) Parameters Type Name Description StationDisplay current Returns Type Description StationDisplay GetStationDisplay(MetroStation) Get Display for a station Declaration public StationDisplay GetStationDisplay(MetroStation station) Parameters Type Name Description MetroStation station Returns Type Description StationDisplay Corresponding display HideAllLabels() Stop displaying all station labels Declaration public void HideAllLabels() Refresh() Refresh renderer state without allocation Declaration public void Refresh() Regenerate() Recreate all display meshes and objects Declaration public void Regenerate() ShowAllLabels() Show all station labels Declaration public void ShowAllLabels()"
   },
-  "api/Gameplay.MetroDisplay.Model.Area.html": {
-    "href": "api/Gameplay.MetroDisplay.Model.Area.html",
-    "title": "Class Area | Metro Connoisseur documentation",
-    "keywords": "Class Area Defines a area of the metro. Inheritance Object Area Namespace : Gameplay.MetroDisplay.Model Assembly : cs.temp.dll.dll Syntax public class Area Constructors Area(List<Vector2>) Declaration public Area(List<Vector2> points) Parameters Type Name Description List < Vector2 > points Area(Boolean) Declaration public Area(bool everywhere) Parameters Type Name Description Boolean everywhere Fields everywhere Declaration public bool everywhere Field Value Type Description Boolean Everywhere Declaration public static readonly Area Everywhere Field Value Type Description Area points Set of points that define this area polygon Declaration public List<Vector2> points Field Value Type Description List < Vector2 > Methods SetFromSpline(SpriteShapeController) Declaration public void SetFromSpline(SpriteShapeController shapeController) Parameters Type Name Description SpriteShapeController shapeController"
-  },
   "api/Gameplay.MetroDisplay.Model.EnumHelper.html": {
     "href": "api/Gameplay.MetroDisplay.Model.EnumHelper.html",
     "title": "Class EnumHelper | Metro Connoisseur documentation",
@@ -217,7 +192,7 @@
   "api/Gameplay.MetroDisplay.Model.html": {
     "href": "api/Gameplay.MetroDisplay.Model.html",
     "title": "Namespace Gameplay.MetroDisplay.Model | Metro Connoisseur documentation",
-    "keywords": "Namespace Gameplay.MetroDisplay.Model Classes Area Defines a area of the metro. EnumHelper GlobalId Class that combines line and station id's Metro Main metro data class, contains all information about the metro MetroConnection Defines a connection between two stations. Also defines some display parameters MetroCrossing Defines a crossing between lines MetroLine Defines a line in the metro, contains MetroStation and MetroConnection Also has some display parameters MetroStation Defines a station in the metro Also has some display parameters Region Defines a region of a metro, which can be a line, an area or the whole metro Enums LineStyle NamePosition Text alignment options RegionType"
+    "keywords": "Namespace Gameplay.MetroDisplay.Model Classes EnumHelper GlobalId Class that combines line and station id's Metro Main metro data class, contains all information about the metro MetroConnection Defines a connection between two stations. Also defines some display parameters MetroCrossing Defines a crossing between lines MetroLine Defines a line in the metro, contains MetroStation and MetroConnection Also has some display parameters MetroStation Defines a station in the metro Also has some display parameters Region Defines a region of a metro, which can be a line, an area or the whole metro Enums LineStyle NamePosition Text alignment options RegionType"
   },
   "api/Gameplay.MetroDisplay.Model.LineStyle.html": {
     "href": "api/Gameplay.MetroDisplay.Model.LineStyle.html",
@@ -269,11 +244,6 @@
     "title": "Class StationDisplay | Metro Connoisseur documentation",
     "keywords": "Class StationDisplay Controls how MetroStation is displayed Inheritance Object StationDisplay Implements ISelectable Namespace : Gameplay.MetroDisplay Assembly : cs.temp.dll.dll Syntax public class StationDisplay : MonoBehaviour Fields label Declaration public TMP_Text label Field Value Type Description TMP_Text shouldLabelDisplay Declaration public bool shouldLabelDisplay Field Value Type Description Boolean spriteRenderer Declaration public SpriteRenderer spriteRenderer Field Value Type Description SpriteRenderer station Declaration public MetroStation station Field Value Type Description MetroStation timeToHideLabel Declaration public int timeToHideLabel Field Value Type Description Int32 Methods IsFocused(MetroRenderer) Declaration public bool IsFocused(MetroRenderer metroRenderer) Parameters Type Name Description MetroRenderer metroRenderer Returns Type Description Boolean Refresh() Declaration public void Refresh() SetFocused(Boolean) Declaration public void SetFocused(bool value) Parameters Type Name Description Boolean value SetInitialVisible(Boolean) Declaration public void SetInitialVisible(bool value) Parameters Type Name Description Boolean value SetLabelVisible(Boolean, Color) Declaration public void SetLabelVisible(bool isVisible, Color color) Parameters Type Name Description Boolean isVisible Color color SetSelected(MetroRenderer, Boolean) Declaration public void SetSelected(MetroRenderer metroRenderer, bool value) Parameters Type Name Description MetroRenderer metroRenderer Boolean value SetStation(MetroStation, MetroLine) Declaration public void SetStation(MetroStation station, MetroLine line) Parameters Type Name Description MetroStation station MetroLine line ShowLabel(Boolean) Declaration public void ShowLabel(bool visible) Parameters Type Name Description Boolean visible ShowLabelFor(Color, Int32) Declaration public void ShowLabelFor(Color color, int time) Parameters Type Name Description Color color Int32 time Implements ISelectable"
   },
-  "api/Gameplay.PainType.html": {
-    "href": "api/Gameplay.PainType.html",
-    "title": "Enum PainType | Metro Connoisseur documentation",
-    "keywords": "Enum PainType Namespace : Gameplay Assembly : cs.temp.dll.dll Syntax public enum PainType Fields Name Description Mental Physical"
-  },
   "api/Gameplay.Questions.BaseQuestionGenerator.html": {
     "href": "api/Gameplay.Questions.BaseQuestionGenerator.html",
     "title": "Class BaseQuestionGenerator | Metro Connoisseur documentation",
@@ -322,12 +292,7 @@
   "api/Gameplay.Questions.html": {
     "href": "api/Gameplay.Questions.html",
     "title": "Namespace Gameplay.Questions | Metro Connoisseur documentation",
-    "keywords": "Namespace Gameplay.Questions Classes BaseQuestionGenerator Base class for all question generators BaseUIQuestion Base class for all question UI classes QuestionGenerator<T> Base class for question generators that are focused on a region of the metro UIQuestion UITipContainer UI element to represent a tip UITipController Controller for question tips Interfaces ILineQuestion Declares that this question generator is focused on lines"
-  },
-  "api/Gameplay.Questions.ILineQuestion.html": {
-    "href": "api/Gameplay.Questions.ILineQuestion.html",
-    "title": "Interface ILineQuestion | Metro Connoisseur documentation",
-    "keywords": "Interface ILineQuestion Declares that this question generator is focused on lines Namespace : Gameplay.Questions Assembly : cs.temp.dll.dll Syntax public interface ILineQuestion"
+    "keywords": "Namespace Gameplay.Questions Classes BaseQuestionGenerator Base class for all question generators BaseUIQuestion Base class for all question UI classes QuestionGenerator<T> Base class for question generators that are focused on a region of the metro UIQuestion UITipContainer UI element to represent a tip UITipController Controller for question tips"
   },
   "api/Gameplay.Questions.QuestionGenerator-1.html": {
     "href": "api/Gameplay.Questions.QuestionGenerator-1.html",
@@ -577,7 +542,7 @@
   "api/Util.html": {
     "href": "api/Util.html",
     "title": "Namespace Util | Metro Connoisseur documentation",
-    "keywords": "Namespace Util Classes AotTypeEnforcer DictionaryExtension EventManager EventToggleGroup EventToggleGroup.ToggleEvent GameObjectExtensions Extension methods for GameObjects and MonoBehaviors HideOnStart Hide game object this is attached to InspectorButtonAttribute LabeledArrayAttribute Property drawer attribute to name all array elements, elements must implement INamedArrayElement MathExtensions Math and Vector extension methods PauseController RandomUtils Helper methods to generate random numbers RenameAttribute Property drawer attribute to rename property RendererGroup ShowWhenAttribute Attribute used to show or hide the Field depending on certain conditions SortingLayer SplineUtil Extension class to work with splines StringExtension UIUtil Helper class to detect UI raycast hits Interfaces INamedArrayElement"
+    "keywords": "Namespace Util Classes AotTypeEnforcer DictionaryExtension EventManager EventToggleGroup EventToggleGroup.ToggleEvent GameObjectExtensions Extension methods for GameObjects and MonoBehaviors HideOnStart Hide game object this is attached to InspectorButtonAttribute LabeledArrayAttribute Property drawer attribute to name all array elements, elements must implement INamedArrayElement MathExtensions Math and Vector extension methods PauseController RandomUtils Helper methods to generate random numbers RenameAttribute Property drawer attribute to rename property ShowWhenAttribute Attribute used to show or hide the Field depending on certain conditions SortingLayer SplineUtil Extension class to work with splines StringExtension UIUtil Helper class to detect UI raycast hits Interfaces INamedArrayElement"
   },
   "api/Util.INamedArrayElement.html": {
     "href": "api/Util.INamedArrayElement.html",
@@ -613,11 +578,6 @@
     "href": "api/Util.RenameAttribute.html",
     "title": "Class RenameAttribute | Metro Connoisseur documentation",
     "keywords": "Class RenameAttribute Property drawer attribute to rename property Inheritance Object RenameAttribute Namespace : Util Assembly : cs.temp.dll.dll Syntax public class RenameAttribute : PropertyAttribute Constructors RenameAttribute(String) Declaration public RenameAttribute(string name) Parameters Type Name Description String name Properties NewName Declaration public string NewName { get; } Property Value Type Description String"
-  },
-  "api/Util.RendererGroup.html": {
-    "href": "api/Util.RendererGroup.html",
-    "title": "Class RendererGroup | Metro Connoisseur documentation",
-    "keywords": "Class RendererGroup Inheritance Object RendererGroup Namespace : Util Assembly : cs.temp.dll.dll Syntax public class RendererGroup : MonoBehaviour Fields active Declaration public bool active Field Value Type Description Boolean Methods SetState(Boolean) Declaration public void SetState(bool value) Parameters Type Name Description Boolean value"
   },
   "api/Util.ShowWhenAttribute.html": {
     "href": "api/Util.ShowWhenAttribute.html",

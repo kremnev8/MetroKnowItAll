@@ -2281,118 +2281,6 @@ references:
   commentId: F:Gameplay.GameModel.uiGame
   fullName: Gameplay.GameModel.uiGame
   nameWithType: GameModel.uiGame
-- uid: Gameplay.Health
-  name: Health
-  href: api/Gameplay.Health.html
-  commentId: T:Gameplay.Health
-  fullName: Gameplay.Health
-  nameWithType: Health
-- uid: Gameplay.Health.Decrement(System.Int32,Gameplay.PainType)
-  name: Decrement(Int32, PainType)
-  href: api/Gameplay.Health.html#Gameplay_Health_Decrement_System_Int32_Gameplay_PainType_
-  commentId: M:Gameplay.Health.Decrement(System.Int32,Gameplay.PainType)
-  fullName: Gameplay.Health.Decrement(System.Int32, Gameplay.PainType)
-  nameWithType: Health.Decrement(Int32, PainType)
-- uid: Gameplay.Health.Decrement*
-  name: Decrement
-  href: api/Gameplay.Health.html#Gameplay_Health_Decrement_
-  commentId: Overload:Gameplay.Health.Decrement
-  isSpec: "True"
-  fullName: Gameplay.Health.Decrement
-  nameWithType: Health.Decrement
-- uid: Gameplay.Health.Die
-  name: Die()
-  href: api/Gameplay.Health.html#Gameplay_Health_Die
-  commentId: M:Gameplay.Health.Die
-  fullName: Gameplay.Health.Die()
-  nameWithType: Health.Die()
-- uid: Gameplay.Health.Die*
-  name: Die
-  href: api/Gameplay.Health.html#Gameplay_Health_Die_
-  commentId: Overload:Gameplay.Health.Die
-  isSpec: "True"
-  fullName: Gameplay.Health.Die
-  nameWithType: Health.Die
-- uid: Gameplay.Health.healed
-  name: healed
-  href: api/Gameplay.Health.html#Gameplay_Health_healed
-  commentId: F:Gameplay.Health.healed
-  fullName: Gameplay.Health.healed
-  nameWithType: Health.healed
-- uid: Gameplay.Health.hurt
-  name: hurt
-  href: api/Gameplay.Health.html#Gameplay_Health_hurt
-  commentId: F:Gameplay.Health.hurt
-  fullName: Gameplay.Health.hurt
-  nameWithType: Health.hurt
-- uid: Gameplay.Health.hurtBy
-  name: hurtBy
-  href: api/Gameplay.Health.html#Gameplay_Health_hurtBy
-  commentId: F:Gameplay.Health.hurtBy
-  fullName: Gameplay.Health.hurtBy
-  nameWithType: Health.hurtBy
-- uid: Gameplay.Health.Increment(System.Int32)
-  name: Increment(Int32)
-  href: api/Gameplay.Health.html#Gameplay_Health_Increment_System_Int32_
-  commentId: M:Gameplay.Health.Increment(System.Int32)
-  fullName: Gameplay.Health.Increment(System.Int32)
-  nameWithType: Health.Increment(Int32)
-- uid: Gameplay.Health.Increment*
-  name: Increment
-  href: api/Gameplay.Health.html#Gameplay_Health_Increment_
-  commentId: Overload:Gameplay.Health.Increment
-  isSpec: "True"
-  fullName: Gameplay.Health.Increment
-  nameWithType: Health.Increment
-- uid: Gameplay.Health.IntEvent
-  name: Health.IntEvent
-  href: api/Gameplay.Health.IntEvent.html
-  commentId: T:Gameplay.Health.IntEvent
-  fullName: Gameplay.Health.IntEvent
-  nameWithType: Health.IntEvent
-- uid: Gameplay.Health.IsAlive
-  name: IsAlive
-  href: api/Gameplay.Health.html#Gameplay_Health_IsAlive
-  commentId: P:Gameplay.Health.IsAlive
-  fullName: Gameplay.Health.IsAlive
-  nameWithType: Health.IsAlive
-- uid: Gameplay.Health.IsAlive*
-  name: IsAlive
-  href: api/Gameplay.Health.html#Gameplay_Health_IsAlive_
-  commentId: Overload:Gameplay.Health.IsAlive
-  isSpec: "True"
-  fullName: Gameplay.Health.IsAlive
-  nameWithType: Health.IsAlive
-- uid: Gameplay.Health.isZero
-  name: isZero
-  href: api/Gameplay.Health.html#Gameplay_Health_isZero
-  commentId: F:Gameplay.Health.isZero
-  fullName: Gameplay.Health.isZero
-  nameWithType: Health.isZero
-- uid: Gameplay.Health.maxHp
-  name: maxHp
-  href: api/Gameplay.Health.html#Gameplay_Health_maxHp
-  commentId: F:Gameplay.Health.maxHp
-  fullName: Gameplay.Health.maxHp
-  nameWithType: Health.maxHp
-- uid: Gameplay.Health.PainEvent
-  name: Health.PainEvent
-  href: api/Gameplay.Health.PainEvent.html
-  commentId: T:Gameplay.Health.PainEvent
-  fullName: Gameplay.Health.PainEvent
-  nameWithType: Health.PainEvent
-- uid: Gameplay.Health.regenerate
-  name: regenerate
-  href: api/Gameplay.Health.html#Gameplay_Health_regenerate
-  commentId: F:Gameplay.Health.regenerate
-  fullName: Gameplay.Health.regenerate
-  nameWithType: Health.regenerate
-- uid: Gameplay.Health.regenerateRate
-  name: regenerateRate
-  href: api/Gameplay.Health.html#Gameplay_Health_regenerateRate
-  commentId: F:Gameplay.Health.regenerateRate
-  fullName: Gameplay.Health.regenerateRate
-  nameWithType: Health.regenerateRate
 - uid: Gameplay.MetroDisplay
   name: Gameplay.MetroDisplay
   href: api/Gameplay.MetroDisplay.html
@@ -2547,44 +2435,6 @@ references:
   commentId: F:Gameplay.MetroDisplay.CrossingDisplay.underRoot
   fullName: Gameplay.MetroDisplay.CrossingDisplay.underRoot
   nameWithType: CrossingDisplay.underRoot
-- uid: Gameplay.MetroDisplay.FocusDisplay
-  name: FocusDisplay
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html
-  commentId: T:Gameplay.MetroDisplay.FocusDisplay
-  fullName: Gameplay.MetroDisplay.FocusDisplay
-  nameWithType: FocusDisplay
-- uid: Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
-  name: Refresh(Boolean)
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html#Gameplay_MetroDisplay_FocusDisplay_Refresh_System_Boolean_
-  commentId: M:Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
-  fullName: Gameplay.MetroDisplay.FocusDisplay.Refresh(System.Boolean)
-  nameWithType: FocusDisplay.Refresh(Boolean)
-- uid: Gameplay.MetroDisplay.FocusDisplay.Refresh*
-  name: Refresh
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html#Gameplay_MetroDisplay_FocusDisplay_Refresh_
-  commentId: Overload:Gameplay.MetroDisplay.FocusDisplay.Refresh
-  isSpec: "True"
-  fullName: Gameplay.MetroDisplay.FocusDisplay.Refresh
-  nameWithType: FocusDisplay.Refresh
-- uid: Gameplay.MetroDisplay.FocusDisplay.region
-  name: region
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html#Gameplay_MetroDisplay_FocusDisplay_region
-  commentId: F:Gameplay.MetroDisplay.FocusDisplay.region
-  fullName: Gameplay.MetroDisplay.FocusDisplay.region
-  nameWithType: FocusDisplay.region
-- uid: Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
-  name: SetRegion(MetroRenderer, Region)
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html#Gameplay_MetroDisplay_FocusDisplay_SetRegion_Gameplay_MetroDisplay_MetroRenderer_Region_
-  commentId: M:Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer,Region)
-  fullName: Gameplay.MetroDisplay.FocusDisplay.SetRegion(Gameplay.MetroDisplay.MetroRenderer, Region)
-  nameWithType: FocusDisplay.SetRegion(MetroRenderer, Region)
-- uid: Gameplay.MetroDisplay.FocusDisplay.SetRegion*
-  name: SetRegion
-  href: api/Gameplay.MetroDisplay.FocusDisplay.html#Gameplay_MetroDisplay_FocusDisplay_SetRegion_
-  commentId: Overload:Gameplay.MetroDisplay.FocusDisplay.SetRegion
-  isSpec: "True"
-  fullName: Gameplay.MetroDisplay.FocusDisplay.SetRegion
-  nameWithType: FocusDisplay.SetRegion
 - uid: Gameplay.MetroDisplay.HighlightDisplay
   name: HighlightDisplay
   href: api/Gameplay.MetroDisplay.HighlightDisplay.html
@@ -3036,65 +2886,6 @@ references:
   commentId: N:Gameplay.MetroDisplay.Model
   fullName: Gameplay.MetroDisplay.Model
   nameWithType: Gameplay.MetroDisplay.Model
-- uid: Gameplay.MetroDisplay.Model.Area
-  name: Area
-  href: api/Gameplay.MetroDisplay.Model.Area.html
-  commentId: T:Gameplay.MetroDisplay.Model.Area
-  fullName: Gameplay.MetroDisplay.Model.Area
-  nameWithType: Area
-- uid: Gameplay.MetroDisplay.Model.Area.#ctor(List{Vector2})
-  name: Area(List<Vector2>)
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area__ctor_List_Vector2__
-  commentId: M:Gameplay.MetroDisplay.Model.Area.#ctor(List{Vector2})
-  name.vb: Area(List(Of Vector2))
-  fullName: Gameplay.MetroDisplay.Model.Area.Area(List<Vector2>)
-  fullName.vb: Gameplay.MetroDisplay.Model.Area.Area(List(Of Vector2))
-  nameWithType: Area.Area(List<Vector2>)
-  nameWithType.vb: Area.Area(List(Of Vector2))
-- uid: Gameplay.MetroDisplay.Model.Area.#ctor(System.Boolean)
-  name: Area(Boolean)
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area__ctor_System_Boolean_
-  commentId: M:Gameplay.MetroDisplay.Model.Area.#ctor(System.Boolean)
-  fullName: Gameplay.MetroDisplay.Model.Area.Area(System.Boolean)
-  nameWithType: Area.Area(Boolean)
-- uid: Gameplay.MetroDisplay.Model.Area.#ctor*
-  name: Area
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area__ctor_
-  commentId: Overload:Gameplay.MetroDisplay.Model.Area.#ctor
-  isSpec: "True"
-  fullName: Gameplay.MetroDisplay.Model.Area.Area
-  nameWithType: Area.Area
-- uid: Gameplay.MetroDisplay.Model.Area.everywhere
-  name: everywhere
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area_everywhere
-  commentId: F:Gameplay.MetroDisplay.Model.Area.everywhere
-  fullName: Gameplay.MetroDisplay.Model.Area.everywhere
-  nameWithType: Area.everywhere
-- uid: Gameplay.MetroDisplay.Model.Area.Everywhere
-  name: Everywhere
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area_Everywhere
-  commentId: F:Gameplay.MetroDisplay.Model.Area.Everywhere
-  fullName: Gameplay.MetroDisplay.Model.Area.Everywhere
-  nameWithType: Area.Everywhere
-- uid: Gameplay.MetroDisplay.Model.Area.points
-  name: points
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area_points
-  commentId: F:Gameplay.MetroDisplay.Model.Area.points
-  fullName: Gameplay.MetroDisplay.Model.Area.points
-  nameWithType: Area.points
-- uid: Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
-  name: SetFromSpline(SpriteShapeController)
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area_SetFromSpline_SpriteShapeController_
-  commentId: M:Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
-  fullName: Gameplay.MetroDisplay.Model.Area.SetFromSpline(SpriteShapeController)
-  nameWithType: Area.SetFromSpline(SpriteShapeController)
-- uid: Gameplay.MetroDisplay.Model.Area.SetFromSpline*
-  name: SetFromSpline
-  href: api/Gameplay.MetroDisplay.Model.Area.html#Gameplay_MetroDisplay_Model_Area_SetFromSpline_
-  commentId: Overload:Gameplay.MetroDisplay.Model.Area.SetFromSpline
-  isSpec: "True"
-  fullName: Gameplay.MetroDisplay.Model.Area.SetFromSpline
-  nameWithType: Area.SetFromSpline
 - uid: Gameplay.MetroDisplay.Model.EnumHelper
   name: EnumHelper
   href: api/Gameplay.MetroDisplay.Model.EnumHelper.html
@@ -4210,24 +4001,6 @@ references:
   commentId: F:Gameplay.MetroDisplay.StationDisplay.timeToHideLabel
   fullName: Gameplay.MetroDisplay.StationDisplay.timeToHideLabel
   nameWithType: StationDisplay.timeToHideLabel
-- uid: Gameplay.PainType
-  name: PainType
-  href: api/Gameplay.PainType.html
-  commentId: T:Gameplay.PainType
-  fullName: Gameplay.PainType
-  nameWithType: PainType
-- uid: Gameplay.PainType.Mental
-  name: Mental
-  href: api/Gameplay.PainType.html#Gameplay_PainType_Mental
-  commentId: F:Gameplay.PainType.Mental
-  fullName: Gameplay.PainType.Mental
-  nameWithType: PainType.Mental
-- uid: Gameplay.PainType.Physical
-  name: Physical
-  href: api/Gameplay.PainType.html#Gameplay_PainType_Physical
-  commentId: F:Gameplay.PainType.Physical
-  fullName: Gameplay.PainType.Physical
-  nameWithType: PainType.Physical
 - uid: Gameplay.Questions
   name: Gameplay.Questions
   href: api/Gameplay.Questions.html
@@ -4882,12 +4655,6 @@ references:
   commentId: F:Gameplay.Questions.Generators.UIQuestionOrderStations.tmpLabelTransform
   fullName: Gameplay.Questions.Generators.UIQuestionOrderStations.tmpLabelTransform
   nameWithType: UIQuestionOrderStations.tmpLabelTransform
-- uid: Gameplay.Questions.ILineQuestion
-  name: ILineQuestion
-  href: api/Gameplay.Questions.ILineQuestion.html
-  commentId: T:Gameplay.Questions.ILineQuestion
-  fullName: Gameplay.Questions.ILineQuestion
-  nameWithType: ILineQuestion
 - uid: Gameplay.Questions.QuestionGenerator`1
   name: QuestionGenerator<T>
   href: api/Gameplay.Questions.QuestionGenerator-1.html
@@ -7424,31 +7191,6 @@ references:
   isSpec: "True"
   fullName: Util.RenameAttribute.NewName
   nameWithType: RenameAttribute.NewName
-- uid: Util.RendererGroup
-  name: RendererGroup
-  href: api/Util.RendererGroup.html
-  commentId: T:Util.RendererGroup
-  fullName: Util.RendererGroup
-  nameWithType: RendererGroup
-- uid: Util.RendererGroup.active
-  name: active
-  href: api/Util.RendererGroup.html#Util_RendererGroup_active
-  commentId: F:Util.RendererGroup.active
-  fullName: Util.RendererGroup.active
-  nameWithType: RendererGroup.active
-- uid: Util.RendererGroup.SetState(System.Boolean)
-  name: SetState(Boolean)
-  href: api/Util.RendererGroup.html#Util_RendererGroup_SetState_System_Boolean_
-  commentId: M:Util.RendererGroup.SetState(System.Boolean)
-  fullName: Util.RendererGroup.SetState(System.Boolean)
-  nameWithType: RendererGroup.SetState(Boolean)
-- uid: Util.RendererGroup.SetState*
-  name: SetState
-  href: api/Util.RendererGroup.html#Util_RendererGroup_SetState_
-  commentId: Overload:Util.RendererGroup.SetState
-  isSpec: "True"
-  fullName: Util.RendererGroup.SetState
-  nameWithType: RendererGroup.SetState
 - uid: Util.ShowWhenAttribute
   name: ShowWhenAttribute
   href: api/Util.ShowWhenAttribute.html
