@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Gameplay.Statistics;
 using TMPro;
 using UnityEngine;
@@ -25,6 +26,7 @@ namespace Gameplay.MetroDisplay.Model
         
         public Vector2 position;
         public string[] names;
+        public NameDateRange[] nameHistory;
         public int currentNameIndex;
 
         [Header("Override Name Alignment")]
@@ -37,9 +39,22 @@ namespace Gameplay.MetroDisplay.Model
         [ShowWhen("m_override")]
         public TextAlignmentOptions nameAlignment;
 
-        public bool isOpen;
+        public DateRange[] history;
 
         public string editorName => $"{(int)globalId} {currentName}";
         public string displayName => currentName;
+    }
+
+    [Serializable]
+    public struct DateRange
+    {
+        public int openIn;
+        public int closedIn;
+
+        public DateRange(int openIn, int closedIn)
+        {
+            this.openIn = openIn;
+            this.closedIn = closedIn;
+        }
     }
 }

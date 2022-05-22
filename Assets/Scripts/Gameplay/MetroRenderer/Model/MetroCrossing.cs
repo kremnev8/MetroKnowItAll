@@ -81,8 +81,10 @@ namespace Gameplay.MetroDisplay.Model
     public class MetroCrossing
     {
         public List<GlobalId> stationsGlobalIds;
-
-        public bool isOpen;
+        
         public bool isAbove;
+
+        public int openIn;
+        public int closedIn;
     }
 }

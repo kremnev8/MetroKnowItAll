@@ -316,7 +316,6 @@ namespace Gameplay.MetroDisplay.Model
                             {
                                 startStationId = (byte)i,
                                 endStationId = (byte)(i + 1),
-                                isOpen = true,
                                 lineId = line.lineId
                             });
                         }
@@ -358,6 +357,42 @@ namespace Gameplay.MetroDisplay.Model
         {
             base.OnInspectorGUI();
 
+            if (GUILayout.Button("Migrate History data"))
+            {
+                Metro metro = (Metro)target;
+                foreach (MetroLine line in metro.lines)
+                {
+                    line.nameHistory = new[]
+                    {
+                        new NameDateRange(line.name, 0, 3000)
+                    };
+
+                    foreach (MetroStation station in line.stations)
+                    {
+                        station.history = new[]
+                        {
+                            new DateRange(0, 3000)
+                        };
+                        station.nameHistory = new[]
+                        {
+                            new NameDateRange(station.currentName, 0, 3000)
+                        };
+                    }
+
+                    foreach (MetroConnection connection in line.connections)
+                    {
+                        connection.openIn = 0;
+                        connection.closedIn = 3000;
+                    }
+                }
+                
+                foreach (MetroCrossing connection in metro.crossings)
+                {
+                    connection.openIn = 0;
+                    connection.closedIn = 3000;
+                }
+            }
+            
             if (GUILayout.Button("Import Region Data"))
             {
                 Metro metro = (Metro)target;

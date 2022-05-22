@@ -16,7 +16,8 @@ namespace Gameplay.MetroDisplay.Model
         public byte startStationId;
         public byte endStationId;
 
-        public bool isOpen;
+        public int openIn;
+        public int closedIn;
 
         public bool overrideBend;
         public Vector2 bendPoint;

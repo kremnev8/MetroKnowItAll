@@ -17,6 +17,7 @@ namespace Gameplay.MetroDisplay.Model
         
         public byte lineId;
         public string name;
+        public NameDateRange[] nameHistory;
         public bool isLooped;
         
         public LineStyle style;
@@ -33,7 +34,6 @@ namespace Gameplay.MetroDisplay.Model
         public bool simpleLine;
 
         [Header("Global Line Name Alignment")]
-        public bool hideName;
         public NamePosition namePosition;
         public TextAlignmentOptions nameAlignment;
         
