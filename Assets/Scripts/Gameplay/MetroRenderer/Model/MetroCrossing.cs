@@ -86,5 +86,10 @@ namespace Gameplay.MetroDisplay.Model
 
         public int openIn;
         public int closedIn;
+        
+        public bool IsOpen(int year)
+        {
+            return year >= openIn && year <= closedIn;
+        }
     }
 }

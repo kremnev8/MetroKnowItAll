@@ -16,7 +16,7 @@ namespace Gameplay.MetroDisplay.Model
     {
         
         public byte lineId;
-        public string name;
+        public string currentName => nameHistory.GetCurrentName(MetroRenderer.currentYear);
         public NameDateRange[] nameHistory;
         public bool isLooped;
         
@@ -37,8 +37,16 @@ namespace Gameplay.MetroDisplay.Model
         public NamePosition namePosition;
         public TextAlignmentOptions nameAlignment;
         
-        public string editorName => $"{stations.Count}, {name}";
-        public string displayName => name;
+        public int openIn;
+        public int closedIn = 3000;
+        
+        public bool IsOpen(int year)
+        {
+            return year >= openIn && year <= closedIn;
+        }
+        
+        public string editorName => $"{stations.Count}, {currentName}";
+        public string displayName => currentName;
         public int index => lineId;
     }
 }

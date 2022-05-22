@@ -35,6 +35,19 @@ namespace Util
             }
         }
 
+        
+        public static bool IsOpen(this DateRange[] range, int year)
+        {
+            foreach (DateRange entry in range)
+            {
+                if (year >= entry.openIn && year <= entry.closedIn)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
         public static string GetCurrentName(this NameDateRange[] range, int year)
         {

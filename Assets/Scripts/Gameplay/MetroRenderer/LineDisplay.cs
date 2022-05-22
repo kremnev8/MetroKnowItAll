@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
 
@@ -50,7 +51,9 @@ namespace Gameplay.MetroDisplay
 
             if (line.connections.Count == 0) return allLines;
 
-            List<MetroConnection> connections = new List<MetroConnection>(line.connections);
+            List<MetroConnection> connections = new List<MetroConnection>(
+                line.connections
+                    .Where(connection => connection.IsOpen(MetroRenderer.currentYear)));
 
             while (connections.Count > 0)
             {

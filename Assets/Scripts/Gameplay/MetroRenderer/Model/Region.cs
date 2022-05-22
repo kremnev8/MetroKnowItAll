@@ -74,7 +74,7 @@ namespace Gameplay.MetroDisplay.Model
         {
             return regionType switch
             {
-                RegionType.GLOBAL_LINE => metro.lines[lineId].name.Replace("линия", ""),
+                RegionType.GLOBAL_LINE => metro.lines[lineId].currentName.Replace("линия", ""),
                 RegionType.GLOBAL_STATIONS => "Изученные станций",
                 RegionType.CENTER => "Центр",
                 RegionType.NORTH => "Сервер",

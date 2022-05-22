@@ -364,7 +364,7 @@ namespace Gameplay.MetroDisplay.Model
                 {
                     line.nameHistory = new[]
                     {
-                        new NameDateRange(line.name, 0, 3000)
+                        new NameDateRange(line.currentName, 0, 3000)
                     };
 
                     foreach (MetroStation station in line.stations)

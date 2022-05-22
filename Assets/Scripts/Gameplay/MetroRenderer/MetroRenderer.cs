@@ -56,6 +56,8 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private HighlightDisplay highlightDisplay;
 
         public Metro metro;
+        
+        [Range(1935, 2022)]
         public int year;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
@@ -124,27 +126,36 @@ namespace Gameplay.MetroDisplay
 
             foreach (MetroLine line in metro.lines)
             {
-                foreach (MetroStation station in line.stations)
+                if (line.IsOpen(year))
                 {
-                    Vector3 point = transform.TransformPoint(station.position );
-                    StationDisplay stationDisplay = Instantiate(stationPrefab, point, Quaternion.identity, stationRoot);
+                    foreach (MetroStation station in line.stations)
+                    {
+                        if (station.history.IsOpen(year))
+                        {
+                            Vector3 point = transform.TransformPoint(station.position);
+                            StationDisplay stationDisplay = Instantiate(stationPrefab, point, Quaternion.identity, stationRoot);
 
-                    stationDisplay.SetStation(station, line);
-                    
-                    stationDisplays.Add(station.globalId, stationDisplay);
+                            stationDisplay.SetStation(station, line);
+
+                            stationDisplays.Add(station.globalId, stationDisplay);
+                        }
+                    }
+
+                    LineDisplay lineDisplay = Instantiate(linePrefab, lineRoot);
+                    lineDisplay.SetGroupData(line);
+
+                    lineDisplays.Add(lineDisplay);
                 }
-
-                LineDisplay lineDisplay = Instantiate(linePrefab, lineRoot);
-                lineDisplay.SetGroupData(line);
-                
-                lineDisplays.Add(lineDisplay);
             }
 
             foreach (MetroCrossing crossing in metro.crossings)
             {
-                CrossingDisplay crossingDisplay = Instantiate(crossingPrefab, crossingRoot);
-                crossingDisplay.SetCrossing(metro, crossing);
-                crossingDisplays.Add(crossingDisplay);
+                if (crossing.IsOpen(year))
+                {
+                    CrossingDisplay crossingDisplay = Instantiate(crossingPrefab, crossingRoot);
+                    crossingDisplay.SetCrossing(metro, crossing);
+                    crossingDisplays.Add(crossingDisplay);
+                }
             }
         }
 

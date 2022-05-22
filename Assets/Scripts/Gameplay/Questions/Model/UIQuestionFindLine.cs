@@ -19,7 +19,7 @@ namespace Gameplay.Questions.Generators
 
         public void SetQuestion(MetroLine line)
         {
-            questionLabel.text = $"Укажи где находится \n{line.name}";
+            questionLabel.text = $"Укажи где находится \n{line.currentName}";
             bottomPane.sizeDelta = new Vector2(bottomPane.sizeDelta.x, 300);
             button.Enable(selectable => selectable is LineSubDisplay);
         }

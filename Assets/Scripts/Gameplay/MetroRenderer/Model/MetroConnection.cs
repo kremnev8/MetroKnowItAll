@@ -16,14 +16,18 @@ namespace Gameplay.MetroDisplay.Model
         public byte startStationId;
         public byte endStationId;
 
-        public int openIn;
-        public int closedIn;
-
         public bool overrideBend;
         public Vector2 bendPoint;
         [Range(0, 8)]
         public float weight = 1;
-            
+        
+        public int openIn;
+        public int closedIn;
+        
+        public bool IsOpen(int year)
+        {
+            return year >= openIn && year <= closedIn;
+        }
         
         public override string ToString()
         {

@@ -48,7 +48,7 @@ namespace Gameplay.Questions.Generators
             switch (tipNumber)
             {
                 case 0 when questionUsedLineName:
-                    return $"Имя линии - {currentQuestion.name}";
+                    return $"Имя линии - {currentQuestion.currentName}";
                 
                 case 0 when !questionUsedLineName:
                 case 1:

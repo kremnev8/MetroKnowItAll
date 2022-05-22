@@ -85,7 +85,7 @@ namespace Editor
 
             int value = EditorGUI.IntField(intRect, globalId);
 
-            List<string> lineNames = metro.lines.Select(line => line.name).ToList();
+            List<string> lineNames = metro.lines.Select(line => line.currentName).ToList();
 
             string name = currentObject.lineId < lineNames.Count ? lineNames[currentObject.lineId] : "Select";
 
