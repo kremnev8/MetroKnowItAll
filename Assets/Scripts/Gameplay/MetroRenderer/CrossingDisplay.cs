@@ -58,6 +58,9 @@ namespace Gameplay.MetroDisplay
 
         public void Refresh()
         {
+            bool isOpen = crossing.IsOpen(MetroRenderer.currentYear);
+            gameObject.SetActive(isOpen);
+            
             block ??= new MaterialPropertyBlock();
             if (isValid())
             {

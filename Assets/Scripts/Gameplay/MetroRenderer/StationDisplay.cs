@@ -2,6 +2,7 @@
 using Gameplay.MetroDisplay.Model;
 using TMPro;
 using UnityEngine;
+using Util;
 
 namespace Gameplay.MetroDisplay
 {
@@ -64,8 +65,11 @@ namespace Gameplay.MetroDisplay
         }
 
         public void Refresh()
-        { 
-            SetColor(line.lineColor);
+        {
+            bool isOpen = station.history.GetCurrent(MetroRenderer.currentYear);
+            //gameObject.SetActive(isOpen);
+            
+            SetColor(isOpen ? line.lineColor : Color.gray);
 
             if (station.m_override)
             {

@@ -15,7 +15,7 @@ MonoBehaviour:
   lines:
   - lineId: 0
     nameHistory:
-    - name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+    - value: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u0447\u0435\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -30,7 +30,7 @@ MonoBehaviour:
       regionType: 4
       position: {x: 39.199997, y: 62.699997}
       nameHistory:
-      - name: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
+      - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -38,14 +38,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 1
       regionType: 4
       position: {x: 45.600006, y: 56.299995}
       nameHistory:
-      - name: "\u0427\u0435\u0440\u043A\u0438\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0427\u0435\u0440\u043A\u0438\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -53,14 +54,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 2
       regionType: 4
       position: {x: 42.800003, y: 49.1}
       nameHistory:
-      - name: "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0441\u043A\u0430\u044F
+      - value: "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0441\u043A\u0430\u044F
           \u043F\u043B\u043E\u0449\u0430\u0434\u044C"
         openIn: 0
         closedIn: 3000
@@ -69,14 +71,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 3
       regionType: 4
       position: {x: 38.100006, y: 44.4}
       nameHistory:
-      - name: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u043A\u0438"
+      - value: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -84,14 +87,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 4
       regionType: 1
       position: {x: 33.40001, y: 39.6}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u043E\u0441\u0435\u043B\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0441\u0435\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -99,14 +103,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 5
       regionType: 1
       position: {x: 24.300003, y: 30.299995}
       nameHistory:
-      - name: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -114,14 +119,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 6
       regionType: 1
       position: {x: 20.40001, y: 26.299995}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u044B\u0435 \u0412\u043E\u0440\u043E\u0442\u0430"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0435 \u0412\u043E\u0440\u043E\u0442\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -129,14 +135,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 7
       regionType: 1
       position: {x: 15, y: 20.899994}
       nameHistory:
-      - name: "\u0427\u0438\u0441\u0442\u044B\u0435 \u043F\u0440\u0443\u0434\u044B"
+      - value: "\u0427\u0438\u0441\u0442\u044B\u0435 \u043F\u0440\u0443\u0434\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -144,14 +151,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 8
       regionType: 1
       position: {x: 7.800003, y: 13.699997}
       nameHistory:
-      - name: "\u041B\u0443\u0431\u044F\u043D\u043A\u0430"
+      - value: "\u041B\u0443\u0431\u044F\u043D\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -159,14 +167,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 9
       regionType: 1
       position: {x: 0.80000305, y: 6.699997}
       nameHistory:
-      - name: "\u041E\u0445\u043E\u0442\u043D\u044B\u0439 \u0420\u044F\u0434"
+      - value: "\u041E\u0445\u043E\u0442\u043D\u044B\u0439 \u0420\u044F\u0434"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -174,14 +183,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 10
       regionType: 1
       position: {x: -12.099991, y: -6.199997}
       nameHistory:
-      - name: "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0418\u043C\u0435\u043D\u0438
+      - value: "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430 \u0418\u043C\u0435\u043D\u0438
           \u041B\u0435\u043D\u043D\u0438\u043D\u0430"
         openIn: 0
         closedIn: 3000
@@ -190,14 +200,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 11
       regionType: 1
       position: {x: -19.399994, y: -13.400009}
       nameHistory:
-      - name: "\u041A\u0440\u043E\u043F\u043E\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u043E\u043F\u043E\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -205,14 +216,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 12
       regionType: 1
       position: {x: -24.199997, y: -18}
       nameHistory:
-      - name: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
+      - value: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -220,14 +232,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 13
       regionType: 1
       position: {x: -31.199997, y: -24.90001}
       nameHistory:
-      - name: "\u0424\u0440\u0443\u043D\u0437\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0424\u0440\u0443\u043D\u0437\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -235,14 +248,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 14
       regionType: 1
       position: {x: -35.699997, y: -29.40001}
       nameHistory:
-      - name: "\u0421\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F"
+      - value: "\u0421\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -250,14 +264,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 15
       regionType: 7
       position: {x: -42.5, y: -36.199997}
       nameHistory:
-      - name: "\u0412\u043E\u0440\u043E\u0431\u044C\u0451\u0432\u044B \u0433\u043E\u0440\u044B"
+      - value: "\u0412\u043E\u0440\u043E\u0431\u044C\u0451\u0432\u044B \u0433\u043E\u0440\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -265,14 +280,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 16
       regionType: 7
       position: {x: -45.199997, y: -45}
       nameHistory:
-      - name: "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+      - value: "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -280,14 +296,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 17
       regionType: 8
       position: {x: -45.199997, y: -55.300003}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
+      - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -295,14 +312,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 18
       regionType: 8
       position: {x: -45.199997, y: -65.7}
       nameHistory:
-      - name: "\u042E\u0433\u043E-\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F"
+      - value: "\u042E\u0433\u043E-\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -310,14 +328,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 19
       regionType: 8
       position: {x: -45.199997, y: -70.7}
       nameHistory:
-      - name: "\u0422\u0440\u043E\u043F\u0430\u0440\u0451\u0432\u043E"
+      - value: "\u0422\u0440\u043E\u043F\u0430\u0440\u0451\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -325,14 +344,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 20
       regionType: 7
       position: {x: -45.199997, y: -75.7}
       nameHistory:
-      - name: "\u0420\u0443\u043C\u044F\u043D\u0446\u0435\u0432\u043E"
+      - value: "\u0420\u0443\u043C\u044F\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -340,14 +360,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 21
       regionType: 7
       position: {x: -45.199997, y: -80.7}
       nameHistory:
-      - name: "\u0421\u0430\u043B\u0430\u0440\u044C\u0435\u0432\u043E"
+      - value: "\u0421\u0430\u043B\u0430\u0440\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -355,14 +376,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 22
       regionType: 7
       position: {x: -43, y: -89.8}
       nameHistory:
-      - name: "\u0424\u0438\u043B\u0430\u0442\u043E\u0432 \u041B\u0443\u0433"
+      - value: "\u0424\u0438\u043B\u0430\u0442\u043E\u0432 \u041B\u0443\u0433"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -370,14 +392,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 23
       regionType: 7
       position: {x: -38, y: -94.8}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u043A\u0448\u0438\u043D\u043E"
+      - value: "\u041F\u0440\u043E\u043A\u0448\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -385,14 +408,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 24
       regionType: 7
       position: {x: -33, y: -99.8}
       nameHistory:
-      - name: "\u041E\u043B\u044C\u0445\u043E\u0432\u0430\u044F"
+      - value: "\u041E\u043B\u044C\u0445\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -400,14 +424,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 0
       stationId: 25
       regionType: 7
       position: {x: -28, y: -104.8}
       nameHistory:
-      - name: "\u041A\u043E\u043C\u043C\u0443\u043D\u0430\u0440\u043A\u0430"
+      - value: "\u041A\u043E\u043C\u043C\u0443\u043D\u0430\u0440\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -415,7 +440,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 0
@@ -625,7 +651,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 1
     nameHistory:
-    - name: "\u0417\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F
+    - value: "\u0417\u0430\u043C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0446\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -640,7 +666,7 @@ MonoBehaviour:
       regionType: 2
       position: {x: -60.4, y: 98.2}
       nameHistory:
-      - name: "\u0425\u043E\u0432\u0440\u0438\u043D\u043E"
+      - value: "\u0425\u043E\u0432\u0440\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -648,14 +674,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 1
       regionType: 2
       position: {x: -60.4, y: 88.7}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u043E\u043C\u043E\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0435\u043B\u043E\u043C\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -663,14 +690,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 2
       regionType: 2
       position: {x: -60.4, y: 79.2}
       nameHistory:
-      - name: "\u0420\u0435\u0447\u043D\u043E\u0439 \u0432\u043E\u043A\u0437\u0430\u043B"
+      - value: "\u0420\u0435\u0447\u043D\u043E\u0439 \u0432\u043E\u043A\u0437\u0430\u043B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -678,14 +706,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 3
       regionType: 2
       position: {x: -60.4, y: 69.7}
       nameHistory:
-      - name: "\u0412\u043E\u0434\u043D\u044B\u0439 \u0441\u0442\u0430\u0434\u0438\u043E\u043D"
+      - value: "\u0412\u043E\u0434\u043D\u044B\u0439 \u0441\u0442\u0430\u0434\u0438\u043E\u043D"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -693,14 +722,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 4
       regionType: 2
       position: {x: -52.699997, y: 58.1}
       nameHistory:
-      - name: "\u0412\u043E\u0439\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u043E\u0439\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -708,14 +738,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 5
       regionType: 2
       position: {x: -43.199997, y: 48.699997}
       nameHistory:
-      - name: "\u0421\u043E\u043A\u043E\u043B"
+      - value: "\u0421\u043E\u043A\u043E\u043B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -723,14 +754,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 6
       regionType: 2
       position: {x: -39.6, y: 45.1}
       nameHistory:
-      - name: "\u0410\u044D\u0440\u043E\u043F\u043E\u0440\u0442"
+      - value: "\u0410\u044D\u0440\u043E\u043F\u043E\u0440\u0442"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -738,14 +770,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 7
       regionType: 2
       position: {x: -35, y: 40.5}
       nameHistory:
-      - name: "\u0414\u0438\u043D\u0430\u043C\u043E"
+      - value: "\u0414\u0438\u043D\u0430\u043C\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -753,14 +786,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 8
       regionType: 1
       position: {x: -24.699997, y: 30.199997}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -768,14 +802,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 9
       regionType: 1
       position: {x: -19.59999, y: 25.099998}
       nameHistory:
-      - name: "\u041C\u0430\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041C\u0430\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -783,14 +818,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 10
       regionType: 1
       position: {x: -12, y: 17.09999}
       nameHistory:
-      - name: "\u0422\u0432\u0435\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0432\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -798,14 +834,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 11
       regionType: 1
       position: {x: 0.80000305, y: 4.300003}
       nameHistory:
-      - name: "\u0422\u0435\u0430\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F"
+      - value: "\u0422\u0435\u0430\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -813,14 +850,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 12
       regionType: 1
       position: {x: 13.600006, y: -8.5}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u043A\u0443\u0437\u043D\u0435\u0446\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u043A\u0443\u0437\u043D\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -828,14 +866,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 13
       regionType: 1
       position: {x: 23.600006, y: -18.600006}
       nameHistory:
-      - name: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
+      - value: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -843,14 +882,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 14
       regionType: 6
       position: {x: 35.300003, y: -29.800003}
       nameHistory:
-      - name: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -858,14 +898,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 15
       regionType: 6
       position: {x: 39.800003, y: -36.600006}
       nameHistory:
-      - name: "\u0422\u0435\u0445\u043D\u043E\u043F\u0430\u0440\u043A"
+      - value: "\u0422\u0435\u0445\u043D\u043E\u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -873,14 +914,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 16
       regionType: 6
       position: {x: 39.800003, y: -45.600006}
       nameHistory:
-      - name: "\u041A\u043E\u043B\u043E\u043C\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u043E\u043B\u043E\u043C\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -888,14 +930,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 17
       regionType: 6
       position: {x: 39.800003, y: -54.600006}
       nameHistory:
-      - name: "\u041A\u0430\u0448\u0438\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0430\u0448\u0438\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -903,14 +946,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 18
       regionType: 6
       position: {x: 42, y: -65}
       nameHistory:
-      - name: "\u041A\u0430\u043D\u0442\u0435\u043C\u0438\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0430\u043D\u0442\u0435\u043C\u0438\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -918,14 +962,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 19
       regionType: 6
       position: {x: 46.5, y: -69.5}
       nameHistory:
-      - name: "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
+      - value: "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -933,14 +978,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 20
       regionType: 6
       position: {x: 53.5, y: -76.5}
       nameHistory:
-      - name: "\u041E\u0440\u0435\u0445\u043E\u0432\u043E"
+      - value: "\u041E\u0440\u0435\u0445\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -948,14 +994,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 21
       regionType: 6
       position: {x: 61.699997, y: -82.5}
       nameHistory:
-      - name: "\u0414\u043E\u043C\u043E\u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0414\u043E\u043C\u043E\u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -963,14 +1010,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 22
       regionType: 6
       position: {x: 72.3, y: -82.5}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u0432\u0430\u0440\u0434\u0435\u0439\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u0432\u0430\u0440\u0434\u0435\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -978,14 +1026,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 1
       stationId: 23
       regionType: 6
       position: {x: 87, y: -82.5}
       nameHistory:
-      - name: "\u0410\u043B\u043C\u0430-\u0410\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u043B\u043C\u0430-\u0410\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -993,7 +1042,8 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 1
@@ -1187,7 +1237,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 2
     nameHistory:
-    - name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F
+    - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u043E-\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -1202,7 +1252,7 @@ MonoBehaviour:
       regionType: 4
       position: {x: 73.7, y: 57}
       nameHistory:
-      - name: "\u0429\u0451\u043B\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0429\u0451\u043B\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1210,14 +1260,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 1
       regionType: 4
       position: {x: 73.7, y: 49}
       nameHistory:
-      - name: "\u041F\u0435\u0440\u0432\u043E\u043C\u0430\u0439\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0435\u0440\u0432\u043E\u043C\u0430\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1225,14 +1276,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 2
       regionType: 4
       position: {x: 69.600006, y: 40.4}
       nameHistory:
-      - name: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1240,14 +1292,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 3
       regionType: 4
       position: {x: 63.800003, y: 34.6}
       nameHistory:
-      - name: "\u041F\u0430\u0440\u0442\u0438\u0437\u0430\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0430\u0440\u0442\u0438\u0437\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1255,14 +1308,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 4
       regionType: 4
       position: {x: 58.199997, y: 29}
       nameHistory:
-      - name: "\u0421\u0435\u043C\u0451\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0435\u043C\u0451\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1270,14 +1324,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 5
       regionType: 4
       position: {x: 53, y: 23.799995}
       nameHistory:
-      - name: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1285,14 +1340,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 6
       regionType: 1
       position: {x: 46.300003, y: 17.09999}
       nameHistory:
-      - name: "\u0411\u0430\u0443\u043C\u0430\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0430\u0443\u043C\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1300,14 +1356,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 7
       regionType: 1
       position: {x: 38.300003, y: 9.099991}
       nameHistory:
-      - name: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1315,14 +1372,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 8
       regionType: 1
       position: {x: 0.80000305, y: 1.8999939}
       nameHistory:
-      - name: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0420\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438"
+      - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0420\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1330,14 +1388,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 9
       regionType: 1
       position: {x: -14.300003, y: -4.100006}
       nameHistory:
-      - name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1345,14 +1404,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 10
       regionType: 1
       position: {x: -29.299995, y: -4.100006}
       nameHistory:
-      - name: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1360,14 +1420,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 11
       regionType: 8
       position: {x: -37.1, y: -4.100006}
       nameHistory:
-      - name: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1375,14 +1436,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 12
       regionType: 8
       position: {x: -69.6, y: -16.90001}
       nameHistory:
-      - name: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
+      - value: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1390,14 +1452,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 13
       regionType: 8
       position: {x: -85.5, y: -1}
       nameHistory:
-      - name: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      - value: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1405,14 +1468,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 14
       regionType: 8
       position: {x: -92.5, y: 13.5}
       nameHistory:
-      - name: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1420,14 +1484,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 15
       regionType: 9
       position: {x: -92.5, y: 26.599998}
       nameHistory:
-      - name: "\u041C\u043E\u043B\u043E\u0434\u0451\u0436\u043D\u0430\u044F"
+      - value: "\u041C\u043E\u043B\u043E\u0434\u0451\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1435,14 +1500,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 16
       regionType: 9
       position: {x: -92.5, y: 32.799995}
       nameHistory:
-      - name: "\u041A\u0440\u044B\u043B\u0430\u0442\u0441\u043A\u043E\u0435"
+      - value: "\u041A\u0440\u044B\u043B\u0430\u0442\u0441\u043A\u043E\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1450,14 +1516,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 17
       regionType: 9
       position: {x: -92.5, y: 39}
       nameHistory:
-      - name: "\u0421\u0442\u0440\u043E\u0433\u0438\u043D\u043E"
+      - value: "\u0421\u0442\u0440\u043E\u0433\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1465,14 +1532,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 18
       regionType: 0
       position: {x: -92.5, y: 45.199997}
       nameHistory:
-      - name: "\u041C\u044F\u043A\u0438\u043D\u0438\u043D\u043E"
+      - value: "\u041C\u044F\u043A\u0438\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1480,14 +1548,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 19
       regionType: 9
       position: {x: -92.5, y: 55.5}
       nameHistory:
-      - name: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1495,14 +1564,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 20
       regionType: 9
       position: {x: -92.5, y: 65}
       nameHistory:
-      - name: "\u041C\u0438\u0442\u0438\u043D\u043E"
+      - value: "\u041C\u0438\u0442\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1510,14 +1580,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 2
       stationId: 21
       regionType: 9
       position: {x: -92.5, y: 73}
       nameHistory:
-      - name: "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
+      - value: "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1525,7 +1596,8 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 2
@@ -1703,7 +1775,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 3
     nameHistory:
-    - name: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    - value: "\u0424\u0438\u043B\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -1717,7 +1789,7 @@ MonoBehaviour:
       regionType: 8
       position: {x: -90, y: 13.5}
       nameHistory:
-      - name: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1725,14 +1797,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 1
       regionType: 8
       position: {x: -84.5, y: 8}
       nameHistory:
-      - name: "\u041F\u0438\u043E\u043D\u0435\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0438\u043E\u043D\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1740,14 +1813,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 2
       regionType: 0
       position: {x: -79, y: 2.5}
       nameHistory:
-      - name: "\u0424\u0438\u043B\u0451\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      - value: "\u0424\u0438\u043B\u0451\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1755,14 +1829,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 3
       regionType: 8
       position: {x: -73.5, y: -3}
       nameHistory:
-      - name: "\u0411\u0430\u0433\u0440\u0430\u0442\u0438\u043E\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0430\u0433\u0440\u0430\u0442\u0438\u043E\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1770,14 +1845,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 4
       regionType: 8
       position: {x: -68.5, y: -8}
       nameHistory:
-      - name: "\u0424\u0438\u043B\u0438"
+      - value: "\u0424\u0438\u043B\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1785,14 +1861,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 5
       regionType: 8
       position: {x: -56.6, y: -11.699997}
       nameHistory:
-      - name: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1800,14 +1877,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 6
       regionType: 8
       position: {x: -50.6, y: -5.699997}
       nameHistory:
-      - name: "\u0421\u0442\u0443\u0434\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0442\u0443\u0434\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1815,14 +1893,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 7
       regionType: 8
       position: {x: -37.1, y: -1.699997}
       nameHistory:
-      - name: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1830,14 +1909,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 8
       regionType: 1
       position: {x: -29.299995, y: 1.8999939}
       nameHistory:
-      - name: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1845,14 +1925,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 9
       regionType: 1
       position: {x: -21.59999, y: 1.8999939}
       nameHistory:
-      - name: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1860,14 +1941,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 10
       regionType: 1
       position: {x: -12.099991, y: -4.100006}
       nameHistory:
-      - name: "\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439
+      - value: "\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439
           \u0441\u0430\u0434"
         openIn: 0
         closedIn: 3000
@@ -1876,14 +1958,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 1025
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 11
       regionType: 1
       position: {x: -59.299995, y: 11.300003}
       nameHistory:
-      - name: "\u041C\u0435\u0436\u0434\u0443\u043D\u0430\u0440\u043E\u0434\u043D\u0430\u044F"
+      - value: "\u041C\u0435\u0436\u0434\u0443\u043D\u0430\u0440\u043E\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -1891,14 +1974,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 3
       stationId: 12
       regionType: 1
       position: {x: -52.699997, y: 4.699997}
       nameHistory:
-      - name: "\u0412\u044B\u0441\u0442\u0430\u0432\u043E\u0447\u043D\u0430\u044F"
+      - value: "\u0412\u044B\u0441\u0442\u0430\u0432\u043E\u0447\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -1906,7 +1990,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 3
@@ -2012,7 +2097,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 4
     nameHistory:
-    - name: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    - value: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -2026,7 +2111,7 @@ MonoBehaviour:
       regionType: 1
       position: {x: -25.699997, y: -19.5}
       nameHistory:
-      - name: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
+      - value: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2034,14 +2119,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 1
       regionType: 1
       position: {x: -9.300003, y: -28.90001}
       nameHistory:
-      - name: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2049,14 +2135,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 2
       regionType: 1
       position: {x: 8.699997, y: -29.199997}
       nameHistory:
-      - name: "\u0414\u043E\u0431\u0440\u044B\u043D\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0414\u043E\u0431\u0440\u044B\u043D\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2064,14 +2151,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 3
       regionType: 1
       position: {x: 25.100006, y: -20}
       nameHistory:
-      - name: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
+      - value: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2079,14 +2167,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 4
       regionType: 1
       position: {x: 32.90001, y: -9.600006}
       nameHistory:
-      - name: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2094,14 +2183,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 5
       regionType: 1
       position: {x: 36.199997, y: 11.199997}
       nameHistory:
-      - name: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2109,14 +2199,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 6
       regionType: 1
       position: {x: 25.800003, y: 31.799995}
       nameHistory:
-      - name: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2124,14 +2215,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 7
       regionType: 1
       position: {x: 17.199997, y: 38.5}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
+      - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2139,14 +2231,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 8
       regionType: 1
       position: {x: -10.399994, y: 41.199997}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u0441\u043B\u043E\u0431\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u0441\u043B\u043E\u0431\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2154,14 +2247,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 1026
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 9
       regionType: 1
       position: {x: -26.199997, y: 31.699997}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2169,14 +2263,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 10
       regionType: 1
       position: {x: -35.299995, y: 15.099991}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2184,14 +2279,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 4
       stationId: 11
       regionType: 8
       position: {x: -35.299995, y: -2.9000092}
       nameHistory:
-      - name: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2199,7 +2295,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 4
@@ -2305,7 +2402,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 5
     nameHistory:
-    - name: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0420\u0438\u0436\u0441\u043A\u0430\u044F
+    - value: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u043E-\u0420\u0438\u0436\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -2320,7 +2417,7 @@ MonoBehaviour:
       regionType: 3
       position: {x: 17.199997, y: 94.3}
       nameHistory:
-      - name: "\u041C\u0435\u0434\u0432\u0435\u0434\u043A\u043E\u0432\u043E"
+      - value: "\u041C\u0435\u0434\u0432\u0435\u0434\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2328,14 +2425,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 1
       regionType: 3
       position: {x: 17.199997, y: 89.899994}
       nameHistory:
-      - name: "\u0411\u0430\u0431\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0430\u0431\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2343,14 +2441,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 2
       regionType: 3
       position: {x: 17.199997, y: 85.1}
       nameHistory:
-      - name: "\u0421\u0432\u0438\u0431\u043B\u043E\u0432\u043E"
+      - value: "\u0421\u0432\u0438\u0431\u043B\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2358,14 +2457,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 3
       regionType: 3
       position: {x: 17.199997, y: 80.5}
       nameHistory:
-      - name: "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+      - value: "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
           \u0441\u0430\u0434"
         openIn: 0
         closedIn: 3000
@@ -2374,14 +2474,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 4
       regionType: 3
       position: {x: 17.199997, y: 67}
       nameHistory:
-      - name: "\u0412\u0414\u041D\u0425"
+      - value: "\u0412\u0414\u041D\u0425"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2389,14 +2490,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 5
       regionType: 3
       position: {x: 17.199997, y: 57}
       nameHistory:
-      - name: "\u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2404,14 +2506,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 6
       regionType: 1
       position: {x: 17.199997, y: 44.299995}
       nameHistory:
-      - name: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
+      - value: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2419,14 +2522,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 7
       regionType: 1
       position: {x: 17.199997, y: 40.5}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
+      - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2434,14 +2538,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 8
       regionType: 1
       position: {x: 17.199997, y: 29.900002}
       nameHistory:
-      - name: "\u0421\u0443\u0445\u0430\u0440\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0443\u0445\u0430\u0440\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2449,14 +2554,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 1026
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 9
       regionType: 1
       position: {x: 17.199997, y: 20.399994}
       nameHistory:
-      - name: "\u0422\u0443\u0440\u0433\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0443\u0440\u0433\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2464,14 +2570,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 10
       regionType: 1
       position: {x: 17.199997, y: 9}
       nameHistory:
-      - name: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
+      - value: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2479,14 +2586,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 11
       regionType: 1
       position: {x: 11.199997, y: -8.5}
       nameHistory:
-      - name: "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2494,14 +2602,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 12
       regionType: 1
       position: {x: -7.800003, y: -27.40001}
       nameHistory:
-      - name: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2509,14 +2618,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 13
       regionType: 6
       position: {x: -14.800003, y: -34.5}
       nameHistory:
-      - name: "\u0428\u0430\u0431\u043E\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0428\u0430\u0431\u043E\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2524,14 +2634,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 14
       regionType: 6
       position: {x: -18, y: -39.100006}
       nameHistory:
-      - name: "\u041B\u0435\u043D\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      - value: "\u041B\u0435\u043D\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2539,14 +2650,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 15
       regionType: 7
       position: {x: -18, y: -45.300003}
       nameHistory:
-      - name: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2554,14 +2666,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 16
       regionType: 7
       position: {x: -18, y: -50.100006}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043D\u0430\u044F"
+      - value: "\u041F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2569,14 +2682,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 17
       regionType: 7
       position: {x: -18, y: -55}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u044B\u0435 \u0427\u0435\u0440\u0451\u043C\u0443\u0448\u043A\u0438"
+      - value: "\u041D\u043E\u0432\u044B\u0435 \u0427\u0435\u0440\u0451\u043C\u0443\u0448\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2584,14 +2698,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 18
       regionType: 7
       position: {x: -18, y: -60.699997}
       nameHistory:
-      - name: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2599,14 +2714,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 1025
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 19
       regionType: 7
       position: {x: -18, y: -65.7}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u044F\u0435\u0432\u043E"
+      - value: "\u0411\u0435\u043B\u044F\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2614,14 +2730,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 20
       regionType: 7
       position: {x: -18, y: -70.7}
       nameHistory:
-      - name: "\u041A\u043E\u043D\u044C\u043A\u043E\u0432\u043E"
+      - value: "\u041A\u043E\u043D\u044C\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2629,14 +2746,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 21
       regionType: 0
       position: {x: -16, y: -75.7}
       nameHistory:
-      - name: "\u0422\u0451\u043F\u043B\u044B\u0439 \u0421\u0442\u0430\u043D"
+      - value: "\u0422\u0451\u043F\u043B\u044B\u0439 \u0421\u0442\u0430\u043D"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2644,14 +2762,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 22
       regionType: 7
       position: {x: -12.5, y: -79.2}
       nameHistory:
-      - name: "\u042F\u0441\u0435\u043D\u0435\u0432\u043E"
+      - value: "\u042F\u0441\u0435\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2659,14 +2778,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 5
       stationId: 23
       regionType: 7
       position: {x: -8.5, y: -83.2}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u044F\u0441\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u044F\u0441\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2674,7 +2794,8 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 5
@@ -2868,7 +2989,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 6
     nameHistory:
-    - name: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F
+    - value: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u043E-\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -2883,7 +3004,7 @@ MonoBehaviour:
       regionType: 9
       position: {x: -80, y: 73}
       nameHistory:
-      - name: "\u041F\u043B\u0430\u043D\u0435\u0440\u043D\u0430\u044F"
+      - value: "\u041F\u043B\u0430\u043D\u0435\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2891,14 +3012,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 1
       regionType: 9
       position: {x: -80, y: 65}
       nameHistory:
-      - name: "\u0421\u0445\u043E\u0434\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0445\u043E\u0434\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2906,14 +3028,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 2
       regionType: 9
       position: {x: -74.5, y: 56.6}
       nameHistory:
-      - name: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2921,14 +3044,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 3
       regionType: 9
       position: {x: -68.5, y: 50.6}
       nameHistory:
-      - name: "\u0421\u043F\u0430\u0440\u0442\u0430\u043A"
+      - value: "\u0421\u043F\u0430\u0440\u0442\u0430\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2936,14 +3060,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 4
       regionType: 9
       position: {x: -64.7, y: 46.799995}
       nameHistory:
-      - name: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2951,14 +3076,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 5
       regionType: 2
       position: {x: -60.9, y: 40.5}
       nameHistory:
-      - name: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u043E\u0435
+      - value: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u043E\u0435
           \u043F\u043E\u043B\u0435"
         openIn: 0
         closedIn: 3000
@@ -2967,14 +3093,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 6
       regionType: 2
       position: {x: -56.699997, y: 30.199997}
       nameHistory:
-      - name: "\u041F\u043E\u043B\u0435\u0436\u0430\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u043E\u043B\u0435\u0436\u0430\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -2982,14 +3109,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 7
       regionType: 1
       position: {x: -47, y: 20.5}
       nameHistory:
-      - name: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
+      - value: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -2997,14 +3125,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 8
       regionType: 0
       position: {x: -43, y: 16.5}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 1905 \u0433\u043E\u0434\u0430"
+      - value: "\u0423\u043B\u0438\u0446\u0430 1905 \u0433\u043E\u0434\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3012,14 +3141,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 9
       regionType: 1
       position: {x: -33.299995, y: 15.099991}
       nameHistory:
-      - name: "\u0411\u0430\u0440\u0440\u0438\u043A\u0430\u0434\u043D\u0430\u044F"
+      - value: "\u0411\u0430\u0440\u0440\u0438\u043A\u0430\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3027,14 +3157,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 10
       regionType: 1
       position: {x: -13.199997, y: 15.099991}
       nameHistory:
-      - name: "\u041F\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3042,14 +3173,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 11
       regionType: 1
       position: {x: 9.300003, y: 15.099991}
       nameHistory:
-      - name: "\u041A\u0443\u0437\u043D\u0435\u0446\u043A\u0438\u0439 \u041C\u043E\u0441\u0442"
+      - value: "\u041A\u0443\u0437\u043D\u0435\u0446\u043A\u0438\u0439 \u041C\u043E\u0441\u0442"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3057,14 +3189,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 12
       regionType: 1
       position: {x: 17.199997, y: 7}
       nameHistory:
-      - name: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
+      - value: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3072,14 +3205,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 13
       regionType: 1
       position: {x: 35, y: -10.800003}
       nameHistory:
-      - name: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3087,14 +3221,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 14
       regionType: 1
       position: {x: 44.100006, y: -14.5}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u043B\u0435\u0442\u0430\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0440\u043E\u043B\u0435\u0442\u0430\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3102,14 +3237,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 15
       regionType: 5
       position: {x: 56, y: -14.5}
       nameHistory:
-      - name: "\u0412\u043E\u043B\u0433\u043E\u0433\u0440\u0430\u0434\u0441\u043A\u0438\u0439
+      - value: "\u0412\u043E\u043B\u0433\u043E\u0433\u0440\u0430\u0434\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -3118,14 +3254,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 16
       regionType: 5
       position: {x: 65.100006, y: -14.5}
       nameHistory:
-      - name: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
+      - value: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3133,14 +3270,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 17
       regionType: 5
       position: {x: 73.5, y: -19.5}
       nameHistory:
-      - name: "\u041A\u0443\u0437\u044C\u043C\u0438\u043D\u043A\u0438"
+      - value: "\u041A\u0443\u0437\u044C\u043C\u0438\u043D\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3148,14 +3286,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 18
       regionType: 5
       position: {x: 80, y: -26}
       nameHistory:
-      - name: "\u0420\u044F\u0437\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
+      - value: "\u0420\u044F\u0437\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3163,14 +3302,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 19
       regionType: 5
       position: {x: 85.5, y: -31.5}
       nameHistory:
-      - name: "\u0412\u044B\u0445\u0438\u043D\u043E"
+      - value: "\u0412\u044B\u0445\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3178,14 +3318,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 20
       regionType: 5
       position: {x: 88.600006, y: -36.800003}
       nameHistory:
-      - name: "\u041B\u0435\u0440\u043C\u043E\u043D\u0442\u043E\u0432\u0441\u043A\u0438\u0439
+      - value: "\u041B\u0435\u0440\u043C\u043E\u043D\u0442\u043E\u0432\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -3194,14 +3335,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 21
       regionType: 5
       position: {x: 88.600006, y: -46.199997}
       nameHistory:
-      - name: "\u0416\u0443\u043B\u0435\u0431\u0438\u043D\u043E"
+      - value: "\u0416\u0443\u043B\u0435\u0431\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3209,14 +3351,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 6
       stationId: 22
       regionType: 5
       position: {x: 88.600006, y: -53.199997}
       nameHistory:
-      - name: "\u041A\u043E\u0442\u0435\u043B\u044C\u043D\u0438\u043A\u0438"
+      - value: "\u041A\u043E\u0442\u0435\u043B\u044C\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3224,7 +3367,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 6
@@ -3410,7 +3554,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 7
     nameHistory:
-    - name: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    - value: "\u041A\u0430\u043B\u0438\u043D\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -3424,7 +3568,7 @@ MonoBehaviour:
       regionType: 4
       position: {x: 96.2, y: 16.899994}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u043A\u043E\u0441\u0438\u043D\u043E"
+      - value: "\u041D\u043E\u0432\u043E\u043A\u043E\u0441\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3432,14 +3576,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 1
       regionType: 4
       position: {x: 86.2, y: 16.899994}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u0433\u0438\u0440\u0435\u0435\u0432\u043E"
+      - value: "\u041D\u043E\u0432\u043E\u0433\u0438\u0440\u0435\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3447,14 +3592,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 2
       regionType: 4
       position: {x: 76.2, y: 16.899994}
       nameHistory:
-      - name: "\u041F\u0435\u0440\u043E\u0432\u043E"
+      - value: "\u041F\u0435\u0440\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3462,14 +3608,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 3
       regionType: 4
       position: {x: 66.2, y: 16.899994}
       nameHistory:
-      - name: "\u0428\u043E\u0441\u0441\u0435 \u042D\u043D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
+      - value: "\u0428\u043E\u0441\u0441\u0435 \u042D\u043D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3477,14 +3624,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 4
       regionType: 5
       position: {x: 53, y: 4.5}
       nameHistory:
-      - name: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
+      - value: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3492,14 +3640,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 5
       regionType: 1
       position: {x: 45.90001, y: -2.600006}
       nameHistory:
-      - name: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0418\u043B\u044C\u0438\u0447\u0430"
+      - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0418\u043B\u044C\u0438\u0447\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3507,14 +3656,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 6
       regionType: 1
       position: {x: 32.90001, y: -12}
       nameHistory:
-      - name: "\u041C\u0430\u0440\u043A\u0441\u0438\u0441\u0442\u0441\u043A\u0430\u044F"
+      - value: "\u041C\u0430\u0440\u043A\u0441\u0438\u0441\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3522,14 +3672,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 7
       stationId: 7
       regionType: 1
       position: {x: 12.400009, y: -10.5}
       nameHistory:
-      - name: "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3537,7 +3688,8 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 7
@@ -3603,7 +3755,8 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 8
     nameHistory:
-    - name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    - value: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F
+        \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -3617,7 +3770,7 @@ MonoBehaviour:
       regionType: 1
       position: {x: -52.699997, y: 2.300003}
       nameHistory:
-      - name: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3625,14 +3778,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 1
       regionType: 8
       position: {x: -69.6, y: -14.600006}
       nameHistory:
-      - name: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
+      - value: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3640,14 +3794,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 2
       regionType: 8
       position: {x: -74.1, y: -22.199997}
       nameHistory:
-      - name: "\u041C\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041C\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3655,14 +3810,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 3
       regionType: 8
       position: {x: -74.1, y: -27.800003}
       nameHistory:
-      - name: "\u041B\u043E\u043C\u043E\u043D\u043E\u0441\u043E\u0432\u0441\u043A\u0438\u0439
+      - value: "\u041B\u043E\u043C\u043E\u043D\u043E\u0441\u043E\u0432\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -3671,14 +3827,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 4
       regionType: 8
       position: {x: -74.1, y: -33.100006}
       nameHistory:
-      - name: "\u0420\u0430\u043C\u0435\u043D\u043A\u0438"
+      - value: "\u0420\u0430\u043C\u0435\u043D\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3686,14 +3843,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 5
       regionType: 8
       position: {x: -74.1, y: -38.90001}
       nameHistory:
-      - name: "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439
+      - value: "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -3702,14 +3860,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 6
       regionType: 8
       position: {x: -74.1, y: -45.699997}
       nameHistory:
-      - name: "\u041E\u0437\u0451\u0440\u043D\u0430\u044F"
+      - value: "\u041E\u0437\u0451\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3717,14 +3876,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 7
       regionType: 8
       position: {x: -74.1, y: -50.699997}
       nameHistory:
-      - name: "\u0413\u043E\u0432\u043E\u0440\u043E\u0432\u043E"
+      - value: "\u0413\u043E\u0432\u043E\u0440\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3732,14 +3892,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 8
       regionType: 8
       position: {x: -74.1, y: -55.699997}
       nameHistory:
-      - name: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u043E"
+      - value: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3747,14 +3908,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 9
       regionType: 8
       position: {x: -74.1, y: -60.699997}
       nameHistory:
-      - name: "\u0411\u043E\u0440\u043E\u0432\u0441\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
+      - value: "\u0411\u043E\u0440\u043E\u0432\u0441\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3762,14 +3924,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 10
       regionType: 8
       position: {x: -74.1, y: -65.7}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u043F\u0435\u0440\u0435\u0434\u0435\u043B\u043A\u0438\u043D\u043E"
+      - value: "\u041D\u043E\u0432\u043E\u043F\u0435\u0440\u0435\u0434\u0435\u043B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3777,14 +3940,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 8
       stationId: 11
       regionType: 8
       position: {x: -74.1, y: -70.7}
       nameHistory:
-      - name: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u043E\u0432\u043A\u0430"
+      - value: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3792,7 +3956,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 8
@@ -3890,7 +4055,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 9
     nameHistory:
-    - name: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F
+    - value: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u043E-\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -3905,7 +4070,7 @@ MonoBehaviour:
       regionType: 2
       position: {x: -19.59999, y: 95.1}
       nameHistory:
-      - name: "\u0410\u043B\u0442\u0443\u0444\u044C\u0435\u0432\u043E"
+      - value: "\u0410\u043B\u0442\u0443\u0444\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3913,14 +4078,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 1
       regionType: 2
       position: {x: -19.59999, y: 90.1}
       nameHistory:
-      - name: "\u0411\u0438\u0431\u0438\u0440\u0435\u0432\u043E"
+      - value: "\u0411\u0438\u0431\u0438\u0440\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3928,14 +4094,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 2
       regionType: 2
       position: {x: -19.59999, y: 85.1}
       nameHistory:
-      - name: "\u041E\u0442\u0440\u0430\u0434\u043D\u043E\u0435"
+      - value: "\u041E\u0442\u0440\u0430\u0434\u043D\u043E\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3943,14 +4110,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 3
       regionType: 2
       position: {x: -19.59999, y: 79.1}
       nameHistory:
-      - name: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
+      - value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3958,14 +4126,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 4
       regionType: 2
       position: {x: -19.59999, y: 69.5}
       nameHistory:
-      - name: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -3973,14 +4142,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 5
       regionType: 2
       position: {x: -19.59999, y: 62.299995}
       nameHistory:
-      - name: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -3988,14 +4158,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 6
       regionType: 2
       position: {x: -19.59999, y: 55.699997}
       nameHistory:
-      - name: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4003,14 +4174,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 7
       regionType: 2
       position: {x: -18, y: 48.699997}
       nameHistory:
-      - name: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4018,14 +4190,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 8
       regionType: 1
       position: {x: -9, y: 39.699997}
       nameHistory:
-      - name: "\u041C\u0435\u043D\u0434\u0435\u043B\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041C\u0435\u043D\u0434\u0435\u043B\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4033,14 +4206,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 9
       regionType: 1
       position: {x: -1.300003, y: 31.099998}
       nameHistory:
-      - name: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      - value: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4048,14 +4222,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 10
       regionType: 1
       position: {x: -14.399994, y: 17.09999}
       nameHistory:
-      - name: "\u0427\u0435\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0427\u0435\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4063,14 +4238,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 11
       regionType: 1
       position: {x: -14.300003, y: -6.199997}
       nameHistory:
-      - name: "\u0411\u043E\u0440\u043E\u0432\u0438\u0446\u043A\u0430\u044F"
+      - value: "\u0411\u043E\u0440\u043E\u0432\u0438\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4078,14 +4254,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 12
       regionType: 1
       position: {x: 2.100006, y: -22.40001}
       nameHistory:
-      - name: "\u041F\u043E\u043B\u044F\u043D\u043A\u0430"
+      - value: "\u041F\u043E\u043B\u044F\u043D\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4093,14 +4270,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 13
       regionType: 1
       position: {x: 7.199997, y: -27.699997}
       nameHistory:
-      - name: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4108,14 +4286,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 14
       regionType: 6
       position: {x: 14.900009, y: -35.40001}
       nameHistory:
-      - name: "\u0422\u0443\u043B\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0443\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4123,14 +4302,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 15
       regionType: 6
       position: {x: 17.199997, y: -44.40001}
       nameHistory:
-      - name: "\u041D\u0430\u0433\u0430\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u0430\u0433\u0430\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4138,14 +4318,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 16
       regionType: 6
       position: {x: 17.199997, y: -50.100006}
       nameHistory:
-      - name: "\u041D\u0430\u0433\u043E\u0440\u043D\u0430\u044F"
+      - value: "\u041D\u0430\u0433\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4153,14 +4334,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 17
       regionType: 7
       position: {x: 17.199997, y: -55}
       nameHistory:
-      - name: "\u041D\u0430\u0445\u0438\u043C\u043E\u0432\u0441\u043A\u0438\u0439
+      - value: "\u041D\u0430\u0445\u0438\u043C\u043E\u0432\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -4169,14 +4351,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 18
       regionType: 7
       position: {x: 17.199997, y: -60.699997}
       nameHistory:
-      - name: "\u0421\u0435\u0432\u0430\u0441\u0442\u043E\u043F\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0435\u0432\u0430\u0441\u0442\u043E\u043F\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4184,14 +4367,15 @@ MonoBehaviour:
       namePosition: 1
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 19
       regionType: 7
       position: {x: 17.199997, y: -65.7}
       nameHistory:
-      - name: "\u0427\u0435\u0440\u0442\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0427\u0435\u0440\u0442\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4199,14 +4383,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 20
       regionType: 7
       position: {x: 17.199997, y: -70.7}
       nameHistory:
-      - name: "\u042E\u0436\u043D\u0430\u044F"
+      - value: "\u042E\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4214,14 +4399,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 21
       regionType: 7
       position: {x: 17.199997, y: -75.7}
       nameHistory:
-      - name: "\u041F\u0440\u0430\u0436\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0440\u0430\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4229,14 +4415,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 22
       regionType: 7
       position: {x: 17.199997, y: -80.7}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 \u0410\u043A\u0430\u0434\u0435\u043C\u0438\u043A\u0430
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u0410\u043A\u0430\u0434\u0435\u043C\u0438\u043A\u0430
           \u042F\u043D\u0433\u0435\u043B\u044F"
         openIn: 0
         closedIn: 3000
@@ -4245,14 +4432,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 23
       regionType: 7
       position: {x: 17.199997, y: -85.7}
       nameHistory:
-      - name: "\u0410\u043D\u043D\u0438\u043D\u043E"
+      - value: "\u0410\u043D\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4260,14 +4448,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 9
       stationId: 24
       regionType: 7
       position: {x: 17.199997, y: -90.8}
       nameHistory:
-      - name: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0414\u043C\u0438\u0442\u0440\u0438\u044F
+      - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0414\u043C\u0438\u0442\u0440\u0438\u044F
           \u0414\u043E\u043D\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
@@ -4276,7 +4465,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 9
@@ -4478,7 +4668,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 10
     nameHistory:
-    - name: "\u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F
+    - value: "\u041B\u044E\u0431\u043B\u0438\u043D\u0441\u043A\u043E-\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -4493,7 +4683,7 @@ MonoBehaviour:
       regionType: 2
       position: {x: -42, y: 93.5}
       nameHistory:
-      - name: "\u0421\u0435\u043B\u0438\u0433\u0435\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0435\u043B\u0438\u0433\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4501,14 +4691,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 1
       regionType: 2
       position: {x: -37.5, y: 83.5}
       nameHistory:
-      - name: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
+      - value: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4516,14 +4707,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 2
       regionType: 2
       position: {x: -26, y: 72}
       nameHistory:
-      - name: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4531,14 +4723,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 3
       regionType: 2
       position: {x: -17.59999, y: 69.5}
       nameHistory:
-      - name: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4546,14 +4739,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 4
       regionType: 3
       position: {x: -8.5, y: 65.799995}
       nameHistory:
-      - name: "\u0424\u043E\u043D\u0432\u0438\u0437\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0424\u043E\u043D\u0432\u0438\u0437\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4561,14 +4755,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 5
       regionType: 3
       position: {x: -1.8999939, y: 59.199997}
       nameHistory:
-      - name: "\u0411\u0443\u0442\u044B\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0443\u0442\u044B\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4576,14 +4771,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 6
       regionType: 3
       position: {x: 0.80000305, y: 51}
       nameHistory:
-      - name: "\u041C\u0430\u0440\u044C\u0438\u043D\u0430 \u0420\u043E\u0449\u0430"
+      - value: "\u041C\u0430\u0440\u044C\u0438\u043D\u0430 \u0420\u043E\u0449\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4591,14 +4787,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 7
       regionType: 1
       position: {x: 0.80000305, y: 44.5}
       nameHistory:
-      - name: "\u0414\u043E\u0441\u0442\u043E\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0414\u043E\u0441\u0442\u043E\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4606,14 +4803,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 8
       regionType: 1
       position: {x: 0.80000305, y: 31.099998}
       nameHistory:
-      - name: "\u0422\u0440\u0443\u0431\u043D\u0430\u044F"
+      - value: "\u0422\u0440\u0443\u0431\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4621,14 +4819,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 9
       regionType: 1
       position: {x: 15.5, y: 18.699997}
       nameHistory:
-      - name: "\u0421\u0440\u0435\u0442\u0435\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      - value: "\u0421\u0440\u0435\u0442\u0435\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4636,14 +4835,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 10
       regionType: 1
       position: {x: 36.199997, y: 9.099991}
       nameHistory:
-      - name: "\u0427\u043A\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0427\u043A\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4651,14 +4851,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 11
       regionType: 1
       position: {x: 44.100006, y: -0.80000305}
       nameHistory:
-      - name: "\u0420\u0438\u043C\u0441\u043A\u0430\u044F"
+      - value: "\u0420\u0438\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4666,14 +4867,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 12
       regionType: 1
       position: {x: 44.100006, y: -12.199997}
       nameHistory:
-      - name: "\u041A\u0440\u0435\u0441\u0442\u044C\u044F\u043D\u0441\u043A\u0430\u044F
+      - value: "\u041A\u0440\u0435\u0441\u0442\u044C\u044F\u043D\u0441\u043A\u0430\u044F
           \u0437\u0430\u0441\u0442\u0430\u0432\u0430"
         openIn: 0
         closedIn: 3000
@@ -4682,14 +4884,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 13
       regionType: 5
       position: {x: 45.100006, y: -20.40001}
       nameHistory:
-      - name: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
+      - value: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -4697,14 +4900,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 14
       regionType: 5
       position: {x: 52, y: -27.300003}
       nameHistory:
-      - name: "\u041A\u043E\u0436\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u043E\u0436\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4712,14 +4916,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 15
       regionType: 5
       position: {x: 59.699997, y: -35}
       nameHistory:
-      - name: "\u041F\u0435\u0447\u0430\u0442\u043D\u0438\u043A\u0438"
+      - value: "\u041F\u0435\u0447\u0430\u0442\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4727,14 +4932,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 16
       regionType: 5
       position: {x: 67.7, y: -43}
       nameHistory:
-      - name: "\u0412\u043E\u043B\u0436\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u043E\u043B\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4742,14 +4948,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 17
       regionType: 5
       position: {x: 72.3, y: -50}
       nameHistory:
-      - name: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
+      - value: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4757,14 +4964,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 18
       regionType: 5
       position: {x: 72.3, y: -56}
       nameHistory:
-      - name: "\u0411\u0440\u0430\u0442\u0438\u0441\u043B\u0430\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0440\u0430\u0442\u0438\u0441\u043B\u0430\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4772,14 +4980,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 19
       regionType: 5
       position: {x: 72.3, y: -62}
       nameHistory:
-      - name: "\u041C\u0430\u0440\u044C\u0438\u043D\u043E"
+      - value: "\u041C\u0430\u0440\u044C\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4787,14 +4996,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 20
       regionType: 6
       position: {x: 72.3, y: -68}
       nameHistory:
-      - name: "\u0411\u043E\u0440\u0438\u0441\u043E\u0432\u043E"
+      - value: "\u0411\u043E\u0440\u0438\u0441\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4802,14 +5012,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 21
       regionType: 6
       position: {x: 72.3, y: -74}
       nameHistory:
-      - name: "\u0428\u0438\u043F\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0428\u0438\u043F\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4817,14 +5028,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 10
       stationId: 22
       regionType: 6
       position: {x: 72.3, y: -80}
       nameHistory:
-      - name: "\u0417\u044F\u0431\u043B\u0438\u043A\u043E\u0432\u043E"
+      - value: "\u0417\u044F\u0431\u043B\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -4832,7 +5044,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 10
@@ -5018,7 +5231,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 11
     nameHistory:
-    - name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
+    - value: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -5033,7 +5246,7 @@ MonoBehaviour:
       regionType: 6
       position: {x: 31.600006, y: -60.699997}
       nameHistory:
-      - name: "\u0412\u0430\u0440\u0448\u0430\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u0430\u0440\u0448\u0430\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5041,14 +5254,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 1
       regionType: 7
       position: {x: 19.600006, y: -60.699997}
       nameHistory:
-      - name: "\u041A\u0430\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0430\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5056,14 +5270,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 2
       regionType: 7
       position: {x: -1, y: -60.699997}
       nameHistory:
-      - name: "\u0417\u044E\u0437\u0438\u043D\u043E"
+      - value: "\u0417\u044E\u0437\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5071,14 +5286,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 3
       regionType: 7
       position: {x: -20.399994, y: -60.699997}
       nameHistory:
-      - name: "\u0412\u043E\u0440\u043E\u043D\u0446\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u043E\u0440\u043E\u043D\u0446\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5086,14 +5302,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 4
       regionType: 7
       position: {x: -33, y: -59.5}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5101,14 +5318,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 1025
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 5
       regionType: 8
       position: {x: -47.6, y: -55.300003}
       nameHistory:
-      - name: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
+      - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5116,14 +5334,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 6
       regionType: 8
       position: {x: -71.6, y: -38.90001}
       nameHistory:
-      - name: "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439
+      - value: "\u041C\u0438\u0447\u0443\u0440\u0438\u043D\u0441\u043A\u0438\u0439
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
@@ -5132,14 +5351,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 7
       regionType: 8
       position: {x: -82.5, y: -23.800003}
       nameHistory:
-      - name: "\u0410\u043C\u0438\u043D\u044C\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u043C\u0438\u043D\u044C\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5147,14 +5367,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 8
       regionType: 8
       position: {x: -88.1, y: -10.400009}
       nameHistory:
-      - name: "\u0414\u0430\u0432\u044B\u0434\u043A\u043E\u0432\u043E"
+      - value: "\u0414\u0430\u0432\u044B\u0434\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5162,14 +5383,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 9
       regionType: 8
       position: {x: -91.2, y: 11.800003}
       nameHistory:
-      - name: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5177,14 +5399,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 1025
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 10
       regionType: 9
       position: {x: -84.9, y: 21.800003}
       nameHistory:
-      - name: "\u0422\u0435\u0440\u0435\u0445\u043E\u0432\u043E"
+      - value: "\u0422\u0435\u0440\u0435\u0445\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5192,14 +5415,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 11
       regionType: 9
       position: {x: -77.2, y: 24.299995}
       nameHistory:
-      - name: "\u041C\u043D\u0451\u0432\u043D\u0438\u043A\u0438"
+      - value: "\u041C\u043D\u0451\u0432\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5207,14 +5431,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 12
       regionType: 9
       position: {x: -66.6, y: 24.299995}
       nameHistory:
-      - name: "\u041D\u0430\u0440\u043E\u0434\u043D\u043E\u0435 \u041E\u043F\u043E\u043B\u0447\u0435\u043D\u0438\u0435"
+      - value: "\u041D\u0430\u0440\u043E\u0434\u043D\u043E\u0435 \u041E\u043F\u043E\u043B\u0447\u0435\u043D\u0438\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5222,14 +5447,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 11
       stationId: 13
       regionType: 2
       position: {x: -56.699997, y: 28}
       nameHistory:
-      - name: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5237,7 +5463,8 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 11
@@ -5351,7 +5578,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 12
     nameHistory:
-    - name: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
+    - value: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F A"
       openIn: 0
       closedIn: 3000
@@ -5366,7 +5593,7 @@ MonoBehaviour:
       regionType: 1
       position: {x: -54.5, y: 3.5}
       nameHistory:
-      - name: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5374,14 +5601,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 12
       stationId: 1
       regionType: 1
       position: {x: -59.6, y: 18.09999}
       nameHistory:
-      - name: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
+      - value: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5389,14 +5617,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 12
       stationId: 2
       regionType: 2
       position: {x: -56.699997, y: 28}
       nameHistory:
-      - name: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5404,14 +5633,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 12
       stationId: 3
       regionType: 2
       position: {x: -49.199997, y: 35.5}
       nameHistory:
-      - name: "\u0426\u0421\u041A\u0410"
+      - value: "\u0426\u0421\u041A\u0410"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5419,14 +5649,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 12
       stationId: 4
       regionType: 2
       position: {x: -35, y: 38.299995}
       nameHistory:
-      - name: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5434,14 +5665,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 12
       stationId: 5
       regionType: 2
       position: {x: -19.899994, y: 48.699997}
       nameHistory:
-      - name: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5449,7 +5681,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 12
@@ -5499,7 +5732,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 13
     nameHistory:
-    - name: "\u0411\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
+    - value: "\u0411\u0443\u0442\u043E\u0432\u0441\u043A\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -5513,7 +5746,7 @@ MonoBehaviour:
       regionType: 7
       position: {x: -6.899994, y: -84.8}
       nameHistory:
-      - name: "\u0411\u0438\u0442\u0446\u0435\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
+      - value: "\u0411\u0438\u0442\u0446\u0435\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5521,14 +5754,15 @@ MonoBehaviour:
       namePosition: 4
       nameAlignment: 260
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 1
       regionType: 7
       position: {x: 5.800003, y: -84.8}
       nameHistory:
-      - name: "\u041B\u0435\u0441\u043E\u043F\u0430\u0440\u043A\u043E\u0432\u0430\u044F"
+      - value: "\u041B\u0435\u0441\u043E\u043F\u0430\u0440\u043A\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5536,14 +5770,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 2
       regionType: 7
       position: {x: 14.800003, y: -90.8}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 \u0421\u0442\u0430\u0440\u043E\u043A\u0430\u0447\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u0421\u0442\u0430\u0440\u043E\u043A\u0430\u0447\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5551,14 +5786,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 3
       regionType: 7
       position: {x: 14.800003, y: -97.7}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 \u0421\u043A\u043E\u0431\u0435\u043B\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u0421\u043A\u043E\u0431\u0435\u043B\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5566,14 +5802,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 4
       regionType: 7
       position: {x: 14.800003, y: -104.7}
       nameHistory:
-      - name: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0410\u0434\u043C\u0438\u0440\u0430\u043B\u0430
+      - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0410\u0434\u043C\u0438\u0440\u0430\u043B\u0430
           \u0423\u0448\u0430\u043A\u043E\u0432\u0430"
         openIn: 0
         closedIn: 3000
@@ -5582,14 +5819,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 5
       regionType: 7
       position: {x: 14.800003, y: -111.20001}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 \u0413\u043E\u0440\u0447\u0430\u043A\u043E\u0432\u0430"
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u0413\u043E\u0440\u0447\u0430\u043A\u043E\u0432\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5597,14 +5835,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 13
       stationId: 6
       regionType: 7
       position: {x: 14.800003, y: -117.70001}
       nameHistory:
-      - name: "\u0411\u0443\u043D\u0438\u043D\u0441\u043A\u0430\u044F \u0430\u043B\u043B\u0435\u044F"
+      - value: "\u0411\u0443\u043D\u0438\u043D\u0441\u043A\u0430\u044F \u0430\u043B\u043B\u0435\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5612,7 +5851,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 13
@@ -5670,7 +5910,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 14
     nameHistory:
-    - name: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
+    - value: "\u041C\u043E\u0441\u043A\u043E\u0432\u0441\u043A\u043E\u0435 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
         \u043A\u043E\u043B\u044C\u0446\u043E"
       openIn: 0
       closedIn: 3000
@@ -5685,7 +5925,7 @@ MonoBehaviour:
       regionType: 3
       position: {x: 15.100006, y: 78.5}
       nameHistory:
-      - name: "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+      - value: "\u0411\u043E\u0442\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
           \u0441\u0430\u0434"
         openIn: 0
         closedIn: 3000
@@ -5694,14 +5934,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 1
       regionType: 2
       position: {x: -19.59999, y: 77.1}
       nameHistory:
-      - name: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
+      - value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5709,14 +5950,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 2
       regionType: 2
       position: {x: -26, y: 74.6}
       nameHistory:
-      - name: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5724,14 +5966,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 1028
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 3
       regionType: 2
       position: {x: -36.199997, y: 68.7}
       nameHistory:
-      - name: "\u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
+      - value: "\u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5739,14 +5982,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 4
       regionType: 2
       position: {x: -42.4, y: 63.5}
       nameHistory:
-      - name: "\u041A\u043E\u043F\u0442\u0435\u0432\u043E"
+      - value: "\u041A\u043E\u043F\u0442\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5754,14 +5998,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 5
       regionType: 2
       position: {x: -47.699997, y: 58.1}
       nameHistory:
-      - name: "\u0411\u0430\u043B\u0442\u0438\u0439\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0430\u043B\u0442\u0438\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5769,14 +6014,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 6
       regionType: 2
       position: {x: -52.699997, y: 51}
       nameHistory:
-      - name: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
+      - value: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5784,14 +6030,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 7
       regionType: 2
       position: {x: -57.1, y: 42.5}
       nameHistory:
-      - name: "\u041F\u0430\u043D\u0444\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041F\u0430\u043D\u0444\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5799,14 +6046,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 8
       regionType: 2
       position: {x: -58.9, y: 37.699997}
       nameHistory:
-      - name: "\u0417\u043E\u0440\u0433\u0435"
+      - value: "\u0417\u043E\u0440\u0433\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5814,14 +6062,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 9
       regionType: 2
       position: {x: -60.799995, y: 30.199997}
       nameHistory:
-      - name: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u043E"
+      - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5829,14 +6078,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 10
       regionType: 1
       position: {x: -61.9, y: 20.399994}
       nameHistory:
-      - name: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
+      - value: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5844,14 +6094,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 11
       regionType: 1
       position: {x: -61.699997, y: 11.300003}
       nameHistory:
-      - name: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
+      - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5859,14 +6110,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 12
       regionType: 8
       position: {x: -54.199997, y: -11.699997}
       nameHistory:
-      - name: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5874,14 +6126,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 13
       regionType: 1
       position: {x: -39.6, y: -29.40001}
       nameHistory:
-      - name: "\u041B\u0443\u0436\u043D\u0438\u043A\u0438"
+      - value: "\u041B\u0443\u0436\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5889,14 +6142,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 14
       regionType: 6
       position: {x: -18, y: -41.100006}
       nameHistory:
-      - name: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0413\u0430\u0433\u0430\u0440\u0438\u043D\u0430"
+      - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0413\u0430\u0433\u0430\u0440\u0438\u043D\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5904,14 +6158,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 15
       regionType: 6
       position: {x: 4.100006, y: -43.800003}
       nameHistory:
-      - name: "\u041A\u0440\u044B\u043C\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u044B\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5919,14 +6174,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 16
       regionType: 6
       position: {x: 22, y: -39.699997}
       nameHistory:
-      - name: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041A\u043E\u0442\u043B\u044B"
+      - value: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041A\u043E\u0442\u043B\u044B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5934,14 +6190,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 17
       regionType: 6
       position: {x: 30.5, y: -35.800003}
       nameHistory:
-      - name: "\u0417\u0418\u041B"
+      - value: "\u0417\u0418\u041B"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5949,14 +6206,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 18
       regionType: 6
       position: {x: 39.300003, y: -29.800003}
       nameHistory:
-      - name: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -5964,14 +6222,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 19
       regionType: 5
       position: {x: 45.100006, y: -24.40001}
       nameHistory:
-      - name: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
+      - value: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5979,14 +6238,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 20
       regionType: 5
       position: {x: 48.800003, y: -20.5}
       nameHistory:
-      - name: "\u0423\u0433\u0440\u0435\u0448\u0441\u043A\u0430\u044F"
+      - value: "\u0423\u0433\u0440\u0435\u0448\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -5994,14 +6254,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 21
       regionType: 5
       position: {x: 55.5, y: -10}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6009,14 +6270,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 22
       regionType: 5
       position: {x: 60.300003, y: 3}
       nameHistory:
-      - name: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6024,14 +6286,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 1025
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 23
       regionType: 4
       position: {x: 61.5, y: 9.399994}
       nameHistory:
-      - name: "\u0410\u043D\u0434\u0440\u043E\u043D\u043E\u0432\u043A\u0430"
+      - value: "\u0410\u043D\u0434\u0440\u043E\u043D\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6039,14 +6302,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 24
       regionType: 4
       position: {x: 62.199997, y: 16.899994}
       nameHistory:
-      - name: "\u0428\u043E\u0441\u0441\u0435 \u042D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
+      - value: "\u0428\u043E\u0441\u0441\u0435 \u042D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6054,14 +6318,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 25
       regionType: 4
       position: {x: 61.800003, y: 25.5}
       nameHistory:
-      - name: "\u0421\u043E\u043A\u043E\u043B\u0438\u043D\u0430\u044F \u0413\u043E\u0440\u0430"
+      - value: "\u0421\u043E\u043A\u043E\u043B\u0438\u043D\u0430\u044F \u0413\u043E\u0440\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6069,14 +6334,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 26
       regionType: 4
       position: {x: 60, y: 34.6}
       nameHistory:
-      - name: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u043E"
+      - value: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6084,14 +6350,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 27
       regionType: 4
       position: {x: 47.699997, y: 58.199997}
       nameHistory:
-      - name: "\u041B\u043E\u043A\u043E\u043C\u043E\u0442\u0438\u0432"
+      - value: "\u041B\u043E\u043A\u043E\u043C\u043E\u0442\u0438\u0432"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6099,14 +6366,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 28
       regionType: 4
       position: {x: 39.199997, y: 66.5}
       nameHistory:
-      - name: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
+      - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6114,14 +6382,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 29
       regionType: 4
       position: {x: 34.199997, y: 70.2}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u043E\u043A\u0430\u043C\u0435\u043D\u043D\u0430\u044F"
+      - value: "\u0411\u0435\u043B\u043E\u043A\u0430\u043C\u0435\u043D\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6129,14 +6398,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 14
       stationId: 30
       regionType: 3
       position: {x: 28.40001, y: 73.5}
       nameHistory:
-      - name: "\u0420\u043E\u0441\u0442\u043E\u043A\u0438\u043D\u043E"
+      - value: "\u0420\u043E\u0441\u0442\u043E\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6144,7 +6414,8 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 14
@@ -6402,7 +6673,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 15
     nameHistory:
-    - name: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F
+    - value: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u0441\u043A\u0430\u044F
         \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
@@ -6417,7 +6688,7 @@ MonoBehaviour:
       regionType: 4
       position: {x: 49.5, y: 23.799995}
       nameHistory:
-      - name: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6425,14 +6696,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 1
       regionType: 5
       position: {x: 49.5, y: 14}
       nameHistory:
-      - name: "\u041B\u0435\u0444\u043E\u0440\u0442\u043E\u0432\u043E"
+      - value: "\u041B\u0435\u0444\u043E\u0440\u0442\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6440,14 +6712,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 2
       regionType: 5
       position: {x: 53, y: 8}
       nameHistory:
-      - name: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
+      - value: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6455,14 +6728,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 3
       regionType: 5
       position: {x: 60.300003, y: 0.69999695}
       nameHistory:
-      - name: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6470,14 +6744,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 4
       regionType: 5
       position: {x: 68, y: -7}
       nameHistory:
-      - name: "\u0421\u0442\u0430\u0445\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0442\u0430\u0445\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6485,14 +6760,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 5
       regionType: 5
       position: {x: 77, y: -19.5}
       nameHistory:
-      - name: "\u041E\u043A\u0441\u043A\u0430\u044F"
+      - value: "\u041E\u043A\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6500,14 +6776,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 6
       regionType: 5
       position: {x: 78.90001, y: -31.5}
       nameHistory:
-      - name: "\u042E\u0433\u043E-\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F"
+      - value: "\u042E\u0433\u043E-\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6515,14 +6792,15 @@ MonoBehaviour:
       namePosition: 7
       nameAlignment: 516
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 7
       regionType: 5
       position: {x: 88.600006, y: -39.199997}
       nameHistory:
-      - name: "\u041A\u043E\u0441\u0438\u043D\u043E"
+      - value: "\u041A\u043E\u0441\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6530,14 +6808,15 @@ MonoBehaviour:
       namePosition: 6
       nameAlignment: 257
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 8
       regionType: 5
       position: {x: 106.80002, y: -42.199997}
       nameHistory:
-      - name: "\u0423\u043B\u0438\u0446\u0430 \u0414\u043C\u0438\u0442\u0440\u0438\u0435\u0432\u0441\u043A\u043E\u0433\u043E"
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u0414\u043C\u0438\u0442\u0440\u0438\u0435\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6545,14 +6824,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 9
       regionType: 5
       position: {x: 106.80002, y: -47.699997}
       nameHistory:
-      - name: "\u041B\u0443\u0445\u043C\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041B\u0443\u0445\u043C\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6560,14 +6840,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 15
       stationId: 10
       regionType: 5
       position: {x: 106.80002, y: -53.199997}
       nameHistory:
-      - name: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u043A\u0430"
+      - value: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6575,7 +6856,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 15
@@ -6665,7 +6947,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 16
     nameHistory:
-    - name: "\u041C\u0426\u0414-1"
+    - value: "\u041C\u0426\u0414-1"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -6679,7 +6961,7 @@ MonoBehaviour:
       regionType: 2
       position: {x: -23.5, y: 130.1}
       nameHistory:
-      - name: "\u041B\u043E\u0431\u043D\u044F"
+      - value: "\u041B\u043E\u0431\u043D\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6687,14 +6969,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 1
       regionType: 2
       position: {x: -23.5, y: 125.1}
       nameHistory:
-      - name: "\u0428\u0435\u0440\u0435\u043C\u0435\u0442\u044C\u0435\u0432\u043E"
+      - value: "\u0428\u0435\u0440\u0435\u043C\u0435\u0442\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6702,14 +6985,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 2
       regionType: 2
       position: {x: -23.5, y: 120.1}
       nameHistory:
-      - name: "\u0425\u043B\u0435\u0431\u043D\u0438\u043A\u043E\u0432\u043E"
+      - value: "\u0425\u043B\u0435\u0431\u043D\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6717,14 +7001,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 3
       regionType: 2
       position: {x: -23.5, y: 115.1}
       nameHistory:
-      - name: "\u0412\u043E\u0434\u043D\u0438\u043A\u0438"
+      - value: "\u0412\u043E\u0434\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6732,14 +7017,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 4
       regionType: 2
       position: {x: -23.5, y: 110.1}
       nameHistory:
-      - name: "\u0414\u043E\u043B\u0433\u043E\u043F\u0440\u0443\u0434\u043D\u0430\u044F"
+      - value: "\u0414\u043E\u043B\u0433\u043E\u043F\u0440\u0443\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6747,14 +7033,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 5
       regionType: 2
       position: {x: -23.5, y: 105.1}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u0434\u0430\u0447\u043D\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u0434\u0430\u0447\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6762,14 +7049,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 6
       regionType: 2
       position: {x: -23.5, y: 100.1}
       nameHistory:
-      - name: "\u041C\u0430\u0440\u043A"
+      - value: "\u041C\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6777,14 +7065,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 7
       regionType: 2
       position: {x: -23.5, y: 95.1}
       nameHistory:
-      - name: "\u041B\u0438\u0430\u043D\u043E\u0437\u043E\u0432\u043E"
+      - value: "\u041B\u0438\u0430\u043D\u043E\u0437\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6792,14 +7081,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 8
       regionType: 2
       position: {x: -23.5, y: 90.1}
       nameHistory:
-      - name: "\u0411\u0435\u0441\u043A\u0443\u0434\u043D\u0438\u043A\u043E\u0432\u043E"
+      - value: "\u0411\u0435\u0441\u043A\u0443\u0434\u043D\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6807,14 +7097,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 9
       regionType: 2
       position: {x: -23.5, y: 85.2}
       nameHistory:
-      - name: "\u0414\u0435\u0433\u0443\u043D\u0438\u043D\u043E"
+      - value: "\u0414\u0435\u0433\u0443\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6822,14 +7113,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 10
       regionType: 2
       position: {x: -23.5, y: 73}
       nameHistory:
-      - name: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
+      - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6837,14 +7129,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 11
       regionType: 2
       position: {x: -23.5, y: 62.299995}
       nameHistory:
-      - name: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6852,14 +7145,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 12
       regionType: 2
       position: {x: -23.5, y: 48.699997}
       nameHistory:
-      - name: "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6867,14 +7161,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 13
       regionType: 1
       position: {x: -27.699997, y: 36.299995}
       nameHistory:
-      - name: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
+      - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6882,14 +7177,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 14
       regionType: 1
       position: {x: -45.199997, y: 18.800003}
       nameHistory:
-      - name: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
+      - value: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6897,14 +7193,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 15
       regionType: 1
       position: {x: -52.699997, y: 11.300003}
       nameHistory:
-      - name: "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6912,14 +7209,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 16
       regionType: 8
       position: {x: -68.5, y: -4.5}
       nameHistory:
-      - name: "\u0424\u0438\u043B\u0438"
+      - value: "\u0424\u0438\u043B\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6927,14 +7225,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 17
       regionType: 8
       position: {x: -85.5, y: 1.5}
       nameHistory:
-      - name: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
+      - value: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -6942,14 +7241,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 18
       regionType: 8
       position: {x: -95, y: 11}
       nameHistory:
-      - name: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6957,14 +7257,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 19
       regionType: 8
       position: {x: -100, y: 16}
       nameHistory:
-      - name: "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u041F\u043E\u0441\u0451\u043B\u043E\u043A"
+      - value: "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u041F\u043E\u0441\u0451\u043B\u043E\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6972,14 +7273,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 20
       regionType: 8
       position: {x: -105, y: 21}
       nameHistory:
-      - name: "\u0421\u0435\u0442\u0443\u043D\u044C"
+      - value: "\u0421\u0435\u0442\u0443\u043D\u044C"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -6987,14 +7289,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 21
       regionType: 9
       position: {x: -108, y: 26.5}
       nameHistory:
-      - name: "\u041D\u0435\u043C\u0447\u0438\u043D\u043E\u0432\u043A\u0430"
+      - value: "\u041D\u0435\u043C\u0447\u0438\u043D\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7002,14 +7305,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 22
       regionType: 9
       position: {x: -108, y: 31.5}
       nameHistory:
-      - name: "\u0421\u043A\u043E\u043B\u043A\u043E\u0432\u043E"
+      - value: "\u0421\u043A\u043E\u043B\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7017,14 +7321,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 23
       regionType: 9
       position: {x: -108, y: 36.5}
       nameHistory:
-      - name: "\u0411\u0430\u043A\u043E\u0432\u043A\u0430"
+      - value: "\u0411\u0430\u043A\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7032,14 +7337,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 16
       stationId: 24
       regionType: 9
       position: {x: -108, y: 41.5}
       nameHistory:
-      - name: "\u041E\u0434\u0438\u043D\u0446\u0435\u0432\u043E"
+      - value: "\u041E\u0434\u0438\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7047,7 +7353,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 16
@@ -7249,7 +7556,7 @@ MonoBehaviour:
     closedIn: 3000
   - lineId: 17
     nameHistory:
-    - name: "\u041C\u0426\u0414-2"
+    - value: "\u041C\u0426\u0414-2"
       openIn: 0
       closedIn: 3000
     isLooped: 0
@@ -7263,7 +7570,7 @@ MonoBehaviour:
       regionType: 9
       position: {x: -108, y: 90}
       nameHistory:
-      - name: "\u041D\u0430\u0445\u0430\u0431\u0438\u043D\u043E"
+      - value: "\u041D\u0430\u0445\u0430\u0431\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7271,14 +7578,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 1
       regionType: 9
       position: {x: -108, y: 85}
       nameHistory:
-      - name: "\u0410\u043D\u0438\u043A\u0435\u0435\u0432\u043A\u0430"
+      - value: "\u0410\u043D\u0438\u043A\u0435\u0435\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7286,14 +7594,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 2
       regionType: 9
       position: {x: -108, y: 80}
       nameHistory:
-      - name: "\u041E\u043F\u0430\u043B\u0438\u0445\u0430"
+      - value: "\u041E\u043F\u0430\u043B\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7301,14 +7610,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 3
       regionType: 9
       position: {x: -108, y: 75}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7316,14 +7626,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 4
       regionType: 9
       position: {x: -108, y: 70}
       nameHistory:
-      - name: "\u041F\u0430\u0432\u0448\u0438\u043D\u043E"
+      - value: "\u041F\u0430\u0432\u0448\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7331,14 +7642,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 5
       regionType: 9
       position: {x: -108, y: 65}
       nameHistory:
-      - name: "\u041F\u0435\u043D\u044F\u0433\u0438\u043D\u043E"
+      - value: "\u041F\u0435\u043D\u044F\u0433\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7346,14 +7658,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 6
       regionType: 9
       position: {x: -95, y: 53}
       nameHistory:
-      - name: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
+      - value: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7361,14 +7674,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 7
       regionType: 9
       position: {x: -84, y: 53}
       nameHistory:
-      - name: "\u0422\u0440\u0438\u043A\u043E\u0442\u0430\u0436\u043D\u0430\u044F"
+      - value: "\u0422\u0440\u0438\u043A\u043E\u0442\u0430\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7376,14 +7690,15 @@ MonoBehaviour:
       namePosition: 5
       nameAlignment: 258
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 8
       regionType: 9
       position: {x: -74.5, y: 53}
       nameHistory:
-      - name: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7391,14 +7706,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 9
       regionType: 9
       position: {x: -64.7, y: 53}
       nameHistory:
-      - name: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7406,14 +7722,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 10
       regionType: 2
       position: {x: -52.699997, y: 53}
       nameHistory:
-      - name: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
+      - value: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7421,14 +7738,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 11
       regionType: 2
       position: {x: -40, y: 53}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0431\u0430\u043B\u0442\u0438\u0435\u0446"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0431\u0430\u043B\u0442\u0438\u0435\u0446"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7436,14 +7754,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 12
       regionType: 2
       position: {x: -28.299995, y: 53}
       nameHistory:
-      - name: "\u0413\u0440\u0430\u0436\u0434\u0430\u043D\u0441\u043A\u0430\u044F"
+      - value: "\u0413\u0440\u0430\u0436\u0434\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7451,14 +7770,15 @@ MonoBehaviour:
       namePosition: 2
       nameAlignment: 514
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 13
       regionType: 2
       position: {x: -17, y: 53}
       nameHistory:
-      - name: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7466,14 +7786,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 14
       regionType: 1
       position: {x: 20.199997, y: 44.299995}
       nameHistory:
-      - name: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
+      - value: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7481,14 +7802,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 15
       regionType: 1
       position: {x: 31, y: 33.5}
       nameHistory:
-      - name: "\u041A\u0430\u043B\u0430\u043D\u0447\u0451\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0430\u043B\u0430\u043D\u0447\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7496,14 +7818,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 16
       regionType: 1
       position: {x: 38.300003, y: 11.199997}
       nameHistory:
-      - name: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
+      - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7511,14 +7834,15 @@ MonoBehaviour:
       namePosition: 3
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 17
       regionType: 5
       position: {x: 48, y: 1.5}
       nameHistory:
-      - name: "\u041C\u043E\u0441\u043A\u0432\u0430-\u0422\u043E\u0432\u0430\u0440\u043D\u0430\u044F"
+      - value: "\u041C\u043E\u0441\u043A\u0432\u0430-\u0422\u043E\u0432\u0430\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7526,14 +7850,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 18
       regionType: 5
       position: {x: 54.5, y: -5}
       nameHistory:
-      - name: "\u041A\u0430\u043B\u0438\u0442\u043D\u0438\u043A\u0438"
+      - value: "\u041A\u0430\u043B\u0438\u0442\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7541,14 +7866,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 19
       regionType: 5
       position: {x: 59.5, y: -10}
       nameHistory:
-      - name: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7556,14 +7882,15 @@ MonoBehaviour:
       namePosition: 8
       nameAlignment: 513
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 20
       regionType: 5
       position: {x: 63.600006, y: -16}
       nameHistory:
-      - name: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
+      - value: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7571,14 +7898,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 21
       regionType: 5
       position: {x: 63.600006, y: -43}
       nameHistory:
-      - name: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
+      - value: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7586,14 +7914,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 22
       regionType: 5
       position: {x: 63.600006, y: -50}
       nameHistory:
-      - name: "\u0414\u0435\u043F\u043E"
+      - value: "\u0414\u0435\u043F\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7601,14 +7930,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 23
       regionType: 5
       position: {x: 63.600006, y: -56}
       nameHistory:
-      - name: "\u041F\u0435\u0440\u0435\u0440\u0432\u0430"
+      - value: "\u041F\u0435\u0440\u0435\u0440\u0432\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7616,14 +7946,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 24
       regionType: 5
       position: {x: 63.600006, y: -62}
       nameHistory:
-      - name: "\u041A\u0443\u0440\u044C\u044F\u043D\u043E\u0432\u043E"
+      - value: "\u041A\u0443\u0440\u044C\u044F\u043D\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7631,14 +7962,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 25
       regionType: 6
       position: {x: 63.600006, y: -68}
       nameHistory:
-      - name: "\u041C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0447\u044C\u0435"
+      - value: "\u041C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0447\u044C\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7646,14 +7978,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 26
       regionType: 6
       position: {x: 46.5, y: -72.8}
       nameHistory:
-      - name: "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
+      - value: "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 1
@@ -7661,14 +7994,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 27
       regionType: 6
       position: {x: 39.800003, y: -82}
       nameHistory:
-      - name: "\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u043E\u0435"
+      - value: "\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u043E\u0435"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7676,14 +8010,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 28
       regionType: 6
       position: {x: 39.800003, y: -88}
       nameHistory:
-      - name: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C"
+      - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7691,14 +8026,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 29
       regionType: 6
       position: {x: 39.800003, y: -94}
       nameHistory:
-      - name: "\u0411\u0438\u0442\u0446\u0430"
+      - value: "\u0411\u0438\u0442\u0446\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7706,14 +8042,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 30
       regionType: 6
       position: {x: 39.800003, y: -100}
       nameHistory:
-      - name: "\u0411\u0443\u0442\u043E\u0432\u043E"
+      - value: "\u0411\u0443\u0442\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7721,14 +8058,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 31
       regionType: 6
       position: {x: 39.800003, y: -106}
       nameHistory:
-      - name: "\u0429\u0435\u0440\u0431\u0438\u043D\u043A\u0430"
+      - value: "\u0429\u0435\u0440\u0431\u0438\u043D\u043A\u0430"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7736,14 +8074,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 32
       regionType: 6
       position: {x: 39.800003, y: -112}
       nameHistory:
-      - name: "\u041E\u0441\u0442\u0430\u0444\u044C\u0435\u0432\u043E"
+      - value: "\u041E\u0441\u0442\u0430\u0444\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7751,14 +8090,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 33
       regionType: 6
       position: {x: 39.800003, y: -118}
       nameHistory:
-      - name: "\u0421\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u0430\u044F"
+      - value: "\u0421\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7766,14 +8106,15 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     - lineId: 17
       stationId: 34
       regionType: 6
       position: {x: 39.800003, y: -124}
       nameHistory:
-      - name: "\u041F\u043E\u0434\u043E\u043B\u044C\u0441\u043A"
+      - value: "\u041F\u043E\u0434\u043E\u043B\u044C\u0441\u043A"
         openIn: 0
         closedIn: 3000
       m_override: 0
@@ -7781,7 +8122,8 @@ MonoBehaviour:
       namePosition: 0
       nameAlignment: 0
       history:
-      - openIn: 0
+      - value: 1
+        openIn: 0
         closedIn: 3000
     connections:
     - lineId: 17

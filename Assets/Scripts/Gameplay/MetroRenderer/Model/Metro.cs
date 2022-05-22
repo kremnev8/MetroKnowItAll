@@ -362,35 +362,17 @@ namespace Gameplay.MetroDisplay.Model
                 Metro metro = (Metro)target;
                 foreach (MetroLine line in metro.lines)
                 {
-                    line.nameHistory = new[]
-                    {
-                        new NameDateRange(line.currentName, 0, 3000)
-                    };
-
                     foreach (MetroStation station in line.stations)
                     {
-                        station.history = new[]
+                        station.history = new List<TypeDateRange<bool>>
                         {
-                            new DateRange(0, 3000)
-                        };
-                        station.nameHistory = new[]
-                        {
-                            new NameDateRange(station.currentName, 0, 3000)
+                            new TypeDateRange<bool>(false, 0, 3000)
                         };
                     }
 
-                    foreach (MetroConnection connection in line.connections)
-                    {
-                        connection.openIn = 0;
-                        connection.closedIn = 3000;
-                    }
                 }
                 
-                foreach (MetroCrossing connection in metro.crossings)
-                {
-                    connection.openIn = 0;
-                    connection.closedIn = 3000;
-                }
+                EditorUtility.SetDirty(metro);
             }
             
             if (GUILayout.Button("Import Region Data"))
@@ -434,6 +416,7 @@ namespace Gameplay.MetroDisplay.Model
                 string path = EditorUtility.OpenFilePanel("Load metro data", "", "json");
                 string json = File.ReadAllText(path, Encoding.UTF8);
                 JsonUtility.FromJsonOverwrite(json, metro);
+                EditorUtility.SetDirty(metro);
             }
 
             if (GUILayout.Button("Export"))

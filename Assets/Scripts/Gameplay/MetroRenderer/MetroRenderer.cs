@@ -20,8 +20,7 @@ namespace Gameplay.MetroDisplay
     [ExecuteInEditMode]
     public class MetroRenderer : MonoBehaviour
     {
-        
-#if UNITY_EDITOR        
+#if UNITY_EDITOR
         public static MetroRenderer instance;
 #endif
 
@@ -34,9 +33,24 @@ namespace Gameplay.MetroDisplay
                 {
                     return Simulation.GetModel<GameModel>().renderer.year;
                 }
+
                 return instance != null ? instance.year : 2999;
 #else
-                return Simulation.GetModel<GameModel>().renderer.year;           
+                return Simulation.GetModel<GameModel>().renderer.year;
+#endif
+            }
+            set
+            {
+#if UNITY_EDITOR
+                if (Application.isPlaying)
+                {
+                    Simulation.GetModel<GameModel>().renderer.year = value;
+                }
+                else if (instance != null)
+                {
+                    instance.year = value;
+                }
+#else
 #endif
             }
         }
@@ -56,21 +70,27 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private HighlightDisplay highlightDisplay;
 
         public Metro metro;
-        
-        [Range(1935, 2022)]
-        public int year;
+
+        [Range(1935, 2022)] public int year;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
         private List<CrossingDisplay> crossingDisplays = new List<CrossingDisplay>();
-        internal bool dirty;
 
-        public Region focusRegion;
+#if UNITY_EDITOR
+        public bool dirty;
+        public bool veryDirty;
+#endif
+
+        public bool trueView;
         
+        public Region focusRegion;
+
         public bool expectedLabelState = true;
 
         private GameModel model;
         private GameObject m_stationSelect;
+
         public GameObject stationSelect
         {
             get
@@ -83,15 +103,16 @@ namespace Gameplay.MetroDisplay
                 return m_stationSelect;
             }
         }
-        
+
         private static readonly int color = Shader.PropertyToID("_Color");
         private static readonly int focusAreaProp = Shader.PropertyToID("_FocusArea");
-        
 
-#if UNITY_EDITOR   
+
+#if UNITY_EDITOR
         private void OnEnable()
         {
             instance = this;
+            veryDirty = true;
         }
 #endif
 
@@ -108,14 +129,21 @@ namespace Gameplay.MetroDisplay
             model = Simulation.GetModel<GameModel>();
         }
 
+#if UNITY_EDITOR
         private void Update()
         {
-            if (dirty)
+            if (veryDirty)
+            {
+                Regenerate();
+                veryDirty = false;
+            }
+            else if (dirty)
             {
                 Refresh();
                 dirty = false;
             }
         }
+#endif
 
         /// <summary>
         /// Recreate all display meshes and objects
@@ -130,7 +158,7 @@ namespace Gameplay.MetroDisplay
                 {
                     foreach (MetroStation station in line.stations)
                     {
-                        if (station.history.IsOpen(year))
+                        if (station.history.GetCurrent(currentYear) || !trueView)
                         {
                             Vector3 point = transform.TransformPoint(station.position);
                             StationDisplay stationDisplay = Instantiate(stationPrefab, point, Quaternion.identity, stationRoot);
@@ -173,12 +201,12 @@ namespace Gameplay.MetroDisplay
             {
                 display.Refresh();
             }
-            
+
             foreach (CrossingDisplay display in crossingDisplays)
             {
                 display.Refresh();
             }
-            
+
             highlightDisplay.Refresh();
         }
 
@@ -223,7 +251,7 @@ namespace Gameplay.MetroDisplay
                 display.SetLabelVisible(false, GameController.theme.textColor);
             }
         }
-        
+
         /// <summary>
         /// Show all station labels
         /// </summary>
@@ -236,15 +264,15 @@ namespace Gameplay.MetroDisplay
                     Color textColor = GameController.theme.textColor;
                     if (model.statistics.current.unlockedStations.IsUnlocked(display.station))
                     {
-                      //  textColor = GameController.theme.rightAnswer;
+                        //  textColor = GameController.theme.rightAnswer;
                     }
-                    
+
                     display.SetLabelVisible(true, textColor);
                 }
             }
             catch (Exception e)
             {
-               Debug.Log(e.Message);
+                Debug.Log(e.Message);
             }
         }
 
@@ -254,8 +282,8 @@ namespace Gameplay.MetroDisplay
         public void ClearFocus()
         {
             focusRegion = Region.everywhere;
-            
-            foreach (LineDisplay lineDisplay in lineDisplays)  
+
+            foreach (LineDisplay lineDisplay in lineDisplays)
             {
                 lineDisplay.SetFocused(true);
             }
@@ -265,7 +293,7 @@ namespace Gameplay.MetroDisplay
                 stationDisplay.SetFocused(true);
                 stationDisplay.SetInitialVisible(!stationDisplay.station.hideName);
             }
-            
+
             foreach (CrossingDisplay display in crossingDisplays)
             {
                 display.SetFocused(true);
@@ -309,7 +337,7 @@ namespace Gameplay.MetroDisplay
             else
             {
                 focusRegion = region;
-                
+
                 foreach (LineDisplay lineDisplay in lineDisplays)
                 {
                     lineDisplay.SetFocused(true);
@@ -328,7 +356,7 @@ namespace Gameplay.MetroDisplay
                 {
                     display.SetFocused(true);
                 }
-                
+
                 highlightDisplay.region = focusRegion;
                 highlightDisplay.Refresh();
             }
@@ -350,19 +378,18 @@ namespace Gameplay.MetroDisplay
                         {
                             return !station.hideName;
                         }
+
                         return true;
                     }));
                 }
 
                 return current;
-
             }
             catch (Exception e)
             {
                 return current;
             }
         }
-        
     }
 }
 
@@ -371,19 +398,20 @@ namespace Gameplay.MetroDisplay
 public class MetroEditor : Editor
 {
     public RegionType regionType;
+
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
-        MetroRenderer renderer = (MetroRenderer) target;
+        MetroRenderer renderer = (MetroRenderer)target;
 
         regionType = (RegionType)EditorGUILayout.EnumPopup("Select region", regionType);
-        
+
         if (GUILayout.Button("Set Focus"))
         {
             renderer.FocusRegion(new Region(regionType, -1));
         }
-        
+
         if (GUILayout.Button("Toggle Names"))
         {
             if (renderer.expectedLabelState)
@@ -407,7 +435,7 @@ public class MetroEditor : Editor
         {
             renderer.Regenerate();
         }
-        
+
         if (GUILayout.Button("Refresh"))
         {
             renderer.Refresh();

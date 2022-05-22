@@ -2,6 +2,7 @@
 using System.Linq;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
+using Util;
 
 namespace Gameplay.MetroDisplay
 {
@@ -25,6 +26,9 @@ namespace Gameplay.MetroDisplay
         
         public void Refresh()
         {
+            bool isOpen = line.IsOpen(MetroRenderer.currentYear);
+            gameObject.SetActive(isOpen);
+            
             foreach (LineSubDisplay subDisplay in subDisplays)
             {
                 subDisplay.Refresh();
@@ -53,7 +57,12 @@ namespace Gameplay.MetroDisplay
 
             List<MetroConnection> connections = new List<MetroConnection>(
                 line.connections
-                    .Where(connection => connection.IsOpen(MetroRenderer.currentYear)));
+                    .Where(connection =>
+                    {
+                        return line.stations[connection.startStationId].history.GetCurrent(MetroRenderer.currentYear) &&
+                               line.stations[connection.endStationId].history.GetCurrent(MetroRenderer.currentYear) &&
+                                connection.IsOpen(MetroRenderer.currentYear);
+                    }));
 
             while (connections.Count > 0)
             {

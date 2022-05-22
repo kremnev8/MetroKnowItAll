@@ -35,31 +35,38 @@ namespace Util
             }
         }
 
-        
-        public static bool IsOpen(this DateRange[] range, int year)
+        public static T GetCurrent<T>(this List<TypeDateRange<T>> range, int year)
         {
-            foreach (DateRange entry in range)
+            foreach (TypeDateRange<T> entry in range)
             {
-                if (year >= entry.openIn && year <= entry.closedIn)
+                if (year >= entry.openIn && year < entry.closedIn)
                 {
-                    return true;
+                    return entry.value;
                 }
             }
 
-            return false;
+            return default;
         }
 
-        public static string GetCurrentName(this NameDateRange[] range, int year)
+        public static void Insert<T>(this List<TypeDateRange<T>> list, int year, T value)
         {
-            foreach (NameDateRange entry in range)
-            {
-                if (year >= entry.openIn && year <= entry.closedIn)
-                {
-                    return entry.name;
-                }
-            }
+            int index = list.FindIndex(range => range.InScope(year));
+            TypeDateRange<T> original = list[index];
+            TypeDateRange<T> first = new TypeDateRange<T>(original.value, original.openIn, year);
+            TypeDateRange<T> second = new TypeDateRange<T>(value, year, original.closedIn);
+            list[index] = first;
+            list.Insert(index + 1, second);
+        }
 
-            return "Нет Имени!";
+        public static void Remove<T>(this List<TypeDateRange<T>> list, int year)
+        {
+            int startIndex = list.FindIndex(range => range.closedIn == year);
+            int endIndex = list.FindIndex(range => range.openIn == year);
+
+            TypeDateRange<T> first = list[startIndex];
+            first.closedIn = list[endIndex].closedIn;
+            list[startIndex] = first;
+            list.RemoveAt(endIndex);
         }
     }
 }

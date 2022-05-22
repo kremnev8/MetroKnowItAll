@@ -236,7 +236,10 @@ namespace Gameplay.MetroDisplay
             line = _line;
 
             Refresh();
-            //highlight.SetActive(false);
+            if (!Application.isPlaying)
+            {
+                highlight.SetActive(false);
+            }
         }
 
         public bool IsFocused(MetroRenderer metroRenderer)

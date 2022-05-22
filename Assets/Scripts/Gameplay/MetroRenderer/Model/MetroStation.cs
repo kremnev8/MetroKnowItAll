@@ -17,7 +17,7 @@ namespace Gameplay.MetroDisplay.Model
         
         public GlobalId globalId => new GlobalId(lineId, stationId);
         public int index => lineId * 100 + stationId;
-        public string currentName => nameHistory.GetCurrentName(MetroRenderer.currentYear);
+        public string currentName => nameHistory.GetCurrent(MetroRenderer.currentYear);
         
         [HideInInspector]
         public byte lineId;
@@ -25,7 +25,7 @@ namespace Gameplay.MetroDisplay.Model
         public RegionType regionType;
         
         public Vector2 position;
-        public NameDateRange[] nameHistory;
+        public List<TypeDateRange<string>> nameHistory;
 
         [Header("Override Name Alignment")]
         public bool m_override;
@@ -37,22 +37,9 @@ namespace Gameplay.MetroDisplay.Model
         [ShowWhen("m_override")]
         public TextAlignmentOptions nameAlignment;
 
-        public DateRange[] history;
-
+        public List<TypeDateRange<bool>> history;
+        
         public string editorName => $"{(int)globalId} {currentName}";
         public string displayName => currentName;
-    }
-
-    [Serializable]
-    public struct DateRange
-    {
-        public int openIn;
-        public int closedIn;
-
-        public DateRange(int openIn, int closedIn)
-        {
-            this.openIn = openIn;
-            this.closedIn = closedIn;
-        }
     }
 }
