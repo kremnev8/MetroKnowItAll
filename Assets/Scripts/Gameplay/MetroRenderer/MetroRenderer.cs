@@ -25,6 +25,23 @@ namespace Gameplay.MetroDisplay
         public static MetroRenderer instance;
 #endif
 
+        public static int currentYear
+        {
+            get
+            {
+#if UNITY_EDITOR
+                if (Application.isPlaying)
+                {
+                    return Simulation.GetModel<GameModel>().renderer.year;
+                }
+                return instance != null ? instance.year : 2999;
+#else
+                return Simulation.GetModel<GameModel>().renderer.year;           
+#endif
+            }
+        }
+
+
         [SerializeField] private Transform stationRoot;
         [SerializeField] private Transform lineRoot;
         [SerializeField] private Transform crossingRoot;
@@ -39,6 +56,7 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private HighlightDisplay highlightDisplay;
 
         public Metro metro;
+        public int year;
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();

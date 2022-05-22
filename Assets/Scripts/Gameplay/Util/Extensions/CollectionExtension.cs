@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Gameplay.MetroDisplay.Model;
 
 namespace Util
 {
-    public static class DictionaryExtension
+    public static class CollectionExtension
     {
         /// <summary>
         /// Utility method to try get a value from dictionary.
@@ -32,6 +33,20 @@ namespace Util
             {
                 dictionary.Add(key, value);
             }
+        }
+
+
+        public static string GetCurrentName(this NameDateRange[] range, int year)
+        {
+            foreach (NameDateRange entry in range)
+            {
+                if (year >= entry.openIn && year <= entry.closedIn)
+                {
+                    return entry.name;
+                }
+            }
+
+            return "Нет Имени!";
         }
     }
 }
