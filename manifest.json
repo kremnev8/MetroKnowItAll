@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.MetroRenderer.html",
-          "hash": "6Z02Oae1bFpb9IQKhM+2UmK8g6XMljYGJO5xEw+eebU="
+          "hash": "xQWTiwu97dy2OoW902l5SL8m3WUuw58iUUOylOrhuSc="
         }
       },
       "is_incremental": false,
@@ -484,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.MetroConnection.html",
-          "hash": "i3+kdN0nQglTZJXjo/2weHkqcOngxOtsBVaRCayJkLw="
+          "hash": "AYnItWDc63KSNe2n0m58VONPIkNwqgVQjapcy6PJ0TY="
         }
       },
       "is_incremental": false,
@@ -496,7 +496,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.MetroCrossing.html",
-          "hash": "vLDMLaIl1ufGUySrFep0IN1Kv4nI9PEnH2CtXnK4938="
+          "hash": "fTAp0retgSTXxnbWGwLneP2+/EZw1v5aeWS4Gnhj8+w="
         }
       },
       "is_incremental": false,
@@ -508,7 +508,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.MetroLine.html",
-          "hash": "aK+WeCfGWUwlmOVKAvkGE+RJR1z5tvb+jg4d1Uxb3rw="
+          "hash": "D4dLcxt/9PvQ1z9A00k4//M9AfqEOLRIg7mcSf7N3KI="
         }
       },
       "is_incremental": false,
@@ -520,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.MetroStation.html",
-          "hash": "SoEsYUMzv4Hgq/4maDTP7kfyTmwJFI6NR3NdXdxvPOU="
+          "hash": "J3ln/WgxgV1ybo7ok3Ys9bZiabM4sWkGXizlLl4wFho="
         }
       },
       "is_incremental": false,
@@ -564,11 +564,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.MetroDisplay.Model.TypeDateRange-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html",
+          "hash": "p5sogjgh5JNRr+RLjNVbS3c1vTTaxy5NrlpmFnpJb9s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.MetroDisplay.Model.yml",
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.html",
-          "hash": "ohXBDb/FEuZwxdWOap2o9kKdlJqe4hwKCEfuts2whMY="
+          "hash": "GweIixVuKX3Kt4hSeQlJkjdsmaJ/WpyW26O9z+xKJxs="
         }
       },
       "is_incremental": false,
@@ -1248,11 +1260,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Util.DictionaryExtension.yml",
+      "source_relative_path": "api/Util.CollectionExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Util.DictionaryExtension.html",
-          "hash": "khRqiG7BEs//j7rKLbVuGx2qEb6iOfxXbShhTayKVvs="
+          "relative_path": "api/Util.CollectionExtension.html",
+          "hash": "1UEEvbsQqAgdg9GQxZ82PpJlwDFDy2cETnVSPziNcIE="
         }
       },
       "is_incremental": false,
@@ -1468,7 +1480,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.html",
-          "hash": "YrNxw08PRdl+s+h9qtNKULfum/4g9Y95WSTqJBDgTgI="
+          "hash": "cX8IGI0FQ77zEWIDJpmvAH2UwQ1nCUK+KkV2a2lhRjo="
         }
       },
       "is_incremental": false,
@@ -1480,7 +1492,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "OA3ipAGo9WwIt0SYWZ+HxuJHgfbKPUV7/JYwusslQHg="
+          "hash": "v+su3W62+Exu/LG19A0HPJ2mRv2AIR5TRjnjUTDnuUg="
         }
       },
       "is_incremental": false,
@@ -1897,7 +1909,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 121,
+          "total_file_count": 122,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

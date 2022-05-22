@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class DictionaryExtension
+    <title>Struct TypeDateRange&lt;T&gt;
    | Metro Connoisseur documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class DictionaryExtension
+    <meta name="title" content="Struct TypeDateRange&lt;T&gt;
    | Metro Connoisseur documentation ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,37 +78,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Util.DictionaryExtension">
+            <article class="content wrap" id="_content" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1">
   
   
-  <h1 id="Util_DictionaryExtension" data-uid="Util.DictionaryExtension" class="text-break">Class DictionaryExtension
+  <h1 id="Gameplay_MetroDisplay_Model_TypeDateRange_1" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1" class="text-break">Struct TypeDateRange&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">DictionaryExtension</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Util.html">Util</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Gameplay.MetroDisplay.Model.html">Gameplay.MetroDisplay.Model</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Util_DictionaryExtension_syntax">Syntax</h5>
+  <h5 id="Gameplay_MetroDisplay_Model_TypeDateRange_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DictionaryExtension</code></pre>
+    <pre><code class="lang-csharp hljs">public struct TypeDateRange&lt;T&gt;</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Util_DictionaryExtension_TryGet_" data-uid="Util.DictionaryExtension.TryGet*"></a>
-  <h4 id="Util_DictionaryExtension_TryGet__2_Dictionary___0___1____0_" data-uid="Util.DictionaryExtension.TryGet``2(Dictionary{``0,``1},``0)">TryGet&lt;TK, TV&gt;(Dictionary&lt;TK, TV&gt;, TK)</h4>
-  <div class="markdown level1 summary"><p>Utility method to try get a value from dictionary.
-If dictionary has no such key, a default value is returned</p>
-</div>
+  <a id="Gameplay_MetroDisplay_Model_TypeDateRange_1__ctor_" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_TypeDateRange_1__ctor__0_System_Int32_System_Int32_" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor(`0,System.Int32,System.Int32)">TypeDateRange(T, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TV TryGet&lt;TK, TV&gt;(this Dictionary&lt;TK, TV&gt; dictionary, TK key)</code></pre>
+    <pre><code class="lang-csharp hljs">public TypeDateRange(T value, int openIn, int closedIn)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -121,13 +129,121 @@ If dictionary has no such key, a default value is returned</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;TK, TV&gt;</td>
-        <td><span class="parametername">dictionary</span></td>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">TK</span></td>
-        <td><span class="parametername">key</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">openIn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">closedIn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Gameplay_MetroDisplay_Model_TypeDateRange_1_closedIn" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.closedIn">closedIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int closedIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_MetroDisplay_Model_TypeDateRange_1_openIn" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.openIn">openIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int openIn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_MetroDisplay_Model_TypeDateRange_1_value" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.value">value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T value</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Gameplay_MetroDisplay_Model_TypeDateRange_1_InScope_" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_TypeDateRange_1_InScope_System_Int32_" data-uid="Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope(System.Int32)">InScope(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InScope(int year)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">year</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -142,84 +258,7 @@ If dictionary has no such key, a default value is returned</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TV</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TV</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Util_DictionaryExtension_TrySet_" data-uid="Util.DictionaryExtension.TrySet*"></a>
-  <h4 id="Util_DictionaryExtension_TrySet__2_Dictionary___0___1____0___1_" data-uid="Util.DictionaryExtension.TrySet``2(Dictionary{``0,``1},``0,``1)">TrySet&lt;TK, TV&gt;(Dictionary&lt;TK, TV&gt;, TK, TV)</h4>
-  <div class="markdown level1 summary"><p>Utility method to try set a value in dictionary.
-If dictionary has no such key, it is added</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void TrySet&lt;TK, TV&gt;(this Dictionary&lt;TK, TV&gt; dictionary, TK key, TV value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;TK, TV&gt;</td>
-        <td><span class="parametername">dictionary</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">TK</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">TV</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TV</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>

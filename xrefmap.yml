@@ -2758,6 +2758,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.MetroRenderer.ClearFocus
   nameWithType: MetroRenderer.ClearFocus
+- uid: Gameplay.MetroDisplay.MetroRenderer.currentYear
+  name: currentYear
+  href: api/Gameplay.MetroDisplay.MetroRenderer.html#Gameplay_MetroDisplay_MetroRenderer_currentYear
+  commentId: P:Gameplay.MetroDisplay.MetroRenderer.currentYear
+  fullName: Gameplay.MetroDisplay.MetroRenderer.currentYear
+  nameWithType: MetroRenderer.currentYear
+- uid: Gameplay.MetroDisplay.MetroRenderer.currentYear*
+  name: currentYear
+  href: api/Gameplay.MetroDisplay.MetroRenderer.html#Gameplay_MetroDisplay_MetroRenderer_currentYear_
+  commentId: Overload:Gameplay.MetroDisplay.MetroRenderer.currentYear
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.MetroRenderer.currentYear
+  nameWithType: MetroRenderer.currentYear
 - uid: Gameplay.MetroDisplay.MetroRenderer.expectedLabelState
   name: expectedLabelState
   href: api/Gameplay.MetroDisplay.MetroRenderer.html#Gameplay_MetroDisplay_MetroRenderer_expectedLabelState
@@ -2880,6 +2893,18 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.MetroRenderer.stationSelect
   nameWithType: MetroRenderer.stationSelect
+- uid: Gameplay.MetroDisplay.MetroRenderer.trueView
+  name: trueView
+  href: api/Gameplay.MetroDisplay.MetroRenderer.html#Gameplay_MetroDisplay_MetroRenderer_trueView
+  commentId: F:Gameplay.MetroDisplay.MetroRenderer.trueView
+  fullName: Gameplay.MetroDisplay.MetroRenderer.trueView
+  nameWithType: MetroRenderer.trueView
+- uid: Gameplay.MetroDisplay.MetroRenderer.year
+  name: year
+  href: api/Gameplay.MetroDisplay.MetroRenderer.html#Gameplay_MetroDisplay_MetroRenderer_year
+  commentId: F:Gameplay.MetroDisplay.MetroRenderer.year
+  fullName: Gameplay.MetroDisplay.MetroRenderer.year
+  nameWithType: MetroRenderer.year
 - uid: Gameplay.MetroDisplay.Model
   name: Gameplay.MetroDisplay.Model
   href: api/Gameplay.MetroDisplay.Model.html
@@ -3208,6 +3233,12 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
   fullName: Gameplay.MetroDisplay.Model.MetroConnection.bendPoint
   nameWithType: MetroConnection.bendPoint
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.closedIn
+  name: closedIn
+  href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_closedIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.closedIn
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.closedIn
+  nameWithType: MetroConnection.closedIn
 - uid: Gameplay.MetroDisplay.Model.MetroConnection.displayName
   name: displayName
   href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_displayName
@@ -3240,18 +3271,31 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.endStationId
   fullName: Gameplay.MetroDisplay.Model.MetroConnection.endStationId
   nameWithType: MetroConnection.endStationId
-- uid: Gameplay.MetroDisplay.Model.MetroConnection.isOpen
-  name: isOpen
-  href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_isOpen
-  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.isOpen
-  fullName: Gameplay.MetroDisplay.Model.MetroConnection.isOpen
-  nameWithType: MetroConnection.isOpen
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.IsOpen(System.Int32)
+  name: IsOpen(Int32)
+  href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_IsOpen_System_Int32_
+  commentId: M:Gameplay.MetroDisplay.Model.MetroConnection.IsOpen(System.Int32)
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.IsOpen(System.Int32)
+  nameWithType: MetroConnection.IsOpen(Int32)
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.IsOpen*
+  name: IsOpen
+  href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_IsOpen_
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroConnection.IsOpen
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.IsOpen
+  nameWithType: MetroConnection.IsOpen
 - uid: Gameplay.MetroDisplay.Model.MetroConnection.lineId
   name: lineId
   href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_lineId
   commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.lineId
   fullName: Gameplay.MetroDisplay.Model.MetroConnection.lineId
   nameWithType: MetroConnection.lineId
+- uid: Gameplay.MetroDisplay.Model.MetroConnection.openIn
+  name: openIn
+  href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_openIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroConnection.openIn
+  fullName: Gameplay.MetroDisplay.Model.MetroConnection.openIn
+  nameWithType: MetroConnection.openIn
 - uid: Gameplay.MetroDisplay.Model.MetroConnection.overrideBend
   name: overrideBend
   href: api/Gameplay.MetroDisplay.Model.MetroConnection.html#Gameplay_MetroDisplay_Model_MetroConnection_overrideBend
@@ -3289,18 +3333,37 @@ references:
   commentId: T:Gameplay.MetroDisplay.Model.MetroCrossing
   fullName: Gameplay.MetroDisplay.Model.MetroCrossing
   nameWithType: MetroCrossing
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.closedIn
+  name: closedIn
+  href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_closedIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.closedIn
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.closedIn
+  nameWithType: MetroCrossing.closedIn
 - uid: Gameplay.MetroDisplay.Model.MetroCrossing.isAbove
   name: isAbove
   href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_isAbove
   commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.isAbove
   fullName: Gameplay.MetroDisplay.Model.MetroCrossing.isAbove
   nameWithType: MetroCrossing.isAbove
-- uid: Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
-  name: isOpen
-  href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_isOpen
-  commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
-  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.isOpen
-  nameWithType: MetroCrossing.isOpen
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen(System.Int32)
+  name: IsOpen(Int32)
+  href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_IsOpen_System_Int32_
+  commentId: M:Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen(System.Int32)
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen(System.Int32)
+  nameWithType: MetroCrossing.IsOpen(Int32)
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen*
+  name: IsOpen
+  href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_IsOpen_
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.IsOpen
+  nameWithType: MetroCrossing.IsOpen
+- uid: Gameplay.MetroDisplay.Model.MetroCrossing.openIn
+  name: openIn
+  href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_openIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroCrossing.openIn
+  fullName: Gameplay.MetroDisplay.Model.MetroCrossing.openIn
+  nameWithType: MetroCrossing.openIn
 - uid: Gameplay.MetroDisplay.Model.MetroCrossing.stationsGlobalIds
   name: stationsGlobalIds
   href: api/Gameplay.MetroDisplay.Model.MetroCrossing.html#Gameplay_MetroDisplay_Model_MetroCrossing_stationsGlobalIds
@@ -3313,12 +3376,31 @@ references:
   commentId: T:Gameplay.MetroDisplay.Model.MetroLine
   fullName: Gameplay.MetroDisplay.Model.MetroLine
   nameWithType: MetroLine
+- uid: Gameplay.MetroDisplay.Model.MetroLine.closedIn
+  name: closedIn
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_closedIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.closedIn
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.closedIn
+  nameWithType: MetroLine.closedIn
 - uid: Gameplay.MetroDisplay.Model.MetroLine.connections
   name: connections
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_connections
   commentId: F:Gameplay.MetroDisplay.Model.MetroLine.connections
   fullName: Gameplay.MetroDisplay.Model.MetroLine.connections
   nameWithType: MetroLine.connections
+- uid: Gameplay.MetroDisplay.Model.MetroLine.currentName
+  name: currentName
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_currentName
+  commentId: P:Gameplay.MetroDisplay.Model.MetroLine.currentName
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.currentName
+  nameWithType: MetroLine.currentName
+- uid: Gameplay.MetroDisplay.Model.MetroLine.currentName*
+  name: currentName
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_currentName_
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroLine.currentName
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.currentName
+  nameWithType: MetroLine.currentName
 - uid: Gameplay.MetroDisplay.Model.MetroLine.curveCenter
   name: curveCenter
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_curveCenter
@@ -3351,12 +3433,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.Model.MetroLine.editorName
   nameWithType: MetroLine.editorName
-- uid: Gameplay.MetroDisplay.Model.MetroLine.hideName
-  name: hideName
-  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_hideName
-  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.hideName
-  fullName: Gameplay.MetroDisplay.Model.MetroLine.hideName
-  nameWithType: MetroLine.hideName
 - uid: Gameplay.MetroDisplay.Model.MetroLine.index
   name: index
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_index
@@ -3376,6 +3452,19 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroLine.isLooped
   fullName: Gameplay.MetroDisplay.Model.MetroLine.isLooped
   nameWithType: MetroLine.isLooped
+- uid: Gameplay.MetroDisplay.Model.MetroLine.IsOpen(System.Int32)
+  name: IsOpen(Int32)
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_IsOpen_System_Int32_
+  commentId: M:Gameplay.MetroDisplay.Model.MetroLine.IsOpen(System.Int32)
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.IsOpen(System.Int32)
+  nameWithType: MetroLine.IsOpen(Int32)
+- uid: Gameplay.MetroDisplay.Model.MetroLine.IsOpen*
+  name: IsOpen
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_IsOpen_
+  commentId: Overload:Gameplay.MetroDisplay.Model.MetroLine.IsOpen
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.IsOpen
+  nameWithType: MetroLine.IsOpen
 - uid: Gameplay.MetroDisplay.Model.MetroLine.lineColor
   name: lineColor
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_lineColor
@@ -3388,24 +3477,30 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroLine.lineId
   fullName: Gameplay.MetroDisplay.Model.MetroLine.lineId
   nameWithType: MetroLine.lineId
-- uid: Gameplay.MetroDisplay.Model.MetroLine.name
-  name: name
-  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_name
-  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.name
-  fullName: Gameplay.MetroDisplay.Model.MetroLine.name
-  nameWithType: MetroLine.name
 - uid: Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
   name: nameAlignment
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_nameAlignment
   commentId: F:Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
   fullName: Gameplay.MetroDisplay.Model.MetroLine.nameAlignment
   nameWithType: MetroLine.nameAlignment
+- uid: Gameplay.MetroDisplay.Model.MetroLine.nameHistory
+  name: nameHistory
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_nameHistory
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.nameHistory
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.nameHistory
+  nameWithType: MetroLine.nameHistory
 - uid: Gameplay.MetroDisplay.Model.MetroLine.namePosition
   name: namePosition
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_namePosition
   commentId: F:Gameplay.MetroDisplay.Model.MetroLine.namePosition
   fullName: Gameplay.MetroDisplay.Model.MetroLine.namePosition
   nameWithType: MetroLine.namePosition
+- uid: Gameplay.MetroDisplay.Model.MetroLine.openIn
+  name: openIn
+  href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_openIn
+  commentId: F:Gameplay.MetroDisplay.Model.MetroLine.openIn
+  fullName: Gameplay.MetroDisplay.Model.MetroLine.openIn
+  nameWithType: MetroLine.openIn
 - uid: Gameplay.MetroDisplay.Model.MetroLine.simpleLine
   name: simpleLine
   href: api/Gameplay.MetroDisplay.Model.MetroLine.html#Gameplay_MetroDisplay_Model_MetroLine_simpleLine
@@ -3449,12 +3544,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.Model.MetroStation.currentName
   nameWithType: MetroStation.currentName
-- uid: Gameplay.MetroDisplay.Model.MetroStation.currentNameIndex
-  name: currentNameIndex
-  href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_currentNameIndex
-  commentId: F:Gameplay.MetroDisplay.Model.MetroStation.currentNameIndex
-  fullName: Gameplay.MetroDisplay.Model.MetroStation.currentNameIndex
-  nameWithType: MetroStation.currentNameIndex
 - uid: Gameplay.MetroDisplay.Model.MetroStation.displayName
   name: displayName
   href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_displayName
@@ -3500,6 +3589,12 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroStation.hideName
   fullName: Gameplay.MetroDisplay.Model.MetroStation.hideName
   nameWithType: MetroStation.hideName
+- uid: Gameplay.MetroDisplay.Model.MetroStation.history
+  name: history
+  href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_history
+  commentId: F:Gameplay.MetroDisplay.Model.MetroStation.history
+  fullName: Gameplay.MetroDisplay.Model.MetroStation.history
+  nameWithType: MetroStation.history
 - uid: Gameplay.MetroDisplay.Model.MetroStation.index
   name: index
   href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_index
@@ -3513,12 +3608,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.Model.MetroStation.index
   nameWithType: MetroStation.index
-- uid: Gameplay.MetroDisplay.Model.MetroStation.isOpen
-  name: isOpen
-  href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_isOpen
-  commentId: F:Gameplay.MetroDisplay.Model.MetroStation.isOpen
-  fullName: Gameplay.MetroDisplay.Model.MetroStation.isOpen
-  nameWithType: MetroStation.isOpen
 - uid: Gameplay.MetroDisplay.Model.MetroStation.lineId
   name: lineId
   href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_lineId
@@ -3537,18 +3626,18 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.MetroStation.nameAlignment
   fullName: Gameplay.MetroDisplay.Model.MetroStation.nameAlignment
   nameWithType: MetroStation.nameAlignment
+- uid: Gameplay.MetroDisplay.Model.MetroStation.nameHistory
+  name: nameHistory
+  href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_nameHistory
+  commentId: F:Gameplay.MetroDisplay.Model.MetroStation.nameHistory
+  fullName: Gameplay.MetroDisplay.Model.MetroStation.nameHistory
+  nameWithType: MetroStation.nameHistory
 - uid: Gameplay.MetroDisplay.Model.MetroStation.namePosition
   name: namePosition
   href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_namePosition
   commentId: F:Gameplay.MetroDisplay.Model.MetroStation.namePosition
   fullName: Gameplay.MetroDisplay.Model.MetroStation.namePosition
   nameWithType: MetroStation.namePosition
-- uid: Gameplay.MetroDisplay.Model.MetroStation.names
-  name: names
-  href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_names
-  commentId: F:Gameplay.MetroDisplay.Model.MetroStation.names
-  fullName: Gameplay.MetroDisplay.Model.MetroStation.names
-  nameWithType: MetroStation.names
 - uid: Gameplay.MetroDisplay.Model.MetroStation.position
   name: position
   href: api/Gameplay.MetroDisplay.Model.MetroStation.html#Gameplay_MetroDisplay_Model_MetroStation_position
@@ -3848,6 +3937,73 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.RegionType.WEST
   fullName: Gameplay.MetroDisplay.Model.RegionType.WEST
   nameWithType: RegionType.WEST
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1
+  name: TypeDateRange<T>
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html
+  commentId: T:Gameplay.MetroDisplay.Model.TypeDateRange`1
+  name.vb: TypeDateRange(Of T)
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T)
+  nameWithType: TypeDateRange<T>
+  nameWithType.vb: TypeDateRange(Of T)
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor(`0,System.Int32,System.Int32)
+  name: TypeDateRange(T, Int32, Int32)
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1__ctor__0_System_Int32_System_Int32_
+  commentId: M:Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor(`0,System.Int32,System.Int32)
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.TypeDateRange(T, System.Int32, System.Int32)
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).TypeDateRange(T, System.Int32, System.Int32)
+  nameWithType: TypeDateRange<T>.TypeDateRange(T, Int32, Int32)
+  nameWithType.vb: TypeDateRange(Of T).TypeDateRange(T, Int32, Int32)
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor*
+  name: TypeDateRange
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1__ctor_
+  commentId: Overload:Gameplay.MetroDisplay.Model.TypeDateRange`1.#ctor
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.TypeDateRange
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).TypeDateRange
+  nameWithType: TypeDateRange<T>.TypeDateRange
+  nameWithType.vb: TypeDateRange(Of T).TypeDateRange
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.closedIn
+  name: closedIn
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1_closedIn
+  commentId: F:Gameplay.MetroDisplay.Model.TypeDateRange`1.closedIn
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.closedIn
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).closedIn
+  nameWithType: TypeDateRange<T>.closedIn
+  nameWithType.vb: TypeDateRange(Of T).closedIn
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope(System.Int32)
+  name: InScope(Int32)
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1_InScope_System_Int32_
+  commentId: M:Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope(System.Int32)
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.InScope(System.Int32)
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).InScope(System.Int32)
+  nameWithType: TypeDateRange<T>.InScope(Int32)
+  nameWithType.vb: TypeDateRange(Of T).InScope(Int32)
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope*
+  name: InScope
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1_InScope_
+  commentId: Overload:Gameplay.MetroDisplay.Model.TypeDateRange`1.InScope
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.InScope
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).InScope
+  nameWithType: TypeDateRange<T>.InScope
+  nameWithType.vb: TypeDateRange(Of T).InScope
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.openIn
+  name: openIn
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1_openIn
+  commentId: F:Gameplay.MetroDisplay.Model.TypeDateRange`1.openIn
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.openIn
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).openIn
+  nameWithType: TypeDateRange<T>.openIn
+  nameWithType.vb: TypeDateRange(Of T).openIn
+- uid: Gameplay.MetroDisplay.Model.TypeDateRange`1.value
+  name: value
+  href: api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html#Gameplay_MetroDisplay_Model_TypeDateRange_1_value
+  commentId: F:Gameplay.MetroDisplay.Model.TypeDateRange`1.value
+  fullName: Gameplay.MetroDisplay.Model.TypeDateRange<T>.value
+  fullName.vb: Gameplay.MetroDisplay.Model.TypeDateRange(Of T).value
+  nameWithType: TypeDateRange<T>.value
+  nameWithType.vb: TypeDateRange(Of T).value
 - uid: Gameplay.MetroDisplay.StationDisplay
   name: StationDisplay
   href: api/Gameplay.MetroDisplay.StationDisplay.html
@@ -6443,44 +6599,92 @@ references:
   isSpec: "True"
   fullName: Util.AotTypeEnforcer.Awake
   nameWithType: AotTypeEnforcer.Awake
-- uid: Util.DictionaryExtension
-  name: DictionaryExtension
-  href: api/Util.DictionaryExtension.html
-  commentId: T:Util.DictionaryExtension
-  fullName: Util.DictionaryExtension
-  nameWithType: DictionaryExtension
-- uid: Util.DictionaryExtension.TryGet*
+- uid: Util.CollectionExtension
+  name: CollectionExtension
+  href: api/Util.CollectionExtension.html
+  commentId: T:Util.CollectionExtension
+  fullName: Util.CollectionExtension
+  nameWithType: CollectionExtension
+- uid: Util.CollectionExtension.GetCurrent*
+  name: GetCurrent
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_GetCurrent_
+  commentId: Overload:Util.CollectionExtension.GetCurrent
+  isSpec: "True"
+  fullName: Util.CollectionExtension.GetCurrent
+  nameWithType: CollectionExtension.GetCurrent
+- uid: Util.CollectionExtension.GetCurrent``1(List{TypeDateRange{``0}},System.Int32)
+  name: GetCurrent<T>(List<TypeDateRange<T>>, Int32)
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_GetCurrent__1_List_TypeDateRange___0___System_Int32_
+  commentId: M:Util.CollectionExtension.GetCurrent``1(List{TypeDateRange{``0}},System.Int32)
+  name.vb: GetCurrent(Of T)(List(Of TypeDateRange(Of T)), Int32)
+  fullName: Util.CollectionExtension.GetCurrent<T>(List<TypeDateRange<T>>, System.Int32)
+  fullName.vb: Util.CollectionExtension.GetCurrent(Of T)(List(Of TypeDateRange(Of T)), System.Int32)
+  nameWithType: CollectionExtension.GetCurrent<T>(List<TypeDateRange<T>>, Int32)
+  nameWithType.vb: CollectionExtension.GetCurrent(Of T)(List(Of TypeDateRange(Of T)), Int32)
+- uid: Util.CollectionExtension.Insert*
+  name: Insert
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_Insert_
+  commentId: Overload:Util.CollectionExtension.Insert
+  isSpec: "True"
+  fullName: Util.CollectionExtension.Insert
+  nameWithType: CollectionExtension.Insert
+- uid: Util.CollectionExtension.Insert``1(List{TypeDateRange{``0}},System.Int32,``0)
+  name: Insert<T>(List<TypeDateRange<T>>, Int32, T)
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_Insert__1_List_TypeDateRange___0___System_Int32___0_
+  commentId: M:Util.CollectionExtension.Insert``1(List{TypeDateRange{``0}},System.Int32,``0)
+  name.vb: Insert(Of T)(List(Of TypeDateRange(Of T)), Int32, T)
+  fullName: Util.CollectionExtension.Insert<T>(List<TypeDateRange<T>>, System.Int32, T)
+  fullName.vb: Util.CollectionExtension.Insert(Of T)(List(Of TypeDateRange(Of T)), System.Int32, T)
+  nameWithType: CollectionExtension.Insert<T>(List<TypeDateRange<T>>, Int32, T)
+  nameWithType.vb: CollectionExtension.Insert(Of T)(List(Of TypeDateRange(Of T)), Int32, T)
+- uid: Util.CollectionExtension.Remove*
+  name: Remove
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_Remove_
+  commentId: Overload:Util.CollectionExtension.Remove
+  isSpec: "True"
+  fullName: Util.CollectionExtension.Remove
+  nameWithType: CollectionExtension.Remove
+- uid: Util.CollectionExtension.Remove``1(List{TypeDateRange{``0}},System.Int32)
+  name: Remove<T>(List<TypeDateRange<T>>, Int32)
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_Remove__1_List_TypeDateRange___0___System_Int32_
+  commentId: M:Util.CollectionExtension.Remove``1(List{TypeDateRange{``0}},System.Int32)
+  name.vb: Remove(Of T)(List(Of TypeDateRange(Of T)), Int32)
+  fullName: Util.CollectionExtension.Remove<T>(List<TypeDateRange<T>>, System.Int32)
+  fullName.vb: Util.CollectionExtension.Remove(Of T)(List(Of TypeDateRange(Of T)), System.Int32)
+  nameWithType: CollectionExtension.Remove<T>(List<TypeDateRange<T>>, Int32)
+  nameWithType.vb: CollectionExtension.Remove(Of T)(List(Of TypeDateRange(Of T)), Int32)
+- uid: Util.CollectionExtension.TryGet*
   name: TryGet
-  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TryGet_
-  commentId: Overload:Util.DictionaryExtension.TryGet
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_TryGet_
+  commentId: Overload:Util.CollectionExtension.TryGet
   isSpec: "True"
-  fullName: Util.DictionaryExtension.TryGet
-  nameWithType: DictionaryExtension.TryGet
-- uid: Util.DictionaryExtension.TryGet``2(Dictionary{``0,``1},``0)
+  fullName: Util.CollectionExtension.TryGet
+  nameWithType: CollectionExtension.TryGet
+- uid: Util.CollectionExtension.TryGet``2(Dictionary{``0,``1},``0)
   name: TryGet<TK, TV>(Dictionary<TK, TV>, TK)
-  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TryGet__2_Dictionary___0___1____0_
-  commentId: M:Util.DictionaryExtension.TryGet``2(Dictionary{``0,``1},``0)
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_TryGet__2_Dictionary___0___1____0_
+  commentId: M:Util.CollectionExtension.TryGet``2(Dictionary{``0,``1},``0)
   name.vb: TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
-  fullName: Util.DictionaryExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
-  fullName.vb: Util.DictionaryExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
-  nameWithType: DictionaryExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
-  nameWithType.vb: DictionaryExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
-- uid: Util.DictionaryExtension.TrySet*
+  fullName: Util.CollectionExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
+  fullName.vb: Util.CollectionExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
+  nameWithType: CollectionExtension.TryGet<TK, TV>(Dictionary<TK, TV>, TK)
+  nameWithType.vb: CollectionExtension.TryGet(Of TK, TV)(Dictionary(Of TK, TV), TK)
+- uid: Util.CollectionExtension.TrySet*
   name: TrySet
-  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TrySet_
-  commentId: Overload:Util.DictionaryExtension.TrySet
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_TrySet_
+  commentId: Overload:Util.CollectionExtension.TrySet
   isSpec: "True"
-  fullName: Util.DictionaryExtension.TrySet
-  nameWithType: DictionaryExtension.TrySet
-- uid: Util.DictionaryExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
+  fullName: Util.CollectionExtension.TrySet
+  nameWithType: CollectionExtension.TrySet
+- uid: Util.CollectionExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
   name: TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
-  href: api/Util.DictionaryExtension.html#Util_DictionaryExtension_TrySet__2_Dictionary___0___1____0___1_
-  commentId: M:Util.DictionaryExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
+  href: api/Util.CollectionExtension.html#Util_CollectionExtension_TrySet__2_Dictionary___0___1____0___1_
+  commentId: M:Util.CollectionExtension.TrySet``2(Dictionary{``0,``1},``0,``1)
   name.vb: TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
-  fullName: Util.DictionaryExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
-  fullName.vb: Util.DictionaryExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
-  nameWithType: DictionaryExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
-  nameWithType.vb: DictionaryExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
+  fullName: Util.CollectionExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
+  fullName.vb: Util.CollectionExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
+  nameWithType: CollectionExtension.TrySet<TK, TV>(Dictionary<TK, TV>, TK, TV)
+  nameWithType.vb: CollectionExtension.TrySet(Of TK, TV)(Dictionary(Of TK, TV), TK, TV)
 - uid: Util.EventManager
   name: EventManager
   href: api/Util.EventManager.html
