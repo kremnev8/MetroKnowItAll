@@ -131,17 +131,13 @@ namespace Gameplay.MetroDisplay
         }
 #endif
 
-        private void Awake()
+        private void Start()
         {
+            model = Simulation.GetModel<GameModel>();
             if (Application.isPlaying)
             {
                 Regenerate();
             }
-        }
-
-        private void Start()
-        {
-            model = Simulation.GetModel<GameModel>();
         }
 
         public void SetMetro(Metro newMetro)

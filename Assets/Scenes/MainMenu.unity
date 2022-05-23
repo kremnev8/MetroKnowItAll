@@ -2218,6 +2218,7 @@ GameObject:
   - component: {fileID: 1631090761}
   - component: {fileID: 1631090760}
   - component: {fileID: 1631090763}
+  - component: {fileID: 1631090764}
   m_Layer: 5
   m_Name: ModeSelect
   m_TagString: Untagged
@@ -2309,6 +2310,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc924edff6834a72af1a3c1f427c0498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1631090764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631090758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2049f5fc17324cde8366292cdfd44fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1776655801
@@ -2650,10 +2663,6 @@ PrefabInstance:
     - target: {fileID: 5439083718440602566, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
       propertyPath: m_Name
       value: MenuRoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 5439083718440602566, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}

@@ -206,6 +206,8 @@ namespace Gameplay.Conrollers
                 bool success = main.SelectGenerator(game, controllerBlacklist);
                 if (!success)
                 {
+                    game.currentQuestion = maxQuestions;
+                    UpdateGameState(true);
                     Invoke(nameof(PrepareNewGame), 1.5f);
                     return;
                 }

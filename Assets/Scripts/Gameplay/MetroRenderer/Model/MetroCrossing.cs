@@ -27,11 +27,13 @@ namespace Gameplay.MetroDisplay.Model
         {
             get
             {
+#if UNITY_EDITOR
                 if (MetroRenderer.instance != null)
                 {
                     List<string> names = stationsGlobalIds.Select(id => MetroRenderer.instance.metro.GetStation(id).currentName).ToList();
                     return String.Join(", ", names);
                 }
+#endif
 
                 return "Переход (Ошибка)";
             }

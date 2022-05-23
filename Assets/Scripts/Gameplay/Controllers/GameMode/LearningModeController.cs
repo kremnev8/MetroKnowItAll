@@ -127,7 +127,7 @@ namespace Gameplay.Conrollers
             {
                 score *= 2;
                 int newMax = gameMaxQuestions + questionIncrement;
-                if (unlockedStations.data.Count > newMax && newMax <= maxQuestionsConfig)
+                if (GetUnlockedCount() > newMax && newMax <= maxQuestionsConfig)
                 {
                     maxQuestions = newMax;
                 }
@@ -142,9 +142,14 @@ namespace Gameplay.Conrollers
             }
 
             int tmp_tokens = Mathf.RoundToInt(score);
-            tmp_tokens += tmp_tokens;
+            tokens += tmp_tokens;
 
-            model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tmp_tokens, GetTokenName(tmp_tokens));
+            model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tokens, GetTokenName(tokens));
+        }
+
+        public int GetUnlockedCount()
+        {
+            return unlockedStations.data.Count(id => renderer.metro.GetStation(id).isOpen);
         }
 
         public virtual string GetTokenName(int count)
@@ -170,13 +175,13 @@ namespace Gameplay.Conrollers
             if (!unlockedStations.IsUnlocked(display.station))
             {
                 unlockedStations.Unlock(display.station);
-                tokens -= 1;
                 DetermineAdditionalUnlocks(display.station.globalId);
-                
+                tokens -= 1;
+
                 if (game.correctAnswers == maxQuestions)
                 {
                     int newMax = maxQuestions + questionIncrement;
-                    if (unlockedStations.data.Count > newMax && newMax <= maxQuestionsConfig)
+                    if (GetUnlockedCount() > newMax && newMax <= maxQuestionsConfig)
                     {
                         maxQuestions = newMax;
                     }
@@ -196,7 +201,7 @@ namespace Gameplay.Conrollers
                 {
                     if (globalId1 != globalId)
                     {
-                        unlockedStations.Unlock(renderer.metro.GetStation(globalId));
+                        unlockedStations.Unlock(renderer.metro.GetStation(globalId1));
                     }
                 }
             }
@@ -208,9 +213,10 @@ namespace Gameplay.Conrollers
             uiGame.topBar.UpdateTokens(tokens);
             game.currentRegion = SelectRegion();
             renderer.FocusRegion(game.currentRegion);
-            if (unlockedStations.data.Count < 10)
+            int unlocked = GetUnlockedCount();
+            if (unlocked < 10)
             {
-                int need = 10 - unlockedStations.data.Count;
+                int need = 10 - unlocked;
                 uiGame.EnableStartButton( $"Откройте {need} станций");
                 uiGame.SetStartInteractable(false);
             }else if (tokens > 10)

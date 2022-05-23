@@ -52,9 +52,16 @@ namespace Gameplay.Controls
         {
             isEnabled = false;
             overrideFocus = false;
-            selectedStation?.SetSelected(renderer, false);
-            if (showStationName)
-                selectedStation?.ShowLabel(false);
+            try
+            {
+                selectedStation?.SetSelected(renderer, false);
+                if (showStationName)
+                    selectedStation?.ShowLabel(false);
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
             selectedStation = null;
             showStationName = false;
         }

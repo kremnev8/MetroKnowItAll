@@ -62,30 +62,41 @@ namespace Gameplay.MetroDisplay.Model
             return lines[globalId.lineId].stations[globalId.stationId];
         }
 
+        private bool IsStationNextTo(MetroStation station, HashSet<int> unlockedStations)
+        {
+            MetroLine line = lines[station.lineId];
+
+            foreach (MetroConnection connection in line.connections)
+            {
+                if (!connection.IsOpen(MetroRenderer.currentYear)) continue;
+                
+                if (connection.startStationId == station.stationId)
+                {
+                    if (IsStationAdjacent(line.stations[connection.endStationId], unlockedStations, false, false))
+                    {
+                        return true;
+                    }
+                }else if (connection.endStationId == station.stationId)
+                {
+                    if (IsStationAdjacent(line.stations[connection.startStationId], unlockedStations, false, false))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
         public bool IsStationAdjacent(MetroStation station, HashSet<int> unlockedStations, bool checkAdjecent = true, bool checkCrossings = true)
         {
             if (unlockedStations.Contains(station.globalId)) return true;
 
             if (checkAdjecent)
             {
-                int lineId = station.lineId;
-                MetroLine line = lines[lineId];
-                int next = line.isLooped ? (station.stationId + 1).Mod(line.stations.Count) : station.stationId + 1;
-                if (next < line.stations.Count)
+                if (IsStationNextTo(station, unlockedStations))
                 {
-                    if (IsStationAdjacent(line.stations[next], unlockedStations, false, false))
-                    {
-                        return true;
-                    }
-                }
-
-                next = line.isLooped ? (station.stationId - 1).Mod(line.stations.Count) : station.stationId - 1;
-                if (next >= 0)
-                {
-                    if (IsStationAdjacent(line.stations[next], unlockedStations, false, false))
-                    {
-                        return true;
-                    }
+                    return true;
                 }
             }
 
