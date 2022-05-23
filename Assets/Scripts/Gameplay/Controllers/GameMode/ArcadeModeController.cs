@@ -21,6 +21,8 @@ namespace Gameplay.Conrollers
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class ArcadeModeController : BaseGameMode
     {
+        [SerializeField] protected Metro targetMetro;
+        
         protected UIGame uiGame;
         protected Game game;
         protected GameModel model;
@@ -73,6 +75,7 @@ namespace Gameplay.Conrollers
         public override void ContinueSession(Game gameState)
         {
             InitGameState(gameState);
+            renderer.year = targetMetro.startYear;
             EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }
 
@@ -87,6 +90,8 @@ namespace Gameplay.Conrollers
 
             game.isPlaying = true;
             uiGame.topBar.SetCurrentAttemptsImmidiate(game.attemptsLeft, 0);
+            renderer.SetMetro(targetMetro);
+            main.UpdateGenerators(targetMetro);
             Invoke(nameof(PrepareNewGame), 0.2f);
         }
 

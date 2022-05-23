@@ -13,6 +13,7 @@ namespace Gameplay.MetroDisplay
     {
         public MetroStation station;
         private MetroLine line;
+        private MetroRenderer renderer;
         
         public SpriteRenderer spriteRenderer;
         public TMP_Text label;
@@ -56,8 +57,9 @@ namespace Gameplay.MetroDisplay
         }
 
         
-        public void SetStation(MetroStation station, MetroLine line)
+        public void SetStation(MetroRenderer renderer, MetroStation station, MetroLine line)
         {
+            this.renderer = renderer;
             this.station = station;
             this.line = line;
 
@@ -66,7 +68,7 @@ namespace Gameplay.MetroDisplay
 
         public void Refresh()
         {
-            bool isOpen = station.history.GetCurrent(MetroRenderer.currentYear);
+            bool isOpen = station.isOpen;
             //gameObject.SetActive(isOpen);
             
             SetColor(isOpen ? line.lineColor : Color.gray);
@@ -80,7 +82,7 @@ namespace Gameplay.MetroDisplay
                 SetText(station.currentName, line.namePosition, line.nameAlignment);
             }
 
-            SetInitialVisible(!station.hideName);
+            SetInitialVisible(renderer.IsDisplayPrimary(this));
         }
 
         private void SetColor(Color color)

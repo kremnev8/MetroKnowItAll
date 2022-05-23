@@ -174,12 +174,12 @@ namespace Gameplay.MetroDisplay
                 Vector2 center = line.curveCenter;
                 for (int i = 0; i < points.Count; i++)
                 {
-                    if (isLoop)
+                    if (line.isLooped)
                     {
-                        if (i == points.Count - 1) break;
+                        if (i == points.Count - 1 && isLoop) break;
                         
-                        int prevIndex = (i - 1).Mod(points.Count - 1);
-                        int nextIndex = (i + 1).Mod(points.Count - 1);
+                        int prevIndex = (i - 1).Mod(points.Count);
+                        int nextIndex = (i + 1).Mod(points.Count);
                         
                         Vector2 pos = points[i].point;
                         
@@ -195,7 +195,7 @@ namespace Gameplay.MetroDisplay
                         
                         Vector2 nextTan = tan.normalized * prevDist / 4;
                         Vector2 prevTan = tan.normalized * nextDist / 4;
-                        
+
                         spline.SetTangentMode(i, ShapeTangentMode.Broken);
                         
                         spline.SetLeftTangent(i, nextTan);

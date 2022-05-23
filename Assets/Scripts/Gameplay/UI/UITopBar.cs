@@ -3,6 +3,7 @@ using Gameplay.Conrollers;
 using ScriptableObjects;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Gameplay.UI
@@ -19,7 +20,9 @@ namespace Gameplay.UI
         public GameObject tipButtonObject;
 
         public Image attemptsFill;
-        public Image troykaImage;
+        
+        [FormerlySerializedAs("troykaImage")]
+        public Image tokensImage;
         public float fillSpeed = 1;
 
         private int statusHideTimer;
@@ -57,7 +60,7 @@ namespace Gameplay.UI
             attemptsLabel.text = current.ToString();
             targetFillAmount = partial;
             attemptsFill.enabled = true;
-            troykaImage.enabled = false;
+            tokensImage.enabled = false;
         }
         
         public void SetCurrentAttemptsImmidiate(int value, float partial)
@@ -67,7 +70,7 @@ namespace Gameplay.UI
             attemptsLabel.text = value.ToString();
             attemptsFill.fillAmount = partial;
             attemptsFill.enabled = true;
-            troykaImage.enabled = false;
+            tokensImage.enabled = false;
         }
 
         public void UpdateStatus(bool lastCorrect, int current, int total)
@@ -79,11 +82,16 @@ namespace Gameplay.UI
             statusHideTimer = 120;
         }
 
-        public void UpdateTickets(int tickets)
+        public void UpdateTokens(int tickets)
         {
             attemptsLabel.text = tickets.ToString();
             attemptsFill.enabled = false;
-            troykaImage.enabled = true;
+            tokensImage.enabled = true;
+        }
+
+        public void SwitchTokensIcon(Sprite sprite)
+        {
+            tokensImage.sprite = sprite;
         }
 
         public void ShowMessage(string message)

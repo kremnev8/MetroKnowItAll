@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DelaunatorSharp;
 using DelaunatorSharp.Unity.Extensions;
@@ -62,7 +63,7 @@ namespace Gameplay.MetroDisplay
             gameObject.SetActive(isOpen);
             
             block ??= new MaterialPropertyBlock();
-            if (isValid())
+            if (IsValid())
             {
                 if (crossing.isAbove)
                 {
@@ -72,6 +73,10 @@ namespace Gameplay.MetroDisplay
                 {
                     RefreshUnder();
                 }
+            }
+            else
+            {
+                gameObject.SetActive(false);
             }
         }
 
@@ -96,17 +101,28 @@ namespace Gameplay.MetroDisplay
             foreach (GlobalId id in crossing.stationsGlobalIds)
             {
                 MetroStation station = metro.GetStation(id);
-                points.Add(station.position.ToPoint());
-                SpriteRenderer spriteRenderer = Instantiate(dotPrefab, dotsRoot);
-                spriteRenderer.transform.position = station.position;
-                groundDots.Add(spriteRenderer);
+                if (station.isOpen)
+                {
+                    points.Add(station.position.ToPoint());
+                    SpriteRenderer spriteRenderer = Instantiate(dotPrefab, dotsRoot);
+                    spriteRenderer.transform.position = station.position;
+                    groundDots.Add(spriteRenderer);
+                }
+            }
+
+            if (groundDots.Count == 0)
+            {
+                gameObject.SetActive(false);
+                return;
             }
 
             shape.spline.Clear();
             
             if (points.Count > 2)
             {
-                delaunator = new Delaunator(points.ToArray());
+                try
+                {
+                    delaunator = new Delaunator(points.ToArray());
 
                 int i = 0;
                 delaunator.ForEachTriangleEdge(edge =>
@@ -122,6 +138,15 @@ namespace Gameplay.MetroDisplay
                     shape.spline.SetTangentMode(i, ShapeTangentMode.Linear);
                     i++;
                 });
+                }
+                catch (Exception e)
+                {
+                    for (int i = 0; i < points.Count; i++)
+                    {
+                        shape.spline.InsertPointAt(i, points[i].ToVector2());
+                        shape.spline.SetTangentMode(i, ShapeTangentMode.Linear);
+                    }
+                }
             }
             else
             {
@@ -138,13 +163,24 @@ namespace Gameplay.MetroDisplay
 
         private void RefreshUnder()
         {
-            bool isStraight = IsStraight();
-            int count = crossing.stationsGlobalIds.Count;
+            List<GlobalId> filteredIds = crossing.stationsGlobalIds
+                .Where(id => metro.GetStation(id).isOpen)
+                .ToList();
+
+            if (filteredIds.Count == 0)
+            {            
+                underRoot.SetActive(false);
+                aboveRoot.SetActive(false);
+                return;
+            }
+            
+            bool isStraight = IsStraight(filteredIds);
+            int count = filteredIds.Count;
 
             if (isStraight)
             {
-                Vector2 s1 = GetPosition(crossing.stationsGlobalIds[0]);
-                Vector2 s2 = GetPosition(crossing.stationsGlobalIds[1]);
+                Vector2 s1 = GetPosition(filteredIds[0]);
+                Vector2 s2 = GetPosition(filteredIds[1]);
 
                 Vector2 dir = s1 - s2;
 
@@ -166,8 +202,8 @@ namespace Gameplay.MetroDisplay
             {
                 if (count == 3)
                 {
-                    Vector2 s1 = GetPosition(crossing.stationsGlobalIds[0]);
-                    Vector2 s2 = GetPosition(crossing.stationsGlobalIds[1]);
+                    Vector2 s1 = GetPosition(filteredIds[0]);
+                    Vector2 s2 = GetPosition(filteredIds[1]);
 
                     Vector2 dir = s1 - s2;
 
@@ -181,33 +217,33 @@ namespace Gameplay.MetroDisplay
                 }
             }
 
-            Vector2 center = GetCenter();
+            Vector2 center = GetCenter(filteredIds);
             transform.localPosition = center;
 
             underRoot.SetActive(true);
             aboveRoot.SetActive(false);
         }
 
-        private Vector2 GetCenter()
+        private Vector2 GetCenter(List<GlobalId> filteredIds)
         {
-            Vector2 sum = crossing.stationsGlobalIds.Select(GetPosition).Aggregate(Vector2.zero, (current, pos) => current + pos);
-            sum /= crossing.stationsGlobalIds.Count;
+            Vector2 sum = filteredIds.Select(GetPosition).Aggregate(Vector2.zero, (current, pos) => current + pos);
+            sum /= filteredIds.Count;
             return sum;
         }
 
-        private bool IsStraight()
+        private bool IsStraight(List<GlobalId> filteredIds)
         {
             bool isStraight = true;
 
-            Vector2 s1 = GetPosition(crossing.stationsGlobalIds[0]);
-            Vector2 s2 = GetPosition(crossing.stationsGlobalIds[1]);
+            Vector2 s1 = GetPosition(filteredIds[0]);
+            Vector2 s2 = GetPosition(filteredIds[1]);
 
             Vector2 dir = s1 - s2;
             Vector2 normal = dir.GetNormal();
 
-            for (int i = 2; i < crossing.stationsGlobalIds.Count; i++)
+            for (int i = 2; i < filteredIds.Count; i++)
             {
-                Vector2 pos = GetPosition(crossing.stationsGlobalIds[i]);
+                Vector2 pos = GetPosition(filteredIds[i]);
                 float distance = normal.x * pos.x + normal.y * pos.y + (-normal.x * s1.x - normal.y * s1.y);
                 if (Mathf.Abs(distance) > 0.2f)
                 {
@@ -224,11 +260,15 @@ namespace Gameplay.MetroDisplay
             return metro.lines[id.lineId].stations[id.stationId].position;
         }
 
-        private bool isValid()
+        private bool IsValid()
         {
-            if (crossing.stationsGlobalIds.Count < 2) return false;
+            List<GlobalId> filteredIds = crossing.stationsGlobalIds
+                .Where(id => metro.GetStation(id).isOpen)
+                .ToList();
             
-            return crossing.stationsGlobalIds.All(id =>
+            if (filteredIds.Count < 2) return false;
+            
+            return filteredIds.All(id =>
             {
                 if (id.lineId < metro.lines.Count)
                 {

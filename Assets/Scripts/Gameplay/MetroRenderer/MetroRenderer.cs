@@ -6,6 +6,7 @@ using Gameplay.Core;
 using Gameplay.MetroDisplay;
 using Gameplay.MetroDisplay.Model;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Util;
 #if UNITY_EDITOR
 using UnityEditor;
@@ -31,12 +32,12 @@ namespace Gameplay.MetroDisplay
 #if UNITY_EDITOR
                 if (Application.isPlaying)
                 {
-                    return Simulation.GetModel<GameModel>().renderer.year;
+                    return Simulation.GetModel<GameModel>().renderer.m_year;
                 }
 
-                return instance != null ? instance.year : 2999;
+                return instance != null ? instance.m_year : 2999;
 #else
-                return Simulation.GetModel<GameModel>().renderer.year;
+                return Simulation.GetModel<GameModel>().renderer.m_year;
 #endif
             }
             set
@@ -44,11 +45,11 @@ namespace Gameplay.MetroDisplay
 #if UNITY_EDITOR
                 if (Application.isPlaying)
                 {
-                    Simulation.GetModel<GameModel>().renderer.year = value;
+                    Simulation.GetModel<GameModel>().renderer.m_year = value;
                 }
                 else if (instance != null)
                 {
-                    instance.year = value;
+                    instance.m_year = value;
                 }
 #else
 #endif
@@ -59,7 +60,6 @@ namespace Gameplay.MetroDisplay
         [SerializeField] private Transform stationRoot;
         [SerializeField] private Transform lineRoot;
         [SerializeField] private Transform crossingRoot;
-        [SerializeField] private Transform focusRoot;
         [SerializeField] private Material lineMat;
 
         [SerializeField] private StationDisplay stationPrefab;
@@ -71,7 +71,18 @@ namespace Gameplay.MetroDisplay
 
         public Metro metro;
 
-        [Range(1935, 2022)] public int year;
+        [FormerlySerializedAs("year")] [Range(1935, 2022)] [SerializeField]
+        private int m_year;
+
+        public int year
+        {
+            get => m_year;
+            set
+            {
+                m_year = value;
+                Regenerate();
+            }
+        }
 
         private Dictionary<int, StationDisplay> stationDisplays = new Dictionary<int, StationDisplay>();
         private List<LineDisplay> lineDisplays = new List<LineDisplay>();
@@ -83,7 +94,7 @@ namespace Gameplay.MetroDisplay
 #endif
 
         public bool trueView;
-        
+
         public Region focusRegion;
 
         public bool expectedLabelState = true;
@@ -112,7 +123,11 @@ namespace Gameplay.MetroDisplay
         private void OnEnable()
         {
             instance = this;
-            veryDirty = true;
+            bool isPrefabInstance = PrefabUtility.IsPartOfPrefabInstance(this);
+            if (isPrefabInstance)
+            {
+                veryDirty = true;
+            }
         }
 #endif
 
@@ -129,18 +144,27 @@ namespace Gameplay.MetroDisplay
             model = Simulation.GetModel<GameModel>();
         }
 
+        public void SetMetro(Metro newMetro)
+        {
+            metro = newMetro;
+        }
+
 #if UNITY_EDITOR
         private void Update()
         {
-            if (veryDirty)
+            bool isPrefabInstance = PrefabUtility.IsPartOfPrefabInstance(this);
+            if (isPrefabInstance)
             {
-                Regenerate();
-                veryDirty = false;
-            }
-            else if (dirty)
-            {
-                Refresh();
-                dirty = false;
+                if (veryDirty)
+                {
+                    Regenerate();
+                    veryDirty = false;
+                }
+                else if (dirty)
+                {
+                    Refresh();
+                    dirty = false;
+                }
             }
         }
 #endif
@@ -154,16 +178,16 @@ namespace Gameplay.MetroDisplay
 
             foreach (MetroLine line in metro.lines)
             {
-                if (line.IsOpen(year))
+                if (line.IsOpen(m_year))
                 {
                     foreach (MetroStation station in line.stations)
                     {
-                        if (station.history.GetCurrent(currentYear) || !trueView)
+                        if (station.isOpen || !trueView)
                         {
                             Vector3 point = transform.TransformPoint(station.position);
                             StationDisplay stationDisplay = Instantiate(stationPrefab, point, Quaternion.identity, stationRoot);
 
-                            stationDisplay.SetStation(station, line);
+                            stationDisplay.SetStation(this, station, line);
 
                             stationDisplays.Add(station.globalId, stationDisplay);
                         }
@@ -178,13 +202,15 @@ namespace Gameplay.MetroDisplay
 
             foreach (MetroCrossing crossing in metro.crossings)
             {
-                if (crossing.IsOpen(year))
+                if (crossing.IsOpen(m_year))
                 {
                     CrossingDisplay crossingDisplay = Instantiate(crossingPrefab, crossingRoot);
                     crossingDisplay.SetCrossing(metro, crossing);
                     crossingDisplays.Add(crossingDisplay);
                 }
             }
+
+            highlightDisplay.Init(metro);
         }
 
         /// <summary>
@@ -207,6 +233,7 @@ namespace Gameplay.MetroDisplay
                 display.Refresh();
             }
 
+            highlightDisplay.Init(metro);
             highlightDisplay.Refresh();
         }
 
@@ -218,7 +245,6 @@ namespace Gameplay.MetroDisplay
             stationRoot.gameObject.ClearChildren();
             lineRoot.gameObject.ClearChildren();
             crossingRoot.gameObject.ClearChildren();
-            focusRoot.gameObject.ClearChildren();
 
             stationDisplays.Clear();
             lineDisplays.Clear();
@@ -239,6 +265,21 @@ namespace Gameplay.MetroDisplay
             }
 
             throw new ArgumentException($"Global ID: {station.globalId} does not exist in display dictionary!");
+        }
+        
+        /// <summary>
+        /// Get Display for a station
+        /// </summary>
+        /// <returns>Corresponding display</returns>
+        /// <exception cref="ArgumentException">thrown if display object does not exist</exception>
+        public StationDisplay GetStationDisplay(GlobalId globalId)
+        {
+            if (stationDisplays.ContainsKey(globalId))
+            {
+                return stationDisplays[globalId];
+            }
+
+            throw new ArgumentException($"Global ID: {globalId} does not exist in display dictionary!");
         }
 
         /// <summary>
@@ -291,7 +332,7 @@ namespace Gameplay.MetroDisplay
             foreach (StationDisplay stationDisplay in stationDisplays.Values)
             {
                 stationDisplay.SetFocused(true);
-                stationDisplay.SetInitialVisible(!stationDisplay.station.hideName);
+                stationDisplay.SetInitialVisible(IsDisplayPrimary(stationDisplay));
             }
 
             foreach (CrossingDisplay display in crossingDisplays)
@@ -320,7 +361,7 @@ namespace Gameplay.MetroDisplay
                 foreach (StationDisplay stationDisplay in stationDisplays.Values)
                 {
                     stationDisplay.SetFocused(stationDisplay.station.lineId == region.lineId);
-                    if (!stationDisplay.station.hideName)
+                    if (IsDisplayPrimary(stationDisplay))
                     {
                         stationDisplay.SetInitialVisible(region.Contains(stationDisplay.station));
                     }
@@ -346,7 +387,7 @@ namespace Gameplay.MetroDisplay
                 foreach (StationDisplay stationDisplay in stationDisplays.Values)
                 {
                     stationDisplay.SetFocused(true);
-                    if (!stationDisplay.station.hideName)
+                    if (IsDisplayPrimary(stationDisplay))
                     {
                         stationDisplay.SetInitialVisible(region.Contains(stationDisplay.station));
                     }
@@ -362,33 +403,53 @@ namespace Gameplay.MetroDisplay
             }
         }
 
+        public bool IsDisplayPrimary(StationDisplay display)
+        {
+            try
+            {
+                GlobalId id = GetPrimaryDisplayId(display);
+
+                return display.station.globalId == id;
+            }
+            catch (InvalidOperationException e)
+            {
+            }
+
+            return true;
+        }
+
         public StationDisplay GetPrimaryDisplay(StationDisplay current)
         {
             try
             {
-                MetroCrossing crossing = metro.crossings.First(metroCrossing => metroCrossing.stationsGlobalIds.Contains(current.station.globalId));
-                List<MetroStation> neighbors = crossing.stationsGlobalIds.Select(id => metro.GetStation(id))
-                    .Where(station => station.currentName.Equals(current.station.currentName))
-                    .ToList();
-                if (neighbors.Count > 1)
-                {
-                    return GetStationDisplay(neighbors.First(station =>
-                    {
-                        if (station.m_override)
-                        {
-                            return !station.hideName;
-                        }
+                GlobalId id = GetPrimaryDisplayId(current);
 
-                        return true;
-                    }));
+                if (id == current.station.globalId)
+                {
+                    return current;
                 }
 
-                return current;
+                return GetStationDisplay(id);
             }
             catch (Exception e)
             {
                 return current;
             }
+        }
+        
+        private GlobalId GetPrimaryDisplayId(StationDisplay display)
+        {
+            IEnumerable<MetroCrossing> crossings = metro.crossings.Where(metroCrossing => metroCrossing.stationsGlobalIds.Contains(display.station.globalId));
+            GlobalId id = crossings
+                .SelectMany(crossing => crossing.stationsGlobalIds)
+                .Select(globalId => metro.GetStation(globalId))
+                .OrderByDescending(station => station.namePriority)
+                .First(station =>
+                {
+                    return station.isOpen &&
+                           station.currentName.Equals(display.station.currentName);
+                }).globalId;
+            return id;
         }
     }
 }

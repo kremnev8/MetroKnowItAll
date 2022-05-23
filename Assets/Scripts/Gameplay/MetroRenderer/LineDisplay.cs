@@ -59,8 +59,8 @@ namespace Gameplay.MetroDisplay
                 line.connections
                     .Where(connection =>
                     {
-                        return line.stations[connection.startStationId].history.GetCurrent(MetroRenderer.currentYear) &&
-                               line.stations[connection.endStationId].history.GetCurrent(MetroRenderer.currentYear) &&
+                        return line.stations[connection.startStationId].isOpen &&
+                               line.stations[connection.endStationId].isOpen &&
                                 connection.IsOpen(MetroRenderer.currentYear);
                     }));
 

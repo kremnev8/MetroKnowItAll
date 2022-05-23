@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Gameplay.MetroDisplay.Model;
 
 namespace Util
@@ -68,5 +69,40 @@ namespace Util
             list[startIndex] = first;
             list.RemoveAt(endIndex);
         }
+
+        public static void AddAll<T>(this HashSet<int> set, List<TypeDateRange<T>> list)
+        {
+            foreach (TypeDateRange<T> entry in list)
+            {
+                set.Add(entry.openIn);
+                set.Add(entry.closedIn);
+            }
+        }
+
+        public static List<MetroStation> GetStationRange(this List<MetroStation> stations, int startIndex, int count)
+        {
+            List<MetroStation> result = new List<MetroStation>(count);
+            for (int i = startIndex; i < startIndex + count; i++)
+            {
+                MetroStation station = stations[i];
+                if (station.isOpen)
+                {
+                    result.Add(station);
+                    continue;
+                }
+
+                if (startIndex + count < stations.Count)
+                {
+                    count++;
+                }
+                else
+                {
+                    throw new ArgumentException($"Can't get range of stations from {startIndex}, to {startIndex + count} because the list is too small!");
+                }
+            }
+
+            return result;
+        }
+        
     }
 }

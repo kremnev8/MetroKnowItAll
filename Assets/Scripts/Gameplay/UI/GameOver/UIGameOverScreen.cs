@@ -68,12 +68,12 @@ namespace Gameplay.UI
             learningScreen.SetActive(false);
         }
         
-        public void PopupLearning(int correct, int total, int tickets)
+        public void PopupLearning(int correct, int total, int tickets, string tokenName)
         {
             statsTrans.gameObject.ClearChildren();
 
             correctText.text = $"Вы ответили верно\nна {correct} из {total} вопросов!";
-            ticketsText.text = $"Получено {tickets} билетов";
+            ticketsText.text = $"Получено {tickets} {tokenName}";
             animation.Display(0, correct / (float)total);
             
             arcadeScreen.SetActive(false);

@@ -31,7 +31,7 @@ Transform:
   - {fileID: 1871383769}
   - {fileID: 20166264743627873}
   m_Father: {fileID: 406890281965105481}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &790973543
 MonoBehaviour:
@@ -46,14 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: 1e8dc9f044f624e4c89aaa31651e089b, type: 2}
-  metro: {fileID: 11400000, guid: b91116bb65acd754aa69d07d756347a1, type: 2}
   region:
     regionType: 1
     lineId: -1
   quadTrans: {fileID: 1871383769}
   smallBlur: {fileID: 2800000, guid: d6a57349a38102f43863ed783508c6c3, type: 3}
   smallBlueMat: {fileID: 2100000, guid: b18f05f626e13d543879159d5652ac4a, type: 2}
-  outerBox: {fileID: 0}
   scale: {x: 25, y: 25}
 --- !u!1 &1871383768
 GameObject:
@@ -151,36 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sortingLayer: Focus overlay
   sortingOrder: 0
---- !u!1 &208292590915702065
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7924239598426237447}
-  m_Layer: 0
-  m_Name: FocusRoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &7924239598426237447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208292590915702065}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 406890281965105481}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406890281965105483
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +181,6 @@ Transform:
   - {fileID: 406890282127044900}
   - {fileID: 5070513389672141485}
   - {fileID: 406890282030456918}
-  - {fileID: 7924239598426237447}
   - {fileID: 790973542}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -233,7 +200,7 @@ MonoBehaviour:
   stationRoot: {fileID: 406890282526625837}
   lineRoot: {fileID: 406890282127044900}
   crossingRoot: {fileID: 5070513389672141485}
-  focusRoot: {fileID: 7924239598426237447}
+  focusRoot: {fileID: 0}
   lineMat: {fileID: 2100000, guid: b912f49c459ecb946a7b00699a2f3a1e, type: 2}
   stationPrefab: {fileID: 2550630860212831627, guid: 908b833d199e1844092a372ab6f3539b, type: 3}
   linePrefab: {fileID: 8883161288348245882, guid: dd9bf4b05b6659948b11fc72fd5067df, type: 3}
@@ -241,6 +208,10 @@ MonoBehaviour:
   stationSelectPrefab: {fileID: 193406124191508210, guid: f7818db72b3fbf94c8311089d984c4a9, type: 3}
   highlightDisplay: {fileID: 790973543}
   metro: {fileID: 11400000, guid: b91116bb65acd754aa69d07d756347a1, type: 2}
+  m_year: 0
+  dirty: 0
+  veryDirty: 0
+  trueView: 0
   focusRegion:
     regionType: 1
     lineId: -1

@@ -11,20 +11,20 @@ namespace Gameplay.MetroDisplay
     public class HighlightDisplay : MonoBehaviour
     {
         public RenderTexture renderTexture;
-        public Metro metro;
         public Region region;
 
         public Transform quadTrans;
         
         private Texture2D tempTexture;
+        private Metro metro;
         
         public Texture2D smallBlur;
         public Material smallBlueMat;
 
         public Vector2 scale;
-
-        private void Awake()
+        public void Init(Metro metro)
         {
+            this.metro = metro;
             tempTexture = new Texture2D(256, 256, GraphicsFormat.R8G8B8A8_UNorm, TextureCreationFlags.None);
         }
 
@@ -71,7 +71,8 @@ namespace Gameplay.MetroDisplay
             {
                 foreach (MetroStation station in line.stations)
                 {
-                    if (region.Contains(station))
+                    if (station.isOpen && 
+                        region.Contains(station))
                     {
                         var drawPos = new Vector2(quadScale.x + station.position.x, quadScale.y - station.position.y);
                         drawPos *= (128 / quadScale.x);

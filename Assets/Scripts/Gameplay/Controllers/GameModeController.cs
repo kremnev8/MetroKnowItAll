@@ -54,7 +54,7 @@ namespace Gameplay.Conrollers
                     StartGame(LearningModeController.MODE_ID);
                     break;
                 case 2:
-                    throw new NotImplementedException();
+                    StartGame(HistoricModeController.MODE_ID);
                     break;
             }
         }
@@ -86,6 +86,14 @@ namespace Gameplay.Conrollers
             if (!currentGameMode.Equals("") && gameModes.ContainsKey(currentGameMode))
             {
                 gameModes[currentGameMode].StartGamePressed();
+            }
+        }
+
+        public void UpdateGenerators(Metro metro)
+        {
+            foreach (BaseQuestionGenerator generator in questionGenerators)
+            {
+                generator.metro = metro;
             }
         }
         

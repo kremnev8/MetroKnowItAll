@@ -21,10 +21,10 @@ namespace Gameplay.MetroDisplay.Model
     [CreateAssetMenu(fileName = "Metro", menuName = "SO/New Metro", order = 0)]
     public class Metro : ScriptableObject
     {
-        [LabeledArray] 
-        public List<MetroLine> lines = new List<MetroLine>();
-        public List<MetroCrossing> crossings = new List<MetroCrossing>();
-        
+        public int startYear;
+        [LabeledArray] public List<MetroLine> lines = new List<MetroLine>();
+        [LabeledArray] public List<MetroCrossing> crossings = new List<MetroCrossing>();
+        public List<MetroSiblings> siblingStations = new List<MetroSiblings>();
 
         /// <summary>
         /// Get all stations with a name
@@ -114,7 +114,7 @@ namespace Gameplay.MetroDisplay.Model
                 foreach (MetroStation station1 in metroLine.stations)
                 {
                     if (unlockedStations.Contains(station1.globalId) &&
-                        station1.globalId != station.globalId && 
+                        station1.globalId != station.globalId &&
                         station.lineId == station1.lineId)
                     {
                         float dist = (station.position - station1.position).magnitude;
@@ -136,7 +136,10 @@ namespace Gameplay.MetroDisplay.Model
         {
             int startIndex = Mathf.Max(0, station.stationId - 2);
             int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + 2);
-            int tipStation = station.stationId.ConstrainedRandom(startIndex, endIndex);
+            int tipStation = RandomUtils.ConstrainedRandom(id =>
+            {
+                return id != station.stationId && GetStation(id).isOpen;
+            }, startIndex, endIndex);
 
             return lines[station.lineId].stations[tipStation];
         }
@@ -149,7 +152,8 @@ namespace Gameplay.MetroDisplay.Model
             if (region.regionType == RegionType.GLOBAL_LINE)
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
-                int index = Random.Range(0, stations.Count);
+                
+                int index = RandomUtils.ConstrainedRandom(stationId => GetStation(stationId).isOpen, 0, stations.Count);
                 return stations[index];
             }
             else
@@ -159,7 +163,7 @@ namespace Gameplay.MetroDisplay.Model
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(region.Contains));
+                            .Where(station => region.Contains(station) && station.isOpen));
                 }
 
                 int index = Random.Range(0, regionStations.Count);
@@ -178,7 +182,7 @@ namespace Gameplay.MetroDisplay.Model
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
 
-                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(stations[stationId].globalId), 0, stations.Count);
+                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(stations[stationId].globalId) && GetStation(stationId).isOpen, 0, stations.Count);
 
                 return stations[index];
             }
@@ -189,7 +193,7 @@ namespace Gameplay.MetroDisplay.Model
                 {
                     regionStations.AddRange(
                         line.stations
-                            .Where(region.Contains));
+                            .Where(station => region.Contains(station) && station.isOpen));
                 }
 
                 int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(regionStations[stationId].globalId), 0, regionStations.Count);
@@ -214,7 +218,10 @@ namespace Gameplay.MetroDisplay.Model
 
             foreach (MetroLine line in lines)
             {
-                var goodStations = line.stations.Select(station => station.stationId).Where(stationId =>
+                var goodStations = line.stations
+                    .Where(station => station.isOpen)
+                    .Select(station => station.stationId)
+                    .Where(stationId =>
                 {
                     if (stationId + size - 1 < line.stations.Count)
                     {
@@ -231,7 +238,7 @@ namespace Gameplay.MetroDisplay.Model
 
                     return false;
                 });
-                
+
                 options.AddRange(goodStations.Select(stationId => new GlobalId(line.lineId, stationId)));
             }
 
@@ -239,7 +246,7 @@ namespace Gameplay.MetroDisplay.Model
             int index = Random.Range(0, options.Count);
             GlobalId id = options[index];
 
-            return lines[id.lineId].stations.GetRange(id.stationId, size);
+            return lines[id.lineId].stations.GetStationRange(id.stationId, size);
         }
 
         private List<MetroStation> PickRandomStationRangeOnLine(Region region, int size, List<int> blacklist)
@@ -249,7 +256,7 @@ namespace Gameplay.MetroDisplay.Model
                 throw new ArgumentException("Can't pick random station range, invalid line id!");
             }
 
-            List<MetroStation> stations = lines[region.lineId].stations;
+            List<MetroStation> stations = lines[region.lineId].stations.Where(station => station.isOpen).ToList();
 
             int index = RandomUtils.ConstrainedRandom(stationId =>
             {
@@ -257,7 +264,8 @@ namespace Gameplay.MetroDisplay.Model
                 {
                     for (int i = stationId; i < stationId + size; i++)
                     {
-                        if (blacklist.Contains(stations[i].globalId) || !region.Contains(stations[i]))
+                        if (blacklist.Contains(stations[i].globalId) || 
+                            !region.Contains(stations[i]))
                         {
                             return false;
                         }
@@ -269,7 +277,7 @@ namespace Gameplay.MetroDisplay.Model
                 return false;
             }, 0, stations.Count);
 
-            return stations.GetRange(index, size);
+            return stations.GetStationRange(index, size);
         }
 
         /// <summary>
@@ -277,10 +285,54 @@ namespace Gameplay.MetroDisplay.Model
         /// </summary>
         public MetroLine PickRandomLine(Region region)
         {
-            List<MetroLine> filteredLines = lines.Where(line => line.stations.Count(region.Contains) >= 1).ToList();
+            List<MetroLine> filteredLines = lines
+                .Where(line => line.stations.Count(station => region.Contains(station) && station.isOpen) >= 1)
+                .ToList();
             int index = Random.Range(0, filteredLines.Count);
 
             return filteredLines[index];
+        }
+
+        private static List<int> eventfulYears;
+
+        public List<int> GetEventfulYears()
+        {
+            if (eventfulYears == null)
+            {
+                HashSet<int> years = new HashSet<int>();
+
+                foreach (MetroLine line in lines)
+                {
+                    years.Add(line.openIn);
+                    years.Add(line.closedIn);
+
+                    years.AddAll(line.nameHistory);
+                    foreach (MetroStation station in line.stations)
+                    {
+                        years.AddAll(station.history);
+                        years.AddAll(station.nameHistory);
+                    }
+
+                    foreach (MetroConnection connection in line.connections)
+                    {
+                        years.Add(connection.openIn);
+                        years.Add(connection.closedIn);
+                    }
+                }
+
+                foreach (MetroCrossing crossing in crossings)
+                {
+                    years.Add(crossing.openIn);
+                    years.Add(crossing.closedIn);
+                }
+
+                years.RemoveWhere(i => i < 1935 || i >= 2022);
+
+                eventfulYears = years.ToList();
+                eventfulYears.Sort();
+            }
+
+            return eventfulYears;
         }
 
         private void OnValidate()
@@ -369,12 +421,11 @@ namespace Gameplay.MetroDisplay.Model
                             new TypeDateRange<bool>(false, 0, 3000)
                         };
                     }
-
                 }
-                
+
                 EditorUtility.SetDirty(metro);
             }
-            
+
             if (GUILayout.Button("Import Region Data"))
             {
                 Metro metro = (Metro)target;

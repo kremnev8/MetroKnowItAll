@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Gameplay.Statistics;
 using TMPro;
 using UnityEngine;
@@ -17,7 +18,9 @@ namespace Gameplay.MetroDisplay.Model
         
         public GlobalId globalId => new GlobalId(lineId, stationId);
         public int index => lineId * 100 + stationId;
+        
         public string currentName => nameHistory.GetCurrent(MetroRenderer.currentYear);
+        public bool isOpen => history.GetCurrent(MetroRenderer.currentYear);
         
         [HideInInspector]
         public byte lineId;
@@ -27,11 +30,10 @@ namespace Gameplay.MetroDisplay.Model
         public Vector2 position;
         public List<TypeDateRange<string>> nameHistory;
 
+        public byte namePriority;
+        
         [Header("Override Name Alignment")]
         public bool m_override;
-        
-        [ShowWhen("m_override")]
-        public bool hideName;
         [ShowWhen("m_override")]
         public NamePosition namePosition;
         [ShowWhen("m_override")]

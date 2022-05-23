@@ -20,7 +20,7 @@ namespace Gameplay.UI
         {
             arcadeCard.SetActive(game.mode == ArcadeModeController.MODE_ID);
             learningCard.SetActive(game.mode == LearningModeController.MODE_ID);
-            historicCard.SetActive(false);
+            historicCard.SetActive(game.mode == HistoricModeController.MODE_ID);
 
             gameObject.SetActive(true);
         }

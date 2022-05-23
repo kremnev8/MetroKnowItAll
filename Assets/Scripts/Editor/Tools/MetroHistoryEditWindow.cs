@@ -85,13 +85,13 @@ namespace Editor.Tools
             {
                 station = targetDisplay.station;
                 currentName = station.currentName;
-                open = station.history.GetCurrent(MetroRenderer.currentYear);
+                open = station.isOpen;
             }
         }
 
         public void OnGUI()
         {
-            if (metro == null)
+            if (metro == null || MetroRenderer.instance == null)
             {
                 EditorGUILayout.HelpBox("Не найден объект метро! Пожайлуста выберите метро в MetroRenderer или перезагрузите сцену!", MessageType.Info);
                 return;
@@ -133,6 +133,11 @@ namespace Editor.Tools
                 MetroRenderer.currentYear = currentYear;
                 MetroRenderer.instance.dirty = true;
                 RefreshData();
+            }
+
+            if (GUILayout.Button("Обновить!"))
+            {
+                MetroRenderer.instance.Refresh();
             }
 
             if (GUILayout.Button("Регенерировать!"))
@@ -213,6 +218,7 @@ namespace Editor.Tools
 
                 currentName = EditorGUILayout.TextField("Название", currentName);
                 open = EditorGUILayout.Toggle("Открыта", open);
+                station.namePriority = (byte)EditorGUILayout.IntField("Приоритет", station.namePriority);
 
                 if (GUILayout.Button("Применить!"))
                 {
@@ -223,7 +229,7 @@ namespace Editor.Tools
                         RefreshData();
                     }
 
-                    if (open != station.history.GetCurrent(currentYear))
+                    if (open != station.isOpen)
                     {
                         station.history.Insert(currentYear, open);
                         EditorUtility.SetDirty(metro);

@@ -19,6 +19,8 @@ namespace Gameplay.Conrollers
         public new const string MODE_ID = "learning";
         public override string gameModeId => MODE_ID;
 
+        [SerializeField] protected Sprite tokenIcon;
+
         public int minQuestionsConfig;
         public int maxQuestionsConfig;
         public int questionIncrement;
@@ -44,7 +46,10 @@ namespace Gameplay.Conrollers
         public override void ContinueSession(Game gameState)
         {
             InitGameState(gameState);
+            
+            uiGame.topBar.SwitchTokensIcon(tokenIcon);
             game.questionId = FindStationGenerator.QUESTION_ID;
+            renderer.year = targetMetro.startYear;
             EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }
 
@@ -136,10 +141,15 @@ namespace Gameplay.Conrollers
                 }
             }
 
-            int tickets = Mathf.RoundToInt(score);
-            tokens += tickets;
+            int tmp_tokens = Mathf.RoundToInt(score);
+            tmp_tokens += tmp_tokens;
 
-            model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tickets);
+            model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tmp_tokens, GetTokenName(tmp_tokens));
+        }
+
+        public virtual string GetTokenName(int count)
+        {
+            return count.GetDeclension("билет", "билета", "билетов");
         }
 
         public void Purchase()
@@ -161,20 +171,8 @@ namespace Gameplay.Conrollers
             {
                 unlockedStations.Unlock(display.station);
                 tokens -= 1;
-                try
-                {
-                    MetroCrossing crossing =
-                        renderer.metro.crossings.First(crossing => crossing.stationsGlobalIds.Contains(display.station.globalId));
-                    foreach (GlobalId globalId in crossing.stationsGlobalIds)
-                    {
-                        if (globalId != display.station.globalId)
-                        {
-                            unlockedStations.Unlock(renderer.metro.GetStation(globalId));
-                        }
-                    }
-                }
-                catch (InvalidOperationException) { }
-
+                DetermineAdditionalUnlocks(display.station.globalId);
+                
                 if (game.correctAnswers == maxQuestions)
                 {
                     int newMax = maxQuestions + questionIncrement;
@@ -188,9 +186,26 @@ namespace Gameplay.Conrollers
             }
         }
 
-        private void Refresh()
+        public virtual void DetermineAdditionalUnlocks(GlobalId globalId)
         {
-            uiGame.topBar.UpdateTickets(tokens);
+            try
+            {
+                MetroCrossing crossing =
+                    renderer.metro.crossings.First(crossing => crossing.stationsGlobalIds.Contains(globalId));
+                foreach (GlobalId globalId1 in crossing.stationsGlobalIds)
+                {
+                    if (globalId1 != globalId)
+                    {
+                        unlockedStations.Unlock(renderer.metro.GetStation(globalId));
+                    }
+                }
+            }
+            catch (InvalidOperationException) { }
+        }
+
+        protected virtual void Refresh()
+        {
+            uiGame.topBar.UpdateTokens(tokens);
             game.currentRegion = SelectRegion();
             renderer.FocusRegion(game.currentRegion);
             if (unlockedStations.data.Count < 10)

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53d5f9bd6fa04f04bfdeb64fc7345cbd, type: 3}
   m_Name: Metro historic
   m_EditorClassIdentifier: 
+  startYear: 1935
   lines:
   - lineId: 0
     nameHistory:
@@ -39,8 +40,8 @@ MonoBehaviour:
       - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 2014
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 257
       history:
@@ -58,8 +59,8 @@ MonoBehaviour:
       - value: "\u0427\u0435\u0440\u043A\u0438\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 516
       history:
@@ -78,8 +79,8 @@ MonoBehaviour:
           \u043F\u043B\u043E\u0449\u0430\u0434\u044C"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -97,8 +98,8 @@ MonoBehaviour:
       - value: "\u0421\u043E\u043A\u043E\u043B\u044C\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -116,8 +117,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0441\u0435\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -135,8 +136,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 0
       history:
@@ -160,8 +161,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0435 \u0432\u043E\u0440\u043E\u0442\u0430"
         openIn: 1986
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -185,8 +186,8 @@ MonoBehaviour:
       - value: "\u0427\u0438\u0441\u0442\u044B\u0435 \u043F\u0440\u0443\u0434\u044B"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 260
       history:
@@ -210,8 +211,8 @@ MonoBehaviour:
       - value: "\u041B\u0443\u0431\u044F\u043D\u043A\u0430"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -241,8 +242,8 @@ MonoBehaviour:
       - value: "\u041E\u0445\u043E\u0442\u043D\u044B\u0439 \u0440\u044F\u0434"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -261,8 +262,8 @@ MonoBehaviour:
           \u041B\u0435\u043D\u043D\u0438\u043D\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 0
       history:
@@ -286,8 +287,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u043E\u043F\u043E\u0442\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 1957
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -306,14 +307,14 @@ MonoBehaviour:
         openIn: 0
         closedIn: 1935
       - value: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B
-          \u0438\u043C. \u0413\u043E\u0440\u044C\u043A\u043E\u0433\u043E "
+          \u0438\u043C. \u0413\u043E\u0440\u044C\u043A\u043E\u0433\u043E"
         openIn: 1935
         closedIn: 1980
       - value: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
         openIn: 1980
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -331,8 +332,8 @@ MonoBehaviour:
       - value: "\u0424\u0440\u0443\u043D\u0437\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -350,8 +351,8 @@ MonoBehaviour:
       - value: "\u0421\u043F\u043E\u0440\u0442\u0438\u0432\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -375,8 +376,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u0440\u043E\u0431\u044C\u0451\u0432\u044B \u0433\u043E\u0440\u044B"
         openIn: 1999
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -400,8 +401,8 @@ MonoBehaviour:
       - value: "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -419,8 +420,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -438,8 +439,8 @@ MonoBehaviour:
       - value: "\u042E\u0433\u043E-\u0417\u0430\u043F\u0430\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -457,8 +458,8 @@ MonoBehaviour:
       - value: "\u0422\u0440\u043E\u043F\u0430\u0440\u0451\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -476,8 +477,8 @@ MonoBehaviour:
       - value: "\u0420\u0443\u043C\u044F\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -495,8 +496,8 @@ MonoBehaviour:
       - value: "\u0421\u0430\u043B\u0430\u0440\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -514,8 +515,8 @@ MonoBehaviour:
       - value: "\u0424\u0438\u043B\u0430\u0442\u043E\u0432 \u041B\u0443\u0433"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -533,8 +534,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u043A\u0448\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -552,8 +553,8 @@ MonoBehaviour:
       - value: "\u041E\u043B\u044C\u0445\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -571,8 +572,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043C\u043C\u0443\u043D\u0430\u0440\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -590,8 +591,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -612,8 +613,8 @@ MonoBehaviour:
       - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -634,8 +635,8 @@ MonoBehaviour:
       - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -656,8 +657,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 513
       history:
@@ -909,7 +910,7 @@ MonoBehaviour:
       overrideBend: 1
       bendPoint: {x: -44.43027, y: -38.001785}
       weight: 1
-      openIn: 0
+      openIn: 1983
       closedIn: 2002
     simpleLine: 0
     namePosition: 8
@@ -936,10 +937,10 @@ MonoBehaviour:
       - value: "\u0425\u043E\u0432\u0440\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 7
+      nameAlignment: 516
       history:
       - value: 0
         openIn: 0
@@ -955,10 +956,10 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u043E\u043C\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 7
+      nameAlignment: 516
       history:
       - value: 0
         openIn: 0
@@ -974,10 +975,10 @@ MonoBehaviour:
       - value: "\u0420\u0435\u0447\u043D\u043E\u0439 \u0432\u043E\u043A\u0437\u0430\u043B"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 7
+      nameAlignment: 516
       history:
       - value: 0
         openIn: 0
@@ -993,8 +994,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u0434\u043D\u044B\u0439 \u0441\u0442\u0430\u0434\u0438\u043E\u043D"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1012,8 +1013,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u0439\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 516
       history:
@@ -1031,8 +1032,8 @@ MonoBehaviour:
       - value: "\u0421\u043E\u043A\u043E\u043B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1050,8 +1051,8 @@ MonoBehaviour:
       - value: "\u0410\u044D\u0440\u043E\u043F\u043E\u0440\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1069,8 +1070,8 @@ MonoBehaviour:
       - value: "\u0414\u0438\u043D\u0430\u043C\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1088,8 +1089,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1107,8 +1108,8 @@ MonoBehaviour:
       - value: "\u041C\u0430\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1132,8 +1133,8 @@ MonoBehaviour:
       - value: "\u0422\u0432\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 513
       history:
@@ -1157,8 +1158,8 @@ MonoBehaviour:
       - value: "\u0422\u0435\u0430\u0442\u0440\u0430\u043B\u044C\u043D\u0430\u044F"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1176,8 +1177,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u043A\u0443\u0437\u043D\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 513
       history:
@@ -1195,8 +1196,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -1220,8 +1221,8 @@ MonoBehaviour:
       - value: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 1956
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -1239,8 +1240,8 @@ MonoBehaviour:
       - value: "\u0422\u0435\u0445\u043D\u043E\u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1258,8 +1259,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043B\u043E\u043C\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1277,8 +1278,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u0448\u0438\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 8
       nameAlignment: 0
       history:
@@ -1296,8 +1297,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u043D\u0442\u0435\u043C\u0438\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -1321,8 +1322,8 @@ MonoBehaviour:
       - value: "\u0426\u0430\u0440\u0438\u0446\u0438\u043D\u043E"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -1340,8 +1341,8 @@ MonoBehaviour:
       - value: "\u041E\u0440\u0435\u0445\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -1359,8 +1360,8 @@ MonoBehaviour:
       - value: "\u0414\u043E\u043C\u043E\u0434\u0435\u0434\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -1378,8 +1379,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u0432\u0430\u0440\u0434\u0435\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -1397,8 +1398,8 @@ MonoBehaviour:
       - value: "\u0410\u043B\u043C\u0430-\u0410\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 0
       history:
@@ -1416,8 +1417,8 @@ MonoBehaviour:
       - value: "\u0412\u0430\u0440\u0448\u0430\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
+      namePriority: 0
+      m_override: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1438,8 +1439,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
+      namePriority: 0
+      m_override: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1718,8 +1719,8 @@ MonoBehaviour:
       - value: "\u0429\u0451\u043B\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1737,8 +1738,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0440\u0432\u043E\u043C\u0430\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1763,8 +1764,8 @@ MonoBehaviour:
       - value: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 1963
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1789,8 +1790,8 @@ MonoBehaviour:
           \u043F\u0430\u0440\u043A"
         openIn: 1963
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1814,8 +1815,8 @@ MonoBehaviour:
       - value: "\u0421\u0435\u043C\u0435\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 1961
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1839,8 +1840,8 @@ MonoBehaviour:
       - value: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -1864,8 +1865,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u0443\u043C\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 1028
       history:
@@ -1883,8 +1884,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -1902,8 +1903,8 @@ MonoBehaviour:
       - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0420\u0435\u0432\u043E\u043B\u044E\u0446\u0438\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -1921,8 +1922,8 @@ MonoBehaviour:
       - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 516
       history:
@@ -1940,8 +1941,8 @@ MonoBehaviour:
       - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -1965,8 +1966,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 2
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 1028
       history:
@@ -1984,8 +1985,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2003,8 +2004,8 @@ MonoBehaviour:
       - value: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 260
       history:
@@ -2022,8 +2023,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2041,8 +2042,8 @@ MonoBehaviour:
       - value: "\u041C\u043E\u043B\u043E\u0434\u0451\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2060,8 +2061,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u044B\u043B\u0430\u0442\u0441\u043A\u043E\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2079,8 +2080,8 @@ MonoBehaviour:
       - value: "\u0421\u0442\u0440\u043E\u0433\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2098,8 +2099,8 @@ MonoBehaviour:
       - value: "\u041C\u044F\u043A\u0438\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2117,8 +2118,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -2136,8 +2137,8 @@ MonoBehaviour:
       - value: "\u041C\u0438\u0442\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2155,8 +2156,8 @@ MonoBehaviour:
       - value: "\u041F\u044F\u0442\u043D\u0438\u0446\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -2174,8 +2175,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -2193,10 +2194,10 @@ MonoBehaviour:
       - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 2
+      nameAlignment: 514
       history:
       - value: 1
         openIn: 0
@@ -2212,10 +2213,10 @@ MonoBehaviour:
       - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 3
+      nameAlignment: 513
       history:
       - value: 1
         openIn: 0
@@ -2231,8 +2232,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2250,13 +2251,16 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0440\u0432\u043E\u043C\u0430\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
-      - value: 1
+      - value: 0
         openIn: 0
+        closedIn: 1954
+      - value: 1
+        openIn: 1954
         closedIn: 1961
       - value: 0
         openIn: 1961
@@ -2518,8 +2522,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2537,8 +2541,8 @@ MonoBehaviour:
       - value: "\u041F\u0438\u043E\u043D\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2556,8 +2560,8 @@ MonoBehaviour:
       - value: "\u0424\u0438\u043B\u0451\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2575,8 +2579,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u0433\u0440\u0430\u0442\u0438\u043E\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2594,8 +2598,8 @@ MonoBehaviour:
       - value: "\u0424\u0438\u043B\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2613,8 +2617,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2632,8 +2636,8 @@ MonoBehaviour:
       - value: "\u0421\u0442\u0443\u0434\u0435\u043D\u0447\u0435\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2651,8 +2655,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2670,8 +2674,8 @@ MonoBehaviour:
       - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -2689,8 +2693,8 @@ MonoBehaviour:
       - value: "\u0410\u0440\u0431\u0430\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -2716,10 +2720,10 @@ MonoBehaviour:
           \u0441\u0430\u0434"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
-      namePosition: 3
-      nameAlignment: 1025
+      namePosition: 8
+      nameAlignment: 257
       history:
       - value: 0
         openIn: 0
@@ -2735,8 +2739,8 @@ MonoBehaviour:
       - value: "\u041C\u0435\u0436\u0434\u0443\u043D\u0430\u0440\u043E\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 516
       history:
@@ -2760,8 +2764,8 @@ MonoBehaviour:
       - value: "\u0412\u044B\u0441\u0442\u0430\u0432\u043E\u0447\u043D\u0430\u044F"
         openIn: 2008
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2779,13 +2783,16 @@ MonoBehaviour:
       - value: "\u041C\u043E\u043B\u043E\u0434\u0435\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
-      - value: 1
+      - value: 0
         openIn: 0
+        closedIn: 1965
+      - value: 1
+        openIn: 1965
         closedIn: 2008
       - value: 0
         openIn: 2008
@@ -2798,13 +2805,16 @@ MonoBehaviour:
       - value: "\u041A\u0440\u044B\u043B\u0430\u0442\u0441\u043A\u043E\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
-      - value: 1
+      - value: 0
         openIn: 0
+        closedIn: 1989
+      - value: 1
+        openIn: 1989
         closedIn: 2008
       - value: 0
         openIn: 2008
@@ -2932,10 +2942,10 @@ MonoBehaviour:
     - value: "\u041A\u043E\u043B\u044C\u0446\u0435\u0432\u0430\u044F \u043B\u0438\u043D\u0438\u044F"
       openIn: 0
       closedIn: 3000
-    isLooped: 0
+    isLooped: 1
     style: 0
     useSmoothCurves: 1
-    curveCenter: {x: 0.5, y: 10}
+    curveCenter: {x: 0.5, y: 4}
     lineColor: {r: 0.5372549, g: 0.30588236, b: 0.20784314, a: 1}
     stations:
     - lineId: 4
@@ -2953,8 +2963,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0440\u043A \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B"
         openIn: 1980
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -2984,8 +2994,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
         openIn: 1961
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3009,8 +3019,8 @@ MonoBehaviour:
       - value: "\u0414\u043E\u0431\u0440\u044B\u043D\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 1961
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 514
       history:
@@ -3028,8 +3038,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0432\u0435\u043B\u0435\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3047,8 +3057,8 @@ MonoBehaviour:
       - value: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -3066,8 +3076,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3085,8 +3095,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043C\u0441\u043E\u043C\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3111,8 +3121,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
         openIn: 1966
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -3130,8 +3140,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u0441\u043B\u043E\u0431\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 1026
       history:
@@ -3149,8 +3159,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3168,9 +3178,9 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u043F\u0440\u0435\u0441\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
-      namePosition: 6
+      namePosition: 5
       nameAlignment: 513
       history:
       - value: 0
@@ -3187,10 +3197,10 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 1
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 7
+      nameAlignment: 260
       history:
       - value: 0
         openIn: 0
@@ -3328,8 +3338,8 @@ MonoBehaviour:
       - value: "\u041C\u0435\u0434\u0432\u0435\u0434\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3347,8 +3357,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u0431\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3366,8 +3376,8 @@ MonoBehaviour:
       - value: "\u0421\u0432\u0438\u0431\u043B\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3386,8 +3396,8 @@ MonoBehaviour:
           \u0441\u0430\u0434"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3411,8 +3421,8 @@ MonoBehaviour:
       - value: "\u0412\u0414\u041D\u0425"
         openIn: 1959
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3439,8 +3449,8 @@ MonoBehaviour:
       - value: "\u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3458,8 +3468,8 @@ MonoBehaviour:
       - value: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3487,8 +3497,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u041C\u0438\u0440\u0430"
         openIn: 1966
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3512,8 +3522,8 @@ MonoBehaviour:
       - value: "\u0421\u0443\u0445\u0430\u0440\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 1026
       history:
@@ -3531,8 +3541,8 @@ MonoBehaviour:
       - value: "\u0422\u0443\u0440\u0433\u0435\u043D\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3556,8 +3566,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3578,8 +3588,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u043A\u0443\u0437\u043D\u0435\u0446\u043A\u0430\u044F"
         openIn: 1971
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3597,8 +3607,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0442\u044F\u0431\u0440\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3616,8 +3626,8 @@ MonoBehaviour:
       - value: "\u0428\u0430\u0431\u043E\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3635,8 +3645,8 @@ MonoBehaviour:
       - value: "\u041B\u0435\u043D\u0438\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3654,8 +3664,8 @@ MonoBehaviour:
       - value: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3673,8 +3683,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u0444\u0441\u043E\u044E\u0437\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3692,8 +3702,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u044B\u0435 \u0427\u0435\u0440\u0451\u043C\u0443\u0448\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3711,8 +3721,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u043B\u0443\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 1025
       history:
@@ -3730,8 +3740,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u044F\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3749,8 +3759,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043D\u044C\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3768,8 +3778,8 @@ MonoBehaviour:
       - value: "\u0422\u0451\u043F\u043B\u044B\u0439 \u0421\u0442\u0430\u043D"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3787,8 +3797,8 @@ MonoBehaviour:
       - value: "\u042F\u0441\u0435\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -3809,8 +3819,8 @@ MonoBehaviour:
       - value: "\u0411\u0438\u0442\u0446\u0435\u0432\u0441\u043A\u0438\u0439  \u043F\u0430\u0440\u043A"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -4046,8 +4056,8 @@ MonoBehaviour:
       - value: "\u041F\u043B\u0430\u043D\u0435\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4065,8 +4075,8 @@ MonoBehaviour:
       - value: "\u0421\u0445\u043E\u0434\u043D\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4084,8 +4094,8 @@ MonoBehaviour:
       - value: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -4103,8 +4113,8 @@ MonoBehaviour:
       - value: "\u0421\u043F\u0430\u0440\u0442\u0430\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -4122,8 +4132,8 @@ MonoBehaviour:
       - value: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -4142,8 +4152,8 @@ MonoBehaviour:
           \u043F\u043E\u043B\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -4161,8 +4171,8 @@ MonoBehaviour:
       - value: "\u041F\u043E\u043B\u0435\u0436\u0430\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4180,8 +4190,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -4199,8 +4209,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 1905 \u0433\u043E\u0434\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -4218,8 +4228,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u0440\u0440\u0438\u043A\u0430\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 513
       history:
@@ -4237,8 +4247,8 @@ MonoBehaviour:
       - value: "\u041F\u0443\u0448\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 514
       history:
@@ -4256,8 +4266,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0437\u043D\u0435\u0446\u043A\u0438\u0439 \u041C\u043E\u0441\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 1028
       history:
@@ -4281,8 +4291,8 @@ MonoBehaviour:
       - value: "\u041A\u0438\u0442\u0430\u0439-\u0433\u043E\u0440\u043E\u0434"
         openIn: 1990
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4300,10 +4310,10 @@ MonoBehaviour:
       - value: "\u0422\u0430\u0433\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 2
+      nameAlignment: 514
       history:
       - value: 0
         openIn: 0
@@ -4319,8 +4329,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u043B\u0435\u0442\u0430\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -4339,8 +4349,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -4358,8 +4368,8 @@ MonoBehaviour:
       - value: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4377,8 +4387,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0437\u044C\u043C\u0438\u043D\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -4396,8 +4406,8 @@ MonoBehaviour:
       - value: "\u0420\u044F\u0437\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4421,8 +4431,8 @@ MonoBehaviour:
       - value: "\u0412\u044B\u0445\u0438\u043D\u043E"
         openIn: 1989
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4441,8 +4451,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4460,8 +4470,8 @@ MonoBehaviour:
       - value: "\u0416\u0443\u043B\u0435\u0431\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4479,8 +4489,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u0442\u0435\u043B\u044C\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4699,8 +4709,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u043A\u043E\u0441\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -4718,8 +4728,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u0433\u0438\u0440\u0435\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 516
       history:
@@ -4737,8 +4747,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0440\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -4756,8 +4766,8 @@ MonoBehaviour:
       - value: "\u0428\u043E\u0441\u0441\u0435 \u042D\u043D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 513
       history:
@@ -4775,8 +4785,8 @@ MonoBehaviour:
       - value: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4794,8 +4804,8 @@ MonoBehaviour:
       - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0418\u043B\u044C\u0438\u0447\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4813,8 +4823,8 @@ MonoBehaviour:
       - value: "\u041C\u0430\u0440\u043A\u0441\u0438\u0441\u0442\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -4832,8 +4842,8 @@ MonoBehaviour:
       - value: "\u0422\u0440\u0435\u0442\u044C\u044F\u043A\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 514
       history:
@@ -4925,10 +4935,10 @@ MonoBehaviour:
       - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
-      nameAlignment: 514
+      nameAlignment: 258
       history:
       - value: 0
         openIn: 0
@@ -4950,8 +4960,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0440\u043A \u041F\u043E\u0431\u0435\u0434\u044B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4969,8 +4979,8 @@ MonoBehaviour:
       - value: "\u041C\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -4989,8 +4999,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5008,8 +5018,8 @@ MonoBehaviour:
       - value: "\u0420\u0430\u043C\u0435\u043D\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5028,8 +5038,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5047,8 +5057,8 @@ MonoBehaviour:
       - value: "\u041E\u0437\u0451\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5066,8 +5076,8 @@ MonoBehaviour:
       - value: "\u0413\u043E\u0432\u043E\u0440\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5085,8 +5095,8 @@ MonoBehaviour:
       - value: "\u0421\u043E\u043B\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5104,8 +5114,8 @@ MonoBehaviour:
       - value: "\u0411\u043E\u0440\u043E\u0432\u0441\u043A\u043E\u0435 \u0448\u043E\u0441\u0441\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5123,8 +5133,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u043F\u0435\u0440\u0435\u0434\u0435\u043B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5142,8 +5152,8 @@ MonoBehaviour:
       - value: "\u0420\u0430\u0441\u0441\u043A\u0430\u0437\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5267,8 +5277,8 @@ MonoBehaviour:
       - value: "\u0410\u043B\u0442\u0443\u0444\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5286,8 +5296,8 @@ MonoBehaviour:
       - value: "\u0411\u0438\u0431\u0438\u0440\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5305,8 +5315,8 @@ MonoBehaviour:
       - value: "\u041E\u0442\u0440\u0430\u0434\u043D\u043E\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5324,8 +5334,8 @@ MonoBehaviour:
       - value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5343,10 +5353,10 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 0
       namePosition: 3
-      nameAlignment: 0
+      nameAlignment: 513
       history:
       - value: 0
         openIn: 0
@@ -5362,8 +5372,8 @@ MonoBehaviour:
       - value: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5381,8 +5391,8 @@ MonoBehaviour:
       - value: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5397,11 +5407,11 @@ MonoBehaviour:
       regionType: 2
       position: {x: -18, y: 48.699997}
       nameHistory:
-      - value: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -5419,8 +5429,8 @@ MonoBehaviour:
       - value: "\u041C\u0435\u043D\u0434\u0435\u043B\u0435\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -5438,8 +5448,8 @@ MonoBehaviour:
       - value: "\u0426\u0432\u0435\u0442\u043D\u043E\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 516
       history:
@@ -5457,8 +5467,8 @@ MonoBehaviour:
       - value: "\u0427\u0435\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 516
       history:
@@ -5476,8 +5486,8 @@ MonoBehaviour:
       - value: "\u0411\u043E\u0440\u043E\u0432\u0438\u0446\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -5495,8 +5505,8 @@ MonoBehaviour:
       - value: "\u041F\u043E\u043B\u044F\u043D\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5514,8 +5524,8 @@ MonoBehaviour:
       - value: "\u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 1028
       history:
@@ -5533,8 +5543,8 @@ MonoBehaviour:
       - value: "\u0422\u0443\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5552,8 +5562,8 @@ MonoBehaviour:
       - value: "\u041D\u0430\u0433\u0430\u0442\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5571,8 +5581,8 @@ MonoBehaviour:
       - value: "\u041D\u0430\u0433\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5591,8 +5601,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -5610,8 +5620,8 @@ MonoBehaviour:
       - value: "\u0421\u0435\u0432\u0430\u0441\u0442\u043E\u043F\u043E\u043B\u044C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 1
       nameAlignment: 1028
       history:
@@ -5629,8 +5639,8 @@ MonoBehaviour:
       - value: "\u0427\u0435\u0440\u0442\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5648,8 +5658,8 @@ MonoBehaviour:
       - value: "\u042E\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5667,8 +5677,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u0430\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5687,8 +5697,8 @@ MonoBehaviour:
           \u042F\u043D\u0433\u0435\u043B\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5706,8 +5716,8 @@ MonoBehaviour:
       - value: "\u0410\u043D\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5726,8 +5736,8 @@ MonoBehaviour:
           \u0414\u043E\u043D\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -5955,8 +5965,8 @@ MonoBehaviour:
       - value: "\u0421\u0435\u043B\u0438\u0433\u0435\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5974,8 +5984,8 @@ MonoBehaviour:
       - value: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -5993,8 +6003,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6012,8 +6022,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u043E-\u0420\u0430\u0437\u0443\u043C\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6031,8 +6041,8 @@ MonoBehaviour:
       - value: "\u0424\u043E\u043D\u0432\u0438\u0437\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6050,8 +6060,8 @@ MonoBehaviour:
       - value: "\u0411\u0443\u0442\u044B\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6069,8 +6079,8 @@ MonoBehaviour:
       - value: "\u041C\u0430\u0440\u044C\u0438\u043D\u0430 \u0420\u043E\u0449\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6088,8 +6098,8 @@ MonoBehaviour:
       - value: "\u0414\u043E\u0441\u0442\u043E\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6107,8 +6117,8 @@ MonoBehaviour:
       - value: "\u0422\u0440\u0443\u0431\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6126,8 +6136,8 @@ MonoBehaviour:
       - value: "\u0421\u0440\u0435\u0442\u0435\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 258
       history:
@@ -6145,8 +6155,8 @@ MonoBehaviour:
       - value: "\u0427\u043A\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -6164,8 +6174,8 @@ MonoBehaviour:
       - value: "\u0420\u0438\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -6184,10 +6194,10 @@ MonoBehaviour:
           \u0437\u0430\u0441\u0442\u0430\u0432\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
-      nameAlignment: 516
+      nameAlignment: 1028
       history:
       - value: 0
         openIn: 0
@@ -6203,10 +6213,10 @@ MonoBehaviour:
       - value: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
-      namePosition: 7
-      nameAlignment: 516
+      namePosition: 4
+      nameAlignment: 260
       history:
       - value: 0
         openIn: 0
@@ -6222,8 +6232,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u0436\u0443\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6241,8 +6251,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0447\u0430\u0442\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6260,8 +6270,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u043B\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6279,8 +6289,8 @@ MonoBehaviour:
       - value: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6298,8 +6308,8 @@ MonoBehaviour:
       - value: "\u0411\u0440\u0430\u0442\u0438\u0441\u043B\u0430\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6317,8 +6327,8 @@ MonoBehaviour:
       - value: "\u041C\u0430\u0440\u044C\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6336,8 +6346,8 @@ MonoBehaviour:
       - value: "\u0411\u043E\u0440\u0438\u0441\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6355,8 +6365,8 @@ MonoBehaviour:
       - value: "\u0428\u0438\u043F\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6374,8 +6384,8 @@ MonoBehaviour:
       - value: "\u0417\u044F\u0431\u043B\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6595,8 +6605,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u0448\u0438\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6614,8 +6624,8 @@ MonoBehaviour:
       - value: "\u0412\u0430\u0440\u0448\u0430\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -6636,8 +6646,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u0445\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -6661,8 +6671,8 @@ MonoBehaviour:
       - value: "\u0417\u044E\u0437\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -6680,8 +6690,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u0440\u043E\u043D\u0446\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -6699,8 +6709,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 1025
       history:
@@ -6718,8 +6728,8 @@ MonoBehaviour:
       - value: "\u041F\u0440\u043E\u0441\u043F\u0435\u043A\u0442 \u0412\u0435\u0440\u043D\u0430\u0434\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6738,8 +6748,8 @@ MonoBehaviour:
           \u043F\u0440\u043E\u0441\u043F\u0435\u043A\u0442"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -6757,8 +6767,8 @@ MonoBehaviour:
       - value: "\u0410\u043C\u0438\u043D\u044C\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -6776,8 +6786,8 @@ MonoBehaviour:
       - value: "\u0414\u0430\u0432\u044B\u0434\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -6795,8 +6805,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 3
       nameAlignment: 1025
       history:
@@ -6814,8 +6824,8 @@ MonoBehaviour:
       - value: "\u0422\u0435\u0440\u0435\u0445\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 514
       history:
@@ -6833,8 +6843,8 @@ MonoBehaviour:
       - value: "\u041C\u043D\u0451\u0432\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -6852,9 +6862,9 @@ MonoBehaviour:
       - value: "\u041D\u0430\u0440\u043E\u0434\u043D\u043E\u0435 \u041E\u043F\u043E\u043B\u0447\u0435\u043D\u0438\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
-      namePosition: 2
+      namePosition: 5
       nameAlignment: 513
       history:
       - value: 0
@@ -6871,8 +6881,8 @@ MonoBehaviour:
       - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 2
       nameAlignment: 514
       history:
@@ -7020,8 +7030,8 @@ MonoBehaviour:
       - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7039,8 +7049,8 @@ MonoBehaviour:
       - value: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7058,8 +7068,8 @@ MonoBehaviour:
       - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7077,8 +7087,8 @@ MonoBehaviour:
       - value: "\u0426\u0421\u041A\u0410"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7096,8 +7106,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0442\u0440\u043E\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -7112,11 +7122,11 @@ MonoBehaviour:
       regionType: 2
       position: {x: -19.899994, y: 48.699997}
       nameHistory:
-      - value: "\u0421\u0430\u0432\u0451\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7191,8 +7201,8 @@ MonoBehaviour:
       - value: "\u0411\u0438\u0442\u0446\u0435\u0432\u0441\u043A\u0438\u0439 \u043F\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 4
       nameAlignment: 260
       history:
@@ -7210,8 +7220,8 @@ MonoBehaviour:
       - value: "\u041B\u0435\u0441\u043E\u043F\u0430\u0440\u043A\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -7229,8 +7239,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u0421\u0442\u0430\u0440\u043E\u043A\u0430\u0447\u0430\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7248,8 +7258,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u0421\u043A\u043E\u0431\u0435\u043B\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7268,8 +7278,8 @@ MonoBehaviour:
           \u0423\u0448\u0430\u043A\u043E\u0432\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7287,8 +7297,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u0413\u043E\u0440\u0447\u0430\u043A\u043E\u0432\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7306,8 +7316,8 @@ MonoBehaviour:
       - value: "\u0411\u0443\u043D\u0438\u043D\u0441\u043A\u0430\u044F \u0430\u043B\u043B\u0435\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7377,10 +7387,10 @@ MonoBehaviour:
         \u043A\u043E\u043B\u044C\u0446\u043E"
       openIn: 0
       closedIn: 3000
-    isLooped: 0
+    isLooped: 1
     style: 1
     useSmoothCurves: 1
-    curveCenter: {x: 0.5, y: 10}
+    curveCenter: {x: 0, y: 17.5}
     lineColor: {r: 1, g: 0.65882355, b: 0.6862745, a: 1}
     stations:
     - lineId: 14
@@ -7392,8 +7402,8 @@ MonoBehaviour:
           \u0441\u0430\u0434"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7411,10 +7421,10 @@ MonoBehaviour:
       - value: "\u0412\u043B\u0430\u0434\u044B\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
-      namePosition: 0
-      nameAlignment: 0
+      namePosition: 8
+      nameAlignment: 513
       history:
       - value: 0
         openIn: 0
@@ -7430,8 +7440,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 1
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 1028
       history:
@@ -7449,8 +7459,8 @@ MonoBehaviour:
       - value: "\u041B\u0438\u0445\u043E\u0431\u043E\u0440\u044B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7468,8 +7478,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u043F\u0442\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7487,8 +7497,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u043B\u0442\u0438\u0439\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -7506,8 +7516,8 @@ MonoBehaviour:
       - value: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -7525,8 +7535,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u043D\u0444\u0438\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7544,8 +7554,8 @@ MonoBehaviour:
       - value: "\u0417\u043E\u0440\u0433\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7563,8 +7573,8 @@ MonoBehaviour:
       - value: "\u0425\u043E\u0440\u043E\u0448\u0451\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -7582,8 +7592,8 @@ MonoBehaviour:
       - value: "\u0428\u0435\u043B\u0435\u043F\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -7601,8 +7611,8 @@ MonoBehaviour:
       - value: "\u0414\u0435\u043B\u043E\u0432\u043E\u0439 \u0446\u0435\u043D\u0442\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -7620,8 +7630,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0442\u0443\u0437\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7639,8 +7649,8 @@ MonoBehaviour:
       - value: "\u041B\u0443\u0436\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -7658,8 +7668,8 @@ MonoBehaviour:
       - value: "\u041F\u043B\u043E\u0449\u0430\u0434\u044C \u0413\u0430\u0433\u0430\u0440\u0438\u043D\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7677,8 +7687,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u044B\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7696,8 +7706,8 @@ MonoBehaviour:
       - value: "\u0412\u0435\u0440\u0445\u043D\u0438\u0435 \u041A\u043E\u0442\u043B\u044B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7715,8 +7725,8 @@ MonoBehaviour:
       - value: "\u0417\u0418\u041B"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7734,8 +7744,8 @@ MonoBehaviour:
       - value: "\u0410\u0432\u0442\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7753,8 +7763,8 @@ MonoBehaviour:
       - value: "\u0414\u0443\u0431\u0440\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7772,8 +7782,8 @@ MonoBehaviour:
       - value: "\u0423\u0433\u0440\u0435\u0448\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7791,8 +7801,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7810,8 +7820,8 @@ MonoBehaviour:
       - value: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 1025
       history:
@@ -7829,10 +7839,10 @@ MonoBehaviour:
       - value: "\u0410\u043D\u0434\u0440\u043E\u043D\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 8
+      nameAlignment: 513
       history:
       - value: 0
         openIn: 0
@@ -7845,11 +7855,11 @@ MonoBehaviour:
       regionType: 4
       position: {x: 62.199997, y: 16.899994}
       nameHistory:
-      - value: "\u0428\u043E\u0441\u0441\u0435 \u042D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
+      - value: "\u0428\u043E\u0441\u0441\u0435 \u042D\u043D\u0442\u0443\u0437\u0438\u0430\u0441\u0442\u043E\u0432"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -7867,8 +7877,8 @@ MonoBehaviour:
       - value: "\u0421\u043E\u043A\u043E\u043B\u0438\u043D\u0430\u044F \u0413\u043E\u0440\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -7886,8 +7896,8 @@ MonoBehaviour:
       - value: "\u0418\u0437\u043C\u0430\u0439\u043B\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -7905,8 +7915,8 @@ MonoBehaviour:
       - value: "\u041B\u043E\u043A\u043E\u043C\u043E\u0442\u0438\u0432"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -7924,8 +7934,8 @@ MonoBehaviour:
       - value: "\u0411\u0443\u043B\u044C\u0432\u0430\u0440 \u0420\u043E\u043A\u043E\u0441\u0441\u043E\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -7943,8 +7953,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u043E\u043A\u0430\u043C\u0435\u043D\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -7962,8 +7972,8 @@ MonoBehaviour:
       - value: "\u0420\u043E\u0441\u0442\u043E\u043A\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -8247,8 +8257,8 @@ MonoBehaviour:
       - value: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u0437\u0430\u0432\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8266,8 +8276,8 @@ MonoBehaviour:
       - value: "\u041B\u0435\u0444\u043E\u0440\u0442\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8285,8 +8295,8 @@ MonoBehaviour:
       - value: "\u0410\u0432\u0438\u0430\u043C\u043E\u0442\u043E\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8304,8 +8314,8 @@ MonoBehaviour:
       - value: "\u041D\u0438\u0436\u0435\u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8323,8 +8333,8 @@ MonoBehaviour:
       - value: "\u0421\u0442\u0430\u0445\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8342,8 +8352,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8361,8 +8371,8 @@ MonoBehaviour:
       - value: "\u042E\u0433\u043E-\u0412\u043E\u0441\u0442\u043E\u0447\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 7
       nameAlignment: 516
       history:
@@ -8380,8 +8390,8 @@ MonoBehaviour:
       - value: "\u041A\u043E\u0441\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 6
       nameAlignment: 257
       history:
@@ -8399,8 +8409,8 @@ MonoBehaviour:
       - value: "\u0423\u043B\u0438\u0446\u0430 \u0414\u043C\u0438\u0442\u0440\u0438\u0435\u0432\u0441\u043A\u043E\u0433\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8418,8 +8428,8 @@ MonoBehaviour:
       - value: "\u041B\u0443\u0445\u043C\u0430\u043D\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8437,8 +8447,8 @@ MonoBehaviour:
       - value: "\u041D\u0435\u043A\u0440\u0430\u0441\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8553,8 +8563,8 @@ MonoBehaviour:
       - value: "\u041B\u043E\u0431\u043D\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8572,8 +8582,8 @@ MonoBehaviour:
       - value: "\u0428\u0435\u0440\u0435\u043C\u0435\u0442\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8591,8 +8601,8 @@ MonoBehaviour:
       - value: "\u0425\u043B\u0435\u0431\u043D\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8610,8 +8620,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u0434\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8629,8 +8639,8 @@ MonoBehaviour:
       - value: "\u0414\u043E\u043B\u0433\u043E\u043F\u0440\u0443\u0434\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8648,8 +8658,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u0434\u0430\u0447\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8667,8 +8677,8 @@ MonoBehaviour:
       - value: "\u041C\u0430\u0440\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8686,8 +8696,8 @@ MonoBehaviour:
       - value: "\u041B\u0438\u0430\u043D\u043E\u0437\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8705,8 +8715,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u0441\u043A\u0443\u0434\u043D\u0438\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8724,8 +8734,8 @@ MonoBehaviour:
       - value: "\u0414\u0435\u0433\u0443\u043D\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8743,8 +8753,8 @@ MonoBehaviour:
       - value: "\u041E\u043A\u0440\u0443\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8762,8 +8772,8 @@ MonoBehaviour:
       - value: "\u0422\u0438\u043C\u0438\u0440\u044F\u0437\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8781,8 +8791,8 @@ MonoBehaviour:
       - value: "\u0421\u0430\u0432\u0435\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8800,8 +8810,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8819,8 +8829,8 @@ MonoBehaviour:
       - value: "\u0411\u0435\u0433\u043E\u0432\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8838,10 +8848,10 @@ MonoBehaviour:
       - value: "\u0422\u0435\u0441\u0442\u043E\u0432\u0430\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
-      namePosition: 8
-      nameAlignment: 513
+      namePosition: 6
+      nameAlignment: 257
       history:
       - value: 0
         openIn: 0
@@ -8857,8 +8867,8 @@ MonoBehaviour:
       - value: "\u0424\u0438\u043B\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8876,8 +8886,8 @@ MonoBehaviour:
       - value: "\u0421\u043B\u0430\u0432\u044F\u043D\u0441\u043A\u0438\u0439 \u0431\u0443\u043B\u044C\u0432\u0430\u0440"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8895,8 +8905,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u043D\u0446\u0435\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8914,8 +8924,8 @@ MonoBehaviour:
       - value: "\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u041F\u043E\u0441\u0451\u043B\u043E\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8933,8 +8943,8 @@ MonoBehaviour:
       - value: "\u0421\u0435\u0442\u0443\u043D\u044C"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8952,8 +8962,8 @@ MonoBehaviour:
       - value: "\u041D\u0435\u043C\u0447\u0438\u043D\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8971,8 +8981,8 @@ MonoBehaviour:
       - value: "\u0421\u043A\u043E\u043B\u043A\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -8990,8 +9000,8 @@ MonoBehaviour:
       - value: "\u0411\u0430\u043A\u043E\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9009,8 +9019,8 @@ MonoBehaviour:
       - value: "\u041E\u0434\u0438\u043D\u0446\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9245,8 +9255,8 @@ MonoBehaviour:
       - value: "\u041D\u0430\u0445\u0430\u0431\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9264,8 +9274,8 @@ MonoBehaviour:
       - value: "\u0410\u043D\u0438\u043A\u0435\u0435\u0432\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9283,8 +9293,8 @@ MonoBehaviour:
       - value: "\u041E\u043F\u0430\u043B\u0438\u0445\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9302,8 +9312,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u043E\u0433\u043E\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9321,8 +9331,8 @@ MonoBehaviour:
       - value: "\u041F\u0430\u0432\u0448\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9340,8 +9350,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u043D\u044F\u0433\u0438\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9359,8 +9369,8 @@ MonoBehaviour:
       - value: "\u0412\u043E\u043B\u043E\u043A\u043E\u043B\u0430\u043C\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9378,8 +9388,8 @@ MonoBehaviour:
       - value: "\u0422\u0440\u0438\u043A\u043E\u0442\u0430\u0436\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 5
       nameAlignment: 258
       history:
@@ -9397,8 +9407,8 @@ MonoBehaviour:
       - value: "\u0422\u0443\u0448\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9416,8 +9426,8 @@ MonoBehaviour:
       - value: "\u0429\u0443\u043A\u0438\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9435,8 +9445,8 @@ MonoBehaviour:
       - value: "\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9454,8 +9464,8 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0431\u0430\u043B\u0442\u0438\u0435\u0446"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 0
       history:
@@ -9473,8 +9483,8 @@ MonoBehaviour:
       - value: "\u0413\u0440\u0430\u0436\u0434\u0430\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 2
       nameAlignment: 514
       history:
@@ -9492,8 +9502,8 @@ MonoBehaviour:
       - value: "\u0414\u043C\u0438\u0442\u0440\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9511,8 +9521,8 @@ MonoBehaviour:
       - value: "\u0420\u0438\u0436\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -9530,8 +9540,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u043B\u0430\u043D\u0447\u0451\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -9549,8 +9559,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0440\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 3
       nameAlignment: 0
       history:
@@ -9568,8 +9578,8 @@ MonoBehaviour:
       - value: "\u041C\u043E\u0441\u043A\u0432\u0430-\u0422\u043E\u0432\u0430\u0440\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9587,8 +9597,8 @@ MonoBehaviour:
       - value: "\u041A\u0430\u043B\u0438\u0442\u043D\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -9606,8 +9616,8 @@ MonoBehaviour:
       - value: "\u041D\u043E\u0432\u043E\u0445\u043E\u0445\u043B\u043E\u0432\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 0
       namePosition: 8
       nameAlignment: 513
       history:
@@ -9625,8 +9635,8 @@ MonoBehaviour:
       - value: "\u0422\u0435\u043A\u0441\u0442\u0438\u043B\u044C\u0449\u0438\u043A\u0438"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9650,8 +9660,8 @@ MonoBehaviour:
       - value: "\u041B\u044E\u0431\u043B\u0438\u043D\u043E"
         openIn: 2021
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9669,8 +9679,8 @@ MonoBehaviour:
       - value: "\u0414\u0435\u043F\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9688,8 +9698,8 @@ MonoBehaviour:
       - value: "\u041F\u0435\u0440\u0435\u0440\u0432\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9707,8 +9717,8 @@ MonoBehaviour:
       - value: "\u041A\u0443\u0440\u044C\u044F\u043D\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9726,8 +9736,8 @@ MonoBehaviour:
       - value: "\u041C\u043E\u0441\u043A\u0432\u043E\u0440\u0435\u0447\u044C\u0435"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9745,8 +9755,8 @@ MonoBehaviour:
       - value: "\u0426\u0430\u0440\u0438\u0446\u044B\u043D\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 1
-      hideName: 1
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9764,8 +9774,8 @@ MonoBehaviour:
       - value: "\u041F\u043E\u043A\u0440\u043E\u0432\u0441\u043A\u043E\u0435-\u0421\u0442\u0440\u0435\u0448\u043D\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9786,10 +9796,10 @@ MonoBehaviour:
       - value: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u0421\u0442\u0440\u043E\u0438\u0442\u0435\u043B\u044C"
         openIn: 0
         closedIn: 3000
-      m_override: 0
-      hideName: 0
-      namePosition: 0
-      nameAlignment: 0
+      namePriority: 0
+      m_override: 1
+      namePosition: 8
+      nameAlignment: 513
       history:
       - value: 0
         openIn: 0
@@ -9805,8 +9815,8 @@ MonoBehaviour:
       - value: "\u0411\u0438\u0442\u0446\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9824,8 +9834,8 @@ MonoBehaviour:
       - value: "\u0411\u0443\u0442\u043E\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9843,8 +9853,8 @@ MonoBehaviour:
       - value: "\u0429\u0435\u0440\u0431\u0438\u043D\u043A\u0430"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9862,8 +9872,8 @@ MonoBehaviour:
       - value: "\u041E\u0441\u0442\u0430\u0444\u044C\u0435\u0432\u043E"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9881,8 +9891,8 @@ MonoBehaviour:
       - value: "\u0421\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u0430\u044F"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -9900,8 +9910,8 @@ MonoBehaviour:
       - value: "\u041F\u043E\u0434\u043E\u043B\u044C\u0441\u043A"
         openIn: 0
         closedIn: 3000
+      namePriority: 0
       m_override: 0
-      hideName: 0
       namePosition: 0
       nameAlignment: 0
       history:
@@ -10523,16 +10533,6 @@ MonoBehaviour:
     openIn: 0
     closedIn: 3000
   - stationsGlobalIds:
-    - lineId: 4
-      stationId: 11
-    - lineId: 3
-      stationId: 7
-    - lineId: 2
-      stationId: 11
-    isAbove: 0
-    openIn: 0
-    closedIn: 3000
-  - stationsGlobalIds:
     - lineId: 8
       stationId: 0
     - lineId: 3
@@ -10544,7 +10544,7 @@ MonoBehaviour:
     closedIn: 3000
   - stationsGlobalIds:
     - lineId: 11
-      stationId: 9
+      stationId: 10
     - lineId: 3
       stationId: 0
     - lineId: 2
@@ -10556,7 +10556,7 @@ MonoBehaviour:
     - lineId: 8
       stationId: 5
     - lineId: 11
-      stationId: 6
+      stationId: 7
     isAbove: 0
     openIn: 0
     closedIn: 3000
@@ -10564,7 +10564,7 @@ MonoBehaviour:
     - lineId: 0
       stationId: 17
     - lineId: 11
-      stationId: 5
+      stationId: 6
     isAbove: 0
     openIn: 0
     closedIn: 3000
@@ -10572,7 +10572,7 @@ MonoBehaviour:
     - lineId: 5
       stationId: 18
     - lineId: 11
-      stationId: 3
+      stationId: 4
     isAbove: 0
     openIn: 0
     closedIn: 3000
@@ -10580,7 +10580,7 @@ MonoBehaviour:
     - lineId: 9
       stationId: 18
     - lineId: 11
-      stationId: 1
+      stationId: 2
     isAbove: 0
     openIn: 0
     closedIn: 3000
@@ -10747,14 +10747,6 @@ MonoBehaviour:
     openIn: 0
     closedIn: 3000
   - stationsGlobalIds:
-    - lineId: 9
-      stationId: 15
-    - lineId: 14
-      stationId: 16
-    isAbove: 1
-    openIn: 0
-    closedIn: 3000
-  - stationsGlobalIds:
     - lineId: 0
       stationId: 14
     - lineId: 14
@@ -10778,7 +10770,7 @@ MonoBehaviour:
     - lineId: 3
       stationId: 0
     - lineId: 11
-      stationId: 9
+      stationId: 10
     isAbove: 1
     openIn: 0
     closedIn: 3000
@@ -10788,7 +10780,7 @@ MonoBehaviour:
     - lineId: 6
       stationId: 6
     - lineId: 11
-      stationId: 13
+      stationId: 14
     isAbove: 1
     openIn: 0
     closedIn: 3000
@@ -10859,6 +10851,8 @@ MonoBehaviour:
       stationId: 5
     - lineId: 16
       stationId: 12
+    - lineId: 9
+      stationId: 7
     isAbove: 1
     openIn: 0
     closedIn: 3000
@@ -10886,3 +10880,76 @@ MonoBehaviour:
     isAbove: 0
     openIn: 0
     closedIn: 3000
+  - stationsGlobalIds:
+    - lineId: 2
+      stationId: 25
+    - lineId: 0
+      stationId: 10
+    isAbove: 0
+    openIn: 1938
+    closedIn: 3000
+  - stationsGlobalIds:
+    - lineId: 9
+      stationId: 18
+    - lineId: 1
+      stationId: 25
+    isAbove: 0
+    openIn: 1983
+    closedIn: 3000
+  - stationsGlobalIds:
+    - lineId: 11
+      stationId: 0
+    - lineId: 1
+      stationId: 17
+    isAbove: 0
+    openIn: 1983
+    closedIn: 3000
+  siblingStations:
+  - stations:
+    - lineId: 0
+      stationId: 26
+    - lineId: 2
+      stationId: 25
+    - lineId: 3
+      stationId: 10
+  - stations:
+    - lineId: 0
+      stationId: 27
+    - lineId: 2
+      stationId: 24
+    - lineId: 3
+      stationId: 9
+  - stations:
+    - lineId: 0
+      stationId: 28
+    - lineId: 2
+      stationId: 23
+    - lineId: 3
+      stationId: 8
+  - stations:
+    - lineId: 0
+      stationId: 29
+    - lineId: 2
+      stationId: 22
+    - lineId: 3
+      stationId: 7
+  - stations:
+    - lineId: 2
+      stationId: 15
+    - lineId: 3
+      stationId: 13
+  - stations:
+    - lineId: 2
+      stationId: 16
+    - lineId: 3
+      stationId: 14
+  - stations:
+    - lineId: 1
+      stationId: 24
+    - lineId: 11
+      stationId: 1
+  - stations:
+    - lineId: 1
+      stationId: 25
+    - lineId: 11
+      stationId: 2
