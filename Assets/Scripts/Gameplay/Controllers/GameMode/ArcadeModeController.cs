@@ -99,7 +99,7 @@ namespace Gameplay.Conrollers
         {
             Save();
             uiGame.answerPanelSwipe.ForceClosed();
-            model.gameOverScreen.PopupArcade(model.statistics.sesion, model.statistics.sesionUnlockedStations);
+            model.gameOverScreen.PopupArcade(model.statistics.sesion);
             game.isPlaying = false;
             EventManager.TriggerEvent(EventTypes.SESSION_ENDED);
         }

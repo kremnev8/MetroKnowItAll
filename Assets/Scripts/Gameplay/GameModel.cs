@@ -6,6 +6,7 @@ using Gameplay.Statistics;
 using Gameplay.UI;
 using ScriptableObjects;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 
 namespace Gameplay
@@ -28,7 +29,7 @@ namespace Gameplay
         public StatisticsController statistics;
         public SettingsController settings;
         
-        public UIAchievement achievements;
+        [FormerlySerializedAs("achievements")] public UIAchievementPopup achievementsPopup;
         public UIGameOverScreen gameOverScreen;
 
     }

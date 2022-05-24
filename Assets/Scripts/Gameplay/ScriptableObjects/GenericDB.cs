@@ -19,8 +19,8 @@ namespace ScriptableObjects
     public class GenericDB<T> : ScriptableObject
         where T : GenericItem
     {
-        [SerializeField] private T[] items;
-        private Dictionary<string, T> itemsDictionary;
+        [SerializeField] protected T[] items;
+        protected Dictionary<string, T> itemsDictionary;
 
         public T Get(string key)
         {
@@ -37,17 +37,17 @@ namespace ScriptableObjects
             throw new IndexOutOfRangeException($"Item with id {key} is not registered!");
         }
 
-        public T[] GetAll()
+        public virtual T[] GetAll()
         {
             return items;
         }
 
         public int Count()
         {
-            return items.Length;
+            return GetAll().Length;
         }
 
-        private void InitDictionary()
+        protected virtual void InitDictionary()
         {
             itemsDictionary = new Dictionary<string, T>();
 

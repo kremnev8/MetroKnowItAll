@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using Gameplay.MetroDisplay.Model;
 
 namespace Util
@@ -104,5 +106,15 @@ namespace Util
             return result;
         }
         
+        
+        public static bool TryGetAttribute<T>(this MemberInfo memberInfo, out T customAttribute) where T: Attribute {
+            var attributes = memberInfo.GetCustomAttributes(typeof(T), false).FirstOrDefault();
+            if (attributes == null) {
+                customAttribute = null;
+                return false;
+            }
+            customAttribute = (T)attributes;
+            return true;
+        }
     }
 }

@@ -32,11 +32,19 @@ namespace Gameplay.MetroDisplay
 #if UNITY_EDITOR
                 if (Application.isPlaying)
                 {
+                    if (Simulation.GetModel<GameModel>().renderer == null)
+                    {
+                        return 2022;
+                    }
                     return Simulation.GetModel<GameModel>().renderer.m_year;
                 }
 
                 return instance != null ? instance.m_year : 2999;
 #else
+                if (Simulation.GetModel<GameModel>().renderer == null)
+                {
+                    return 2022;
+                }
                 return Simulation.GetModel<GameModel>().renderer.m_year;
 #endif
             }

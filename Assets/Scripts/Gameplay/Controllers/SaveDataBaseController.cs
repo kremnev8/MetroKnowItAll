@@ -101,6 +101,7 @@ namespace Gameplay.Conrollers
         {
             if (current != null)
             {
+                Debug.Log("Saving!!");
                 string dataPath = $"{Application.persistentDataPath}/{Filename}.json";
                 string json = JsonConvert.SerializeObject(current, Formatting.Indented);
                 File.WriteAllText(dataPath, json, Encoding.UTF8);

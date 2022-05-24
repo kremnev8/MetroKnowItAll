@@ -32,6 +32,14 @@ namespace Gameplay.Conrollers
         
         [JsonProperty]
         [HideInInspector]
+        public int totalTokens;
+        
+        [JsonProperty]
+        [HideInInspector]
+        public int totalGames;
+        
+        [JsonProperty]
+        [HideInInspector]
         public BoolRecord<MetroStation, int> unlockedStations = new BoolRecord<MetroStation, int>();
         
 
@@ -40,6 +48,8 @@ namespace Gameplay.Conrollers
             tokens = 10;
             unlockedStations = new BoolRecord<MetroStation, int>();
             maxQuestions = 10;
+            totalTokens = 0;
+            totalGames = 0;
             uiGame.intro.ShowIntro(gameState);
         }
 
@@ -143,6 +153,9 @@ namespace Gameplay.Conrollers
 
             int tmp_tokens = Mathf.RoundToInt(score);
             tokens += tmp_tokens;
+            
+            totalTokens += tmp_tokens;
+            totalGames++;
 
             model.gameOverScreen.PopupLearning(game.correctAnswers, gameMaxQuestions, tokens, GetTokenName(tokens));
         }

@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using ScriptableObjects;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Gameplay.Conrollers
 {
@@ -11,10 +12,15 @@ namespace Gameplay.Conrollers
     [Serializable]
     public class SettingsEntry : ISaveData
     {
-        public int Version { get; set; }
+        public int Version
+        {
+            get => version;
+            set => version = value;
+        }
 
         public int difficulty;
         public int theme;
+        public int version;
     }
     
     /// <summary>

@@ -19,11 +19,8 @@ namespace Gameplay.Conrollers
     /// </summary>
     public class StatisticsController : AutomaticSaveDataController<StatisticsEntry>
     {
-        [SerializeField] private Metro metro;
-        [SerializeField] private AchievementDB achievements;
-
         public StatisticsEntry sesion;
-        public List<MetroStation> sesionUnlockedStations = new List<MetroStation>();
+        public AchievementDB achievements;
 
         public override int Version => 2;
         public override string Filename => "statistics";
@@ -36,8 +33,8 @@ namespace Gameplay.Conrollers
 
             if (oldVersion <= 1)
             {
+                Debug.Log("migrating version");
                 current.unlockedStations = new BoolRecord<MetroStation, int>();
-                current.unlockedLines = new BoolRecord<MetroLine, int>();
             }
         }
 
@@ -55,12 +52,7 @@ namespace Gameplay.Conrollers
 
         public override void InitializeSaveData(StatisticsEntry data)
         {
-                
-            List<MetroStation> stations = new List<MetroStation>(metro.lines.Count * 30);
-            foreach (MetroLine line in metro.lines)
-            {
-                stations.AddRange(line.stations);
-            }
+            
         }
 
         public override void OnSaveDataLoaded()
@@ -69,10 +61,9 @@ namespace Gameplay.Conrollers
 
         public void TryUnlockStation(MetroStation station)
         {
-            if (!current.unlockedStations.IsUnlocked(station) && 
-                !sesionUnlockedStations.Contains(station))
+            if (!current.unlockedStations.IsUnlocked(station))
             {
-                sesionUnlockedStations.Add(station);
+                current.unlockedStations.Unlock(station);
             }
         }
 
@@ -86,26 +77,11 @@ namespace Gameplay.Conrollers
                 current.maxScore = Mathf.Max(current.maxScore, score);
                 if (current.maxScore >= 1000)
                 {
-                    UIAchievement.UnlockAchievement("MorePoints");
-                }
-                foreach (MetroStation station in sesionUnlockedStations)
-                {
-                    current.unlockedStations.Unlock(station);
-                }
-
-                IEnumerable<byte> lines = sesionUnlockedStations.Select(station => station.lineId).Distinct();
-                foreach (byte lineId in lines)
-                {
-                    MetroLine line = metro.lines[lineId];
-                    if (line.stations.All(station => current.unlockedStations.IsUnlocked(station)))
-                    {
-                        current.unlockedLines.Unlock(line);
-                    }
+                    UIAchievementPopup.UnlockAchievement("MorePoints");
                 }
             }
 
             sesion = new StatisticsEntry();
-            sesionUnlockedStations.Clear();
         }
 
         private void OnAnswer(object[] objects)
@@ -120,6 +96,11 @@ namespace Gameplay.Conrollers
             else
             {
                 OnWrongAnswer(timeElapsed);
+            }
+
+            foreach (ScriptableAchievementProvider provider in achievements.providers)
+            {
+                provider.CheckAchievementsState(achievements, current);
             }
         }
 
@@ -137,32 +118,32 @@ namespace Gameplay.Conrollers
 
             if (sesion.correctAnswerStreak == 5)
             {
-                UIAchievement.UnlockAchievement("PerfectFive");
+                UIAchievementPopup.UnlockAchievement("PerfectFive");
             }
             if (sesion.fastestCorrectAnswer < 7)
             {
-                UIAchievement.UnlockAchievement("QuickAnswer");
+                UIAchievementPopup.UnlockAchievement("QuickAnswer");
             }
 
             if (sesion.maximumCorrectAnswerTime > 80)
             {
-                UIAchievement.UnlockAchievement("SlowThinking");
+                UIAchievementPopup.UnlockAchievement("SlowThinking");
             }
             
 
             switch (sesion.correctAnswers)
             {
                 case 10:
-                    UIAchievement.UnlockAchievement("Correct10");
+                    UIAchievementPopup.UnlockAchievement("Correct10");
                     break;
                 case 50:
-                    UIAchievement.UnlockAchievement("Correct50");
+                    UIAchievementPopup.UnlockAchievement("Correct50");
                     break;
                 case 100:
-                    UIAchievement.UnlockAchievement("Correct100");
+                    UIAchievementPopup.UnlockAchievement("Correct100");
                     break;
                 case 200:
-                    UIAchievement.UnlockAchievement("Correct200");
+                    UIAchievementPopup.UnlockAchievement("Correct200");
                     break;
             }
         }
@@ -174,7 +155,7 @@ namespace Gameplay.Conrollers
             
             sesion.averageAnswerTime = sesion.averageAnswerTime.Average(time, sesion.totalAnswers);
             
-            UIAchievement.UnlockAchievement("MakeAMistake");
+            UIAchievementPopup.UnlockAchievement("MakeAMistake");
         }
         
     }

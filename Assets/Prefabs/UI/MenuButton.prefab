@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\"\u0421\u043F\u0440\u0430\u0432\u043E\u0447\u043D\u0430\u044F\" \u043C\u0435\u0442\u0440\u043E"
+  m_text: "\u0414\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F \u0438 \u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eebadc3f341ffa943b73691abf98b23a, type: 2}
   m_sharedMaterial: {fileID: 5371948533537891932, guid: eebadc3f341ffa943b73691abf98b23a, type: 2}
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useColorOnSprites: 0
+  keepAlpha: 0
   colorName: textColor
 --- !u!1 &1255413054861148415
 GameObject:
@@ -285,6 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useColorOnSprites: 0
+  keepAlpha: 0
   colorName: secondareBackground
 --- !u!1 &8089155638929354067
 GameObject:
@@ -375,4 +377,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useColorOnSprites: 0
+  keepAlpha: 0
   colorName: textColor

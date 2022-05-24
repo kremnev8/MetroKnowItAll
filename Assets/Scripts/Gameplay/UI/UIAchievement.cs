@@ -1,106 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Gameplay.Statistics;
 using ScriptableObjects;
-using Gameplay.Core;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
-    /// <summary>
-    /// UI element to display achievement popup
-    /// </summary>
     public class UIAchievement : MonoBehaviour
     {
-        public TMP_Text achievementName;
-        public TMP_Text achievementText;
-        public Image achievementIcon;
-        public float timeIn;
-        public float timeStay;
-        public float timeOut;
+        public Sprite lockedIcon;
+        
+        public TMP_Text title;
+        public TMP_Text description;
+        public Image iconImage;
+        
+        public GameObject progressBar;
+        public Image barImage;
+        public TMP_Text barText;
 
-        [FormerlySerializedAs("achievements")]
-        public AchievementDB achievementData;
-
-        private RectTransform rectTransform;
-
-        private float timeElapsed;
-        private Queue<Achievement> achievementQueue = new Queue<Achievement>();
-
-        private void Awake()
+        public void SetAchievement(Achievement achievement, bool isUnlocked, int progress, int maxProgress)
         {
-            rectTransform = GetComponent<RectTransform>();
-            gameObject.SetActive(false);
-        }
+            title.text = achievement.name;
+            description.text = achievement.description;
+            iconImage.sprite = isUnlocked ? achievement.icon : lockedIcon;
+            iconImage.color = isUnlocked ? achievement.spriteTint : Color.white;
 
-        public static void UnlockAchievement(string key)
-        {
-            try
-            {
-                GameModel model = Simulation.GetModel<GameModel>();
-                
-                Achievement achievement = model.achievements.achievementData.Get(key);
-                if (!model.statistics.current.unlockedAchievements.IsUnlocked(achievement))
-                {
-                    model.statistics.current.unlockedAchievements.Unlock(achievement);
-                    model.achievements.Popup(achievement);
-                }
-                
-            }
-            catch (Exception e)
-            {
-                Debug.LogError(e);
-            }
-        }
-
-        public void Popup(Achievement achievement)
-        {
-            if (gameObject.activeSelf)
-            {
-                achievementQueue.Enqueue(achievement);
-                return;
-            }
+            bool showBar = achievement.hasProgress && !isUnlocked;
             
-            achievementName.text = achievement.name;
-            achievementText.text = achievement.description;
-            achievementIcon.sprite = achievement.icon;
-            gameObject.SetActive(true);
-            timeElapsed = 0;
-            rectTransform.anchoredPosition = Vector2.zero;
-        }
-
-        private void HidePopup()
-        {
-            gameObject.SetActive(false);
-            if (achievementQueue.Count > 0)
+            progressBar.SetActive(showBar);
+            if (showBar)
             {
-                Popup(achievementQueue.Dequeue());
+                barImage.fillAmount = progress / (float)maxProgress;
+                barText.text = $"{progress} / {maxProgress}";
             }
         }
-
-        private void Update()
-        {
-            timeElapsed += Time.deltaTime;
-            float pos = rectTransform.anchoredPosition.y;
-            if (timeElapsed < timeIn)
-            {
-                float t = timeElapsed / timeIn;
-                pos = Mathf.Lerp(0, -rectTransform.sizeDelta.y, t);
-            }
-            else if (timeElapsed > timeIn + timeStay && timeElapsed < timeIn + timeStay + timeOut)
-            {
-                float t = (timeElapsed - timeIn - timeStay) / timeOut;
-                pos = Mathf.Lerp(-rectTransform.sizeDelta.y, 0, t);
-            }
-            else if (timeElapsed > timeIn + timeStay + timeOut)
-            {
-                HidePopup();
-                return;
-            }
-
-            rectTransform.anchoredPosition = new Vector2(0, pos);
-        }
+        
     }
 }

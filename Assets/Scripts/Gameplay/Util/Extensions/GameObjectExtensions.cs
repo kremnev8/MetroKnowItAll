@@ -36,11 +36,19 @@ namespace Util
         /// </summary>
         public static void ClearChildren(this GameObject thatObject)
         {
+            ClearChildren(thatObject.transform);
+        }
+        
+        /// <summary>
+        /// Destroy all children of this game object
+        /// </summary>
+        public static void ClearChildren(this Transform trans)
+        {
             //Array to hold all child obj
-            List<GameObject> allChildren = new List<GameObject>(thatObject.transform.childCount);
+            List<GameObject> allChildren = new List<GameObject>(trans.childCount);
 
             //Find all child obj and store to that array
-            foreach (Transform child in thatObject.transform)
+            foreach (Transform child in trans)
             {
                 allChildren.Add(child.gameObject);
             }

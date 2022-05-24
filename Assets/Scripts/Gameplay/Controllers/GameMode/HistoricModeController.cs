@@ -52,6 +52,7 @@ namespace Gameplay.Conrollers
             {
                 eventfulYearIndex++;
                 currentYear = targetMetro.GetEventfulYears()[eventfulYearIndex];
+                model.statistics.current.lastReachedYear = Mathf.Max(model.statistics.current.lastReachedYear, currentYear);
                 renderer.year = currentYear;
                 readyForTransition = false;
                 Refresh();
@@ -77,9 +78,23 @@ namespace Gameplay.Conrollers
                 List<int> eventfulYears = targetMetro.GetEventfulYears();
                 if (eventfulYearIndex + 1 < eventfulYears.Count)
                 {
-                    uiGame.EnableStartButton($"Перейти в год {eventfulYears[eventfulYearIndex + 1]}");
-                    uiGame.SetStartInteractable(true);
-                    readyForTransition = true;
+                    int nextYear = eventfulYears[eventfulYearIndex + 1];
+                    if (nextYear < 2022)
+                    {
+                        uiGame.EnableStartButton($"Перейти в год {nextYear}");
+                        uiGame.SetStartInteractable(true);
+                        readyForTransition = true;
+                    }
+                    else
+                    {
+                        int totalCount = 0;
+                        foreach (MetroLine line in targetMetro.lines)
+                        {
+                            totalCount += line.stations.Count(station => station.isOpen);
+                        }
+                        model.gameOverScreen.PopupHistoric(totalCount, totalTokens, totalGames);
+                        uiGame.DisableStartButton();
+                    }
                 }
             }
         }

@@ -34,7 +34,8 @@ namespace Gameplay.UI
     {
         public GameObject arcadeScreen;
         public GameObject learningScreen;
-
+        public GameObject historicScreen;
+        
         public Transform statsTrans;
         public TMP_Text totalScoreText;
         public UIScoreItem scoreItemPrefab;
@@ -43,15 +44,17 @@ namespace Gameplay.UI
         public TMP_Text ticketsText;
         public new UIFillAnimation animation;
 
+        public TMP_Text historicStatsText;
+
         private void Awake()
         {
             arcadeScreen.SetActive(false);
             learningScreen.SetActive(false);
         }
 
-        public void PopupArcade(StatisticsEntry statistics, List<MetroStation> unlockedStations)
+        public void PopupArcade(StatisticsEntry statistics)
         {
-            statsTrans.gameObject.ClearChildren();
+            statsTrans.gameObject.ClearChildren(); 
             
             List<ScoreItem> score = statistics.CalculateScore();
             int totalScore = 0;
@@ -66,6 +69,7 @@ namespace Gameplay.UI
             totalScoreText.text = $"Всего {totalScore} оч.";
             arcadeScreen.SetActive(true);
             learningScreen.SetActive(false);
+            historicScreen.SetActive(false);
         }
         
         public void PopupLearning(int correct, int total, int tickets, string tokenName)
@@ -78,6 +82,18 @@ namespace Gameplay.UI
             
             arcadeScreen.SetActive(false);
             learningScreen.SetActive(true);
+            historicScreen.SetActive(false);
+        }
+        
+        public void PopupHistoric(int stationsTotal, int hammers, int games)
+        {
+            statsTrans.gameObject.ClearChildren();
+
+            historicStatsText.text = $"Станций построено: {stationsTotal}\nМолотков получено: {hammers}\nВсего игр: {games}";
+            
+            arcadeScreen.SetActive(false);
+            learningScreen.SetActive(false);
+            historicScreen.SetActive(true);
         }
 
     }

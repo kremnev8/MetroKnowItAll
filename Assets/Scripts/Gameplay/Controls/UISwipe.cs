@@ -50,6 +50,14 @@ namespace Gameplay.Controls
             input = model.input;
 
             rectTransform = GetComponent<RectTransform>();
+
+            if (!content.transform.IsChildOf(transform))
+            {
+                Debug.LogWarning($"Content {content.name} assigned is not parented to this game object! Disabling!");
+                enabled = false;
+                return;
+            }
+
             contentFader = content.GetComponent<FadeInOut>();
 
             primaryPositionAction = input.actions["primaryPosition"];
@@ -74,6 +82,13 @@ namespace Gameplay.Controls
 
         private void OnEnable()
         {
+            if (!content.transform.IsChildOf(transform))
+            {
+                Debug.LogWarning($"Content {content.name} assigned is not parented to this game object! Disabling!", this);
+                enabled = false;
+                return;
+            }
+            
             if (rectTransform != null)
             {
                 isReturning = true;

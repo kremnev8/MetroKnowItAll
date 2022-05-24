@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Gameplay.Conrollers;
 using Gameplay.MetroDisplay.Model;
@@ -10,29 +11,70 @@ using Util;
 
 namespace Gameplay.Statistics
 {
+    [AttributeUsage(AttributeTargets.Field)]
+    public class StatisticsMetadataAttribute : Attribute
+    {
+        public string name;
+        public string unit;
+        public string maxField;
+
+        public StatisticsMetadataAttribute(string name)
+        {
+            this.name = name;
+            maxField = "";
+            unit = "";
+        }
+        
+        public StatisticsMetadataAttribute(string name, string unit)
+        {
+            this.unit = unit;
+            this.name = name;
+            maxField = "";
+        }
+
+        public StatisticsMetadataAttribute(string name, string unit, string maxField)
+        {
+            this.unit = unit;
+            this.name = name;
+            this.maxField = maxField;
+        }
+    }
+    
     /// <summary>
     /// Model class for game statistics data
     /// </summary>
     public class StatisticsEntry : ISaveData
     {
-        public int Version { get; set; }
-        public BoolRecord<MetroStation, int> unlockedStations = new BoolRecord<MetroStation, int>();
-        public BoolRecord<MetroLine, int> unlockedLines = new BoolRecord<MetroLine, int>();
+        public int Version
+        {
+            get => version;
+            set => version = value;
+        }
 
+        public BoolRecord<MetroStation, int> unlockedStations = new BoolRecord<MetroStation, int>();
         public BoolRecord<Achievement, string> unlockedAchievements = new BoolRecord<Achievement, string>();
 
+        [StatisticsMetadata("Верных ответов","", nameof(totalAnswers))]
         public int correctAnswers;
         public int totalAnswers;
         
+        [StatisticsMetadata("Верных ответов подряд")]
         public int correctAnswerStreak;
         public int logestCorrectAnswerStreak;
         
+        [StatisticsMetadata("Самый быстрый ответ", "c")]
         public float fastestCorrectAnswer;
+        [StatisticsMetadata("Среднее время ответа", "c")]
         public float averageAnswerTime;
+        [StatisticsMetadata("Самый долгий ответ", "c")]
         public float maximumCorrectAnswerTime;
 
+        [StatisticsMetadata("Лучший счет", "оч.")]
         public int maxScore;
-        public int tickets;
+        [StatisticsMetadata("Достигнутая эра", "г.")]
+        public int lastReachedYear;
+
+        public int version;
 
         public List<ScoreItem> CalculateScore()
         {

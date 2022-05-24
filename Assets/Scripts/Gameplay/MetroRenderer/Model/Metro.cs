@@ -69,14 +69,15 @@ namespace Gameplay.MetroDisplay.Model
             foreach (MetroConnection connection in line.connections)
             {
                 if (!connection.IsOpen(MetroRenderer.currentYear)) continue;
-                
+
                 if (connection.startStationId == station.stationId)
                 {
                     if (IsStationAdjacent(line.stations[connection.endStationId], unlockedStations, false, false))
                     {
                         return true;
                     }
-                }else if (connection.endStationId == station.stationId)
+                }
+                else if (connection.endStationId == station.stationId)
                 {
                     if (IsStationAdjacent(line.stations[connection.startStationId], unlockedStations, false, false))
                     {
@@ -147,10 +148,7 @@ namespace Gameplay.MetroDisplay.Model
         {
             int startIndex = Mathf.Max(0, station.stationId - 2);
             int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + 2);
-            int tipStation = RandomUtils.ConstrainedRandom(id =>
-            {
-                return id != station.stationId && GetStation(id).isOpen;
-            }, startIndex, endIndex);
+            int tipStation = RandomUtils.ConstrainedRandom(id => { return id != station.stationId && GetStation(id).isOpen; }, startIndex, endIndex);
 
             return lines[station.lineId].stations[tipStation];
         }
@@ -163,7 +161,7 @@ namespace Gameplay.MetroDisplay.Model
             if (region.regionType == RegionType.GLOBAL_LINE)
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
-                
+
                 int index = RandomUtils.ConstrainedRandom(stationId => GetStation(stationId).isOpen, 0, stations.Count);
                 return stations[index];
             }
@@ -193,7 +191,8 @@ namespace Gameplay.MetroDisplay.Model
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
 
-                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(stations[stationId].globalId) && GetStation(stationId).isOpen, 0, stations.Count);
+                int index = RandomUtils.ConstrainedRandom(stationId => !blacklist.Contains(stations[stationId].globalId) && GetStation(stationId).isOpen, 0,
+                    stations.Count);
 
                 return stations[index];
             }
@@ -233,22 +232,22 @@ namespace Gameplay.MetroDisplay.Model
                     .Where(station => station.isOpen)
                     .Select(station => station.stationId)
                     .Where(stationId =>
-                {
-                    if (stationId + size - 1 < line.stations.Count)
                     {
-                        for (int i = stationId; i < stationId + size; i++)
+                        if (stationId + size - 1 < line.stations.Count)
                         {
-                            if (blacklist.Contains(line.stations[i].globalId) || !region.Contains(line.stations[i]))
+                            for (int i = stationId; i < stationId + size; i++)
                             {
-                                return false;
+                                if (blacklist.Contains(line.stations[i].globalId) || !region.Contains(line.stations[i]))
+                                {
+                                    return false;
+                                }
                             }
+
+                            return true;
                         }
 
-                        return true;
-                    }
-
-                    return false;
-                });
+                        return false;
+                    });
 
                 options.AddRange(goodStations.Select(stationId => new GlobalId(line.lineId, stationId)));
             }
@@ -275,7 +274,7 @@ namespace Gameplay.MetroDisplay.Model
                 {
                     for (int i = stationId; i < stationId + size; i++)
                     {
-                        if (blacklist.Contains(stations[i].globalId) || 
+                        if (blacklist.Contains(stations[i].globalId) ||
                             !region.Contains(stations[i]))
                         {
                             return false;
@@ -337,7 +336,7 @@ namespace Gameplay.MetroDisplay.Model
                     years.Add(crossing.closedIn);
                 }
 
-                years.RemoveWhere(i => i < 1935 || i >= 2022);
+                years.RemoveWhere(i => i < 1935 || i > 2022);
 
                 eventfulYears = years.ToList();
                 eventfulYears.Sort();
@@ -345,7 +344,7 @@ namespace Gameplay.MetroDisplay.Model
 
             return eventfulYears;
         }
-
+        
         private void OnValidate()
         {
             Debug.Log("Validate");
