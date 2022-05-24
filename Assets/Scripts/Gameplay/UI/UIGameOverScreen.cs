@@ -50,6 +50,7 @@ namespace Gameplay.UI
         {
             arcadeScreen.SetActive(false);
             learningScreen.SetActive(false);
+            historicScreen.SetActive(false);
         }
 
         public void PopupArcade(StatisticsEntry statistics)
