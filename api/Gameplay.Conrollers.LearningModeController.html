@@ -91,9 +91,13 @@
     <div class="level1"><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html">BaseGameMode</a></div>
     <div class="level2"><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html">ArcadeModeController</a></div>
     <div class="level3"><span class="xref">LearningModeController</span></div>
+      <div class="level4"><a class="xref" href="Gameplay.Conrollers.HistoricModeController.html">HistoricModeController</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_targetMetro">ArcadeModeController.targetMetro</a>
+    </div>
     <div>
       <a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_uiGame">ArcadeModeController.uiGame</a>
     </div>
@@ -261,12 +265,84 @@
   </table>
   
   
+  <h4 id="Gameplay_Conrollers_LearningModeController_tokenIcon" data-uid="Gameplay.Conrollers.LearningModeController.tokenIcon">tokenIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Sprite tokenIcon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sprite</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="Gameplay_Conrollers_LearningModeController_tokens" data-uid="Gameplay.Conrollers.LearningModeController.tokens">tokens</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int tokens</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_LearningModeController_totalGames" data-uid="Gameplay.Conrollers.LearningModeController.totalGames">totalGames</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalGames</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_Conrollers_LearningModeController_totalTokens" data-uid="Gameplay.Conrollers.LearningModeController.totalTokens">totalTokens</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int totalTokens</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -381,6 +457,100 @@
   <div><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html#Gameplay_Conrollers_ArcadeModeController_ContinueSession_Gameplay_Conrollers_Game_">ArcadeModeController.ContinueSession(Game)</a></div>
   
   
+  <a id="Gameplay_Conrollers_LearningModeController_DetermineAdditionalUnlocks_" data-uid="Gameplay.Conrollers.LearningModeController.DetermineAdditionalUnlocks*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_DetermineAdditionalUnlocks_GlobalId_" data-uid="Gameplay.Conrollers.LearningModeController.DetermineAdditionalUnlocks(GlobalId)">DetermineAdditionalUnlocks(GlobalId)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DetermineAdditionalUnlocks(GlobalId globalId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GlobalId</span></td>
+        <td><span class="parametername">globalId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_LearningModeController_GetTokenName_" data-uid="Gameplay.Conrollers.LearningModeController.GetTokenName*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_GetTokenName_System_Int32_" data-uid="Gameplay.Conrollers.LearningModeController.GetTokenName(System.Int32)">GetTokenName(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetTokenName(int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_Conrollers_LearningModeController_GetUnlockedCount_" data-uid="Gameplay.Conrollers.LearningModeController.GetUnlockedCount*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_GetUnlockedCount" data-uid="Gameplay.Conrollers.LearningModeController.GetUnlockedCount">GetUnlockedCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUnlockedCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Gameplay_Conrollers_LearningModeController_OnRestStarted_" data-uid="Gameplay.Conrollers.LearningModeController.OnRestStarted*"></a>
   <h4 id="Gameplay_Conrollers_LearningModeController_OnRestStarted" data-uid="Gameplay.Conrollers.LearningModeController.OnRestStarted">OnRestStarted()</h4>
   <div class="markdown level1 summary"></div>
@@ -400,6 +570,16 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Purchase()</code></pre>
+  </div>
+  
+  
+  <a id="Gameplay_Conrollers_LearningModeController_Refresh_" data-uid="Gameplay.Conrollers.LearningModeController.Refresh*"></a>
+  <h4 id="Gameplay_Conrollers_LearningModeController_Refresh" data-uid="Gameplay.Conrollers.LearningModeController.Refresh">Refresh()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Refresh()</code></pre>
   </div>
   
   

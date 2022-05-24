@@ -100,6 +100,53 @@
   </h3>
   
   
+  <a id="Util_CollectionExtension_AddAll_" data-uid="Util.CollectionExtension.AddAll*"></a>
+  <h4 id="Util_CollectionExtension_AddAll__1_HashSet_System_Int32__List_TypeDateRange___0___" data-uid="Util.CollectionExtension.AddAll``1(HashSet{System.Int32},List{TypeDateRange{``0}})">AddAll&lt;T&gt;(HashSet&lt;Int32&gt;, List&lt;TypeDateRange&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAll&lt;T&gt;(this HashSet&lt;int&gt; set, List&lt;TypeDateRange&lt;T&gt;&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">TypeDateRange</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Util_CollectionExtension_GetCurrent_" data-uid="Util.CollectionExtension.GetCurrent*"></a>
   <h4 id="Util_CollectionExtension_GetCurrent__1_List_TypeDateRange___0___System_Int32_" data-uid="Util.CollectionExtension.GetCurrent``1(List{TypeDateRange{``0}},System.Int32)">GetCurrent&lt;T&gt;(List&lt;TypeDateRange&lt;T&gt;&gt;, Int32)</h4>
   <div class="markdown level1 summary"></div>
@@ -156,6 +203,58 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Util_CollectionExtension_GetStationRange_" data-uid="Util.CollectionExtension.GetStationRange*"></a>
+  <h4 id="Util_CollectionExtension_GetStationRange_List_MetroStation__System_Int32_System_Int32_" data-uid="Util.CollectionExtension.GetStationRange(List{MetroStation},System.Int32,System.Int32)">GetStationRange(List&lt;MetroStation&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;MetroStation&gt; GetStationRange(this List&lt;MetroStation&gt; stations, int startIndex, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
+        <td><span class="parametername">stations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">startIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -323,6 +422,69 @@ If dictionary has no such key, a default value is returned</p>
       </tr>
       <tr>
         <td><span class="parametername">TV</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Util_CollectionExtension_TryGetAttribute_" data-uid="Util.CollectionExtension.TryGetAttribute*"></a>
+  <h4 id="Util_CollectionExtension_TryGetAttribute__1_MemberInfo___0__" data-uid="Util.CollectionExtension.TryGetAttribute``1(MemberInfo,``0@)">TryGetAttribute&lt;T&gt;(MemberInfo, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetAttribute&lt;T&gt;(this MemberInfo memberInfo, out T customAttribute)
+    where T : Attribute</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MemberInfo</span></td>
+        <td><span class="parametername">memberInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">customAttribute</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>

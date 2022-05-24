@@ -173,6 +173,54 @@
   </table>
   
   
+  <h4 id="Gameplay_UI_UIGameOverScreen_historicScreen" data-uid="Gameplay.UI.UIGameOverScreen.historicScreen">historicScreen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject historicScreen</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Gameplay_UI_UIGameOverScreen_historicStatsText" data-uid="Gameplay.UI.UIGameOverScreen.historicStatsText">historicStatsText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMP_Text historicStatsText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TMP_Text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="Gameplay_UI_UIGameOverScreen_learningScreen" data-uid="Gameplay.UI.UIGameOverScreen.learningScreen">learningScreen</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -296,12 +344,12 @@
   
   
   <a id="Gameplay_UI_UIGameOverScreen_PopupArcade_" data-uid="Gameplay.UI.UIGameOverScreen.PopupArcade*"></a>
-  <h4 id="Gameplay_UI_UIGameOverScreen_PopupArcade_StatisticsEntry_List_MetroStation__" data-uid="Gameplay.UI.UIGameOverScreen.PopupArcade(StatisticsEntry,List{MetroStation})">PopupArcade(StatisticsEntry, List&lt;MetroStation&gt;)</h4>
+  <h4 id="Gameplay_UI_UIGameOverScreen_PopupArcade_StatisticsEntry_" data-uid="Gameplay.UI.UIGameOverScreen.PopupArcade(StatisticsEntry)">PopupArcade(StatisticsEntry)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PopupArcade(StatisticsEntry statistics, List&lt;MetroStation&gt; unlockedStations)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PopupArcade(StatisticsEntry statistics)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,9 +366,41 @@
         <td><span class="parametername">statistics</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Gameplay_UI_UIGameOverScreen_PopupHistoric_" data-uid="Gameplay.UI.UIGameOverScreen.PopupHistoric*"></a>
+  <h4 id="Gameplay_UI_UIGameOverScreen_PopupHistoric_System_Int32_System_Int32_System_Int32_" data-uid="Gameplay.UI.UIGameOverScreen.PopupHistoric(System.Int32,System.Int32,System.Int32)">PopupHistoric(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopupHistoric(int stationsTotal, int hammers, int games)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">MetroStation</span>&gt;</td>
-        <td><span class="parametername">unlockedStations</span></td>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">stationsTotal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">hammers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">games</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -328,12 +408,12 @@
   
   
   <a id="Gameplay_UI_UIGameOverScreen_PopupLearning_" data-uid="Gameplay.UI.UIGameOverScreen.PopupLearning*"></a>
-  <h4 id="Gameplay_UI_UIGameOverScreen_PopupLearning_System_Int32_System_Int32_System_Int32_" data-uid="Gameplay.UI.UIGameOverScreen.PopupLearning(System.Int32,System.Int32,System.Int32)">PopupLearning(Int32, Int32, Int32)</h4>
+  <h4 id="Gameplay_UI_UIGameOverScreen_PopupLearning_System_Int32_System_Int32_System_Int32_System_String_" data-uid="Gameplay.UI.UIGameOverScreen.PopupLearning(System.Int32,System.Int32,System.Int32,System.String)">PopupLearning(Int32, Int32, Int32, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void PopupLearning(int correct, int total, int tickets)</code></pre>
+    <pre><code class="lang-csharp hljs">public void PopupLearning(int correct, int total, int tickets, string tokenName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -358,6 +438,11 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">tickets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">tokenName</span></td>
         <td></td>
       </tr>
     </tbody>
