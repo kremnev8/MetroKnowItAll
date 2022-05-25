@@ -1941,6 +1941,18 @@ references:
   commentId: T:Gameplay.Controls.UISwipe
   fullName: Gameplay.Controls.UISwipe
   nameWithType: UISwipe
+- uid: Gameplay.Controls.UISwipe.bounds
+  name: bounds
+  href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_bounds
+  commentId: F:Gameplay.Controls.UISwipe.bounds
+  fullName: Gameplay.Controls.UISwipe.bounds
+  nameWithType: UISwipe.bounds
+- uid: Gameplay.Controls.UISwipe.clamp
+  name: clamp
+  href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_clamp
+  commentId: F:Gameplay.Controls.UISwipe.clamp
+  fullName: Gameplay.Controls.UISwipe.clamp
+  nameWithType: UISwipe.clamp
 - uid: Gameplay.Controls.UISwipe.closedPosition
   name: closedPosition
   href: api/Gameplay.Controls.UISwipe.html#Gameplay_Controls_UISwipe_closedPosition
