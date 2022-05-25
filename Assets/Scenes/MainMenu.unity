@@ -2636,6 +2636,7 @@ MonoBehaviour:
   current:
     difficulty: 0
     theme: 0
+    version: 0
   difficultyConfig: {fileID: 11400000, guid: 8aa4d9c8a45dee647878f1a3d6cde9b9, type: 2}
   palette: {fileID: 11400000, guid: 2252f4209f1e32846a390bd754414d98, type: 2}
 --- !u!114 &1873144930
@@ -2967,6 +2968,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1061136339114865677, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132772409601724621, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
+      propertyPath: bounds.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132772409601724621, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
+      propertyPath: bounds.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132772409601724621, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
+      propertyPath: bounds.width
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132772409601724621, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}
+      propertyPath: bounds.height
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1132772410046164826, guid: 170b26b4ba1adbb4f8401cb3b0547e4c, type: 3}

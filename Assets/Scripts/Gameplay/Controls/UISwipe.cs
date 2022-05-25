@@ -44,6 +44,9 @@ namespace Gameplay.Controls
         public bool shouldDisableContent;
         public bool twoWay;
         
+        public Rect bounds;
+        public bool clamp;
+
         private void Start()
         {
             GameModel model = Simulation.GetModel<GameModel>();
@@ -122,6 +125,9 @@ namespace Gameplay.Controls
                 if (posMove || twoWay)
                 {
                     Vector2 newPosition = startSwipePos + delta * moveAxis.Abs();
+                    if (clamp)
+                        newPosition = bounds.Clamp2(newPosition);
+                    
                     rectTransform.anchoredPosition = newPosition;
                     moveDelta = newPosition - lastDeltaPosition; 
                     lastDeltaPosition = newPosition;

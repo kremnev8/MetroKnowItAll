@@ -23,13 +23,12 @@ namespace ScriptableObjects
                 string lineName = line.currentName
                     .Replace("ая", "ую")
                     .Replace("линия", "линию");
-                string pluralStations = line.stations.Count.GetDeclension("станцию", "станции", "станций");
 
                 Achievement achievement = new Achievement(
                     $"{baseId}_{line.lineId}", 
                     line.lineId, 
                     $"Открыть {lineName}", 
-                    $"Откройте все {line.stations.Count} {pluralStations} линии", 
+                    $"Откройте все {line.stations.Count} станций линии", 
                     true, 
                     baseIcon, 
                     line.lineColor
