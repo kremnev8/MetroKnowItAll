@@ -28,13 +28,10 @@ namespace Gameplay.MetroDisplay
         [Header("Highlight")]
         public GameObject highlight;
         public SpriteShapeController highlightShape;
-        public Transform startCap;
-        public Transform endCap;
         
         private static readonly int color = Shader.PropertyToID("_Color");
         private static readonly int isFocused = Shader.PropertyToID("_IsFocused");
         private static MaterialPropertyBlock block;
-        private const float highlightHeight = 2.4f;
 
         public void SetFocused(bool value)
         {
@@ -222,11 +219,8 @@ namespace Gameplay.MetroDisplay
             highlightShape.spline.CopyValues(spline);
             for (int i = 0; i < highlightShape.spline.GetPointCount(); i++)
             {
-                highlightShape.spline.SetHeight(i, highlightHeight);
+                highlightShape.spline.SetCornerMode(i, Corner.Disable);
             }
-
-            startCap.position = startCap.parent.TransformPoint(spline.GetPosition(0));
-            endCap.position = endCap.parent.TransformPoint(spline.GetPosition(spline.GetPointCount() - 1));
         }
         
         
