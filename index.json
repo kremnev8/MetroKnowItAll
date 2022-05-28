@@ -72,7 +72,7 @@
   "api/Gameplay.Controls.BackHandler.html": {
     "href": "api/Gameplay.Controls.BackHandler.html",
     "title": "Class BackHandler | Metro Connoisseur documentation",
-    "keywords": "Class BackHandler Inheritance Object BackHandler Namespace : Gameplay.Controls Assembly : cs.temp.dll.dll Syntax public class BackHandler : MonoBehaviour Methods GetTop() Declaration public static BackHandler GetTop() Returns Type Description BackHandler"
+    "keywords": "Class BackHandler Inheritance Object BackHandler Namespace : Gameplay.Controls Assembly : cs.temp.dll.dll Syntax public class BackHandler : MonoBehaviour Fields onBack Declaration public UnityEvent onBack Field Value Type Description UnityEvent Methods GetTop() Declaration public static BackHandler GetTop() Returns Type Description BackHandler"
   },
   "api/Gameplay.Controls.html": {
     "href": "api/Gameplay.Controls.html",
@@ -382,7 +382,7 @@
   "api/Gameplay.UI.html": {
     "href": "api/Gameplay.UI.html",
     "title": "Namespace Gameplay.UI | Metro Connoisseur documentation",
-    "keywords": "Namespace Gameplay.UI Classes CanvasSafeArea Helper UI class that ensures that all UI elements are within device safe area DynamicText Class for displaying text with dynamic dots FadeInOut UI helper that can fade a UI element in or out PaletteGraphic UI helper that ensures all UI elements are using correct colors PaletteSpriteSwitch SlowPlayback Utility to control how fast PlayableDirector plays the timeline UIAchievement UIAchievementPopup UI element to display achievement popup UIFillAnimation UIGame UIGameOverScreen Controls how game over screen is displayed. UIIntro UIScoreItem Score entry in game over screen UI UISettings UIStartGameButton UIStatisticsWindow UIStatisticView UITopBar Top bar UI controller VersionText Controls version text Structs ScoreItem Struct for data about one score point Enums FadeDirection"
+    "keywords": "Namespace Gameplay.UI Classes CanvasSafeArea Helper UI class that ensures that all UI elements are within device safe area DynamicText Class for displaying text with dynamic dots FadeInOut UI helper that can fade a UI element in or out PaletteGraphic UI helper that ensures all UI elements are using correct colors PaletteSpriteSwitch SlowPlayback Utility to control how fast PlayableDirector plays the timeline UIAchievement UIAchievementPopup UI element to display achievement popup UIFillAnimation UIGame UIGameOverScreen Controls how game over screen is displayed. UIIntro UIMainMenu UIScoreItem Score entry in game over screen UI UISettings UIStartGameButton UIStatisticsWindow UIStatisticView UITopBar Top bar UI controller VersionText Controls version text Structs ScoreItem Struct for data about one score point Enums FadeDirection"
   },
   "api/Gameplay.UI.PaletteGraphic.html": {
     "href": "api/Gameplay.UI.PaletteGraphic.html",
@@ -434,6 +434,11 @@
     "title": "Class UIIntro | Metro Connoisseur documentation",
     "keywords": "Class UIIntro Inheritance Object UIIntro Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UIIntro : MonoBehaviour Fields arcadeCard Declaration public GameObject arcadeCard Field Value Type Description GameObject historicCard Declaration public GameObject historicCard Field Value Type Description GameObject learningCard Declaration public GameObject learningCard Field Value Type Description GameObject Methods ShowIntro(Game) Declaration public void ShowIntro(Game game) Parameters Type Name Description Game game"
   },
+  "api/Gameplay.UI.UIMainMenu.html": {
+    "href": "api/Gameplay.UI.UIMainMenu.html",
+    "title": "Class UIMainMenu | Metro Connoisseur documentation",
+    "keywords": "Class UIMainMenu Inheritance Object UIMainMenu Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UIMainMenu : MonoBehaviour Fields crossfade Declaration public GameObject crossfade Field Value Type Description GameObject gameModeScreen Declaration public GameObject gameModeScreen Field Value Type Description GameObject questionTypeScreen Declaration public GameObject questionTypeScreen Field Value Type Description GameObject Methods SelectGameMode(Int32) Declaration public void SelectGameMode(int gameMode) Parameters Type Name Description Int32 gameMode SelectGameModeAndLoad(Int32) Declaration public void SelectGameModeAndLoad(int gameMode) Parameters Type Name Description Int32 gameMode SelectQuestionMode(Int32) Declaration public void SelectQuestionMode(int questionMode) Parameters Type Name Description Int32 questionMode"
+  },
   "api/Gameplay.UI.UIScoreItem.html": {
     "href": "api/Gameplay.UI.UIScoreItem.html",
     "title": "Class UIScoreItem | Metro Connoisseur documentation",
@@ -442,7 +447,7 @@
   "api/Gameplay.UI.UISettings.html": {
     "href": "api/Gameplay.UI.UISettings.html",
     "title": "Class UISettings | Metro Connoisseur documentation",
-    "keywords": "Class UISettings Inheritance Object UISettings Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UISettings : MonoBehaviour Fields crossfade Declaration public GameObject crossfade Field Value Type Description GameObject difficultyToggleGroup Declaration public EventToggleGroup difficultyToggleGroup Field Value Type Description EventToggleGroup exitDialogText Declaration public TMP_Text exitDialogText Field Value Type Description TMP_Text exitDialogWindow Declaration public GameObject exitDialogWindow Field Value Type Description GameObject themeToggle Declaration public Toggle themeToggle Field Value Type Description Toggle warningIcon Declaration public GameObject warningIcon Field Value Type Description GameObject Methods LoadGame(Int32) Declaration public void LoadGame(int gameMode) Parameters Type Name Description Int32 gameMode LoadMenu() Declaration public void LoadMenu() SetDifficulty(Int32) Declaration public void SetDifficulty(int level) Parameters Type Name Description Int32 level SetTheme(Boolean) Declaration public void SetTheme(bool light) Parameters Type Name Description Boolean light TryExitGame() Declaration public void TryExitGame()"
+    "keywords": "Class UISettings Inheritance Object UISettings Namespace : Gameplay.UI Assembly : cs.temp.dll.dll Syntax public class UISettings : MonoBehaviour Fields crossfade Declaration public GameObject crossfade Field Value Type Description GameObject difficultyToggleGroup Declaration public EventToggleGroup difficultyToggleGroup Field Value Type Description EventToggleGroup exitDialogText Declaration public TMP_Text exitDialogText Field Value Type Description TMP_Text exitDialogWindow Declaration public GameObject exitDialogWindow Field Value Type Description GameObject themeToggle Declaration public Toggle themeToggle Field Value Type Description Toggle warningIcon Declaration public GameObject warningIcon Field Value Type Description GameObject Methods LoadMenu() Declaration public void LoadMenu() SetDifficulty(Int32) Declaration public void SetDifficulty(int level) Parameters Type Name Description Int32 level SetTheme(Boolean) Declaration public void SetTheme(bool light) Parameters Type Name Description Boolean light TryExitGame() Declaration public void TryExitGame()"
   },
   "api/Gameplay.UI.UIStartGameButton.html": {
     "href": "api/Gameplay.UI.UIStartGameButton.html",

@@ -1581,6 +1581,12 @@ references:
   isSpec: "True"
   fullName: Gameplay.Controls.BackHandler.GetTop
   nameWithType: BackHandler.GetTop
+- uid: Gameplay.Controls.BackHandler.onBack
+  name: onBack
+  href: api/Gameplay.Controls.BackHandler.html#Gameplay_Controls_BackHandler_onBack
+  commentId: F:Gameplay.Controls.BackHandler.onBack
+  fullName: Gameplay.Controls.BackHandler.onBack
+  nameWithType: BackHandler.onBack
 - uid: Gameplay.Controls.ISelectable
   name: ISelectable
   href: api/Gameplay.Controls.ISelectable.html
@@ -6287,6 +6293,69 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UIIntro.ShowIntro
   nameWithType: UIIntro.ShowIntro
+- uid: Gameplay.UI.UIMainMenu
+  name: UIMainMenu
+  href: api/Gameplay.UI.UIMainMenu.html
+  commentId: T:Gameplay.UI.UIMainMenu
+  fullName: Gameplay.UI.UIMainMenu
+  nameWithType: UIMainMenu
+- uid: Gameplay.UI.UIMainMenu.crossfade
+  name: crossfade
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_crossfade
+  commentId: F:Gameplay.UI.UIMainMenu.crossfade
+  fullName: Gameplay.UI.UIMainMenu.crossfade
+  nameWithType: UIMainMenu.crossfade
+- uid: Gameplay.UI.UIMainMenu.gameModeScreen
+  name: gameModeScreen
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_gameModeScreen
+  commentId: F:Gameplay.UI.UIMainMenu.gameModeScreen
+  fullName: Gameplay.UI.UIMainMenu.gameModeScreen
+  nameWithType: UIMainMenu.gameModeScreen
+- uid: Gameplay.UI.UIMainMenu.questionTypeScreen
+  name: questionTypeScreen
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_questionTypeScreen
+  commentId: F:Gameplay.UI.UIMainMenu.questionTypeScreen
+  fullName: Gameplay.UI.UIMainMenu.questionTypeScreen
+  nameWithType: UIMainMenu.questionTypeScreen
+- uid: Gameplay.UI.UIMainMenu.SelectGameMode(System.Int32)
+  name: SelectGameMode(Int32)
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameMode_System_Int32_
+  commentId: M:Gameplay.UI.UIMainMenu.SelectGameMode(System.Int32)
+  fullName: Gameplay.UI.UIMainMenu.SelectGameMode(System.Int32)
+  nameWithType: UIMainMenu.SelectGameMode(Int32)
+- uid: Gameplay.UI.UIMainMenu.SelectGameMode*
+  name: SelectGameMode
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameMode_
+  commentId: Overload:Gameplay.UI.UIMainMenu.SelectGameMode
+  isSpec: "True"
+  fullName: Gameplay.UI.UIMainMenu.SelectGameMode
+  nameWithType: UIMainMenu.SelectGameMode
+- uid: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
+  name: SelectGameModeAndLoad(Int32)
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameModeAndLoad_System_Int32_
+  commentId: M:Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
+  fullName: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
+  nameWithType: UIMainMenu.SelectGameModeAndLoad(Int32)
+- uid: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad*
+  name: SelectGameModeAndLoad
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameModeAndLoad_
+  commentId: Overload:Gameplay.UI.UIMainMenu.SelectGameModeAndLoad
+  isSpec: "True"
+  fullName: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad
+  nameWithType: UIMainMenu.SelectGameModeAndLoad
+- uid: Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
+  name: SelectQuestionMode(Int32)
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectQuestionMode_System_Int32_
+  commentId: M:Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
+  fullName: Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
+  nameWithType: UIMainMenu.SelectQuestionMode(Int32)
+- uid: Gameplay.UI.UIMainMenu.SelectQuestionMode*
+  name: SelectQuestionMode
+  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectQuestionMode_
+  commentId: Overload:Gameplay.UI.UIMainMenu.SelectQuestionMode
+  isSpec: "True"
+  fullName: Gameplay.UI.UIMainMenu.SelectQuestionMode
+  nameWithType: UIMainMenu.SelectQuestionMode
 - uid: Gameplay.UI.UIScoreItem
   name: UIScoreItem
   href: api/Gameplay.UI.UIScoreItem.html
@@ -6335,19 +6404,6 @@ references:
   commentId: F:Gameplay.UI.UISettings.exitDialogWindow
   fullName: Gameplay.UI.UISettings.exitDialogWindow
   nameWithType: UISettings.exitDialogWindow
-- uid: Gameplay.UI.UISettings.LoadGame(System.Int32)
-  name: LoadGame(Int32)
-  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadGame_System_Int32_
-  commentId: M:Gameplay.UI.UISettings.LoadGame(System.Int32)
-  fullName: Gameplay.UI.UISettings.LoadGame(System.Int32)
-  nameWithType: UISettings.LoadGame(Int32)
-- uid: Gameplay.UI.UISettings.LoadGame*
-  name: LoadGame
-  href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadGame_
-  commentId: Overload:Gameplay.UI.UISettings.LoadGame
-  isSpec: "True"
-  fullName: Gameplay.UI.UISettings.LoadGame
-  nameWithType: UISettings.LoadGame
 - uid: Gameplay.UI.UISettings.LoadMenu
   name: LoadMenu()
   href: api/Gameplay.UI.UISettings.html#Gameplay_UI_UISettings_LoadMenu

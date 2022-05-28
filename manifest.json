@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.BackHandler.html",
-          "hash": "Jcc3yY/YLVp82ifsTiMYvlmHQLe32N7nK7OwSnb+S0M="
+          "hash": "GMFyobreyTw+8qjm1qrSs0j40O6uVNJdz2TABkKESnY="
         }
       },
       "is_incremental": false,
@@ -1044,6 +1044,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.UIMainMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.UIMainMenu.html",
+          "hash": "zfMVRePDm4yftsestmo7girsDIgQfdraacCZRRHFSI4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.UI.UIScoreItem.yml",
       "output": {
         ".html": {
@@ -1060,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UISettings.html",
-          "hash": "9NmJUTZ/xPdEK1TwnJ2sIPJHQYrBsSHtVlahdSkIw50="
+          "hash": "mvqgTVMJiV3uyLI7ElyXIBhPVE5/ctO/AJwnpW3lkm8="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1144,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.html",
-          "hash": "jcGWMPJ14IHqFC4nXnZidH33awevnIRxVvVswwgcwlk="
+          "hash": "EL4dwUP9TXFtTEIe/azTwM1nuI+Vo50S4JxTiFlTjkc="
         }
       },
       "is_incremental": false,
@@ -1612,7 +1624,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ihoVTWvQNCuz0LbgLS0U+fQ4NS5qpzhBf8xvKcqGDBc="
+          "hash": "o+DTeKFp6rXtcZF4Tf514iUyX8Tg06jRI7RdvodpYDw="
         }
       },
       "is_incremental": false,
@@ -2029,7 +2041,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 132,
+          "total_file_count": 133,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
