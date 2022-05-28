@@ -1,6 +1,7 @@
-﻿using Gameplay.Conrollers;
+﻿using System;
+using Gameplay.Conrollers;
 using Gameplay.MetroDisplay.Model;
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Gameplay.Questions.Generators
 {
@@ -19,25 +20,24 @@ namespace Gameplay.Questions.Generators
         
         public override void GenerateNew()
         {
+            if (metro.GetUnlockedLinesCount(currentRegion) <= 1)
+            {
+                throw new ArgumentException("Failed to generate Line question. Not enough lines unlocked!");
+            }
+            
             questionUsedLineName = Random.Range(0, 2) > 0;
-            if (currentRegion.regionType == RegionType.GLOBAL_LINE && currentRegion.lineId != -1)
-            {
-                currentQuestion = metro.lines[currentRegion.lineId];
-            }
-            else
-            {
-                currentQuestion = metro.PickRandomLine(currentRegion);
-            }
+            currentQuestion = metro.PickRandomLine(currentRegion, blacklistedIds);
 
             if (questionUsedLineName)
             {
-                questionStation = metro.PickRandomStation(new Region(currentRegion.regionType, currentRegion.stations, currentQuestion.lineId));
+                questionStation = metro.PickRandomStation(new Region(RegionType.GLOBAL_LINE, currentRegion.stations, currentQuestion.lineId));
                 uiController.SetQuestion(questionStation);
             }
             else
             {
                 uiController.SetQuestion(currentQuestion);
             }
+            blacklistedIds.Add(currentQuestion.lineId);
 
             renderer.FocusRegion(currentRegion);
             renderer.HideAllLabels();
@@ -72,7 +72,7 @@ namespace Gameplay.Questions.Generators
 
         public override bool ShouldUse(Game game, int questionNumber)
         {
-            if (game.mode == ArcadeModeController.MODE_ID && game.currentRegion.lineId == -1 && questionNumber == 0)
+            if (game.currentRegion.lineId == -1)
             {
                 return base.ShouldUse(game, questionNumber);
             }

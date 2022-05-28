@@ -58,7 +58,7 @@ namespace Gameplay.Conrollers
             InitGameState(gameState);
             
             uiGame.topBar.SwitchTokensIcon(tokenIcon);
-            game.questionId = FindStationGenerator.QUESTION_ID;
+            game.questionId = Game.ANY_QUESTIONS;
             renderer.year = targetMetro.startYear;
             EventManager.TriggerEvent(EventTypes.SESSION_STARTED, game);
         }

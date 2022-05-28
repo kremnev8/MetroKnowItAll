@@ -162,7 +162,11 @@ namespace Gameplay.MetroDisplay.Model
             {
                 List<MetroStation> stations = lines[region.lineId].stations;
 
-                int index = RandomUtils.ConstrainedRandom(stationId => GetStation(stationId).isOpen, 0, stations.Count);
+                int index = RandomUtils.ConstrainedRandom(stationId =>
+                {
+                    MetroStation station = GetStation(stationId);
+                    return station.isOpen && region.Contains(station);
+                }, 0, stations.Count);
                 return stations[index];
             }
             else
@@ -290,14 +294,30 @@ namespace Gameplay.MetroDisplay.Model
             return stations.GetStationRange(index, size);
         }
 
+        public int GetUnlockedLinesCount(Region region)
+        {
+            return lines.Count(line => line.stations.Any(station => station.isOpen && region.Contains(station)) && line.IsOpen(MetroRenderer.currentYear));
+        }
+
         /// <summary>
         /// Pick random line within region
         /// </summary>
-        public MetroLine PickRandomLine(Region region)
+        public MetroLine PickRandomLine(Region region, List<int> blacklist)
         {
             List<MetroLine> filteredLines = lines
-                .Where(line => line.stations.Count(station => region.Contains(station) && station.isOpen) >= 1)
+                .Where(line =>
+                {
+                    return !blacklist.Contains(line.lineId) && 
+                           line.stations.Count(station => region.Contains(station) && station.isOpen) >= 1 && 
+                           line.IsOpen(MetroRenderer.currentYear);
+                })
                 .ToList();
+            
+            if (filteredLines.Count == 0)
+            {
+                throw new ArgumentException("Can't pick random line, no valid options!");
+            }
+            
             int index = Random.Range(0, filteredLines.Count);
 
             return filteredLines[index];

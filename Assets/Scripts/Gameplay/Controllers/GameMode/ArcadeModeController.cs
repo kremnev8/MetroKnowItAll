@@ -189,20 +189,12 @@ namespace Gameplay.Conrollers
 
         public void SelectNextController()
         {
-            try
-            {
-                main.GetUI(game.currentGenerator).HideElements();
-            }
-            catch (Exception e)
-            {
-                Debug.Log(e);
-            }
-
             bool questionSelected = false;
             HashSet<int> controllerBlacklist = new HashSet<int>();
 
             while (!questionSelected)
             {
+                TryHideUIElements();
                 bool success = main.SelectGenerator(game, controllerBlacklist);
                 if (!success)
                 {
@@ -228,6 +220,18 @@ namespace Gameplay.Conrollers
 
             uiGame.answerPanelSwipe.ForceOpen();
             game.answerTimeElapsed = 0;
+        }
+
+        private void TryHideUIElements()
+        {
+            try
+            {
+                main.GetUI(game.currentGenerator).HideElements();
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
         }
 
         private void PrepareNewGame()
