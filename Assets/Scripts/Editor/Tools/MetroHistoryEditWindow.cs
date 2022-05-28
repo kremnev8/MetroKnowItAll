@@ -282,6 +282,14 @@ namespace Editor.Tools
                         EditorUtility.SetDirty(metro);
                         RefreshData();
                     }
+
+                    if (GUILayout.Button("Сменить направление!"))
+                    {
+                        (connection.startStationId, connection.endStationId) = (connection.endStationId, connection.startStationId);
+                        EditorUtility.SetDirty(metro);
+                        RefreshData();
+                    }
+                        
                 }
                 
                 GUILayout.Space(30);

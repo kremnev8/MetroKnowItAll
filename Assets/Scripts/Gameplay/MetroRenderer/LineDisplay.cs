@@ -20,7 +20,7 @@ namespace Gameplay.MetroDisplay
         {
             foreach (LineSubDisplay display in subDisplays)
             {
-                display.SetFocused(value);
+                display.SetFocusedInternal(value);
             }
         }
         
@@ -43,7 +43,7 @@ namespace Gameplay.MetroDisplay
             foreach (List<ConnData> points in groups)
             {
                 LineSubDisplay lineObject = Instantiate(subDisplayPrefab, transform);
-                lineObject.SetGroupData(points, line);
+                lineObject.SetGroupData(points, this);
                 
                 subDisplays.Add(lineObject);
             }

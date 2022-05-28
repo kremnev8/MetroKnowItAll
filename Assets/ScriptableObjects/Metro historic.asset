@@ -1679,8 +1679,8 @@ MonoBehaviour:
       openIn: 0
       closedIn: 2015
     - lineId: 1
-      startStationId: 11
-      endStationId: 9
+      startStationId: 9
+      endStationId: 11
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
@@ -2170,15 +2170,15 @@ MonoBehaviour:
     - lineId: 2
       stationId: 22
       regionType: 0
-      position: {x: -37.12, y: -1.7}
+      position: {x: -12.16, y: -4.09}
       nameHistory:
-      - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+      - value: "\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430"
         openIn: 0
         closedIn: 3000
       namePriority: 0
-      m_override: 1
-      namePosition: 4
-      nameAlignment: 260
+      m_override: 0
+      namePosition: 0
+      nameAlignment: 0
       history:
       - value: 1
         openIn: 0
@@ -2188,25 +2188,6 @@ MonoBehaviour:
         closedIn: 3000
     - lineId: 2
       stationId: 23
-      regionType: 0
-      position: {x: -29.33, y: 1.89}
-      nameHistory:
-      - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
-        openIn: 0
-        closedIn: 3000
-      namePriority: 0
-      m_override: 1
-      namePosition: 2
-      nameAlignment: 514
-      history:
-      - value: 1
-        openIn: 0
-        closedIn: 1953
-      - value: 0
-        openIn: 1953
-        closedIn: 3000
-    - lineId: 2
-      stationId: 24
       regionType: 0
       position: {x: -21.59, y: 1.86}
       nameHistory:
@@ -2225,17 +2206,36 @@ MonoBehaviour:
         openIn: 1953
         closedIn: 3000
     - lineId: 2
-      stationId: 25
+      stationId: 24
       regionType: 0
-      position: {x: -12.16, y: -4.09}
+      position: {x: -29.33, y: 1.89}
       nameHistory:
-      - value: "\u0423\u043B\u0438\u0446\u0430 \u041A\u043E\u043C\u0438\u043D\u0442\u0435\u0440\u043D\u0430"
+      - value: "\u0421\u043C\u043E\u043B\u0435\u043D\u0441\u043A\u0430\u044F"
         openIn: 0
         closedIn: 3000
       namePriority: 0
-      m_override: 0
-      namePosition: 0
-      nameAlignment: 0
+      m_override: 1
+      namePosition: 2
+      nameAlignment: 514
+      history:
+      - value: 1
+        openIn: 0
+        closedIn: 1953
+      - value: 0
+        openIn: 1953
+        closedIn: 3000
+    - lineId: 2
+      stationId: 25
+      regionType: 0
+      position: {x: -37.12, y: -1.7}
+      nameHistory:
+      - value: "\u041A\u0438\u0435\u0432\u0441\u043A\u0430\u044F"
+        openIn: 0
+        closedIn: 3000
+      namePriority: 0
+      m_override: 1
+      namePosition: 4
+      nameAlignment: 260
       history:
       - value: 1
         openIn: 0
@@ -2428,39 +2428,39 @@ MonoBehaviour:
       closedIn: 3000
     - lineId: 2
       startStationId: 8
-      endStationId: 25
+      endStationId: 22
       overrideBend: 1
       bendPoint: {x: -7.399994, y: 1.54599}
       weight: 1
       openIn: 0
       closedIn: 1953
     - lineId: 2
-      startStationId: 25
-      endStationId: 24
+      startStationId: 22
+      endStationId: 23
       overrideBend: 1
       bendPoint: {x: -19.579048, y: 1.9927719}
       weight: 1
       openIn: 0
       closedIn: 1953
     - lineId: 2
-      startStationId: 24
-      endStationId: 23
+      startStationId: 23
+      endStationId: 24
       overrideBend: 0
       bendPoint: {x: -34.992508, y: 1.82395}
       weight: 1
       openIn: 0
       closedIn: 1953
     - lineId: 2
-      startStationId: 23
-      endStationId: 22
+      startStationId: 24
+      endStationId: 25
       overrideBend: 1
       bendPoint: {x: -34.285423, y: 1.7956386}
       weight: 1
       openIn: 0
       closedIn: 1953
     - lineId: 2
-      startStationId: 3
-      endStationId: 26
+      startStationId: 26
+      endStationId: 3
       overrideBend: 1
       bendPoint: {x: 69.56462, y: 40.308582}
       weight: 1
@@ -2824,7 +2824,7 @@ MonoBehaviour:
       startStationId: 0
       endStationId: 1
       overrideBend: 0
-      bendPoint: {x: -150, y: 150}
+      bendPoint: {x: 0, y: 0}
       weight: 1
       openIn: 0
       closedIn: 3000
@@ -2920,7 +2920,7 @@ MonoBehaviour:
       startStationId: 0
       endStationId: 13
       overrideBend: 1
-      bendPoint: {x: -92.268814, y: 16.37254}
+      bendPoint: {x: -92.54768, y: 16.638483}
       weight: 1
       openIn: 0
       closedIn: 3000
@@ -4029,7 +4029,7 @@ MonoBehaviour:
       overrideBend: 0
       bendPoint: {x: 0, y: 0}
       weight: 1
-      openIn: 0
+      openIn: 2020
       closedIn: 3000
     simpleLine: 1
     namePosition: 8
@@ -10882,7 +10882,7 @@ MonoBehaviour:
     closedIn: 3000
   - stationsGlobalIds:
     - lineId: 2
-      stationId: 25
+      stationId: 22
     - lineId: 0
       stationId: 10
     isAbove: 0
@@ -10909,28 +10909,28 @@ MonoBehaviour:
     - lineId: 0
       stationId: 26
     - lineId: 2
-      stationId: 25
+      stationId: 22
     - lineId: 3
       stationId: 10
   - stations:
     - lineId: 0
       stationId: 27
     - lineId: 2
-      stationId: 24
+      stationId: 23
     - lineId: 3
       stationId: 9
   - stations:
     - lineId: 0
       stationId: 28
     - lineId: 2
-      stationId: 23
+      stationId: 24
     - lineId: 3
       stationId: 8
   - stations:
     - lineId: 0
       stationId: 29
     - lineId: 2
-      stationId: 22
+      stationId: 25
     - lineId: 3
       stationId: 7
   - stations:

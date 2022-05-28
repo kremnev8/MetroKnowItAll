@@ -268,7 +268,7 @@ namespace Gameplay.MetroDisplay
                 return stationDisplays[station.globalId];
             }
 
-            throw new ArgumentException($"Global ID: {station.globalId} does not exist in display dictionary!");
+            throw new ArgumentException($"Global ID: {(int)station.globalId} does not exist in display dictionary!");
         }
         
         /// <summary>

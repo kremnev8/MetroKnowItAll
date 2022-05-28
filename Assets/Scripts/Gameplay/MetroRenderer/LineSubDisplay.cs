@@ -15,6 +15,7 @@ namespace Gameplay.MetroDisplay
     public class LineSubDisplay : MonoBehaviour, ISelectable
     {
         public MetroLine line;
+        public LineDisplay mainDisplay;
         private List<ConnData> points;
 
         [Header("Line")]
@@ -34,6 +35,12 @@ namespace Gameplay.MetroDisplay
         private static MaterialPropertyBlock block;
 
         public void SetFocused(bool value)
+        {
+            mainDisplay.SetFocused(value);
+        }
+        
+        
+        internal void SetFocusedInternal(bool value)
         {
             renderer.GetPropertyBlock(block);
             block.SetFloat(isFocused, value ? 1 : 0);
@@ -221,20 +228,33 @@ namespace Gameplay.MetroDisplay
             {
                 highlightShape.spline.SetCornerMode(i, Corner.Disable);
             }
+
+            shape.BakeMeshForced();
+            highlightShape.BakeMeshForced();
         }
         
         
-        public void SetGroupData(List<ConnData> _points, MetroLine _line)
-        {
+        public void SetGroupData(List<ConnData> _points, LineDisplay display)
+        { 
             points = _points;
-            line = _line;
+            line = display.line;
+            mainDisplay = display;
 
             Refresh();
+#if UNITY_EDITOR
+            Invoke(nameof(InternalHideHighlight), 0.2f);
+#endif
+        }
+
+#if UNITY_EDITOR
+        private void InternalHideHighlight()
+        {
             if (!Application.isPlaying)
             {
                 highlight.SetActive(false);
             }
         }
+#endif
 
         public bool IsFocused(MetroRenderer metroRenderer)
         {
