@@ -43,18 +43,7 @@ namespace Gameplay.UI
             model.settings.current.theme = light ? 0 : 1;
             model.settings.MarkDirty();
         }
-
-        public void LoadGame(int gameMode)
-        {
-            if (SceneTransitionManager.instance != null)
-            {
-                if (crossfade != null)
-                    crossfade.SetActive(true);
-
-                SceneTransitionManager.instance.StartGame(gameMode);
-            }
-        }
-
+        
         public void LoadMenu()
         {
             if (SceneTransitionManager.instance != null)

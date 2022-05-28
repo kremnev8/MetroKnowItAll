@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Gameplay.Core;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace Gameplay.Controls
@@ -10,6 +11,8 @@ namespace Gameplay.Controls
     {
         private static List<BackHandler> windowStack = new List<BackHandler>();
 
+        public UnityEvent onBack;
+        
         private void OnEnable()
         {
             if (!windowStack.Contains(this))

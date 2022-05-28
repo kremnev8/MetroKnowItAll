@@ -64,6 +64,7 @@ namespace Gameplay.Conrollers
             if (top != null)
             {
                 top.gameObject.SetActive(false);
+                top.onBack?.Invoke();
             }
             else if (shouldBackCloseGame)
             {
