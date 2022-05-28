@@ -22,6 +22,7 @@ namespace Gameplay.Controls
         private RectTransform rectTransform;
         private Vector2 initialPos;
         private bool isSwiping;
+        private bool isLocked;
         
         public bool isReturning;
 
@@ -76,11 +77,13 @@ namespace Gameplay.Controls
         {
             isReturning = true;
             moveDelta = Vector2.zero;
+            isLocked = false;
         }
 
         public void ForceClosed()
         {
             rectTransform.anchoredPosition = rectTransform.rect.size * moveAxis + closedPosition;
+            isLocked = true;
         }
 
         private void OnEnable()
@@ -118,7 +121,7 @@ namespace Gameplay.Controls
 
         private void Update()
         {
-            if (isSwiping)
+            if (isSwiping && !isLocked)
             {
                 Vector2 delta = GetTransformedPosition() - initialPos;
                 bool posMove = Vector2.Dot(delta.normalized, moveAxis) > 0;

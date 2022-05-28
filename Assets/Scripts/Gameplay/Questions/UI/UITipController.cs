@@ -33,15 +33,18 @@ namespace Gameplay.Questions
             currentTip = 0;
             controller = Simulation.GetModel<GameModel>().gameModeController;
             EventManager.StartListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
+            EventManager.StartListening(EventTypes.GAME_STARTED, OnAnswer); 
         }
 
         private void OnDestroy()
         {
             EventManager.StopListening(EventTypes.QUESTION_ANSWERED, OnAnswer);
+            EventManager.StopListening(EventTypes.GAME_STARTED, OnAnswer);
         }
         
         private void OnAnswer(object[] obj)
         {
+            Debug.Log("Answer!");
             ClearTips();
         }
 
@@ -61,6 +64,13 @@ namespace Gameplay.Questions
 
         public void NextTip()
         {
+            if (!controller.gameState.isPlaying)
+            {
+                buttonLabel.text = "Подсказок нет. Начните игру!";
+                button.interactable = false;
+                return;
+            }
+            
             if (currentTip >= maxTips)
             {
                 buttonLabel.text = "Подсказки кончились";

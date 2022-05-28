@@ -282,6 +282,7 @@ namespace Gameplay.Conrollers
 
             uiGame.topBar.SetCurrentLabel(game.currentRegion.GetName(renderer.metro));
             SelectNextController();
+            EventManager.TriggerEvent(EventTypes.GAME_STARTED, game);
         }
 
         public override string GetNextTip(int index)
