@@ -360,6 +360,48 @@
   </table>
   
   
+  <a id="Gameplay_MetroDisplay_Model_Metro_GetUnlockedLinesCount_" data-uid="Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount*"></a>
+  <h4 id="Gameplay_MetroDisplay_Model_Metro_GetUnlockedLinesCount_Gameplay_MetroDisplay_Model_Region_" data-uid="Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount(Gameplay.MetroDisplay.Model.Region)">GetUnlockedLinesCount(Region)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUnlockedLinesCount(Region region)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.Model.Region.html">Region</a></td>
+        <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_" data-uid="Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent*"></a>
   <h4 id="Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_Gameplay_MetroDisplay_Model_MetroStation_HashSet_System_Int32__System_Boolean_System_Boolean_" data-uid="Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean,System.Boolean)">IsStationAdjacent(MetroStation, HashSet&lt;Int32&gt;, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"></div>
@@ -418,13 +460,13 @@
   
   
   <a id="Gameplay_MetroDisplay_Model_Metro_PickRandomLine_" data-uid="Gameplay.MetroDisplay.Model.Metro.PickRandomLine*"></a>
-  <h4 id="Gameplay_MetroDisplay_Model_Metro_PickRandomLine_Gameplay_MetroDisplay_Model_Region_" data-uid="Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)">PickRandomLine(Region)</h4>
+  <h4 id="Gameplay_MetroDisplay_Model_Metro_PickRandomLine_Gameplay_MetroDisplay_Model_Region_List_System_Int32__" data-uid="Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region,List{System.Int32})">PickRandomLine(Region, List&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Pick random line within region</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MetroLine PickRandomLine(Region region)</code></pre>
+    <pre><code class="lang-csharp hljs">public MetroLine PickRandomLine(Region region, List&lt;int&gt; blacklist)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -439,6 +481,11 @@
       <tr>
         <td><a class="xref" href="Gameplay.MetroDisplay.Model.Region.html">Region</a></td>
         <td><span class="parametername">region</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">blacklist</span></td>
         <td></td>
       </tr>
     </tbody>

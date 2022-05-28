@@ -352,7 +352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.EventTypes.html",
-          "hash": "BFYjPyy1MS7/YGEtFSJrkV9sWiKAwbSq9Bb+gnACfNo="
+          "hash": "taYVqOoR1KCtr9AZbel+9da0G+JAurAZcyAu2L1ym1U="
         }
       },
       "is_incremental": false,
@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.LineSubDisplay.html",
-          "hash": "kelW86tVxC6x/Q63aIJCDEWauq1yXQOICSPMZCuB42w="
+          "hash": "XZZa/MLIGhodElnAoRBa3SU8tDVWFv1+rojEvgh4W0s="
         }
       },
       "is_incremental": false,
@@ -484,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.Metro.html",
-          "hash": "4+PcQNqV2p612LYWfB7AlgvpIfGjZ4bdBhwKFgF15Ak="
+          "hash": "92D+iQW2DKowgG1+6lpPJWwCm37jy10/lBSl+PiBEdg="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIMainMenu.html",
-          "hash": "zfMVRePDm4yftsestmo7girsDIgQfdraacCZRRHFSI4="
+          "hash": "y0vB6ztpDOacAOTENUaL6DltIfdb0cj8O3190aQPUao="
         }
       },
       "is_incremental": false,
@@ -1128,6 +1128,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Gameplay.UI.UrlLinkHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Gameplay.UI.UrlLinkHandler.html",
+          "hash": "bvnBvF7qhOkF+LKxCmzE62YQFEUaTvi1jDBa68IovOc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.UI.VersionText.yml",
       "output": {
         ".html": {
@@ -1144,7 +1156,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.html",
-          "hash": "EL4dwUP9TXFtTEIe/azTwM1nuI+Vo50S4JxTiFlTjkc="
+          "hash": "rDZdaiBDGshaa+PAnxB0s+DPAe/pXVKB0ilpeayGuIs="
         }
       },
       "is_incremental": false,
@@ -1624,7 +1636,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "o+DTeKFp6rXtcZF4Tf514iUyX8Tg06jRI7RdvodpYDw="
+          "hash": "nQrm0wwY+QJBX+bsuLNGzaiD7/ReS1IYNEZBA0ardHo="
         }
       },
       "is_incremental": false,
@@ -2041,7 +2053,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 133,
+          "total_file_count": 134,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

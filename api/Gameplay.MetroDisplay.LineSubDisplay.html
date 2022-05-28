@@ -129,30 +129,6 @@
   </table>
   
   
-  <h4 id="Gameplay_MetroDisplay_LineSubDisplay_endCap" data-uid="Gameplay.MetroDisplay.LineSubDisplay.endCap">endCap</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform endCap</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transform</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <h4 id="Gameplay_MetroDisplay_LineSubDisplay_highlight" data-uid="Gameplay.MetroDisplay.LineSubDisplay.highlight">highlight</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -225,6 +201,30 @@
   </table>
   
   
+  <h4 id="Gameplay_MetroDisplay_LineSubDisplay_mainDisplay" data-uid="Gameplay.MetroDisplay.LineSubDisplay.mainDisplay">mainDisplay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LineDisplay mainDisplay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Gameplay.MetroDisplay.LineDisplay.html">LineDisplay</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <h4 id="Gameplay_MetroDisplay_LineSubDisplay_renderer" data-uid="Gameplay.MetroDisplay.LineSubDisplay.renderer">renderer</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -267,30 +267,6 @@
     <tbody>
       <tr>
         <td><span class="xref">SpriteShapeController</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Gameplay_MetroDisplay_LineSubDisplay_startCap" data-uid="Gameplay.MetroDisplay.LineSubDisplay.startCap">startCap</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Transform startCap</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Transform</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -430,12 +406,12 @@
   
   
   <a id="Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_" data-uid="Gameplay.MetroDisplay.LineSubDisplay.SetGroupData*"></a>
-  <h4 id="Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_List_Gameplay_MetroDisplay_ConnData__MetroLine_" data-uid="Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)">SetGroupData(List&lt;ConnData&gt;, MetroLine)</h4>
+  <h4 id="Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_List_Gameplay_MetroDisplay_ConnData__Gameplay_MetroDisplay_LineDisplay_" data-uid="Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},Gameplay.MetroDisplay.LineDisplay)">SetGroupData(List&lt;ConnData&gt;, LineDisplay)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetGroupData(List&lt;ConnData&gt; _points, MetroLine _line)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetGroupData(List&lt;ConnData&gt; _points, LineDisplay display)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -453,8 +429,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">MetroLine</span></td>
-        <td><span class="parametername">_line</span></td>
+        <td><a class="xref" href="Gameplay.MetroDisplay.LineDisplay.html">LineDisplay</a></td>
+        <td><span class="parametername">display</span></td>
         <td></td>
       </tr>
     </tbody>

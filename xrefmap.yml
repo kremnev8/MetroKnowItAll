@@ -2420,6 +2420,18 @@ references:
   commentId: T:Gameplay.EventTypes
   fullName: Gameplay.EventTypes
   nameWithType: EventTypes
+- uid: Gameplay.EventTypes.GAME_P
+  name: GAME_P
+  href: api/Gameplay.EventTypes.html#Gameplay_EventTypes_GAME_P
+  commentId: F:Gameplay.EventTypes.GAME_P
+  fullName: Gameplay.EventTypes.GAME_P
+  nameWithType: EventTypes.GAME_P
+- uid: Gameplay.EventTypes.GAME_STARTED
+  name: GAME_STARTED
+  href: api/Gameplay.EventTypes.html#Gameplay_EventTypes_GAME_STARTED
+  commentId: F:Gameplay.EventTypes.GAME_STARTED
+  fullName: Gameplay.EventTypes.GAME_STARTED
+  nameWithType: EventTypes.GAME_STARTED
 - uid: Gameplay.EventTypes.QUESTION_ANSWERED
   name: QUESTION_ANSWERED
   href: api/Gameplay.EventTypes.html#Gameplay_EventTypes_QUESTION_ANSWERED
@@ -2826,12 +2838,6 @@ references:
   commentId: F:Gameplay.MetroDisplay.LineSubDisplay.abovetrains
   fullName: Gameplay.MetroDisplay.LineSubDisplay.abovetrains
   nameWithType: LineSubDisplay.abovetrains
-- uid: Gameplay.MetroDisplay.LineSubDisplay.endCap
-  name: endCap
-  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_endCap
-  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.endCap
-  fullName: Gameplay.MetroDisplay.LineSubDisplay.endCap
-  nameWithType: LineSubDisplay.endCap
 - uid: Gameplay.MetroDisplay.LineSubDisplay.highlight
   name: highlight
   href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_highlight
@@ -2863,6 +2869,12 @@ references:
   commentId: F:Gameplay.MetroDisplay.LineSubDisplay.line
   fullName: Gameplay.MetroDisplay.LineSubDisplay.line
   nameWithType: LineSubDisplay.line
+- uid: Gameplay.MetroDisplay.LineSubDisplay.mainDisplay
+  name: mainDisplay
+  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_mainDisplay
+  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.mainDisplay
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.mainDisplay
+  nameWithType: LineSubDisplay.mainDisplay
 - uid: Gameplay.MetroDisplay.LineSubDisplay.Refresh
   name: Refresh()
   href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_Refresh
@@ -2895,15 +2907,15 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.LineSubDisplay.SetFocused
   nameWithType: LineSubDisplay.SetFocused
-- uid: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
-  name: SetGroupData(List<ConnData>, MetroLine)
-  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_List_Gameplay_MetroDisplay_ConnData__MetroLine_
-  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},MetroLine)
-  name.vb: SetGroupData(List(Of ConnData), MetroLine)
-  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List<Gameplay.MetroDisplay.ConnData>, MetroLine)
-  fullName.vb: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List(Of Gameplay.MetroDisplay.ConnData), MetroLine)
-  nameWithType: LineSubDisplay.SetGroupData(List<ConnData>, MetroLine)
-  nameWithType.vb: LineSubDisplay.SetGroupData(List(Of ConnData), MetroLine)
+- uid: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},Gameplay.MetroDisplay.LineDisplay)
+  name: SetGroupData(List<ConnData>, LineDisplay)
+  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_List_Gameplay_MetroDisplay_ConnData__Gameplay_MetroDisplay_LineDisplay_
+  commentId: M:Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List{Gameplay.MetroDisplay.ConnData},Gameplay.MetroDisplay.LineDisplay)
+  name.vb: SetGroupData(List(Of ConnData), LineDisplay)
+  fullName: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List<Gameplay.MetroDisplay.ConnData>, Gameplay.MetroDisplay.LineDisplay)
+  fullName.vb: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData(List(Of Gameplay.MetroDisplay.ConnData), Gameplay.MetroDisplay.LineDisplay)
+  nameWithType: LineSubDisplay.SetGroupData(List<ConnData>, LineDisplay)
+  nameWithType.vb: LineSubDisplay.SetGroupData(List(Of ConnData), LineDisplay)
 - uid: Gameplay.MetroDisplay.LineSubDisplay.SetGroupData*
   name: SetGroupData
   href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_SetGroupData_
@@ -2956,12 +2968,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.LineSubDisplay.spline
   nameWithType: LineSubDisplay.spline
-- uid: Gameplay.MetroDisplay.LineSubDisplay.startCap
-  name: startCap
-  href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_startCap
-  commentId: F:Gameplay.MetroDisplay.LineSubDisplay.startCap
-  fullName: Gameplay.MetroDisplay.LineSubDisplay.startCap
-  nameWithType: LineSubDisplay.startCap
 - uid: Gameplay.MetroDisplay.LineSubDisplay.undergound
   name: undergound
   href: api/Gameplay.MetroDisplay.LineSubDisplay.html#Gameplay_MetroDisplay_LineSubDisplay_undergound
@@ -3429,6 +3435,19 @@ references:
   isSpec: "True"
   fullName: Gameplay.MetroDisplay.Model.Metro.GetStationsByName
   nameWithType: Metro.GetStationsByName
+- uid: Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount(Gameplay.MetroDisplay.Model.Region)
+  name: GetUnlockedLinesCount(Region)
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_GetUnlockedLinesCount_Gameplay_MetroDisplay_Model_Region_
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount(Gameplay.MetroDisplay.Model.Region)
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount(Gameplay.MetroDisplay.Model.Region)
+  nameWithType: Metro.GetUnlockedLinesCount(Region)
+- uid: Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount*
+  name: GetUnlockedLinesCount
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_GetUnlockedLinesCount_
+  commentId: Overload:Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount
+  isSpec: "True"
+  fullName: Gameplay.MetroDisplay.Model.Metro.GetUnlockedLinesCount
+  nameWithType: Metro.GetUnlockedLinesCount
 - uid: Gameplay.MetroDisplay.Model.Metro.IsStationAdjacent(Gameplay.MetroDisplay.Model.MetroStation,HashSet{System.Int32},System.Boolean,System.Boolean)
   name: IsStationAdjacent(MetroStation, HashSet<Int32>, Boolean, Boolean)
   href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_IsStationAdjacent_Gameplay_MetroDisplay_Model_MetroStation_HashSet_System_Int32__System_Boolean_System_Boolean_
@@ -3451,12 +3470,15 @@ references:
   commentId: F:Gameplay.MetroDisplay.Model.Metro.lines
   fullName: Gameplay.MetroDisplay.Model.Metro.lines
   nameWithType: Metro.lines
-- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
-  name: PickRandomLine(Region)
-  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_PickRandomLine_Gameplay_MetroDisplay_Model_Region_
-  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
-  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region)
-  nameWithType: Metro.PickRandomLine(Region)
+- uid: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  name: PickRandomLine(Region, List<Int32>)
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_PickRandomLine_Gameplay_MetroDisplay_Model_Region_List_System_Int32__
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region,List{System.Int32})
+  name.vb: PickRandomLine(Region, List(Of Int32))
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region, List<System.Int32>)
+  fullName.vb: Gameplay.MetroDisplay.Model.Metro.PickRandomLine(Gameplay.MetroDisplay.Model.Region, List(Of System.Int32))
+  nameWithType: Metro.PickRandomLine(Region, List<Int32>)
+  nameWithType.vb: Metro.PickRandomLine(Region, List(Of Int32))
 - uid: Gameplay.MetroDisplay.Model.Metro.PickRandomLine*
   name: PickRandomLine
   href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_PickRandomLine_
@@ -6311,12 +6333,6 @@ references:
   commentId: F:Gameplay.UI.UIMainMenu.gameModeScreen
   fullName: Gameplay.UI.UIMainMenu.gameModeScreen
   nameWithType: UIMainMenu.gameModeScreen
-- uid: Gameplay.UI.UIMainMenu.questionTypeScreen
-  name: questionTypeScreen
-  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_questionTypeScreen
-  commentId: F:Gameplay.UI.UIMainMenu.questionTypeScreen
-  fullName: Gameplay.UI.UIMainMenu.questionTypeScreen
-  nameWithType: UIMainMenu.questionTypeScreen
 - uid: Gameplay.UI.UIMainMenu.SelectGameMode(System.Int32)
   name: SelectGameMode(Int32)
   href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameMode_System_Int32_
@@ -6330,32 +6346,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UIMainMenu.SelectGameMode
   nameWithType: UIMainMenu.SelectGameMode
-- uid: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
-  name: SelectGameModeAndLoad(Int32)
-  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameModeAndLoad_System_Int32_
-  commentId: M:Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
-  fullName: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad(System.Int32)
-  nameWithType: UIMainMenu.SelectGameModeAndLoad(Int32)
-- uid: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad*
-  name: SelectGameModeAndLoad
-  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectGameModeAndLoad_
-  commentId: Overload:Gameplay.UI.UIMainMenu.SelectGameModeAndLoad
-  isSpec: "True"
-  fullName: Gameplay.UI.UIMainMenu.SelectGameModeAndLoad
-  nameWithType: UIMainMenu.SelectGameModeAndLoad
-- uid: Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
-  name: SelectQuestionMode(Int32)
-  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectQuestionMode_System_Int32_
-  commentId: M:Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
-  fullName: Gameplay.UI.UIMainMenu.SelectQuestionMode(System.Int32)
-  nameWithType: UIMainMenu.SelectQuestionMode(Int32)
-- uid: Gameplay.UI.UIMainMenu.SelectQuestionMode*
-  name: SelectQuestionMode
-  href: api/Gameplay.UI.UIMainMenu.html#Gameplay_UI_UIMainMenu_SelectQuestionMode_
-  commentId: Overload:Gameplay.UI.UIMainMenu.SelectQuestionMode
-  isSpec: "True"
-  fullName: Gameplay.UI.UIMainMenu.SelectQuestionMode
-  nameWithType: UIMainMenu.SelectQuestionMode
 - uid: Gameplay.UI.UIScoreItem
   name: UIScoreItem
   href: api/Gameplay.UI.UIScoreItem.html
@@ -6786,6 +6776,12 @@ references:
   isSpec: "True"
   fullName: Gameplay.UI.UITopBar.UpdateTokens
   nameWithType: UITopBar.UpdateTokens
+- uid: Gameplay.UI.UrlLinkHandler
+  name: UrlLinkHandler
+  href: api/Gameplay.UI.UrlLinkHandler.html
+  commentId: T:Gameplay.UI.UrlLinkHandler
+  fullName: Gameplay.UI.UrlLinkHandler
+  nameWithType: UrlLinkHandler
 - uid: Gameplay.UI.VersionText
   name: VersionText
   href: api/Gameplay.UI.VersionText.html
