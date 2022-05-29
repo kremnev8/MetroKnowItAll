@@ -28,19 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.ArcadeModeController.html",
-          "hash": "Z0ZtNV7L04iHGhd3QW8hXLQWoif/3b0KxVgbjDsOJ54="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Conrollers.AutomaticSaveDataController-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Conrollers.AutomaticSaveDataController-1.html",
-          "hash": "NVjrLd+ZTO5fx/Tm95fQQGmsNr4Tz6ExEh/pBkPVhXA="
+          "hash": "XO9s5NKHa9wVnNYDUofbNGezsIN3wtlq/Q9yMCD0yDw="
         }
       },
       "is_incremental": false,
@@ -52,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.BaseGameMode.html",
-          "hash": "kuUt4rD6wncwRFCEsFX8BW1wknxc8pqMB7B3CC3dX+s="
+          "hash": "JSi97hZEBTFo/xyLf/1d1Bb9yn/WzzMMwkgou+Lx6ds="
         }
       },
       "is_incremental": false,
@@ -64,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.Game.html",
-          "hash": "kHmTT3nyPKf1F29VKWSJmrwl3XhRG+Iid03rpOVUEuc="
+          "hash": "e4oQaMhFJepuejBj9TO50aA+/y+m6no92RbUTbnPsBo="
         }
       },
       "is_incremental": false,
@@ -88,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.GameModeController.html",
-          "hash": "l2tC41970drciOCs/BeYiSEtge9O9FBCtTG9CseNBLE="
+          "hash": "ujVg8DI1ypAFjdEMxrp1ti6Tn47iiIZxqBHHgGm4JyU="
         }
       },
       "is_incremental": false,
@@ -100,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.HistoricModeController.html",
-          "hash": "sBsgl4oEGXKCjjCLGYrQ/zOpXuKvoxxwm/gQ4dWr30w="
+          "hash": "vIFH+09fKutDn5XFpQVZXpXwvRrg1InWuGIezozTSYU="
         }
       },
       "is_incremental": false,
@@ -124,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.LearningModeController.html",
-          "hash": "eV6PAMfTiAXYBySwxAzPquxhHWd9vWWm/rZZAqc47/o="
+          "hash": "udZ2fgO2VdiwqtmJDPLwM1HyXZEEU9mguLpMkHHtONg="
         }
       },
       "is_incremental": false,
@@ -136,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.SaveDataBaseController-1.html",
-          "hash": "gwtVdVI+fyoEGLbzcLrwKoTO6bqLyP5S5i+LhYn7QUk="
+          "hash": "noVi5QWDJWJzMsTEDquVkMTDlfdyvWodpL9lAcb1tzs="
         }
       },
       "is_incremental": false,
@@ -148,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.SettingsController.html",
-          "hash": "bGk0+Bm12V9XAeVcP8oQ0swJ9ZKl9oNcWYOIPJ7CTSs="
+          "hash": "yBAEij/mkjSrGyKIRFY59nEg/HAfoNZ/dwcFI3Vsgcg="
         }
       },
       "is_incremental": false,
@@ -172,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.StatisticsController.html",
-          "hash": "ClpJed/AXcwigvw5ksYdxq3Nf71cx6L6/njn+uCcJCI="
+          "hash": "E1EGSLXNX4XeeamsvPa7q4tEs6MTwI3puaV03r+5qdA="
         }
       },
       "is_incremental": false,
@@ -184,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Conrollers.html",
-          "hash": "t19C6vUeRthh33RupVjg4wkT4u037W5nFJ0FK/GJfa4="
+          "hash": "9aCYI8xnyzKIoJY9u60d/LeJRjUmsu9XwRxvl+tVGwU="
         }
       },
       "is_incremental": false,
@@ -196,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.BackHandler.html",
-          "hash": "GMFyobreyTw+8qjm1qrSs0j40O6uVNJdz2TABkKESnY="
+          "hash": "e2vwNjZgGnuwalEOrDH/5wnzchlPCAsyYt5QE1cykFM="
         }
       },
       "is_incremental": false,
@@ -280,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.html",
-          "hash": "IiYtkD3qimGxfIrcn2pvkvbRLzHu8akPmVtQ82eiWNc="
+          "hash": "W41vSuDretofht1H0L8E28H73RpmcwcPdZLR1W8WFt8="
         }
       },
       "is_incremental": false,
@@ -352,7 +340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.EventTypes.html",
-          "hash": "taYVqOoR1KCtr9AZbel+9da0G+JAurAZcyAu2L1ym1U="
+          "hash": "Za6DgmBT9hBUvJ1TyyioR9D8h8jejVZ3wvSSeHGRdH8="
         }
       },
       "is_incremental": false,
@@ -400,7 +388,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.HighlightDisplay.html",
-          "hash": "cuOGnfPO+eKzGQ2IIUlblsNPdvH2BlNmE6yYpJNztKo="
+          "hash": "Lf8qtd5KObcgCWZFEYYRoNdH3D75GRjnevEV1MTH7Bg="
         }
       },
       "is_incremental": false,
@@ -532,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.MetroSiblings.html",
-          "hash": "H5Og5ecLUKcu4mxSFNClCPEaiYJ1uzTKbsDu5zCu4Cc="
+          "hash": "8gtzWonIAeCY9pe0Md7b9jK1NhQc2Z9mdRrAO1wKJXA="
         }
       },
       "is_incremental": false,
@@ -592,7 +580,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.TypeDateRange-1.html",
-          "hash": "p5sogjgh5JNRr+RLjNVbS3c1vTTaxy5NrlpmFnpJb9s="
+          "hash": "E1HDs3ZGmFre2udq+cK8r2Nct/f3pUJyQolMZU7HuaY="
         }
       },
       "is_incremental": false,
@@ -604,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.html",
-          "hash": "P4vTwyiXnuoaeDkQgRSED4uR68OuYoDGpTer1EAB7hc="
+          "hash": "Gq6/UF+P3FETqgduGAMmmfQk7l1iNPVBrsQlp3qoVOw="
         }
       },
       "is_incremental": false,
@@ -628,7 +616,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.html",
-          "hash": "iNx9IhO2Dxv1Kg94vcUysl0+vOtqW4wu+nw9daf1ZP4="
+          "hash": "VjJU6o8P1SDx9jsky5dAiTpWAh25VKCHkNHcB7hcPrw="
         }
       },
       "is_incremental": false,
@@ -756,18 +744,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Gameplay.Questions.UIQuestion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Gameplay.Questions.UIQuestion.html",
-          "hash": "Bueif2VgL3gFgQo+Tu/bWpWXgvgRAgZoWwjrT8WP2Xc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Gameplay.Questions.UITipContainer.yml",
       "output": {
         ".html": {
@@ -796,7 +772,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Questions.html",
-          "hash": "iIKPCfHq6KUJ+kZELlozstYazDpKF76X43Uwd1ZRwuI="
+          "hash": "/ekLwX/G7jns6HGfQOnVctUl3aeUf3iQdMFopRiKOpc="
         }
       },
       "is_incremental": false,
@@ -808,7 +784,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.SceneTransitionManager.html",
-          "hash": "zW8OtNo8yp4YpcYjmSeGfnvpng3qR6wN/mbRiDWIhz4="
+          "hash": "Gvc3VnhFfI57Xe0VVE1RSoHs62GGacVJzT5xHBr/H0Y="
         }
       },
       "is_incremental": false,
@@ -940,7 +916,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.PaletteSpriteSwitch.html",
-          "hash": "5cEnHeYAbw03ZJGGUr+F0Gcgb2m/tD3lx+xhaQ9wcFo="
+          "hash": "slLYYT77YcBxAHd8cQA1ngAIrmCZWl1J0+9SASohgJ4="
         }
       },
       "is_incremental": false,
@@ -976,7 +952,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIAchievement.html",
-          "hash": "teG1DnFuRqFOisS//oh79omN1hKPebTBLWriBGPg2Jc="
+          "hash": "k01g/rmbIlYUx+k5XgC0oAp2iDDasbGYTgMj10najFY="
         }
       },
       "is_incremental": false,
@@ -1000,7 +976,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIFillAnimation.html",
-          "hash": "kaO57pqvQgNk4ariq3TtZhZC4Fh6eP6VQjvrOgfO/yo="
+          "hash": "kuhDIUYRcoQ4hp0Gd4zF2tPhjWuDOZLHH/YAw5gn/Fo="
         }
       },
       "is_incremental": false,
@@ -1012,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIGame.html",
-          "hash": "3LsMvq0hTCg6N1JhS79C8UcCVIHhxr5tQC46y0TKJck="
+          "hash": "EHe4sySFHi/xbYg3Sw30d9w1sYNdxTgwA3OoBaXqY6g="
         }
       },
       "is_incremental": false,
@@ -1036,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIIntro.html",
-          "hash": "hSdSpMGd8UeTg/1blq8MJADlpgt2G/0HCp4me5GaHcY="
+          "hash": "3Yu1kf6sXpJprnu2mjO1x6Ly23QIT9eBcyjcZjRBQU8="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1024,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIMainMenu.html",
-          "hash": "y0vB6ztpDOacAOTENUaL6DltIfdb0cj8O3190aQPUao="
+          "hash": "qYQmEo9dN0cBF/azxmg8l8W/P6aTie7Uhkg3rwhpoxg="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UISettings.html",
-          "hash": "mvqgTVMJiV3uyLI7ElyXIBhPVE5/ctO/AJwnpW3lkm8="
+          "hash": "gMB/D4FXEqVPxMhLteWVNCv8LB/k0gi8GO7zM2vKR8Y="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1060,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIStartGameButton.html",
-          "hash": "DvHSUPP3YYNwwrmMNXnHpma2EfRppWlu4vbipCXwekA="
+          "hash": "6Wypn/xxpvxSaHXVL8zhFrJI8u6VwGEOztd+ItAGreU="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIStatisticView.html",
-          "hash": "zYh/f0en58zCSLWiy/Igi/r6NHbFyuwQGQs+HpIKyR8="
+          "hash": "TrNk/Ddpn4OQvbANMRwy2oREFzCKqr6rHCiZAx7uxwg="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UIStatisticsWindow.html",
-          "hash": "4QOxFmiNO1iUw4qUTki+0YrHOOSv5iRYAGI8QgxZZ5A="
+          "hash": "qLQ2r0c/jibO6/CSzNLv1ZTadfzKqzugB7L32uFWbnA="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1108,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.UrlLinkHandler.html",
-          "hash": "bvnBvF7qhOkF+LKxCmzE62YQFEUaTvi1jDBa68IovOc="
+          "hash": "PVNJCYTk1R3EMceEPVGPPO2BIgKijxO+TsuNCai+1NU="
         }
       },
       "is_incremental": false,
@@ -1156,7 +1132,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.UI.html",
-          "hash": "rDZdaiBDGshaa+PAnxB0s+DPAe/pXVKB0ilpeayGuIs="
+          "hash": "w5mytoW7izEMFR1SjjnVixbDQKIa8Cb/BVG4tHGJllg="
         }
       },
       "is_incremental": false,
@@ -1192,7 +1168,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.html",
-          "hash": "cVWaJbm2sT7BNiqopL2DUwQxVKeN2a5zJ0tRiJYaA2M="
+          "hash": "65ZogAVaiy1en6RlJelCeT5yHnEtisYfQou1bujXwko="
         }
       },
       "is_incremental": false,
@@ -1240,7 +1216,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.Difficulty.html",
-          "hash": "we+KsSsjhGNHqtqjttnf2UbjWDzMSU/JYpjokMMM8YI="
+          "hash": "1/7CmMBoWwX7i+dmlShREF5VASTBkH4A8xK5z1Cr1i0="
         }
       },
       "is_incremental": false,
@@ -1288,7 +1264,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.LineAchievementProvider.html",
-          "hash": "lv75CPo0z6BYRXP7B5UBR4BMBR1gP/mifmD2e1bEn+0="
+          "hash": "IZiUlY/Czn4tzrV0T2ELAC59xO9Mcj09LzzfMpEMvUg="
         }
       },
       "is_incremental": false,
@@ -1312,7 +1288,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.Progress.html",
-          "hash": "jLtZlznjk+gwxrHBujzuNHjvFQIF64DC6SXr4yup0AI="
+          "hash": "5hx5yp00UV2HbZ0ooOgvSmgLdossg15Sz4VuImpCNGw="
         }
       },
       "is_incremental": false,
@@ -1348,7 +1324,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.ScriptableAchievementProvider.html",
-          "hash": "HsP3jt3nY9vBI5VGQwsUPN5+gBmpNCDF/zq699a/5dg="
+          "hash": "FRMOPxIXnt15LpAdryP8izoe3nW5AAUq8OTPNaeig8E="
         }
       },
       "is_incremental": false,
@@ -1372,7 +1348,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.WrongProviderException.html",
-          "hash": "+IHYg2T7OZTReEUGirhw8kJWoVSNms9mjIO/F9R7VsY="
+          "hash": "sBO+0Ifwi8nT0UvK24x57E9hHAVHQ0Zvx21O4NhclPM="
         }
       },
       "is_incremental": false,
@@ -1384,7 +1360,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ScriptableObjects.html",
-          "hash": "r7c/9WDm3INpEn+xrBs5Sh7pO2K00Do30uXiM5PWuEY="
+          "hash": "i2yg9BUFQsjHtawtqU2B2/ilwfkZCIo278xCMxYxRH8="
         }
       },
       "is_incremental": false,
@@ -1396,7 +1372,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.AotTypeEnforcer.html",
-          "hash": "MHHSnGwGySPEOvloznuym7eKG87IndSSowCjEA5zVc0="
+          "hash": "eyeclEXhyRliDEUJBGDY/xSxv2Khn3/7liwld15Inko="
         }
       },
       "is_incremental": false,
@@ -1408,7 +1384,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.CollectionExtension.html",
-          "hash": "Gr1nwdvzcRHN5wZLcWsQYJ6mq38KXhV0TK0nXZCb0so="
+          "hash": "Ixtbj+QiWcRoHi7IwdwCDKOdOGGaU2mwbiEDDpcrKEw="
         }
       },
       "is_incremental": false,
@@ -1420,7 +1396,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.EventManager.html",
-          "hash": "6WL8a9DtarTJCQ2xUq/mgNlFmkLeef/vmWjkSOs44fo="
+          "hash": "0Qku+wsZktw2/iqUhrlb9Uib8d4tz3r+cE0EvLBUv4U="
         }
       },
       "is_incremental": false,
@@ -1444,7 +1420,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.EventToggleGroup.html",
-          "hash": "55eOuY61wvlDRekygDsAeJPdlQ2TplyisEUYZJi/lEA="
+          "hash": "q6OoBvLTBrN6LiUuvQoSYy4DVcahaWNfGF2tG2+LI2c="
         }
       },
       "is_incremental": false,
@@ -1468,7 +1444,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.HideOnStart.html",
-          "hash": "kQqDH7Z6bMolhXrFY2sPCtYjxWaxqhvdDS77vmJ5mco="
+          "hash": "rPqIFN5cViZtWqokIdhgnHojbJGj253V4qcr9gvpGfU="
         }
       },
       "is_incremental": false,
@@ -1492,7 +1468,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.InspectorButtonAttribute.html",
-          "hash": "zDAklNek49LeB6GZvtHQHfCj8zdM9r7Ggm6YnOTs4Lg="
+          "hash": "X/dyhhVeFEb3qmHRqs5VI3b/fhrzup/Lmlb7LTx2nzU="
         }
       },
       "is_incremental": false,
@@ -1516,7 +1492,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.MathExtensions.html",
-          "hash": "vnPaphm7WWgLSjmWjNgvO9FiHlwCJn343fyif1V/k1c="
+          "hash": "CfspZkQN99LDBrH90VNpFmndhmsdBqkgJV0w6RhnVDg="
         }
       },
       "is_incremental": false,
@@ -1528,7 +1504,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.PauseController.html",
-          "hash": "S0VpzS5acJDi+XkaEongGmP8IcLZDDTwkhcHBBZXGK0="
+          "hash": "/lkBToO8yC3UQ0Gpz0NXrc+MMEQSaOXLrjvurMDL5FQ="
         }
       },
       "is_incremental": false,
@@ -1540,7 +1516,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.RandomUtils.html",
-          "hash": "WErD9fsV10w41A1AmqZ/yMrk7IjSn4wUwx4losDrTCc="
+          "hash": "nUBWqbpmZIVnmUXRIEGHFXYBlamWlf+Yn3C9S+UFueA="
         }
       },
       "is_incremental": false,
@@ -1600,7 +1576,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.StringExtension.html",
-          "hash": "hUWbiO8+2WTPeFAW9BA0o1UrC2k6KUaEUZIqx6BQyX8="
+          "hash": "Uy6hcqL5gAZ0Ex+RXTbkAfIlPZ/amL1XmoSAKfrqvyw="
         }
       },
       "is_incremental": false,
@@ -1624,7 +1600,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Util.html",
-          "hash": "cX8IGI0FQ77zEWIDJpmvAH2UwQ1nCUK+KkV2a2lhRjo="
+          "hash": "S41JyUHYzjzVa/mdMx3GlRuRNJTA5OKIjiGhoSSn3XE="
         }
       },
       "is_incremental": false,
@@ -1636,7 +1612,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "nQrm0wwY+QJBX+bsuLNGzaiD7/ReS1IYNEZBA0ardHo="
+          "hash": "o/SghDe6txTmEWCJUHa9qrjsUe6HN/iuxIaGBUaYm7M="
         }
       },
       "is_incremental": false,
@@ -1655,12 +1631,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "manual/achievements.md",
       "output": {
         ".html": {
           "relative_path": "manual/achievements.html",
-          "hash": "WzvxQm6Ocl3mWShVryRGq7V1L2tPmldh33P7bjr4Bx4="
+          "hash": "wlj3HGbR4GGpOwudWVVM9oi3z7zOLA9NphSu+bIDcUA="
         }
       },
       "is_incremental": false,
@@ -1672,7 +1651,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/gameplay.html",
-          "hash": "EvoGaMbAsSReoWaJpGLW3uRek8IvhezLaTp3KyAyPmk="
+          "hash": "h+rR8qV3lFnJZqefyyFai4lbm6hveMTpSNJH1ie9Zxg="
         }
       },
       "is_incremental": false,
@@ -2053,7 +2032,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 134,
+          "total_file_count": 132,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

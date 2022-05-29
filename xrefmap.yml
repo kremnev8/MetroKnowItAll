@@ -288,15 +288,6 @@ references:
   isSpec: "True"
   fullName: Gameplay.Conrollers.ArcadeModeController.UpdateGameState
   nameWithType: ArcadeModeController.UpdateGameState
-- uid: Gameplay.Conrollers.AutomaticSaveDataController`1
-  name: AutomaticSaveDataController<T>
-  href: api/Gameplay.Conrollers.AutomaticSaveDataController-1.html
-  commentId: T:Gameplay.Conrollers.AutomaticSaveDataController`1
-  name.vb: AutomaticSaveDataController(Of T)
-  fullName: Gameplay.Conrollers.AutomaticSaveDataController<T>
-  fullName.vb: Gameplay.Conrollers.AutomaticSaveDataController(Of T)
-  nameWithType: AutomaticSaveDataController<T>
-  nameWithType.vb: AutomaticSaveDataController(Of T)
 - uid: Gameplay.Conrollers.BaseGameMode
   name: BaseGameMode
   href: api/Gameplay.Conrollers.BaseGameMode.html
@@ -5257,55 +5248,6 @@ references:
   fullName.vb: Gameplay.Questions.QuestionGenerator(Of T).uiController
   nameWithType: QuestionGenerator<T>.uiController
   nameWithType.vb: QuestionGenerator(Of T).uiController
-- uid: Gameplay.Questions.UIQuestion
-  name: UIQuestion
-  href: api/Gameplay.Questions.UIQuestion.html
-  commentId: T:Gameplay.Questions.UIQuestion
-  fullName: Gameplay.Questions.UIQuestion
-  nameWithType: UIQuestion
-- uid: Gameplay.Questions.UIQuestion.answerField
-  name: answerField
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_answerField
-  commentId: F:Gameplay.Questions.UIQuestion.answerField
-  fullName: Gameplay.Questions.UIQuestion.answerField
-  nameWithType: UIQuestion.answerField
-- uid: Gameplay.Questions.UIQuestion.CheckAnswer
-  name: CheckAnswer()
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_CheckAnswer
-  commentId: M:Gameplay.Questions.UIQuestion.CheckAnswer
-  fullName: Gameplay.Questions.UIQuestion.CheckAnswer()
-  nameWithType: UIQuestion.CheckAnswer()
-- uid: Gameplay.Questions.UIQuestion.CheckAnswer*
-  name: CheckAnswer
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_CheckAnswer_
-  commentId: Overload:Gameplay.Questions.UIQuestion.CheckAnswer
-  isSpec: "True"
-  fullName: Gameplay.Questions.UIQuestion.CheckAnswer
-  nameWithType: UIQuestion.CheckAnswer
-- uid: Gameplay.Questions.UIQuestion.progressBar
-  name: progressBar
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_progressBar
-  commentId: F:Gameplay.Questions.UIQuestion.progressBar
-  fullName: Gameplay.Questions.UIQuestion.progressBar
-  nameWithType: UIQuestion.progressBar
-- uid: Gameplay.Questions.UIQuestion.questions
-  name: questions
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_questions
-  commentId: F:Gameplay.Questions.UIQuestion.questions
-  fullName: Gameplay.Questions.UIQuestion.questions
-  nameWithType: UIQuestion.questions
-- uid: Gameplay.Questions.UIQuestion.questionText
-  name: questionText
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_questionText
-  commentId: F:Gameplay.Questions.UIQuestion.questionText
-  fullName: Gameplay.Questions.UIQuestion.questionText
-  nameWithType: UIQuestion.questionText
-- uid: Gameplay.Questions.UIQuestion.resultText
-  name: resultText
-  href: api/Gameplay.Questions.UIQuestion.html#Gameplay_Questions_UIQuestion_resultText
-  commentId: F:Gameplay.Questions.UIQuestion.resultText
-  fullName: Gameplay.Questions.UIQuestion.resultText
-  nameWithType: UIQuestion.resultText
 - uid: Gameplay.Questions.UITipContainer
   name: UITipContainer
   href: api/Gameplay.Questions.UITipContainer.html
@@ -8507,19 +8449,6 @@ references:
   commentId: T:Util.StringExtension
   fullName: Util.StringExtension
   nameWithType: StringExtension
-- uid: Util.StringExtension.FilterRuString(System.String)
-  name: FilterRuString(String)
-  href: api/Util.StringExtension.html#Util_StringExtension_FilterRuString_System_String_
-  commentId: M:Util.StringExtension.FilterRuString(System.String)
-  fullName: Util.StringExtension.FilterRuString(System.String)
-  nameWithType: StringExtension.FilterRuString(String)
-- uid: Util.StringExtension.FilterRuString*
-  name: FilterRuString
-  href: api/Util.StringExtension.html#Util_StringExtension_FilterRuString_
-  commentId: Overload:Util.StringExtension.FilterRuString
-  isSpec: "True"
-  fullName: Util.StringExtension.FilterRuString
-  nameWithType: StringExtension.FilterRuString
 - uid: Util.StringExtension.GetDeclension(System.Int32,System.String,System.String,System.String)
   name: GetDeclension(Int32, String, String, String)
   href: api/Util.StringExtension.html#Util_StringExtension_GetDeclension_System_Int32_System_String_System_String_System_String_

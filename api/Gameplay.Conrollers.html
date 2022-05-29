@@ -88,23 +88,27 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Gameplay.Conrollers.ArcadeModeController.html">ArcadeModeController</a></h4>
-      <section><p>Selects and Manages question asking process. Contains all active <see cref="!:BaseQuestionGenerator"></see> and <see cref="!:BaseUIQuestion"></see></p>
+      <section><p>Class implementing Arcade game mode.</p>
 </section>
-      <h4><a class="xref" href="Gameplay.Conrollers.AutomaticSaveDataController-1.html">AutomaticSaveDataController&lt;T&gt;</a></h4>
-      <section></section>
       <h4><a class="xref" href="Gameplay.Conrollers.BaseGameMode.html">BaseGameMode</a></h4>
-      <section></section>
+      <section><p>Base class for game mode. Implements basic logic and save and loading.
+Fields with JsonProperty attribute are serialized to the save file.</p>
+</section>
       <h4><a class="xref" href="Gameplay.Conrollers.Game.html">Game</a></h4>
-      <section></section>
+      <section><p>Game state class. Contains all state for current game.</p>
+</section>
       <h4><a class="xref" href="Gameplay.Conrollers.GameController.html">GameController</a></h4>
       <section><p>Main game controller</p>
 </section>
       <h4><a class="xref" href="Gameplay.Conrollers.GameModeController.html">GameModeController</a></h4>
-      <section></section>
+      <section><p>Game modes controller class. Handles storing game mode instance classes, and activating current one. Contains all active <see cref="!:BaseQuestionGenerator"></see> and <see cref="!:BaseUIQuestion"></see></p>
+</section>
       <h4><a class="xref" href="Gameplay.Conrollers.HistoricModeController.html">HistoricModeController</a></h4>
-      <section></section>
+      <section><p>Class that implements historic game mode</p>
+</section>
       <h4><a class="xref" href="Gameplay.Conrollers.LearningModeController.html">LearningModeController</a></h4>
-      <section></section>
+      <section><p>Class that implements Learning game mode</p>
+</section>
       <h4><a class="xref" href="Gameplay.Conrollers.SaveDataBaseController-1.html">SaveDataBaseController&lt;T&gt;</a></h4>
       <section><p>Base class for controllers that need to save data in a json file.</p>
 </section>
