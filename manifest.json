@@ -1631,9 +1631,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "manual/achievements.md",
       "output": {
@@ -1682,54 +1679,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/Achievments/all-correct.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/all-correct.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "resources/Achievments/bug.png",
       "output": {
         "resource": {
           "relative_path": "resources/Achievments/bug.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/bug.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/bug.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/bug.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/bug.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/bug.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/bug.psd.meta"
         }
       },
       "is_incremental": false,
@@ -1748,39 +1701,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/Achievments/driver.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/driver.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/driver.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/driver.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/driver.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/driver.psd.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "resources/Achievments/fast.png",
       "output": {
         "resource": {
@@ -1792,32 +1712,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/Achievments/fast.png.meta",
+      "source_relative_path": "resources/Achievments/got-line.png",
       "output": {
         "resource": {
-          "relative_path": "resources/Achievments/fast.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/fast.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/fast.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/fast.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/fast.psd.meta"
+          "relative_path": "resources/Achievments/got-line.png"
         }
       },
       "is_incremental": false,
@@ -1836,76 +1734,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/Achievments/newbie.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/newbie.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/newbie.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/newbie.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/newbie.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/newbie.psd.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "resources/Achievments/passanger.png",
       "output": {
         "resource": {
           "relative_path": "resources/Achievments/passanger.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/passanger.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/passanger.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/passanger.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/passanger.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/passanger.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/passanger.psd.meta"
         }
       },
       "is_incremental": false,
@@ -1924,76 +1756,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy.psd.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "resources/Achievments/trophy50.png",
       "output": {
         "resource": {
           "relative_path": "resources/Achievments/trophy50.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy50.png.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy50.png.meta"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy50.psd",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy50.psd"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "resources/Achievments/trophy50.psd.meta",
-      "output": {
-        "resource": {
-          "relative_path": "resources/Achievments/trophy50.psd.meta"
         }
       },
       "is_incremental": false,
