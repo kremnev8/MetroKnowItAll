@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 namespace Gameplay
 {
+    /// <summary>
+    /// Handles scene transition.
+    /// </summary>
     public class SceneTransitionManager : MonoBehaviour
     {
         public static SceneTransitionManager instance;

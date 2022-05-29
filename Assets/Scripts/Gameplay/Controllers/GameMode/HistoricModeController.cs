@@ -8,6 +8,9 @@ using Util;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Class that implements historic game mode
+    /// </summary>
     public class HistoricModeController : LearningModeController
     {
         public new const string MODE_ID = "historic";

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Difficulty model class
+    /// </summary>
     [Serializable]
     public class Difficulty
     {

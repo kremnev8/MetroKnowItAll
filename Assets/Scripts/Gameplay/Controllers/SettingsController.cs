@@ -26,7 +26,7 @@ namespace Gameplay.Conrollers
     /// <summary>
     /// Controller that handles saving and loading player settings
     /// </summary>
-    public class SettingsController : AutomaticSaveDataController<SettingsEntry>
+    public class SettingsController : SaveDataBaseController<SettingsEntry>
     {
         public DifficultyConfig difficultyConfig;
         public ColorPalette palette;

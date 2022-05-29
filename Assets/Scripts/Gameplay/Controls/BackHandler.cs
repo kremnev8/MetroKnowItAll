@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 
 namespace Gameplay.Controls
 {
+    /// <summary>
+    /// Back button handler. Any game object that this script is attached to can be closed using back button.
+    /// </summary>
     public class BackHandler : MonoBehaviour
     {
         private static List<BackHandler> windowStack = new List<BackHandler>();

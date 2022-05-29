@@ -3,6 +3,10 @@ using UnityEngine.Serialization;
 
 namespace Gameplay.MetroDisplay.Model
 {
+    /// <summary>
+    /// History data container
+    /// </summary>
+    /// <typeparam name="T">value to hold</typeparam>
     [Serializable]
     public struct TypeDateRange<T>
     {

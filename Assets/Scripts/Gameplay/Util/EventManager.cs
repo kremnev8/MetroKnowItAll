@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Util
 {
+    /// <summary>
+    /// Global event manager. Handles subscribing and sending events.
+    /// </summary>
     public static class EventManager
     {
         public static void StartListening(string eventType, Action<object[]> listener)

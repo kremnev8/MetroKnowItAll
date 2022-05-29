@@ -8,6 +8,9 @@ using Util;
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Achievement provider for all achievements for unlocking a line
+    /// </summary>
     [CreateAssetMenu(fileName = "Line Achievement Provider", menuName = "SO/New Line Achievement Provider", order = 0)]
     public class LineAchievementProvider : ScriptableAchievementProvider
     {

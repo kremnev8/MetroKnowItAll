@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 namespace Util
 {
+    /// <summary>
+    /// Toggle utility class to handle Toggle groups using Unity events
+    /// </summary>
     [RequireComponent(typeof(ToggleGroup))]
     [ExecuteInEditMode]
     public class EventToggleGroup : MonoBehaviour

@@ -10,6 +10,9 @@ using Util;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Settings UI controller
+    /// </summary>
     public class UISettings : MonoBehaviour
     {
         public Toggle themeToggle;

@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Util
 {
+    /// <summary>
+    /// Utility methods for collections
+    /// </summary>
     public static class CollectionExtension
     {
         /// <summary>
@@ -39,6 +42,11 @@ namespace Util
             }
         }
 
+        /// <summary>
+        /// Evaluate history range and find current value
+        /// </summary>
+        /// <param name="range">history range</param>
+        /// <param name="year">current year</param>
         public static T GetCurrent<T>(this List<TypeDateRange<T>> range, int year)
         {
             foreach (TypeDateRange<T> entry in range)
@@ -52,6 +60,12 @@ namespace Util
             return default;
         }
 
+        /// <summary>
+        /// Modify history range to insert a new change
+        /// </summary>
+        /// <param name="list">history range</param>
+        /// <param name="year">insert year</param>
+        /// <param name="value">new value</param>
         public static void Insert<T>(this List<TypeDateRange<T>> list, int year, T value)
         {
             int index = list.FindIndex(range => range.InScope(year));
@@ -62,6 +76,11 @@ namespace Util
             list.Insert(index + 1, second);
         }
 
+        /// <summary>
+        /// Modify history range to remove a change
+        /// </summary>
+        /// <param name="list">history range</param>
+        /// <param name="year">target year</param>
         public static void Remove<T>(this List<TypeDateRange<T>> list, int year)
         {
             int startIndex = list.FindIndex(range => range.closedIn == year);
@@ -82,6 +101,13 @@ namespace Util
             }
         }
 
+        /// <summary>
+        /// Get a fixed amount of stations, from start. Skips any closed stations.
+        /// </summary>
+        /// <param name="stations">list of all stations</param>
+        /// <param name="startIndex">start index</param>
+        /// <param name="count">station count</param>
+        /// <exception cref="ArgumentException">List does not contains count stations which are open</exception>
         public static List<MetroStation> GetStationRange(this List<MetroStation> stations, int startIndex, int count)
         {
             List<MetroStation> result = new List<MetroStation>(count);
@@ -107,7 +133,13 @@ namespace Util
             return result;
         }
         
-        
+        /// <summary>
+        /// Get an attribute of type T from a MemberInfo
+        /// </summary>
+        /// <param name="memberInfo">target object info</param>
+        /// <param name="customAttribute">result attribute</param>
+        /// <typeparam name="T">attribute type</typeparam>
+        /// <returns>was an attribute found?</returns>
         public static bool TryGetAttribute<T>(this MemberInfo memberInfo, out T customAttribute) where T: Attribute {
             var attributes = memberInfo.GetCustomAttributes(typeof(T), false).FirstOrDefault();
             if (attributes == null) {

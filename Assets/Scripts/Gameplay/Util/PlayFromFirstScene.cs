@@ -6,6 +6,9 @@ using static UnityEditor.EditorPrefs;
 
 namespace Util
 {
+    /// <summary>
+    /// Utility to always load the game from main menu
+    /// </summary>
     public static class PlayFromTheFirstScene
     {      
         const string playFromFirstMenuStr = "Edit/Always Start From Scene 0 &p";

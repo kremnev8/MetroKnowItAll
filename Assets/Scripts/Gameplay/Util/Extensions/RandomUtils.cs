@@ -55,6 +55,11 @@ namespace Util
             return ConstrainedRandom(num => num != exclude, min, max);
         }
 
+        /// <summary>
+        /// Get a random element from a list with weight.
+        /// </summary>
+        /// <param name="sequence">list</param>
+        /// <param name="weightSelector">Function to determine element weight</param>\
         public static T RandomElementByWeight<T>(this IEnumerable<T> sequence, Func<T, float> weightSelector)
         {
             float totalWeight = sequence.Sum(weightSelector);
@@ -74,6 +79,11 @@ namespace Util
             return default(T);
         }
 
+        /// <summary>
+        /// Get a point away at random direction a distance away.
+        /// </summary>
+        /// <param name="point">start point</param>
+        /// <param name="magnitude">distance</param>
         public static Vector2 RandomizePoint(this Vector2 point, float magnitude)
         {
             float angle = Random.Range(-Mathf.PI, Mathf.PI);

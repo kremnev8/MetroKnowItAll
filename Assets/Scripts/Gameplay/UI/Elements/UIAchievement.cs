@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// UI element responsible for displaying an achievement
+    /// </summary>
     public class UIAchievement : MonoBehaviour
     {
         public Sprite lockedIcon;

@@ -10,6 +10,9 @@ using Util;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Statistics UI controller
+    /// </summary>
     public class UIStatisticsWindow : MonoBehaviour
     {
         public AchievementDB achievements;

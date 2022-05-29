@@ -17,7 +17,7 @@ namespace Gameplay.Conrollers
     /// <summary>
     /// Manages statistics and achievements. Also saves and loads statistics data to disk
     /// </summary>
-    public class StatisticsController : AutomaticSaveDataController<StatisticsEntry>
+    public class StatisticsController : SaveDataBaseController<StatisticsEntry>
     {
         public StatisticsEntry sesion;
         public AchievementDB achievements;

@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Util
 {
+    /// <summary>
+    /// Class that ensures data types needed for saving and loading game saves are not stripped by AOT compiler
+    /// </summary>
     public class AotTypeEnforcer : MonoBehaviour
     {
         public void Awake()

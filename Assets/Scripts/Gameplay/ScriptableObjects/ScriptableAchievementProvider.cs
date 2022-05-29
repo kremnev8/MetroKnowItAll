@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace ScriptableObjects
 {
+    /// <summary>
+    /// Exception in the case called provider does not handle the achievement
+    /// </summary>
     public class WrongProviderException : Exception{
 
         public WrongProviderException() : base("This provider can't return progress")
@@ -13,6 +16,9 @@ namespace ScriptableObjects
         }
     }
     
+    /// <summary>
+    /// Base class for Achievement provider. This class can create achievements at runtime as needed. Useful for large amount of similar achievements.
+    /// </summary>
     public abstract class ScriptableAchievementProvider : ScriptableObject
     {
         public string baseId;
@@ -23,6 +29,9 @@ namespace ScriptableObjects
         public abstract void CheckAchievementsState(AchievementDB achievements, StatisticsEntry entry); 
     }
 
+    /// <summary>
+    /// Achievement progress struct
+    /// </summary>
     public struct Progress
     {
         public int current;

@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Util
 {
+    /// <summary>
+    /// Whenever this mono behavior is active, the game will be paused.
+    /// </summary>
     public class PauseController : MonoBehaviour
     {
         private void OnEnable()

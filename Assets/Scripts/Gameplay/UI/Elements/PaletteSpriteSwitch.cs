@@ -12,6 +12,9 @@ using UnityEditor;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// UI helper that ensures all UI elements are using correct sprites
+    /// </summary>
     [ExecuteInEditMode]
     public class PaletteSpriteSwitch : MonoBehaviour
     {

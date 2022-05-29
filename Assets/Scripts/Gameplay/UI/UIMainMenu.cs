@@ -2,6 +2,9 @@
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Main menu UI controller
+    /// </summary>
     public class UIMainMenu : MonoBehaviour
     {
         public GameObject gameModeScreen;

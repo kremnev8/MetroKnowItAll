@@ -6,6 +6,10 @@ using UnityEngine;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Base class for game mode. Implements basic logic and save and loading.
+    /// Fields with JsonProperty attribute are serialized to the save file.
+    /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public abstract class BaseGameMode : MonoBehaviour
     {

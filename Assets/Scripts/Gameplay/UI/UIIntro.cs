@@ -5,6 +5,9 @@ using Util;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Controller for game mode intro UI
+    /// </summary>
     public class UIIntro : MonoBehaviour
     {
         public GameObject arcadeCard;

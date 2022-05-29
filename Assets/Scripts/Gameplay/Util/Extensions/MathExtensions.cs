@@ -60,11 +60,17 @@ namespace Util
             return new Vector2(vector.x, vector.y);
         }
         
+        /// <summary>
+        /// Convert a Point to Vector2
+        /// </summary>
         public static Vector2 ToVector2(this Point point)
         {
             return new Vector2((float)point.X, (float)point.Y);
         }
         
+        /// <summary>
+        /// Convert a Vector2 to Point
+        /// </summary>
         public static Point ToPoint(this Vector2 point)
         {
             return new Point(point.x, point.y);
@@ -380,11 +386,22 @@ namespace Util
             return current * (total - 1) / total + newValue / total;
         }
 
+        /// <summary>
+        /// Combine two running exponential average values.
+        /// </summary>
+        /// <param name="current">current average</param>
+        /// <param name="other">total count</param>
+        /// <param name="currentCount">other average</param>
+        /// <param name="otherCount">other count</param>
+        /// <returns>average value</returns>
         public static float Average(this float current, float other, int currentCount, int otherCount)
         {
             return current * currentCount / (currentCount + otherCount) + other * otherCount / (currentCount + otherCount);
         }
         
+        /// <summary>
+        /// Calculate camera orthographic screen size in world space
+        /// </summary>
         public static Vector2 OrthographicSize(this Camera camera)
         {
             float screenAspect = Screen.width / (float)Screen.height;

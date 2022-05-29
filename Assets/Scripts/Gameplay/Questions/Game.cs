@@ -3,6 +3,9 @@ using Gameplay.MetroDisplay.Model;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Game state class. Contains all state for current game.
+    /// </summary>
     [Serializable]
     public class Game
     {

@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// UI element displaying a statistic
+    /// </summary>
     public class UIStatisticView : MonoBehaviour
     {
         public TMP_Text label;

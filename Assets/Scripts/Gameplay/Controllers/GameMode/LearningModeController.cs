@@ -13,6 +13,9 @@ using Random = UnityEngine.Random;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Class that implements Learning game mode
+    /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class LearningModeController : ArcadeModeController
     {

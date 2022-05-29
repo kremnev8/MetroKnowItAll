@@ -1,5 +1,8 @@
 ﻿namespace Gameplay
 {
+    /// <summary>
+    /// Holder for all event type defines
+    /// </summary>
     public static class EventTypes
     {
         public const string SESSION_P = "SESSION_";

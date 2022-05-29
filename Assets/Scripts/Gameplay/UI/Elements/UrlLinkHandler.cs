@@ -8,6 +8,9 @@ using Util;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Handler for TMP rich text links. Opens any link as a URL
+    /// </summary>
     public class UrlLinkHandler : MonoBehaviour
     {
         private TMP_Text text;

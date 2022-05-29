@@ -3,7 +3,7 @@
 namespace Util
 {
     /// <summary>
-    /// Hide game object this is attached to
+    /// Hide game object this is attached to at the start
     /// </summary>
     public class HideOnStart : MonoBehaviour
     {

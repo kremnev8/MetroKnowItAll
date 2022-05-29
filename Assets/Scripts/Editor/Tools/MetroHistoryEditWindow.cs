@@ -8,6 +8,10 @@ using Util;
 
 namespace Editor.Tools
 {
+
+    /// <summary>
+    /// Utility window to help modify <see cref="Metro"/> objects using intuitive interface.
+    /// </summary>
     public class MetroHistoryEditWindow : EditorWindow
     {
         [MenuItem("Tools/Metro History Editor", false)]

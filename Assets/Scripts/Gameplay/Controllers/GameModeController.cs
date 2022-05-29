@@ -10,6 +10,9 @@ using Random = UnityEngine.Random;
 
 namespace Gameplay.Conrollers
 {
+    /// <summary>
+    /// Game modes controller class. Handles storing game mode instance classes, and activating current one. Contains all active <see cref="BaseQuestionGenerator"/> and <see cref="BaseUIQuestion"/>
+    /// </summary>
     public class GameModeController : MonoBehaviour
     {
         [SerializeField] private Transform uiQuestionTransfrom;

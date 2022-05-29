@@ -16,7 +16,7 @@ using Random = UnityEngine.Random;
 namespace Gameplay.Conrollers
 {
     /// <summary>
-    /// Selects and Manages question asking process. Contains all active <see cref="BaseQuestionGenerator"/> and <see cref="BaseUIQuestion"/>
+    /// Class implementing Arcade game mode.
     /// </summary>
     [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
     public class ArcadeModeController : BaseGameMode

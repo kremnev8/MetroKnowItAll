@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 namespace Gameplay.UI
 {
+    /// <summary>
+    /// Main game UI class
+    /// </summary>
     public class UIGame : MonoBehaviour
     {
         public UITopBar topBar;

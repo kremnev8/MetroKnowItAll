@@ -8,6 +8,9 @@ using Util;
 
 namespace Gameplay.MetroDisplay
 {
+    /// <summary>
+    /// Display for station focus overlay
+    /// </summary>
     public class HighlightDisplay : MonoBehaviour
     {
         public RenderTexture renderTexture;

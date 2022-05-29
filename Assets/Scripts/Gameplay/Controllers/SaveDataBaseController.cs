@@ -19,9 +19,15 @@ namespace Gameplay.Conrollers
         public int Version { get; set; }
     }
 
-    public abstract class AutomaticSaveDataController<T> : SaveDataBaseController<T>
-        where T : class, ISaveData, new()
+    /// <summary>
+    /// Base class for controllers that need to save data in a json file.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public abstract class SaveDataBaseController<T> : MonoBehaviour
+    where T : class, ISaveData, new()
     {
+        public T current;
+
         private void Awake()
         {
             Load();
@@ -50,16 +56,6 @@ namespace Gameplay.Conrollers
         {
             Save();
         }
-    }
-
-    /// <summary>
-    /// Base class for controllers that need to save data in a json file.
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public abstract class SaveDataBaseController<T> : MonoBehaviour
-    where T : class, ISaveData, new()
-    {
-        public T current;
 
         public bool Load()
         {
