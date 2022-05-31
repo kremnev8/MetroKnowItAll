@@ -4252,7 +4252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041E \u0410\u0432\u0442\u043E\u0440\u0430\u0445"
+  m_text: "\u041E\u0431 \u0410\u0432\u0442\u043E\u0440\u0430\u0445"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eebadc3f341ffa943b73691abf98b23a, type: 2}
   m_sharedMaterial: {fileID: 5371948533537891932, guid: eebadc3f341ffa943b73691abf98b23a, type: 2}
