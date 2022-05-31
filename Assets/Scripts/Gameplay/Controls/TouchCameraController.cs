@@ -55,12 +55,13 @@ namespace Gameplay.Controls
         public float lerpTime = 5;
         public float endLerpThreshold = 1;
 
-        public void LerpTo(Vector3 position)
+        public void LerpTo(Vector3 position, float time = 5)
         {
             position.z = -10;
             lerpTarget = position;
             shouldLerp = true;
             lerpTimeElapsed = 0;
+            lerpTime = time;
         }
 
 
@@ -181,7 +182,10 @@ namespace Gameplay.Controls
                     }
 
                     pos -= currentDir * Time.deltaTime / 4;
-                    SetPosClamped(pos);
+                    if (SetPosClamped(pos))
+                    {
+                        shouldLerp = false;
+                    }
                 }
                 else
                 {
@@ -196,18 +200,21 @@ namespace Gameplay.Controls
         }
         
         
-        void SetPosClamped(Vector3 pos)
+        bool SetPosClamped(Vector3 pos)
         {
             Vector2 screenSize = camera.OrthographicSize();
 
             Rect screenBounds = new Rect(
                 worldBounds.position + screenSize / 2, 
                 worldBounds.size - screenSize);
-            
-            pos.x = Mathf.Clamp(pos.x, screenBounds.xMin, screenBounds.xMax);
-            pos.y = Mathf.Clamp(pos.y, screenBounds.yMin, screenBounds.yMax);
 
-            camera.transform.position = pos;
+            Vector3 clampedPos = pos;
+            
+            clampedPos.x = Mathf.Clamp(clampedPos.x, screenBounds.xMin, screenBounds.xMax);
+            clampedPos.y = Mathf.Clamp(clampedPos.y, screenBounds.yMin, screenBounds.yMax);
+
+            camera.transform.position = clampedPos;
+            return (pos - clampedPos).sqrMagnitude > 0.1f;
         }
 
         private void ZoomStart(InputAction.CallbackContext obj)

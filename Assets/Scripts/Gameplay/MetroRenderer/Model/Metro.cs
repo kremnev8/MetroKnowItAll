@@ -147,8 +147,24 @@ namespace Gameplay.MetroDisplay.Model
         public MetroStation PickStationNear(MetroStation station)
         {
             int startIndex = Mathf.Max(0, station.stationId - 2);
-            int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + 2);
-            int tipStation = RandomUtils.ConstrainedRandom(id => { return id != station.stationId && GetStation(id).isOpen; }, startIndex, endIndex);
+            int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + 3);
+            int tipStation = RandomUtils.ConstrainedRandom(id => { return id != station.stationId && GetStation(station.lineId, id).isOpen; }, startIndex, endIndex);
+
+            return lines[station.lineId].stations[tipStation];
+        }
+        
+        /// <summary>
+        /// Pick a stations that is near another station
+        /// </summary>
+        public MetroStation PickStationNear(MetroStation station, int distance, Func<MetroStation, bool> filter)
+        {
+            int startIndex = Mathf.Max(0, station.stationId - distance);
+            int endIndex = Mathf.Min(lines[station.lineId].stations.Count, station.stationId + distance + 1);
+            int tipStation = RandomUtils.ConstrainedRandom(id =>
+            {
+                MetroStation station1 = GetStation(station.lineId, id);
+                return id != station.stationId && station1.isOpen && filter(station1);
+            }, startIndex, endIndex);
 
             return lines[station.lineId].stations[tipStation];
         }

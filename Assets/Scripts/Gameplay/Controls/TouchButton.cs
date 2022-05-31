@@ -66,6 +66,23 @@ namespace Gameplay.Controls
             showStationName = false;
         }
 
+        public bool SetSelected(ISelectable target)
+        {
+            if (target != null && filter(target) && (target.IsFocused(renderer) || overrideFocus))
+            {
+                if (showStationName)
+                    selectedStation?.ShowLabel(false);
+                selectedStation?.SetSelected(renderer, false);
+                target.SetSelected(renderer, true);
+                selectedStation = target;
+                if (showStationName)
+                    target.ShowLabel(true);
+                return true;
+            }
+
+            return false;
+        }
+
         public T GetSelected<T>() where T : class
         {
             if (selectedStation == null) throw new InvalidOperationException("User did not select anything!");
@@ -112,16 +129,8 @@ namespace Gameplay.Controls
                     if (hit.collider == null) continue;
                     
                     ISelectable display = hit.collider.gameObject.GetComponent<ISelectable>();
-                    if (display != null && filter(display) && (display.IsFocused(renderer) || overrideFocus))
+                    if (SetSelected(display))
                     {
-                        if (showStationName)
-                            selectedStation?.ShowLabel(false);
-                        selectedStation?.SetSelected(renderer, false);
-                        display.SetSelected(renderer, true);
-                        selectedStation = display;
-                        if (showStationName)
-                            display.ShowLabel(true);
-                        
                         break;
                     }
                 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Gameplay.Controls;
 using Gameplay.MetroDisplay;
@@ -185,8 +186,12 @@ namespace Gameplay.Conrollers
                 uiGame.topBar.ShowMessage("Выберите станцию!");
                 return;
             }
-            
-            if (display == null || tokens <= 0) return;
+
+            if (display == null || tokens <= 0)
+            {
+                uiGame.topBar.ShowMessage($"У вас нету {GetTokenName(10)}");
+                return;
+            }
 
             if (!unlockedStations.IsUnlocked(display.station))
             {
@@ -202,8 +207,38 @@ namespace Gameplay.Conrollers
                         maxQuestions = newMax;
                     }
                 }
+
+                try
+                {
+                    MetroStation station = renderer.metro.PickStationNear(display.station, 1, station =>
+                    {
+                        return !unlockedStations.IsUnlocked(station);
+                    });
+
+                    uiGame.touchButton.SetSelected(renderer.GetStationDisplay(station));
+                    model.cameraController.LerpTo(station.position, 2);
+                }
+                catch (ArgumentException e)
+                {
+                }
                 
                 Refresh();
+            }
+            else
+            {
+                try
+                {
+                    MetroStation station = renderer.metro.PickStationNear(display.station, 1, station =>
+                    {
+                        return !unlockedStations.IsUnlocked(station);
+                    });
+
+                    uiGame.touchButton.SetSelected(renderer.GetStationDisplay(station));
+                    model.cameraController.LerpTo(station.position, 2);
+                }
+                catch (ArgumentException e)
+                {
+                }
             }
         }
 
