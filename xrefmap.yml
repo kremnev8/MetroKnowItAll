@@ -1698,6 +1698,19 @@ references:
   commentId: F:Gameplay.Controls.TouchButton.overrideFocus
   fullName: Gameplay.Controls.TouchButton.overrideFocus
   nameWithType: TouchButton.overrideFocus
+- uid: Gameplay.Controls.TouchButton.SetSelected(Gameplay.Controls.ISelectable)
+  name: SetSelected(ISelectable)
+  href: api/Gameplay.Controls.TouchButton.html#Gameplay_Controls_TouchButton_SetSelected_Gameplay_Controls_ISelectable_
+  commentId: M:Gameplay.Controls.TouchButton.SetSelected(Gameplay.Controls.ISelectable)
+  fullName: Gameplay.Controls.TouchButton.SetSelected(Gameplay.Controls.ISelectable)
+  nameWithType: TouchButton.SetSelected(ISelectable)
+- uid: Gameplay.Controls.TouchButton.SetSelected*
+  name: SetSelected
+  href: api/Gameplay.Controls.TouchButton.html#Gameplay_Controls_TouchButton_SetSelected_
+  commentId: Overload:Gameplay.Controls.TouchButton.SetSelected
+  isSpec: "True"
+  fullName: Gameplay.Controls.TouchButton.SetSelected
+  nameWithType: TouchButton.SetSelected
 - uid: Gameplay.Controls.TouchCameraController
   name: TouchCameraController
   href: api/Gameplay.Controls.TouchCameraController.html
@@ -1734,12 +1747,12 @@ references:
   commentId: F:Gameplay.Controls.TouchCameraController.lerpTime
   fullName: Gameplay.Controls.TouchCameraController.lerpTime
   nameWithType: TouchCameraController.lerpTime
-- uid: Gameplay.Controls.TouchCameraController.LerpTo(Vector3)
-  name: LerpTo(Vector3)
-  href: api/Gameplay.Controls.TouchCameraController.html#Gameplay_Controls_TouchCameraController_LerpTo_Vector3_
-  commentId: M:Gameplay.Controls.TouchCameraController.LerpTo(Vector3)
-  fullName: Gameplay.Controls.TouchCameraController.LerpTo(Vector3)
-  nameWithType: TouchCameraController.LerpTo(Vector3)
+- uid: Gameplay.Controls.TouchCameraController.LerpTo(Vector3,System.Single)
+  name: LerpTo(Vector3, Single)
+  href: api/Gameplay.Controls.TouchCameraController.html#Gameplay_Controls_TouchCameraController_LerpTo_Vector3_System_Single_
+  commentId: M:Gameplay.Controls.TouchCameraController.LerpTo(Vector3,System.Single)
+  fullName: Gameplay.Controls.TouchCameraController.LerpTo(Vector3, System.Single)
+  nameWithType: TouchCameraController.LerpTo(Vector3, Single)
 - uid: Gameplay.Controls.TouchCameraController.LerpTo*
   name: LerpTo
   href: api/Gameplay.Controls.TouchCameraController.html#Gameplay_Controls_TouchCameraController_LerpTo_
@@ -3521,6 +3534,15 @@ references:
   commentId: M:Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
   fullName: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation)
   nameWithType: Metro.PickStationNear(MetroStation)
+- uid: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation,System.Int32,Func{Gameplay.MetroDisplay.Model.MetroStation,System.Boolean})
+  name: PickStationNear(MetroStation, Int32, Func<MetroStation, Boolean>)
+  href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_PickStationNear_Gameplay_MetroDisplay_Model_MetroStation_System_Int32_Func_Gameplay_MetroDisplay_Model_MetroStation_System_Boolean__
+  commentId: M:Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation,System.Int32,Func{Gameplay.MetroDisplay.Model.MetroStation,System.Boolean})
+  name.vb: PickStationNear(MetroStation, Int32, Func(Of MetroStation, Boolean))
+  fullName: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation, System.Int32, Func<Gameplay.MetroDisplay.Model.MetroStation, System.Boolean>)
+  fullName.vb: Gameplay.MetroDisplay.Model.Metro.PickStationNear(Gameplay.MetroDisplay.Model.MetroStation, System.Int32, Func(Of Gameplay.MetroDisplay.Model.MetroStation, System.Boolean))
+  nameWithType: Metro.PickStationNear(MetroStation, Int32, Func<MetroStation, Boolean>)
+  nameWithType.vb: Metro.PickStationNear(MetroStation, Int32, Func(Of MetroStation, Boolean))
 - uid: Gameplay.MetroDisplay.Model.Metro.PickStationNear*
   name: PickStationNear
   href: api/Gameplay.MetroDisplay.Model.Metro.html#Gameplay_MetroDisplay_Model_Metro_PickStationNear_

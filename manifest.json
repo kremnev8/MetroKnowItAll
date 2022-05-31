@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.TouchButton.html",
-          "hash": "m2KqEQv2lP74ib7V6vTDWtY8WGvN5oFPIN0+tjUm2WE="
+          "hash": "29iJPt0QZd3Q3+u4+gakZG0pqrAFViuyMm2uw+UNm+s="
         }
       },
       "is_incremental": false,
@@ -220,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.Controls.TouchCameraController.html",
-          "hash": "H4wbQoy59eLlyBjWO5aIovpdJ3HTg7MOUxU6dvccVMw="
+          "hash": "bfP3CbxwLgkrfqoE21TsHek3FzUku4LRZ/uZFOxMW5w="
         }
       },
       "is_incremental": false,
@@ -472,7 +472,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Gameplay.MetroDisplay.Model.Metro.html",
-          "hash": "92D+iQW2DKowgG1+6lpPJWwCm37jy10/lBSl+PiBEdg="
+          "hash": "l3GkmUE578qDAXNx5Bl15lhe6L4vhYl+4cVkXmaKrb0="
         }
       },
       "is_incremental": false,
@@ -1648,7 +1648,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/gameplay.html",
-          "hash": "h+rR8qV3lFnJZqefyyFai4lbm6hveMTpSNJH1ie9Zxg="
+          "hash": "+J8p13LPgQl0XSKitIHECgh8hVlDsZlpRXHyjRe3Ijc="
         }
       },
       "is_incremental": false,
